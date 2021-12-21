@@ -1,0 +1,219 @@
+<Update
+	Date="08102021 1035"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="3.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="8879"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		FixName="c"
+		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			restart_service|../21.3.10.391_ksde_c|%DataFolder%|csprmz.xms|eK9JscUbN4dt8J03Zcul0A4ZQkxb27WM/FqCmLJJbco=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|avpmain.dll|hAlr1GSLd4/EYwQAg8mlss7jlMopmfZ6pkDqXsZV2fI=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|crypto_ssl_1_1.dll|U5Yboa/MS+FNhQTNf6Eyd3KADS8+CQt5BUua0ptOC5o=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|instrumental_services.dll|1xTAdToE2EBoZGfBt7kctimB4iVMTKXUYUS1i4Fyyi4=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|legal_notices.txt|lnTZWzb8Ur01zK8ZxMT4vP+XpkEdNoKHy4l5SUiZMVU=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|params.dll|pE1vKnGRQGwyVxH0DMkNOqdxd4KHm9O9EvCAlSfD+Is=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|product_metainfo.dll|jlzLnkG/R8+2EWLq6KtO6ZZ4NQY72OlBFNLmsY65a84=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|shell_service.dll|bsOCVI6It0XiOxT+P15oddjLJVLsmol5FIMYEtPzy8g=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|bl_ksde.dll|3pa4CVKMuMC0li0YC9WlD5n0O2+uwxryCfYK7xv7FqM=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|ksde.exe|Zxqdw2jaIAm6wQDEDyLkGMky4NqpT3mvFfCvs/SN7q4=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|ksde.kcat|IP5fh8NsaDVpJddB4pjjUfuGrP2pDKh3wbPyzXR5zrM=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|ksdeui.exe|PqTmQhQI4LdX/xHws4XXOV8I4NkEBq2o3KbpoUJ6FFg=;
+			restart_service|../21.3.10.391_ksde_c|%ProductFolder%|ksdeuimain.dll|/rrEK/+XQ6OR5i+2xhv6/eI+1Cd5qtlAoVS6uKAlDxY=;
+			restart_service|../21.3.10.391_ksde_c/ksde|%DataFolder%|settings.patch|oq20yiSdRNMKflTblExaKdpTRb9k9BhxwueD56kofEw=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-100/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\common|sprite_flag_big.png|pmD/COn9+QGn583XA6+op2gZOaaQvFLRe+76KhxEjpk=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-100/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\common|sprite_flag_small.png|SljocUefmxv494ZOi/lqKFZscSBsSRdLq5Y7cjSADrU=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-125/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-125\\\\common|sprite_flag_big.png|BpAQAelHHAUzFJwzpxEHxvyy3wYdJZ4Rs529EGt3yGU=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-125/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-125\\\\common|sprite_flag_small.png|uLqrNRnvbgarqIPBcHi32+jip9f11flcrl2MQ6gNQpE=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-150/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-150\\\\common|sprite_flag_big.png|rFArBLNaDu+DXCXQshK0AHOt9nq92YmExGBz36RS2vM=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-150/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-150\\\\common|sprite_flag_small.png|1JJx6TICDU4Kl7DZH0YY+dj1WdxyFmmGK9cAfh1XO4k=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-200/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-200\\\\common|sprite_flag_big.png|LDzz0UW/Og2CgM4LnD16kU36zi0cjESQLaKhjlqc1b0=;
+			restart_none|../21.3.10.391_ksde_c/skin/resources/neutral/images/scale-200/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-200\\\\common|sprite_flag_small.png|2PYyt1dLLslQ/woOdZK54rSzr/C+Wp3Ps1Zf4OXWTPg="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="c"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|activation.lt|YG/7XUhCLmM0NInRYDc59hIro1ymBrrPMhRlig8Hmlc=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|alerts.lt|iRV9ivH2d8TArq3XhFJhUQTKxyZAk4SiptCGtiNNvns=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|avpui.ini|qGUomDezPWsqxpTS/vpocEUoSrCx5QOh5CVcJxGB9cA=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|paywall.lt|9qN4wrSMt9oQsIltIuG6i7rXpMzz6nyNotj0odeBYhg=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|settings.lt|VZYbx0shbVqO47lm5AlfNpdXILcJzfADHsTOE4+NYh8=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|tariffs.lt|71Gw94ySgLKwEPzy7qckeJki5D/+HfCotl9g/BF0WBI=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|toasts.lt|pi8b/yFLmCzC61djCiflnva5Bb29cv2WdTdt01g+g7w=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|tutorial.lt|9ATP2rDsbNpQ/Gw7Y19K4lX92mZkjv2bEGqy2FLkA9Y=;
+			ru|../21.3.10.391_ksde_c/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|ucp.lt|zs8TvFaNafm4R+UobRZ3uNIBOom8oJKvjXzMWY1g0rc=;
+			uk|../21.3.10.391_ksde_c/skin/resources/uk/locs|%ProductFolder%\\\\skin\\\\resources\\\\uk\\\\locs|settings.lt|jzj5rOCX2W36dJsBCbq3+YbTFLPn8QJv5zph5cdSagg="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Item="FixName;SrvPath;Name;DSKM2"
+		List="
+			d|../21.3.10.391_ksde_d|ksde50mr3.msp|e6d9x4u0fMHcpNHyTl5xsSefA0L9Y1L5UajUsqS1whY=;
+			e|../21.3.10.391_ksde_e|ushata.dll|GRuYTaRI5IhSqMWLcwgA/MXGJFyflfOo0zK3dQcQ70U=;
+			e|../21.3.10.391_ksde_e|kasperskylab.ksde.ui.dll|59WwGiaM4M3wznL31p3RslaGrqR8smnzxfQbWtLJozs=;
+			e|../21.3.10.391_ksde_e|ksde.dll|vDLv7SihfH4RHTAOi9CL4N7T9Vv2nmMUpOh1V2qg7T0=;
+			f|../21.3.10.391_ksde_f|kasperskylab.ui.core.dll|vxDlGBrVY7IMXRSuTophJ4QirZXCLkpkPqTusTy8Kvo=;
+			f|../21.3.10.391_ksde_f|ucp_agent.dll|q9D8OhKKRWmOZhLve/e4tBfIxpvDIMj9eTSXP+bI72U=;
+			f|../21.3.10.391_ksde_f|hydra.dll|dx3v+u5m0bNMskp9peTjMYV928wBZjq8iBngafiuUL4=;
+			f|../21.3.10.391_ksde_f|tun_facade.dll|qnKdr/e0/HYjoBEJVLXtgvhoX0ARHMfLP+l3LG5W5io="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="f"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			ar|../21.3.10.391_ksde_f/skin/resources/ar/locs|%ProductFolder%\\\\skin\\\\resources\\\\ar\\\\locs|balloons.lt|esD/O/vt8zGG3UUODwhoiU3aaAlSnuymNer3Vtcnfbo=;
+			ar|../21.3.10.391_ksde_f/skin/resources/ar/locs|%ProductFolder%\\\\skin\\\\resources\\\\ar\\\\locs|mainwindow.lt|EKWRUNlMtC6PN1ytRzlppdolCfIJzSSz2FhXWWyT3Zc=;
+			bg|../21.3.10.391_ksde_f/skin/resources/bg/locs|%ProductFolder%\\\\skin\\\\resources\\\\bg\\\\locs|balloons.lt|TDcUnRtgxoFV4cil9fm1MOBaOx2VuXSb1hDejnNQR00=;
+			bg|../21.3.10.391_ksde_f/skin/resources/bg/locs|%ProductFolder%\\\\skin\\\\resources\\\\bg\\\\locs|mainwindow.lt|3IU1RNcEPHsgKErEoO5hj8kK4iAGxH5cpPv/f9RfZF4=;
+			cs|../21.3.10.391_ksde_f/skin/resources/cs/locs|%ProductFolder%\\\\skin\\\\resources\\\\cs\\\\locs|balloons.lt|n7gr8HyPGZEvLuZgnAQrH/l641aAr/fWg4+icC9ilP8=;
+			cs|../21.3.10.391_ksde_f/skin/resources/cs/locs|%ProductFolder%\\\\skin\\\\resources\\\\cs\\\\locs|mainwindow.lt|ASVWjckzBGRsFpE8Mz3NvYGWzbFoTDHy1HCkIPVe7SU=;
+			da|../21.3.10.391_ksde_f/skin/resources/da/locs|%ProductFolder%\\\\skin\\\\resources\\\\da\\\\locs|balloons.lt|Dq4gzFJZP23N2hgyxHopCgoqvbkafHi240Kv9QvCH80=;
+			da|../21.3.10.391_ksde_f/skin/resources/da/locs|%ProductFolder%\\\\skin\\\\resources\\\\da\\\\locs|mainwindow.lt|sBkiaW/UStp62csyDk0DiA5zK6G6JY61NpaRECtZSQs=;
+			de|../21.3.10.391_ksde_f/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|balloons.lt|DCCF2nzk820N5h+lVeVDwcq1tRya7bvDQ0iFYofk+fk=;
+			de|../21.3.10.391_ksde_f/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|mainwindow.lt|83xPqkT9x2JBXH82pxK04RXZD5ZpIj/OWm8c2BLTPAw=;
+			el|../21.3.10.391_ksde_f/skin/resources/el/locs|%ProductFolder%\\\\skin\\\\resources\\\\el\\\\locs|balloons.lt|dJ8kKWr88ScjGlcsaLYooIXFQ+msR+0d5YibRfQv2zY=;
+			el|../21.3.10.391_ksde_f/skin/resources/el/locs|%ProductFolder%\\\\skin\\\\resources\\\\el\\\\locs|mainwindow.lt|xlB8nGwsoj+Btx2I9lnLnasu4mfa/PBnxiZi15St7b8=;
+			en|../21.3.10.391_ksde_f/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|balloons.lt|i+Kz04hR69kdA2dEopIcXtfppvlt0AMAoWBUJp6D3mA=;
+			en|../21.3.10.391_ksde_f/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|mainwindow.lt|YN+6C8rF47S5T6jwaY0LfDYVdQDkJG5Azd824ixpp4I=;
+			es-ES|../21.3.10.391_ksde_f/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|balloons.lt|wrUwKwK/1/31DSKL68VAntLIHKkYlOSSEZLg6dWZ/Z8=;
+			es-ES|../21.3.10.391_ksde_f/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|mainwindow.lt|1Ewe46LzFnp2h9pkhQDhasbxRNzwC0YBoHzehTX6mrk=;
+			es-MX|../21.3.10.391_ksde_f/skin/resources/es-MX/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-MX\\\\locs|balloons.lt|GfiPupCQXbx7XHEaytfmL3YwiJV9EgI/+R5ZgRD+dxo=;
+			es-MX|../21.3.10.391_ksde_f/skin/resources/es-MX/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-MX\\\\locs|mainwindow.lt|2bmVVTycll4VT3jwxRLkmx4qGG+qUuX/nZ4cnC746G0=;
+			es-US|../21.3.10.391_ksde_f/skin/resources/es-US/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-US\\\\locs|balloons.lt|GfiPupCQXbx7XHEaytfmL3YwiJV9EgI/+R5ZgRD+dxo=;
+			es-US|../21.3.10.391_ksde_f/skin/resources/es-US/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-US\\\\locs|mainwindow.lt|2bmVVTycll4VT3jwxRLkmx4qGG+qUuX/nZ4cnC746G0=;
+			et|../21.3.10.391_ksde_f/skin/resources/et/locs|%ProductFolder%\\\\skin\\\\resources\\\\et\\\\locs|balloons.lt|q5Kcv/qj0gHhKXsaJUeICfbOgnqVSZNZVCyfyCyGRL4=;
+			et|../21.3.10.391_ksde_f/skin/resources/et/locs|%ProductFolder%\\\\skin\\\\resources\\\\et\\\\locs|mainwindow.lt|PTUCfS5tcHXhVyQ3bvk5HMAh8ujVPxOyirmqq6lDMGI=;
+			fi|../21.3.10.391_ksde_f/skin/resources/fi/locs|%ProductFolder%\\\\skin\\\\resources\\\\fi\\\\locs|balloons.lt|IXcUcjCkIp/DgzkapWfrP79PkB+OsWiHQickqzHTkvo=;
+			fi|../21.3.10.391_ksde_f/skin/resources/fi/locs|%ProductFolder%\\\\skin\\\\resources\\\\fi\\\\locs|mainwindow.lt|XVEr9pqhh1AlzY58Xu/nDsDwyAEeuGH+7G098j90qMs=;
+			fr|../21.3.10.391_ksde_f/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|balloons.lt|Bl6Y8/l0XCNT0cNCZsfNdaVUrHH/2eWiRvLQnnJzaS0=;
+			fr|../21.3.10.391_ksde_f/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|mainwindow.lt|mNEFh39kRqHX4SOyll0OL22kX5XX3CA7ZUBv6THnXS0=;
+			hu|../21.3.10.391_ksde_f/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|balloons.lt|Ukkpjp2sVOy2Udak40ORlZiAO0pLzVW4uKPBic6nTdc=;
+			hu|../21.3.10.391_ksde_f/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|mainwindow.lt|+rtKbeMKm6QtpxEH+ZQPRdm+G+unt4N478dSg52YV0M=;
+			id|../21.3.10.391_ksde_f/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|balloons.lt|5YHsD6/N7MaTve3xAy2JEZojnXgcR/ieFAIYSE3hDjI=;
+			id|../21.3.10.391_ksde_f/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|mainwindow.lt|pvL0S7imbrTokLWsw3vAztygZmaITEE3glsgHyt+3KM=;
+			it|../21.3.10.391_ksde_f/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|balloons.lt|fuCMnwGS61albZ1tvv9ujzHke8pV12YUrn6Of8AS/70=;
+			it|../21.3.10.391_ksde_f/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|mainwindow.lt|m8cv07pQd5A64b/X7V9Ma6fajM7n3K5yacFMPskIklw=;
+			ja|../21.3.10.391_ksde_f/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|balloons.lt|X0WryMqj4Q5ReklaJtjeEIpzxZjI27ksJm9VCrEZAcs=;
+			ja|../21.3.10.391_ksde_f/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|mainwindow.lt|yZR8sd0pT/PQFP50sibd12oScfnA3Apf1E+0pJhmb+U=;
+			ko|../21.3.10.391_ksde_f/skin/resources/ko/locs|%ProductFolder%\\\\skin\\\\resources\\\\ko\\\\locs|balloons.lt|NGklI/fi1ACgl2C+nk7twOYItgI/pMOJmRSVF1k9UO8=;
+			ko|../21.3.10.391_ksde_f/skin/resources/ko/locs|%ProductFolder%\\\\skin\\\\resources\\\\ko\\\\locs|mainwindow.lt|MuN5KN1kpYfDuKGZzur9jKJBLGEtPMGQ60G4nxEoTGg=;
+			lt|../21.3.10.391_ksde_f/skin/resources/lt/locs|%ProductFolder%\\\\skin\\\\resources\\\\lt\\\\locs|balloons.lt|F8SxE/BMTfSYkSBmsoEXuAk71D0/JyrRJ+wS9kWFZqQ=;
+			lt|../21.3.10.391_ksde_f/skin/resources/lt/locs|%ProductFolder%\\\\skin\\\\resources\\\\lt\\\\locs|mainwindow.lt|x86Aabfs1ep20j9cYHHGiNaHM6yyhZfdb14N3NFGgGk=;
+			lv|../21.3.10.391_ksde_f/skin/resources/lv/locs|%ProductFolder%\\\\skin\\\\resources\\\\lv\\\\locs|balloons.lt|RmXo7rYGCrQW7s6HnBXfZ6+syn4ZzGQiyXCIEfGLJiU=;
+			lv|../21.3.10.391_ksde_f/skin/resources/lv/locs|%ProductFolder%\\\\skin\\\\resources\\\\lv\\\\locs|mainwindow.lt|y5Pmbn4JbaTuNY50CStSxHmk4Kas2gLKqeNtUHyXbzE=;
+			nb|../21.3.10.391_ksde_f/skin/resources/nb/locs|%ProductFolder%\\\\skin\\\\resources\\\\nb\\\\locs|balloons.lt|pmZPUxKaUB/8q8okt441BgVU+SwqCaiNUNjb4J70ocA=;
+			nb|../21.3.10.391_ksde_f/skin/resources/nb/locs|%ProductFolder%\\\\skin\\\\resources\\\\nb\\\\locs|mainwindow.lt|F6+y8KOI0msuI4TtuvjlEknra0d9PhdRqgSvvQ6o8Jc="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="f"
+		SrvPath="../21.3.10.391_ksde_f/skin/resources/neutral/locs"
+		LocalPath="%ProductFolder%\skin\resources\neutral\locs"
+		Item="Name;DSKM2"
+		List="
+			balloons.lt|i+Kz04hR69kdA2dEopIcXtfppvlt0AMAoWBUJp6D3mA=;
+			mainwindow.lt|YN+6C8rF47S5T6jwaY0LfDYVdQDkJG5Azd824ixpp4I="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="f"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			nl|../21.3.10.391_ksde_f/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|balloons.lt|bvkiJ+ZP7PekG/NEr+t62AaI/iT5a4g/m6oWPlSy1cU=;
+			nl|../21.3.10.391_ksde_f/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|mainwindow.lt|T2rRipSxjwgj25omPpPxkNVC3adkjTuTcNJOIcepZQU=;
+			pl|../21.3.10.391_ksde_f/skin/resources/pl/locs|%ProductFolder%\\\\skin\\\\resources\\\\pl\\\\locs|balloons.lt|C7NrV9KgxNwhyfBq4NEjBMiIdGMVGBy3I86BQ0XDtHs=;
+			pl|../21.3.10.391_ksde_f/skin/resources/pl/locs|%ProductFolder%\\\\skin\\\\resources\\\\pl\\\\locs|mainwindow.lt|+DB1AbKRXaJGKSYXGSn0B8qA4IKGXjIRA4cHjRU4jWc=;
+			pt-BR|../21.3.10.391_ksde_f/skin/resources/pt-BR/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-BR\\\\locs|balloons.lt|FjrwZDtcIw8txy4YW93/KQ2YNQvk0+40vOBttVOdNU4=;
+			pt-BR|../21.3.10.391_ksde_f/skin/resources/pt-BR/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-BR\\\\locs|mainwindow.lt|DDV+1EpxDRpd0M9Xmbn3l2DRtUqeCm/MD/EcTTk5ZTk=;
+			pt-PT|../21.3.10.391_ksde_f/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|balloons.lt|Sbn+Z+qiX4ZIldLpPISzhNP77xAQ6gHMInGjQRQcbkI=;
+			pt-PT|../21.3.10.391_ksde_f/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|mainwindow.lt|E5BAa9XQt4/RYCrzV7OtSUH+c0o7EfXm3G+2FN72hWg=;
+			pt-ZA|../21.3.10.391_ksde_f/skin/resources/pt-ZA/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-ZA\\\\locs|balloons.lt|Sbn+Z+qiX4ZIldLpPISzhNP77xAQ6gHMInGjQRQcbkI=;
+			pt-ZA|../21.3.10.391_ksde_f/skin/resources/pt-ZA/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-ZA\\\\locs|mainwindow.lt|E5BAa9XQt4/RYCrzV7OtSUH+c0o7EfXm3G+2FN72hWg=;
+			ro|../21.3.10.391_ksde_f/skin/resources/ro/locs|%ProductFolder%\\\\skin\\\\resources\\\\ro\\\\locs|balloons.lt|MUV2yGFy5eqnDyPVaS5urlRPyZPJ5PxkwizN6my3GMw=;
+			ro|../21.3.10.391_ksde_f/skin/resources/ro/locs|%ProductFolder%\\\\skin\\\\resources\\\\ro\\\\locs|mainwindow.lt|zg92OOURoovAdWoi38k8J5o4z0gRJBlpfFv5g1a4JPc=;
+			ru|../21.3.10.391_ksde_f/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|balloons.lt|I5clO6IpxguJljIjC+T9RMXZIQ/RryO2D3gYjgAmDaw=;
+			ru|../21.3.10.391_ksde_f/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|mainwindow.lt|I3sXY1hcywBATWzm6EO0ZPK+vnCjf51wYSgodfWjfag=;
+			sr-Cyrl|../21.3.10.391_ksde_f/skin/resources/sr-Cyrl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Cyrl\\\\locs|balloons.lt|9lsIZNyT74RogwWUPNTo8VGZPQCnKG2723Zc+ESDHB4=;
+			sr-Cyrl|../21.3.10.391_ksde_f/skin/resources/sr-Cyrl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Cyrl\\\\locs|mainwindow.lt|lHaViJOTQsPiCtj2P+iR3QcAyKh80mFbjZVi2snN9vM=;
+			sr-Latn|../21.3.10.391_ksde_f/skin/resources/sr-Latn/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Latn\\\\locs|balloons.lt|rRhVfycomgx2ngNjeOWAxzVBfSEMMCsb/+uOuONKuSg=;
+			sr-Latn|../21.3.10.391_ksde_f/skin/resources/sr-Latn/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Latn\\\\locs|mainwindow.lt|Kr+8i8CsgQTr5V6MJLSOFgII616Z8pAIx+WMBDCKreQ=;
+			sv|../21.3.10.391_ksde_f/skin/resources/sv/locs|%ProductFolder%\\\\skin\\\\resources\\\\sv\\\\locs|balloons.lt|VPSHYiJtsboto0POiPwZffeyyrh2jd8mDgwNRwTpOSM=;
+			sv|../21.3.10.391_ksde_f/skin/resources/sv/locs|%ProductFolder%\\\\skin\\\\resources\\\\sv\\\\locs|mainwindow.lt|HLD5ZcjPKFGm+uzICTLfjlC4DXgiZ4sfi6gNVF7kTjE=;
+			th|../21.3.10.391_ksde_f/skin/resources/th/locs|%ProductFolder%\\\\skin\\\\resources\\\\th\\\\locs|balloons.lt|MAgx2ygSajlVQOqVk3Y+gGD/EtvhoZKhQeuLXL/skOo=;
+			th|../21.3.10.391_ksde_f/skin/resources/th/locs|%ProductFolder%\\\\skin\\\\resources\\\\th\\\\locs|mainwindow.lt|avefkw+w2YDsboheCAHUchHkwjGAnR3BQjnC2QiWapw=;
+			tr|../21.3.10.391_ksde_f/skin/resources/tr/locs|%ProductFolder%\\\\skin\\\\resources\\\\tr\\\\locs|balloons.lt|jYiqybxINQIUjAES8zxOb+WOdhs2P4LxtkPY56mc0WA=;
+			tr|../21.3.10.391_ksde_f/skin/resources/tr/locs|%ProductFolder%\\\\skin\\\\resources\\\\tr\\\\locs|mainwindow.lt|C0g24m/e/Q1FkUcTf8rYkJr6FwoxRZqgrlHzkV1y4uY=;
+			uk|../21.3.10.391_ksde_f/skin/resources/uk/locs|%ProductFolder%\\\\skin\\\\resources\\\\uk\\\\locs|balloons.lt|dwsQ0xcC6HoIkqrgLZ90BT6ZTBMvIqFqX4oloBuWESM=;
+			uk|../21.3.10.391_ksde_f/skin/resources/uk/locs|%ProductFolder%\\\\skin\\\\resources\\\\uk\\\\locs|mainwindow.lt|J9XjIjdm5MqahG4C1m0LLV3t1sV74UiFW2ZqR5WjCW0=;
+			vi|../21.3.10.391_ksde_f/skin/resources/vi/locs|%ProductFolder%\\\\skin\\\\resources\\\\vi\\\\locs|balloons.lt|suif7u3mUB8ZkPes5YMh5acPHwnnwyjbnJiKqIBVyN0=;
+			vi|../21.3.10.391_ksde_f/skin/resources/vi/locs|%ProductFolder%\\\\skin\\\\resources\\\\vi\\\\locs|mainwindow.lt|pU4LwlJScxVkRrkTGKRxgPqr2+YTAQSflGHcqjsLiXQ=;
+			zh-Hant|../21.3.10.391_ksde_f/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|balloons.lt|bZhIrFQp/lgcvWJnz3BNWWZ3Y1mNVT4LG9+oCTOaflc=;
+			zh-Hant|../21.3.10.391_ksde_f/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|mainwindow.lt|PSrU6njOJdSq5YVEh9ZUCry4JQsO0JEcvWVuWB+CsR4="/>
+	<Patch
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="g"
+		SrvPath="../21.3.10.391_ksde_g"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM2="RqiU4qaLFIaSoLloDZVGjTapVUhPgbr65/I83kCqTLY="/>
+	<Key2
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-ksde21-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAOeETA0laP2talx/S13Y6GRopzaFfwG1rK9uCkl+pAcCyB8iBdlGzBm4NZNY9yzJWjyyVXQua4jgavtyO64aECoBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAltYp9XDQo6ITI4NDAxR1drUnRUM1pqRkZGSkFRTHdTelhmcitrOXNZMnpxemJhellzMTdXQUpDWXJPdmhlamxhYUVHTUtuVmJGRXF2Njd3Sy96aFQrTXk1SFFUMklnNzRYdTQxJSU=</Key2>
+</Update>
+:!28401GGsRGyPCrrXFCT8cClWEswNbNhE9R9mplkDkQ6XuBhpkSDx5a8Me1luld9pvqI2IeOA/uHss8klIz/tyivfi4a0%%
+=!AQAADAwATPOIOwAA0‚+¸tŽ ‚ö1‚ò0‚î10
+*…0B+¸tŽ 200.0
+*… >ùÝÎä{Ãg 6Î>µÆüzˆ~,í<Y¦l¤k$ ‚¤0‚:0‚ç  „hž6¯OW°v­“o°$Ý0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110145Z480120110145Z0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0h0!*…0	*…*…C @Ã¤µ@‡ò‘ÃY6º˜I®…_AyØ´¿x£•O{b\CgF@:õ&¡04Nlæà‡éæ£E†7ñ·æ£O’©_—´/P£¡0ž0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0Uÿ0Uÿ0ÿ0#+¸tŽÿ0+¸tŽ0
+*…A ßq*,;\™Öì¬A:Oèó¼æMöí°æ#qùW¢0*¥~€ó? BöÚ§7NžhI½¹ÅÈ>é ‚No0‚b0‚ ^tùE¬¤D¬¼6ÿNþ0
+*…0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0210303132054Z220527132054Z0W10	URU10UMoscow10U
+Kaspersky Lab10Ucompid=KSDE21_type=BIN0h0!*…0	*…*…C @Êýã9ÛÞŠ8f/<ög{§çìvo¼¯¤3ü©æY|ÒR1‹WœG’¸‰Ñ¨ÉÆy?»ôØ£º0·0+U#$0"€ Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0)U" ¾'ˆxªµvµRÂê¹êÔSSéN©ø ¤ç :nËÖ0Uÿ€0Uÿ0 0U%ÿ0
++0$+¸tŽÿ0+¸tŽ0
+*…A gÉªßfV
+-
+X·»ä‰¯>›|>Pº¥„Oë^]’˜à_ò„¬ÂxØ—ÿ‘JÛ«¦½gªÅ; 1‚í0‚é " ¾'ˆxªµvµRÂê¹êÔSSéN©ø ¤ç :nËÖ0
+*…0
+*…@Ð½.ˆuÓáÿ tE*¿˜ŒØoÏÖmÉPqBBtu†ÊöŠXMø¶;Õk\Š'mÑdn“÷qT°¡‚d0‚`
++‚71‚P0‚L	*†H†÷ ‚=0‚910
+*…0j*†H†÷	 [Y0W*0.0
+*… –}	®Ã1­±ð§ákÐJToèßßì2ÊŠÃ:1µVÌûMöÚ20211008103603.1756008Z ‚|0‚60‚ã G¢~YFC®¼ÆADm\™ò0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110221Z480120110221Z0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0h0!*…0	*…*…C @«k„8Ï P8qFÙAÏÛëòÙ†Ð4ªLyx•žcÜ)åGð,ˆçV:TZ.B§žºŒì«FÖGð
+€{”×£”0‘0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0Uÿ0Uÿ0ÿ0U%ÿ0
++0
+*…A (^·ÇíâÔãi!rO…@aÇn^è æ²•ï«„Èôî*Õƒ1÷8J-=§ OÃ{BzÍIª;ð¤™¨õJ0‚>0‚ë (O—u#šFí®‰êF/^0
+*…0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0210909114720Z211108114720Z0O10	URU10UMoscow10U
+Kaspersky Lab10Utype=Timestamp0h0!*…0	*…*…C @†ÁÀûha­K	²YÅGø7{©;N)‘'¾‚n{r¬…á>T&Ò›ù²Rv©†ÅY6£gt!?üaÐñ´¼£”0‘0+U#$0"€ ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0)U" &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0Uÿ€0Uÿ0 0U%ÿ0
++0
+*…A È®$ç¶TÞ`åAh›OË5vß¥ù	óZ›âÆœjÆJ	,è	™þK†×ïÇ-r‰:Ø½ªËpþÿðíìþ1‚80‚4 " &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0
+*… °0	*†H†÷	1*†H†÷	0	*†H†÷	1211008103603Z0/	*†H†÷	1" ‹èúPMà|:ä…¶¶áüßzƒô}ãÏ<ô¬ãÇ4˜|0C*†H†÷	/1402000.0
+*… ÝO¤À´žÊ÷"=µp¯Ò²¤¨e—œÎ!8	GµlOµô0
+*…@9¯RÇ1zN¬-ê‡ˆþ¬i`Æ‘iÙ(å+mÏf p5Ÿ‡çpC¿%EÿXf%·é§÷Xî—ËîÒ+TyW%%

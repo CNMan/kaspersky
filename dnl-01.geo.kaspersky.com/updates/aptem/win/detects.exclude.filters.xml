@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+    <!-- sample exclude rule
+    <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
+        <Process Path="*powershell.exe" />
+    </Detect>
+    -->
+	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
+	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
+
+	<!-- 2021-12-03T14:06:00.000Z-1638540396 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0001 START -->
+	<Detect Id="{2D3BFDB9-2661-42F8-5F221393975DAF7C}" ContentValue="?Inirialize parameters?&#10;$rebootrequired = 0?&#10;$scriptdate = &#39;&#39;?&#10;$updatesource*" />
+	<Detect Id="{9BE1B69A-0642-F434-4CC47EEA2F65D545}" ContentValue="$NetAdapter = $this;?&#10;          $out = switch ($NetAdapter.InterfaceOperationalStatus)?&#10;*}?&#10;          $out" />
+	<Detect Id="{64DBF99D-B92B-BEB1-907C29AAB73931D3}" ContentValue="$global:?" />
+	<Detect Id="{A92582C0-C1C7-0383-B8EEA90F116E8B27}" ContentValue="$this.ServiceName" />
+	<Detect Id="{684A4E55-7E57-854E-9FF2079296F9C28D}" ContentValue="@{?&#10;    GUID = &#34;????????-????-????-????-????????????&#34;?&#10;    Author = &#34;Microsoft Corporation*linkid=??????&#34;?&#10;}??" />
+	<Detect Id="{A55F5CE1-CB17-265A-E2F2FEA625167BEB}" ContentValue="@{?&#10;    GUID = &#34;????????-????-????-????-????????????&#34;?&#10;    Author = &#34;Microsoft Corporation*Core&#39;)&#10;}??" />
+	<Detect Id="{1DDF17B4-983F-CB6B-2504E8EB47DA5BF8}" ContentValue="@{?&#10;GUID=&#34;????????-????-????-????-????????????&#34;?&#10;Author=&#34;Microsoft Corporation*Desktop&#39;)&#10;}??" />
+	<Detect Id="{2FE6FC46-96AF-7922-8DE19ECCB65EBA0C}" ContentValue="@{?&#10;GUID=&#34;????????-????-????-????-????????????&#34;?&#10;Author=&#34;Microsoft Corporation*linkid=??????&#39;?&#10;}??" />
+	<Detect Id="{2E03AFFA-B08A-FD42-C568D7E256DAD536}" ContentValue="*linkid=390785&#39;?&#10;aliasestoexport = @(&#34;gcb&#34;, &#34;scb*" />
+	<Detect Id="{138F7968-FFAE-C1BF-50C730AFEBC2D7BF}" ContentValue="@{?&#10;GUID=&#34;????????-????-????-????-????????????&#34;?&#10;Author=&#34;Microsoft Corporation*Core&#39;)?&#10;}??" />
+	<Detect Id="{445D7269-E7A9-39EF-7423E81B9E559053}" ContentValue="@{?&#10;GUID=&#34;????????-????-????-????-????????????&#34;?&#10;Author=&#34;Microsoft Corporation*Set-TimeZone&#34;)?&#10;}??" />
+	<Detect Id="{3E152799-DCCD-1F5E-1DEFEAB9EC020011}" ContentValue="@{?&#10;GUID=&#34;{????????-????-????-????-????????????}&#34;?&#10;Author=&#34;Microsoft Corporation*AliasesToExport=@()?&#10;}??" />
+	<Detect Id="{97253D34-3C29-3C98-72B0EA7B0088F15E}" ContentValue="*X0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8l" />
+	<Detect Id="{7796A95A-74F8-2CE5-F15C0CCECBB50FD8}" ContentValue="*5035000000000000000000000000000000005f436f72446c6c4d61696e006d73636f7265652e646c6c0000000000ff25" />
+	<Detect Id="{848814FB-0C56-E5C3-66D69CFCA929247D}" ContentValue="*lcmF0b3JGaWxlUGF0aD5rX19CYWNraW5nRmllbGQAPFRlbXBsYXRlRmlsZVBhdGg+" />
+	<Detect Id="{F751B935-1C08-A4EC-A58A69E3520FA516}" ContentValue="*636b696e674669656c64003c47656e657261746f7246696c65506174683e6b5f5f4261636b696e674669656c64003c54656d706c61746546696c65506174683e" />
+	<Detect Id="{8FC2D40F-D628-1940-49C503CC25373E92}" ContentValue="MAA=" />
+	<Detect Id="{4FEED2A7-3A7A-DD63-688969AD084F923B}" ContentValue="3000" />
+	<Detect Id="{C298168A-E95C-7D3D-76294A8BDD084C0C}" ContentValue="[System.Management.ManagementDateTimeConverter]::ToDateTime($args[0])" />
+	<Detect Id="{AF171B72-218C-1B3E-958448B90F6DAC22}" ContentValue="?&#10;                                    if ($_.FullyQualifiedErrorId*}?&#10;                                " />
+	<Detect Id="{4DCD6933-D9AC-D397-DE5D5E7C9C4E222A}" ContentValue="?&#10;                                   if ($_.FullyQualifiedErrorId**}?&#10;                                " />
+	<Detect Id="{42A23C06-17C4-A7E4-0F2EC1CF14C4BA3F}" ContentValue="*__cmdletization_values = @(${Name})?&#10; " />
+	<Detect Id="{F7EC9BFA-F632-9585-56E882CBA6CA4CC6}" ContentValue="*[object]$__cmdletiza" />
+	<Detect Id="{C3C0DFEA-72B9-F524-FFC5EA7D1A1A0E4F}" ContentValue="*try ?&#10;        {?&#10;    " />
+	<Detect Id="{18831E84-2018-36D4-CBA1E1E669FAB16C}" ContentValue="*__cmdletization_queryBuilder.FilterByProperty(&#39;ConnectionS" />
+	<Detect Id="{96D2C4A2-383C-34BD-D361CA3C07FB1400}" ContentValue="*__cmdletization_defaultValueIsPresent}??" />
+	<Detect Id="{9371ABC1-1701-7FCA-E20619C93381D598}" ContentValue="*Parameter(ParameterSetN" />
+	<Detect Id="{3496688F-67E1-119D-6B722EE84A793195}" ContentValue="*Parameter(ParameterSetName" />
+	<Detect Id="{264116B5-D5C8-1BEC-4E0B0CAC0B1EF5DD}" ContentValue="*Parameter(ParameterSetName=&#39;ByName&#39;)]" />
+	<Detect Id="{FF8D3D2E-3DFB-D52E-15E947C43C827440}" ContentValue="*Alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{C8915EDA-32AE-0866-0D7E9BC9A81E4D94}" ContentValue="*Parameter(ParameterSetName=&#39;ByName&#39;)" />
+	<Detect Id="{3E7BE9FD-1205-5562-E9D5F78DB55A28FA}" ContentValue="*CimSession[]]?&#10;    ${C" />
+	<Detect Id="{284F6D61-65F0-F1AD-080AE6E9F53C127E}" ContentValue="*ParameterSetName=&#39;ByName&#39;)]?&#10;  " />
+	<Detect Id="{5BC6F621-02F6-E2D3-CD2DD1DBD538CF84}" ContentValue="*Cmdletization.GeneratedTypes.NetAd" />
+	<Detect Id="{C620B5C8-0317-A417-85C473550A91FBEE}" ContentValue="*Parameter(ParameterSetName=&#39;InputObject (cdxml)&#39;)]?&#10;    [switch]?&#10;    ${As" />
+	<Detect Id="{AC6B8226-2795-D488-C7CA0A2D4EB081F2}" ContentValue="*InputObject (cdxml)&#39;)]?&#10;    [switch]?&#10;    ${PassTh" />
+	<Detect Id="{F2BE4B6D-620F-5D29-F859A405311EF243}" ContentValue="*MSFT_NetAdapterRsc.cdxml-Help.xml?&#10;}?&#10;Microsoft.PowerShell.Cor" />
+	<Detect Id="{2DED5B80-F34D-BA94-1641C7545638731A}" ContentValue="*BaseProcessorNumber},?&#10;?&#10;    [Parameter(ParameterSe" />
+	<Detect Id="{94B37D3C-FBCC-5617-4D3FDFC51B0C272B}" ContentValue="*ThrottleLimit},?&#10;?&#10;    [Parameter(Par" />
+	<Detect Id="{292DFBDF-8F5B-F84F-274275500E82B332}" ContentValue="*NetAdapterSriovVf&#39; -Alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{42E86296-78D1-1C49-DB88B3A0FECBB9F6}" ContentValue="*NetAdapterStatistics&#39; -Alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{30B065DC-6587-DCED-81BEC062453B144C}" ContentValue="*Parameter(ParameterSetName=&#39;ByName&#39;)]?" />
+	<Detect Id="{DFBD17D7-E4C1-E743-8D800EF9B1B1C867}" ContentValue="*NetAdapterVPort&#39; -Alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{C9735027-F287-D122-CCBCEB4D5EBF8020}" ContentValue="*NetAdapterVmqQueue&#39; -Alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{5F31DB2D-D055-DFAA-36F44A840C9526CD}" ContentValue="*Parameter(ParameterSetName=&#39;ByName&#39;)]?&#10;    [" />
+	<Detect Id="{0315FAA8-B7E4-149A-4DB857A681CE50AB}" ContentValue="*Parameter(ParameterSetName=&#39;ByInstanceID&#39;)]?&#10;    [Parameter(ParameterSetName" />
+	<Detect Id="{2900DBAD-7BA0-4F4C-9BC4E985C2C7DA1D}" ContentValue="*Parameter(ParameterSetName=&#39;Set1&#39;, ValueFromPipelineByPropertyNa" />
+	<Detect Id="{D83265BC-421A-C86F-55985B0DA31B85E6}" ContentValue="*DnsClientNrptPolicy&#39; -Alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{8D56D4E7-2CD2-EB15-F3944C96404278AF}" ContentValue="*__cmdletization_value; IsValuePresent = $true}?&#10;        } else {?&#10;      " />
+	<Detect Id="{F9AEBC7F-C18D-6DEB-154039CA6BAB4CDD}" ContentValue="&#38; &#39;C:\WINDOWS\CCM\SystemTemp\????????-????-????-????-????????????.ps1&#39;" />
+	<Detect Id="{8E047D9B-090C-F05B-73E74ADD64353A43}" ContentValue="&#38; { Set-StrictMode -Version 1; $this.Exception.InnerException.PSMessageDetails }" />
+	<Detect Id="{3D2053AD-C39B-068F-518EA7B00319589D}" ContentValue="*CmdletsToExport = @()?&#10;    ?&#10;    AliasesToExport = @()?&#10;}??" />
+	<Detect Id="{4D9A9D99-0012-ED97-DF7B9DAE2C18D37E}" ContentValue="*AliasesToExport = @()?&#10;    CompatiblePSEditions = @(&#39;Desktop&#39;, &#39;Core&#39;)&#10;}??" />
+	<Detect Id="{6BAA2059-B767-AFCD-E9080891D210910A}" ContentValue="*AliasesToExport = @()?&#10;    CompatiblePSEditions = @(&#39;Desktop&#39;, &#39;Core&#39;)?&#10;}??" />
+	<Detect Id="{DBA3F29B-F9E5-8C58-C16719CF0B5ABCB8}" ContentValue="*Retrieving configuration from webservice. URI: $URI&#34;?&#10;        try {?&#10;            $Obj" />
+	<Detect Id="{F9558F39-4631-F131-1DD84E20E6125356}" ContentValue="ewAkAGkAKwArAH0A" />
+	<Detect Id="{4410A3FA-8A60-BB5A-8830A759571902E5}" ContentValue="function Get-FileHash?&#10;{?&#10;    [CmdletBinding(DefaultParameterSetName*ConvertToHexadecimalHelper?&#10;        {?&#10;            param ?&#10;         " />
+	<Detect Id="{17A3BE78-FBEA-5490-F9AA4F820AC835AC}" ContentValue="{ ($_.ConfigManagerErrorCode -ne 0) -and ($_.ConfigManagerErrorCode -ne 22) -and ($_.Name -notlike &#34;*PS/2*&#34;) }" />
+	<Detect Id="{15DA24A1-D7F6-CE9D-3D8FDBF7EE00BC9E}" ContentValue="{ ($_.JobState -like &#34;TransientError&#34;) -or ($_.JobState -like &#34;Transient_Error&#34;) -or ($_.JobState -like &#34;Error&#34;) }" />
+	<Detect Id="{37594B2E-4A16-17D7-777BB7B59409449A}" ContentValue="{ Set-StrictMode -Version 1; $_.ErrorCategory_Message }" />
+	<Detect Id="{D0400D91-C205-2346-6369DBA5A050EF1B}" ContentValue="{ Set-StrictMode -Version 1; $_.OriginInfo }" />
+	<Detect Id="{AC4D2557-AD3A-9198-3F158354FD2B1B07}" ContentValue="{ Set-StrictMode -Version 1; $_.PSMessageDetails }" />
+	<Detect Id="{D0DCD384-EF64-08D0-E0853601A8A072FA}" ContentValue="{ Set-StrictMode -Version 1; $this.Exception.InnerException.PSMessageDetails }" />
+	<Detect Id="{E137D769-06CF-C593-E0E87269F0C12C88}" ContentValue="{$ActiveAdapters -contains $_.InterfaceAlias}" />
+	<Detect Id="{6B61917B-C0F7-372D-57C3881AEB716C8A}" ContentValue="{$_.AddressFamily -eq 2}" />
+	<Detect Id="{72FF5CE9-84EC-DF86-5FA4998DCEC59059}" ContentValue="{$_.ConvertToDateTime($_.LastCycleStartedDate)}" />
+	<Detect Id="{534A01B6-B37B-D536-C8B107D99A7D0281}" ContentValue="{$_.DeviceID -eq &#34;$env:SystemDrive&#34;}" />
+	<Detect Id="{6B69ADE8-2E0A-13DA-EED3E3EBE5A344D1}" ContentValue="{$_.IPEnabled -Match &#34;True&#34;}" />
+	<Detect Id="{F7959B3E-A61F-1696-FD9F17B4D00CE908}" ContentValue="{$_.InventoryActionID -eq &#39;{00000000-0000-0000-0000-000000000001}&#39;}" />
+	<Detect Id="{6746BF6C-2F0F-AC94-71CC2E560F5EF999}" ContentValue="{$_.Location}" />
+	<Detect Id="{2437009F-31D6-004D-B5D134D6978E7F9B}" ContentValue="{$_.Name -like &#39;AutoUpgrade&#39;}" />
+	<Detect Id="{A1E7BD64-81F0-D7A3-5644F0384EB472F4}" ContentValue="{$_.Name -like &#39;CacheSize&#39;}" />
+	<Detect Id="{A87A70AB-8970-7C3B-3182D203B18CDC0F}" ContentValue="{$_.Name -like &#39;CcmSQLCELog&#39;}" />
+	<Detect Id="{CF7DAC92-0F52-8904-B883F8D240D4DF6E}" ContentValue="{$_.Name -like &#39;ClientCertificate&#39;}" />
+	<Detect Id="{84D40003-6EB5-A274-236562B6DDE01D20}" ContentValue="{$_.Name -like &#39;ClientProvisioningMode&#39;}" />
+	<Detect Id="{F0ABBB3C-1F68-4AA3-D858B00405D0A54C}" ContentValue="{$_.Name -like &#39;ClientSettingsCheck&#39;}" />
+	<Detect Id="{BD4530BC-F724-BCB9-02F3140E526D29EB}" ContentValue="{$_.Name -like &#39;ClientStateMessages&#39;}" />
+	<Detect Id="{C62DFC1C-FCB6-A56E-5976BC1C19E62CDB}" ContentValue="{$_.Name -like &#39;ClientWUAHandler&#39;}" />
+	<Detect Id="{65C13006-5FF7-B2CF-50877196AA370C71}" ContentValue="{$_.Name -like &#39;DNSCheck&#39;}" />
+	<Detect Id="{0C8B1200-3068-2560-2B7B09A31CDF4861}" ContentValue="{$_.Name -like &#39;Drivers&#39;}" />
+	<Detect Id="{2E4F6896-5A6A-40F9-72139DE521440762}" ContentValue="{$_.Name -like &#39;File&#39;}" />
+	<Detect Id="{A0A2522F-6D60-4A16-72D4830ACAB445B7}" ContentValue="{$_.Name -like &#39;Log&#39;}" />
+	<Detect Id="{2AA24CCF-6BEF-1383-928E81C684E5BAC9}" ContentValue="{$_.Name -like &#39;PendingReboot&#39;}" />
+	<Detect Id="{1855708F-C896-D587-1ED666D6DE823EBB}" ContentValue="{$_.Name -like &#39;RebootApplication&#39;}" />
+	<Detect Id="{98025002-0F80-7F38-64F18A6F183A0ABE}" ContentValue="{$_.Name -like &#39;RefreshComplianceState&#39;}" />
+	<Detect Id="{3136C132-A32B-BE77-05B0BF365ECF7545}" ContentValue="{$_.Name -like &#39;SQL&#39;}" />
+	<Detect Id="{BD96C312-5C9C-7E29-41C9D1BBB2595F7C}" ContentValue="{$_.Name -like &#39;SiteCode&#39;}" />
+	<Detect Id="{DEAF6E97-0CBB-0679-A28C8CD15B6FAA1E}" ContentValue="{$_.Name -like &#39;SoftwareMetering&#39;}" />
+	<Detect Id="{1AE07FE3-3CC0-A010-E89D616F3FFF2D4E}" ContentValue="{$_.Name -like &#39;Updates&#39;}" />
+	<Detect Id="{69E249A9-9158-F470-AC2E7BF7B3532773}" ContentValue="{$_.Name -like &#39;Version&#39;}" />
+	<Detect Id="{ED754978-D8D6-1B1C-7200BFA3B960BE94}" ContentValue="{$_.PolicySource -eq &#34;CcmTaskSequence&#34;}" />
+	<Detect Id="{F33E9EA0-9B7F-29CC-24F3960B272EAB55}" ContentValue="{$_.Status -like &#34;Up&#34;}" />
+	<Detect Id="{5C9F016A-1EDC-75F8-6A16F84F5FC9AADD}" ContentValue="{$_.Title}" />
+	<Detect Id="{533B4339-3B4B-002A-470D00A69D6CAE0F}" ContentValue="{($_.ID -ge ???? -and $_.ID -le ????) -or ($_.ID -ge ???? -and $_.ID -le ????) -or ($_.ID -eq ????)}" />
+	<Detect Id="{22A8976B-1AB0-495F-DFA36617373D620B}" ContentValue="{Test-Path -Path $_ -PathType Leaf}" />
+	<Detect Id="{0C593A34-2214-0070-AB458B2F23590321}" ContentValue="{[DateTime]::Parse($_.psbase.properties[&#34;installedon&#34;].value,$([System.Globalization.CultureInfo]::GetCultureInfo(&#34;en-US&#34;)))}" />
+	<Detect Id="{71B072B3-411A-015E-ECB9135C3B3F3AB7}" ContentValue="{?&#10;                    ($_.ClientApplicationID -eq &#39;UpdateOrchestrator&#39; -or $_.ClientApplicationID -eq &#39;ccmexec&#39;) -and ($_.Title -notmatch &#34;Definition Update&#34;)?&#10;                }" />
+<!-- Part 0001 END -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0002 START 2020-11-30T19:12:00.000Z-1606763534 -->
+	<Detect Id="{38A5CD99-EC14-EF18-B8EB164C9C3A6181}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { Microsoft.PowerShell.Core\\Set-StrictMode -Off } catch { }?&#10;?&#10;$script:MyModule = $MyInvocation.MyCommand.ScriptBlock.Module?&#10;?&#10;$script:ClassName = &#39;ROOT/*" />
+	<Detect Id="{E436F7AE-2081-3264-BF59CC887583F666}" ContentValue="??&#10;# module manifest for module &#39;printmanagement*" />
+	<Detect Id="{E2B03C90-A1CF-E5FC-E440DEFD3E90935E}" ContentValue="?initialize parameters?&#10;$rebootrequired = 0?&#10;$scriptdate = &#39;&#39;?&#10;$updatesource*" />
+	<Detect Id="{2B52E797-E97F-57D3-1C05F290A7226DC7}" ContentValue="@{?&#10;    GUID = &#34;????????-????-????-????-????????????&#34;?&#10;    Author*" />
+<!-- Part 0002 END 2020-11-30T19:12:00.000Z-1606763534 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0003 START 2021-02-08T15:18:00.000Z-1612797539 -->
+	<Detect Id="{CCDBEB1F-89AE-8789-8931729C7B47ECA4}" >
+		<Process CmdLine="*wmplayer.exe*Play*Embedding*" />
+	</Detect>
+<!-- Part 0003 END 2021-02-08T15:18:00.000Z-1612797539 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0004 START 2021-03-16T14:17:00.000Z-1615904255 -->
+	<Detect Id="{362149F3-BA0C-1CCB-617E06CC2FE75495}" ContentValue="*linkid=390785&#39;?&#10;cmdletstoexport=@(&#34;add-content&#34;,?&#10;    &#34;clear-content*" />
+	<Detect Id="{41344DDD-FDF3-0D14-B45AA3DFCE951CB4}" ContentValue="*linkid=517145&#34;)]?&#10;    param(?&#10;        [parameter(mandatory, parametersetname=&#34;path&#34;, position = 0)]?&#10;        [system.string[]]?&#10;*" />
+	<Detect Id="{119EA19C-4F71-3F8F-A41465469B53AD1E}" ContentValue="*&#39;?&#10;CompatiblePSEditions = @(&#39;Desktop&#39;)&#10;}??" />
+	<Detect Id="{B5DF4129-3BD1-07C7-A696523A58BBDAA3}" ContentValue="*Microsoft.PowerShell.Utility.psm1&#34;?&#10;HelpInfoURI = &#39;https://go.microsoft.com/fwlink/?linkid=390787&#39;?&#10;}??" />
+	<Detect Id="{E79D6ECB-4E4D-48B2-58DC247ABA0A4EEC}" ContentValue="*Microsoft.Windows.DeliveryOptimization.AdminCommands&#34;  ?&#10;    CompatiblePSEditions = @(&#39;Desktop&#39;)?&#10;}??" />
+	<Detect Id="{0003ED32-BFBA-3E44-E7644C3319071E84}" ContentValue="*linkid=403112 &#34;?&#10;?&#10;functionstoexport = &#39;get-appvvirtualprocess&#39;, &#39;start-appvvirtualprocess&#39;?&#10;?&#10;}??" />
+	<Detect Id="{B2306B5D-8A49-CD67-F26CAD3022CD8B6B}" ContentValue="*?&#10;ErrorOperatingSystemMountPointNotFound=*" />
+	<Detect Id="{CC0AA5AF-AF90-5A6B-36E1618CBF6A3681}" ContentValue="*&#34;  ?&#10;    compatiblepseditions = @(&#39;core&#39;,&#39;desktop&#39;)?&#10;}??" />
+	<Detect Id="{2866DC2E-04F5-794F-23A2C8FDE5FA121B}" ContentValue="*&#34;  ?&#10;    ModuleToProcess = &#34;Microsoft.Windows.DeliveryOptimization.AdminCommands&#34;  ?&#10;}  " />
+	<Detect Id="{440F3DE4-ED59-1B97-445EE46099DC75AC}" ContentValue="@{?&#10;guid=&#34;????????-*microsoft.powershell.utility.psm1&#34;?&#10;helpinfouri = &#39;http://go.microsoft.com/fwlink/?linkid=390787&#39;?&#10;}??" />
+	<Detect Id="{8C7EC582-C916-F0A0-3D9941C6B4CC3DC5}" ContentValue="var psfns=&#34;http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework&#34;;var pskns*namespacenode=node.selectsinglenode(xpathquery);if(namespacenode){prefix=namespacenode.basename}return prefix}" />
+<!-- Part 0004 END 2021-03-16T14:17:00.000Z-1615904255 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0005 START 2021-03-23T13:26:00.000Z-1616506007 -->
+	<Detect Id="{71E23AA7-EE27-7712-D4AB9F904F2DB96B}" ContentValue="?*" >
+		<Process CmdLine="*clienthealthscripts\config*" />
+	</Detect>
+	<Detect Id="{46F4A501-13A8-84B9-2DEDDD10A2E8B82D}" ContentValue="?*" >
+		<Process CmdLine="*ClientHealthScripts\ConfigMgrClientHealth*" />
+	</Detect>
+	<Detect Id="{F6D665C9-7D91-1E93-7671DB963CBC79ED}" ContentValue="?*" >
+		<Process CmdLine="*{ $res = 1 }; write-host &#39;final result:&#39;,$res;" />
+	</Detect>
+	<Detect Id="{D448B0F3-9241-2588-5EE9B8C0A4CD8F77}" ContentValue="?*" >
+		<Process CmdLine="*hidden &#38; c:\windows\system32\windowspowershell\v1.0\modules\smbshare\disableunusedsmb1.ps1 -scenario *" />
+	</Detect>
+	<Detect Id="{0D5F5AC5-CE67-1A3F-ACF27822DA8AF2C9}" ContentValue="?*" >
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -nologo -noninteractive -noprofile -executionpolicy bypass; get-deliveryoptimizationstatus | where-object {($_.sourceurl -clike &#39;http://localhost*" />
+	</Detect>
+	<Detect Id="{8FAF5396-9EC9-2859-6B2F0000E8571B15}" ContentValue="?*" >
+		<Process CmdLine="C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell.exe -NoLogo -Noninteractive -NoProfile  -ExecutionPolicy AllSigned &#38; &#39;C:\Windows\CCM\SystemTemp\????????-????-????-????-????????????.ps1&#39;*" />
+	</Detect>
+	<Detect Id="{00FF8CF8-0C4E-E53E-19AB377ED59B1376}" ContentValue="?*" >
+		<Process CmdLine="C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell.exe -NoLogo -Noninteractive -NoProfile  -ExecutionPolicy bypass &#38; &#39;C:\Windows\CCM\SystemTemp\????????-????-????-????-????????????.ps1&#39;*" />
+	</Detect>
+	<Detect Id="{1F6AEE2A-91F7-3C71-829478F83E7DC296}" ContentValue="({&#34;subfeature&#34;:[{&#34;parent&#34;:&#34;psk:pagescaling&#34;,&#34;subfeature&#34;:&#34;ns0000:pagescaleoffsetalignment*ns0000:documentprintsheetnumberfontstyle&#34;}]})" />
+	<Detect Id="{2BC266B3-5983-4B81-78934B9961074493}" ContentValue="({&#34;feature&#34;:[{&#34;name&#34;:&#34;ns0000:pageposterprintrotatepaper&#34;,&#34;displayname&#34;:&#34;rotate sheets 90*ns0000:longtime&#34;,&#34;displayname&#34;:&#34;long time&#34;}]}]})" />
+	<Detect Id="{EBB2A90E-717A-165F-8D3EC456FEE3E9CD}" ContentValue="? localized&#9;*folder.?&#10;usertshistorysize=disk space?&#10;admintshistorysize=disk space?&#10;###psloc?&#10;&#39;@??" />
+<!-- Part 0005 END 2021-03-23T13:26:00.000Z-1616506007 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0006 START 2021-03-19T10:23:00.000Z-1616149431 -->
+	<Detect Id="{AE44681D-594B-308E-5FD5FF3CB8EB3288}" ContentValue="function anonymous() {&#10;return {&#34;psk:pageorientation&#34;:&#34;1&#34;,&#34;psk:pagemediasize*ns0000:jobglosscontrollevel&#34;:&#34;2&#34;}&#10;}" />
+	<Detect Id="{2EE7B7C5-8F3F-8657-0666DB86094D3B01}" ContentValue="function anonymous() {&#10;return [{&#34;tag&#34;:&#34;psf:parameterdef&#34;,&#34;attribute&#34;:&#34;ns0000:jobextrauisettings&#34;,&#34;children&#34;:{&#34;datatype*" />
+	<Detect Id="{38E95372-E110-C802-D8E7100CAEB0023C}" ContentValue="g_fstreaming" />
+	<Detect Id="{08F5E8E4-CAA9-04C6-4B7C7B497F5250B4}" ContentValue="@{?&#10;guid=&#34;????????-????-????-????-????????????&#34;?&#10;author=&#34;microsoft corporation&#34;?&#10;companyname=&#34;microsoft*helpinfouri = &#39;https://go.microsoft.com/fwlink/?linkid=??????&#39;?&#10;}??" />
+<!-- Part 0006 END 2021-03-19T10:23:00.000Z-1616149431 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0007 START 2021-03-25T20:16:00.000Z-1616703378 -->
+	<Detect Id="{493B53C4-1A1F-B2E8-CBB51E86A57AE567}" ContentValue="? Localized*BitLockerStrings.psd1?&#10;ConvertFrom-StringData -stringdata @&#39; ?&#10;###PSLOC*Active Directory. The operation was not attempted.?&#10;&#39;@??" />
+	<Detect Id="{A1774C93-B7D8-72F7-E36663C448311186}" ContentValue="*&#39;)?&#10;    CompatiblePSEditions = @(&#39;Desktop&#39;,&#39;Core&#39;)?&#10;}??" />
+	<Detect Id="{CEB415E3-07FA-1BE9-89AFC5D10EB8094E}" ContentValue="*LinkId=??????&#34;?&#10;CompatiblePSEditions = @(&#34;Desktop&#34;, &#34;Core&#34;)?&#10;}??" />
+	<Detect Id="{2DECE7B7-BCE9-63F8-6AAD69867AF13618}" ContentValue="*LinkID=??????&#34;?&#10;CompatiblePSEditions=@(&#34;Desktop&#34;)?&#10;}??" />
+	<Detect Id="{DAE7C696-CC06-405E-8CE408B23D14E4C3}" ContentValue="*LinkId=*&#34;?&#10;CompatiblePSEditions=@(&#34;Core&#34;,&#34;Desktop&#34;)?&#10;}??" />
+	<Detect Id="{ACCBCB38-B558-BEF7-91FB9BD2595DABA4}" ContentValue="*LinkId=*&#34;?&#10;CompatiblePSEditions = @(&#39;Desktop&#39;,&#39;Core&#39;)?&#10;}??" />
+	<Detect Id="{66746457-8893-2CCA-4E19C744F8904CE4}" ContentValue="*linkid=390811*Switch-Certificate&#39;, &#39;Test-Certificate&#39;)?&#10;}??" />
+	<Detect Id="{2B9760F3-852C-4E3C-2F49303A07FD1E45}" ContentValue="*linkid=390755*BitLockerKeyProtector&#39;, &#39;Add-BitLockerKeyProtector&#39;)?&#10;}?&#10;??" />
+	<Detect Id="{519BC425-5B5C-8FF5-3495027B8367050F}" ContentValue="*LinkId=403112*AppvVirtualProcess&#39;, &#39;Start-AppvVirtualProcess&#39;?&#10;?&#10;}??" />
+	<Detect Id="{DB81886C-CBD1-4060-FBF4720045B7DBA5}" ContentValue="*LinkId=*&#39;?&#10;CompatiblePSEditions = @(&#39;Desktop&#39;, &#39;Core&#39;)?&#10;}??" />
+	<Detect Id="{7971CFED-C93E-9A85-32AFE9E4E7AA3D2A}" ContentValue="*linkid=390794*WUScan&#39;?&#10;        )?&#10;    CompatiblePSEditions = @(&#39;Desktop&#39;,&#39;Core&#39;)?&#10;}??" />
+<!-- Part 0006 END 2021-03-25T20:16:00.000Z-1616703378 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0007 START 2021-03-30T16:26:00.000Z-1617121577 -->
+	<Detect Id="{DD8636B2-034C-0D9B-6084EC4A8F716EC5}" ContentValue="function Get-FileHash?&#10;{?&#10;    [CmdletBinding(DefaultParameterSetName*$systemAcl)?&#10;            RawDescriptor = $rawSecurityDescriptor?&#10;        }?&#10;    }?&#10;}??" />
+<!-- Part 0007 END 2021-03-30T16:26:00.000Z-1617121577 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0008 Start 2021-04-13T14:28:00.000Z-1618324133 -->
+	<Detect Id="{0FF00EEE-07A8-FCDD-43048AC82089F21A}" ContentValue="@{?&#10;guid=&#34;{43c15630*sync-adobject&#34;,&#10;    &#34;test-adserviceaccount&#34;,&#10;    &#34;uninstall-adserviceaccount&#34;,&#10;    &#34;unlock-adaccount&#34;?&#10;}??" >
+		<Process CmdLine="powershell  -file c:\zabbix-agent\scripts\ad replication.ps1 *" />
+	</Detect>
+	<Detect Id="{03ED7F79-E433-B982-6B659E84DFF15BFE}" ContentValue="param ([parameter(position=0, mandatory=$false)][string]$action,&#10;       [*&#10;&#9;if ($fail -eq $null) {&#34;-1&#34;} else {$fail}&#10;}&#10;default {&#34;script error&#34;}&#10;}" >
+		<Process CmdLine="powershell  -file c:\zabbix-agent\scripts\ad replication.ps1 *" />
+	</Detect>
+<!-- Part 0008 End 2021-04-13T14:28:00.000Z-1618324133 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0009 Start 2021-04-14T16:59:00.000Z-1618419569 -->
+	<Detect Id="{A3887E30-805A-CB2F-AF4B6072EA5D5714}" ContentValue="iswbem*&#34;, &#34;unsupported parameter type 00000000&#34;);??" >
+		<Process CmdLine="cscript c:\program files (x86)\mikado\macmon-agent\service\\agent.vbs" />
+	</Detect>
+<!-- Part 0009 End 2021-04-14T16:59:00.000Z-1618419569 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0010 Start 2021-04-28T21:55:00.000Z-1619646938 -->
+	<Detect Id="{9B95EAAE-C2FF-32D7-9506BB5937CC6E69}" ContentValue="@{??GUID = &#34;*ModuleToProcess = &#34;Microsoft.Uev.Commands.dll*go.microsoft.com/fwlink/?LinkId=826061&#34;??}??" />
+<!-- Part 0010 End 2021-04-28T21:55:00.000Z-1619646938 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0011 Start 2021-04-30T22:44:00.000Z-1619822642 -->
+	<Detect Id="{ABBDB863-A717-1666-C6131BD2336309F1}" ContentValue="$_status = @();?&#10;          foreach ( $status in $this.psbase.c*known&#34; }?&#10;            }?&#10;          }?&#10;          $_status;" />
+	<Detect Id="{D52C1A34-FBD6-D243-188B2A88B7B13D28}" ContentValue="$erroractionpreference = &#34;silentlycontinue&#34;?&#10;$d4 = get-date*7gsz23e0mfppi5om9wepngulddn0=?&#10;# sig # end signature block??" />
+	<Detect Id="{0234A3E7-AAEB-AE8D-B35EF79B16751C2E}" ContentValue="$hostname = $env:computername?&#10;$mailmsg = &#34;&#34;?&#10;$mailfrom = *name&#34; -smtpserver $mailsmtp -bodyashtml?&#10;?&#10;stop-transcript" />
+	<Detect Id="{B90126EF-7190-B2DC-2536B1A703181C92}" ContentValue="$logdate = ((get-date).adddays(-1)).tostring(&#34;yyyymmdd&#34;)?&#10;$l*m&#34;)?&#10;#$c|out-file &#34;c:\logs\test-time.txt&#34; -append?&#10;exit" />
+	<Detect Id="{3C277381-5A4A-3F0D-7C72B40259608F81}" ContentValue="$upate_path            = &#39;\\msk.rian\applications\installfla*iso $normal?&#10;?&#10;get-computers-error -computers_error $problem" />
+	<Detect Id="{98932E7B-82EF-20BB-4A85EFFB7D4F21C0}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu* = @()?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?}??" />
+	<Detect Id="{AD84E568-58C4-CBA4-2C830C3ED71E7A64}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu* @()?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}??" />
+	<Detect Id="{ACA07777-4814-1172-61AEE72E70109428}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu*uoperations.psm1?&#10;        &#39;start-wuscan&#39;?&#10;        )?&#10;}??" />
+	<Detect Id="{96BA8A93-E804-42A9-A2A46513C50A70A0}" ContentValue="&#60;#?&#10;copyright (c) microsoft. all rights reserved.?&#10;#&#62;?&#10;*&#39;?&#10;microsoft.powershell.core\export-modulemember -alias *??" />
+	<Detect Id="{178D7111-5569-89E6-E3A0CA92D9F395D4}" ContentValue="?  ?&#10;# module manifest for module &#39;microsoft.azure.commands.an*ashtable?&#10;?&#10;} # end of privatedata hashtable  ?&#10;?&#10;} ??" />
+	<Detect Id="{60044C90-EC96-005D-B6232DA2B9180DF0}" ContentValue="? .link?&#10;# https://go.microsoft.com/fwlink/?linkid=225298?&#10;#*ppetpath)?&#10;    {?&#10;        dir $snippetpath?&#10;    }?&#10;}??" />
+	<Detect Id="{610EA4EF-55E7-C320-D4C10B0FA246CB71}" ContentValue="? bios password remediation template&#10;\nfunction exceptionhandle*   exitfailure 1&#10;    }&#10;}&#10;catch {&#10;    exceptionhandler&#10;}&#10;\n" />
+	<Detect Id="{BE15667C-72DC-469B-2B76173C8BFFA82A}" ContentValue="? copyright (c) 2017 microsoft corporation. all rights reserved.*itsmb1access -value 0 -propertytype dword -force | out-null&#10;}&#10;" />
+	<Detect Id="{5F4E581C-38E9-A453-0334BE050633F27D}" ContentValue="? copyright ?2008, microsoft corporation. all rights reserved.*case we are re-running?&#10;$global:validateresult = $null?&#10;??" />
+	<Detect Id="{81647623-1102-7FB4-F4B711185A85133A}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*fv_filtered&#34; 1?&#10;defineconstant $fv_missing &#34;fv_missing&#34; -1" />
+	<Detect Id="{13BEC223-3BF9-CDB9-9374A28125560E79}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*case we are re-running?&#10;$global:validateresult = $null?&#10;??" />
+	<Detect Id="{EFDCAD25-2C4F-FF42-AB80387DFA4F1807}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*instanceid $instanceid -id $rootcauseid -detected $true?&#10;}??" />
+	<Detect Id="{C54ECA5B-B4EB-DB14-1DF99136E0D5EDD3}" ContentValue="? copyright © 2015, microsoft corporation. all rights reserved.*er @{&#39;deviceid&#39; = &#39;scanonly&#39;}?&#10;}?&#10;?&#10;return $rcdetected??" />
+	<Detect Id="{6780D652-CFEA-F01D-9069B8FAFD009180}" ContentValue="? localized&#9;12/07/2019 11:50 am (gmt)&#9;303:6.40.20520 &#9;archive*dverbosemessage=Подготовка к расширению...?&#10;###psloc?&#10;&#39;@??" />
+	<Detect Id="{EBB9323B-FD77-9D83-BC20A4D32F32410E}" ContentValue="?## Программа для быстрого запуска скриптов и утилит ###?&#10;?&#10;*artscript -script $script?&#10;#})?&#10;?&#10;$start_form.showdialog()" />
+	<Detect Id="{DB14018E-D269-A26F-4523FB1C2FC2474D}" ContentValue="?###############################################################*xml&#39;)?&#10;    compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}??" />
+	<Detect Id="{AFF1E009-790F-D90D-6BF2F169E1FB17A1}" ContentValue="??&#10;# module manifest for module &#39;clusterawareupdating&#39;?&#10;#*https://go.microsoft.com/fwlink/?linkid=390759&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{3BC75EFC-A8C6-EBBB-2D473F37B87EE635}" ContentValue="??&#10;# module manifest for module &#39;dfsr&#39;?&#10;#?&#10;?&#10;@{?&#10;?&#10;#*&#39;http://go.microsoft.com/fwlink/?linkid=390764&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{3BE896B2-C214-0100-731DF1766CD40FAB}" ContentValue="??&#10;# module manifest for module &#39;pswindowsupdate&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{1F53E310-B1D0-636D-4BC8B65F9DADCC53}" ContentValue="??&#10;# module manifest for module &#39;rdmgmt&#39;?&#10;#?&#10;?&#10;@{?&#10;*dprefix = &#39;rd&#39;?&#10;?&#10;compatiblepseditions = @(&#39;desktop&#39;)?}??" />
+	<Detect Id="{95B9965C-2678-EB75-6AE7710AA2E11993}" ContentValue="?inirialize parameters?&#10;$rebootrequired = 0?&#10;$scriptdate = &#39;*ogwrite &#34;$(get-date -uformat &#34;%d.%m.%y %h:%m:%s&#34;) finished.&#34;" />
+	<Detect Id="{8D3785E9-983E-DB53-FACB8011992C8AFF}" ContentValue="?initialize parameters?&#10;$rebootrequired = 0?&#10;$scriptdate = &#39;*ogwrite &#34;$(get-date -uformat &#34;%d.%m.%y %h:%m:%s&#34;) finished.&#34;" />
+	<Detect Id="{A1C09C95-3AFD-153C-72444388B6E2A229}" ContentValue="?script de d?tection de l&#39;?tat de l&#39;antivirus?&#10;?&#10;#il v?rifie*mformite $versionagent $versionav $statusprotection ?&#10;?&#10;??" />
+	<Detect Id="{9A3FA1FA-BBD3-4EEA-A1A19728A3614F90}" ContentValue="@{&#10;guid=&#34;{43c15630-959c-49e4-a977-758c5cc93408}&#34;&#10;author=&#34;mi*  &#34;uninstall-adserviceaccount&#34;,&#10;    &#34;unlock-adaccount&#34;&#10;}&#10;" />
+	<Detect Id="{04DDBC37-D33C-C273-C4A2F0ECD5B9FFAB}" ContentValue="@{?&#10;    guid = &#39;41486f7d-842f-40f1-ace4-8405f9c2ed9b&#39;?&#10;    a*32&#34;?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}??" />
+	<Detect Id="{48DBF89E-E0F5-4B28-DC19071FD6F77CC3}" ContentValue="@{?&#10;    guid = &#39;69775f93-9317-4234-a558-13b6655fc41b&#39;?&#10;    a*server&#39;,?&#10;&#9;&#39;remove-ipamutilizationdata&#39;?&#10;        )?&#10;}??" />
+	<Detect Id="{ED8542A5-202C-62AA-0E621D19774AD18E}" ContentValue="@{?&#10;    guid = &#39;c46be3dc-30a9-452f-a5fd-4bf9ca87a854&#39;?&#10;    a*sbvc6/rl99g31guj87c?&#10;# dcc=?&#10;# sig # end signature block??" />
+	<Detect Id="{523C64B9-017C-E53F-99BD5A6665380B9A}" ContentValue="@{?&#10;    guid=&#34;{cc3e946b-9141-48c2-95d8-d9e56594416a}&#34;?&#10;   * $env:windir &#34;cluster\failoverclusters.wizards.dll&#34;)?&#10;}??" />
+	<Detect Id="{5A40CB0B-88D6-A3ED-C88ECDE903192797}" ContentValue="@{?&#10;?&#10;# script module or binary module file associated with *port-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}??" />
+	<Detect Id="{E9367DD8-1897-0178-B55F3A68E966D08D}" ContentValue="@{?&#10;?&#10;#?&#10;# module manifest for module &#39;softwareinventorylo*0830&#39;?&#10;?&#10;compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}??" />
+	<Detect Id="{04251CAB-FB0E-68A1-A6B012972319DB59}" ContentValue="@{?&#10;guid=&#34;????????-????-????-????-????????????&#34;?&#10;author=&#34;*?&#10;# sig # end signature block??" />
+	<Detect Id="{0847E87B-C47F-FE98-FF7504ACBB5AD90A}" ContentValue="@{?&#10;guid=&#34;????????-????-????-????-????????????&#34;?&#10;author=&#34;*fouri = &#39;http://go.microsoft.com/fwlink/?linkid=??????&#39;?&#10;}??" />
+	<Detect Id="{F18A1742-3C54-12F4-C677E0DD1EA84F5E}" ContentValue="@{?&#10;guid=&#34;{43c15630-959c-49e4-a977-758c5cc93408}&#34;?&#10;author=*uninstall-adserviceaccount&#34;,?    &#34;unlock-adaccount&#34;?&#10;}??" />
+	<Detect Id="{14A3EE01-BCC0-FB29-24B9A8298330C07C}" ContentValue="@{?&#10;guid=&#34;{561544e6-3a83-4d24-b140-78ad771eaf10}&#34;?&#10;author=*ptout&#34;?&#10;compatiblepseditions=@(&#34;core&#34;,&#34;desktop&#34;)?&#10;}??" />
+	<Detect Id="{C12FD4E2-BC46-D29D-5B97B3EFCCEDBD35}" ContentValue="@{?&#10;guid=&#34;{a5bd98e1-e44c-44fb-b88f-5af9bde66fdf}&#34;?&#10;author=*=390823&#34;?&#10;compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}??" />
+	<Detect Id="{71824C9F-D819-EE8E-2F38BCE0337D1192}" ContentValue="@{?&#10;moduleversion = &#39;1.0.0.0&#39;?&#10;guid = &#39;0ff02bb8-300a-4262-ac*itlockerkeyprotector&#39;, &#39;add-bitlockerkeyprotector&#39;)?&#10;}?&#10;??" />
+	<Detect Id="{A84EA8CF-C186-1938-0EF282824A4D0480}" ContentValue="??        @{?&#10;            guid = &#39;46f598e5-9907-42b2-afbb-68*            compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}??" />
+	<Detect Id="{C6F5AA65-B385-404D-FB377424E0D9D206}" ContentValue="??        @{?&#10;            guid = &#39;46f598e5-9907-42b2-afbb-68*get-dnsservervirtualizationinstance&#34; )?&#10;?&#10;        }?&#10;??" />
+	<Detect Id="{8ECF0CFC-2DC6-6B7D-978B5273A88F86C7}" ContentValue="??#?&#10;# module manifest for module &#39;sqlps&#39;?&#10;#?&#10;# generate*?&#10;# sig # end signature block??" />
+	<Detect Id="{C7D2ADA2-E0B6-BF30-AA5F50B6638B78BF}" ContentValue="??#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*&#39; -alias &#39;?&#39;?&#10;        ??" />
+	<Detect Id="{668DDFB4-965A-C385-9A74650F000D8CBF}" ContentValue="??#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor* -function &#39;remove-smbglobalmapping&#39; -alias &#39;?&#39;?&#10;        ??" />
+	<Detect Id="{18CCE497-4AAE-8CAB-F968F562649B170E}" ContentValue="???&#10;#?&#10;# module manifest for module &#39;sql as cmdlets&#39;?&#10;#*?&#10;# sig # end signature block??" />
+	<Detect Id="{A4146EA9-4A81-7581-09C618FED982CC19}" ContentValue="??&#9;\t@{?&#10;?&#10;            guid = &#39;90eaa9df-133a-450c-8728-91*al&#34; , &#34;remove-dhcpserverdnscredential&#34; )?&#10;?&#10;&#9;\t}?&#10;??" />
+	<Detect Id="{5545A6F0-7024-64AE-D56EAF59FAE91FB8}" ContentValue="?&#10;                                    [string]::format(&#34;{0,10*stwritetime.tostring(&#34;t&#34;))?&#10;                                " />
+	<Detect Id="{150B9CBA-7252-151F-5B3BC295A524DEC1}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*etization_defaultvalue; isvaluepresent = $__cmdletization_defaul" />
+	<Detect Id="{519F1A64-1FD0-9F62-596AAB347DD73BD1}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*{?&#10;            $__cmdletization_exceptionhasbeenthrown = $true" />
+	<Detect Id="{C519B147-6CF4-D198-8E2C88CB0DF0C2BE}" ContentValue="?&#10;&#60;#?&#10; # implicit remoting module?&#10; # generated on 30/04/2*@{?&#10;        implicitremoting = $true?&#10;    }?&#10;}?&#10;        " />
+	<Detect Id="{A4FBC5A9-D96C-6430-AEF4A4478FA9164F}" ContentValue="__systemclass.getobject();&#10;ccm_clientinternalutilities.getobjec*ine(&#34;&#34;c:\windows\ccmcache\1\setexecutionpolicy.bat&#34;&#34;);&#10;" />
+	<Detect Id="{53F645DB-77D4-A018-CDB245BE545F2622}" ContentValue="__systemclass.getobject();&#10;ccm_recentlyusedapps.explorerfilenam*ommandline(&#34;&#34;\\svocm01\sccmdistrib$\cmd\rwraw.bat&#34;&#34;);&#10;" />
+	<Detect Id="{B5F9D37F-340C-794E-A760B95CBBC488E1}" ContentValue="_recordset.fields();?&#10;fields.append(&#34;mbinary&#34;, &#34;205&#34;, &#34;*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{52E6EF8A-E18E-0352-6C0952252697E292}" ContentValue="_recordset.update();?&#10;_recordset.fields(&#34;mbinary&#34;);?&#10;field*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{15892D42-2674-AAF9-77E46AEFCC7AA145}" ContentValue="_stream.close();?&#10;logwriter.writedebug(&#34;========== createnewf*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{47C3DB15-902D-5139-BBD304C1E288E78B}" ContentValue="_stream.savetofile(&#34;c:\users\*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{001D57F0-C277-EC81-63A31E048072CBE0}" ContentValue="ccm_client*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{378E35AE-10CC-5A57-9C2C2943B249B132}" ContentValue="ccm_networkaccessaccount.createinstanceenum();&#10;ccm_clientagentc*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{CAE6D9C4-870D-3396-087056D794D2FE6A}" ContentValue="ccm_service_endpointconfiguration.name=&#34;superpeercontroller&#34;.g*ine(&#34;&#34;c:\windows\ccmcache\1\setexecutionpolicy.bat&#34;&#34;);&#10;" />
+	<Detect Id="{200662D0-5710-601F-7F095D5F47822679}" ContentValue="ccm_softwarecatalogutilities.execmethodasync(getdeviceid);*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{E0167FCB-2CA6-697E-380CE081253F5921}" ContentValue="compress-archive -force -path &#39;c:\programdata\asus\asus syste*ontrol interface\log\asus_linkremote_????_??_??_?????.etl.zip&#39;" />
+	<Detect Id="{A217D0C7-7BB6-9640-7F074BC7E3D154E5}" ContentValue="copy-item -path &#39;c:\windows\system32\config\systemprofile\a*__compliance\opswat_compliancedoc_????????????????????????.xml&#39;" />
+	<Detect Id="{188BE709-2996-205C-07F1F3600759A110}" ContentValue="data localizeddata?&#10;{?&#10;    # culture=&#34;en-us&#34;?&#10;    conver*chivefilestream = new-object -typename system.io.filestream -arg" />
+	<Detect Id="{2A351826-DC77-042B-E84F633CE10C1825}" ContentValue="get-clusterlog -destination &#39;c:\program files\microsoft sql se*p bootstrap\log\20210430_030054&#39; -node &#39;rctcrmbd1&#39; -timespan 1" />
+	<Detect Id="{188763CA-06F8-1238-E31AC918F9B11A2F}" ContentValue="get-mailboxstatistics -identity &#39;/o=*ctdate, disconnectreason, lastlogontime, lastloggedonuseraccount" />
+	<Detect Id="{2030DEEE-40F0-758F-ED41978BFE07A3E6}" ContentValue="get-serverhealth -healthset &#39;*esultid,healthgroupname,eventviewer_error,eventviewer_exception}" />
+	<Detect Id="{3B1D19E9-EB0A-F725-6DB85CD9C907B206}" ContentValue="hpqbintm.instancename=&#34;acpi\\*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{7BD221A1-5A71-1402-3416F72E505E8D90}" ContentValue="idbgobj4.dumppath(&#34;c:\program files\debugdiag\logs\crash ru*&#34;);?&#10;idbgobj4.execute(&#34;.effmach&#34;);??" />
+	<Detect Id="{6068976C-FF2E-2F58-B30368CE5D2C3938}" ContentValue="if ([environment]::osversion.version.build -ge 7000)?&#10;        *?&#10;          {?&#10;          $date?&#10;          }?&#10;          }" />
+	<Detect Id="{FCD783C8-5B98-0299-E8F46A074FC857F0}" ContentValue="ifilesystem3.createtextfile(&#34;c:\users*outlook&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{3A4DD8ED-2152-72B5-3FBC8A723FDAB73B}" ContentValue="ifilesystem3.fileexists(&#34;c:\users* type 00000000&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{6F997B57-A929-BB4F-D38558EC7A32C161}" ContentValue="ifilesystem3.folderexists(&#34;c:\users* type 00000000&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{DB178851-AEB4-9846-33B9CBDBE2B6A56A}" ContentValue="ifilesystem3.getparentfoldername(&#34;\\msk.*fault));distinguishedname;subtree&#34;);?&#10;_command.execute();??" />
+	<Detect Id="{E6D62982-8551-F412-73F803323874A6DD}" ContentValue="ihost.createobject(&#34;wscript.shell&#34;);?&#10;ihost.createobject(&#34;w*anch admins&#34;);?&#10;iwshshell3.run(&#34;l:\login\bimc.bat&#34;);??" />
+	<Detect Id="{9BBD9025-897C-304A-7474330088514B82}" ContentValue="ihost.createobject(&#34;wscript.shell&#34;);?&#10;ihost.createobject(&#34;w*shell3.run(&#34;%systemroot%\system32\gpupdate.exe /force&#34;);??" />
+	<Detect Id="{9155456B-298D-E0F8-EE4CE3BF76C1B0B2}" ContentValue="ihost.scriptfullname();?&#10;ifilesystem3.getparentfoldername(&#34;\*fault));distinguishedname;subtree&#34;);?&#10;_command.execute();??" />
+	<Detect Id="{93E9F377-AA18-C748-98EA43B587AF0CD7}" ContentValue="ihost.scriptname();?&#10;ihost.scriptfullname();?&#10;ihost.argument*вна (oveselova)&#39;,&#39;office&#39;,&#39;ovesel&#34;);?&#10;_command.execute();??" />
+	<Detect Id="{50FC9AC7-369F-7A43-5F2A4C5F68DF981B}" ContentValue="ihost.stdout();?&#10;iwshnetwork2.username();?&#10;iwshnetwork2.comp*fault));distinguishedname;subtree&#34;);?&#10;_command.execute();??" />
+	<Detect Id="{EA97C352-2655-3623-0404A1EE09EA509A}" ContentValue="itextstream.close();?&#10;logwriter.writedebug(&#34;========== create*&#34;, &#34;unsupported parameter type 00000001&#34;);??" />
+	<Detect Id="{635F0C22-ED4E-E562-00E63E27539073BC}" ContentValue="itextstream.readall();?&#10;itextstream.close();?&#10;ihost.stdout()*fault));distinguishedname;subtree&#34;);?&#10;_command.execute();??" />
+	<Detect Id="{BC465CA7-D145-0F15-0DCA8D7D82C90EC1}" ContentValue="itextstream.write(&#34;{\rtf1\ansi\ansicpg1251\deff0\deflang10*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{7492690F-D352-5A85-75F44D1689353A18}" ContentValue="iwshshell3.exec(&#34;&#34;c:\windows\microsoft.net\framework\v4.0.*um\dpadviewer\npocomputer.dpad.preview.dll&#34; /codebase&#34;);??" />
+	<Detect Id="{FD9BC77B-9E23-27AB-55BE978CBD102FDE}" ContentValue="logwriter.islogdebug();?&#10;logwriter.isoutfile();?&#10;logwriter.l*ssaging subsyst&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{77025FF5-7D9A-607A-70A21C1BF748F498}" ContentValue="logwriter.isoutfile();?&#10;logwriter.islogdebug();?&#10;logwriter.i*ssaging subsyst&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{00E33167-97DB-2073-72374FA518D9D420}" ContentValue="logwriter.isoutfile();?&#10;logwriter.logfilename();?&#10;logwriter.*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{CE648C96-146B-334E-058E76ABAD221EE9}" ContentValue="logwriter.isoutscreen();?&#10;logwriter.logfilename();?&#10;logwrite*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{5932092A-F084-5076-D85A1897E2A2B8C5}" ContentValue="logwriter.logfilename();?&#10;logwriter.logfilename();?&#10;signatur*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{189C92DB-6E4C-24E0-F5FA010813007271}" ContentValue="logwriter.write();?&#10;logwriter.write();?&#10;signatureuser.fullna*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{F51346FF-49BA-7445-98DB8E11851D90EF}" ContentValue="logwriter.write();?&#10;signatureuser.fullname();?&#10;signatureuser*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{5DF3AB57-E3D3-F02F-1A397BA53F6D0A7C}" ContentValue="logwriter.writedebug();?&#10;logwriter.writedebug();?&#10;logwriter.*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{E9B57E43-9DD8-6605-531FDA664ACAC83E}" ContentValue="logwriter.writedebug();?&#10;logwriter.writedebug(&#34;========== out*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{B99CC43D-7176-DE91-F2FD505329EFF70E}" ContentValue="logwriter.writedebug();?&#10;signaturesettings.email();?&#10;logwrit*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{D0324CE5-F68C-C586-0A397DBBD7C27D81}" ContentValue="logwriter.writedebug(&#34;  bowerwrite [true]&#34;);?&#10;logwriter.writ*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{1F5D505B-1D9C-8095-DBB0843BCDF8DA63}" ContentValue="logwriter.writedebug(&#34;  bunicode [false]&#34;);?&#10;ifilesystem3.fo*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{2473242F-43B4-E630-A375E06AE1D959C3}" ContentValue="logwriter.writedebug(&#34;  strfilename [*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{31039129-0099-0E1E-2D3108F388254396}" ContentValue="logwriter.writedebug(&#34;  strfoldername [c:\users\*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{62FEA1F6-8BFE-D087-3F3EECE54D27AF97}" ContentValue="logwriter.writedebug(&#34;  strfullfilename [c:\users\*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{1217431E-15AB-C9E6-C3047B0EB6EEDA27}" ContentValue="logwriter.writedebug(&#34;========== createnewfileexunicode&#34;);?&#10;* type 00000000&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{06866B1E-226D-2D5C-10D72DF98A6A42C4}" ContentValue="logwriter.writedebug(&#34;========== outtortf (done)&#34;);?&#10;signatu*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{AFFAC86C-16F5-044C-92458D5B4A1C1174}" ContentValue="logwriter.writedebug(&#34;========== outtotxt (done)&#34;);?&#10;signatu*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{50DE15DA-D488-8D65-5165658AD4A62E8F}" ContentValue="mdm_configsetting.settingname=&#34;clienthealthstatus&#34;.getobjectas*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{2AF1BE17-D05C-16F6-E6B5F926DCEBCC0E}" ContentValue="me = ($allsame -and ($firstvalue -eq $value))?&#10;            }*ame&#34;,&#34;host&#34;,&#34;uptime_days&#34;?&#10;?&#10;&#34;worst $counttodisplay i" />
+	<Detect Id="{4624C33F-858D-48DA-F3BB66CAA4E6CD0E}" ContentValue="msndis_devicewakeonmagicpacketonly.instancename=&#34;pci\\ven_10e*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{9B5FBA30-0F6F-A28A-18325F74DA8288D0}" ContentValue="param([switch]$saw)?&#10;$scriptver = 1.17?&#10;$osversion = (get-wm*finished.&#34;?&#10;# write-host &#34;finished.&#34; -foregroundcolor green" />
+	<Detect Id="{45D5076C-DD25-3738-08EE5844E245B06F}" ContentValue="set-location sqlserver:?&#10;function sqlserver: { set-location sq*=?&#10;# sig # end signature block??" />
+	<Detect Id="{22AB831E-DA37-C3D6-FC3AD2F76BF19203}" ContentValue="set-variable -scope global -name sqlservermaximumchilditems -val*=?&#10;# sig # end signature block??" />
+	<Detect Id="{DC79AA72-D468-D7B1-A2B993211566DA68}" ContentValue="setpropvalue.deploymentflags(&#34;*ine(&#34;&#34;c:\windows\ccmcache\1\setexecutionpolicy.bat&#34;&#34;);&#10;" />
+	<Detect Id="{49B744EE-F769-8E21-69A462E4296A51E4}" ContentValue="setpropvalue.excludefilelist(&#34;&#34;);&#10;setpropvalue.deploymentflag*ine(&#34;&#34;c:\windows\ccmcache\1\setexecutionpolicy.bat&#34;&#34;);&#10;" />
+	<Detect Id="{813036F0-F129-C09B-4A550B4A7AF8DC24}" ContentValue="setpropvalue.hostinggroup(&#34;defaultnetworkservicehost&#34;);&#10;setpr*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{C3F95A10-BD6A-DBEB-7B1B6455D27CD89D}" ContentValue="setpropvalue.hostingspecification(&#34;*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{478E35B9-8F5A-8B54-84D8F93C54182AC1}" ContentValue="setpropvalue.lastreferenced(&#34;*commandline(&#34;&#34;c:\windows\ccmcache\4\ivanti_del.bat&#34;&#34;);&#10;" />
+	<Detect Id="{7A82A9AA-B1C8-9BE6-9EAE67C7B80B7A8E}" ContentValue="setpropvalue.name(&#34;scopeid_**commandline(&#34;&#34;c:\windows\ccmcache\3\teamviewer.cmd&#34;&#34;);&#10;" />
+	<Detect Id="{A5C614F8-B153-A37B-C31C97EDA7FD0E0D}" ContentValue="setpropvalue.namespace(&#34;root\cimv2&#34;);&#10;setpropvalue.namespace*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{06728FE5-F45F-C1F7-35C4879CCAA12346}" ContentValue="setpropvalue.namespace(&#34;root\cimv2\mdm&#34;);&#10;setpropvalue.user*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{82CD7B16-FA58-B8F1-89E08AF394A1ED1D}" ContentValue="setpropvalue.namespace(&#34;root\microsoft\windows\storage\pt\*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{74FD8279-1302-8CA3-1754BD6EA4F95030}" ContentValue="setpropvalue.operation(&#34;getobject&#34;);&#10;setpropvalue.parameterin*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{004B1F37-E8A9-1611-6F06ED32D405B582}" ContentValue="setpropvalue.originalfilename(&#34;wscript.exe.mui&#34;);&#10;setpropvalu*ommandline(&#34;&#34;\\*\cmd\rwraw.bat&#34;&#34;);&#10;" />
+	<Detect Id="{5A689954-675D-2A9B-3C941BD1D9AE9F9F}" ContentValue="setpropvalue.parameterinfo(&#34;rsop_extensionstatus.extensionguid=*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{22B13592-1215-FE5C-EFF804D465A99F71}" ContentValue="setpropvalue.parameterinfo(&#34;uwf_filter&#34;);&#10;setpropvalue.provid*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{30C2D212-4489-9339-D61936DC5ED3A3F6}" ContentValue="setpropvalue.parameterinfo(&#34;win32_*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{91CFFE3A-1A6F-44A0-EA8E890E99A9DD7A}" ContentValue="setpropvalue.policystate(&#34;active&#34;);&#10;ccm_policy_policy5.policy*ommandline(&#34;&#34;\\*\cmd\rwraw.bat&#34;&#34;);&#10;" />
+	<Detect Id="{BF5A6D5B-0969-5FEB-3D71916FBB1236D5}" ContentValue="setpropvalue.previousinstance(&#34;unsupported parameter type 00000*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{D9E67F5F-BA02-4BA8-64C4A9C7BF16631E}" ContentValue="setpropvalue.productcode(&#34;&#34;);&#10;setpropvalue.additionalproductc*ommandline(&#34;&#34;\\*\cmd\rwraw.bat&#34;&#34;);&#10;" />
+	<Detect Id="{586FD45F-6E02-AE5C-326C3418F0946144}" ContentValue="setpropvalue.provider(&#34;delegatorprovider&#34;);&#10;setpropvalue.host*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{0E1A5F51-7FD7-C2D8-0C3F1C15F0BC3912}" ContentValue="setpropvalue.providername(&#34;cimwin32&#34;);&#10;wmi.execqueryasync(sel*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{4F24EAF5-7017-7A56-D023E50750EBCA88}" ContentValue="setpropvalue.providername(&#34;win32_win32_terminalservice_prov&#34;);*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{BEF461C4-98FF-BBEB-C1533B80BA408C00}" ContentValue="setpropvalue.providername(&#34;winmgmt&#34;);*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{9754EB17-1631-2047-9FDBF792C89A958A}" ContentValue="setpropvalue.provideroperation_validatesubscription(&#34;unsupporte*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{03B9EAEF-3D9C-F8D8-916894C114D0A8C5}" ContentValue="setpropvalue.runinquietmode(&#34;false&#34;);&#10;setpropvalue.mifcheckin*ommandline(&#34;&#34;\\*\cmd\rwraw.bat&#34;&#34;);&#10;" />
+	<Detect Id="{B8657421-786F-C588-621215B7DA4AE117}" ContentValue="setpropvalue.targetinstance(&#34;unsupported parameter type 0000000*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{6B23E925-F092-6538-51C53CE555F91239}" ContentValue="setpropvalue.transactionidentifier(&#34;&#34;);&#10;setpropvalue.namespac*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{E4171AB9-4D2D-6E62-A84843469E92B0FF}" ContentValue="setpropvalue.tsstep(&#34;false&#34;);&#10;setpropvalue.locations(&#34;unsupp*ommandline(&#34;&#34;\\*\cmd\rwraw.bat&#34;&#34;);&#10;" />
+	<Detect Id="{588CDD1D-444C-F451-5037029D059CCAFC}" ContentValue="signaturesettings.email();?&#10;logwriter.writedebug();?&#10;logwrit*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{12BB029A-A96A-DF3C-FE2ADFE6B6C5E26D}" ContentValue="signaturesettings.updatestyle();?&#10;_recordset.fields();?&#10;fiel*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{665EBEB4-6A5F-5127-CB4D9608E35EAF48}" ContentValue="signatureuser.division();?&#10;logwriter.write();?&#10;logwriter.wri*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{DCA56265-71C4-FE56-57B255CF787B7561}" ContentValue="signatureuser.division();?&#10;signatureuser.division();?&#10;logwri*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{A5F11E75-C446-511D-B549B35DA0FF39EA}" ContentValue="signatureuser.fullname();?&#10;signatureuser.fullname();?&#10;signat*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{8A73AC10-3972-9018-7ECB228136FE7F4C}" ContentValue="signatureuser.fullname();?&#10;signatureuser.title();?&#10;signature*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{2C785F46-85F3-908D-8F4506BC4C388083}" ContentValue="signatureuser.samaccountname();?&#10;logwriter.isoutfile();?&#10;log*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{10304DC9-4F86-4383-805479E35850F1A0}" ContentValue="signatureuser.title();?&#10;signatureuser.division();?&#10;signature*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{66DE4DC1-7659-A246-0D4810AFC08DDE83}" ContentValue="signatureuser.title();?&#10;signatureuser.title();?&#10;signatureuse*&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{11D2877D-14A2-90CB-808BC53D35D17990}" ContentValue="umentlist $archivefilestreamargs?&#10;?&#10;        $ziparchiveargs *system.stringcomparison]::ordinalignorecase)?&#10;                " />
+	<Detect Id="{23E075C5-32B6-FD93-CF24425E996FBC8A}" ContentValue="win32_baseservice.name=&#34;lanmanserver&#34;.execmethodasync(stopserv*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{2B512388-13B4-119E-F46188268AD8A8F5}" ContentValue="win32_operatingsystem.createinstanceenum();&#10;wmi.execqueryasync(*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{BF8AAA1A-F988-4D91-A4084F17C5F74462}" ContentValue="win32_process.handle=&#34;10248&#34;.getobjectasync();&#10;setpropvalue.o*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{5B48D9AB-E631-87FF-80A2787C067D277B}" ContentValue="win32_service.name=&#34;lanmanserver&#34;.getobjectasync();&#10;win32_ter*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{8E1290FB-B043-E849-7024A4414AD43090}" ContentValue="win32_systemdriver.name=&#34;lanmanserver&#34;.getobjectasync();&#10;setp*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{1508390F-E154-B9FC-B2222A76091A02FF}" ContentValue="win32_terminalservice.name=&#34;lanmanserver&#34;.getobjectasync();&#10;s*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{1B153A3D-95C2-2BCF-02A3F96F68FFAAB6}" ContentValue="wmi.execqueryasync(select * from ccm_*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{9CF16DAD-6B6D-F365-57CE624B1B96840B}" ContentValue="wmi.execqueryasync(select * from win32_*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{D889AC4E-A948-352F-A83A498FD9408AE9}" ContentValue="wmi.execqueryasync(select __relpath, processid, executablepath f*seservice.name=&#34;lanmanserver&#34;.execmethodasync(startservice);&#10;" />
+	<Detect Id="{2FA9E959-6F84-B12C-41945ACA06890DFB}" ContentValue="{?&#10;    param(?&#10;    ?&#10;    [alias(&#39;ea&#39;)]?&#10;    ${erroractio*elpcategory function?&#10;    # .remotehelprunspace pssession?&#10;}" />
+	<Detect Id="{255F2DCE-7303-ACCA-AE07C40BC92AAF05}" ContentValue="{msiexec /norestart /passive /i &#39;c:\users\*out-null ; &#38;&#39;c:\program files (x86)\nextcloud\nextcloud.exe&#39;}" />
+	<Detect Id="{DDE177FA-3056-5611-1FF347900E5BECA2}" ContentValue="                      -filterxpath $query `?&#10;                 *ormessage $null `?&#10;                                          " />
+	<Detect Id="{60FB6353-7121-24E4-1FEDC96282730872}" ContentValue="        $__cmdletization_exceptionhasbeenthrown = $true?&#10;     *&#10;    [outputtype([microsoft.management.infrastructure.ciminstan" />
+	<Detect Id="{17D4F126-F08F-953E-8458B8DF91EDCF93}" ContentValue=" data _system_translations ?&#10; {?&#10;    convertfrom-stringdata *export-modulemember -function disable-smbdelegation -alias dsmbd" />
+	<Detect Id="{3837A9E9-C57F-FC44-C27C2797B5338E8A}" ContentValue="$hostname = $env:computername?&#10;$mailmsg = &#34;&#34;?&#10;$mailfrom = *al admin group not found!&#34;?&#10;    }?&#10;}?&#10;?&#10;stop-transcript" />
+	<Detect Id="{0BEDE77C-C4C7-BF6E-F526BECE43D1A21B}" ContentValue="$last_min = -10?&#10;$pc_name = @()?&#10;$date_time = @()?&#10;$produc* -notypeinformation -append?&#10;}?&#10;echo $ev.date.count?&#10;exit" />
+	<Detect Id="{C419FA02-5F8E-04AC-6CBFA70FE2CF0671}" ContentValue="$logname = &#34;create_kromh.log&#34;?&#10;?&#10;function create_kromh{* found!&#34;?&#10;        }?&#10;    }?&#10;}?&#10;?&#10;stop-transcript??" />
+	<Detect Id="{548B8F40-D9E1-C60C-3236449B96E3E59D}" ContentValue="$res = 0; if((get-windowsoptionalfeature -online -featurename ii* $path } catch { $res = 1 } }; } write-host &#39;final result:&#39;,$res" />
+	<Detect Id="{6A19CC47-3A6C-B0DA-93087FAB27D4266B}" ContentValue="$username=$env:username?&#10;$domain=$env:userdomain?&#10;$temp=$env*?&#10;# sig # end signature block??" />
+	<Detect Id="{8C414890-33A1-075A-812404A3EE90832B}" ContentValue="&#39; inifile.vbs: a vbscript class for reading from and writing to * save&#10;&#9;\twritefilecontents(filecontents)&#10;&#9;end sub&#10;end class" />
+	<Detect Id="{918EC35F-50CE-7F98-8AB0F99E87DEC79C}" ContentValue="({&#10;features:&#10;[&#10;  {&#10;    name: &#34;ns0000:documentcoloradjust&#34;,*d:integer&#34; },&#10;      { name: &#34;psf:minvalue&#34;, value: &#34;0&#34;, ty" />
+	<Detect Id="{1BD9DF7A-367D-2E23-B8A458ABB18A4567}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu*    )?&#10;    compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}??" />
+	<Detect Id="{AD8CD006-DC0F-3499-F3F2C68DDEBF582C}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu*letstoexport = @()?&#10;    ?&#10;    aliasestoexport = @()?&#10;}??" />
+	<Detect Id="{3FFC525E-8BCF-6284-077B9B75E73DF38D}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*0,0,5,0)?&#10;    $sc.waitforstatus($servicestatus, $timeout)?&#10;}" />
+	<Detect Id="{3CE82AFA-C4CE-D8D9-8CBBE677031F6016}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*parameter @{&#39;unwantedspace&#39;=(format-diskspacemb $totalsize)}??" />
+	<Detect Id="{F9BDB119-D9E8-DE59-964447B0C3034666}" ContentValue="? define function?&#10;function sqlserver: { set-location sqlserve*?&#10;# sig # end signature block??" />
+	<Detect Id="{E6AD6B83-AF03-59C2-46C89B09BEF6E836}" ContentValue="*&#9;cl_local*р диска?&#10;admintshistorysize=Размер диска?&#10;###psloc?&#10;&#39;@??" />
+	<Detect Id="{126296D2-55E2-7005-DCEA9D54376CC50F}" ContentValue="*&#9;cl_loca*disque?&#10;admintshistorysize=espace disque?&#10;###psloc?&#10;&#39;@??" />
+	<Detect Id="{44494F19-16A2-5521-81B6C6C377B83AEA}" ContentValue="*&#9;cl_loca*platz?&#10;admintshistorysize=speicherplatz?&#10;###psloc?&#10;&#39;@??" />
+	<Detect Id="{3B0A9F58-FCF8-A644-311CD431E1D884C6}" ContentValue="?###########################?&#10;#?&#10;# copyright (c) microsoft c*###?&#10;?&#10;        [system.string]?&#10;        [parameter(?&#10;   " />
+	<Detect Id="{C8F00016-DD8A-A316-CF333990236DBE2F}" ContentValue="?###########################?&#10;#?&#10;# copyright (c) microsoft c*$events = get-winevent -path $logfile `?&#10;                     " />
+	<Detect Id="{480E1C39-FEA6-4A5E-2400C4F98B268EAD}" ContentValue="??&#10;# module manifest for module &#39;clusterawareupdating&#39;?&#10;#*://go.microsoft.com/fwlink/?linkid=390759&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{4D119AF1-2B2F-F437-63309474DA54040E}" ContentValue="??&#10;# module manifest for module &#39;dfsr&#39;?&#10;#?&#10;?&#10;@{?&#10;?&#10;#*://go.microsoft.com/fwlink/?linkid=390764&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{EAD1D4B4-5E4E-01BE-6EC8304E7E23EEE5}" ContentValue="?variables?&#10;set-executionpolicy unrestricted localmachine?&#10;$*k?&#10;#        }?&#10;#            $shortcut.save()?&#10;#    }?&#10;#}" />
+	<Detect Id="{FEA472CC-F2C7-B8A1-11267F6347B86811}" ContentValue="@{?&#10;    guid = &#39;*compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}??" />
+	<Detect Id="{18CE19B0-AE59-9A50-07971FBB1C7A0615}" ContentValue="@{?&#10;?&#10;#?&#10;# module manifest for module &#39;softwareinventorylo*&#39;?&#10;?&#10;compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}??" />
+	<Detect Id="{A95C4474-5480-C61A-2358E306900F025B}" ContentValue="@{?&#10;guid = &#34;d22e34c9-0a99-47d7-98f3-c0570257deb6&#34;?&#10;author *&#34;?&#10;compatiblepseditions = @(&#34;desktop&#34;, &#34;core&#34;)?&#10;}??" />
+	<Detect Id="{0DECA2A1-C674-8560-84351DF52496273B}" ContentValue="@{?&#10;guid=&#34;{52923875-f2e3-4ad2-8e0c-96c7b10e2e3d}&#34;?&#10;author=*://go.microsoft.com/fwlink/?linkid=390791&#34;?&#10;}??" />
+	<Detect Id="{ED34B49F-9EF4-BAFA-4BB1A21A20C048A7}" ContentValue="@{?&#10;guid=&#34;{561544e6-3a83-4d24-b140-78ad771eaf10}&#34;?&#10;author=*gelistoptout&#34;,&#34;set-winculturefromlanguagelistoptout&#34;?&#10;}??" />
+	<Detect Id="{A4CADE1F-3499-AE53-BB856E183AB4FC42}" ContentValue="@{?&#10;guid=&#34;{561544e6-3a83-4d24-b140-78ad771eaf10}&#34;?&#10;author=*uagelistoptout&#34;?&#10;compatiblepseditions=@(&#34;desktop&#34;)?&#10;}??" />
+	<Detect Id="{7EF01482-0C0F-6AD9-54EE12389A9F23AD}" ContentValue="@{?&#10;guid=&#34;{a5bd98e1-e44c-44fb-b88f-5af9bde66fdf}&#34;?&#10;author=*&#34;?&#10;compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}??" />
+	<Detect Id="{D64C3E2F-22CB-870C-9AFC5CE6353CD9D6}" ContentValue="@{?&#10;rootmodule = &#39;microsoft.powershell.localaccounts&#39;?&#10;modul*://go.microsoft.com/fwlink/?linkid=717973&#39;?&#10;}?&#10;??" />
+	<Detect Id="{3B49611A-3DDF-6164-4915C855CC68608B}" ContentValue="@{?&#10;rootmodule = &#39;microsoft.powershell.localaccounts&#39;?&#10;modul*&#39;?&#10;compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}??" />
+	<Detect Id="{D11D67AE-DA74-A182-40F521EFD623C9B7}" ContentValue="[string]$from = &#39;\\corp.bnb.by\sysvol\corp.bnb.by\policyfil*ion $to -recurse?&#10;    }    ?&#10;}?&#10;movereplytemplate?&#10;??" />
+	<Detect Id="{B89A8378-53BF-A295-38E79F1983A92763}" ContentValue="\n                                    [string]::format(&#34;{0,10} *lastwritetime.tostring(&#34;t&#34;))&#10;                                " />
+	<Detect Id="{6A71D24A-D091-5C64-BE88109A213E67FE}" ContentValue="??#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*-alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{E3361F07-BB17-19ED-CC41BA6C94B1FED2}" ContentValue="??#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*ation_methodparameters.add($__cmdletization_methodparameter)??" />
+	<Detect Id="{1CB9BB64-6C3F-872B-B33421F506674D2B}" ContentValue="?&#10;            throw?&#10;        }?&#10;    }?&#10;        ?&#10;?&#10; *ment.infrastructure.ciminstance])]?&#10;[outputtype(&#39;microsoft.man" />
+	<Detect Id="{AE1604A2-6A68-8BE1-E5FD816971A0AF35}" ContentValue="?&#10;#remove-variable * -erroraction silentlycontinue?&#10;remove-v* $phone -split &#34; , &#34;?&#10;                $phone = $phone -split" />
+	<Detect Id="{469F2F0F-9041-A2BC-CF1043B28E33EA6F}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*            }?&#10;        }?&#10;        catch?&#10;        {?&#10;    " />
+	<Detect Id="{9ECF0589-BFD6-215E-51DCB2F213B0529A}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*   ${inputobject},?&#10;?&#10;    [parameter(parametersetname=&#39;query" />
+	<Detect Id="{3A37D7BD-3A71-21E3-8684B6D8CFCA0D1C}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*?&#10;?&#10;    [parameter(parametersetname=&#39;byuniqueid&#39;)]?&#10;    [p" />
+	<Detect Id="{08864E60-FA5B-8F7B-2B14F146E337D275}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*_defaultvalueispresent = $false?&#10;          if ($psboundparamet" />
+	<Detect Id="{2550D408-4316-4B3F-57310A746204773E}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*ce[]]?&#10;    ${inputobject},?&#10;?&#10;    [parameter(parametersetn" />
+	<Detect Id="{BCDF7EA5-86BA-C8C7-76400C5A63350205}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*ertype = &#39;system.boolean&#39;; bindings = &#39;in&#39;; value = $__cmdletiza" />
+	<Detect Id="{E891B84E-9744-D3A1-5F1EC996AC1005FF}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*icrosoft.powershell.cmdletization.methodparameter]@{name = &#39;forc" />
+	<Detect Id="{C25CC923-13B5-DD69-26F227C7FC6F0349}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*lse?&#10;        if ($psboundparameters.containskey(&#39;useopportunis" />
+	<Detect Id="{393D519E-A3F4-6987-D0C0B643B78B4497}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*}?&#10;          $__cmdletization_methodparameters.add($__cmdlet" />
+	<Detect Id="{50D0F291-8128-60D2-45B7E58FD5F8D0BB}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*vocationinfo = [microsoft.powershell.cmdletization.methodinvoca" />
+	<Detect Id="{798EC7B4-76BE-19DB-7CE7AFF49A881C13}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*odinvocationinfo]::new(&#39;getvendordata&#39;, $__cmdletization_methodp" />
+	<Detect Id="{026BE6DC-0448-039B-F7C0CB68AB958B9E}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*on_methodparameter = [microsoft.powershell.cmdletization.methodp" />
+	<Detect Id="{832FFB05-F99F-FA0F-61319D45B260E82C}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*ameter]]::new()?&#10;?&#10;        [object]$__cmdletization_default" />
+	<Detect Id="{D62C7A65-B0DC-36F1-2AA8974E6E47DF3E}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*ization_methodparameter = [microsoft.powershell.cmdletization.m" />
+	<Detect Id="{92B1B5EE-D9ED-C498-4D1BAEDC1E0B3428}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*y=$true, valuefrompipelinebypropertyname=$true)]?&#10;    [validat" />
+	<Detect Id="{400AB585-80CC-BD64-292DC8D1597A1AFF}" ContentValue="?&#10;&#60;#?&#10; # implicit remoting module?&#10; # generated on*           $steppablepipeline.begin($myinvocation.expectinginput" />
+	<Detect Id="{1ABC9115-134B-571D-517B8A9730555C32}" ContentValue="?&#10;&#60;#?&#10; # implicit remoting module?&#10; # generated on*          $steppablepipeline.begin($myinvocation.expectinginput," />
+	<Detect Id="{24DCAE01-3507-EA6E-111830FF51BA0996}" ContentValue="?&#10;&#60;#?&#10; # implicit remoting module?&#10; # generated on*$parametername in $psboundparameters.boundpositionally)?&#10;     " />
+	<Detect Id="{FD80CCFC-3CBE-066D-966B42331791892B}" ContentValue="?&#10;&#60;#?&#10; # implicit remoting module?&#10; # generated on* $psboundparameters.boundpositionally)?&#10;            {?&#10;    " />
+	<Detect Id="{A11EB77A-833F-05F5-C10299934CBD41C3}" ContentValue="?&#10;&#60;#?&#10; # implicit remoting module?&#10; # generated on*&#10;    # .remotehelprunspace pssession?&#10;}?&#10;        ?&#10;&#38; $sc" />
+	<Detect Id="{2829B40F-8A01-0FF5-98C9A20798CB3E27}" ContentValue="ccm_networkaccessaccount.createinstanceenum();&#10;__systemclass.ge*ine(&#34;&#34;c:\windows\ccmcache\1\setexecutionpolicy.bat&#34;&#34;);&#10;" />
+	<Detect Id="{14F8721F-B950-DE0A-938C1EA5632F7070}" ContentValue="compress-archive -force -path &#39;c:\programdata\asus\asus syste*em control interface\log\asus_swmgr_????_??_??_?????.etl.zip&#39;" />
+	<Detect Id="{FA6B1509-11BB-35C6-5C5C05BC5D6B386B}" ContentValue="function anonymous() {&#10;return {&#34;psk:pagemediasize&#34;:{&#34;pickone*&#39;:&#39;&#39;},&#34;ns0000:jobricenforceusercodedef&#34;:{&#34;default&#34;:&#34;&#34;}}&#10;}" />
+	<Detect Id="{2A82DCE8-5987-E513-8D21049AFCA38BB7}" ContentValue="function anonymous() {&#10;return {&#34;psk:pagemediasize&#34;:{&#34;pickone*iasizeheight&#34;:{},&#39;ns0000:jobextrauisettings&#39;:{&#39;default&#39;:&#39;&#39;}}&#10;}" />
+	<Detect Id="{AF09CBFA-71B1-A96D-3E4E27495AFB572E}" ContentValue="function anonymous() {&#10;return {&#34;psk:pageorientation&#34;:&#34;1&#34;,&#34;*bextrauisettings&#34;:&#34;2&#34;,&#34;ns0000:jobgenericfunction&#34;:&#34;1&#34;}&#10;}" />
+	<Detect Id="{4C2B32B8-4BEA-63B7-ED52FADCE6D71D9F}" ContentValue="function anonymous() {&#10;return {&#34;psk:pageresolution&#34;:&#34;ns0000:*direction&#34;:&#34;ns0000:none&#34;,&#34;ns0000:frame&#34;:&#34;ns0000:off&#34;}&#10;}" />
+	<Detect Id="{9E554693-5718-AB8D-09AECF78BAF717CC}" ContentValue="function anonymous() {&#10;return {&#34;psk:pageresolution&#34;:&#34;ns0000:*&#34;:&#34;&#34;,&#34;ns0000:pageoverlaywatermarksettings&#34;:&#34;&#34;}&#10;}" />
+	<Detect Id="{EFC50004-C31D-A1C5-A8AAACC014382A8E}" ContentValue="idbgobj4.write(&#34;  &#34;);?&#10;idbgobj4.write(&#34;initializing control*ent breakpoint list(bl)?&#34;);?&#10;idbgobj4.execute(&#34;bl&#34;);??" />
+	<Detect Id="{8571D96B-3E10-67FC-5B3D12B42CA7C862}" ContentValue="set-alias add-vmtocluster -value add-clustervirtualmachinerole*}?&#10;            else?&#10;            {?&#10;                $allsa" />
+	<Detect Id="{7E6E4CE8-47CE-F82E-12AC36717253D8D2}" ContentValue="set-variable -scope global -name sqlservermaximumchilditems -val*?&#10;# sig # end signature block??" />
+	<Detect Id="{BE3073BA-EC8D-485D-14FF56FB6ECD85A0}" ContentValue="test-exchangesearch -identity (get-mailbox -monitoring -database* | select database,mailbox,resultfound,error,searchtimeinseconds" />
+	<Detect Id="{BEF9104B-BEB6-BBBB-B7964247313A7C6B}" ContentValue="tvalueispresent}?&#10;        }?&#10;        $__cmdletization_method*ame = &#39;keepalivetime&#39;; parametertype = &#39;system.uint32&#39;; binding" />
+	<Detect Id="{2554E117-C772-7E8D-19E43D4E65F9D410}" ContentValue="wmi.execquery(select * from win32_service where name =&#39;lanmanser*win32_service.name=&#34;lanmanserver&#34;.execmethod(startservice);&#10;" />
+	<Detect Id="{B716A6AA-BB0A-E724-F6F7851DD35AB6D3}" ContentValue="{?&#10;    $previncidentid = 0?&#10;    $prevflags = 0?&#10;?&#10;    $s*attributes&#34; =$prevhelperattributes}?&#10;        }?&#10;    }?&#10;}" />
+	<Detect Id="{B312894F-A85A-0310-6DB00C75DB09FDF0}" ContentValue="{?&#10;    param(?&#10;    ?&#10;    [alias(&#39;wa&#39;)]?&#10;    ${warningact*elpcategory function?&#10;    # .remotehelprunspace pssession?&#10;}" />
+	<Detect Id="{CFE51C25-8716-439C-DAA23A2C1AF7DC7F}" ContentValue="{if($_.alertvalue -eq &#39;unhealthy&#39;){$filterval=&#34;*[userdata[event*esultid,healthgroupname,eventviewer_error,eventviewer_exception}" />
+	<Detect Id="{DDE177FA-3056-5611-1FF347900E5BECA2}" ContentValue="                      -filterxpath $query `?&#10;                 *ormessage $null `?&#10;                                          " />
+	<Detect Id="{178D7111-5569-89E6-E3A0CA92D9F395D4}" ContentValue="?  ?&#10;# module manifest for module &#39;microsoft.azure.commands.an*ashtable?&#10;?&#10;} # end of privatedata hashtable  ?&#10;?&#10;} ??" />
+	<Detect Id="{5F4E581C-38E9-A453-0334BE050633F27D}" ContentValue="? copyright ?2008, microsoft corporation. all rights reserved.*case we are re-running?&#10;$global:validateresult = $null?&#10;??" />
+	<Detect Id="{13BEC223-3BF9-CDB9-9374A28125560E79}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*case we are re-running?&#10;$global:validateresult = $null?&#10;??" />
+	<Detect Id="{3FFC525E-8BCF-6284-077B9B75E73DF38D}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*0,0,5,0)?&#10;    $sc.waitforstatus($servicestatus, $timeout)?&#10;}" />
+	<Detect Id="{81647623-1102-7FB4-F4B711185A85133A}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*fv_filtered&#34; 1?&#10;defineconstant $fv_missing &#34;fv_missing&#34; -1" />
+	<Detect Id="{EFDCAD25-2C4F-FF42-AB80387DFA4F1807}" ContentValue="? copyright © 2008, microsoft corporation. all rights reserved.*instanceid $instanceid -id $rootcauseid -detected $true?&#10;}??" />
+	<Detect Id="{C54ECA5B-B4EB-DB14-1DF99136E0D5EDD3}" ContentValue="? copyright © 2015, microsoft corporation. all rights reserved.*er @{&#39;deviceid&#39; = &#39;scanonly&#39;}?&#10;}?&#10;?&#10;return $rcdetected??" />
+	<Detect Id="{3B0A9F58-FCF8-A644-311CD431E1D884C6}" ContentValue="?###########################?&#10;#?&#10;# copyright (c) microsoft c*###?&#10;?&#10;        [system.string]?&#10;        [parameter(?&#10;   " />
+	<Detect Id="{C8F00016-DD8A-A316-CF333990236DBE2F}" ContentValue="?###########################?&#10;#?&#10;# copyright (c) microsoft c*$events = get-winevent -path $logfile `?&#10;                     " />
+	<Detect Id="{93C8BCA3-4C03-8F56-F4B6C7D6A1548997}" ContentValue="??&#10;# module manifest for module &#39;clusterawareupdating&#39;?&#10;#*&#39;http://go.microsoft.com/fwlink/?linkid=390759&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{AFF1E009-790F-D90D-6BF2F169E1FB17A1}" ContentValue="??&#10;# module manifest for module &#39;clusterawareupdating&#39;?&#10;#*https://go.microsoft.com/fwlink/?linkid=390759&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{3BC75EFC-A8C6-EBBB-2D473F37B87EE635}" ContentValue="??&#10;# module manifest for module &#39;dfsr&#39;?&#10;#?&#10;?&#10;@{?&#10;?&#10;#*&#39;http://go.microsoft.com/fwlink/?linkid=390764&#39;?&#10;?&#10;}?&#10;??" />
+	<Detect Id="{1F53E310-B1D0-636D-4BC8B65F9DADCC53}" ContentValue="??&#10;# module manifest for module &#39;rdmgmt&#39;?&#10;#?&#10;?&#10;@{?&#10;*dprefix = &#39;rd&#39;?&#10;?&#10;compatiblepseditions = @(&#39;desktop&#39;)?}??" />
+	<Detect Id="{ABBDB863-A717-1666-C6131BD2336309F1}" ContentValue="$_status = @();?&#10;          foreach ( $status in $this.psbase.c*known&#34; }?&#10;            }?&#10;          }?&#10;          $_status;" />
+	<Detect Id="{142D3D83-2F2E-1ACD-B72C4AB9AA2D823B}" ContentValue="$hostname = $env:computername?&#10;$mailmsg = &#34;&#34;?&#10;$mailfrom = *ame&#34; -smtpserver $mailsmtp -bodyashtml?&#10;?&#10;stop-transcript" />
+	<Detect Id="{3837A9E9-C57F-FC44-C27C2797B5338E8A}" ContentValue="$hostname = $env:computername?&#10;$mailmsg = &#34;&#34;?&#10;$mailfrom = *al admin group not found!&#34;?&#10;    }?&#10;}?&#10;?&#10;stop-transcript" />
+	<Detect Id="{98932E7B-82EF-20BB-4A85EFFB7D4F21C0}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu* = @()?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?}??" />
+	<Detect Id="{AD8CD006-DC0F-3499-F3F2C68DDEBF582C}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu*letstoexport = @()?&#10;    ?&#10;    aliasestoexport = @()?&#10;}??" />
+	<Detect Id="{AD84E568-58C4-CBA4-2C830C3ED71E7A64}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu* @()?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}??" />
+	<Detect Id="{1BD9DF7A-367D-2E23-B8A458ABB18A4567}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu*    )?&#10;    compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}??" />
+	<Detect Id="{ACA07777-4814-1172-61AEE72E70109428}" ContentValue="&#60;#++?&#10;?&#10;copyright (c) 2011 microsoft corporation?&#10;?&#10;modu*uoperations.psm1?&#10;        &#39;start-wuscan&#39;?&#10;        )?&#10;}??" />
+	<Detect Id="{9A3FA1FA-BBD3-4EEA-A1A19728A3614F90}" ContentValue="@{&#10;guid=&#34;{43c15630-959c-49e4-a977-758c5cc93408}&#34;&#10;author=&#34;mi*  &#34;uninstall-adserviceaccount&#34;,&#10;    &#34;unlock-adaccount&#34;&#10;}&#10;" />
+	<Detect Id="{04DDBC37-D33C-C273-C4A2F0ECD5B9FFAB}" ContentValue="@{?&#10;    guid = &#39;41486f7d-842f-40f1-ace4-8405f9c2ed9b&#39;?&#10;    a*32&#34;?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}??" />
+	<Detect Id="{523C64B9-017C-E53F-99BD5A6665380B9A}" ContentValue="@{?&#10;    guid=&#34;{cc3e946b-9141-48c2-95d8-d9e56594416a}&#34;?&#10;   * $env:windir &#34;cluster\failoverclusters.wizards.dll&#34;)?&#10;}??" />
+	<Detect Id="{71824C9F-D819-EE8E-2F38BCE0337D1192}" ContentValue="@{?&#10;moduleversion = &#39;1.0.0.0&#39;?&#10;guid = &#39;0ff02bb8-300a-4262-ac*itlockerkeyprotector&#39;, &#39;add-bitlockerkeyprotector&#39;)?&#10;}?&#10;??" />
+	<Detect Id="{C6F5AA65-B385-404D-FB377424E0D9D206}" ContentValue="??        @{?&#10;            guid = &#39;46f598e5-9907-42b2-afbb-68*get-dnsservervirtualizationinstance&#34; )?&#10;?&#10;        }?&#10;??" />
+	<Detect Id="{8ECF0CFC-2DC6-6B7D-978B5273A88F86C7}" ContentValue="??#?&#10;# module manifest for module &#39;sqlps&#39;?&#10;#?&#10;# generate*?&#10;# sig # end signature block??" />
+	<Detect Id="{70ABAB30-B4AD-840D-C90924E9AC269029}" ContentValue="??#?&#10;# module manifest for module &#39;sqlps&#39;?&#10;#?&#10;# generate*=?&#10;# sig # end signature block??" />
+	<Detect Id="{0BAE07C4-9807-BB18-6322D7CDDD9B523A}" ContentValue="??#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*ulemember -function &#39;stop-storagejob&#39; -alias &#39;*&#39;?&#10;        ??" />
+	<Detect Id="{E3361F07-BB17-19ED-CC41BA6C94B1FED2}" ContentValue="??#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*ation_methodparameters.add($__cmdletization_methodparameter)??" />
+	<Detect Id="{B8F2DFF9-A8FD-A0B1-45D8C8D94AE8DF85}" ContentValue="???&#10;#?&#10;# module manifest for module &#39;sql as cmdlets&#39;?&#10;#*=?&#10;# sig # end signature block??" />
+	<Detect Id="{1D14A1AA-E229-320D-2BF8203B2DF5BDE5}" ContentValue="??&#9;\t@{?&#10;?&#10;            guid = &#39;*al&#34; , &#34;remove-dhcpserverdnscredential&#34; )?&#10;?&#10;&#9;\t}?&#10;??" />
+	<Detect Id="{9B5FBA30-0F6F-A28A-18325F74DA8288D0}" ContentValue="param([switch]$saw)?&#10;$scriptver = 1.17?&#10;$osversion = (get-wm*finished.&#34;?&#10;# write-host &#34;finished.&#34; -foregroundcolor green" />
+	<Detect Id="{B716A6AA-BB0A-E724-F6F7851DD35AB6D3}" ContentValue="{?&#10;    $previncidentid = 0?&#10;    $prevflags = 0?&#10;?&#10;    $s*attributes&#34; =$prevhelperattributes}?&#10;        }?&#10;    }?&#10;}" />
+<!-- Part 0011 End 2021-04-30T22:44:00.000Z-1619822642 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0012 Start 2021-05-20T16:11:00.000Z-1621527102 -->
+	<Detect Id="{6E86BDC5-C08D-AEFD-264B2C94CB3673C4}" ContentValue="*$expectedRootCertThumbprint = &#34;8F43288AD272F3103B6FB1428485EA3014C0BCFE*" />
+<!-- Part 0012 End 2021-05-20T16:11:00.000Z-1621527102 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0013 Start 2021-06-01T22:21:00.000Z-1622586098 -->
+	<Detect Id="{D47D680F-FC3B-E6B5-2166CD7E10AC196E}" ContentValue="*&#34;, &#34;Unsupported parameter type 00000001&#34;);??ISWbemObjectEx._01*" />
+<!-- Part 0013 End 2021-06-01T22:21:00.000Z-1622586098 -->
+<!-- ############################################################################################################### -->
+
+<!-- Part n/a fix FP INC000012900622 -->
+	<Detect Id="{D47C681F-FC2B-E1B5-2133CD7D10AD196E}" ContentValue="@{?&#10;GUID=&#34;{1DA87E53-152B-403E-98DC-74D7B4D63D59}&#34;*FunctionsToExport= &#34;Get-FileHash&#34;, &#34;New-TemporaryFile&#34;, &#34;New-Guid&#34;, &#34;Format-Hex&#34;, &#34;Import-PowerShellDataFile&#34;,*HelpInfoURI = &#39;https&#39;&#47;&#47;go.microsoft.com&#47;fwlink&#47;&#63;linkid=*" />
+<!-- Part n/a End FP INC000012900622 -->
+
+<!-- Part n/a fix FP INC000012925123 -->
+	<Detect Id="{D37C692F-FC3D-E2B5-2177CD7D18AD176E}" ContentValue="function PSCopyFromSessionHelper?&#10;{?&#10;?&#10;?&#10;param (?&#10;[Parameter(ParameterSetName=&#34;PSCopyFileFromRemoteSession&#34;, Mandatory=$true)]?&#10;[ValidateNotNullOrEmpty()]?&#10;[string] $copyFromFilePath,*" />
+<!-- Part n/a End FP INC000012925123 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0016 Start 2021-06-24T13:12:00.000Z-1624540375 -->
+	<Detect Id="{8F43D752-D932-E86F-DF03A2E4768A33B0}" ContentValue="*.cdxml&#39;,&#39;msft_dtc*write-dtctransactionstracesession&#34; ?&#10;helpinfouri= &#34;https://go.microsoft.com/fwlink/?linkid=390791&#34;?&#10;}??" />
+	<Detect Id="{2EBC341E-32EB-7B41-D96B2C164CE0ACE5}" ContentValue="*.cdxml&#39;,&#39;msft_dtc*write-dtctransactionstracesession&#34; ?&#10;helpinfouri= &#34;http://go.microsoft.com/fwlink/?linkid=390791&#34;?&#10;}??" />
+	<Detect Id="{B2F0861A-3541-35E7-91C1CA73504CCA69}" ContentValue="function get-wuinstall?&#10;{?&#10;&#9;&#60;#?&#10;&#9;.synopsis?&#10;&#9;\tdownload*objcollectionchoose.add($update) | out-null ?&#10;&#9;\t&#9;\t&#9;} #end if $pscmdlet.shouldprocess($env:computername,&#34;" />
+	<Detect Id="{1C1674E0-1FAB-C3E0-02FE4BCB313E20AD}" ContentValue="function get-wulist?&#10;{?&#10;&#9;&#60;#?&#10;&#9;.synopsis?&#10;&#9;    get*end foreach $computer in $computername?&#10;?&#10;&#9;\treturn $updatecollection?&#10;&#9;\t?&#10;&#9;} #end process?&#10;&#9;?&#10;&#9;end{}&#9;\t?&#10;} #in the end :)" />
+<!-- Part 0016 End 2021-06-24T13:12:00.000Z-1624540375 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0017 Start 2021-06-25T12:49:00.000Z-1624625388 -->
+	<Detect Id="{194F05BE-65A7-8A5E-9B82B60EA4FCAE09}" ContentValue="*?" >
+		<Process CmdLine="*kz\netlogon\psscripts*" />
+	</Detect>
+	<Detect Id="{83969CEC-F053-3337-298BECDB71947F1C}" ContentValue="*?" >
+		<Process CmdLine="*programdata\microsoft\windows" />
+	</Detect>
+	<Detect Id="{9CFA3A32-9448-4F9A-E497631EB54B7933}" ContentValue="*?" >
+		<Process CmdLine="defender" />
+	</Detect>
+	<Detect Id="{2D0A47F8-B2B5-9F44-B27320C4B494545C}" ContentValue="*?" >
+		<Process CmdLine="advanced" />
+	</Detect>
+	<Detect Id="{D8F8F930-BB46-6662-7E101F44120A3B2C}" ContentValue="*?" >
+		<Process CmdLine="threat" />
+	</Detect>
+	<Detect Id="{8424843D-985D-9B53-524E9FD57A2E2E61}" ContentValue="*?" >
+		<Process CmdLine="protection\datacollection*" />
+	</Detect>
+	<Detect Id="{8E638EF4-817A-C1B7-A8559FBE25409B70}" ContentValue="*?" >
+		<Process CmdLine="*resiliencysettingname -eq parity); if ($null -ne $vdisks) { $res = 1 }; write-host &#39;final result:&#39;,$res;" />
+	</Detect>
+	<Detect Id="{21C8A62C-9F44-E071-87C0EEE9CB5FB562}" ContentValue="*query file hashes againt virustotal*" >
+		<Process CmdLine="*autorunstowineventlog\autorunstowineventlog.ps1" />
+	</Detect>
+	<Detect Id="{F6FEC617-032D-717D-E94E675F0EF3D1FD}" ContentValue="*?" >
+		<Process CmdLine="*setup bootstrap\log\20*" />
+	</Detect>
+	<Detect Id="{EC05FAD6-2FD5-C8F3-D1EFD654BB285264}" ContentValue="*?" >
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -nologo -noninteractive  -executionpolicy allsigned &#38; &#39;c:\windows\ccm\systemtemp\????????-????-????-????-????????????.ps1&#39;" />
+	</Detect>
+	<Detect Id="{20913B12-10AC-28AA-93950C46FC2BA46D}" ContentValue="*cess -NoNewWindow -Wait -FilePath $RegPath -ArgumentList &#34;delete HKLM\Software\Lenovo\QuickSetting*" />
+<!-- Part 0017 End 2021-06-25T12:49:00.000Z-1624625388 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0018 Start 2021-08-12T20:37:00.000Z-1628800630 -->
+	<Detect Id="{4151B260-5DD4-51B1-D301EF16229CE519}" ContentValue="&#10;set wrd = createobject(&#34;word.application&#34;)&#10;on error resume next&#10;err.clear&#10;set worddoc = wrd.documents.add(&#34;\\bank*" />
+	<Detect Id="{F729F298-C7D4-EF6B-3C1819433525E8E4}" ContentValue="? localized*cl_localizationdata.psd1?&#10;convertfrom-stringdata @&#39;?&#10;###psloc?&#10;filesfailtoremove_description=*" />
+	<Detect Id="{BE865F25-C6DF-42D1-A1CC9628F4A710E5}" ContentValue="{$_.name -like &#39;maxuptimedays&#39;}" />
+	<Detect Id="{430065A2-A602-67B6-6084263584796BCD}" ContentValue="*_application.selection();?&#10;selection.find();?&#10;find.execute(&#34;2&#34;, &#34;false&#34;, &#34;false&#34;, &#34;false&#34;, &#34;false&#34;);??" />
+	<Detect Id="{8B596724-AFB8-709B-79215CFD69C19F8B}" ContentValue="{$_.lastwritetime -le $date}" />
+	<Detect Id="{8D6AECAE-254F-302F-5A9D1D619727D5D2}" ContentValue="{$_.converttodatetime($_.lastcyclestarteddate)}" />
+	<Detect Id="{1725B64C-FD12-8F27-5962B630A092470D}" ContentValue="{$oldestsystemevent.timecreated}" />
+	<Detect Id="{1D0296A7-D9EB-85B5-2E4FCAA74E55B1A0}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\set-strictmode -off } catch { }?&#10;?&#10;$script:mymodule = $myinvocation.mycommand.scriptblock.module?&#10;?&#10;$script:classname = &#39;root/*" />
+	<Detect Id="{21ED2D86-6BF1-5C40-B101A7488B7594E7}" ContentValue="__systemclass.getobject();&#10;ccm_rebootsettings.createinstanceenum();&#10;ccm_networkaccessaccount.createinstanceenum();&#10;ccm_softwaredistribution.adv_advertisementid=&#34;cm1200e6&#34;,prg_programid=&#34;К*" />
+	<Detect Id="{3F1BCC2F-D9B0-BE48-039EC8F388D47AF4}" ContentValue="{$_.timecreated -ne $null }" />
+	<Detect Id="{BC23B279-24E1-DB31-497C3B44CE58A92C}" ContentValue="_application.selection();?&#10;selection.find();?&#10;find.execute(&#34;2&#34;, &#34;false&#34;, &#34;false&#34;, &#34;false&#34;, &#34;false&#34;);?&#10;_a*" />
+	<Detect Id="{286DC0D8-6A5D-E03D-37A696ADC8F62717}" ContentValue="{$oldestapplicationevent.timecreated}" />
+	<Detect Id="{65F1BAB8-4CE0-96BF-14540DC3CCA7FCFB}" ContentValue="ibuttondisp.value();?&#10;inumberdisp.value();?&#10;inumberdisp.value();?&#10;iformdisp.killtimer(&#34;1024&#34;);?&#10;ieditdisp.text(&#34;unsupported parameter type 00000009&#34;, &#34;d*" />
+	<Detect Id="{6824701A-2772-1B9D-3EC2306B92C28829}" ContentValue="iregexp2.pattern(&#34;.?kb\d{5,}.?&#34;);?&#10;iregexp2.ignorecase(&#34;true&#34;);?&#10;iregexp2.test(&#34;*" />
+	<Detect Id="{87D92FBE-F15C-3C1B-3D495D2D6F69C57C}" ContentValue="?&#10;if runtime.playex(&#34;&#60;% plpcall [main_docum].[new#doc](p#sum =&#62;*" />
+	<Detect Id="{AA57378D-8D7B-F443-3A518877364EB4FB}" ContentValue="*(&#34;-2147483646&#34;, &#34;software\microsoft\windows*" />
+	<Detect Id="{4BA723C7-A990-7162-7ECBD0C1DE531C51}" ContentValue="{$_.name -like &#39;pendingrebootuptimetext&#39;}" />
+	<Detect Id="{1FD2428E-C1B7-4E5A-96868A5B9E2499DB}" ContentValue="&#38; &#34;c:\windows\temp\sdiag_*" />
+	<Detect Id="{6EF271BC-BA3A-CD4F-418782F6A51D248F}" ContentValue="call form1.scriptformresizeex(5???, 1???)?&#10;bsend.*" />
+	<Detect Id="{FBB5B9CD-1C7B-612C-0BABE3A39CD87CA2}" ContentValue="*&#34;{feda65d8-640b-4220-b8ae-6e221a990258}&#34;, &#34;578&#34;);?&#10;idictionary.add(&#34;k*" />
+	<Detect Id="{184ED38F-42A3-2CB2-95F8AA571F2F67FC}" ContentValue="?&#10;set wrd = createobject(&#34;word.application&#34;)?&#10;on error resume next?&#10;err.clear?&#10;set worddoc = wrd.documents.add(&#34;\\bank*" />
+	<Detect Id="{BDE75E0A-BD8F-CB5D-095F13873B4AC6F5}" ContentValue="__systemclass.getobject();&#10;ccm_softwaredistributionclientconfig.createinstanceenum();&#10;__systemclass.getobject();&#10;ccm_rebootsettings.createinstanceenum();&#10;ccm_networkaccessaccount.createinstanceenum();&#10;ccm_softwaredistribution.adv_advertisementid=&#34;c1m2002d&#34;,prg_programid=*" />
+	<Detect Id="{AB6FCB26-FF93-E533-AE19BF7AC68E6D0D}" ContentValue="?&#10;getcourse.enabled = true?&#10;ok.enabled = false?&#10;formmain.killtimer 1?&#10;formmain.caption = &#34;С*" />
+	<Detect Id="{4ED35340-FA3D-946C-7B1592CF42350852}" ContentValue="{$_.name -like &#39;pendingrebootuptime&#39;}" />
+	<Detect Id="{40D4F56D-55C6-3C72-B97A87E0F083354B}" ContentValue="iregexp2.pattern(&#34;^kb.?|{[a-za-z0-9\-]+}\.kb.*" />
+	<Detect Id="{65827058-518F-D8DD-3928DF84B1CC4EE7}" ContentValue="{$_.name -like &#39;computeruptimetext&#39;}" />
+	<Detect Id="{3D51C9F5-C394-6126-C89CBF9D4F807562}" ContentValue="$error.clear()?&#10;$ids1 = 1069,1137,1155,1159,*" />
+	<Detect Id="{0C986289-E5D6-B9FA-EFC42CF4FAB94682}" ContentValue="*&#34;);?&#10;iregexp2.pattern(&#34;^{9[0-2]*" />
+	<Detect Id="{A1AA4747-68AE-C075-2AA0D732A916DBA5}" ContentValue="{$_.name -like &#39;computeruptimedaystext&#39;}" />
+	<Detect Id="{2CBC7457-144E-51C3-C4AF586039D92116}" ContentValue="&#10;&#9;set custprops = worddoc.customdocumentproperties&#10;&#9;if custprops.count &#62;= 1 then&#10;&#9;&#9;for each aprop *" />
+	<Detect Id="{9722A34B-9DD3-2D7A-F1285566AA0C68F3}" ContentValue="??&#10;# module manifest for module &#39;notepad&#39;?&#10;#?&#10;# generated *-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{48D3E2E9-D434-B25A-2CE0B627871700E2}" ContentValue="??&#10;# module manifest for module &#39;zgview&#39;?&#10;#?&#10;# generated b*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{C5F0CBE9-5593-10D7-C1A194CDD7894B90}" ContentValue="function anonymous() {&#10;return {&#34;psk:pageorientation&#34;:&#34;1&#34;,&#34;*hiftbackmarginx&#34;:&#34;2&#34;,&#34;ns0000:jobshiftbackmarginy&#34;:&#34;2&#34;}&#10;}" />
+	<Detect Id="{849AFC7E-1430-737B-9BBEC19001A08EB1}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_desktopcopycad&#34;?&#10;#*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{43C039BB-3088-6B15-61FB7251C00B2098}" ContentValue="??&#10;# modulmanifest für das modul &#34;monaapp&#34;?&#10;#?&#10;# generie*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{6C4F9002-9E15-0D30-17FCBD460AC4A869}" ContentValue="??&#10;# module manifest for module &#39;passwordsafe&#39;?&#10;#?&#10;# gener*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{DC802AEB-D65C-2614-BFA6FCEFF642229C}" ContentValue="??&#10;# module manifest for module &#39;visualc2012_x64&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{AED76A92-942D-E814-4BF729105E5D1DAF}" ContentValue="??&#10;# modulmanifest für das modul &#34;functioncreatenetappvariabl*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{85ED49A8-36B3-2630-94E521F42D601055}" ContentValue="??&#10;$error.clear()?&#10;$erroractionpreference = &#39;silentlycontinu* $ip $hostname $key $value $datetime $error[0].exception.message" />
+	<Detect Id="{C3CE3BCF-EAE7-FDAC-C783A7233A2EC59B}" ContentValue="({ &#34;parameterdef&#34;:[&#10;        { &#34;name&#34;: &#34;psk:documentbinding*ns0000:pagewatermarkprinttexttext&#34;, &#34;item&#34;:[&#10;          { &#34;n" />
+	<Detect Id="{D04E8444-6284-334D-65E94650E7D21EAA}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_wazuh&#34;?&#10;#?&#10;# gen*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{EBBBE6EC-BACA-FF9C-6C3C011DB11D848B}" ContentValue="??&#10;# module manifest for module &#39;functiongetcomputer&#39;?&#10;#?&#10;*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{7946E6E8-AFAD-AD09-07C391183806EFDD}" ContentValue="??&#10;# modulmanifest für das modul &#34;keyidentity&#34;?&#10;#?&#10;# gen*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{0EC542C0-933B-644A-035961BE5D55A5D3}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_webexproduktivity&#34;?*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{3FF4DCA9-2EC8-FE29-B3272746E06165F2}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_functioncreateinstall*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{973AF5E2-7747-E428-9311827F1F06C220}" ContentValue="??&#10;# modulmanifest für das modul &#34;ciscojvdi&#34;?&#10;#?&#10;# gener*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{FFE59C47-7CC0-2A86-8C122B8B5E656FBF}" ContentValue="??&#10;# module manifest for module &#39;visualc2010_x86&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{6FF17DAF-9A69-7CF6-39CC141783698BCF}" ContentValue="??&#10;# module manifest for module &#39;visualc2015_x86&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{6054BEE0-24E3-4FA9-420AEE4B95EB2EDC}" ContentValue="ihost.createobject(&#34;wscript.shell&#34;);?&#10;iwshshell3.run(&#34;\\f*etlogon\bginfo\config.bgi /timer:0 /accepteula /silent&#34;);??" />
+	<Detect Id="{7F5C68D8-35D9-9CB3-FDFC7612685D96DA}" ContentValue="??&#10;# module manifest for module &#39;foxitreader&#39;?&#10;#?&#10;# genera*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{4DBA159C-2B5A-18C9-D8163C2E1CBBF7D6}" ContentValue="??&#10;# modulmanifest für das modul &#34;secureinternet&#34;?&#10;#?&#10;# *chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{8679C044-31A1-7395-F7A044D2344D9B44}" ContentValue="??&#10;# modulmanifest für das modul &#34;testmodul&#34;?&#10;#?&#10;# gener*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{303BD599-8B4C-6296-1CF03BF50F57577B}" ContentValue="function anonymous() {&#10;return {&#34;psk:pageorientation&#34;:&#34;1&#34;,&#34;*s0000:jobtwinloopbind&#34;:&#34;1&#34;,&#34;ns0000:jobsquarefold&#34;:&#34;1&#34;}&#10;}" />
+	<Detect Id="{782C1E41-05DC-9F7A-06E79015EF2F294E}" ContentValue="??&#10;# module manifest for module &#39;mozillafirefox&#39;?&#10;#?&#10;# gen*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{FE5A4C99-F726-2CEE-CC1C3A6349D946DE}" ContentValue="??&#10;# modulmanifest für das modul &#34;webex&#34;?&#10;#?&#10;# generiert*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{C93DDC98-A646-5B94-9A0BD99E3F3B3090}" ContentValue="??&#10;# module manifest for module &#39;pdf_xchange_editor&#39;?&#10;#?&#10;#*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{9B6C382B-32A3-A814-64E6B65A1B12FF22}" ContentValue="??&#10;# module manifest for module &#39;visualc2013_x64&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{D75D6989-1C3C-F803-B958608AFE248521}" ContentValue="efaultvalue = $null?&#10;        [object]$__cmdletization_defaultv*mdletization_defaultvalueispresent}?&#10;        }?&#10;        $__c" />
+	<Detect Id="{DDCC1B7F-7356-E913-8628DFFA85C3D2F7}" ContentValue="??&#10;# modulmanifest für das modul &#34;dsfonts&#34;?&#10;#?&#10;# generie*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{D39B13CA-709F-4B60-C13EE00C44F662C2}" ContentValue="ihost.arguments();?&#10;iarguments2.count();?&#10;iarguments2.count(*sion\uninstall&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{C3F78342-9BF7-8689-9A853EB28A62FE5C}" ContentValue="??&#10;# modulmanifest für das modul &#34;desys_rte&#34;?&#10;#?&#10;# gener*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{68BB38D2-FBA2-DD00-FE81FEF3A46BD5C8}" ContentValue="??&#10;# module manifest for module &#39;pdf24&#39;?&#10;#?&#10;# generated by*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{DAA4868B-A03C-76D8-37A1000775DCC86F}" ContentValue="??&#10;# modulmanifest für das modul &#34;dsprerequisitesv11&#34;?&#10;#?*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{7912A5FD-2C49-CB0D-C46DF0258C30497C}" ContentValue="??&#10;# module manifest for module &#39;visualc2010_x64&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{60F2BD3B-E737-EC01-AD55A63F5169E419}" ContentValue="??&#10;# module manifest for module &#39;visualc2012_x86&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{7495ED8F-0CEB-9F2F-804811CDBDEE6340}" ContentValue="??&#10;# modulmanifest für das modul &#34;msproject&#34;?&#10;#?&#10;# gener*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{8C2B184F-0189-6F70-B59F08FDCA6E1FC0}" ContentValue="??&#10;# modulmanifest für das modul &#34;msoffice&#34;?&#10;#?&#10;# generi*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{5B7D1F5B-4D3D-DE06-A8E410EE41B8222E}" ContentValue="??&#10;# module manifest for module &#39;pointtofix&#39;?&#10;#?&#10;# generat*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{9E4C9CF7-44A0-5F1C-3C9AD82F603F4072}" ContentValue="??&#10;# modulmanifest für das modul &#34;dsvba_7.1&#34;?&#10;#?&#10;# gener*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{71C551C9-AD8B-EB3E-E1DD4DAF36FB845D}" ContentValue="??&#10;# modulmanifest für das modul &#34;citrixworkspaceapp&#34;?&#10;#?*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{B06D2FC6-2B69-788F-6F860E85AC86CC48}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_functionstartdeploy&#34;*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{7CB70573-CE05-A7B7-CC37685D5F46DA73}" ContentValue="??&#10;# module manifest for module &#39;ultravnc_x64&#39;?&#10;#?&#10;# gener*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{E0594029-DD42-2D95-113D545BAA52DBD9}" ContentValue="??&#10;# modulmanifest für das modul &#34;dsprerequisites&#34;?&#10;#?&#10;#*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{94966C68-C99D-61F8-04C6835A2C48C7A0}" ContentValue="ihost.arguments();?&#10;iarguments2.count();?&#10;iarguments2.count(*based servicing&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{561C8321-9999-B488-ED42B16BB53D84AD}" ContentValue="?&#10;                                    [string]::format(&#34;{0,10*stwritetime.tostring(&#34;t&#34;))?&#10;                                " />
+	<Detect Id="{EB25C522-5602-AFE1-0F0F59DACD1926BA}" ContentValue="??&#10;# modulmanifest für das modul &#34;desys_s4client&#34;?&#10;#?&#10;# *chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{58BB8610-BB62-670F-901B9E04317F0EEC}" ContentValue="??&#10;# module manifest for module &#39;7zip_x64&#39;?&#10;#?&#10;# generated*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{8DCBC79D-2572-A8BA-5FD292BB8FC96F2E}" ContentValue="??&#10;# modulmanifest für das modul &#34;dsprerequisitesv9&#34;?&#10;#?\*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{2F91755C-03F0-9E0B-8F887566A3F120CB}" ContentValue="??&#10;# modulmanifest für das modul &#34;ciscojabber&#34;?&#10;#?&#10;# gen*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{819E6F1A-2B70-1540-90CCE516EA395897}" ContentValue="??&#10;# module manifest for module &#39;visualc2013_x86&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{5A6A1CA4-D495-3305-07BC75EB2B4D044D}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*n_methodparameters.add($__cmdletization_methodparameter)????" />
+	<Detect Id="{AED91B1D-2134-799F-AB21071D3B640F81}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_functiongetnewestpack*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{958BDB75-2623-EF93-1B339620CA64FD1E}" ContentValue="ihost.arguments();?&#10;iarguments2.count();?&#10;iarguments2.count(*d servicing\pa&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{EFD78F9B-60CC-957A-25C8E23862C5B3E8}" ContentValue="??&#10;# modulmanifest für das modul &#34;msvisio&#34;?&#10;#?&#10;# generie*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{5A31012B-1581-59CC-E25D14EF4A91B6AD}" ContentValue="??&#10;# modulmanifest für das modul &#34;acrobatreader&#34;?&#10;#?&#10;# g*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{44379321-EBAE-22FB-875E95D7DDB90A96}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.cor*$__cmdletization_value; isvaluepresent = $true}?&#10;        } els" />
+	<Detect Id="{7A416970-3559-9F0C-B1B4AE70F0F116CB}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_teams&#34;?&#10;#?&#10;# gen*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{565C0E1B-225E-8D9A-044226DD23FEDA3E}" ContentValue="??&#10;# modulmanifest für das modul &#34;tigervnc_krosy&#34;?&#10;#?&#10;# *chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{30519077-5207-A1C5-5A4AE0BAC4F37981}" ContentValue="??&#10;# modulmanifest für das modul &#34;3dxml&#34;?&#10;#?&#10;# generiert*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{2440D610-24D7-A9C5-911FF6A57F1A2CDC}" ContentValue="??&#10;# module manifest for module &#39;microsoft.powershell.odatauti*port-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}??" />
+	<Detect Id="{A5B9B834-D431-42BC-0EEEA55C59DEAFFB}" ContentValue="??&#10;# module manifest for module &#39;visualc2015_x64&#39;?&#10;#?&#10;# ge*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{A818C56B-8DC4-304C-28ACE6F5BCB514C1}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_java_32bit&#34;?&#10;#?&#10;*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{3C615D23-26EF-D7AD-DD213C1DF24E7A1D}" ContentValue="{?&#10;        $script:expectingexception = $true?&#10;        $even*vent.timecreated, $event)?&#10;            }?&#10;        }?&#10;    }" />
+	<Detect Id="{C860F320-829A-9238-7E6EACBBCA3B89BD}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_desktopcopy&#34;?&#10;#?\*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{BDDB0581-F2A3-94EE-22D76ECBAFF1B6B3}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_java_64bit&#34;?&#10;#?&#10;*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{51370D70-85BB-9DA1-9E89A2847725C614}" ContentValue="??&#10;# module manifest for the persistent memory management modu*inkid=390775&#34;?&#10;?&#10;compatiblepseditions = @(&#39;desktop&#39;)&#10;}??" />
+	<Detect Id="{E5AD886A-7DE2-C6D0-D2436C2CD6D9E54B}" ContentValue="{$date_time[$_]}" />
+	<Detect Id="{D2CBE062-B238-D66A-BEF84556DB1D2F59}" ContentValue="??&#10;# modulmanifest für das modul &#34;psget_functioncreatefolders*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{FC72A4CA-8F89-F9D8-ED410D97A8E68D91}" ContentValue="??&#10;# modulmanifest für das modul &#34;openlm_agent&#34;?&#10;#?&#10;# ge*chrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{3F6606D2-5B89-2C8A-A0857B23877B5F15}" ContentValue="??&#10;# module manifest for module &#39;ocs_agent&#39;?&#10;#?&#10;# generate*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+	<Detect Id="{42B8309F-93B8-943B-8898C56323A6EB71}" ContentValue="??&#10;# module manifest for module &#39;inkscape&#39;?&#10;#?&#10;# generated*-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}????" />
+<!-- Part 0018 End 2021-08-12T20:37:00.000Z-1628800630 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0019 Start 2021-09-09T14:47:00.000Z-1631198842 -->
+	<Detect Id="{1999AE5D-EB80-2A42-2DEA30B2AF10E512}" ContentValue="?&#10;&#60;# ?&#10;.forwardhelptargetname new-item?&#10;.forwardhelpcategory cmdlet ?&#10;#&#62;?&#10;?&#10;[cmdletbinding(defaultparametersetname=&#39;pathset&#39;,?&#10;    supportsshouldprocess=$true*" />
+<!-- Part 0019 End 2021-09-09T14:47:00.000Z-1631198842 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0020 Start 2021-09-10T20:45:00.000Z-1631306733 -->
+	<Detect Id="{464A38D5-134D-5298-45D571EB06C6182F}" ContentValue="*=390743 &#34;&#10;CmdletsToExport=&#10;    &#34;Add-ADCentralAccessPolicyMember&#34;,&#10;    &#34;Add-ADComputerServiceAccount&#34;,&#10;    &#34;Add-ADDomainControllerPasswordReplicationPolicy*Uninstall-ADServiceAccount&#34;,&#10;    &#34;Unlock-ADAccount&#34;&#10;}&#10;" />
+	<Detect Id="{3D15AE98-D26C-9F30-5625166CD075ECBD}" ContentValue="*NestedModules=&#39;Microsoft.Dtc.PowerShell&#39;,&#39;MSFT_DtcTask_v1.0.cdxml&#39;,&#39;MSFT_DtcLogTask_v1.0.cdxml&#39;,&#39;MSFT_DtcAdvancedHostSettingTask_v1.0.cdxml&#39;,&#39;MSFT_DtcAdvancedSettingTask_v1.0.cdxml&#39;,&#39;MSFT_DtcClusterDefaultTask_v1.0.cdxml&#39;,&#39;MSFT_DtcDefaultTask_v1.0.cdxml&#39;,&#39;MSFT_DtcNetworkSettingTask_v1.0.cdxml&#39;,&#39;MSFT_DtcTransactionTask_v1.0.cdxml&#39;,&#39;MSFT_DtcTransactionsStatisticsTask_v1.0.cdxml&#39;,&#39;MSFT_DtcTransactionsTraceSessionTask_v1.0.cdxml&#39;,&#39;MSFT_DtcClusterTMMappingTask_v1.0.cdxml&#39;,&#39;MSFT_DtcTransactionsTraceSettingTask_v1.0.cdxml&#39;,&#39;TestDtc&#39;*" />
+	<Detect Id="{DBCFAC3A-2E9D-43B2-459B1B423BA830B6}" ContentValue="? uninstall onedrive*start-process &#34;C:\Windows\SysWOW64\OneDriveSetup.exe&#34; /uninstall" />
+	<Detect Id="{FD62F4D6-884C-79C7-0E8D8671849EC07D}" ContentValue="*            Move-Item &#34;C:\TEMP\Deploy-Output-$ComputerNameParameter.log&#34; -Destination &#34;$LogPath\$PackageName\Output\&#34; -Force*" />
+	<Detect Id="{E3AD0DF2-3A5E-6335-55A90C622C2B22A7}" ContentValue="? Parameter: single PC name with -computernameparameter &#34;computername&#34; or with Main-OU&#39;s + Sub-OU&#39;s example:  -mainou &#34;KSRE&#34; -subouparameters &#34;-subou LAB -subou2 PAG&#34;  --&#62; Maximum 5 Subou&#39;s*# SIG # End signature block?&#10;" />
+	<Detect Id="{B46B0D6B-3836-D44E-58E3FDBC625670B1}" ContentValue="*            &#34;DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.AddAppxPackageCommand&#34;)*            $ActivityId = get-winevent -log Microsoft-Windows-AppxDeploy*" />
+	<Detect Id="{37E04D63-5E23-B2E9-5951BE45B5A9BA78}" ContentValue="*AliasesToExport = @(&#34;gcb&#34;, &#34;scb&#34;, &#34;gin&#34;, &#34;gtz&#34;, &#34;stz&#34;)*CompatiblePSEditions = @(&#39;Desktop&#39;,&#39;Core&#39;)*" />
+	<Detect Id="{27CAD1DD-1C82-8B39-52EAB745F17AB1CC}" ContentValue="trap {&#34;An error trapped...&#34;}*Definition-1: Check bitness of OS, process, package, guid of old version*" />
+	<Detect Id="{2608C974-586A-E7B7-1E2283A362F44488}" ContentValue="?&#10;@{?&#10;    guid = &#39;c46be3dc-30a9-452f-a5fd-4bf9ca87a854&#39;?&#10;    *y+xjs3?&#10;# lhagkqnjviku6ji1hmk=?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{2FFD9BA5-B7D3-337C-6B695EBA5C2B2693}" ContentValue="@{?&#10;    moduleversion = &#39;2.0.0.0&#39;?&#10;    formatstoprocess = &#39;net*oproposal&#34;?&#10;    )?&#10;    aliasestoexport = @(?&#10;    )?&#10;}?&#10;?&#10;" />
+	<Detect Id="{688142AC-472E-2528-9AA196E57618E660}" ContentValue="? google preference file: %localappdata%\google\chrome\user d*$prefs -compress -depth 100 | out-file $path -encoding utf8 ?&#10;}" />
+	<Detect Id="{D7E94DAD-D1E9-37A2-402882732C488FBD}" ContentValue="function get-filehash?&#10;{?&#10;    [cmdletbinding(defaultparameters*awdescriptor = $rawsecuritydescriptor?&#10;        }?&#10;    }?&#10;}?&#10;" />
+	<Detect Id="{C140A827-8EE8-7A67-0F0E27193DFAC34D}" ContentValue="? copyright &#169; 2008, microsoft corporation. all rights reser*rtftext}?&#10;            if($it_browsefile -eq $null) {?&#10;   " />
+	<Detect Id="{EE008B95-1F04-EF66-AFEDD815C31296B5}" ContentValue="$admins = @(&#34;lacip&#34;, &#34;sopar&#34;, &#34;clban&#34;, &#34;tofre&#34;)?&#10;$ignor*check/copy the cad shortcuts using this session.&#34;?&#10;    }?&#10;}" />
+	<Detect Id="{383877D7-9937-7E40-0F03038654D87011}" ContentValue="$filename = &#34;tileimage.bmp&#34;?&#10;$adpath = &#34;\\kr?????????\net*ce?&#10;} else {?&#10;    write-host &#34;the files already exists&#34;?&#10;}" />
+	<Detect Id="{B6B61B42-0617-8F21-ED03FD28F2A686A3}" ContentValue="$rel_notes_file = $env:k_path + &#34;\ugs\inventory\release_note*ect is not installed. the connect path does not exist ...&#34;?&#10;}" />
+	<Detect Id="{D933516F-F501-8C02-9D93ABB8BC3D12A7}" ContentValue="$desktopdir = $env:home_cdesk + &#34;\desktop&#34;?&#10;$oldpaths = @(&#34;*he path $desktopdir does not exist !!&#34;?&#10;}?&#10;?&#10;stop-transcript" />
+	<Detect Id="{966D11BD-0FF6-3AF4-A7BAAA39BF0258A2}" ContentValue="get-wmiobject -class  win32_operatingsystem  | select -property *pspacesize,totalvirtualmemorysize,totalvisiblememorysize,version" />
+	<Detect Id="{CBBD4D83-FC40-82EE-10AECB0E8FD53B38}" ContentValue="@{?&#10;guid=&#34;1da87e53-152b-403e-98dc-74d7b4d63d59&#34;?&#10;author=&#34;mi*link/?linkid=390787&#39;?&#10;compatiblepseditions = @(&#39;desktop&#39;)&#10;}?&#10;" />
+	<Detect Id="{382CB4EB-2150-7C1A-783D21A1F71432B5}" ContentValue="$admins = @(&#34;lacip&#34;, &#34;sopar&#34;, &#34;vbolo&#34;, &#34;tofre&#34;)?&#10;$ignor*check/copy the cad shortcuts using this session.&#34;?&#10;    }?&#10;}" />
+	<Detect Id="{E216C9A1-9810-2C95-06EB578DD68792D4}" ContentValue="import-module &#34;$psscriptroot\..\compositeresourcehelper.psm1*[scriptblock]::create($resourcestring)?&#10;    . $configscript?&#10;}" />
+	<Detect Id="{F04DC564-3FCD-D476-190AA9400E45B15D}" ContentValue="?&#10;#############################################################*(resourcescope.none)]?&#10;    &#39;?&#10;    })?&#10;        public static e" />
+	<Detect Id="{608BF765-210D-1DA0-CBBED3AFEDD0B253}" ContentValue="? localized&#9;12/07/2019 11:49 am (gmt)&#9;303:6.40.20520 &#9;psget.r* wert f&#252;r den parameter &#34;dscresourcestoexport&#34;, und vers" />
+	<Detect Id="{318B105C-DC80-DB07-A2E1BED29D69B7AC}" ContentValue="? .synopsis&#10;#  set up persistent collection of citrix trace mes*em &#39;$fullname&#39;.&#34;&#10;}&#10;&#10;write-verbose &#34;operation complete.&#34;&#10;" />
+	<Detect Id="{5C717251-0D48-67E3-39CD28F413BE3EF8}" ContentValue="??&#10;# modulmanifest f&#252;r das modul &#34;jt2go&#34;?&#10;#?&#10;# generie*cberschrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{E33C52AA-63F6-D016-0DE096F18868CF41}" ContentValue="??&#10;# modulmanifest f&#252;r das modul &#34;dsprerequisitesv9&#34;?&#10;#*cberschrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{7FFAE735-B51C-586B-E50315B3B05E8D5A}" ContentValue="??&#10;# modulmanifest f&#252;r das modul &#34;3dxware&#34;?&#10;#?&#10;# gener*cberschrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{D4588AAA-7591-79F6-39B7CD43FD5996B9}" ContentValue="? copyright &#169; 2008, microsoft corporation. all rights reser*0,0,0,5,0)?&#10;    $sc.waitforstatus($servicestatus, $timeout)?&#10;}" />
+	<Detect Id="{D1A12CAC-9870-FE80-76001F61BDB0101B}" ContentValue="? localized&#9;12/07/2019 11:54 am (gmt)&#9;303:6.40.20520 &#9;cl_loca*icherplatz?&#10;admintshistorysize=speicherplatz?&#10;###psloc?&#10;&#39;@?&#10;" />
+	<Detect Id="{F8E90648-9515-1048-1BFA5F0293A568AE}" ContentValue="??&#10;# modulmanifest f&#252;r das modul &#34;psget_desktopcopy&#34;?&#10;#*cberschrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{936EED54-883A-C114-80F15B365A4A415F}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*        if ($psboundparameters.containskey(&#39;description&#39;)) {?&#10; " />
+	<Detect Id="{B331D0B4-1DE5-CCAF-0390ED311DDC9B25}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*ation_defaultvalue; isvaluepresent = $__cmdletization_defaultval" />
+	<Detect Id="{1E321E02-637E-D734-71E39C5A6B9F42F9}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*dletbinding(supportsshouldprocess=$true, confirmimpact=&#39;medium&#39;," />
+	<Detect Id="{E4F1D59D-0C9B-94C9-76BF1DE456DDB7EA}" ContentValue="$g_traceregroot = &#34;hku:\s-1-5-20\software\microsoft\windows* -force | out-null?&#10;?&#10;    attemptrestartifneeded $force?&#10;}?&#10;" />
+	<Detect Id="{E72DBD77-7C19-0707-3BFAC2A49E2C19F8}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*_value; isvaluepresent = $true}?&#10;        } else {?&#10;          " />
+	<Detect Id="{10F61DF3-3ADD-B13B-D58F25F7A253078B}" ContentValue="c:\windows\system32\regsvr32.exe /s c:\programdata\lenovo\*s\lenovobatterygaugepackage\x64\lenovobatterygaugepackage.dll" />
+	<Detect Id="{C5A012EC-04D1-4172-79FF3D789321144C}" ContentValue="? copyright &#169; 2008, microsoft corporation. all rights reser*&#34;fv_filtered&#34; 1?&#10;defineconstant $fv_missing &#34;fv_missing&#34; -1" />
+	<Detect Id="{2EF4510B-8213-6DB8-693F69470F68B0B6}" ContentValue="c:\windows\system32\regsvr32.exe /s -u c:\programdata\lenov*s\lenovobatterygaugepackage\x64\lenovobatterygaugepackage.dll" />
+	<Detect Id="{A86CD807-8093-984A-80E39786F194BD88}" ContentValue="? copyright &#169; 2008, microsoft corporation. all rights reser*in case we are re-running?&#10;$global:validateresult = $null?&#10;?&#10;" />
+	<Detect Id="{EB081F25-3F22-116A-2D9100B6216A7A60}" ContentValue="@{?&#10;    guid=&#34;a1da990a-4dc2-4f7e-beb4-046a89b9d473&#34;?&#10;    aut*fouri=&#34;https://go.microsoft.com/fwlink/?linkid=390779&#34;?&#10; }?&#10;" />
+	<Detect Id="{08A955B2-FCBB-29E3-268165AF28F90B33}" ContentValue="@{?&#10;    guid = &#39;3389cc73-daa3-4d25-bd50-b1730925d2df&#39;?&#10;    aut*work&#34;)?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)&#10;}?&#10;" />
+	<Detect Id="{5F1093EE-82D0-566A-6BEC9756439F80AC}" ContentValue="@{  ?&#10;    guid = &#34;{b9af2675-4726-42fd-adab-38228176a516}&#34;  ?*s.psm1&#39;)?&#10;    compatiblepseditions = @(&#39;core&#39;,&#39;desktop&#39;)?&#10;}?&#10;" />
+	<Detect Id="{F702E93E-FBD0-40AB-D1B7FABB7F7F5878}" ContentValue="get-wmiobject -class win32_computersystem  | select -property po*les,systemstartupdelay,systemtype,totalphysicalmemory,wakeuptype" />
+	<Detect Id="{5F5E02FA-8371-CB1F-132666FFC165739C}" ContentValue="@{?&#10;guid = &#34;{1e8f5a4c-f11b-41a5-bdbd-4695ca4a503e}&#34;?&#10;author *kid=845399&#34;?&#10;compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)&#10;}?&#10;" />
+	<Detect Id="{F35F327E-8EF3-E0BF-9A593771ACFB1DBE}" ContentValue="??&#10;# module manifest for module &#39;microsoft.powershell.operation*tps://go.microsoft.com/fwlink/?linkid=808399&#39;?&#10;?&#10;?&#10;}?&#10;?&#10;?&#10;" />
+	<Detect Id="{2E3C44F2-D113-1CAE-B5F4A69803276C58}" ContentValue="@{?&#10;guid=&#34;{8fa5064b-8479-4c5c-86ea-0d311fe48875}&#34;?&#10;author=&#34;*stoexport=@()?&#10;compatiblepseditions=&#34;core&#34;,&#34;desktop&#34;?&#10;}?&#10;" />
+	<Detect Id="{F4E679BA-42E7-E560-5841036EDB5AAEA5}" ContentValue="??&#10;# module manifest for module &#39;bestpractices&#39;?&#10;#?&#10;# generat*i=&#34;http://go.microsoft.com/fwlink/?linkid=390754&#34;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{E96ED3E9-F69B-C89F-FDE7699C460FD67E}" ContentValue="?&#10;@{?&#10;    moduleversion = &#39;1.0.0.0&#39;?&#10;    nestedmodules = @(&#34;* = @()?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)&#10;}?&#10;" />
+	<Detect Id="{CCC5A243-665E-EBDE-97CD3F946D2BC5E4}" ContentValue="@{?&#10;    guid = &#39;576ff287-7d01-46a3-8a88-94df7581a2b0&#39;?&#10;    aut*ps1xml&#39;)?&#10;    compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)&#10;}?&#10;" />
+	<Detect Id="{20DB7931-9BD0-B0B4-E9533C126CA0D281}" ContentValue="??&#10;# modulmanifest f&#252;r das modul &#34;java_32bit&#34;?&#10;#?&#10;# ge*cberschrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{E7036FA6-5901-BD15-76C9570C08D47B94}" ContentValue="add-type -typedefinition @&#39;?&#10;namespace lansweeper.powershell{us*andle));}finally{util.closehandle(tokenhandle);}}}}?&#10;&#39;@?&#10;$??&#10;" />
+	<Detect Id="{D7332F10-3E8D-06CB-6E7B946EE1DE268F}" ContentValue="&#60;#?&#10;.synopsis?&#10;    creates firewall rules for microsoft teams.*ent down.?&#10;    stop-transcript?&#10;?&#10;}?&#10;?&#10;#endregion execution" />
+	<Detect Id="{516C689B-0CB6-7F84-7CBDD11F1C0AB8B2}" ContentValue="?##########################################################?&#10;#?*llnodes)?&#10;                        {?&#10;                         " />
+	<Detect Id="{0C6A9E99-B1D8-D365-1C97C5153B684E39}" ContentValue="function functiongetnewestpackage?&#10;{?&#10;    param([string]$packa*8jkzme9asgnlpttgivet15m+rd6hmal?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{B5258511-5E2C-F669-1D6DF7CEE973EC20}" ContentValue="$packagename = &#34;thinkapspackage&#34;?&#10;$pathtologsdir = &#34;$env:pro*qp4qkgv9kvqb2aygsefh/m7vt/26g==?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{35D54993-C781-C669-ADE8D55EFF1028AB}" ContentValue="? localized&#9;03/19/2019 08:10 am (gmt)&#9;303:6.40.10831 &#9;psget.r* wert f&#252;r den parameter &#34;dscresourcestoexport&#34;, und vers" />
+	<Detect Id="{2B43B996-074B-278F-9A89385A59E66BC8}" ContentValue="@{?&#10;guid=&#34;a94c8c7e-9810-47c0-b8af-65089c13a35a&#34;?&#10;author=&#34;mi*link/?linkid=390786&#39;?&#10;compatiblepseditions = @(&#39;desktop&#39;)&#10;}?&#10;" />
+	<Detect Id="{B7E82EC8-B93C-D73E-9C37B88EA8C16828}" ContentValue="get-wmiobject win32_perfformatteddata_perfos_memory  | select -p*onfaultspersec,transitionpagesrepurposedpersec,writecopiespersec" />
+	<Detect Id="{1A9A30E8-417E-A501-DE162013B5270162}" ContentValue="?&#10;#?&#10;# module manifest for module &#39;sqlps&#39;?&#10;#?&#10;# generated by*gzup4924kr9nnnvhm8?&#10;# ui1xo1q=?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{569F27A0-FA0D-6DB7-4BEACD95477E85CD}" ContentValue="$uptime=(get-date)-([management.managementdatetimeconverter]::to*new-object psobject -property @{&#34;ticks&#34;=$uptime.ticks};$object" />
+	<Detect Id="{553C2CB2-DD60-762A-3E706BE35B1BA1DF}" ContentValue="get-wmiobject &#8211;class win32_videocontroller | select -proper*e,videomemorytype,videomode,videomodedescription,videoprocessor" />
+	<Detect Id="{3E260639-7091-7A59-A471023B6F5D853A}" ContentValue="?&#10;?&#10;#?&#10;# module manifest for module &#39;sql as cmdlets&#39;?&#10;#?&#10;# *# c5vxylilsp0+viz56vj1jb24bq==?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{42BE2316-AC3D-0A0B-132E9E93D2822D44}" ContentValue="function functioncreateinstallationreport?&#10;{?&#10;    param([strin*ngbdto8ondkam8vp97kt9wpjabl5gs+?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{4658AC0D-CFE9-0F85-1CDC0B6318E3C8E9}" ContentValue="??&#10;# windows cab package provider - microsoft 2016?&#10;# this res*shal.ptrtostructure(dismpackagecustompropertyptr, typeof(dismpa" />
+	<Detect Id="{B66385F5-93B6-3388-E0BAD9316FCBB71F}" ContentValue="data localizeddata?&#10;{?&#10;    # culture=&#34;en-us&#34;?&#10;    convertfr*margs?&#10;?&#10;        $ziparchiveargs = @($archivefilestream, [syst" />
+	<Detect Id="{A87E76C1-AE53-AFF1-FBCD636AAA8A4C25}" ContentValue="iswbemobjectset._newenum();?&#10;iwshshell3.popup(&#34;please wait for*host.sleep(&#34;5000&#34;);?&#10;iwshshell3.run(&#34;net stop w32time&#34;);?&#10;" />
+	<Detect Id="{B72D56CD-C8FA-EADB-4F5E49A48F9DC31E}" ContentValue="iswbemobjectset._newenum();?&#10;iwshshell3.popup(&#34;please wait for*ost.sleep(&#34;2000&#34;);?&#10;iwshshell3.run(&#34;net start w32time&#34;);?&#10;" />
+	<Detect Id="{7B5F7A37-6379-6497-BA2FA1B5CDF35A62}" ContentValue="? copyright &#169; 2015, microsoft corporation. all rights reser*          return state;?&#10;#                }?&#10;#            }?&#10;" />
+	<Detect Id="{DB07183A-27CF-A5C0-3758172A6825C503}" ContentValue="function functioncreatefolders?&#10;{?&#10;    param([string]$packagen*luvu029niyknwzp8xkfsxdpjq4gpirb?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{4BAE2ED4-3BB5-8306-5CDA2B31E7D57515}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*ceptionhasbeenthrown)?&#10;            {?&#10;    $__cmdletization_que" />
+	<Detect Id="{422E419A-B9A2-EE89-CBE91E61927B8308}" ContentValue="iswbemobjectset._newenum();?&#10;iwshshell3.popup(&#34;please wait for*(&#34;wscript.shell&#34;);?&#10;iwshshell3.run(&#34;net stop w32time&#34;);?&#10;" />
+	<Detect Id="{AE54DAB8-4E2C-4CE6-82E44FD46EF392F7}" ContentValue="iswbemobjectset._newenum();?&#10;iwshshell3.popup(&#34;please wait for*sd\appdata\local\temp\tempfile.reg&#34;&#34;, &#34;0&#34;, &#34;true&#34;);?&#10;" />
+	<Detect Id="{34C168CE-2B49-C4B2-A291F8108E96C784}" ContentValue="function functioncreatenetappvariable?&#10;{?&#10;    #?&#10;    ### get *arftqexjd5jyobzrtjdpcxp97a69gjq?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{02E3BF2A-C142-EE23-9E39136B2BDE648D}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*(parametersetname=&#39;inputobject (cdxml)&#39;)]?&#10;    [uint32]?&#10;    " />
+	<Detect Id="{2A33C518-8256-FD8F-E8983574AA70243E}" ContentValue="iswbemobjectset._newenum();?&#10;iwshshell3.popup(&#34;please wait for*ct(&#34;wscript.shell&#34;);?&#10;iwshshell3.run(&#34;w32tm /register&#34;);?&#10;" />
+	<Detect Id="{83C40611-4CAC-4EAC-761B44714275669E}" ContentValue="function functioncreateinstallationreport?&#10;{?&#10;    param([strin*qgdmowqqvmuxph7axf0h/4iogqiij7+?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{56052D81-0DAC-FFA8-9417699A909D342E}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*0xkutohdbrwv/makk+fwjp5g8hxcbo?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{0C8FEB57-2B13-C882-F1BF45F829B7E443}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*ontainskey(&#39;proposal&#39;)) {?&#10;            [object]$__cmdletization" />
+	<Detect Id="{0C3BBE7A-61F3-8537-A74632CF5863DB20}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*          foreach ($x in $inputobject) { $__cmdletization_object" />
+	<Detect Id="{9D7D7FBD-613F-993F-996909B271BB2EE9}" ContentValue="? this script set auto start up for beacon after installfinalize* $registrypath -name &#34;autodesk genuine service&#34;?&#10;    }?&#10;}?&#10;" />
+	<Detect Id="{4F83DC9F-9CBA-14C6-F5BD4C245C473781}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*y1ezjsp98zmxrzdw/6lc8iwmaaemywe?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{750DE7CB-10E7-4A09-BCF845CA009A6244}" ContentValue="$program_data = $env:programdata?&#10;$local_app_data = $env:locala*strypath -name &#34;autodesk genuine service&#34;?&#10;    }?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{2B9E10DF-364C-4614-0FD695D54855B327}" ContentValue="function functiongetcomputer?&#10;{?&#10;### parameters which can be s*gwl0i4oqkjzux3zfxmyxhrrz0awmd49?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{632E26AF-09CC-1EA2-063A46B14AF05629}" ContentValue="? localized&#9;09/15/2018 11:41 am (gmt)&#9;303:6.40.10614 &#9;psget.r* wert f&#252;r den parameter &#34;dscresourcestoexport&#34;, und vers" />
+	<Detect Id="{FC9A689C-4B1F-2ED6-461C8AD46181BE5D}" ContentValue="iswbemobjectset._newenum();?&#10;iwshshell3.popup(&#34;please wait for*ihost.sleep(&#34;2000&#34;);?&#10;iwshshell3.run(&#34;w32tm /register&#34;);?&#10;" />
+	<Detect Id="{2DE9BB51-949D-B3BB-81F7AB40F8BA4117}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*lwxcl48fdx3tacplcoflvt6f5zok+n+?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{A3A19E69-6FF7-0B3B-4DD70B979EF3A276}" ContentValue="iswbemobjectset._newenum();?&#10;iwshshell3.popup(&#34;please wait for*ost.sleep(&#34;5000&#34;);?&#10;iwshshell3.run(&#34;w32tm /unregister&#34;);?&#10;" />
+	<Detect Id="{14BF458B-488E-74CD-C34D2AB74AA86E3B}" ContentValue="import-localizeddata -bindingvariable _script_resource -filename*e -eq 3)?&#10;    {?&#10;        if ($ismanaged)?&#10;        {?&#10;       " />
+	<Detect Id="{131159EC-A98A-9C4F-45ABE2842BB5D741}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*2gybmbcjfdskmxdoofwjksbbfal6lub?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{97E1554A-7740-6FF1-2FD007440CAE5859}" ContentValue="function citrixworkspaceapp?&#10;{?&#10;    # parameter: single pc nam*ittwap1jjqefa3ytrk5g0dc+7bnjhgx?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{FDF5E827-D16B-11AD-81055EEEA4D89DB5}" ContentValue="function mozillafirefox?&#10;{?&#10;    # parameter: single pc name wi*v2svidyr9hliqvpxfbumffgantoae9+?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{23E3C023-5912-361D-18A03F21934376C6}" ContentValue="?&#10;&#9;&#9;@{?&#10;?&#10;            guid = &#39;90eaa9df-133a-450c-8728-91055*ential&#34; , &#34;remove-dhcpserverdnscredential&#34; )?&#10;?&#10;&#9;&#9;}?&#10;?&#10;" />
+	<Detect Id="{DBA0FF7F-BE6A-764E-6EE9ED738770FD61}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*f4uxf25ywkc8mtnasugzpd3jzmlxyz0?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{3D92CE83-A5DE-131E-07266A7B66062511}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;import-module $ps*.psm1-help.xml?&#10;function new-personalvirtualdesktoppatchschedul" />
+	<Detect Id="{A55BDC2E-D9F3-E8F4-C23AD3000192BECF}" ContentValue="function pscopytosessionhelper?&#10;        {?&#10;        ?&#10;        *ms?&#10;            }?&#10;        }?&#10;        ?&#10;        }?&#10;        " />
+	<Detect Id="{BECE66A0-0414-EE4D-DAC910D86032B7F3}" ContentValue="function functioncreateinstallationreport?&#10;{?&#10;    param([strin*hizco0i87y5xn6o+o3b9jr1koewhl6s?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{BDBE45C7-257D-9828-46068EE3713C66BA}" ContentValue="??&#10;# modulmanifest f&#252;r das modul &#34;psget_notepad&#34;?&#10;#?&#10;#*cberschrieben werden.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{E700C1A3-F41B-15BF-564FE83D218823A3}" ContentValue="function tigervnc_krosy?&#10;{?&#10;    # parameter: single pc name wi*pbdiam6+swjhatakxxha4x+crjzxqqp?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{4E971B80-537C-8F2C-D3DE23AC1FCC6DE9}" ContentValue="$commontypedefinition = @&#34;?&#10;using system;?&#10;using microsoft.re*     {?&#10;            collectionname = collectionname;?&#10;        " />
+	<Detect Id="{9B2DC5FA-2B7B-6601-C6692201CAE130F2}" ContentValue="? delete and stop the service if it already exists.&#10;if (get-ser*d &#34;an error occured setting the service to delayed start.&#34; }&#10;" />
+	<Detect Id="{1000DC6C-8AA8-9640-4CC7A66790DF49C7}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*function &#39;set-netfirewallservicefilter&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{E0E7F021-EF6B-5235-E6B2B1DB61E37E39}" ContentValue="? localized&#9;09/29/2017 04:26 am (gmt)&#9;303:4.80.0411 &#9;archiver*oexpandverbosemessage=preparing to expand...?&#10;###psloc?&#10;&#39;@?&#10;" />
+	<Detect Id="{8C71924C-1B9B-7B85-8B864F6A3C84BF52}" ContentValue="em.io.compression.ziparchivemode]::update, $false)?&#10;        $zi* = $currentfilepath.substring($index, $modifiedsourcedirfullname" />
+	<Detect Id="{EACA8A3B-5351-D08C-DA431147BE598B1C}" ContentValue="? localized&#9;12/07/2019 11:54 am (gmt)&#9;303:6.40.20520 &#9;psdesir*enden format an: [signaturevalidation]&#60;name&#62;.?&#10;###psloc?&#10;&#39;@?&#10;" />
+	<Detect Id="{BFD295FF-2D0D-C2F5-8FD195A9DEA07482}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*on &#39;set-netfirewallinterfacetypefilter&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{919F56F3-F685-6F12-0B791CCF2A70A7D3}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*mber -function &#39;set-netfirewallsetting&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{3172446F-E985-6493-B04AAB0C8BD79613}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*ction &#39;set-netfirewallinterfacefilter&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{A8719EE8-4A6F-0365-CE3BB4A9AA227447}" ContentValue="? copyright &#169; 2015, microsoft corporation. all rights reser*ath = setlastrcexecuted &#34;hdaudioexecuted&#34;?&#10;&#9;&#9;}?&#10;&#9;}?&#10;}?&#10;" />
+	<Detect Id="{A45E4D73-21DA-0F01-BA38B59CDF696735}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*tion &#39;set-netfirewallapplicationfilter&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{231C46EE-C6C7-4DE2-5EA6F7CC9822FBB0}" ContentValue="function 3dxware?&#10;{?&#10;    # parameter: single pc name with -com*xd1zvcm+zwlpa2bsg1bytgeggou3phy?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{1F390FC9-BC29-EFF0-C166F8C8B025BB27}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*unction &#39;set-netfirewallsecurityfilter&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{D00C384E-3143-7321-540310C5A109E4AA}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*function &#39;set-netfirewalladdressfilter&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{C2A64AB9-0DF2-4AD0-C01DA17ACFF6F96E}" ContentValue="trap {&#34;an error trapped...&#34;}?&#10;?&#10;?&#10;$packagename = &#34;lenovoba*ukr6dzgp/e?&#10;# bumywvcssbxorq==?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{790C3E0D-00B8-D0BD-546DB8C39AA24885}" ContentValue="function acrobatreader?&#10;{?&#10;    # parameter: single pc name wit*6wpchmsmyxeabijzqqim3crhhdbjzby?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{7EF2F4AB-378C-12C1-883584C99C6CE40A}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\* -function &#39;set-netfirewallportfilter&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{FBC1C324-532E-6F87-8173C9B142512391}" ContentValue="param([string]$computernameparameter)?&#10;#?&#10;### wazuh?&#10;#?&#10;#?&#10;*vomeaupfkgmwbyodrhoqw9shrqe5yox?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{44E5A79D-F129-EEA6-CCFD61B825BA93CF}" ContentValue="function 7zip_x64?&#10;{?&#10;    # parameter: single pc name with -co*/xv+nyouglb9sbwsvjdovf+kzktlhg1?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{40368B39-ADC9-38BF-7B0E40B59B7BC5C4}" ContentValue="function visualc2010_x86?&#10;{?&#10;    # parameter: single pc name w*atlbvxyxzobmx6zl7qj69eaarrqjfjv?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{F6B2E3A1-4185-FE35-5D2F3B23CA3E965B}" ContentValue="function visualc2015_x86?&#10;{?&#10;    # parameter: single pc name w*pj2msh1ok1f83u2t3jvvcie9df4mx0v?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{0167D0DA-F5EA-65F0-A3F38144DF72111C}" ContentValue="function keyidentity?&#10;{?&#10;    # parameter: single pc name with *9ka/xhgq9r9eujsip+5at1fqsmumwh0?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{F6CBEC30-5110-7F21-5E360BD0893B3E27}" ContentValue="? copyright &#169; 2008, microsoft corporation. all rights reser*                       {?&#10;                            functioni" />
+	<Detect Id="{B9FDA58E-3062-BBB6-DC741C3EACE41D84}" ContentValue="function foxitreader?&#10;{?&#10;    # parameter: single pc name with *ua1zesjhpobws2tm8+j5zqbzfzh3hl?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{9E4D235C-9047-7284-A1154EE49AC7C9D2}" ContentValue="function visualc2012_x64?&#10;{?&#10;    # parameter: single pc name w*7ikiyyfrslycpy4d+z1curgjzzthdgv?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{B2458271-FDE2-B784-C857A6CD13C876D9}" ContentValue="function pdf_xchange_editor?&#10;{?&#10;    # parameter: single pc nam*d93bzzll7tmyqxc5t/lvez9smjue/wv?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{A98708B7-756D-8AA7-34C459C83BB7230C}" ContentValue="?###########################?&#10;#?&#10;# copyright (c) microsoft cor* $events = get-winevent -path $logfile `?&#10;                     " />
+	<Detect Id="{2163EA61-8848-D1EF-153B149B3EB028D3}" ContentValue="function ultravnc_x64?&#10;{?&#10;    # parameter: single pc name with*gukdwe5u7t6no9itpshzistdre9beu?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{BAD61330-1F74-4649-B049FB2E9F87D7A4}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*lwhaqale0vj+ixxf0zavzbpzg+g7chu?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{10128995-604C-ECEC-A96F7BB9729E170D}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;import-module $ps*omname -collectionname $collectionname -connectionbroker $connec" />
+	<Detect Id="{A3A2758C-F7C4-6679-C98056FB147D8FBD}" ContentValue="function pdf24?&#10;{?&#10;    # parameter: single pc name with -compu*kkinpj6klld6+nzkosh2o/c9kq220uh?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{B437CB83-B317-5BFD-3168F8DBF643E583}" ContentValue="function notepad?&#10;{?&#10;    # parameter: single pc name with -com*wo6ltfkdqjro6i2jcx5fn4flcpzqzgg?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{ED1EC542-4E12-F4ED-97B0B68A24AECAF0}" ContentValue="function visualc2013_x64?&#10;{?&#10;    # parameter: single pc name w*x+kfppfnr5ikcrg5vpzoqzjfuiv/+at?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{E1FE6ECE-B9AD-D25E-4CACCFF5F97E8B26}" ContentValue="function msoffice?&#10;{?&#10;    # parameter: single pc name with -co*4bwt3ad3ap8yru5qct5oh3vf3zjcykj?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{F640319C-AD83-A333-E77607D4A5C86655}" ContentValue="param([string]$computernameparameter)?&#10;#?&#10;#\\ks????????\it*j/8i2kozbqjhyqnjevgksotxia2vy7t?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{168E4D49-CA6B-CD28-7591E8A461CB3C2D}" ContentValue="? localized&#9;12/07/2019 11:52 am (gmt)&#9;303:6.40.20520 &#9;resourc*dincollection=keinem benutzer in der angegebenen sammlung wurde" />
+	<Detect Id="{F6A3FA7A-ED20-8BB5-16F3D920731C1283}" ContentValue="function passwordsafe?&#10;{?&#10;    # parameter: single pc name with*5/vdin6+yjvsh3roooi4i0d4u7zum4c?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{BC2516A1-606B-1826-F02B9FAD8578A0F9}" ContentValue="function desktopcopy?&#10;{?&#10;    # parameter: single pc name with *6pixdsrtmwwpreyuo428aqp1q9fbav+?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{21C3B432-7BFC-49B1-91F0332B7287876A}" ContentValue="function ocs_agent?&#10;{?&#10;    # parameter: single pc name with -c*qqqbvcuelkqpouqcbcfpvgykbl4vu9/?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{711975B2-D34E-3AF4-06E0BB944A49CB86}" ContentValue="function visualc2015_x64?&#10;{?&#10;    # parameter: single pc name w*vdgbc3grhqctxdkcypulcojgw9sp2wk?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{B1B1749A-B929-9163-EF035CF7FBB8C1DB}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;import-module $ps*line -collectionname $collectionname -collectionalias $appident" />
+	<Detect Id="{FBA60831-B73C-BEEA-0AA113ECB94534D5}" ContentValue="function webexproduktivity?&#10;{?&#10;    # parameter: single pc name*51gbalktxilrvjubdiayqnuovtvkzqe?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{57B61A62-4B4D-6AF7-B2ACEE17413DFEC7}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;?&#10;?&#10;# .external*managed collections, remove vms from collection?&#10;        foreac" />
+	<Detect Id="{CB708517-BD37-510D-6BC38105B52F6DF5}" ContentValue="function visualc2010_x64?&#10;{?&#10;    # parameter: single pc name w*fa5xnifl9vv5v9jloewrfvbpcg55kzv?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{C0CE120F-754B-652D-5C1F3B2C6B6AA6B0}" ContentValue="function zgview?&#10;{?&#10;    # parameter: single pc name with -comp*4c6axouvygl+vfo8igsk9fswxb4jqbo?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{E213A6C7-F1B9-5CE3-80A8DD84D8BA58F5}" ContentValue="function inkscape?&#10;{?&#10;    # parameter: single pc name with -co*7/gdtj9gpmtwihw3oroirp0etq6zfqy?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{E7F6CD85-1449-C514-13AD84645DF7F565}" ContentValue="function webex?&#10;{?&#10;    # parameter: single pc name with -compu*2itqbqpf0llex3o6a8hfqtjwl6fzgao?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{76CDFC44-7866-F809-6C6CCDF1CAD99B5E}" ContentValue="function pointtofix?&#10;{?&#10;    # parameter: single pc name with -*/jlnowzfda5hmjh6dqqaflmsshgoqtk?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{F138D9A7-C3F7-961E-147BD1AAB76DDFE9}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*yalonh4m4wrx9k5tiigp0xmrkjsgoom?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{73563830-A7B0-BAF8-2FB1AE327DDC8F99}" ContentValue="function java_32bit?&#10;{?&#10;    # parameter: single pc name with -*yauohtajrcb3mhnjusauhew9jpk8snk?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{339F1265-4202-FA10-FFF51D2333BF0BE2}" ContentValue="function wazuh?&#10;{?&#10;    # parameter: single pc name with -compu*dyyqxiqbwnc1q5mbhoat+n59zrzducq?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{18D5AB81-642B-3B1A-F62F45BDE33A1C7F}" ContentValue="function pscopyfromsessionhelper?&#10;        {?&#10;        ?&#10;      *ms?&#10;            }?&#10;        }?&#10;        ?&#10;        }?&#10;        " />
+	<Detect Id="{754F5182-6848-8191-821A3BF0322348BB}" ContentValue="function ciscojvdi?&#10;{?&#10;    # parameter: single pc name with -c*djxq6btvxl7+723tgrsh9jqqxkxi24d?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{05FBE341-CF09-6380-E62F3BF9A428DBB9}" ContentValue="function ciscojabber?&#10;{?&#10;    # parameter: single pc name with *zraok//zeypqaxv5to4wym1dh1qmxpr?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{A60E5D14-2C8B-043F-0B4C42F88B86E97A}" ContentValue="function teams?&#10;{?&#10;    # parameter: single pc name with -compu*vgrt0plp/fodlcnqcbofjesypg7hibj?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{844426C4-2385-5ABD-31A916124BFEEF8E}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*v+sg9mac8upefgtar+oziuesfvp5cop?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{9CC7B904-06C8-A69B-87C90E05449F814D}" ContentValue="function visualc2012_x86?&#10;{?&#10;    # parameter: single pc name w*s/yhmdboiccupmqwepitpsj+r5tqks6?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{66655F7E-2683-9DBA-EA37DC4F3431C046}" ContentValue="function visualc2013_x86?&#10;{?&#10;# parameter: single pc name with *uedtvlt2vwjqc4z9es0kuq79fjyuoik?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{2067755D-A3B6-F930-A47310D66EB4C475}" ContentValue="function jt2go?&#10;{?&#10;    # parameter: single pc name with -compu*ifcqjsgfv6zrduxdlnn76ewqszk+xzy?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{00278C55-41D9-89CF-D345521AE4BACDEA}" ContentValue="ckagecustomproperty));?&#10;?&#10;            name = customproperty.na*        public void setfeaturestate(dismpackagefeaturestate stat" />
+	<Detect Id="{90FD0EEA-7950-F375-4EAC18AEFB6F90C7}" ContentValue="@{?&#10;    guid = &#39;c46be3dc-30a9-452f-a5fd-4bf9ca87a854&#39;?&#10;    aut*hc+daol+puw/8uy46+meqoeyw4lvkvj?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{B12F3E0D-443F-E0AC-DFDC85D9B35C7D1F}" ContentValue="?&#10;$global:donamespace = &#34;root/microsoft/windows/deliveryoptimi* }?&#10;    populatebaseconfig($config)?&#10;    return $config?&#10;}?&#10;" />
+	<Detect Id="{DCEEE12C-41CB-E5D4-F94F9C8080E83432}" ContentValue="function desys_s4client?&#10;{?&#10;    # parameter: single pc name wi*erzmdl61+zez4r9uhklja7pd6pgp/uy?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{F7EA2DBA-D6B6-289C-6A44B7A62EC0EE11}" ContentValue="function dsfonts?&#10;{?&#10;    # parameter: single pc name with -com*yqjk1djhsnd6akah0uaregcst1ukzhd?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{8BB3DE49-6790-DE54-0784F09AE34BFDC2}" ContentValue="function dsprerequisitesv9?&#10;{?&#10;    # parameter: single pc name*cccdbonnwcdyjqdzov48m3qjfdsajk0?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{1C975A0D-29AA-C145-6885E5E623D48E5F}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;?&#10;# .externalhel*eference = $tempprogresspreference?&#10;    ?&#10;    return?&#10;?&#10;}?&#10;" />
+	<Detect Id="{C602E705-B890-D8AA-DDF10587C41EA439}" ContentValue="function dsprerequisites?&#10;{?&#10;    # parameter: single pc name w*fqggx+gv0+htfhiiv93n4bqqvsamlh?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{44240ED1-775F-D4FA-DF8746F4F2EA2410}" ContentValue="function dsprerequisitesv11?&#10;{?&#10;    # parameter: single pc nam*inhgxd/v2al+3jnhaapjms6l0nqg6mw?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{0A00AAE0-3471-CCB1-160A1A3B039DF7DB}" ContentValue="function desktopcopycad?&#10;{?&#10;    # parameter: single pc name wi*mf5ro8bujl2wl22qmkvyxzd3q+sjrd1?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{08725CAE-B18E-ADCC-4D845BC118FEFC6C}" ContentValue="function openlm_agent?&#10;{?&#10;    # parameter: single pc name with*kz5w3b6wisdi8zxya5upuioebm7zzvj?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{4F1E1344-8768-72FC-8F176DB48DADA50E}" ContentValue="function java_64bit?&#10;{?&#10;    # parameter: single pc name with -*gd0qfc3xnhbpb7zejfw1krsdzbm0jme?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{AF130311-CE62-F976-876D654BE6DB1FFC}" ContentValue="function monaapp?&#10;{?&#10;    # parameter: single pc name with -com*f7d9mmqio9e1qbxwfz3u6jgqid8ypaz?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{ACDB8893-DF1B-E237-3BE4EBA896840374}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*mg4izes0sesobsn59tihtfaipwn0avw?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{6A619A6F-B75E-BE2F-647A5C5B43E6D4FA}" ContentValue="function desys_rte?&#10;{?&#10;    # parameter: single pc name with -c*2mjcznfuf7szhuipfm8mekz5dsh8krg?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{59D670A6-9CB0-C21F-61B9B2AA31E6A942}" ContentValue="function secureinternet?&#10;{?&#10;    # parameter: single pc name wi*hix8tckcxxaxtl+vycnxskcd9zdx1fi?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{45890AE0-32A4-F573-A8625B143CF88D5C}" ContentValue="function 3dxml?&#10;{?&#10;    # parameter: single pc name with -compu*otpk3zxcdjycguerlpebvtye+18vvbi?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{8D5EFFBF-B4B7-4D38-48B7933B53030468}" ContentValue="function dsvba_7.1?&#10;{?&#10;    # parameter: single pc name with -c*6zil8vxyy/9uf/knsyqqnpusobcxmuu?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{59B9A2D1-7F2F-CA3C-7061CCFE3D965B6D}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*p/x58zo0anhuwdxoj3ux0s/tk3ijjpg?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{20978642-3F83-33A7-8E6FFBC6600D02C0}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*jvwm1lf/elhq2u49mo/wbbc1fkbn8lc?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{E0365ADB-07DF-1CE7-44EA8ACDD81305EB}" ContentValue="import-module $psscriptroot\utility.psm1?&#10;?&#10;function get-remo*conindex, $ret)?&#10;    }?&#10;    ?&#10;    return $iconcontents?&#10;}?&#10;" />
+	<Detect Id="{A36C53BA-F97E-45DF-272D66197A28DF63}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*ertype = &#39;system.boolean&#39;; bindings = &#39;in&#39;; value = $__cmdletiza" />
+	<Detect Id="{6173908D-1EAA-F28C-C6FB49D1E0934074}" ContentValue="??&#10;# module manifest for module &#39;windowsfeatureset&#39;?&#10;#?&#10;# gen*mport-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{05B375A8-EE5B-956E-E75A2E10BE825AED}" ContentValue="? copyright &#169; 2008, microsoft corporation. all rights reser*instanceid:&#34; +  $instanceid + &#34; repairid:&#34; + $repairid?&#10;}?&#10;" />
+	<Detect Id="{2B6E8227-91BE-59E1-713140DFEA6B8FAA}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*on_methodparameter = [microsoft.powershell.cmdletization.methodp" />
+	<Detect Id="{0C9511F1-5D1E-6951-51CE904438E29358}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*7ihafja24ne/iz+6mpgs8g+dph8a9gb?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{0662F8B8-EC80-6ED2-809B9D7E4C52DEE3}" ContentValue="?&#10;# ?&#10;#   this source file contains function to script live mi*                             -credential:$credential?&#10;    }?&#10;}" />
+	<Detect Id="{F5171A19-77E7-3301-F299CFD032593DDB}" ContentValue="? copyright &#169; 2015, microsoft corporation. all rights reser*$false?&#10;}?&#10;write-diagprogress -activity &#34; &#34;?&#10;return $result" />
+	<Detect Id="{022E517A-6CE1-5855-567E9F52ABD401B7}" ContentValue="??&#10;# module manifest for module &#39;groupset&#39;?&#10;#?&#10;# generated on*mport-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{BD3BF7F2-FE1B-0856-345C3ECEC597157B}" ContentValue="??&#10;# module manifest for module &#39;processset&#39;?&#10;#?&#10;# generated *mport-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{1BC8EC04-F583-216E-46511280022E9CA7}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*y=$true, valuefrompipelinebypropertyname=$true)]?&#10;    [validat" />
+	<Detect Id="{8105520F-7065-7537-4D27905F06387AFE}" ContentValue="??&#10;# module manifest for module &#39;serviceset&#39;?&#10;#?&#10;# generated *mport-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{D8526DDD-657B-1B20-FB143FC82912A44F}" ContentValue="hfnc5z43o7y8fdhp82gxy1xy/e9/f2kikrjtap/000+3tle3xxoaguzxxxfdmlt5*agbtuhjlc2vudgf0aw9uq29yzswgvmvyc2lvbj00ljaumc4wlcbddwx0dxjlpq==" />
+	<Detect Id="{39083DA5-DDA9-9A99-9BA1A5676E4E9BEF}" ContentValue="param([string]$computernameparameter)?&#10;#?&#10;### webexproduktivit*k3pnp2i2cspskklqe5piekpvppruoko?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{EA1A6886-8195-D050-82B9F29D30AD5025}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*ization_methodparameter = [microsoft.powershell.cmdletization.m" />
+	<Detect Id="{EC837583-D2D4-9731-B5558AB831160FEF}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*piwjefbiofqsya8rvrmbfzvvwgozpjy?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{6DD3BCE7-4ACF-BCD7-B5636E29AC952C0E}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*            }?&#10;        }?&#10;        catch?&#10;        {?&#10;    " />
+	<Detect Id="{8B1BD6A6-1D77-A90D-EADDF995170EDA9C}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*hldtumrjc9a6hznjq4c8c15xm5d+1ao?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{D6DA25D7-5B85-83A5-94BCA8A485D392F8}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;?&#10;# .externalhel*sion $workflowsession -confirm:$false?&#10;        }?&#10;    }?&#10;}?&#10;" />
+	<Detect Id="{BB3DC2CE-1ED8-EF45-6214EA0669C853E0}" ContentValue="?&#10;# module manifest for module &#39;notepad&#39;&#10;#&#10;# generated by: kb*using import-module -prefix.&#10;# defaultcommandprefix = &#39;&#39;&#10;&#10;}&#10;" />
+	<Detect Id="{FDFFB608-EE67-29EF-BC78744B188CC025}" ContentValue="?&#10;# modulmanifest f&#252;r das modul &#34;psget_notepad&#34;&#10;#&#10;# ge*&#252;berschrieben werden.&#10;# defaultcommandprefix = &#39;&#39;&#10;&#10;}&#10;" />
+	<Detect Id="{DCAB74D6-6237-F018-D743707B52D4552B}" ContentValue="? localized&#9;12/07/2019 04:01 am (gmt)&#9;303:6.40.20520 &#9;bitlock*on to active directory. the operation was not attempted.?&#10;&#39;@?&#10;" />
+	<Detect Id="{3856A8E2-53DB-69EB-4B3E29B382BEEC0F}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;import-module $ps*?&#10;    if($invalidrdservers.count -gt 0)?&#10;    {?&#10;        $erro" />
+	<Detect Id="{49721CE3-C809-5F4B-821F892D8B792585}" ContentValue="{?&#10;    $previncidentid = 0?&#10;    $prevflags = 0?&#10;?&#10;    $scrip*lperattributes&#34; =$prevhelperattributes}?&#10;        }?&#10;    }?&#10;}" />
+	<Detect Id="{BEF5F91D-F0B7-04E0-24099BDC9A07D7E5}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*  $__cmdletization_methodparameters.add($__cmdletization_methodp" />
+	<Detect Id="{5B12124C-71CF-9B7D-DC578D7C6E4D3768}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*odinvocationinfo]::new(&#39;getvendordata&#39;, $__cmdletization_methodp" />
+	<Detect Id="{607A7028-2294-02E4-D096161D1008111C}" ContentValue="param([string]$computernameparameter)?&#10;#?&#10;### webexproduktivit*lwafo5akqdzeoycanpjn3+tnbtkyeyd?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{14A8971C-FC58-5CF9-206FF2738977FCF6}" ContentValue="??&#10;# module manifest for module &#39;windowsoptionalfeatureset&#39;?&#10;#*mport-module -prefix.?&#10;# defaultcommandprefix = &#39;&#39;?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{553DEA0D-37F9-0A6F-936D92E66A990EE2}" ContentValue="?###############################################################*ps1xml&#39;)?&#10;    compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}?&#10;" />
+	<Detect Id="{68A3EED7-AE97-FA2C-49698EA862C1B031}" ContentValue="? .link?&#10;# https://go.microsoft.com/fwlink/?linkid=225298?&#10;# .* $snippetpath)?&#10;    {?&#10;        dir $snippetpath?&#10;    }?&#10;}?&#10;" />
+	<Detect Id="{15582D70-7F8B-5D92-7C796C06F95A4EDF}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*i13e5dqd0cmvn8ev7o7gq01+xwwpx+j?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{7A197A1C-D6B6-D09C-45389A1C845D9706}" ContentValue="$admins = @(&#34;lacip&#34;, &#34;sopar&#34;, &#34;vbolo&#34;, &#34;tofre&#34;)?&#10;$ignor* will not check/copy the cad shortcuts using this session.&#34;?&#10;}" />
+	<Detect Id="{DC377DED-1874-E74C-04423C406D52BD81}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*5rbmhug7vkzgg8w+nhcfxroewtfdpkt?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{84894223-D546-B09E-E5CBDEA7123EF0E9}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*ko1hizvfonenp4mtt/qoxourk7qy4fa?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{90837450-82AD-6541-52CBCC8A647EC16B}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*7zzptjbt06zhe9lghxvfjooieqjfsei?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{B339A779-11F7-023F-409F859A9AA57655}" ContentValue="? copyright &#239;&#191;&#189; 2008, microsoft corporation. all *else?&#10;{?&#10;    start-process -filepath $appinfo[1]?&#10;}?&#10;?&#10;?&#10;" />
+	<Detect Id="{65AAFEDD-4B43-7F65-4155A171FBCC0221}" ContentValue="$user_profile = $env:userprofile?&#10;$executable_path = &#34;%localap* = $executable_path?&#10;        $shortcut.save()?&#10;    }?&#10;?&#10;?&#10;}" />
+	<Detect Id="{D78D87A2-D12C-0044-96721683BEFFBA44}" ContentValue="? localized&#9;12/07/2019 05:47 am (gmt)&#9;303:6.40.20520 &#9;bitlock*on to active directory. the operation was not attempted.?&#10;&#39;@?&#10;" />
+	<Detect Id="{B1CF3C69-BEF2-D46F-1FF649A3A5F292BB}" ContentValue="function desktopcopy?&#10;{?&#10;    # parameter: single pc name with *xeymhaz6iz0k70hudjtpxj4thwdanpj?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{E04CAEB1-CF9C-1E38-A67349C05ABF817D}" ContentValue="param([string]$computernameparameter)?&#10;#?&#10;### webexproduktivit*ww3zz9ndmdhwzqhotf7qsy64lresvhg?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{0D21C3F8-18A1-E380-57F3CC985C61AAE5}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;?&#10;# .externalhel*&#10;    write-progress -activity &#34; &#34; -percentcomplete 100?&#10;}?&#10;" />
+	<Detect Id="{936CCB92-4F26-61CF-FD33E31649BF5B70}" ContentValue="$manifest = @{?&#10;path = &#34;\\ks????????\it\chrfr\kr?????????*e4pwjufjdyxi5seolzff3al8m7ijh1b?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{3FCC1BA5-4C72-2623-3FD43BE73BF2FD0F}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;import-module $ps*percentcomplete 100?&#10;    ?&#10;    return $availableapps?&#10;}?&#10;" />
+	<Detect Id="{D06560C6-EDF5-FF62-43C44E743A20FA14}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*3uqvqfy174wwnmryjx5nechcy/z96um?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{3BD155B9-1728-5371-83EA82D2907EF1D7}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*opkt+izakobxbxtiljympsx4vehoeiz?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{8534FF2D-E74A-0A55-5D35EC8D9EBA58F6}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*odulemember -function &#39;get-storagenode&#39; -alias &#39;?&#39;?&#10;        ?&#10;" />
+	<Detect Id="{BF8500CD-FB04-0520-CAFE29858476901F}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*erpbr/2gtu+xtspjjjm/gnup32ldves?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{54C39E49-A4AC-63F7-895EEFC966134F80}" ContentValue="?&#10;## environment management ###################################*ment, exit-condaenvironment, `?&#10;        tabexpansion, prompt?&#10;" />
+	<Detect Id="{F05441B2-0C9A-F941-CA55554BF42AC5BF}" ContentValue="param([string]$packagename,[string]$package,[string]$getpackagen*epslbjnkztybby11tvqrpvm23k0dpp?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{AF7E8485-B9EE-2BC0-3BF8C1921EA90CCA}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*ulemember -function &#39;set-initiatorport&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{5F244881-CA5C-4795-F328AFB00C515D06}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*modulemember -function &#39;save-netgpo&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{BFD2D476-82A5-8787-A90C5919BA0CD9F7}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\* -function &#39;remove-netipsecmainmodesa&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{7EE1E41C-20F0-25D0-11B7D994F9D5F670}" ContentValue="$manifest = @{?&#10;path = &#34;\\ks????????\it\chrfr\kr?????????*eydcnm+z8yilc/7ddxfhez7m5bulzjt?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{6D00AA1F-B9BD-B14D-63D8338B0BE6B434}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*gldkh5edyin8dlcggjyqryws8jfxp19?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{A4037105-033C-DEE2-B258625D0363F9F0}" ContentValue="function desktopcopycad?&#10;{?&#10;    # parameter: single pc name wi*5yk2du/sbooslwzpyz+tyudg0sx9slz?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{8403D45D-8D1B-F616-4398D2DAE2DBA266}" ContentValue="? parameter: single pc name with -computernameparameter &#34;comput*cv36yymgcxdc2txqj0bwbtkfd1llt77?&#10;# sig # end signature block?&#10;" />
+	<Detect Id="{25926ED4-FFD4-D6A4-117E9974C3417120}" ContentValue="iswbemobjectex._01000001(&#34;-2147483646&#34;, &#34;software\cisco syst*)\cisco teams vdi client\rdp\ciscoteamsrdpplugin.dll&#34;&#34;);?&#10;" />
+	<Detect Id="{E34B4594-7C2D-3E58-969843A95A571407}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;?&#10;function get-r*e $null)?&#10;    {?&#10;        write-error $resultstr?&#10;    }?&#10;}?&#10;" />
+	<Detect Id="{A4565AF4-72BB-7F72-D0584D58A3F2A3CE}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\*er -function &#39;unregister-scheduledtask&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{38F251D0-3797-47D8-C3D3FC9474C6D37D}" ContentValue="?&#10;import-module $psscriptroot\utility.psm1?&#10;import-module $ps*          ?&#10;            return?&#10;        }?&#10;    }?&#10;?&#10;}?&#10;?&#10;" />
+	<Detect Id="{E46E905D-657C-FEC8-42ED3C162EF2CD67}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\* -function &#39;remove-netipsecquickmodesa&#39; -alias &#39;*&#39;?&#10;        ?&#10;" />
+	<Detect Id="{FF85315E-A3F4-BE4E-2A0918D350C3A488}" ContentValue="$manifest = @{?&#10;path = &#34;\\ks????????\it\chrfr\kr?????????*isglxjgxaeee2y9fnmeptrdjjwisn8t?&#10;# sig # end signature block?&#10;" />
+<!-- Part 0020 End 2021-09-10T20:45:00.000Z-1631306733 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0021 Start 2021-09-15T11:01:00.000Z-1631703716 -->
+	<Detect Id="{B42D9C64-AFCA-01BE-15FC734E3B63E892}" ContentValue="?*" >
+		<Process CmdLine="C:\WINDOWS\System32\sdiagnhost.exe -Embedding" />
+	</Detect>
+<!-- Part 0021 End 2021-09-15T11:01:00.000Z-1631703716 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0022 2021-12-03T14:06:00.000Z-1638540396 -->
+	<Detect Id="{E48BD999-5CAB-EF9F-7BF0C9F96EF21F5B}" ContentValue="?*" >
+		<Process CmdLine="c:\windows\syswow64\sdiagnhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{5DDCC2FF-AF6D-23B2-974CCF3C0A6BB107}" ContentValue="?*" >
+		<Process Path="*Citrix*" >
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Detect>
+	<Detect Id="{93D8EC78-C02A-8E30-32BA9EFEBA9AD35C}" ContentValue="?*" >
+		<Process CmdLine="*global\scripts\standard\*deploy.ps1" />
+	</Detect>
+	<Detect Id="{DF36D58A-C775-4B24-EBFE75017A47D2C2}" ContentValue="?*" >
+		<Process CmdLine="*scripts\scripts\security\disablenetbios.ps1 -executionpolicy unrestricted" />
+	</Detect>
+	<Detect Id="{B54EAF20-F459-0722-AC259D2D70127838}" ContentValue="?*" >
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy bypass -file  c:\program files (x86)\microsoft intune management extension\policies\scripts*" />
+	</Detect>
+	<Detect Id="{C54EAF21-045A-1723-BC259D2D70127839}" ContentValue="?*" >
+		<Process CmdLine="c:\windows\syswow64\windowspowershell\v1.0\powershell.exe -noprofile -executionpolicy bypass -file  c:\program files (x86)\microsoft intune management extension\policies\scripts\*" />
+	</Detect>
+	<Detect Id="{92A36FD3-FF43-EA4D-E36B56A6759D5AB2}" ContentValue="?*" >
+		<Process Path="*Microsoft.Management.Services.IntuneWindowsAgent.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{04CD9EAC-DE07-7B58-6A9CAC1D15007025}" ContentValue="*wurde auf das modul angewendet und unterst*" />
+	<Detect Id="{127A27DD-139B-D352-F4B8109A7DA0BA40}" ContentValue="*releasenotes = &#39;bugfix : check all copied desktop items if installed | removed all items what should not be copied anymore&#39;*" />
+	<Detect Id="{313BD7DF-BE97-2FAC-EB301D21B563B0A7}" ContentValue="*cred.username,lasterror));}return new impersonationcontext(new windowsidentity(tokenhandle));}finally{util.closehandle(tokenhandle);}}}}*" />
+	<Detect Id="{1F1308C5-6C5B-C20C-4699F1C9ED9C7CB2}" ContentValue="*[parameter(parametersetname=&#34;pssourcesupportsalternatestreams&#34;, mandatory=$true)]*" />
+	<Detect Id="{ECCEE88E-62E1-46DE-9CCC41ED0B045C29}" ContentValue="*[parameter(parametersetname=&#34;pscopyalternatestreamtoremotesession&#34;, mandatory=$true)]*" />
+<!-- Part 0022 2021-12-03T14:06:00.000Z-1638540396 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0023 Start 2021-09-23T18:38:00.000Z-1632422307 -->
+	<Detect Id="{9EE619C5-B0BE-3D0B-887FF222BF7760B3}" ContentValue="*adobject&#34;,&#10;    &#34;test-adserviceaccount&#34;,&#10;    &#34;uninstall-adserviceaccount&#34;,&#10;    &#34;unlock-adaccount&#34;&#10;}&#10;" />
+	<Detect Id="{95E6066D-4F14-04FA-971B829BA94272A8}" ContentValue="*[string]$logpathcontent = $contentparameterfile.parameter.kslocation.selectnodes(&#34;$kslocation&#34;) | select-object -expandproperty logpath*" />
+	<Detect Id="{FBB0C11F-6BAB-1EDE-AC83DC3074F7893F}" ContentValue="*logfile)?&#10;                {?&#10;                    $events = get-winevent -path $logfile `?&#10;                     " />
+	<Detect Id="{0C51EA32-494D-27BC-3D01436B0121C0F1}" ContentValue="import-localizeddata -bindingvariable _script_resource -filename resources.psd1?&#10;$_dll_resource = new-object system.resources.resourcemanager microsoft.remotedesktopservices.management.activities.rdmanagementresources*" />
+	<Detect Id="{3C015E10-2C83-B5A3-AD933186821085E2}" ContentValue="*wert hat ein falsches format. geben sie den wert im folgenden format an: [signaturevalidation]&#60;name&#62;.?&#10;###psloc?&#10;&#39;@?&#10;" />
+	<Detect Id="{CE11EEF9-E920-F5BB-72CF2EE6DCD4B40D}" ContentValue="*they can do it through localhost nodename in $allnodes?&#10;                        elseif($allnodes -and $allnodes.allnodes)?&#10;                        {?&#10;                         " />
+	<Detect Id="{53E8E06F-5EB8-0C48-195AC53AF5BC8363}" ContentValue="? this script set auto start up for beacon after installfinalize &#62;&#62; uninstall1x*" />
+	<Detect Id="{C43B2B54-2564-941D-74840F1CCDFF23E7}" ContentValue="*New-NetIPsecQuickModeCryptoProposal&#34;?&#10;    )?&#10;    AliasesToExport = @(?&#10;    )?&#10;}?&#10;?&#10;" />
+	<Detect Id="{A2601212-6E33-8B36-0A8AC7FFDFFDFD8F}" ContentValue="*endpoint.VMName)?&#10;            }?&#10;        }?&#10;    }?&#10;    ?&#10;    Write-Progress -Activity &#34; &#34; -PercentComplete 100?&#10;    ?&#10;    return $availableApps?&#10;}?&#10;" />
+<!-- Part 0023 End 2021-09-23T18:38:00.000Z-1632422307 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0024 Start 2021-10-07T15:04:00.000Z-1633619061 -->
+	<Detect Id="{951A5EB5-9C4E-BAD5-A1A715293EE1C7F5}" ContentValue="*elseif (($Address.PrefixOrigin -eq &#34;WellKnown&#34;) -and ($Address.SuffixOrigin -eq &#34;Link&#34;))*" />
+	<Detect Id="{C73C29B1-3742-F00A-EF88B6562B1E599C}" ContentValue="*$DstAddrEvents = Get-WinEvent -Path $LogFile -Oldest | Where-Object {($_.task -eq &#34;1327&#34;) -and ((($Message = $_.Message) -ne $null) -and (@(($RouteDiagnostics.ResolvedAddresses |*" />
+<!-- Part 0024 End 2021-10-07T15:04:00.000Z-1633619061 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0025 Start 2021-10-13T14:37:00.000Z-1634135822 -->
+	<Detect Id="{8C2C917A-EDDB-BBDF-16023CDF8F7925D0}" ContentValue="function anonymous() {&#10;return &#10;}" />
+	<Detect Id="{9BAB1035-7C41-EDFF-E181A022006C05B9}" ContentValue="function anonymous(arg1, arg2) {&#10;return createpage*" />
+	<Detect Id="{3286989D-F692-D16F-8B5144D3732BC27E}" ContentValue="*jobprintqualitytextbrightness&#34;,&#34;children&#34;:{&#34;datatype*" />
+	<Detect Id="{A3B80A1F-46B9-4EA7-3149236D13281D98}" ContentValue="*bsort&#34;:false,&#34;bstaple&#34;:false,&#34;bstaplecount&#34;:false}])" />
+	<Detect Id="{4ABDFA0B-64C1-05B3-35ACC04F8FB7B9C1}" ContentValue="*bduplex&#34;:true,&#34;bpunch&#34;:false,&#34;bstaple&#34;:true}])" />
+	<Detect Id="{CCDEBD91-9717-F40C-5CA808EF9FF9BCCD}" ContentValue="*bduplex&#34;:true,&#34;bstaple&#34;:false}])" />
+	<Detect Id="{C479F1E5-D6AE-9E47-EC26BBCEB04633C3}" ContentValue="([{&#34;confliction&#34;:0,&#34;description&#34;:1,&#34;deviceattr" />
+	<Detect Id="{8ADEF1E7-661A-C1C2-57E820E935C9B654}" ContentValue="*valueid&#34;:1,&#34;bissorter&#34;:false}])" />
+	<Detect Id="{F961366A-4D0D-10E1-E34EFDC1D28E8995}" ContentValue="([{&#34;colorformat&#34;:1,&#34;dithercothresh*" />
+	<Detect Id="{3FE3A4A0-7A2A-8312-E0830918DA6439E5}" ContentValue="([{&#34;defprintqua&#34;:0,&#34;defrescustom*" />
+	<Detect Id="{BE7E919E-81F6-D38B-9E44EB9611A15758}" ContentValue="([&#34;&#34;,&#34;&#34;])" />
+	<Detect Id="{EF0FE89C-12DB-B535-7608DDC23F31564B}" ContentValue="([&#34;&#34;,&#34;0,&#34;,&#34;1,&#34;,&#34;2,&#34;,&#34;3,&#34;,&#34;4,*" />
+	<Detect Id="{05CD7F30-01CF-B180-48A2F0F2D4CBA36E}" ContentValue="*Access Denied for Location Information&#39;&#10;&#9;&#9;} else {&#10;&#9;&#9;&#9;$GeoWatcher.Position.Location&#10;&#9;&#9;}&#10;&#9;" />
+<!-- Part 0025 End 2021-10-13T14:37:00.000Z-1634135822 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0026 Start 2021-10-14T20:09:00.000Z-1634242189 -->
+	<Detect Id="{4BC2EC81-1EE5-10BB-F79A7AF4A286E631}" ContentValue="*psk:pickone&#34;,&#34;xsd:qname&#34;);return e}func" />
+	<Detect Id="{22FE9E14-A6FF-4F76-D268B22BB106638E}" ContentValue="?*">
+		<Process CmdLine="powershell.exe -executionpolicy restricted -command $res*vdisks) { $res = 1 }; write-host &#39;final result:&#39;,$res;" />
+	</Detect>
+	<Detect Id="{2F3FC7D4-56F0-DEAC-308F6417060E4DFC}" ContentValue="?*">
+		<Process CmdLine="powershell.exe -executionpolicy bypass -file \\*\policies\{*\machine\scripts\*.ps1" />
+	</Detect>
+	<Detect Id="{FCD93C0D-E6EB-971E-1AABB300E076F499}" ContentValue="*, 0, $script:logmessage)&#10;&#10;                  #return discovery property bag&#10;                  $discoverydata }" />
+	<Detect Id="{D94437B0-44D0-C6D0-9765DEF82DED17A8}" ContentValue="?&#10;#requires -version 3.0?&#10;?&#10;try { microsoft.powershell.core\set-strictmode -off } catch { }?&#10;?&#10;$script:mymodule = $myinvocation.mycommand.scriptblock.module?&#10;?&#10;$script:classname = &#39;root/microsoft/windows/storage/msft_*" />
+	<Detect Id="{D4115F5D-69D4-3A62-32DA2F7C717DA662}" ContentValue="?&#10;set xls = createobject(&#34;excel.application&#34;)?&#10;on error resume next&#10;&#9;&#9;&#9; err.clear&#10;&#9;&#9;&#9;?&#10;set book = xls.workbooks.add(&#34;*">
+		<Process Path="*ARM\Novo*">
+			<VersionInfo ProductName="ЦФТ - Навигатор" FileDescription="ЦФТ-Платформа Развития, АРМ Навигатор" OrignFileName="Novo.exe" />
+		</Process>
+	</Detect>
+<!-- Part 0026 End 2021-10-14T20:09:00.000Z-1634242189 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0027 Start 2021-10-16T16:56:00.000Z-1634403366 -->
+	<Detect Id="{BA5D87B0-E889-9414-0D80A1E029DF5C13}" ContentValue="post/mapi/emsmdb/?usemailboxofauthenticateduser=truecontent-length*" />
+	<Detect Id="{5BE37D34-DB64-70C4-C34AB6975CBD3F4B}" ContentValue="rpc_in_data/rpc/rpcproxy.dll?exchange*" />
+	<Detect Id="{441A6B5A-B3BB-83AE-2C2B4F885AD9BA68}" ContentValue="rpc_out_data/rpc/rpcproxy.dll?exchange*" />
+	<Detect Id="{3966188E-0ECD-FAEE-0FB21D67C84B4A40}" ContentValue="*__cmdletization_methodparameter = [microsoft.powershell.cmdletization.methodparameter]@{name = &#39;reportingnoncriticaltimeout&#39;; parametertype = &#39;system.uint32&#39;; bindings = &#39;in" />
+	<Detect Id="{79087D96-E8EA-0C0B-54DE2EC2542D54A1}" ContentValue="*cmdletbinding(supportsshouldprocess=$true, confirmimpact=&#39;medium&#39;, positionalbinding=$false" />
+	<Detect Id="{9B05EE9D-D725-9DFB-D52AF7564D880393}" ContentValue="post/powershell?serializationlevel=*" />
+	<Detect Id="{1A0096DF-A23E-B97A-6663D0766575155E}" ContentValue="post/powershell?clientapplication=activemonitor*" />
+	<Detect Id="{71D2606F-8D7E-97BC-9AC51C1D7AE787EB}" ContentValue="post/mapi/emsmdb/?mailboxid=*" />
+	<Detect Id="{60B6CAE8-B277-978D-0CD0324CCBD0C8EA}" ContentValue="get/autodiscover/connection:closeauthorization*" />
+	<Detect Id="{8A24E8AE-1D43-FD7E-881E6387CD569EC6}" ContentValue="get/rpc/rpcproxy.dll*" />
+	<Detect Id="{C6B885A1-C112-F819-D1F8C219C8DF455D}" ContentValue="get/powershell/connection:closeauthorization*" />
+	<Detect Id="{6A6351BE-2527-DDCC-BD17C4434943EE09}" ContentValue="get/mapi/emsmdb?mailboxid=*" />
+	<Detect Id="{5297E12A-BC45-4E9A-65613A843B8232F9}" ContentValue="get/oab/connection:closeauthorization*" />
+	<Detect Id="{B6768ACB-B34B-3D72-7987949CE90A70B3}" ContentValue="get/ews/connection:closeauthorization*" />
+	<Detect Id="{90D24C45-9996-A96A-7545CC4EF7706CC6}" ContentValue="?*">
+		<Process CmdLine="powershell.exe  -noninteractive -command $srv=get-service &#39;*&#39; -erroraction silentlycontinue;&#9;&#9;&#9;&#9;&#9;if ($srv*status } else { exit 1 }" />
+	</Detect>
+	<Detect Id="{9C105FD8-0075-875E-256595269CE3DC6E}" ContentValue="?*">
+		<Process CmdLine="powershell.exe  -noninteractive -command if (!( get-service &#39;*&#39; -erroraction silentlycontinue ) ) { exit 1 }" />
+	</Detect>
+	<Detect Id="{A0FF553C-658E-147A-1FAD71E6FAD610CF}" ContentValue="??&#10;# module manifest for module &#39;vmware.*">
+		<Process CmdLine="powershell  -noninteractive -executionpolicy bypass -file get-appxpackage-*.ps1" />
+	</Detect>
+	<Detect Id="{8F2DEC17-8F6E-C813-DFC1F5ECC0ABD940}" ContentValue="??&#10;# module manifest for module &#39;vmware.*">
+		<Process CmdLine="*vmware\infrastructure\powercli\scripts\initialize-powerclienvironment.ps1*" />
+	</Detect>
+	<Detect Id="{FF6AE4C1-18FA-1B6F-54D80F881766CB21}" ContentValue="function script_*main&#10;                 }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+<!-- Part 0027 End 2021-10-16T16:56:00.000Z-1634403366 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0028 Start 2021-10-20T19:05:00.000Z-1634756727 -->
+	<Detect Id="{EF8E3A72-C49D-142C-B4275DFFC3EF7E10}" ContentValue="*item(&#34;unsupported parameter type 00000000&#34;);?&#10;ixmldomelement*" />
+	<Detect Id="{CAF86544-F15E-C205-FE7AA76DE5B9FF34}" ContentValue="*scan delta content.&#34;);?&#10;itextstream.close();??" />
+	<Detect Id="{FFCD6441-F5BC-3E0D-61440B48B4EBAE67}" ContentValue="ihost.arguments*iswbemobjectex._01000001(&#34;unsupported parameter type 00000000&#34;, &#34;unsupported parameter type 00000000&#34;);??" />
+	<Detect Id="{4F0E85CC-2D70-90CD-FA641538E9DABFF5}" ContentValue="*&#34;, &#34;unsupported parameter type 00000000&#34;);&#10;iswbemobjectex._01000001*" />
+<!-- Part 0028 End 2021-10-20T19:05:00.000Z-1634756727 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0029 Start 2021-10-21T17:34:00.000Z-1634837676 -->
+	<Detect Id="{23AA476D-5B6C-8E83-BCB15F16F3D3B2F0}" ContentValue="*list = &#34;--lo --id-only --pre --exact --by-id-only --id-starts*" />
+	<Detect Id="{588A4860-C0C7-F0C7-5D00B53A0E1A0FA2}" ContentValue="*allcommands = &#34; --debug --verbose --trace --noop --help --accept-license*" />
+	<Detect Id="{FA6B5028-5597-C86C-2363F93119E83411}" ContentValue="*compgen builder managementcommand &#39;manage builds&#39;*" />
+	<Detect Id="{A12A5F5B-04D4-5FE7-2F010597606C5789}" ContentValue="*compgen audit_control string &#39;enable and disable kernel auditing*" />
+	<Detect Id="{CAE00F93-D4BD-C17F-8152336A0717FE0F}" ContentValue="*validateset(&#39;created&#39;, &#39;dead&#39;, &#39;exited&#39;, &#39;paused&#39;, &#39;removing&#39;, &#39;restarting*" />
+	<Detect Id="{020FA63C-75E7-3D87-60462C9206B42567}" ContentValue="*tabexpansioncommands = new-object &#39;system.collections.hashtable&#39; -argumentlist @([system.stringcomparer]::invariantcultureignorecase*" />
+	<Detect Id="{9E49CD8D-2CC2-21D4-A75E248F67FFE2BE}" ContentValue="__systemclass.getobject();&#10;cacheconfig.getobject();&#10;setpropvalue.location(&#34;c:\windows\ccmcache&#34;);&#10;setpropvalue.size*" />
+	<Detect Id="{EB448002-AADB-3686-CF9F9C1DAFF50A66}" ContentValue="__systemclass.getobject();&#10;ccm_rebootsettings.createinstanceenum();&#10;ccm_networkaccessaccount.createinstanceenum();&#10;ccm_softwaredistribution*" />
+	<Detect Id="{69AAF4EA-1103-7D9D-027DEDE70E20EA95}" ContentValue="cacheconfig.getobject();&#10;setpropvalue.location(&#34;c:\windows\ccmcache&#34;);&#10;setpropvalue.size(&#34;5120&#34;);&#10;setpropvalue.inuse*" />
+	<Detect Id="{582B6264-4BA2-E57E-0CD1954FD4FC2489}" ContentValue="*unknowncount = ($suits | ? {$_.security -like &#39;unknown&#39;} | measure).count&#10;&#10;&#9;&#34;insecure:$insecurecount&#34;&#10;&#9;&#34;unknown:$unknowncount&#34;&#10;}&#10;&#10; }" />
+	<Detect Id="{C4F1CB01-CC73-E0CE-730F4DE383EEAC82}" ContentValue="function new-mlib__scalabletempfile*proposedpath = join-path -path (join-path -path $rootpath -childpath $intermediatenamingtoken) -childpath $trietoken*" />
+	<Detect Id="{98199BB9-C34F-400C-75D37AC840398B49}" ContentValue="function write-mlib__multilog {*&#10;&#9;&#9;[validateset(&#34;error&#34;, &#34;warning&#34;, &#34;verbose&#34;, &#34;debug&#34;, &#34;host&#34;, &#34;progress&#34;)]*" />
+	<Detect Id="{FDC6EE0F-F9DF-EB4D-611074B931FCBCB8}" ContentValue="*pathnotfounderror=the path &#39;{0}&#39; either does not exist or is not a valid file system path.*" />
+	<Detect Id="{872E034D-F77B-3124-4321740422DD0EF9}" ContentValue="iswbemobjectset._newenum();&#13;&#10;iwshshell3.popup(&#34;please wait for 30sec to complete...&#34;, &#34;*" />
+	<Detect Id="{A84CACD6-B380-7BEC-98A1BBCEBC056EB6}" ContentValue="setpropvalue.classname(&#34;ccm_program&#34;);&#10;setpropvalue.targetinstancepath(&#34;ccm_program.packageid*" />
+	<Detect Id="{CE0C1E3B-3D78-2DF6-EBE09D3EB949A0B3}" ContentValue="setpropvalue.contentcomplete(&#34;true&#34;);&#10;setpropvalue.contentmanifest(&#34;&#34;);&#10;setpropvalue.partialcontentinfo(&#34;&#34;);&#10;__systemclass.getobject();&#10;cacheconfig.getobject();&#10;setpropvalue.location(&#34;c:\windows\ccmcache*" />
+	<Detect Id="{FB76B17E-2B39-0A53-053563180C81B270}" ContentValue="setpropvalue.contentmanifest(&#34;&#34;);&#10;setpropvalue.partialcontentinfo(&#34;&#34;);&#10;__systemclass.getobject();&#10;cacheconfig.getobject();&#10;setpropvalue.location(&#34;c:\windows\ccmcache*" />
+	<Detect Id="{91B37B30-60E2-CDAB-BA522957A7D8850C}" ContentValue="setpropvalue.dependeepolicyexists(&#34;true&#34;);&#10;setpropvalue.runningstate(&#34;running&#34;);&#10;setpropvalue.contentrequestguid(&#34;{*" />
+	<Detect Id="{06A923AA-F20C-09CC-E6EA4DAC36B66902}" ContentValue="*contentcomplete(&#34;true&#34;);&#10;setpropvalue.contentmanifest(&#34;&#34;);&#10;setpropvalue.partialcontentinfo(&#34;&#34;);&#10;__systemclass.getobject();&#10;cacheconfig.getobject();&#10;setpropvalue.location(&#34;c:\windows\ccmcache*" />
+	<Detect Id="{B63B3F6C-32CD-86BD-F9CBC1071A88C9D7}" ContentValue="setpropvalue.disablemomalerts(&#34;false&#34;);&#10;setpropvalue.contenttype(&#34;0&#34;);&#10;setpropvalue.suspendreboot(&#34;false&#34;);&#10;setpropvalue.mtchandle(&#34;{*" />
+	<Detect Id="{A6DDD3FD-D69E-50E9-7E4C36C0CD1A5480}" ContentValue="*__systemclass.getobject();&#10;__systemclass.getobject();&#10;ccm_installedproduct=&#34;{*" />
+	<Detect Id="{2290D07C-59F4-36FE-018EC698778B5EFF}" ContentValue="setpropvalue.location(&#34;c:\windows\ccmcache&#34;);&#10;setpropvalue.size(&#34;5120&#34;);&#10;setpropvalue.inuse(&#34;true&#34;);&#10;setpropvalue.nextavailableid(&#34;*" />
+	<Detect Id="{F4A18D46-18AD-F7BC-4FD90137840D021C}" ContentValue="setpropvalue.messagelevel(&#34;0&#34;);&#10;setpropvalue.verbosity(&#34;30&#34;);&#10;setpropvalue.value(&#34;&#34;);&#10;ccm_clientinternalutilities.execmethod(raiseevent*" />
+	<Detect Id="{3F793517-22CA-81EB-0D2106F8CAEFAC24}" ContentValue="setpropvalue.runningstate(&#34;running&#34;);&#10;setpropvalue.contentrequestguid(&#34;{*" />
+	<Detect Id="{CB163B0D-BC28-4512-B69C776AB20CFC82}" ContentValue="setpropvalue.size(&#34;5120&#34;);&#10;setpropvalue.inuse(&#34;true&#34;);&#10;setpropvalue.nextavailableid(&#34;*" />
+	<Detect Id="{37866CFA-A283-5E85-1979CBD73300C9F7}" ContentValue="setpropvalue.targetinstancepath(&#34;ccm_program.packageid=&#34;*" />
+	<Detect Id="{95067905-89EF-A56F-4CDACF79B0B36DFA}" ContentValue="*typedefinition (get-content -path (join-path -path $psscriptroot -childpath &#34;resource\bxrrpackagestate.cs*" />
+	<Detect Id="{16ECB011-2AAA-4D58-688C4EE408E76132}" ContentValue="*regitem = get-itemproperty -path &#34;hklm:software\microsoft\microsoft services bootxray&#34; -name optout -erroraction silentlycontinue) -and*" />
+	<Detect Id="{D6BEBCE5-BE79-6CF5-6091036A9FADDD89}" ContentValue="function script_*, 0, &#34;finished&#34; );&#10;&#10;$discoverydata&#10; }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{AD56DE89-1B8A-09A0-A1EC31CA3BD2FA99}" ContentValue="function script_*total script runtime ($scripttime) seconds.&#34;)&#10; }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{B49769D7-720A-1820-451EFA70E1C3292C}" ContentValue="?*">
+		<Process CmdLine="powershell.exe  $ex_perms=@();$defaults=@();$macls=(get-acl \c:\users\*\.oci\config\).access.identityreference;$defaults+=[wmi]\win32_sid.sid=&#39;s-1-*" />
+	</Detect>
+<!-- Part 0029 End 2021-10-21T17:34:00.000Z-1634837676 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0030 Start 2021-10-25T17:49:00.000Z-1635184160 -->
+	<Detect Id="{ADE8BC0B-3F46-E4D9-A47C88A06F4D8A1B}" ContentValue="?*">
+		<Process CmdLine="powershell.exe  $ex_perms=@();$defaults=@();$macls=(get-acl \c:\users\*\.oci\oci_api_key.pem\).access.identityreference;$defaults+=[wmi]\win32_sid.sid=&#39;s-1-*" />
+	</Detect>
+	<Detect Id="{BD2C0940-BB85-CE95-96AAA50A9660BC4C}" ContentValue="function script_*opropertybag.addvalue(&#34;scompercentagecputime&#34;, $finalpercentprocessortime)&#10;}&#10;$opropertybag&#10;&#10;                   }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{A8B48F0F-2B70-39B0-4AFB67A5A7EFEF68}" ContentValue="*manual&#39;    {[int]$expectedstart = 3}?&#10;        &#39;disabled&#39;  {[int]$expectedstart = 4}?&#10;        &#39;notdisabled">
+		<Process CmdLine="*microsoft pfe remediation for configuration manager\pferemediationscript.ps1" />
+	</Detect>
+<!-- Part 0030 End 2021-10-25T17:49:00.000Z-1635184160 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0031 2021-11-11T00:47:00.000Z-1636591624 -->
+	<Detect Id="{37EC4210-FDAA-3676-8129A55702075E8B}" ContentValue="get-ciminstance -query &#39;select *packetsdropped| convertto-json -compress">
+		<Process CmdLine="powershell.exe -noprofile -nologo -noninteractive -executionpolicy bypass -command -" />
+	</Detect>
+	<Detect Id="{5EED65BB-3EFB-F796-F408420F4D561EAF}" ContentValue="get-netqospolicy | select name,user,networkprofile*priorityvalue| convertto-json -compress">
+		<Process CmdLine="powershell.exe -noprofile -nologo -noninteractive -executionpolicy bypass -command -" />
+	</Detect>
+	<Detect Id="{2E7D0E93-73D0-67AC-93365E45CBB1C231}" ContentValue="*statusdescription&#34; -value $res.statusdescription;&#10;    return $ret;&#10;   &#10;  }&#10;}">
+		<Process CmdLine="*powershell\rsscripts\client-side*" />
+	</Detect>
+	<Detect Id="{56BA0FF8-A9B4-FDCA-D333528403780D0E}" ContentValue="*scriptuninstallationsucceeded=Сцен">
+		<Process CmdLine="*Конфигурация репозитория powershell*" />
+	</Detect>
+	<Detect Id="{7288C51B-C655-C5FB-7D2B6122F4EA0685}" ContentValue="umentlist $archivefilestreamargs*">
+		<Process CmdLine="*programdata\asus\asus system control interface\log\asus_linkremote_202*" />
+	</Detect>
+<!-- Part 0031 2021-11-11T00:47:00.000Z-1636591624 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0032 2021-11-11T15:23:00.000Z-1636644198 -->
+	<Detect Id="{4118E2B7-7CFB-6930-83600308C6FCACFE}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process Path="*Palo Alto*">
+			<Signature Subject="*Palo Alto*" />
+		</Process>
+	</Detect>
+	<Detect Id="{1036281F-473D-2AF3-E1B3941B23A5BCF5}" ContentValue="*scanschedulequickscantime&#39;; parametertype = &#39;system.datetime&#39;; bindings = &#39;in&#39;; value = $__cmdletizatio">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{57C23A87-F6D1-B405-5D0D31B01F587564}" ContentValue="*reportingnoncriticaltimeout&#39;; parametertype = &#39;system.uint32&#39;; bindings = &#39;in">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{50AB3D9B-4BFE-DD0F-1551948B44352971}" ContentValue="*          [">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{514D869A-1908-32AC-5B06810C144EA1C4}" ContentValue="*        [object]$__cmdletization_d">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{93621450-11D4-4B30-C9AED5540D0D8190}" ContentValue="*reportingnoncriticaltimeout&#39;; parametertype = &#39;">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{781BA0BB-871A-DBCD-D810E473BDE44CF9}" ContentValue="*          $__cmdletization_methodparameter = [micr">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{4C829266-9F1B-4B15-BDB00965E4221A06}" ContentValue="*          $__cmdlet">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{A44964C1-0496-D478-C6EF9589D9755970}" ContentValue="*parametertype = &#39;microsoft.powershell.cmdletization.generatedtypes.mppreference.scantype&#39;;">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{1791049D-1B63-C394-6A3AE1914E87D06E}" ContentValue="*        $__cmdletization_methodparamete">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{72A5E713-5258-4E2E-1644A29E1A680849}" ContentValue="*        if ($psboundparameters.containskey(&#39;scanavgcpuloadf">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{94B7F9BC-69DF-ECC5-A152A00A89B0E6EF}" ContentValue="*        $__cmdletization_methodparameters.add($__cmdletization">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{205DC625-0226-F816-7A707BF9508E6A16}" ContentValue="*        [object]$__cmdletization_d">
+		<Process CmdLine="*get-mp*" />
+	</Detect>
+	<Detect Id="{006F79BC-3924-0D1E-251BE4A52CB17BFA}" ContentValue="*signatureaugraceperiod&#39;; parametertype = &#39;syst">
+		<Process CmdLine="*get-mp*" />
+	</Detect>
+	<Detect Id="{C23BB88C-9541-A204-6D641D8887EA0E03}" ContentValue="*scanschedulequickscantime&#39;; parametertype = &#39;system.datetime&#39;; bindings = &#39;in&#39;; value = $__cmdletizatio">
+		<Process CmdLine="*get-mp*" />
+	</Detect>
+	<Detect Id="{86992227-FF3F-8E07-B5A2FF9BD18F63B5}" ContentValue="*          $__cmdletization_met">
+		<Process CmdLine="*get-mp*" />
+	</Detect>
+	<Detect Id="{2030704F-8362-E976-626E1B26CF76911B}" ContentValue="*reportingnoncriticaltimeout&#39;; parametertype = &#39;">
+		<Process CmdLine="*get-mp*" />
+	</Detect>
+<!-- Part 0032 2021-11-11T15:23:00.000Z-1636644198 -->
+<!-- ############################################################################################################### -->
+
+</Filters>

@@ -1,0 +1,24 @@
+<root>
+  <service_settings_patch service_key="0x34726967">
+    <replace_value path="flags">
+      <item unique_id="0x2d1a6c80">
+        <featureId>kavkis.bl.DndForceIpmNotificationsFeature</featureId>        
+        <value>1</value>
+      </item>
+      <item unique_id="0x2d1a6c80">
+        <featureId>bl.IncompatibleSoftwareScan</featureId>
+        <value>1</value>
+      </item>
+    </replace_value>
+  </service_settings_patch>
+  <service_settings_patch service_key="0xeb5102dc">
+    <replace_value path="configSettings_initialized">1</replace_value>
+    <replace_value path="configSettings">
+      <unique_id>0x9d18ab5f</unique_id>
+      <userGeoRegionToProcess>
+        <item>ua</item>
+        <item>ukr</item>
+      </userGeoRegionToProcess>
+    </replace_value>
+  </service_settings_patch>
+</root>

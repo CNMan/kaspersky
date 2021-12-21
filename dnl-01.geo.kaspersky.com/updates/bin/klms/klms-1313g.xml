@@ -1,0 +1,66 @@
+<Update
+	Date="15022021 0708"
+	ObjectType="2=KLMS;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="14358"
+	CompID="KLMS"
+	Shell="bdif;klz;none">
+	<Patches
+		LocalPath="%BaseFolder%"
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|cpconvert.kep|Cvc2B9UxO2f11TSNa7xDWZ981BrfzY8koyn6yVgXX3s=;
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|dns_resolver.kep|5ti6XrkK0E2hhTKMgZxCYjMvKS2nel1x4fJ7/SxHzJg=;
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|engine.kep|inv/1qvkQk+OP8mILm1V53VQKVmcAOMatkdQPmnpPTg=;
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|filtration.kep|J8fIqYXPTR43JQPx4xvtE/atVXaAv4qeeu2bLwTfgcA=;
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|gsg.kep|J+p7rXR+m4fyIzDf4dCZEBjpv1kTCZDbcrKZoG4MABY=;
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|kas_engine_eka.kep|5nATNYLYK3XGJtnccJXdQKdAAp2GQLMlxYe8VUT3iIw=;
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|moebius.kep|jMXxWmt3FHgi2NUQbKWhOtcbXouImw17U0F7NWla7PA=;
+			KLMS 8.0.[2-3].*\; KSMG 1.1.[0-2]|Linux|i386|kas5/i686/linux|ubllist_nix.set.keb|9LUK/ektCcI5VaM+i87BA3x5aWLODfXGf/wFXlEL/Sk=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|cpconvert.kep|IlpDEvcsGgIoW0YUjyHH4PXqVlTIJgaLsgXILX1nKDo=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|dns_resolver.kep|ZRqXMtyB0VAOZsQLuX5JteA/I3OsDhYthXjFPoYd8Jw=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|engine.kep|mL70oHSe3vlUETJFIWmREZHXKRP7agOgJclHKe6K3NI=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|filtration.kep|PvOuEuZWC4FwRtsEmGj27K3nMrLLFM+IqBH0BNF7Njs=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|gsg.kep|MlEBoCDOW/O73I0y8zL17ASP0VFCwCu4FpIq1vT5U2g=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|kas_engine_eka.kep|g/UJWL0ABZimHY6yH0cZG/0LVG021umQXkilqSz/64U=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|moebius.kep|YWPtV9ZDWlHgbF0eUgPipfavSNHMKlT95WVGUmLisB0=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|i386|kas5/i686/freebsd10|ubllist_nix.set.keb|9LUK/ektCcI5VaM+i87BA3x5aWLODfXGf/wFXlEL/Sk=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|cpconvert.kep|kY+endolCwr5DPKM970qMBSt8IuCECft3UdWSGdjvqM=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|dns_resolver.kep|eqFlTekUhoOvBp44RNzcDaM5ByzWm92pcUUq9mQCeqg=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|engine.kep|kC3oFLXFsDYNEngO/IzU176mZQh5Rp0bJrKSudYBhEA=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|filtration.kep|e23lRObybGiiR4/TQwnKu6mMbLjoeAOPQ+12f3uRjC0=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|gsg.kep|jv5ZHLzsP02o0PNdrmb0QAY9TQzyrQY8RoOleNCNOHs=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|kas_engine_eka.kep|30CmOGP3RqZcw8NmFp3NSIlCyoFMuFMJDpr5rCzgY6k=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|moebius.kep|uShsKqzL+NFl8sz9DavfvHN8GVJT7n+fSJGFGqtDU+0=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|i386|kas5/i686/freebsd11|ubllist_nix.set.keb|9LUK/ektCcI5VaM+i87BA3x5aWLODfXGf/wFXlEL/Sk=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|cpconvert.kep|z0xW7mxRVr9bQmaksiAM/AQ11/m/Jgpgwo0TuEhO3fo=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|dns_resolver.kep|ZreMG3tAHwLZKI3nQCjPRUOhV3fEz7y9nHLS9L93KOg=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|engine.kep|Dzi9oSoqL8LG2+PyuWvfNGbJ08BvNa2aaq8r1ZB4xCg=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|filtration.kep|8rGgXg58bbXtTqpFCOQveGZ/NxBsKZQpdmUneiyo830=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|gsg.kep|KE9kNreFU1i/QJOOpYlrtC9vpjzEVIp9gk7TqNcOg20=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|kas_engine_eka.kep|jeECJa0GBeal/PE1QGmvTXS2WABzKT455J9tgaH3zFE=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|moebius.kep|IwnRuoOI6lEivp97dOViClMCKfExPPhVHT4Ev2Re9n4=;
+			KLMS 8.0.[2-3].*\;  |Linux|x64|kas5/x86_64/linux|ubllist_nix.set.keb|9LUK/ektCcI5VaM+i87BA3x5aWLODfXGf/wFXlEL/Sk=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|cpconvert.kep|Wgi825ODU0/krLyUsmtVlEjtJEJKG6TekfVwNUH0Q3k=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|dns_resolver.kep|W+44S99duOShnAV8eLnCNA+YaROBMc7ZXm6YL/YiuzA=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|engine.kep|/0RfHZiB+5yGI/0MDxm0dgJCrxIoU0XhKln/nRbc0PM=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|filtration.kep|HgmYR2Kffylc/u/Msf8d7wY4sDCELIy6do0Zl+597U8=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|gsg.kep|8wxDV/rTjEXqVYHe6mUjuk5NkcKVaQ01JbIbqbqjmqk=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|kas_engine_eka.kep|/3yQwmM5ZlrY6XKIT2aHVBnqUQBauiiVLmIikEMzD9s=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|moebius.kep|JWwZZPD3m1AfcXGLt2CaccTwoByeamY36G20e/xN4Zs=;
+			KLMS 8.0.[2-3].*\; |FreeBSD10|x64|kas5/x86_64/freebsd10|ubllist_nix.set.keb|9LUK/ektCcI5VaM+i87BA3x5aWLODfXGf/wFXlEL/Sk=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|cpconvert.kep|6sj1AP+6M8PlfDrV/c2jDrlZ1do4Eih7BcOqtvQCKNs=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|dns_resolver.kep|Tfo2VF7K47SWYoTJQCZnT9xYKIp3dDSSDeo35nmqaaw=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|engine.kep|hU5OUgM2a65mNUo2TQ8A6imaQ+eZFz93AQ4jwfCWFjw=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|filtration.kep|YD3v5Bv365QknlfWbbpTFDGqKK3EYKwFE0/f8vlNS9k=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|gsg.kep|MbMU8gOy0GM/E/j44Lbf8i67H9FaO+e2OlyMJEo41yc=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|kas_engine_eka.kep|VlhnX1fK6zsSUzF1WQqLcBUqvMZp0HTEPopmYpcKp/I=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|moebius.kep|EWB/SZz3dXKN3nU54LC4mGG+db6J4S4u1a+0VuSVkGQ=;
+			KLMS 8.0.[2-3].*\; |FreeBSD11|x64|kas5/x86_64/freebsd11|ubllist_nix.set.keb|9LUK/ektCcI5VaM+i87BA3x5aWLODfXGf/wFXlEL/Sk="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="klms-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFoextT0nojMBDWpaN2nAFG0geRiAd4JK3/1mSFtHmBJVIQhh/RA/a82QoovFtcP2hK9yLUxcD4JRG8ZQCNfFIwBAB4J9QAAAAIAAigEAEtMTVMDAAIoAwBCSU4BAAAJMMx1yg0KOzoxMHFKUXpHalZTK2ZQdTdKMy9ybE5paXc0VkFYS0NpSERnVmYzZW0zZzZSblEzdDVmTWN6ZUIwS2I4RFlSL2h1ek1nd21UYlVxRzVtWW9XMUFlZExWVk96JSU=</Key>
+</Update>
+;:1045BHCIxkfNsZ1987SA+aA4O3fwjmsKwS94vjvoac0unhmP8Tj/LHkZvqTs63o00mGWd4svkmNhTb3ZtxTlTJ0B%%
