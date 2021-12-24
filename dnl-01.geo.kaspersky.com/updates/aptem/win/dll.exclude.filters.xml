@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2021-10-13T13:14:00.000Z-1634130854 -->
+	<!-- Version: 2021-12-24T13:10:00.000Z-1640351459 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1029,6 +1029,36 @@
 		</Process>
 	</Image>
 <!-- Part 0006 End 2021-10-13T13:14:00.000Z-1634130854 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0007 2021-12-24T13:10:00.000Z-1640351459 -->
+	<Image Id="{BEB3361B-4421-1419-097BDCC3408FC660}" Path="*landesk\ldclient*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{B3E757B2-13F1-E825-997CABE4D7735567}" Path="*searchinformagent\sifiltersvc*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{9547C38D-9DBE-8572-80647D063F844787}" Path="*citrix\icaservice*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{5CFA7D70-2EFD-558D-1CD3CF20228086AA}" Path="*citrix\system32*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{F8F25D6A-D7A1-12DF-38E59FABD68D76D3}" >
+		<Signature Subject="*Citrix*" />
+		<Process >
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Image>
+	<Image Id="{271FFE3D-6B03-55E2-EEF6FB56770F19F4}" Path="c:\windows\ltcjobs\jobs\ltc\bin\snpa_res.dll" >
+		<Process Path="*LtcJobs\Jobs\Ltc\Bin*" />
+	</Image>
+	<Image Id="{7E692CCD-CD81-4A70-2A8E93DD04A31180}" >
+		<Signature Subject="SecurIT*" />
+		<Process Path="*LtcJobs\Jobs\Ltc\Bin*" />
+	</Image>
+<!-- Part 0007 2021-12-24T13:10:00.000Z-1640351459 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
