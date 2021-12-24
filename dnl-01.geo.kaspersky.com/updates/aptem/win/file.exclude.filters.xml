@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2021-12-23T16:37:00.000Z-1640277443 -->
+	<!-- Version: 2021-12-24T20:48:00.000Z-1640378914 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -7099,6 +7099,166 @@
 		</Process>
 	</File>
 <!-- Part 0009 2021-12-23T16:37:00.000Z-1640277443 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0010 2021-12-24T20:48:00.000Z-1640378914 -->
+	<File Id="{B94D3414-DA44-9F2C-CF74248F58B76941}" FilePath="*\user data\default\network\transportsecurity" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{DA5FCB42-18EF-4A74-368C1F41C88E64E9}" FilePath="*\user data\default\code cache\js\index-dir\*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{2780F855-6234-5ABC-309FBA28F659B1FD}" FilePath="*\user data\default\indexeddb\https_*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{AD65E7CD-8090-F9B7-2344C646E45DCA50}" FilePath="*\user data\default\network\transportsecurity~rf*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{094B10DF-A649-009A-1E80E62D22D1C59D}" FilePath="*\user data\default\preferences~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{9A367B43-6922-E673-D3E857D531CB3CDA}" FilePath="*\user data\default\session storage\*.ldb" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1384A475-7E19-E48D-0462B9596112C04E}" FilePath="*\user data\default\sessions\session_*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{A1C0AB56-19BE-1179-79D31E6072342BA9}" FilePath="*\user data\default\transportsecurity~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1846DA32-23C3-FC24-B1258882233CD05F}" FilePath="*\user data\profile ?\network\transportsecurity~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C893CC8A-5C0B-EB2F-A7862880B0CB5941}" FilePath="*\user data\profile ?\preferences~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{37C1B4F9-8F01-E915-CAF45AACFF0F8641}" FilePath="*appdata\local\google\chrome\user data\local state~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{64031243-7B14-5530-CD5164E1340DF4FA}" FilePath="*appdata\local\temp\???????\*" >
+		<Process Path="*common7\ide\devenv.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{EB969E92-7E2C-7796-81F455E96E9CBFA0}" FilePath="c:\programdata\microsoft\diagnosis\downloadedsettings\utc.*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{7CF0235C-32B1-D97D-AB9C4548C6E77A5B}" FilePath="*preferences\registry\registry.xml" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{AB29DF67-AA84-8C87-F9855EB02C960071}" FilePath="c:\programdata\broadcom\hoststorage\sess.dat" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{EED5D05D-460C-2461-364F60C1EF2E57CD}" FilePath="c:\programdata\microsoft\diagnosis\downloadedsettings\telemetry.*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{056C978F-E5B5-D8C6-BBFD35F07F91782D}" FilePath="c:\windows\system32\tasks\microsoft\windows\updateorchestrator\schedule *" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{48E494A4-C989-1E30-42F6528611C3CBE9}" FilePath="c:\windows\softwaredistribution\datastore\logs\edb.chk" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{27A7C17B-D357-863C-DB868A501EE9A3F3}" FilePath="c:\windows\softwaredistribution\datastore\datastore.jfm" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{7211B3A4-350A-DCAE-2B40398A4C42B7C8}" FilePath="c:\windows\servicestate\eventlog\data\lastalive0.dat" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{82AAE705-FC9B-1577-57315BB1E3E4AA05}" FilePath="c:\windows\serviceprofiles\networkservice\appdata\local\microsoft\windows\deliveryoptimization\logs\dosvc.*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{865EF633-CB4F-3664-4D577345A871D134}" FilePath="c:\windows\serviceprofiles\networkservice\appdata\local\microsoft\windows\deliveryoptimization\cache\*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{40050597-7C96-A347-4E3E47ECEE3AAC75}" FilePath="c:\windows\ccm\cidownloader\staging\bit*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{44F95814-5DF8-8313-52130E1D3800AA36}" FilePath="*appdata\locallow\microsoft\cryptneturlcache\*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{AACAC946-FB7A-1FBE-B41350225697F457}" FilePath="appdata\local\temp\wct????.tmp" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{85BD4FB5-E9A8-3432-7C4BEE4969F12BB6}" FilePath="*appdata\local\temp\bit????.tmp" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{AF1985F3-17FC-78F4-D90512791E61750E}" FilePath="*appdata\local\microsoft\windows\actioncentercache\*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{237C4A3C-0DE6-2BEA-C6E3D21EEBF07F2D}" FilePath="c:\programdata\microsoft\windows\lfsvc\geofence\s-1-5-18_nonpackagedapp\geofence.dat" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{DD5E3B47-266F-1C85-70AB5B5D791B0930}" FilePath="c:\programdata\microsoft\windows\devicemetadatacache\*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{DDA0ABA8-EB87-FAAF-C407927FA77B2356}" FilePath="c:\programdata\microsoft\windows\apprepository\staterepository-*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{DFC393C4-5710-BECD-1654217E0FFA6AA2}" FilePath="c:\programdata\microsoft\smsrouter\messagestore\edb*" >
+		<Process Path="C:\WINDOWS\system32\svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+<!-- Part 0010 2021-12-24T20:48:00.000Z-1640378914 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
