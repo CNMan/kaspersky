@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2021-10-12T13:49:00.000Z-1634046570 -->
+  <!-- Version: 2021-12-23T15:37:00.000Z-1640273853 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2289,43 +2289,233 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 10: start 2021-10-12T13:49:00.000Z-1634046570 -->
+<!-- Part 10: start 2021-12-23T13:04:00.000Z-1640264683 -->
 	<Registry Id="{6CF4E8E9-4239-4C6A-6B9FD955E6D3804C}" Name="_global_">
-		<Process Path="c:\\windows\\system32\\ctfmon.exe" />
+		<Process Path="c:\windows\system32\ctfmon.exe" />
 	</Registry>
 	<Registry Id="{7699CF05-ADEC-B4E6-CE45BC1C792E5CAD}" Name="insights">
-		<Process Path="c:\\windows\\system32\\ctfmon.exe" />
+		<Process Path="c:\windows\system32\ctfmon.exe" />
 	</Registry>
 	<Registry Id="{890F479A-49BB-2873-CE20B9A1D1EA15A8}" Name="cpuvendoridstr">
-		<Process Path="c:\\windows\\system32\\audiodg.exe" />
+		<Process Path="c:\windows\system32\audiodg.exe" />
 	</Registry>
-	<Registry Id="{D76DBEC1-23B9-2592-A400EE728435BBEB}" Path="\\registry\\machine\\software\\fortemedia\\realtekeffects">
-		<Process Path="c:\\windows\\system32\\audiodg.exe" />
+	<Registry Id="{D76DBEC1-23B9-2592-A400EE728435BBEB}" Path="\registry\machine\software\fortemedia\realtekeffects">
+		<Process Path="c:\windows\system32\audiodg.exe" />
 	</Registry>
-	<Registry Id="{D81A1CC3-8955-9E93-1185365408EAD948}" Path="\\registry\\machine\\software\\soundresearch\\apo*">
-		<Process Path="c:\\windows\\system32\\audiodg.exe" />
+	<Registry Id="{D81A1CC3-8955-9E93-1185365408EAD948}" Path="\registry\machine\software\soundresearch\apo*">
+		<Process Path="c:\windows\system32\audiodg.exe" />
 	</Registry>
-	<Registry Id="{5CEA0EDE-EF02-CCD3-99FD67A05D025A5E}" Path="*software\\sap\\*">
+	<Registry Id="{5CEA0EDE-EF02-CCD3-99FD67A05D025A5E}" Path="*software\sap\*">
 		<Process>
 			<Signature Subject="SAP SE" />
 		</Process>
 	</Registry>
-	<Registry Id="{F66631BC-26AB-7BCE-77E49C33C2A650CE}" Path="\\registry\\machine\\cluster\\exchangeactivemanager\\lastlog">
-		<Process Path="C:\\Windows\\Cluster\\clussvc.exe">
+	<Registry Id="{F66631BC-26AB-7BCE-77E49C33C2A650CE}" Path="\registry\machine\cluster\exchangeactivemanager\lastlog">
+		<Process Path="C:\Windows\Cluster\clussvc.exe">
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</Registry>
-	<Registry Id="{13C4FDDC-9175-0C16-C555D343E52A3F4D}" Path="*cluster\\checkpoints*">
-		<Process Path="C:\\Windows\\Cluster\\clussvc.exe">
+	<Registry Id="{13C4FDDC-9175-0C16-C555D343E52A3F4D}" Path="*cluster\checkpoints*">
+		<Process Path="C:\Windows\Cluster\clussvc.exe">
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</Registry>
-	<Registry Id="{8B3B5F6D-7CF4-A5BE-750E33CC0F006CB5}" Path="\\registry\\machine\\software\\wow6432node\\lenovo*">
+	<Registry Id="{8B3B5F6D-7CF4-A5BE-750E33CC0F006CB5}" Path="\registry\machine\software\wow6432node\lenovo*">
 		<Process>
 			<Signature Subject="*Lenovo*" />
 		</Process>
 	</Registry>
-<!-- Part 10: end 2021-10-12T13:49:00.000Z-1634046570 -->
+<!-- Part 10: end 2021-12-23T13:04:00.000Z-1640264683 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 11: 2021-12-23T14:08:00.000Z-1640268520 -->
+	<Registry Id="{43914B6F-AD1C-30BD-A8A0627317B48D51}" Value="?">
+		<Process>
+			<Signature Subject="*IncrediBuild*" />
+		</Process>
+	</Registry>
+	<Registry Id="{24D19FF3-2A29-7DCF-0B0FD77AFB9D5C35}" Name="availablegroups">
+		<Process>
+			<Signature Subject="*IncrediBuild*" />
+		</Process>
+	</Registry>
+	<Registry Id="{CCBD4912-02FF-C8C7-6DD99A07C49377B2}" Value="%kl_undef%">
+		<Process>
+			<Signature Subject="*IncrediBuild*" />
+		</Process>
+	</Registry>
+	<Registry Id="{75CD6961-12B6-F6B8-E1C2B2D648B9BAEC}" Value="%kl_undef%">
+		<Process>
+			<Signature Subject="*Searchinform*" />
+		</Process>
+	</Registry>
+	<Registry Id="{94835AE6-8B71-3287-AE5C5B3DF6A7A914}" Value="????????">
+		<Process>
+			<Signature Subject="*Searchinform*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C752ED65-06AD-8308-8D4A6D9E7875DA3D}" Name="hpfilters">
+		<Process>
+			<Signature Subject="*Searchinform*" />
+		</Process>
+	</Registry>
+	<Registry Id="{91035FF6-EEDD-0BF4-4677AAD9D81CE6DD}" Name="cachedmuid">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{A4DC3610-21B0-AD4B-824D632A43B3BE94}" Name="expirationdatetime">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{546276D1-1084-F308-4D36B6334AC8A83D}" Name="fdhead">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{CF59CDA9-D56F-0332-4287AB328D6D6710}" Name="feed*">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3B1BECA0-2F82-D0AD-BCC08DD3A8567ADA}" Name="flyouturl">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1ABCFD84-DB6E-E7DE-78666FA577182C1B}" Name="landingpageurl">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{74AC7191-92BD-131B-B720548E8CFDA5D5}" Name="locale">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{8C279327-58CC-F2B2-98263ECF5B7B88E1}" Name="safesearchmode">
+		<Process Path="*\backgroundTaskHost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{086F807E-8C68-36A2-79EA969C5E533979}" Type="4" Value="????????">
+		<Process Path="*\svchost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F0BBDF34-4973-4368-79556043CF804949}" Value="?">
+		<Process Path="*\svchost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{45ABFA55-2B07-2EDD-668F7D17235243AB}" Value="??">
+		<Process Path="*\svchost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+<!-- Part 11: 2021-12-23T14:08:00.000Z-1640268520 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 12: 2021-12-23T15:37:00.000Z-1640273853 -->
+	<Registry Id="{70BF0BFD-B0F8-9126-895481E3120D1466}" Value="?">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3A063B41-F0DE-41B6-300A95EFABA312D3}" Value="?">
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Registry>
+	<Registry Id="{2F8007F6-87B8-5BAA-EB405A927046552E}" Value="??">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{ACDE2342-D8C6-7815-D2A84E35CA56F96D}" Value="??">
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3A5036EF-5027-B5A8-9F0B314F4E6063D3}" Value="???">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{23D2267C-4D1E-8904-94EE47B37EF95ED3}" Value="???">
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Registry>
+	<Registry Id="{76EFDB87-AB82-74CA-A6AF2A16560E1631}" Value="????">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{442D12C8-474C-AEA4-B1E0C909D54A9AAC}" Value="????">
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Registry>
+	<Registry Id="{FC56908F-06F2-96E4-C4E45117F77ED4BE}" Value="%kl_undef%">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{E432A6B4-8C13-3FCE-6AF35DB32DA056AE}" Value="%kl_undef%">
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Registry>
+	<Registry Id="{FBE85399-9382-7FCD-92669960FD2462EA}" Value="????????">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{A1AD878E-4391-4AA4-AAF9DEC9B6244632}" Value="????????">
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C3CC7892-40BB-CA3C-6CAB34D879862DD7}" Value="????????????0000">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{78E8007A-E28A-8BF6-DDFE6D09C2FAF7FA}" Name="last started">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{148F3BE3-E5DC-37F6-2B54ECC6A87E8D43}" Name="current user">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{2695332C-012E-12BA-1078180556CB98AB}" Name="total runs">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{892CFE41-35DC-2681-045BCEB325B27C91}" Name="last duration">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{43C3A37A-893E-364A-CB97AB101329312C}" Name="total duration">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F50FC8E1-E69A-1969-C3556C0F8052BA05}" Name="current duration">
+		<Process>
+			<Signature Subject="*LANDESK*" />
+		</Process>
+	</Registry>
+<!-- Part 12: 2021-12-23T15:37:00.000Z-1640273853 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

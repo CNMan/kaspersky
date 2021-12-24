@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2021-10-13T14:08:00.000Z-1634134105 -->
+	<!-- Version: 2021-12-23T16:37:00.000Z-1640277443 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -7069,6 +7069,36 @@
 		</Process>
 	</File>
 <!-- Part 0008 End 2021-10-13T14:08:00.000Z-1634134105 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0009 2021-12-23T16:37:00.000Z-1640277443 -->
+	<File Id="{F782F07F-B8EC-AAA0-4538AFF20D1CAE0A}" FilePath="*securit\configurations*" >
+		<Process >
+			<Signature Subject="SecurIT*" />
+		</Process>
+	</File>
+	<File Id="{8209A50D-40B0-803A-0543A817F9C5D05E}" FilePath="*zecurion\endpoint*" >
+		<Process >
+			<Signature Subject="SecurIT*" />
+		</Process>
+	</File>
+	<File Id="{33DE8F05-4F8A-B3E1-E320ABC5F518EB25}" FilePath="c:\windows\temp\dup2e4a.tmp*" >
+		<Process >
+			<Signature Subject="SecurIT*" />
+		</Process>
+	</File>
+	<File Id="{C4085DD0-4BB6-62F1-15387414DC894FAB}" FilePath="c:\windows\ltcjobs\jobs\ltc\ltc*" >
+		<Process CmdLine="c:\windows\ltcjobs\jobs\ltc\bin\ltcagent.exe c:\windows\ltcjobs\jobs\ltc\ltc\temp*" >
+			<VersionInfo FileDescription="*Logical Trees Commander Agent" />
+		</Process>
+	</File>
+	<File Id="{26601C39-A752-9D42-989E454E5CCF6CB9}" FilePath="c:\windows\ltcjobs\jobs\ltc\ltc*" >
+		<Process CmdLine="c:\windows\ltcjobs\jobs\ltc\bin\ltcpolicy.exe  c:\windows\ltcjobs\jobs\ltc\ltc\policy\localpolicy.ltcpolicy /s" >
+			<VersionInfo FileDescription="LtcPolicy MFC Application" />
+		</Process>
+	</File>
+<!-- Part 0009 2021-12-23T16:37:00.000Z-1640277443 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2021-10-12T15:58:00.000Z-1634054322 -->
+  <!-- Version: 2021-12-23T11:52:00.000Z-1640260321 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -423,7 +423,26 @@
   <Event Name="UserAccountChanged.Vista" Id="4738" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
 
   <Event Name="SchedulerTaskCreated.Vista" Id="4698" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
-  <Event Name="SchedulerTaskUpdated.Vista" Id="4702" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SchedulerTaskUpdated.Vista" Id="4702" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="\Microsoft\Windows\UpdateOrchestrator\Schedule*"/>
+        <Match OrderNum="12" Value="*Command&#x3e;%systemroot%\system32\usoclient.exe*"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-20"/>
+        <Equal OrderNum="11" Value="\Microsoft\Windows\SoftwareProtectionPlatform\SvcRestartTask"/>
+        <Match OrderNum="12" Value="*B1AEBB5D-EAD9-4476-B375-9C3ED9F32AFC*"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="11" Value="\Microsoft\Windows\WindowsUpdate\Scheduled Start"/>
+        <Match OrderNum="12" Value="*start wuauserv*"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
 
   <Event Name="ServiceCreated.Vista" Id="4697" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
   <Event Name="ServiceCreated.Vista" Id="7045" Channel="System" Provider="Service Control Manager" OsType="Vista+" />
@@ -761,29 +780,20 @@
         <Match OrderNum="18" Value="*\System32\SearchIndexer.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="S-1-5-18"/>
         <Equal OrderNum="12" Value="Token"/>
-        <Match OrderNum="15" Value="d:(a;;ga;;;s-1-*"/>
-        <Match OrderNum="16" Value="d:(a;;ga;;;S-1-*"/>
-        <Match OrderNum="18" Value="*\System32\SearchIndexer.exe"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;SY)"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="12" Value="Token"/>
-        <Match OrderNum="15" Value="d:(a;;ga;;;s-1-*"/>
-        <Match OrderNum="16" Value="d:(a;;ga;;;S-1-*"/>
-        <Match OrderNum="18" Value="*\google\chrome\application\chrome.exe"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;SY)(A;;GXGR;;;S-1-5-5-?-*)(A;;GA;;;BA)"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="12" Value="Token"/>
-        <Match OrderNum="15" Value="d:(a;;ga;;;s-1-*"/>
-        <Match OrderNum="16" Value="d:(a;;ga;;;S-1-*"/>
-        <Match OrderNum="18" Value="*\yandex\yandexbrowser\application\browser.exe"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;BA)(A;;GA;;;SY)"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="12" Value="Token"/>
-        <Match OrderNum="15" Value="d:(a;;ga;;;s-1-*"/>
-        <Match OrderNum="16" Value="d:(a;;ga;;;S-1-*"/>
-        <Match OrderNum="18" Value="*\microsoft\teams\current\teams.exe"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;BA)(A;;GA;;;SY)"/>
       </Conjunction>
     </Exclusions>
   </Event>
