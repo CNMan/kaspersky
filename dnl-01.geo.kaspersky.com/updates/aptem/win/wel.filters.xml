@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2021-12-23T11:52:00.000Z-1640260321 -->
+  <!-- Version: 2021-12-28T12:59:00.000Z-1640696345 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -1124,6 +1124,56 @@
         <Equal OrderNum="8" Value="Builtin"/>
         <Match OrderNum="15" Value="*system32\vssvc.exe"/>
       </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Administrators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*Agent\soyuz.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Администраторы"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*Agent\soyuz.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Administrators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Administrators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Administrators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Administrators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Administrators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\msiexec.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Backup Operators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Backup Operators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Backup Operators"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
+      </Conjunction>
     </Exclusions>
   </Event>
 
@@ -1201,35 +1251,38 @@
 
   <Event Name="CredentialsManagerRead.Vista" Id="5379" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
     <Exclusions>
-      <Match OrderNum="11" Value="microsoftoffice*"/>
+      <Match OrderNum="11" Value="MicrosoftOffice*"/>
       <Match OrderNum="11" Value="msteams*"/>
       <Match OrderNum="11" Value="vscode-*"/>
-      <Match OrderNum="11" Value="windowslive:*"/>
+      <Match OrderNum="11" Value="WindowsLive:*"/>
+      <Match OrderNum="11" Value="MicrosoftAccount:*"/>
+      <Match OrderNum="11" Value="Microsoft:SSMS:*"/>
+      <Match OrderNum="11" Value="Adobe App Info (Q*"/>
       <Conjunction>
-      	<Equal OrderNum="7" Value="s-1-5-19" />
-      	<Equal OrderNum="8" Value="local service" />
-      	<Equal OrderNum="9" Value="nt authority" />
+      	<Equal OrderNum="7" Value="S-1-5-19" />
+      	<Equal OrderNum="8" Value="LOCAL SERVICE" />
+      	<Equal OrderNum="9" Value="NT AUTHORITY" />
       	<Equal OrderNum="12" Value="0" />
       	<Equal OrderNum="14" Value="%%8100" />
       	<Equal OrderNum="15" Value="3221226021" />
       </Conjunction>
       <Conjunction>
-      	<Equal OrderNum="7" Value="s-1-5-19" />
-      	<Equal OrderNum="8" Value="local service" />
-      	<Equal OrderNum="9" Value="nt authority" />
+      	<Equal OrderNum="7" Value="S-1-5-19" />
+      	<Equal OrderNum="8" Value="LOCAL SERVICE" />
+      	<Equal OrderNum="9" Value="NT AUTHORITY" />
       	<Equal OrderNum="12" Value="1" />
       	<Equal OrderNum="14" Value="%%8099" />
       	<Equal OrderNum="15" Value="3221226021" />
       </Conjunction>
       <Conjunction>
-      	<Equal OrderNum="7" Value="s-1-5-18" />
+      	<Equal OrderNum="7" Value="S-1-5-18" />
       	<Match OrderNum="8" Value="*$" />
       	<Equal OrderNum="12" Value="1" />
       	<Equal OrderNum="14" Value="%%8099" />
       	<Equal OrderNum="15" Value="3221226021" />
       </Conjunction>
       <Conjunction>
-      	<Equal OrderNum="7" Value="s-1-5-18" />
+      	<Equal OrderNum="7" Value="S-1-5-18" />
       	<Match OrderNum="8" Value="*$" />
       	<Equal OrderNum="12" Value="0" />
       	<Equal OrderNum="14" Value="%%8100" />

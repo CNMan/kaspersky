@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2021-12-24T13:07:00.000Z-1640351230 -->
+  <!-- Version: 2021-12-28T12:50:00.000Z-1640695837 -->
 
 <!-- 
 	Part 0001 START
@@ -3678,6 +3678,53 @@
 	<NetworkConnection Id="{9B6D15DC-BC9E-9DB2-27F741B2F753377F}" RemoteAddress="185.25.64.20" />
 	<NetworkConnection Id="{10E564C0-73FE-078A-E849432EA843A90B}" RemoteAddress="34.107.221.82" />
 <!-- Part 0013 2021-12-24T13:07:00.000Z-1640351230 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0013 2021-12-28T12:50:00.000Z-1640695837 -->
+	<NetworkConnection Id="{34111411-8D98-85D0-EEEAED5642E1E1DE}" Url="*.kes-cloud-internal.com:?????" />
+	<NetworkConnection Id="{669CBACA-380B-F376-0E1BAA2ACE859205}" Url="*.onthe.io:443" />
+	<NetworkConnection Id="{3789F4F7-4BAA-7E22-EFE5831670F61845}" Url="api.browser.yandex.net:443" />
+	<NetworkConnection Id="{2EE5CA3C-41AA-5F01-34F81FC0E127368F}" Url="browser.events.data.msn.com:443" />
+	<NetworkConnection Id="{83E0B6D0-AB7E-49BD-C5E00B0242BA9D10}" Url="s0.2mdn.net:443" />
+	<NetworkConnection Id="{DAF639A6-554E-3A17-38212B40CA4A1751}" Url="*.webim.ru:443" />
+	<NetworkConnection Id="{A2908B39-42D9-26A0-5561911E18E06D97}" Url="img-s-msn-com.akamaized.net:443" />
+	<NetworkConnection Id="{46F8ED23-ABA1-854E-96B7AA4A85D2AAA3}" Url="secure.booking.com:443" />
+	<NetworkConnection Id="{AD77FA6B-2209-A5E9-91299728B81CEDFE}" Url="graph.microsoft.com:443" />
+	<NetworkConnection Id="{3AD445C0-00E7-8936-FDD30A37614DC6B3}" Url="nav.smartscreen.microsoft.com:443" />
+	<NetworkConnection Id="{4C919AEF-1CA2-D8A1-74DAB012D73E59CD}" Url="gateway.facebook.com:443" />
+	<NetworkConnection Id="{1DD9F106-896D-FDE9-1C5AFC6CDC688773}" Url="business.bing.com:443" />
+	<NetworkConnection Id="{88653EB5-9DE2-CC95-954F39CBAC51C0AF}" Url="cc-api-data.adobe.io:443" />
+	<NetworkConnection Id="{07757491-69C6-54D0-DD76EDFAA059471D}" Url="hierarchyapi.onenote.com:443" />
+	<NetworkConnection Id="{1A9226A5-2999-1FE6-0E7C97D2B515E261}" Url="static.asm.skype.com:443" />
+	<NetworkConnection Id="{7BF69370-47B2-C41D-31B352BF15D9E5C2}" Url="api.msn.com:443" />
+	<NetworkConnection Id="{3C4A4856-F336-107D-7579BA1BE737EB2F}" Url="assets.msn.com:443" />
+	<NetworkConnection Id="{32AB1EA1-5849-1125-47B66B3385DF9104}" Url="browsec.com:443" />
+	<NetworkConnection Id="{037B459D-5178-E92C-5BFC0FE14C3016DB}" Url="kaspersky-my.sharepoint.com:443" />
+	<NetworkConnection Id="{005E393C-C701-1218-DE61F303DA3D1715}" Url="s1-ru.ariba.com:443" />
+	<NetworkConnection Id="{B0E8FDCC-6051-910F-3E93E35E04847732}" Url="portal.mail.ru:443" />
+	<NetworkConnection Id="{EE1DC796-602F-A522-FE428D53A8E750EB}" Url="http://x1.c.lencr.org/" />
+	<NetworkConnection Id="{14E14CF4-6ACA-18B4-4B2AD6C496190A3B}" Url="91.105.192.100:443" />
+	<NetworkConnection Id="{F508B5E3-0FC8-7A0D-D8872540518CDB53}" Url="http://fatesting.kaspersky.com/*" />
+	<NetworkConnection Id="{7043F0C1-5A18-89F2-F1ACB28A4B7E9FC1}" Url="bam-cell.nr-data.net:443" />
+	<NetworkConnection Id="{62B8FDD7-E390-B909-3F6150FA279437FB}" Url="api.appcues.net:443" />
+	<NetworkConnection Id="{947AEF33-3C71-07A6-78498285D85E8670}" Url="http://91.105.192.100:80/api" />
+	<NetworkConnection Id="{F691C570-D7DA-7B07-03C9C144CCDD0C17}" Url="smartcat.com:443" />
+	<NetworkConnection Id="{59DDE0C3-55F4-309C-E3AFAAC597499EFC}" RemoteAddress="35.156.52.145" />
+	<NetworkConnection Id="{3841963E-2B3C-B3C4-8C11F790FC34E444}" RemoteAddress="fe80::b6a5:efff:fe97:c750" />
+	<NetworkConnection Id="{DB54F092-734F-A4C9-C621C3F5F5B0F188}" RemoteAddress="18.193.253.179" />
+	<NetworkConnection Id="{4E0C2928-0019-8538-2CF6B29F822A92AF}" RemoteAddress="8.8.8.8">
+		<Process Path="*\svchost.exe" />
+	</NetworkConnection>
+	<NetworkConnection Id="{BAA3D8FB-0019-89AF-7456379C21508018}" RemoteAddress="8.8.4.4">
+		<Process Path="*\svchost.exe" />
+	</NetworkConnection>
+	<NetworkConnection Id="{205D983D-BABE-CAA2-96B2C2BD2BAAC12D}">
+		<Process Path="*\warden.exe">
+			<Signature Subject="*Kaspersky*" />
+		</Process>
+	</NetworkConnection>
+<!-- Part 0013 2021-12-28T12:50:00.000Z-1640695837 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
