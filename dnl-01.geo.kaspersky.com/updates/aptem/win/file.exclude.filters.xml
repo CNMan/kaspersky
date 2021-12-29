@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2021-12-24T20:48:00.000Z-1640378914 -->
+	<!-- Version: 2021-12-29T12:26:00.000Z-1640780773 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -7259,6 +7259,93 @@
 		</Process>
 	</File>
 <!-- Part 0010 2021-12-24T20:48:00.000Z-1640378914 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0011 2021-12-29T12:26:00.000Z-1640780773 -->
+	<File Id="{09952F88-7C0C-5EA3-46DA326D8F084BB2}" >
+		<Process CmdLine="*zecurion\endpoint\zlu_agent64.exe -pid:*" >
+			<Signature Subject="*SecurIT*" />
+		</Process>
+	</File>
+	<File Id="{1942FE38-AA0F-DE2F-2A0EC0A2BAF4E7E0}" >
+		<Process Path="c:\program files (x86)\landesk\ldclient\selfelectcontroller.exe" >
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</File>
+	<File Id="{B8454178-2001-86FD-980B3421686768C0}" >
+		<Process Path="*CheckPoint\Endpoint Security\Endpoint Common\bin\cpda.exe" >
+			<Signature Subject="*Check Point*" />
+		</Process>
+	</File>
+	<File Id="{2F53B5FA-1D02-CE16-F29337CCCA7AAF74}" >
+		<Process Path="*CheckPoint\Endpoint Security\Endpoint Common\bin\cpda.exe" >
+			<Signature Subject="*CheckPoint*" />
+		</Process>
+	</File>
+	<File Id="{69CF1F5F-5E9F-BED0-1931A4A56634CC14}" FilePath="c:\windows\internet logs\bu_to*.rdb" >
+		<Process Path="c:\windows\syswow64\zonelabs\vsmon.exe" />
+	</File>
+	<File Id="{27D5FAC7-F8E1-ABE1-A7E4BCA3EC54F0D3}" FilePath="c:\windows\internet logs\backup.rdb" >
+		<Process Path="c:\windows\syswow64\zonelabs\vsmon.exe" />
+	</File>
+	<File Id="{0D458E60-692B-3ADB-D37110D9F3A885B7}" FilePath="*appdata\local\temp\winmail*" >
+		<Process Path="*\wmail.exe" >
+			<Signature Subject="*InfoTeCS*" />
+		</Process>
+	</File>
+	<File Id="{5EF959D2-B21E-DC3F-E1F8BFF70669080A}" FilePath="c:\news-dir\exch\*.arj" >
+		<Process Path="c:\argus\argus.exe" />
+	</File>
+	<File Id="{31C99E37-F5E0-E3A9-1703151AB309D69A}" FilePath="c:\news-dir\intmp\badwazoo.???" >
+		<Process Path="c:\argus\argus.exe" />
+	</File>
+	<File Id="{FAE7EEC7-FC37-EA79-9FEA9CDCF1A3E272}" FilePath="c:\atd\atd\astrn1doms??????????.strn" >
+		<Process Path="c:\atd\atd\atdssclient.exe" />
+	</File>
+	<File Id="{147A3DB7-052B-7248-6203242D8EB2D7D4}" FilePath="*appdata\local\temp\jet???.tmp" >
+		<Process Path="c:\mlevel\mlevel.exe" />
+	</File>
+	<File Id="{BC579A5A-C040-FD76-D004C4F511DF1BC8}" FilePath="*appdata\local\temp\jet????.tmp" >
+		<Process Path="c:\mlevel\mlevel.exe" />
+	</File>
+	<File Id="{5C49E2AC-596A-9016-CF4A0906D78248B0}" >
+		<Process Path="C:\Program Files (x86)\Common Files\SecurIT\zservice6415.exe" >
+			<Signature Subject="*SecurIT*" />
+		</Process>
+	</File>
+	<File Id="{A589B24D-0833-07D6-29EFAC0698415D98}" FilePath="landesk\ldclient\data\proddefs*" >
+		<Process >
+			<Signature Subject="*LANDesk*" />
+		</Process>
+	</File>
+	<File Id="{87BA3679-6D0B-7F05-295E4734599C3CBB}" FilePath="c:\temp\ath*.pid" >
+		<Process CmdLine="*bin\prowin32.exe -ininame*" />
+	</File>
+	<File Id="{E9ECB25A-D41E-48EC-202AD67807284C06}" FilePath="c:\news-dir\exch\*.arj" >
+		<Process CmdLine="*bin\prowin32.exe -ininame*" />
+	</File>
+	<File Id="{385D9E74-A3B7-8FC1-729C9F4D89B86804}" FilePath="c:\spool\in\*.xml" >
+		<Process CmdLine="*bin\prowin32.exe -ininame*" />
+	</File>
+	<File Id="{2501501A-3C9E-BEAF-35AF0CA4810258C9}" FilePath="c:\spool\out\*.xm1" >
+		<Process CmdLine="*bin\prowin32.exe -ininame*" />
+	</File>
+	<File Id="{49A6953D-5B54-C290-7343FAA4B8BF1945}" FilePath="c:\temp\????????.xm1" >
+		<Process CmdLine="*bin\prowin32.exe -ininame*" />
+	</File>
+	<File Id="{CB641182-B6C6-DB0E-8046CB06C5F62B44}" FilePath="c:\temp\p?????.bat" >
+		<Process CmdLine="*bin\prowin32.exe -ininame*" />
+	</File>
+	<File Id="{5B1844F8-58F6-23E5-5F24B335046FB132}" FilePath="c:\temp\rpt*" >
+		<Process CmdLine="*bin\prowin32.exe -ininame*" />
+	</File>
+	<File Id="{8C2DEACC-C494-05A0-EEE02DAFBD9EE815}" FilePath="c:\windows\syswow64\config\systemprofile\appdata\local\sifiltersvc*" >
+		<Process >
+			<Signature Subject="*Searchinform*" />
+		</Process>
+	</File>
+<!-- Part 0011 2021-12-29T12:26:00.000Z-1640780773 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

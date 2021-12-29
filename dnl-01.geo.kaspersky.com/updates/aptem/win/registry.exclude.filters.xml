@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2021-12-23T15:37:00.000Z-1640273853 -->
+  <!-- Version: 2021-12-29T12:57:00.000Z-1640782645 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2516,6 +2516,100 @@
 		</Process>
 	</Registry>
 <!-- Part 12: 2021-12-23T15:37:00.000Z-1640273853 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 13: 2021-12-29T12:57:00.000Z-1640782645 -->
+	<Registry Id="{AD24F55B-7831-2A79-425762E99A07B94D}">
+		<Process Path="*\64DriverLoad.exe">
+			<Signature Subject="*Epson*" />
+		</Process>
+	</Registry>
+	<Registry Id="{6A6EAA1B-4A03-8DFF-05DB5E657A63B96A}">
+		<Process CmdLine="c:\program files (x86)\initplusmonitor\initplusmonitor\isolatedvivotekplayerserverapp.exe /command-pipe-name vivotekplayercommandpipe*" />
+	</Registry>
+	<Registry Id="{3CB874CA-D875-90CA-CDEFAD09FCEBB820}">
+		<Process CmdLine="c:\windows\ccm\updatetrustedsites.exe false  s-1-5-21-*" />
+	</Registry>
+	<Registry Id="{9DFCEC97-13B3-CF7C-AC818B337B2E96D5}">
+		<Process CmdLine="c:\windows\microsoft.net\framework*\csc.exe /noconfig /fullpaths @c:\windows\temp*" />
+	</Registry>
+	<Registry Id="{C8641409-5417-2EEC-BA464AF8439396D0}">
+		<Process CmdLine="c:\windows\microsoft.net\framework*\ngen.exe uninstall c:\windows\assembly\nativeimages_v*" />
+	</Registry>
+	<Registry Id="{92386CEC-44AE-9481-84243DA310C709FC}">
+		<Process CmdLine="c:\windows\system32\wudfhost.exe -hostguid:{*" />
+	</Registry>
+	<Registry Id="{404B46A3-23B5-BBF7-CB7A78ED59EA12AD}">
+		<Process CmdLine="logonui.exe /flags:0x0 /state0:0x???????? /state1:0x????????" />
+	</Registry>
+	<Registry Id="{1EA9B019-A2BE-7E0E-C8A372EDA7FCA6E1}">
+		<Process CmdLine="c:\windows\microsoft.net\framework*\cvtres.exe /nologo /readonly /machine:*" />
+	</Registry>
+	<Registry Id="{3F22150B-B44F-82DE-EF8DAEDACDDC2054}">
+		<Process CmdLine="c:\windows\system32\audiodg.exe 0x??? 0x???" />
+	</Registry>
+	<Registry Id="{0C85A46B-4C94-E1BC-41EBE79CB17B393F}">
+		<Process CmdLine="c:\windows\system32\audiodg.exe 0x???" />
+	</Registry>
+	<Registry Id="{62FD4384-0F38-CE62-15C09B021BC11ADE}">
+		<Process Path="*LANDesk\LDCLient\softmon.exe">
+			<Signature Subject="*LANDesk*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F82A488E-7638-1366-0639F7C90F626D1A}">
+		<Process Path="*LANDesk\LDClient\LocalSch.EXE">
+			<Signature Subject="*LANDesk*" />
+		</Process>
+	</Registry>
+	<Registry Id="{9A7A2FD5-D36B-EF3A-28BD0F06D35BBE2E}">
+		<Process Path="*Common Files\SecurIT\zservice6415.exe">
+			<Signature Subject="*SecurIT*" />
+		</Process>
+	</Registry>
+	<Registry Id="{061FCE30-8CE7-4C4B-E85CE820EA2391B9}">
+		<Process Path="*SAP\FrontEnd\SAPgui\saplogon.exe">
+			<Signature Subject="SAP AG" />
+		</Process>
+	</Registry>
+	<Registry Id="{F077F057-6675-3892-76921760BFEDC514}">
+		<Process Path="*A0Win3\Bin\A0w.exe">
+			<Signature Subject="*INFOSTROY*" />
+		</Process>
+	</Registry>
+	<Registry Id="{E76F9B9F-97D9-430A-1F218619C3498D84}">
+		<Process Path="*Infowatch\DeviceMonitor\Client\iwdmc.exe">
+			<Signature Subject="*InfoWatch*" />
+		</Process>
+	</Registry>
+	<Registry Id="{7B028BD1-E7BD-2931-C14E924E181E3F3B}" Path="\registry\user\*software\ati\ace\settings\runtime\graphics\udid*">
+		<Process Path="*\ccc.exe" />
+	</Registry>
+	<Registry Id="{04A08B30-D4C4-F731-0C1FCDC933788B20}">
+		<Process Path="*CheckPoint\Endpoint Security*">
+			<Signature Subject="*Check Point*" />
+		</Process>
+	</Registry>
+	<Registry Id="{AAE29895-18DA-66E5-4D82B463544DAAA8}">
+		<Process Path="*CheckPoint\Endpoint Security*">
+			<Signature Subject="*CheckPoint*" />
+		</Process>
+	</Registry>
+	<Registry Id="{6A5B8CE0-C14D-598C-D60F7798B9F0B738}">
+		<Process Path="*SearchInformAgent\sifiltersvc*">
+			<Signature Subject="*Searchinform*" />
+		</Process>
+	</Registry>
+	<Registry Id="{157043EF-2DFC-B2F0-EA4591461C7F6695}" Path="\registry\machine\software\idt\state\ui">
+		<Process Path="*\STacSV64.exe" />
+	</Registry>
+	<Registry Id="{A120B984-83BD-1E94-9DD18FDB189A755F}" Name="appid">
+		<Process Path="*LANDesk\LDClient\LDProfile.exe" />
+	</Registry>
+	<Registry Id="{055270AD-1ACA-5CE3-01BA8519F7F1E0CB}" Name="%kl_undef%">
+		<Process Path="*LANDesk\LDClient\LDProfile.exe" />
+	</Registry>
+<!-- Part 13: 2021-12-29T12:57:00.000Z-1640782645 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

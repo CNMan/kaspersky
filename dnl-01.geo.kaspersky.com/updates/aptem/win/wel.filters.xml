@@ -788,6 +788,20 @@
         <Equal OrderNum="12" Value="Token"/>
         <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;BA)(A;;GA;;;SY)"/>
       </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="16" Value="D:AI(A;;FA;;;SY)(A;;0x1200a9;;;BA)"/>
+        <Match OrderNum="18" Value="*\SecurIT\zservice6415.exe"/>
+      </Conjunction>
+      <Match OrderNum="18" Value="C:\Program Files\Common Files\SecurIT\zservice15.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files\Adobe\Acrobat DC\Acrobat\acrocef_1\AcroCEF.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files (x86)\Mozilla Firefox\firefox.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\acrocef_1\RdrCEF.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroCEF\RdrCEF.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files\Mozilla Firefox\firefox.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"/>
+      <Match OrderNum="18" Value="C:\Program Files (x86)\Common Files\SecurIT\zservice6415.exe"/>
     </Exclusions>
   </Event>
 
@@ -1037,6 +1051,7 @@
   <Event Name="UserLocalGroupMembershipEnumerated.Vista" Id="4798" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
     <Exclusions>
 	  <Match OrderNum="15" Value="*AGENT\soyuz.exe"/>
+      <Match OrderNum="15" Value="*Agent\soyuz.exe"/>
       <Conjunction>
         <Equal OrderNum="7" Value="administrator"/>
         <Equal OrderNum="10" Value="s-1-5-18"/>
@@ -1044,28 +1059,24 @@
         <Match OrderNum="15" Value="*tools\vmtoolsd.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="wdagutilityaccount"/>
-        <Equal OrderNum="10" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="*$"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
+        <Equal OrderNum="7" Value="WDAGUtilityAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="guest"/>
-        <Equal OrderNum="10" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="*$"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
+        <Equal OrderNum="7" Value="Guest"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="administrator"/>
-        <Equal OrderNum="10" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="*$"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
+        <Equal OrderNum="7" Value="Administrator"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="klnagsvc"/>
-        <Equal OrderNum="10" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="*$"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
+        <Equal OrderNum="7" Value="KlNagSvc"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="setupadmin"/>
@@ -1074,10 +1085,44 @@
         <Match OrderNum="15" Value="*system32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="defaultaccount"/>
-        <Equal OrderNum="10" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="*$"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
+        <Equal OrderNum="7" Value="DefaultAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="WDAGUtilityAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Гость"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="cba_anonymous"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="админ"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="DefaultAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Администратор"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="LAPSAdmin"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
     </Exclusions>
   </Event>
@@ -1155,6 +1200,11 @@
         <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
       </Conjunction>
       <Conjunction>
+        <Equal OrderNum="7" Value="Администраторы"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
+      </Conjunction>
+      <Conjunction>
         <Equal OrderNum="7" Value="Administrators"/>
         <Equal OrderNum="8" Value="Builtin"/>
         <Match OrderNum="15" Value="*System32\msiexec.exe"/>
@@ -1173,6 +1223,16 @@
         <Equal OrderNum="7" Value="Backup Operators"/>
         <Equal OrderNum="8" Value="Builtin"/>
         <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Операторы архива"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Администраторы"/>
+        <Equal OrderNum="8" Value="Builtin"/>
+        <Match OrderNum="15" Value="*\System32\svchost.exe"/>
       </Conjunction>
     </Exclusions>
   </Event>

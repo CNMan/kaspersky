@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2021-12-24T13:10:00.000Z-1640351459 -->
+	<!-- Version: 2021-12-29T12:27:00.000Z-1640780846 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1056,9 +1056,105 @@
 	</Image>
 	<Image Id="{7E692CCD-CD81-4A70-2A8E93DD04A31180}" >
 		<Signature Subject="SecurIT*" />
-		<Process Path="*LtcJobs\Jobs\Ltc\Bin*" />
 	</Image>
 <!-- Part 0007 2021-12-24T13:10:00.000Z-1640351459 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0008 2021-12-29T12:27:00.000Z-1640780846 -->
+	<Image Id="{8FE84CAE-D799-E966-2285497E2FAB7C34}" >
+		<Process CmdLine="C:\WINDOWS\SYSTEM32\cmd.exe /c C:\WINDOWS\LtcJobs\Task\runonce-MainScript.BAT*" />
+	</Image>
+	<Image Id="{58F44F19-8A0B-D9B0-B756A16750F959F3}" >
+		<Process CmdLine="c:\windows\ltcjobs\task\runonce-mainscript.bat\..\*" />
+	</Image>
+	<Image Id="{E34D1DF9-A80B-E0EA-544BF8256890C907}" >
+		<Process Path="*\64DriverLoad.exe" >
+			<Signature Subject="*Epson*" />
+		</Process>
+	</Image>
+	<Image Id="{48FA70FD-2F2E-2432-46C5ABB15C059E9A}" >
+		<Process CmdLine="c:\program files (x86)\initplusmonitor\initplusmonitor\isolatedvivotekplayerserverapp.exe /command-pipe-name vivotekplayercommandpipe*" />
+	</Image>
+	<Image Id="{3B770C09-223D-0EA1-56FCD4ECBD21FEB3}" >
+		<Process CmdLine="C:\Program Files (x86)\Zecurion\Endpoint\ffcertutils\certutil.exe  -A -n Zecurion Zgate Web*" />
+	</Image>
+	<Image Id="{5B6E2718-BD0C-BCC7-3D95700DA2E80E1B}" >
+		<Process CmdLine="c:\th\td15\rc\exe\curl.exe  -0 --trace-ascii test.txt -x post -h*" />
+	</Image>
+	<Image Id="{D0480406-FE9A-DC6E-74F4A8525628716E}" >
+		<Process CmdLine="c:\windows\ccm\updatetrustedsites.exe false  s-1-5-21-*" />
+	</Image>
+	<Image Id="{6E671391-7E42-AA52-D1427B980C3191A7}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\csc.exe /noconfig /fullpaths @c:\windows\temp*" />
+	</Image>
+	<Image Id="{9718D50D-E26C-778D-0B7B326FC4F0FEBD}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\ngen.exe uninstall c:\windows\assembly\nativeimages_v*" />
+	</Image>
+	<Image Id="{560BFEF4-F248-57DC-12AD1EFFBE82969E}" >
+		<Process CmdLine="c:\windows\system32\wudfhost.exe -hostguid:{*" />
+	</Image>
+	<Image Id="{66D3B8A3-4346-A685-3E2AA6C87A4FC088}" >
+		<Process CmdLine="logonui.exe /flags:0x0 /state0:0x???????? /state1:0x????????" />
+	</Image>
+	<Image Id="{387067D8-EC38-5342-88C51DDD942A9B0D}" >
+		<Process CmdLine="c:\cntc\stc.exe  - - 0 - c:\atd\atd\ast*" />
+	</Image>
+	<Image Id="{72825E47-E8DB-66DD-7ADDC5B0529D5A3F}" >
+		<Process CmdLine="c:\program files (x86)\citrix\ica client\ssonsvr.exe /htc:*" >
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Image>
+	<Image Id="{09952F88-7C0C-5EA3-46DA326D8F084BB2}" >
+		<Process CmdLine="*zecurion\endpoint\zlu_agent64.exe -pid:*" >
+			<Signature Subject="*SecurIT*" />
+		</Process>
+	</Image>
+	<Image Id="{34F2D1BB-A7FA-18B3-1D0A24584BA805D9}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\cvtres.exe /nologo /readonly /machine:*" />
+	</Image>
+	<Image Id="{407600C4-DC3C-F963-C01D025AAD3AE60A}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\mscorsvw.exe -startupevent ??? -interruptevent ? -ngenprocess*" />
+	</Image>
+	<Image Id="{EFC3BCFB-D260-A700-32CA1B54F1EC0CF7}" >
+		<Process CmdLine="c:\windows\system32\audiodg.exe 0x??? 0x???" />
+	</Image>
+	<Image Id="{463B9486-6344-133E-F3CD27BA43DD72D3}" >
+		<Process CmdLine="c:\windows\system32\audiodg.exe 0x???" />
+	</Image>
+	<Image Id="{390E6DC7-2FA7-D343-322CF598EC64AB6A}" >
+		<Process CmdLine="c:\windows\system32\cmd.exe /c c:\cntc\stc.bat 0 c:\atd\atd\ast*" />
+	</Image>
+	<Image Id="{3F01C647-D94D-0643-05B811E1588BDDED}" >
+		<Process CmdLine="c:\windows\system32\cmd.exe /c c:\cntc\stc.bat 0 wrevis*" />
+	</Image>
+	<Image Id="{1942FE38-AA0F-DE2F-2A0EC0A2BAF4E7E0}" >
+		<Process Path="c:\program files (x86)\landesk\ldclient\selfelectcontroller.exe" >
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</Image>
+	<Image Id="{8AB8D7D9-D904-0C1A-289CB63AF5512676}" >
+		<Signature Subject="*CRYPTO-PRO*" />
+	</Image>
+	<Image Id="{F683640B-0EB3-2DD2-F1DD748CBCDA1C2B}" Path="*LANDesk\LDClient\rollinglog.dll" >
+		<VersionInfo FileDescription="RollingLog Dynamic Link Library" OrignFileName="RollingLog.dll" ProductName="LANDESK*" />
+	</Image>
+	<Image Id="{A0FD1694-BECE-9DF8-86528F31D5ED6AE7}" Path="C:\Windows\System32\spool\*" >
+		<Signature Subject="*Xerox*" />
+	</Image>
+	<Image Id="{BBAE8154-8A92-AE9B-356D9864902E0E93}" Path="*searchinformagent\sifiltersvc*" >
+		<Signature Subject="*Searchinform*" />
+	</Image>
+	<Image Id="{005E8DD7-8FB5-7EAF-C910BE552F549151}" Path="C:\Windows\Sys*" >
+		<Signature Subject="*InfoWatch*" />
+	</Image>
+	<Image Id="{DB8E2412-2DA2-9B34-D23A648EDFA48B75}" Path="C:\Windows\System32\SRSLabs\*" >
+		<VersionInfo ProductName="SRS Universal*" FileDescription="SRS APO*" />
+	</Image>
+	<Image Id="{61F1F67A-E26E-FAF4-590521B4CC46C92D}" Path="*LANDesk\LDClient\*" >
+		<Process Path="*LANDesk\LDClient\*" />
+	</Image>
+<!-- Part 0008 2021-12-29T12:27:00.000Z-1640780846 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

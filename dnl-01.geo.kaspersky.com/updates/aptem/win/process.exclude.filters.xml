@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2021-10-20T19:10:00.000Z-1634757024 -->
+	<!-- 2021-12-29T12:28:00.000Z-1640780937 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -145,6 +145,68 @@
 		<Signature Subject="*Lansweeper*" />
 	</Image>
 <!-- Part 0004 End 2021-10-20T19:10:00.000Z-1634757024 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0005 2021-12-29T12:28:00.000Z-1640780937 -->
+	<Image Id="{604E4D90-BBDB-5F4B-C8B244211D38E206}" Path="*kaspersky lab\endpoint agent*\umloader.exe" >
+		<Signature Subject="*Kaspersky*" />
+	</Image>
+	<Image Id="{DE0C5AD4-CAC8-7FCB-1513C9F5F84F8008}" Path="*kaspersky lab\kaspersky endpoint security*\avp.exe" >
+		<Signature Subject="*Kaspersky*" />
+	</Image>
+	<Image Id="{2CB0D731-C25A-2D35-F786F7CF48F06839}" Path="*kaspersky lab\networkagent\klnagent.exe" >
+		<Signature Subject="*Kaspersky*" />
+	</Image>
+	<Image Id="{BF6427EA-40DA-11BC-723E8CBF12F1B4F3}" Path="*zecurion\endpoint\zgu_agent64.exe" >
+		<Signature Subject="*SecurIT*" />
+	</Image>
+	<Image Id="{0BE252BA-1970-3B51-E1973C0B95389FE1}" CmdLine="*zecurion\endpoint\zlu_agent64.exe -pid:*" >
+		<Signature Subject="*SecurIT*" />
+	</Image>
+	<Image Id="{8FE84CAE-D799-E966-2285497E2FAB7C34}" CmdLine="C:\WINDOWS\SYSTEM32\cmd.exe /c C:\WINDOWS\LtcJobs\Task\runonce-MainScript.BAT*" />
+	<Image Id="{58F44F19-8A0B-D9B0-B756A16750F959F3}" CmdLine="c:\windows\ltcjobs\task\runonce-mainscript.bat\..\*" />
+	<Image Id="{9D646EB1-63D2-FD65-DB52C89C04B7978C}" CmdLine="./tube-vc120.exe --pipe*" >
+		<Signature Subject="*DSSL*" />
+	</Image>
+	<Image Id="{2B45D727-85CD-1A4D-212E348C897CA916}" Path="*epson\myepson portal\64driverload.exe" >
+		<Signature Subject="*Epson*" />
+	</Image>
+	<Image Id="{48FA70FD-2F2E-2432-46C5ABB15C059E9A}" CmdLine="c:\program files (x86)\initplusmonitor\initplusmonitor\isolatedvivotekplayerserverapp.exe /command-pipe-name vivotekplayercommandpipe*" />
+	<Image Id="{3B770C09-223D-0EA1-56FCD4ECBD21FEB3}" CmdLine="C:\Program Files (x86)\Zecurion\Endpoint\ffcertutils\certutil.exe  -A -n Zecurion Zgate Web*" />
+	<Image Id="{5B6E2718-BD0C-BCC7-3D95700DA2E80E1B}" CmdLine="c:\th\td15\rc\exe\curl.exe  -0 --trace-ascii test.txt -x post -h*" />
+	<Image Id="{D0480406-FE9A-DC6E-74F4A8525628716E}" CmdLine="c:\windows\ccm\updatetrustedsites.exe false  s-1-5-21-*" />
+	<Image Id="{6E671391-7E42-AA52-D1427B980C3191A7}" CmdLine="c:\windows\microsoft.net\framework*\csc.exe /noconfig /fullpaths @c:\windows\temp*" />
+	<Image Id="{9718D50D-E26C-778D-0B7B326FC4F0FEBD}" CmdLine="c:\windows\microsoft.net\framework*\ngen.exe uninstall c:\windows\assembly\nativeimages_v*" />
+	<Image Id="{E4AAFC68-1EC2-1046-FB0D2F17E5967087}" CmdLine="c:\windows\system32\searchfilterhost.exe ? ???*" />
+	<Image Id="{26626A1D-7B7A-56E6-6E633BCA5B56E115}" CmdLine="c:\windows\syswow64\searchfilterhost.exe ? ???*" />
+	<Image Id="{F4C1C6A0-F5A7-FABE-CE2FE480A6934E17}" CmdLine="c:\windows\system32\searchprotocolhost.exe global\*" />
+	<Image Id="{1E770825-BEF0-858F-424C30A315305747}" CmdLine="c:\windows\syswow64\searchprotocolhost.exe global\*" />
+	<Image Id="{560BFEF4-F248-57DC-12AD1EFFBE82969E}" CmdLine="c:\windows\system32\wudfhost.exe -hostguid:{*" />
+	<Image Id="{66D3B8A3-4346-A685-3E2AA6C87A4FC088}" CmdLine="logonui.exe /flags:0x0 /state0:0x???????? /state1:0x????????" />
+	<Image Id="{387067D8-EC38-5342-88C51DDD942A9B0D}" CmdLine="c:\cntc\stc.exe  - - 0 - c:\atd\atd\ast*" />
+	<Image Id="{D2C3649A-E461-DF81-CF044572E8AB029A}" CmdLine="c:\cntc\stc.exe  - - 0 - wrevis*" />
+	<Image Id="{24A220FE-3D8D-C6C9-A5FE5C1292C0D8EF}" CmdLine="c:\program files (x86)\citrix\ica client\ssonsvr.exe /htc:*" >
+		<Signature Subject="*Citrix*" />
+	</Image>
+	<Image Id="{34F2D1BB-A7FA-18B3-1D0A24584BA805D9}" CmdLine="c:\windows\microsoft.net\framework*\cvtres.exe /nologo /readonly /machine:*" />
+	<Image Id="{407600C4-DC3C-F963-C01D025AAD3AE60A}" CmdLine="c:\windows\microsoft.net\framework*\mscorsvw.exe -startupevent ??? -interruptevent ? -ngenprocess*" />
+	<Image Id="{EFC3BCFB-D260-A700-32CA1B54F1EC0CF7}" CmdLine="c:\windows\system32\audiodg.exe 0x??? 0x???" />
+	<Image Id="{463B9486-6344-133E-F3CD27BA43DD72D3}" CmdLine="c:\windows\system32\audiodg.exe 0x???" />
+	<Image Id="{390E6DC7-2FA7-D343-322CF598EC64AB6A}" CmdLine="c:\windows\system32\cmd.exe /c c:\cntc\stc.bat 0 c:\atd\atd\ast*" />
+	<Image Id="{3F01C647-D94D-0643-05B811E1588BDDED}" CmdLine="c:\windows\system32\cmd.exe /c c:\cntc\stc.bat 0 wrevis*" />
+	<Image Id="{35B78553-8CB6-2233-A113F7E1B4500ACA}" CmdLine="c:\windows\system32\werfault.exe -u -p * -s *" />
+	<Image Id="{370E7E5D-1DA6-5AD9-88598D81F2E05CA5}" CmdLine="c:\windows\syswow64\werfault.exe -u -p .* -s *" />
+	<Image Id="{A0D7B462-80B6-688E-9C4AA2F66A0B10A5}" CmdLine="C:\Windows\system32\rundll32.exe C:\Windows\system32\chakra.dll" />
+	<Image Id="{64C7368C-64AF-93A0-C4B5AD47DF0B836C}" CmdLine="DumpDiagInfo" />
+	<Image Id="{9A62D294-D3E1-1AEB-B6246373AF2D261D}" CmdLine="ztray64.exe -pid:*" >
+		<Signature Subject="*SecurIT*" />
+	</Image>
+	<Image Id="{18D6CEF4-74E6-9B6A-C68439093C7A9F3D}" Path="c:\program files (x86)\landesk\ldclient\selfelectcontroller.exe" >
+		<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+	</Image>
+	<Image Id="{B97AD8C0-4893-732E-E43C9FCED557669C}" CmdLine="c:\windows\system32\runtimebroker.exe -embedding" />
+<!-- Part 0005 2021-12-29T12:28:00.000Z-1640780937 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
