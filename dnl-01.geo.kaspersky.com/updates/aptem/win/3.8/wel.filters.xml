@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2021-12-23T11:52:00.000Z-1640260321 -->
+  <!-- Version: 2022-01-11T19:21:00.000Z-1641928882 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -1138,112 +1138,15 @@
 
   <Event Name="SecurityLocalGroupMembershipEnumerated.Vista" Id="4799" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
     <Exclusions>
+      <Match OrderNum="15" Value="*system32\vssvc.exe"/>
       <Match OrderNum="15" Value="*AGENT\soyuz.exe"/>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Администраторы"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\vssvc.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Администраторы"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\vssvc.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="backup operators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Операторы архива"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\svchost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="backup operators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\vssvc.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Операторы архива"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*system32\vssvc.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*Agent\soyuz.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Администраторы"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*Agent\soyuz.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\svchost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Администраторы"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Administrators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\msiexec.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Backup Operators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Backup Operators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\svchost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Backup Operators"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Операторы архива"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="Администраторы"/>
-        <Equal OrderNum="8" Value="Builtin"/>
-        <Match OrderNum="15" Value="*\System32\svchost.exe"/>
-      </Conjunction>
+      <Match OrderNum="15" Value="*gent\soyuz.exe"/>
+      <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
+      <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
+      <Match OrderNum="15" Value="*System32\msiexec.exe"/>
+      <Match OrderNum="15" Value="*SysWOW64\vrvedp_m.exe"/>
+      <Match OrderNum="15" Value="*agent\DellSupportAssistRemedationService.exe"/>
     </Exclusions>
   </Event>
 

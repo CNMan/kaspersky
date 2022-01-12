@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2021-12-29T12:57:00.000Z-1640782645 -->
+  <!-- Version: 2022-01-11T19:18:00.000Z-1641928718 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2610,6 +2610,61 @@
 		<Process Path="*LANDesk\LDClient\LDProfile.exe" />
 	</Registry>
 <!-- Part 13: 2021-12-29T12:57:00.000Z-1640782645 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 14: 2022-01-11T19:18:00.000Z-1641928718 -->
+	<Registry Id="{47A39C97-AA10-DD63-E73F7C959542C0C5}" Path="\registry\machine\software\wow6432node\trendmicro\*">
+		<Process>
+			<Signature Subject="*Trend Micro*" />
+		</Process>
+	</Registry>
+	<Registry Id="{B34AB02E-54B3-07D2-EA441DDB3F9997B2}" Path="\registry\machine\software\trendmicro\*">
+		<Process>
+			<Signature Subject="*Trend Micro*" />
+		</Process>
+	</Registry>
+	<Registry Id="{30A787C4-14C0-4BBA-39625A33F6995C4A}" Path="\registry\machine\software\landesk\*">
+		<Process>
+			<Signature Subject="*landesk*" />
+		</Process>
+	</Registry>
+	<Registry Id="{9F115B12-7C09-7901-6C49D39DB2808D41}" Name="nrtimes">
+		<Process>
+			<Signature Subject="*Beijing Sogou*" />
+		</Process>
+	</Registry>
+	<Registry Id="{79B606BC-4F78-EAA1-4C59F6E2D1F6991E}" Path="\registry\user\*\software\sogouinput">
+		<Process>
+			<Signature Subject="*Beijing Sogou*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3C30EE9E-1C02-000E-D46F34F1031631A3}" Name="360drvmgr">
+		<Process>
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{44FE8152-5B81-9ECC-CD720B6947D789A7}" Name="binayvalue">
+		<Process>
+			<Signature Subject="中国电子口岸数据中心" />
+		</Process>
+	</Registry>
+	<Registry Id="{B776A977-F82C-42C0-5678A7493B1228DB}" Name="%kl_undef%">
+		<Process>
+			<Signature Subject="*Beijing VRV*" />
+		</Process>
+	</Registry>
+	<Registry Id="{6FFB506C-3A79-FB74-56C958A6F69B136F}" Name="cocprivacyconsentuxshowstarttime">
+		<Process Path="C:\Windows\System32\InputMethod\CHS\ChsIME.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{E9206F9B-7A8D-5012-0F22847E23C80176}" Path="\registry\machine\software\lide\ecops*">
+		<Process>
+			<Signature Subject="*DALIAN LIDE*" />
+		</Process>
+	</Registry>
+<!-- Part 14: 2022-01-11T19:18:00.000Z-1641928718 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

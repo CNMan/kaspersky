@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2021-12-29T12:28:00.000Z-1640780937 -->
+	<!-- 2022-01-11T19:15:00.000Z-1641928543 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -207,6 +207,19 @@
 	</Image>
 	<Image Id="{B97AD8C0-4893-732E-E43C9FCED557669C}" CmdLine="c:\windows\system32\runtimebroker.exe -embedding" />
 <!-- Part 0005 2021-12-29T12:28:00.000Z-1640780937 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0006 2022-01-11T19:15:00.000Z-1641928543 -->
+	<Image Id="{0E26B090-F3EC-B570-49AF56198DDCE461}" CmdLine="c:\program files (x86)\360\360drvmgr\scriptexecute.exe /uninstallsrv" >
+		<Signature Subject="*Beijing Qihu*" />
+	</Image>
+	<Image Id="{0A6E231E-4C32-0C3D-D1105C46676E0815}" CmdLine="c:\program files (x86)\360\360drvmgr\360drvmgr.exe -bootstarttempmonitor" >
+		<Signature Subject="*Beijing Qihu*" />
+	</Image>
+	<Image Id="{9C4F3BD7-7292-32B5-B34FC82AA6163D5F}" CmdLine="c:\windows\system32\net.exe start xtimagentmgr" />
+	<Image Id="{9E58AFC4-4620-86F0-AFCA88607C5BDC35}" CmdLine="c:\windows\system32\net1 start xtimagentmgr" />
+<!-- Part 0006 2022-01-11T19:15:00.000Z-1641928543 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2021-12-29T12:27:00.000Z-1640780846 -->
+	<!-- Version: 2022-01-11T19:14:00.000Z-1641928492 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1155,6 +1155,203 @@
 		<Process Path="*LANDesk\LDClient\*" />
 	</Image>
 <!-- Part 0008 2021-12-29T12:27:00.000Z-1640780846 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0009 2022-01-11T19:14:00.000Z-1641928492 -->
+	<Image Id="{8F7DD77C-2974-9DF3-C1D341F36A28150A}" >
+		<Signature Subject="*Trend Micro*" />
+	</Image>
+	<Image Id="{E96BFA9E-AAB9-0276-93EB5122C34103B1}" >
+		<Signature Subject="*ShenZhen LeagSoft*" />
+	</Image>
+	<Image Id="{06C42153-B8FB-310F-9EE220E981E9AE29}" >
+		<Signature Subject="*beijing qihu*" />
+	</Image>
+	<Image Id="{C7203472-13A6-632D-1363B4400A1A5B24}" >
+		<Signature Subject="*beijing vrv*" />
+	</Image>
+	<Image Id="{D307CEBE-4F9E-42EC-E9EF72D324790095}" >
+		<Signature Subject="*carbon black*" />
+	</Image>
+	<Image Id="{0FD0CC62-3320-929D-D1FE05976C60D970}" >
+		<Signature Subject="*Qihoo 360*" />
+	</Image>
+	<Image Id="{47DD01D2-34BA-AFAD-A897009B6C35BD38}" >
+		<Signature Subject="*Beijing Sogou*" />
+	</Image>
+	<Image Id="{9086FC0A-FFB4-E7EF-E7D3CEF06ED49BCF}" >
+		<Signature Subject="*Trend Micro*" />
+		<Process Path="c:\windows\syswow64\cryptbase.dll" />
+	</Image>
+	<Image Id="{F88589CB-B312-E343-C3B684578B3C3ED6}" >
+		<Signature Subject="*LANDesk*" />
+		<Process Path="c:\windows\syswow64\cryptbase.dll" />
+	</Image>
+	<Image Id="{CF7C50EB-A854-A23B-3D6D6A61E8BC07A4}" >
+		<Signature Subject="*Trend Micro*" />
+		<Process Path="c:\windows\system32\cryptbase.dll" />
+	</Image>
+	<Image Id="{2050592B-0A1F-66DC-3D42F2469C12F880}" >
+		<Signature Subject="*LANDesk*" />
+		<Process Path="c:\windows\system32\cryptbase.dll" />
+	</Image>
+	<Image Id="{C2332C12-2715-87AE-72054A376366B6BA}" >
+		<Signature Subject="*sangfor technologies*" />
+		<Process >
+			<Signature Subject="*sangfor technologies*" />
+		</Process>
+	</Image>
+	<Image Id="{20AFD060-5FCB-C475-6D481EA2A6957BC2}" Path="c:\program files (x86)\sangfor\*" >
+		<Process >
+			<Signature Subject="*sangfor technologies*" />
+		</Process>
+	</Image>
+	<Image Id="{1988AA8A-1B26-F7EC-882774CB1D87AF51}" Path="c:\program files\sangfor\*" >
+		<Process >
+			<Signature Subject="*sangfor technologies*" />
+		</Process>
+	</Image>
+	<Image Id="{79FEFF28-2178-6E36-4D5D66C2442CEBED}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="c:\windows\system32\net1.exe" />
+	</Image>
+	<Image Id="{9517EBA5-D1F2-9089-93C8B4EF9FD6610A}" Path="c:\program files (x86)\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{9BDD36A3-0E3A-1D2F-2CC1B64C2884762E}" Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{F43D4718-9DDF-244E-BA5544815F6E8BFB}" Path="c:\program files (x86)\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{56C1A4A5-40AA-7363-75A70D103E0BE146}" Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{7F4714AF-8FE9-9E9B-E4EE934814F0CAE5}" Path="*landesk\shared files\*" >
+		<Process >
+			<Signature Subject="*LANDesk*" />
+		</Process>
+	</Image>
+	<Image Id="{E1A47F9A-9454-F1A4-CECB21776E45D2F6}" Path="landesk\ldclient\*" >
+		<Process >
+			<Signature Subject="*LANDesk*" />
+		</Process>
+	</Image>
+	<Image Id="{090562D3-E33F-3F65-A47BC118BF7CA34F}" Path="C:\Program Files (x86)\Hitachi\*" >
+		<Process CmdLine="?*C:\Program Files (x86)\Hitachi\*" />
+	</Image>
+	<Image Id="{88108E3F-16EA-D615-0BE4793B2B45C5BA}" Path="C:\Program Files\Hitachi\*" >
+		<Process CmdLine="?*C:\Program Files\Hitachi\*" />
+	</Image>
+	<Image Id="{39839517-0C31-441D-EAF3C3FD04DB2ADC}" Path="c:\program files (x86)\trend micro\*" >
+		<Process CmdLine="?*c:\program files (x86)\trend micro\*" />
+	</Image>
+	<Image Id="{DDD556CA-22EB-1AB2-07FF22478AB3A11E}" Path="c:\program files\trend micro\*" >
+		<Process CmdLine="?*c:\program files\trend micro\*" />
+	</Image>
+	<Image Id="{8C5B8FEF-D441-E70C-15CFAD67AC53974C}" >
+		<Signature Subject="*Hitachi*" />
+		<Process >
+			<Signature Subject="*Hitachi*" />
+		</Process>
+	</Image>
+	<Image Id="{2365EE79-A392-CB91-36FDB6C38D737FFB}" Path="C:\Program Files (x86)\Hitachi\*" >
+		<Process >
+			<Signature Subject="*Hitachi*" />
+		</Process>
+	</Image>
+	<Image Id="{3830D001-047F-88B9-03AED1A07C8BC52F}" Path="C:\Program Files\Hitachi\*" >
+		<Process >
+			<Signature Subject="*Hitachi*" />
+		</Process>
+	</Image>
+	<Image Id="{D7FB48EA-D67E-2202-4BA37FFBAB1CAD90}" Path="C:\Program Files (x86)\Dell*" >
+		<VersionInfo FileDescription="*Dell*" />
+		<Process >
+			<Signature Subject="*Dell*" />
+		</Process>
+	</Image>
+	<Image Id="{89D8A62A-68C3-818A-748602EB486AB790}" Path="C:\Program Files\Dell*" >
+		<VersionInfo FileDescription="*Dell*" />
+		<Process >
+			<Signature Subject="*Dell*" />
+		</Process>
+	</Image>
+	<Image Id="{77497FF0-FBB1-7515-024117ACA324FD42}" >
+		<Signature Subject="*Dell*" />
+		<Process >
+			<Signature Subject="*Dell*" />
+		</Process>
+	</Image>
+	<Image Id="{81F63F2B-807E-9081-20DFBA3C60958DC7}" >
+		<Signature Subject="*F5 Networks*" />
+		<Process >
+			<Signature Subject="*F5 Networks*" />
+		</Process>
+	</Image>
+	<Image Id="{B2A36867-0836-F7DC-9D5DEDC4D1CA7966}" >
+		<Signature Subject="*Shanghai 2345 Mobile Technology*" />
+		<Process >
+			<Signature Subject="*Shanghai 2345 Mobile Technology*" />
+		</Process>
+	</Image>
+	<Image Id="{8E24A251-121D-B51C-68738F06474EAB94}" Path="C:\Program Files\Autodesk\*" >
+		<Signature Subject="*Autodesk*" />
+	</Image>
+	<Image Id="{E1D89418-30A1-3C70-A30C2F3B22BBF52B}" Path="c:\program files\quality\*" >
+		<Signature Subject="*Advanced Micro Devices*" />
+	</Image>
+	<Image Id="{3714A2A6-5A86-9067-651DF677D8AD2C8A}" Path="c:\windows\system32\driverstore\filerepository\*\amd*.dll" >
+		<Signature Subject="*Advanced Micro Devices*" />
+	</Image>
+	<Image Id="{9E658FEC-A53B-74B2-4F09035D1C0128D5}" Path="c:\windows\system32\driverstore\filerepository\*\ati*.dll" >
+		<Signature Subject="*Advanced Micro Devices*" />
+	</Image>
+	<Image Id="{68C6901B-9AD3-44F3-F5AFD9D705722C30}" Path="C:\Program Files\Autodesk\AutoCAD*" >
+		<VersionInfo FileDescription="*AutoCAD*" />
+		<Process Path="C:\Program Files\Autodesk\AutoCAD*\acad.exe" >
+			<VersionInfo FileDescription="*AutoCAD*" />
+		</Process>
+	</Image>
+	<Image Id="{E2BC86FF-C2BC-5813-877B1ED5D5ACBB37}" >
+		<Signature Subject="*Autodesk*" />
+		<Process >
+			<Signature Subject="*Autodesk*" />
+		</Process>
+	</Image>
+	<Image Id="{08B63E4F-0B07-2F69-E0063ACB09272DE0}" >
+		<Signature Subject="*LIDE TECHNOLOGY*" />
+		<Process >
+			<Signature Subject="*LIDE TECHNOLOGY*" />
+		</Process>
+	</Image>
+	<Image Id="{D9DB3564-9C5B-819D-AA94306E327CECDA}" >
+		<Signature Subject="*NetEase Youdao*" />
+		<Process >
+			<Signature Subject="*NetEase Youdao*" />
+		</Process>
+	</Image>
+	<Image Id="{A17A2A3B-2F70-3EDE-3B0F332819F07882}" Path="c:\windows\syswow64\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qawoption.exe" />
+	</Image>
+	<Image Id="{49CCB0B7-EC2E-0822-0AB8ADAAB5D09F28}" Path="c:\windows\system32\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qawoption.exe" />
+	</Image>
+	<Image Id="{D026BE04-0254-CE97-32CF1E91FAFDF044}" Path="c:\windows\syswow64\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qndd.exe" />
+	</Image>
+	<Image Id="{51E5E5BF-AAB9-BF2E-48EBF374A30401E4}" Path="c:\windows\system32\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qndd.exe" />
+	</Image>
+<!-- Part 0009 2022-01-11T19:14:00.000Z-1641928492 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
