@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2021-12-03T14:06:00.000Z-1638540396 -->
+	<!-- 2022-01-12T20:15:00.000Z-1642018544 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1183,6 +1183,76 @@
 		<Process CmdLine="*get-mp*" />
 	</Detect>
 <!-- Part 0032 2021-11-11T15:23:00.000Z-1636644198 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0033 2022-01-12T20:15:00.000Z-1642018544 -->
+	<Detect Id="{1741DD49-933A-3287-96F02070A68BE4B7}">
+		<Process CmdLine="powershell Get-Service -Name &#39;?DNS?&#39; | Select-Object -ExpandProperty Name" />
+	</Detect>
+	<Detect Id="{7C0F5D95-5430-6E87-94BD480DC1D12E4B}">
+		<Process CmdLine="powershell Get-Service -Name &#39;?Netlogon?&#39; | Select-Object -ExpandProperty Name" />
+	</Detect>
+	<Detect Id="{F2D618B9-760F-A5BF-B77D5E65F6A0B711}">
+		<Process CmdLine="powershell Get-Service -Name &#39;Dnscache&#39; | Select-Object -ExpandProperty Status" />
+	</Detect>
+	<Detect Id="{B0D0C718-F5F9-0A9F-FE1F7B20BAC55D87}">
+		<Process CmdLine="powershell Get-Service -Name &#39;Netlogon&#39; | Select-Object -ExpandProperty Status" />
+	</Detect>
+	<Detect Id="{17FE3B6B-4FDD-1B4B-6D92F20D06AD91F4}" ContentValue="function script_*main&#10;                               &#10;                     }">
+		<Process CmdLine="C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe -Embedding" />
+	</Detect>
+	<Detect Id="{B704E491-7128-50FF-AECC79CAC7FA4E8D}" ContentValue="function script_*cimcmdlets&#10;&#9;&#9;&#9;$error.clear()&#10;&#9;}&#10;} }">
+		<Process CmdLine="C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe -Embedding" />
+	</Detect>
+	<Detect Id="{C11A6B22-90C3-245F-AE7DAD850B30BCE1}" ContentValue="$pwd = convertto-securestring &#39;??????????????????????&#39; -asplaintext -force;;echo &#34;ps????????????????????????&#34;; [console]::error.writeline(&#34;ps????????????????????????&#34;)" />
+	<Detect Id="{5E99E574-5BF6-BF58-97AEC25DB5C2022D}" ContentValue="$session = get-pssession -id 1; if (($session -ne $null) -and ($session.state.tostring() -eq &#34;opened&#34;))  {i*echo &#34;ps????????????????????????&#34;; [console]::error.writeline(&#34;ps????????????????????????&#34;)" />
+	<Detect Id="{B075FD50-DB29-7A29-21EF903F0689679B}" ContentValue="&#38; {$outputencoding = [console]::outputencoding =[system.text.encoding]::utf8;$scriptfilestream = [system.io.file]::open(&#39;c:\programdata\microsoft\windows defender advanced threat protection\downloads\*}" />
+	<Detect Id="{E2A858EF-B25D-0161-3BCDE32687D53C4D}" ContentValue="{$outputencoding = [console]::outputencoding =[system.text.encoding]::utf8;$scriptfilestream = [system.io.file]::open(&#39;c:\programdata\microsoft\windows defender advanced threat protection\downloads\*}" />
+	<Detect Id="{577EC30E-6EE6-3B46-6AE9A0ACDF573F80}" ContentValue="{function run-server() { param([string]$h); $b = new-object byte[] 8; $p = new-object system.io.pipes.anonymouspipeclientstream -argumentlist*read($b, 0, 8) } $p.dispose() } } run-server -h ????}" />
+	<Detect Id="{343E5CC9-C245-E9F8-BCEF6A879260D127}" ContentValue="&#38; {function run-server() { param([string]$h); $b = new-object byte[] 8; $p = new-object system.io.pipes.anonymouspipeclientstream -argumentlist*run-server -h ????}" />
+	<Detect Id="{DA63586E-570D-E015-AA39C83E251D9577}" ContentValue="*  $logstring = (&#34;&#60;![log[{0}]log]!&#62;&#60;time=`&#34;{1}+0`&#34; date=`&#34;{2}`&#34; component=`&#34;{3}`&#34; context=`&#34;`&#34; type=`&#34;1`&#34; thread=`&#34;{4}`&#34; file=`&#34;pferemediationscript:0001`&#34; &#62;&#34; -f $message, $logtime, $logdate, $logcomponent, $script:threadid)*        &#39;notdisabled" />
+	<Detect Id="{8A708B2C-B9FF-E3E1-87AC7F8580D7E42E}" ContentValue="*$name = &#39;scantoad&#39; #enter the script name here*write-host -foregroundcolor green &#34;script finished successfully!&#34;" />
+	<Detect Id="{8A49F515-8559-7D3E-11584BB164F3A886}" ContentValue="*new-mpperformancerecording -recordto:.\defender-scans.etl*# mrywfaydvqqfew0ymzawmjgrndy3njawmb8ga1udiwqym" />
+	<Detect Id="{710E4227-65B6-8A46-72309826F2F01762}" ContentValue="*&#9;    and rk.name like &#39;hkey_local_machine\software\snow software\autodesk%&#39;*yield-registrykey -key &#34;hkey_local_machine\software\snow software\$name&#34; -name &#34;version&#34; -value &#34;$version&#34; -type &#34;1&#34; -lastmodified &#34;$d&#34;" />
+	<Detect Id="{11D455D6-FCE7-41F4-F2482A3C7C9BABAE}" ContentValue="*get-childitem $localsignaturefolder\myzatca.htm | remove-item*crq19054?&#10;####################################################################" />
+	<Detect Id="{98C274A0-EF63-93F8-FB8F18C8D258AF83}" ContentValue="*$models3 = &#34;hp prodesk 600 g2 sff&#34;*echo $error &#62; c:\windows&#9;emp&#9;pm_err01.log????" />
+	<Detect Id="{02B52622-503F-6D48-3446DA0DA2776FAD}" ContentValue="*param($computername = $env:computername,$cacheexpirationtime=43200)*&#9;&#9;&#9;&#9;&#9;&#9;putvaluetocache $paramspath &#34;connectiontimeout&#34; 1" />
+	<Detect Id="{7FC04CCC-432C-6A18-62C70E451456A13E}" ContentValue="*                            public static eventsource log = new eventsource(&#34;microsoft.windows.sense.collectionetw&#34;, eventsourcesettings.etwselfdescribingeventformat);*# bbgwfoau1fzwy4/oolxiane9" />
+	<Detect Id="{5AA63F45-A9F4-F5CD-274829A951E38BD7}" ContentValue="*$sqlcatalog = &#34;powershell_logs&#34;;*if ($members.length -ne 0 -or $error.count -ne 0) {savelogdb $ip $hostname $members $error $datetime}" />
+	<Detect Id="{354671F6-1BC1-3289-D7CD301A5103B7A9}" ContentValue="*$models1 = &#34;hp prodesk 600 g2 sff&#34;,&#34;hp prodesk 600 g3 sff&#34;,&#34;hp prodesk 600 g4 sff&#34;,&#34;hp prodesk 400 g5 sff*     &#9;}" />
+	<Detect Id="{C4FB3A37-43DE-5B96-0060A5E686BD9411}" ContentValue="$global:snowsoftwareinventorydataregistrykeybag = @()&#10;&#10;function global:yield-registrykey {&#10;&#10;    param(&#10;         [string]$key&#10;        ,[s*" />
+	<Detect Id="{AE061466-B9A7-7EE6-C2B04F427ED89CD1}" ContentValue="*                        [eventdata] // [eventdata] makes it possible to pass an instance of the class as an argument to eventsource.write().*                            $collectedextensionprovider.write(&#34;collectedextension&#34;, $collectedextension)*" />
+	<Detect Id="{84891205-E885-1A70-E422839EF49DA9FE}" ContentValue="*                        [eventdata] // [eventdata] makes it possible to pass an instance of the class as an argument to eventsource.write().*if(((($service.type -band 16 ) -eq 16 ) -or (($service.type -band 32 ) -eq 32))-and (($service.type -band 64 ) -ne 64)){ # filter only win32 own processes and win32 shared processes*" />
+	<Detect Id="{95DF9726-F6AA-FB95-328C487DD4350C9E}" ContentValue="*                        [eventdata] // [eventdata] makes it possible to pass an instance of the class as an argument to eventsource.write().*    $existsinpolicis = (get-item &#39;hklm:\software\policies\microsoft\windows defender&#39; -ea ignore).property -contains &#34;disableantispyware&#34;*" />
+	<Detect Id="{FE231D6C-5435-F9AB-CE0F7EF61405D55B}" ContentValue="*$listprofiles = &#38;$netshpath wlan show profiles | select-string -pattern &#34;all user profile&#34; | %{ ($_ -split &#34;:&#34;)[-1].trim() };*        $collecteddangerouswifiprofile = new-object -typename &#34;collecteddangerouswifiprofile&#34; -args $ssid, $connectionmode, $authentication;*" />
+	<Detect Id="{5D12815C-0FCE-2C8F-E18062428D5A9164}" ContentValue="*$netapi32_exist = $false;*&#9;if (test-path -path $path\* -include dsreg.dll)*" />
+	<Detect Id="{33781469-73BA-A396-E72E27DA5BF705BF}" ContentValue="*cmdletstoexport= &#34;format-list&#34;, &#34;format-custom&#34;, &#34;format-table&#34;, &#34;format-wide&#34;,*functionstoexport= &#34;get-filehash&#34;, &#34;new-temporaryfile&#34;, &#34;new-guid&#34;, &#34;format-hex&#34;, &#34;import-powershelldatafile&#34;,*" />
+	<Detect Id="{20D74F29-E214-1BAC-00650A8CD16BED57}" ContentValue="*      $doesregistrycontainazurevmid = does-registry-contain-azurevmid*            $vmid = invoke-restmethod -headers @{&#34;metadata&#34;=&#34;true&#34;} -method get -uri &#34;http*" />
+	<Detect Id="{0D6A92A4-DE26-B1F1-0E3C6ACBBEED7FEF}" ContentValue="*$script:classname = &#39;root\microsoft\windows\defender\msft_mppreference&#39;*          $__cmdletization_methodparameter = [microsoft.powershell.cmdletization.methodparameter]@{name = &#39;reportingnoncriticaltimeout&#39;; parametertype = &#39;" />
+	<Detect Id="{79BF0F3B-FEDF-464A-5629122E889C3A05}" ContentValue="*    elseif (!(test-path wsman:\localhost\listener) -or ((get-childitem wsman:\localhost\listener) -eq $null)){*setenabledaction $args[11] -skipnetworkprofilecheck $args[12] -noservicerestart $args[13] ??" />
+	<Detect Id="{79609A35-6720-3974-26CCFB0FB61B91B7}" ContentValue="?&#10;function enable-psremoting?&#10;{?&#10;[cmdletbinding(supportsshouldprocess=$true, confirmimpact*captionforset $args[4] -whatif:$args[5] -confirm:$args[6] -skipnetworkprofilecheck $args[7]??" />
+	<Detect Id="{9E11005F-5049-E06A-C408E51B8BC4815F}" ContentValue="*   if ((!$pluginfilename) -or ($pluginfilename.value -notmatch &#39;pwrshplugin.dll&#39;))*set-pssessionconfiguration $args[0] $args[1] $args[2] $args[3] $args[4] $args[5] $args[6] $args[7] $args[8] $args[9]??" />
+	<Detect Id="{FBE7641B-7D99-16DD-36E4571F8CC08BA7}" ContentValue="import-localizeddata -bindingvariable stringtable*                if " />
+	<Detect Id="{E158AB22-C901-C275-22A904A109400BAE}" ContentValue="meout $timeoutsec -erroraction silentlycontinue*# miinzqyjkozihvcnaqccoiinvjccj" />
+	<Detect Id="{48FA213D-BE26-AEF9-64815E6916DDA1BE}" ContentValue="using namespace system.security.accesscontrol*&#9;&#9;&#9;wait-process $processid -ti" />
+	<Detect Id="{7C17D8DD-A3C8-A151-5C850AFEA897078B}" ContentValue="*&#9;&#9;$cmdline = &#34;&#34;&#34;$toolexefullpath&#34;&#34; $toolparameters&#34;*&#9;&#9;&#9;write-error &#34;didn&#39;t find process by id&#34;*" />
+	<Detect Id="{39070810-7423-065B-569989A0139B8B94}" ContentValue="wmi.execquery(select ? from win32_networkadapterconfiguration where ipenabled = true);*wmi.execquery(select __relpath, handle from win32_process where name = &#34;explorer.exe&#34;);*" />
+	<Detect Id="{03F038E6-8530-196B-934D79BAEEAA4A91}" ContentValue="wmi.execquery(select ? from win32_service where (name = &#34;windefend&#34; or name = &#34;msmpsvc&#34;));*krn.exe&#34; or caption = &#34;svchost.exe&#34;));*" />
+	<Detect Id="{ECA134E7-E263-0EE8-A98002B520D3B103}" ContentValue="wmi.execquery(select __relpath, name, domain, domainrole, systemtype, workgroup from win32_computersystem);*wmi.execquery(select __relpath, systemuptime from win32_perfformatteddata_perfos_system);*" />
+	<Detect Id="{BED4E347-F908-54F8-42D855A1506581FD}" ContentValue="wmi.execqueryasync(select ? from win32_networkadapterconfiguration where ipenabled = true);*wmi.execqueryasync(select __relpath, __relpath from win32_process);*win32_baseservice.name=&#34;remoteregistry&#34;.execmethodasync(startservice);?" />
+	<Detect Id="{BF566D44-A379-914E-FB92BF21C69351C5}" ContentValue="wmi.execqueryasync(select ? from win32_networkadapterconfiguration where ipenabled = true);*wmi.execqueryasync(select ? from win32_networkadapterconfiguration where ipenabled = true);&#10;wmi.execqueryasync(select __relpath, state, __relpath from win32_service where name = &#34;remoteregistry&#34;);*win32_baseservice.name=&#34;remoteregistry&#34;.execmethodasync(startservice);?" />
+	<Detect Id="{0B2B7B27-448A-48C0-05C0D2B32EBF4410}" ContentValue="wmi.execqueryasync(select ? from win32_terminalservice where name = &#34;zsdlclient&#34;);*win32_baseservice.name=&#34;zsdlclient&#34;.execmethodasync(startservice);?" />
+	<Detect Id="{1317782D-AD05-3BDA-559C9C58575EB036}" ContentValue="*iregexp2.test(&#34;microsoft onedrive|*unsupported parameter type 0000????&#34;);??" />
+	<Detect Id="{C04E0C58-109C-3EC3-985490FFB3CD90EA}" ContentValue="*iswbemobjectex._01000002(&#34;-2147483646&#34;, &#34;software\microsoft\windows\currentversion\app manag&#34;, &#34;slowinfocache&#34;, &#34;unsupported parameter type 00000001&#34;);*unsupported parameter type 0000????&#34;);??" />
+	<Detect Id="{7360B4E6-980F-47E9-08123FD190E4350A}" ContentValue="iswbemobjectex._01000002(&#34;-2147483646&#34;, &#34;software\microsoft\windows\currentversion\uninstall&#34;, &#34;windowsinstaller*idictionary.exists(&#34;microsoft visual c++ 2*" />
+	<Detect Id="{0F4F6D42-F7D1-8825-4E3A25E778AF2FE7}" ContentValue="*idictionary.exists(&#34;windows internet explorer*" />
+	<Detect Id="{F3C89482-4C60-A3F3-5EBEC2807BE3DFB6}" ContentValue="iswbemobjectex._01000002(&#34;-2147483646&#34;, &#34;software\microsoft\windows\currentversion\uninstall&#34;, &#34;windowsinstaller*idictionary.add(&#34;java*" />
+	<Detect Id="{5BFC6C97-5D5A-3AF2-ECE9658764C45CED}" ContentValue="iswbemobjectex._01800001();*c:\windows&#9;emp ccmsetup.exe&#34;, &#34;0&#34;, &#34;true&#34;);*" />
+	<Detect Id="{451EAA32-1DD4-73B0-FC8BB43FC389A6AF}">
+		<Process CmdLine="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy AllSigned -NoProfile -NonInteractive -Command &#38; {$OutputEncoding = [Console]::OutputEncoding =[System.Text.Encoding]::UTF8;$scriptFileStream = [System.IO.File]::Open('C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\*.ps1' }" />
+	</Detect>
+<!-- Part 0033 2022-01-12T20:15:00.000Z-1642018544 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
