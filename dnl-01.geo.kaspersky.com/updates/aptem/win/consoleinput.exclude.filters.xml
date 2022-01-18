@@ -5,7 +5,9 @@
 		</ConsoleInput>
 	-->
 
-  <!-- Version: 2021-12-03T00:21:00.000Z-1638490869 -->
+  <!-- !!! CmdLine does not work !!! -->
+
+  <!-- Version: 2022-01-13T22:42:00.000Z-1642113756 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START 2020-12-19T01:53:00.000Z-1608342825 -->
@@ -103,16 +105,16 @@
 <!-- ############################################################################################################### -->
 <!-- Part 0004 Start 2021-10-16T15:58:00.000Z-1634399911 -->
 	<ConsoleInput Id="{FE0652A6-3632-F6DB-F6E4238DBDE3A278}" Text="*minbandwidthweight,throttlerate,precedence,priorityvalue| convertto-json -compress" >
-		<Process CmdLine="powershell.exe -noprofile -nologo -noninteractive -executionpolicy bypass -command -" />
+		<Process Path="*\powershell.exe" />
 	</ConsoleInput>
 	<ConsoleInput Id="{0F99F00C-17C8-E71C-E9596DB0AF9C1D95}" Text="*win32_perfrawdata_counters_networkqospolicy&#39;| select name,bytestransmitted,packetstransmitted,packetsdropped| convertto-json -compress" >
-		<Process CmdLine="powershell.exe -noprofile -nologo -noninteractive -executionpolicy bypass -command -" />
+		<Process Path="*\powershell.exe" />
 	</ConsoleInput>
 	<ConsoleInput Id="{E45A41FC-9D19-C332-32F6FFE38B6BFE0A}" Text="__start__120000__end__%systemroot%\system32\cmd.exe /c &#34;echo . | powershell.exe -encodedcommand *" >
-		<Process CmdLine="powershell -executionpolicy bypass -command -" />
+		<Process Path="*\powershell.exe" />
 	</ConsoleInput>
 	<ConsoleInput Id="{66E82546-C889-7C7D-5D6A717FC8B20B09}" Text="&#60;data stream=&#39;default&#39; psguid=&#39;*+7vzxpymogumvmswq9ijaipjxnuz48*" >
-		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -version 5.1 -s -nologo -noprofile" />
+		<Process Path="*\powershell.exe" />
 	</ConsoleInput>
 <!-- Part 0004 End 2021-10-16T15:58:00.000Z-1634399911 -->
 <!-- ############################################################################################################### -->
@@ -120,7 +122,7 @@
 <!-- ############################################################################################################### -->
 <!-- Part 0005 Start 2021-10-28T19:07:00.000Z-1635448043 -->
 	<ConsoleInput Id="{12AF1E37-49B0-82C7-B79D07E9CA01B02B}" Type="Pipe">
-		<Process CmdLine="*pipe -*">
+		<Process >
 			<Signature Subject="*Articulate Global*" />
 		</Process>
 	</ConsoleInput>
@@ -130,19 +132,22 @@
 	<ConsoleInput Id="{9A3EE6A4-AC85-5941-34266DA56CA7AE2C}" Text="[1,*" Type="Pipe">
 		<Process Path="C:\Program Files (x86)\Kaspersky Lab\Kaspersky Password Manager*\plugin-nm-server-v2.exe" />
 	</ConsoleInput>
-	<ConsoleInput Id="{B779E4FA-3C74-930D-94C3D42EBF6870BC}" Text="{&#34;jsonrpc*">
-		<Process CmdLine="*apex.jorje.lsp.apexlanguageserverlauncher" />
+	<ConsoleInput Id="{B779E4FA-3C74-930D-94C3D42EBF6870BC}" Type="Pipe" Text="{&#34;jsonrpc*">
+		<Process Path="*bin\java.exe" />
 	</ConsoleInput>
-	<ConsoleInput Id="{4FDDD6FE-D575-1656-48B302A8371B2CFC}" Text="{&#34;id&#34;:*">
-		<Process CmdLine="*completion.py" />
+	<ConsoleInput Id="{4FDDD6FE-D575-1656-48B302A8371B2CFC}" Type="Pipe" Text="{&#34;id&#34;:???,&#34;prefix&#34;:&#34;&#34;,&#34;lookup&#34;:&#34;*">
+		<Process Path="*\python.exe" />
 	</ConsoleInput>
-	<ConsoleInput Id="{95DAFE3D-6A8D-5216-1BBAF6023DD44D9C}" Type="Pipe">
-		<Process CmdLine="cpviewer.exe /d 0 - &#34;*">
+	<ConsoleInput Id="{50EEE70F-D676-1757-59C412A8371B3D0D}" Type="Pipe" Text="{&#34;id&#34;:????,&#34;prefix&#34;:&#34;&#34;,&#34;lookup&#34;:&#34;*">
+		<Process Path="*\python.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{95DAFE3D-6A8D-5216-1BBAF6023DD44D9D}" Type="Pipe">
+		<Process Path="*\cpviewer.exe">
 			<Signature Subject="*Citrix*" />
 		</Process>
 	</ConsoleInput>
 	<ConsoleInput Id="{8C0393D3-A05D-1532-0AE9AE8D5037AB1D}" Type="Pipe">
-		<Process CmdLine="rawprinthelper.exe - &#34;*">
+		<Process Path="*\rawprinthelper.exe">
 			<Signature Subject="*Citrix*" />
 		</Process>
 	</ConsoleInput>

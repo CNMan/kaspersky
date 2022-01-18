@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-01-11T19:15:00.000Z-1641928543 -->
+	<!-- 2022-01-14T15:24:00.000Z-1642173863 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -220,6 +220,31 @@
 	<Image Id="{9C4F3BD7-7292-32B5-B34FC82AA6163D5F}" CmdLine="c:\windows\system32\net.exe start xtimagentmgr" />
 	<Image Id="{9E58AFC4-4620-86F0-AFCA88607C5BDC35}" CmdLine="c:\windows\system32\net1 start xtimagentmgr" />
 <!-- Part 0006 2022-01-11T19:15:00.000Z-1641928543 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0007 2022-01-14T15:24:00.000Z-1642173863 -->
+	<Image Id="{751E146A-5D45-0191-7BF3A5B45E12818F}" CmdLine="cmd /C for /f skip=1 *Virtual Machine\Guest\Parameters /v PhysicalHostName&#39;) do @echo %i Auto&#x26;&#x26;exit" />
+	<Image Id="{3198C46D-D254-87EB-677EA64E888C8055}" CmdLine="/C for /f skip=1 tokens*Virtual Machine\Guest\Parameters /v PhysicalHostName&#39;) do @echo %i Auto&#x26;&#x26;exit" />
+	<Image Id="{8470769D-3E5B-F4C0-C36A50820A731AF2}" CmdLine="cmd.exe /x/d/c echo select status from v$instance;|sqlplus -s -l system/??????????store 2&#62;&#x26;1" />
+	<Image Id="{C51A8B6D-007F-FEDA-FEBBBE7A0482AD19}" CmdLine="cmd.exe /c certutil.exe -hashfile c:\* sha256 &#x26; echo ---" />
+	<Image Id="{740C7463-C10E-085B-D6A6D3D34C0AF305}" CmdLine="cmd.exe  /c certutil.exe -hashfile c:\* sha256 &#x26; echo ---" />
+	<Image Id="{4EAD5B86-EAA6-5E3B-749FC5B120E7A3D7}" CmdLine="cmd.exe  /c certutil.exe -hashfile c:\* sha256" />
+	<Image Id="{F5BA5196-F113-3617-D08D8D027492F61A}" CmdLine="cmd.exe  /c certutil.exe -hashfile c:\* sha256 " />
+	<Image Id="{FB60CE76-CF74-67A6-5F8B487D310C6807}" CmdLine="cmd.exe /c certutil.exe -hashfile c:\* sha256" />
+	<Image Id="{B0B1AEEA-6A9D-AF33-9008BABA6E1CD25C}" CmdLine="cmd.exe /c certutil.exe -hashfile c:\* sha256 " />
+	<Image Id="{30029E07-B05B-DB16-28ABBB427458F29B}" CmdLine="certutil.exe -hashfile c:\* sha256" />
+	<Image Id="{912610A6-8948-D977-DD1D0510F6086CEA}" CmdLine="certutil.exe -hashfile c:\* sha256 " />
+	<Image Id="{20AA78AF-535C-6804-08353C26D48F7A41}" CmdLine="certutil.exe  -hashfile c:\* sha256" />
+	<Image Id="{8BBCDB5C-66DA-73C0-53AA20EBF9F5FE41}" CmdLine="certutil.exe  -hashfile c:\* sha256 " />
+	<Image Id="{51CA92D5-E3DD-A3A5-1A4D4668E42FC0C0}" CmdLine="cmd /c  if exist c:\inetpub\wwwroot\*api,%i,%j" />
+	<Image Id="{2363CFC4-5842-98CA-EAB421C87E2E5E94}" CmdLine="cmd /c  if exist c:\inetpub\wwwroot\*{$rol_rem_port}" />
+	<Image Id="{4A27F80A-330E-B77F-BCD419872B11997C}" CmdLine="/c  if exist c:\inetpub\wwwroot\*api,%i,%j" />
+	<Image Id="{30C9C316-B546-D36A-CF5AE84751C6D4BA}" CmdLine="/c  if exist c:\inetpub\wwwroot\*{$rol_rem_port}" />
+	<Image Id="{0C3C9B2E-181B-E095-2B21D1AE3D3999DB}" CmdLine="c:\windows\system32\cmd.exe  /s /d /c ( echo define report_type=html; &#x26; echo define*" />
+	<Image Id="{75BB350D-7575-6FCF-D4ED53CEF96EDA1E}" CmdLine="c:\windows\system32\cmd.exe  /s /d /c ( echo set feedback off &#x26; echo set lines 2000*" />
+	<Image Id="{41EB1778-3B3A-7042-2A923B1F0A7544D6}" CmdLine="c:\windows\system32\cmd.exe /c (echo define report_type=html; &#x26; echo define dbid*" />
+<!-- Part 0007 2022-01-14T15:24:00.000Z-1642173863 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
