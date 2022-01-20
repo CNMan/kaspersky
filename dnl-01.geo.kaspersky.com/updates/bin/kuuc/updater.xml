@@ -13,6 +13,22 @@
   <page>
     <name>HomeProduct</name>
     <group>
+      <name>Kaspersky</name>
+      <element>
+        <name>Kaspersky_21_5</name>
+        <version>21.5.11.384</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;ADB;APCAT;APD;APU;ARK;BB;CDB2;CONFIG;DNT;ELOC;EMU;HDHM;HIPSDB;IA;ICTRL;INTRP;IDS;INSTR;KDBCUT;KISCFG;KFPE;KSN;MPM;PARCTL;PAS5;PIC;PERF;PLG;QSCAN;SCO;SI;SIDRV;SSA;SUPD;SW2;UBI;UMIDS;UPDATER;VKC;VLNS;VSP;WA;WFD;WMUF;WFSDE;WS;KDSCRL;KAV21;KAV21NTR;RETR1901_ADB;RETR1901_APCAT;RETR1901_APD;RETR1901_APU;RETR1901_ARK;RETR1901_BB;RETR1901_CDB2;RETR1901_CONFIG;RETR1901_DNT;RETR1901_ELOC;RETR1901_EMU;RETR1901_HDHM;RETR1901_HIPSDB;RETR1901_IA;RETR1901_ICTRL;RETR1901_INTRP;RETR1901_IDS;RETR1901_INSTR;RETR1901_KDBCUT;RETR1901_KISCFG;RETR1901_KFPE;RETR1901_KSN;RETR1901_MPM;RETR1901_PARCTL;RETR1901_PAS5;RETR1901_PIC;RETR1901_PERF;RETR1901_PLG;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SI;RETR1901_SIDRV;RETR1901_SSA;RETR1901_SUPD;RETR1901_SW2;RETR1901_UBI;RETR1901_UMIDS;RETR1901_UPDATER;RETR1901_VKC;RETR1901_VLNS;RETR1901_VSP;RETR1901_WA;RETR1901_WFD;RETR1901_WMUF;RETR1901_WFSDE;RETR1901_WS;RETR1901_KDSCRL;RETR1901_KAV21;RETR1901_KAV21NTR</component>
+          <App>KASPERSKY 21.5.11.384</App>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
+    </group>
+    <group>
       <name>KasperskyAntiVirus</name>
       <element>
         <name>KasperskyAntiVirus_13_0</name>
@@ -392,6 +408,19 @@
           <component>RETR1901;SUPD;RETR1901_SUPD</component>
         </updates>
       </element>
+      <element>
+        <name>KasperskySecureConnection_21_5</name>
+        <version>21.5.11.384</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;CONFIG;KSN;UPDATER;SUPD;KSDE;KDSCRL;KSDE21;KSDE21NTR;INSTR;RETR1901_CONFIG;RETR1901_KSN;RETR1901_UPDATER;RETR1901_SUPD;RETR1901_KSDE;RETR1901_KDSCRL;RETR1901_KSDE21;RETR1901_KSDE21NTR;RETR1901_INSTR</component>
+          <App>KSDE 21.5.11.384</App>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
     </group>
     <group>
       <name>KasperskySecurityCloud</name>
@@ -650,6 +679,21 @@
         </updates>
       </element>
       <element>
+        <name>KasperskyEndpointAgent_3_12</name>
+        <version>3.12.0.382</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;RETR1901_APTEM;APTEM;RETR1901_BLST2;BLST2;RETR1901_KDSCRL;KDSCRL;RETR1901_KSN;KSN;RETR1901_Updater;Updater;RETR1901_SCO;SCO;RETR1901_SOYUZ3;SOYUZ3;RETR1901_SUPD;SUPD</component>
+          <App>SOYUZ 3.12.0.382</App>
+          <Arch>i386</Arch>
+          <OS>win</OS>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
+      <element>
         <name>KasperskyEndpointAgent_3_7</name>
         <version>3.7.0.504</version>
         <tree>index/u1313g.xml</tree>
@@ -675,6 +719,19 @@
     </group>
     <group>
       <name>KasperskyEndpointAgentforLinux</name>
+      <element>
+        <name>KasperskyEndpointAgentforLinux_3_12</name>
+        <version>3.12.0.746</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD;UPDATER;RETR1901_UPDATER;KSN;RETR1901_KSN;APTEM;RETR1901_APTEM;LENA1;RETR1901_LENA1;KDSCRL;RETR1901_KDSCRL</component>
+          <App>LENA 3.12.0.746</App>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
       <element>
         <name>KasperskyEndpointAgentforLinux_3_9</name>
         <version>3.9.*.*</version>
@@ -732,6 +789,19 @@
         <updates>
           <tree>index/u1313g.xml</tree>
           <component>APCAT;APD;APU;BLST2;CDB2;ELOC;EMU;INTRP;KDB;KSLS11;KSN;OSSL;QSCAN;SCO;SUPD;SW2;UDS;UMIDS;UPDATER;WA;WMUF;RETR1901;RETR1901_APCAT;RETR1901_APD;RETR1901_APU;RETR1901_BLST2;RETR1901_CDB2;RETR1901_ELOC;RETR1901_EMU;RETR1901_INTRP;RETR1901_KDB;RETR1901_KSLS11;RETR1901_KSN;RETR1901_OSSL;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SUPD;RETR1901_SW2;RETR1901_UDS;RETR1901_UMIDS;RETR1901_UPDATER;RETR1901_WA;RETR1901_WMUF</component>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
+      <element>
+        <name>KasperskyEndpointSecurityForLinux_11_2_2</name>
+        <version>11.2.2.5324</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>APCAT;APD;APU;BLST2;CDB2;ELOC;EMU;INTRP;KDB;KSLS11;KSN;OSSL;QSCAN;SCO;SUPD;SW2;UDS;UMIDS;UPDATER;WA;WMUF;RETR1901;RETR1901_APCAT;RETR1901_APD;RETR1901_APU;RETR1901_BLST2;RETR1901_CDB2;RETR1901_ELOC;RETR1901_EMU;RETR1901_INTRP;RETR1901_KDB;RETR1901_KSLS11;RETR1901_KSN;RETR1901_OSSL;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SUPD;RETR1901_SW2;RETR1901_UDS;RETR1901_UMIDS;RETR1901_UPDATER;RETR1901_WA;RETR1901_WMUF</component>
+          <App>KSLS 11.2.0.5324</App>
         </updates>
         <updates>
           <tree>updaters/updater.xml</tree>
@@ -800,8 +870,15 @@
         <name>KasperskyEndpointSecurityForMacOSX_11_1</name>
         <version>11.1.0.210</version>
         <tree>index/u1313g.xml</tree>
-        <component>KESMAC11.1;AH;APU;APD;BLST2;APCAT;ELOC;INTRP;CDB;IDSM;KDB;EMU;QSCAN;KSN;WA;WF;WMUF;Updater;SUPD;OSSL;SCO;ADBU</component>
+        <component>KESMAC11;AH;APU;APD;BLST2;APCAT;ELOC;INTRP;CDB;IDSM;KDB;EMU;QSCAN;KSN;WA;WF;WMUF;Updater;SUPD;OSSL;SCO;ADBU</component>
         <App>KESMAC 11.1.0.210</App>
+      </element>
+      <element>
+        <name>KasperskyEndpointSecurityForMacOSX_11_2</name>
+        <version>11.2.0.185</version>
+        <tree>index/u1313g.xml</tree>
+        <component>KESMAC11;AH;APU;APD;BLST2;APCAT;ELOC;INTRP;CDB;IDSM;KDB;KDBMA64;EMU;QSCAN;KSN;WA;WF;WMUF;Updater;SUPD;SCO;SW2;ADBU</component>
+        <App>KESMAC 11.2.0.185</App>
       </element>
     </group>
     <group>
@@ -1179,10 +1256,23 @@
         <version>21.3.10.391</version>
         <updates>
           <tree>index/u1313g.xml</tree>
-          <component>RETR1901;ADB;APCAT;APD;APU;ARK;BB;CDB2;CONFIG;DNT;ELOC;EMU;HIPSDB;IA;ICTRL;INTRP;IDS;KAV21;KAV21NTR;KDBCUT;KISCFG;KFPE;KSN;MPM;PARCTL;PAS5;PERF;PIC;PLG;QSCAN;SCO;SI;SIDRV;SSA;SUPD;SW2;UBI;MIDS;UPDATER;VKC;VLNS;VSP;WA;WFD;WMUF;KDSCRL;RETR1901_ADB;RETR1901_APCAT;RETR1901_APD;RETR1901_APU;RETR1901_ARK;RETR1901_BB;RETR1901_CDB2;RETR1901_CONFIG;RETR1901_DNT;RETR1901_ELOC;RETR1901_EMU;RETR1901_HIPSDB;RETR1901_IA;RETR1901_ICTRL;RETR1901_INTRP;RETR1901_IDS;RETR1901_KAV21;RETR1901_KAV21NTR;RETR1901_KDBCUT;RETR1901_KISCFG;RETR1901_KFPE;RETR1901_KSN;RETR1901_MPM;RETR1901_PARCTL;RETR1901_PAS5;RETR1901_PERF;RETR1901_PIC;RETR1901_PLG;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SI;RETR1901_SIDRV;RETR1901_SSA;RETR1901_SUPD;RETR1901_SW2;RETR1901_UBI;RETR1901_MIDS;RETR1901_UPDATER;RETR1901_VKC;RETR1901_VLNS;RETR1901_VSP;RETR1901_WA;RETR1901_WFD;RETR1901_WMUF;RETR1901_KDSCRL</component>
+          <component>RETR1901;ADB;APCAT;APD;APU;ARK;BB;CDB2;CONFIG;DNT;ELOC;EMU;HIPSDB;IA;ICTRL;INTRP;IDS;KAV21;KAV21NTR;KDBCUT;KISCFG;KFPE;KSN;MPM;PARCTL;PAS5;PERF;PIC;PLG;QSCAN;SCO;SI;SIDRV;SSA;SUPD;SW2;UBI;UMIDS;UPDATER;VKC;VLNS;VSP;WA;WFD;WMUF;KDSCRL;RETR1901_ADB;RETR1901_APCAT;RETR1901_APD;RETR1901_APU;RETR1901_ARK;RETR1901_BB;RETR1901_CDB2;RETR1901_CONFIG;RETR1901_DNT;RETR1901_ELOC;RETR1901_EMU;RETR1901_HIPSDB;RETR1901_IA;RETR1901_ICTRL;RETR1901_INTRP;RETR1901_IDS;RETR1901_KAV21;RETR1901_KAV21NTR;RETR1901_KDBCUT;RETR1901_KISCFG;RETR1901_KFPE;RETR1901_KSN;RETR1901_MPM;RETR1901_PARCTL;RETR1901_PAS5;RETR1901_PERF;RETR1901_PIC;RETR1901_PLG;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SI;RETR1901_SIDRV;RETR1901_SSA;RETR1901_SUPD;RETR1901_SW2;RETR1901_UBI;RETR1901_UMIDS;RETR1901_UPDATER;RETR1901_VKC;RETR1901_VLNS;RETR1901_VSP;RETR1901_WA;RETR1901_WFD;RETR1901_WMUF;RETR1901_KDSCRL</component>
           <App>KSOSPC 21.3.10.391</App>
           <Arch>i386</Arch>
           <SysArch>i386;x64</SysArch>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
+      <element>
+        <name>KasperskySmallOfficeSecurityPC_21_5</name>
+        <version>21.5.11.384</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;ADB;APCAT;APD;APU;ARK;BB;CDB2;CONFIG;DNT;ELOC;EMU;HIPSDB;IA;ICTRL;INSTR;INTRP;IDS;KAV21;KAV21NTR;KDBCUT;KISCFG;KFPE;KSN;MPM;PARCTL;PAS5;PERF;PIC;PLG;QSCAN;SCO;SI;SIDRV;SSA;SUPD;SW2;UBI;UMIDS;UPDATER;VKC;VLNS;VSP;WA;WFD;WMUF;KDSCRL;RETR1901_ADB;RETR1901_APCAT;RETR1901_APD;RETR1901_APU;RETR1901_ARK;RETR1901_BB;RETR1901_CDB2;RETR1901_CONFIG;RETR1901_DNT;RETR1901_ELOC;RETR1901_EMU;RETR1901_HIPSDB;RETR1901_IA;RETR1901_ICTRL;RETR1901_INSTR;RETR1901_INTRP;RETR1901_IDS;RETR1901_KAV21;RETR1901_KAV21NTR;RETR1901_KDBCUT;RETR1901_KISCFG;RETR1901_KFPE;RETR1901_KSN;RETR1901_MPM;RETR1901_PARCTL;RETR1901_PAS5;RETR1901_PERF;RETR1901_PIC;RETR1901_PLG;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SI;RETR1901_SIDRV;RETR1901_SSA;RETR1901_SUPD;RETR1901_SW2;RETR1901_UBI;RETR1901_UMIDS;RETR1901_UPDATER;RETR1901_VKC;RETR1901_VLNS;RETR1901_VSP;RETR1901_WA;RETR1901_WFD;RETR1901_WMUF;RETR1901_KDSCRL</component>
+          <App>KSOSPC 21.5.11.384</App>
         </updates>
         <updates>
           <tree>updaters/updater.xml</tree>
@@ -1549,6 +1639,19 @@
           <component>SUPD;RETR1901_SUPD</component>
         </updates>
       </element>
+      <element>
+        <name>KasperskyIndustrialCyberSecurityforLinuxNodes_1_2</name>
+        <version>1.2.0.2018</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;APCAT;APD;APU;BLST2;CDB2;ELOC;EMU;INTRP;KDB;KSLS11;KSN;OSSL;QSCAN;SCO;SUPD;SW2;UDS;UMIDS;UPDATER;WA;WMUF;RETR1901_APCAT;RETR1901_APD;RETR1901_APU;RETR1901_BLST2;RETR1901_CDB2;RETR1901_ELOC;RETR1901_EMU;RETR1901_INTRP;RETR1901_KDB;RETR1901_KSLS11;RETR1901_KSN;RETR1901_OSSL;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SUPD;RETR1901_SW2;RETR1901_UDS;RETR1901_UMIDS;RETR1901_UPDATER;RETR1901_WA;RETR1901_WMUF</component>
+          <App>KSLS 11.2.0.2018</App>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
     </group>
     <group>
       <name>KasperskyIndustrialCyberSecurityforNetworks</name>
@@ -1878,6 +1981,19 @@
           <component>RETR1901;SUPD;RETR1901_SUPD</component>
         </updates>
       </element>
+      <element>
+        <name>KasperskySmallOfficeSecurityFS_21_5</name>
+        <version>21.5.11.384</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;APD;APCAT;APU;ARK;BB;CDB2;CONFIG;EMU;ELOC;HIPSDB;IA;ICTRL;INTRP;INSTR;IDS;KAV21;KAV21NTR;KDBCUT;KISCFG;KSN;MPM;PIC;PERF;PLG;QSCAN;SCO;SI;SIDRV;SSA;SW2;SUPD;UMIDS;UPDATER;VLNS;VSP;WA;WFD;WMUF;KDSCRL;RETR1901_APD;RETR1901_APCAT;RETR1901_APU;RETR1901_ARK;RETR1901_BB;RETR1901_CDB2;RETR1901_CONFIG;RETR1901_EMU;RETR1901_ELOC;RETR1901_HIPSDB;RETR1901_IA;RETR1901_ICTRL;RETR1901_INTRP;RETR1901_IDS;RETR1901_INSTR;RETR1901_KAV21;RETR1901_KAV21NTR;RETR1901_KDBCUT;RETR1901_KISCFG;RETR1901_KSN;RETR1901_MPM;RETR1901_PIC;RETR1901_PERF;RETR1901_PLG;RETR1901_QSCAN;RETR1901_SCO;RETR1901_SI;RETR1901_SIDRV;RETR1901_SSA;RETR1901_SW2;RETR1901_SUPD;RETR1901_UMIDS;RETR1901_UPDATER;RETR1901_VLNS;RETR1901_VSP;RETR1901_WA;RETR1901_WMUF;RETR1901_WFD;RETR1901_KDSCRL</component>
+          <App>KSOSFS 21.5.11.384</App>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
     </group>
     <group>
       <name>OPSB</name>
@@ -2176,6 +2292,21 @@
         <Arch>i386</Arch>
         <SysArch>i386;x64</SysArch>
         <OS>Win</OS>
+      </element>
+      <element>
+        <name>KasperskyUpdateUtility_4_1</name>
+        <version>4.1.0.474</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>KUUC;KDSCRL;SUPD;Updater;RETR1901;RETR1901_KUUC;RETR1901_KDSCRL;RETR1901_SUPD;RETR1901_Updater</component>
+          <App>KUU 4.1.0.474</App>
+          <Arch>i386;x64;a64</Arch>
+          <SysArch>i386;x64;a64</SysArch>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD</component>
+        </updates>
       </element>
     </group>
   </page>
