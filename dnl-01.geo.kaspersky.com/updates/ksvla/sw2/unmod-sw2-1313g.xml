@@ -1,6 +1,6 @@
 <Update
-	Date="23012022 1210"
-	BlstDate="23012022 0331"
+	Date="24012022 1225"
+	BlstDate="24012022 0206"
 	ObjectType="2=SW2;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -11,7 +11,7 @@
 	<File
 		CompID="HASHES_SHA256"
 		Name="unmod-sw2-1313g.sha2rg"
-		DSKM="ai2KAK7Xn2xZb85Ctnl5gzdzaPEuF+qZMFpIrXr6AOU="/>
+		DSKM="BRLKUCx+KHd848YqDhv5H9XT2gBzz7vpSDn5npDGPWM="/>
 	<Files
 		App="KSLS 11"
 		Item="OS;Arch;SrvPath;Name;DSKM"
@@ -189,29 +189,41 @@
 		List="
 			KES 21.[4-5]|Win|i386|i386/win|response.dll|x2LEj67A0xrcdzL0pVlfRynSrG5QWy47R41nSItnVq4=;
 			KES 21.[4-5]|Win|i386|i386/win|response.esm|VgTZeKHEh4Nm4kfFBCxhBQsBnDV5MpXSbG5RGWGYiJM=;
-			KESMAC 11.2|Mac|x64|x64/mac|libklavasyswatch.dylib|X2uAsqIbhPnUaZTQQNrak+ByLZ5/Q5uKnX7Jqk0CfFQ=;
-			KESMAC 11.2|Mac|x64|x64/mac|pdm.kdl|9Tt4Z8DEiLBG66GvPoq0irgt4BW/eI2mn8/tgn6SVTc=;
+			KESMAC 11.2|Mac|x64|x64/mac|libklavasyswatch.dylib|6iNtv10U+VyRmH+tmxG5IG98z8AJOsVrwFKybmUox4A=;
+			KESMAC 11.2|Mac|x64|x64/mac|pdm.kdl|0/e7dulSk50NvQZ+u3AC3t+O+mZ6bu1CdKglLPI8Y1E=;
 			KESMAC 11.2|Mac|x64|x64/mac|pdm.vds|uPLWPA+OgpeJWKxiCkJpFTSEgvYzzEx4OIDqWDwR1M0=;
 			KESMAC 11.2|Mac|x64|x64/mac|sw2.esm|1DDgFH4JaNb2Nv8YgGOBbRDeE3EtfpwETHbDjJ+t4j0="/>
-	<File
+	<Files
 		App="KESMAC 11.2"
 		OS="Mac"
-		Arch="x64"
 		Shell="bdif;klz;none"
-		SrvPath="x64/mac"
 		LocalPath="%DataFolder%"
-		Name="sw2.xms"
-		DSKM="jyjtWzHH+FJLl+KObwR5kZbfTbHDZRNVt2H6yGqPRqE="/>
+		Item="Arch;SrvPath;Name;DSKM"
+		List="
+			x64|x64/mac|sw2.xms|GA/rIYQECVdPDx7fLojmA6mBmeHHJsY1AeNSQNVTqb8=;
+			a64|arm64/mac|sw2.xms|CD6UkkzHH9C5DEyg7sZEJ8g6YS/HTeVIIbndN3CqAuQ="/>
+	<Files
+		App="KESMAC 11.2"
+		OS="Mac"
+		Arch="a64"
+		Shell="bdif;klz;none"
+		SrvPath="arm64/mac"
+		Item="Name;DSKM"
+		List="
+			libklavasyswatch.dylib|qV0Jyc5v2fEVGM6nUFT5Zctia2b0/Bt+kFBXvLa7TCA=;
+			pdm.kdl|i0fkGYUXaRVUQfGm95cubN6l8cNts3Wo6ms2JkmNGBQ=;
+			pdm.vds|+PJADKlu4pD2+HK5LMteAQ2dnNj6+DduwDsc008X9as=;
+			sw2.esm|OZN1Lm4E19USjYSUV3k3iQ73WAQ1j3WPFoxvwBapJMM="/>
 	<File
 		CompID="RETR1901_SW2"
 		App=""
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="unmod-sw2-1901g.xml"
-		DSKM="WFgWBpGCSLCtG1WIet/fNMPbEF6S4H5UFWvbrl0axRw="/>
+		DSKM="HoW/Wrn+vDsiWVGPca7zZ0JvhEkfEkFx050lgYptq9I="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="unmod-sw2-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADfhm0sIWbB1leh0jnwRpz3uIo6CsoZ9GOrgKmoxHMc5bLmw2wvQRvZCrBEdUYOs7X/aPjoZotIHrg1o8p3XhWsBAB4JrwAAAAIAAigDAFNXMgMAAigEAEJBU0UBAAAJZv7UxA0KOzoxMEszWVptZml0L01OMDJHS2tVZUpxbDlsemFLZlhBOHlSeUNEdEhhbzRoNXB6Slp4bDhtMGp0YVZjOXJxdEovNllDRXYyZTExQng1Uys3Zlh6MFlPQkdHJSU=</Key>
 </Update>
-;:10KAilPmWylVM+Rm1XgmP8OwD/5tlpCZe4k52U42LZXZ/GN8Y2x0WfRszu4JODpjdBhZsajaOr3RoQfIstzu2/qS%%
+;:10aBduqJmTxr9SPiYNYKU/OSkvnYoIClXyDgSU1M5qmvJkLQlNoGO6LkGHa9stS95vclmhtiBC2m+Nd5zgVouvyy%%
