@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-01-12T20:15:00.000Z-1642018544 -->
+	<!-- 2022-01-31T19:04:00.000Z-1643655895 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1253,6 +1253,20 @@
 		<Process CmdLine="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy AllSigned -NoProfile -NonInteractive -Command &#38; {$OutputEncoding = [Console]::OutputEncoding =[System.Text.Encoding]::UTF8;$scriptFileStream = [System.IO.File]::Open('C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\*.ps1' }" />
 	</Detect>
 <!-- Part 0033 2022-01-12T20:15:00.000Z-1642018544 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0034 2022-01-31T19:04:00.000Z-1643655895 -->
+	<Detect Id="{FDF7D440-0ECC-DD19-E343EB7E3DD90B34}" ContentValue="?*" >
+		<Process CmdLine="*::open(&#39;c:\programdata\microsoft\windows defender advanced threat protection\*" />
+	</Detect>
+	<Detect Id="{9564BA13-A5BB-1761-30E39CE4E339A4CF}" ContentValue="function script_*)&#10;}&#10;&#10;$discoverydata }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{56452745-FCF3-929F-A1DC81D023A3CE20}" ContentValue="function script_*                       }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+<!-- Part 0034 2022-01-31T19:04:00.000Z-1643655895 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
