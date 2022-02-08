@@ -1,29 +1,391 @@
 <Update
-	Date="24122021 0921"
+	Date="05022022 2121"
 	ObjectType="2=KAV21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="10"
+	MaxDownloadSizeKb="12887"
 	Shell="bdif;klz;none">
 	<Patch
-		CompID="KAV21"
-		App="!KASPERSKY|KSOSFS|KSOSPC 21.5.*"
-		Lang="LangNone"
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
 		FixName="a"
-		Patch="none"
-		SrvPath="../dummy_g"
+		SrvPath="../21.5.11.384_k4w_a"
 		LocalPath="%ProductFolder%"
-		Name="dummy_g.txt"
-		DSKM="Mfv52b+oa12sapKdk3OSIAvOVHDaAsfKHVBNm/xt0Mg="/>
+		Name="ver_info.json"
+		DSKM="6stn6bZd8fxGoOcpXBUHjrfZEaT5Db78/VNd0DFRn5k="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.5.11.384_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="Z5EGdKxlFHiFNj504pByjpe89/7a82pnTyA/nCAQLa0="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="SysArch;SrvPath;LocalPath;Name;DSKM"
+		List="
+			i386|../21.5.11.384_k4w_a/drv32/p|%ProductFolder%\\\\knepsx86|kneps.inf|btt6a8TAebs/zECkRNmInwtJYlldzQume9v/CBHSQK0=;
+			i386|../21.5.11.384_k4w_a/drv32/p|%ProductFolder%\\\\knepsx86|kneps.sys|0k6VL81ZaWITTDHmhULFN7Yh2rgt3YLKgvcHJlDV0LM=;
+			x64|../21.5.11.384_k4w_a/drv64/p|%ProductFolder%\\\\knepsx64|kneps.inf|btt6a8TAebs/zECkRNmInwtJYlldzQume9v/CBHSQK0=;
+			x64|../21.5.11.384_k4w_a/drv64/p|%ProductFolder%\\\\knepsx64|kneps.sys|/OUu9qie/UywN25+nDlZuYl6rTgy9mrGz1MSFlFK90Y="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.5.11.384_k4w_a|%ProductFolder%|avpuimain.dll|ecL3P1zRlhNulhDRweMBbT0K4ouCXOndNuQw2cRwyc0=;
+			../21.5.11.384_k4w_a|%ProductFolder%|bl.dll|ichGQhaKeUsvagtHbOuR3p+B8vmAZnQgLI/78XF2B7c=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.kis.bl.dll|qJTb84gGbt6yR89PFsHA+QnaJo8zJ5mvA6aN9hiBV1o=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.kis.bl.contracts.dll|Jul1Ozq5KXCZ5A75Ji99fIjezMpCCOfUj0GC+VbHH5g=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.kis.ui.dll|ObTv93IwUDs0FpNsX9AanK2hbdjaAt2uofPD2whcXcQ=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.kis.ui.shell.dll|NY5A6IozqNSaZmtX6i14haPggodKmWZmGM4rll79fc8=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|GBBslIMKB1hUcY8SKJNZyH762LsC/HcO71pSz2d26kk=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.kis.ui.visuals.dll|F7+6EeBJ4dwrqf+Av+vkbLihqLv7EUj2T03q4AwjFSc=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.visuals.dll|kzxlCYKOj8//GkUoK3Z1e3WeCUcYXHxE6n5PlHaytVo=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|XCpYLvSXohcIKo3ahbJ/BjyfJmBlaJhmFQ+T5iu0X/E=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|7kndkyJ7WQ9F50zuWjEFG6BFaYpLDvGPXgDxfjS+VAk=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.platform.ui.dll|l0ylMA1pdgILWdXk15Z6yq3cZI+alsirOPca2XB7y2U=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.platform.ui.shell.dll|CGz+Cjwbi5jHL3XeJj93itZPu9dN7945q9shT1SjfKU=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.ui.common.dll|i73lvYZe1TslTQaX4ERmmJSIhGzLIlpBFUr2ukqienI=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|Np9SBxuHw1YzhgMMWgp3m4GMiGyo1t8AqC3kaHrN/wM=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|yI1bOrfaF+bq8TnTDjCDfmwiCiHV+FYF1TXALEm3oR0=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|sE09kypU2f7iUlFDdTbc0VYLQUVpOxJwA1U3Rf3p0pw=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|oVTEHiZdIUmDRaZnEnwVorytR68Zjt6lnfiqBVcQQM4=;
+			../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.ui.platform.services.dll|2maMV5yDJK6W/Wa093D2fJBIY/3klHTnSSTboT0Ad2I=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|kz1tJwPpILjHvpBAKyqBdDXstoQQ4o7yQt+s9KM2VEc=;
+			../21.5.11.384_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kldw.exe|mp/NSX6MwUhcKOtUjEeCpWmqw//NtTE6FoiY4JOO+OE="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.5.11.384_k4w_a/x64"
+		LocalPath="%ProductFolder%\x64"
+		Name="kldw.exe"
+		DSKM="+TUkcN9uf19mMmf3QW9g7ggNAJDMefxFmCAZU2QD+Bc="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		FixName="a"
+		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|plugins_nms.exe|Qjtcx2WfmAZeh/0S4He7/hFn8GZAZJMs4Gd9KkCC/cY=;
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|plugins-setup.exe|XKUsqFJbT/vSqW3L9/+vF82mA23ASiXPX+DYXLGtQ5U=;
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.ui.core.dll|tA26uHFHw9mvxa3k1C8u70ComfA/Pt8jwbwbVIE92yo=;
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.ui.core.visuals.dll|tOxTOuRHP1LZjOynAm6odXqdPHPxp0RFB2SXBZuQYp0=;
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|kasperskylab.ui.platform.toasts.dll|N3SM+22Qm0Zmg4ovNPt/M6ZkXOOmYElkt5s/wfvIajM=;
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|kldw.exe|mp/NSX6MwUhcKOtUjEeCpWmqw//NtTE6FoiY4JOO+OE=;
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|ucp_agent.dll|znP8UXfMS4FshV3K7AjlXr+rMnUffBJGhNIvcOxV+NM=;
+			restart_os|../21.5.11.384_k4w_a|%ProductFolder%|ushata.dll|k1iGZJ1Ylj5mibYWGZn5zkGMOmf2LWDiDBcvWuPNlkM=;
+			restart_none|../21.5.11.384_k4w_a/ipm/default/css|%DataFolder%\\\\ipm\\\\default\\\\css|messagebox.css|R3BcQWEWJi/hZgcfYMaxJZyjvbQv8n72iM8WqrHPLNg=;
+			restart_none|../21.5.11.384_k4w_a/ipm/default/css|%DataFolder%\\\\ipm\\\\default\\\\css|upgradeprotectionpage.css|ahxIPXsPxuVtRl4BhE6XGSIb0xvLf8xa9pMjqlNQM88="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			de|../21.5.11.384_k4w_a/ipm/default/loc/de|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de|locale.js|Z5Ran+6Kfn4usZeKw4xi0JU8E6+nkjlmPGdbj90iyMk=;
+			es-ES|../21.5.11.384_k4w_a/ipm/default/loc/es-ES|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\es-ES|locale.js|bzEQ/LXvDfG6TNfXgDJalaV2ljKNpt2u4Clnjsx/ON8=;
+			es-US|../21.5.11.384_k4w_a/ipm/default/loc/es-US|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\es-US|locale.js|7jACxqWvjWos+Ir4rnSxvv1VrDadxCDtvCj0lUQKDrk=;
+			fr|../21.5.11.384_k4w_a/ipm/default/loc/fr|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\fr|locale.js|f9jMyEZMjIlnv6vUsc54xlRjVDYiO5yHg8YgD+DZoIo=;
+			nl|../21.5.11.384_k4w_a/ipm/default/loc/nl|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\nl|locale.js|shgeOlFmluViIUHOk2WCQ1IR8RF2trWmKX2x1oxlxXQ=;
+			de|../21.5.11.384_k4w_a/kru/skin/resources/de/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\ksos\\\\locs|backup.lt|tAou/yYlKczrnkvbwkoNcO6YbKHDnloRfkGN0dGz+3c=;
+			de|../21.5.11.384_k4w_a/kru/skin/resources/de/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\locs|backup.lt|2aEFcDT0gsb9lHdSIC2uIn4gIVmXNTdmU9bc7DjAH+g=;
+			en|../21.5.11.384_k4w_a/kru/skin/resources/en/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\ksos\\\\locs|backup.lt|EPtj36T/tMktSb3Oz5O0WQA7hu1lAqjxQzuqPqM/SVI=;
+			en|../21.5.11.384_k4w_a/kru/skin/resources/en/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\locs|backup.lt|vbgs5h3f1YQw8C3y9iCOACeMVsJ23IjNeSuBKFrIYFE=;
+			es-es|../21.5.11.384_k4w_a/kru/skin/resources/es-es/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\es-es\\\\ksos\\\\locs|backup.lt|6oP3Ef98+o8ujKVQQ+3SOsxYJcJrL+R67AYsFshIH+w=;
+			es-es|../21.5.11.384_k4w_a/kru/skin/resources/es-es/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\es-es\\\\ksos\\\\locs|common.lt|QhCF+1sTIEI8mjJvCoAYqifDRfTptz9wdtL2qLw3vao=;
+			es-es|../21.5.11.384_k4w_a/kru/skin/resources/es-es/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\es-es\\\\locs|backup.lt|gFjkHabsxvnX6GNQDcVv//iWAlR5uXDLVS0hZIayixU=;
+			es-es|../21.5.11.384_k4w_a/kru/skin/resources/es-es/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\es-es\\\\locs|common.lt|eHCRSlplex9EshTFXX8E+lxDhK8QX++AwvQjFjvEl5s=;
+			es-us|../21.5.11.384_k4w_a/kru/skin/resources/es-us/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\es-us\\\\ksos\\\\locs|backup.lt|qerxLBtrlD/alJrz4wU0IPSr18XaluP0qbLp4exLxYY=;
+			es-us|../21.5.11.384_k4w_a/kru/skin/resources/es-us/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\es-us\\\\locs|backup.lt|M0ocwj8ruAlUrbXi9S7WYeJrCxNVmmo7aS3ODI8DM6U=;
+			fr|../21.5.11.384_k4w_a/kru/skin/resources/fr/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\fr\\\\ksos\\\\locs|backup.lt|B0KeP4/I0qQ0NkToRgnm0ZlynZmHsbIeAIWQmiXhj4g=;
+			fr|../21.5.11.384_k4w_a/kru/skin/resources/fr/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\fr\\\\ksos\\\\locs|common.lt|Z0u4PkSuoNFGNoNOmtg21/uKJpb5bt4WhhQn5JlQ1jU=;
+			fr|../21.5.11.384_k4w_a/kru/skin/resources/fr/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\fr\\\\locs|backup.lt|9CBa53vKZdZc5biqymJPGS2C8cE46TMI25G/Hnyfmb8=;
+			fr|../21.5.11.384_k4w_a/kru/skin/resources/fr/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\fr\\\\locs|common.lt|9vgt1KQkjbyn2oGtglIcrlGbjX3b9kKR08x0xtPED4Q=;
+			it|../21.5.11.384_k4w_a/kru/skin/resources/it/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\it\\\\ksos\\\\locs|backup.lt|YIVTVGVda3jH9dQ7oZs3IarNWFdkn4nGE6CMBqvy/H8=;
+			it|../21.5.11.384_k4w_a/kru/skin/resources/it/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\it\\\\ksos\\\\locs|common.lt|qboWkp0+4vX4WqQGDjcAu2WrgjPo0iQEHia91zetw7M=;
+			it|../21.5.11.384_k4w_a/kru/skin/resources/it/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\it\\\\locs|backup.lt|KufRs3PzPDLtfdnMTsbLfqdR46LI6cmMPQO6QFaYoD8=;
+			it|../21.5.11.384_k4w_a/kru/skin/resources/it/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\it\\\\locs|common.lt|S0BziUQpBlIZlCE/AHX9utaxFQzUnO6xiXpB7a4WUKQ="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.5.11.384_k4w_a/kru/skin/resources/neutral/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\neutral\\\\ksos\\\\locs|backup.lt|EPtj36T/tMktSb3Oz5O0WQA7hu1lAqjxQzuqPqM/SVI=;
+			../21.5.11.384_k4w_a/kru/skin/resources/neutral/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\neutral\\\\locs|backup.lt|vbgs5h3f1YQw8C3y9iCOACeMVsJ23IjNeSuBKFrIYFE="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|../21.5.11.384_k4w_a/kru/skin/resources/nl/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\nl\\\\ksos\\\\locs|backup.lt|/9Uoynx9KeZO6itIsoit3DJnxuBOm+nk66mIW/8Dkyk=;
+			nl|../21.5.11.384_k4w_a/kru/skin/resources/nl/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\nl\\\\ksos\\\\locs|common.lt|rGWXF2Ra6IjVc53TAAfw3ioXMpT3dM4GlGi/kr36KeY=;
+			nl|../21.5.11.384_k4w_a/kru/skin/resources/nl/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\nl\\\\locs|backup.lt|/16FdIqYnvvUh/KyiN1k3HWRy8HVRwbL590H9ONH6As=;
+			nl|../21.5.11.384_k4w_a/kru/skin/resources/nl/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\nl\\\\locs|common.lt|kKnTNoBemLU9g+lagqfsVUiysVqJ1R3fiGJ9LVYRanI=;
+			pt-pt|../21.5.11.384_k4w_a/kru/skin/resources/pt-pt/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\pt-pt\\\\ksos\\\\locs|backup.lt|p7huimsOVCwHCi/494hsPheauCqhm85OCW0Aw6DQ6OQ=;
+			pt-pt|../21.5.11.384_k4w_a/kru/skin/resources/pt-pt/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\pt-pt\\\\ksos\\\\locs|common.lt|qLSBycr9+tH5YlsOd7yqefwv5fjqkV0WEFgJocFDiI4=;
+			pt-pt|../21.5.11.384_k4w_a/kru/skin/resources/pt-pt/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\pt-pt\\\\locs|backup.lt|H+h9zSVMSinKUgfpM+h23XJGctbMLlIElmrsAxMrhPA=;
+			pt-pt|../21.5.11.384_k4w_a/kru/skin/resources/pt-pt/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\pt-pt\\\\locs|common.lt|0rvmC2VhxE2XiUBZnXxeWBaRbzgMQt2xRpvaGV4GO8w=;
+			ru|../21.5.11.384_k4w_a/kru/skin/resources/ru/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\ru\\\\ksos\\\\locs|backup.lt|rLv/0hdb3TOJajSQP8nHHsBNvR6oLbjAf59xS8JPy2k=;
+			ru|../21.5.11.384_k4w_a/kru/skin/resources/ru/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\ru\\\\locs|backup.lt|ntMw3lKVYAeUb0sJaqeWi/SIR70U7bu/HtuP3hK9/tQ=;
+			de|../21.5.11.384_k4w_a/patch/skin/resources/de|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\de|resources.zip|IW9t/wePYZliBmbpJ99B8os6i9TKN7xIRLn/WyW+/F8=;
+			en|../21.5.11.384_k4w_a/patch/skin/resources/en|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\en|resources.zip|rvuKPHW6dqESAsUrPp1ndRF/50aWJwKhaphssRysS8A=;
+			es-es|../21.5.11.384_k4w_a/patch/skin/resources/es-es|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\es-es|resources.zip|Tvzms7bNbAPRGUIi167SnCNyE5QTj00BHVIOue9YHuw=;
+			es-us|../21.5.11.384_k4w_a/patch/skin/resources/es-us|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\es-us|resources.zip|c74SYeBasKsluwS/uCXv2Sri4PRBbgn0z/OaBcHtD/M=;
+			fr|../21.5.11.384_k4w_a/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|avpui.ini|gCG9CcVR7Nv3f8qwT1ITGgHKteG0myloGO1vdKg+UE8=;
+			fr|../21.5.11.384_k4w_a/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|mcou.ini|6piH2pNGSkgW24OXyhNRcyOjfOalK74zD/LWu4xlJM4=;
+			fr|../21.5.11.384_k4w_a/patch/skin/resources/fr|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\fr|resources.zip|7rZMObS2ks7v0QtyZ8TllYHSFNMTS88YGG32nR3xPEc=;
+			it|../21.5.11.384_k4w_a/patch/skin/resources/it|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\it|resources.zip|nwOhcBsePT40DPe4Muh8r0DST4CE27Earw5wNeie9JU="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.5.11.384_k4w_a/patch/skin/resources/neutral"
+		LocalPath="%ProductFolder%\patch\skin\resources\neutral"
+		Name="resources.zip"
+		DSKM="RBgG7ReT3Gjy8WVlUd4JR8fiGzXJ+vicU8J7gn2LvnM="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|../21.5.11.384_k4w_a/patch/skin/resources/nl|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\nl|resources.zip|WaJQLyxxXY+PG8K9t8t8oA0mHrCEeZF6JuoQsM5XwtQ=;
+			pt-pt|../21.5.11.384_k4w_a/patch/skin/resources/pt-pt|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\pt-pt|resources.zip|8JYE3xtZugoynB783tNBrZAzo73eWx8kMVNNXx9C79Y=;
+			ru|../21.5.11.384_k4w_a/patch/skin/resources/ru|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\ru|resources.zip|FB0FSqafiXx8Li/3mdf9+9CD0HYNdTGdfHGGy/whdF8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.5.11.384_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="6stn6bZd8fxGoOcpXBUHjrfZEaT5Db78/VNd0DFRn5k="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.5.11.384_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="Z5EGdKxlFHiFNj504pByjpe89/7a82pnTyA/nCAQLa0="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="SysArch;SrvPath;LocalPath;Name;DSKM"
+		List="
+			i386|../21.5.11.384_ksos_a/drv32/p|%ProductFolder%\\\\knepsx86|kneps.inf|btt6a8TAebs/zECkRNmInwtJYlldzQume9v/CBHSQK0=;
+			i386|../21.5.11.384_ksos_a/drv32/p|%ProductFolder%\\\\knepsx86|kneps.sys|0k6VL81ZaWITTDHmhULFN7Yh2rgt3YLKgvcHJlDV0LM=;
+			x64|../21.5.11.384_ksos_a/drv64/p|%ProductFolder%\\\\knepsx64|kneps.inf|btt6a8TAebs/zECkRNmInwtJYlldzQume9v/CBHSQK0=;
+			x64|../21.5.11.384_ksos_a/drv64/p|%ProductFolder%\\\\knepsx64|kneps.sys|/OUu9qie/UywN25+nDlZuYl6rTgy9mrGz1MSFlFK90Y="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.5.11.384_ksos_a|%ProductFolder%|avpuimain.dll|ecL3P1zRlhNulhDRweMBbT0K4ouCXOndNuQw2cRwyc0=;
+			../21.5.11.384_ksos_a|%ProductFolder%|bl.dll|ichGQhaKeUsvagtHbOuR3p+B8vmAZnQgLI/78XF2B7c=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.kis.bl.dll|qJTb84gGbt6yR89PFsHA+QnaJo8zJ5mvA6aN9hiBV1o=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.kis.bl.contracts.dll|Jul1Ozq5KXCZ5A75Ji99fIjezMpCCOfUj0GC+VbHH5g=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.kis.ui.dll|ObTv93IwUDs0FpNsX9AanK2hbdjaAt2uofPD2whcXcQ=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.kis.ui.shell.dll|NY5A6IozqNSaZmtX6i14haPggodKmWZmGM4rll79fc8=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|GBBslIMKB1hUcY8SKJNZyH762LsC/HcO71pSz2d26kk=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.kis.ui.visuals.dll|F7+6EeBJ4dwrqf+Av+vkbLihqLv7EUj2T03q4AwjFSc=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.visuals.dll|kzxlCYKOj8//GkUoK3Z1e3WeCUcYXHxE6n5PlHaytVo=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|XCpYLvSXohcIKo3ahbJ/BjyfJmBlaJhmFQ+T5iu0X/E=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|7kndkyJ7WQ9F50zuWjEFG6BFaYpLDvGPXgDxfjS+VAk=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.platform.ui.dll|l0ylMA1pdgILWdXk15Z6yq3cZI+alsirOPca2XB7y2U=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.platform.ui.shell.dll|CGz+Cjwbi5jHL3XeJj93itZPu9dN7945q9shT1SjfKU=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.ui.common.dll|i73lvYZe1TslTQaX4ERmmJSIhGzLIlpBFUr2ukqienI=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|Np9SBxuHw1YzhgMMWgp3m4GMiGyo1t8AqC3kaHrN/wM=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|yI1bOrfaF+bq8TnTDjCDfmwiCiHV+FYF1TXALEm3oR0=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|sE09kypU2f7iUlFDdTbc0VYLQUVpOxJwA1U3Rf3p0pw=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|oVTEHiZdIUmDRaZnEnwVorytR68Zjt6lnfiqBVcQQM4=;
+			../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.ui.platform.services.dll|2maMV5yDJK6W/Wa093D2fJBIY/3klHTnSSTboT0Ad2I=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|kz1tJwPpILjHvpBAKyqBdDXstoQQ4o7yQt+s9KM2VEc=;
+			../21.5.11.384_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kldw.exe|mp/NSX6MwUhcKOtUjEeCpWmqw//NtTE6FoiY4JOO+OE="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.5.11.384_ksos_a/x64"
+		LocalPath="%ProductFolder%\x64"
+		Name="kldw.exe"
+		DSKM="+TUkcN9uf19mMmf3QW9g7ggNAJDMefxFmCAZU2QD+Bc="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		FixName="a"
+		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|plugins_nms.exe|Qjtcx2WfmAZeh/0S4He7/hFn8GZAZJMs4Gd9KkCC/cY=;
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|plugins-setup.exe|XKUsqFJbT/vSqW3L9/+vF82mA23ASiXPX+DYXLGtQ5U=;
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.ui.core.dll|tA26uHFHw9mvxa3k1C8u70ComfA/Pt8jwbwbVIE92yo=;
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.ui.core.visuals.dll|tOxTOuRHP1LZjOynAm6odXqdPHPxp0RFB2SXBZuQYp0=;
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|kasperskylab.ui.platform.toasts.dll|N3SM+22Qm0Zmg4ovNPt/M6ZkXOOmYElkt5s/wfvIajM=;
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|kldw.exe|mp/NSX6MwUhcKOtUjEeCpWmqw//NtTE6FoiY4JOO+OE=;
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|ucp_agent.dll|znP8UXfMS4FshV3K7AjlXr+rMnUffBJGhNIvcOxV+NM=;
+			restart_os|../21.5.11.384_ksos_a|%ProductFolder%|ushata.dll|k1iGZJ1Ylj5mibYWGZn5zkGMOmf2LWDiDBcvWuPNlkM=;
+			restart_none|../21.5.11.384_ksos_a/ipm/default/css|%DataFolder%\\\\ipm\\\\default\\\\css|messagebox.css|R3BcQWEWJi/hZgcfYMaxJZyjvbQv8n72iM8WqrHPLNg=;
+			restart_none|../21.5.11.384_ksos_a/ipm/default/css|%DataFolder%\\\\ipm\\\\default\\\\css|upgradeprotectionpage.css|ahxIPXsPxuVtRl4BhE6XGSIb0xvLf8xa9pMjqlNQM88="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|ipm_end_of_license.html|wp8KAn7TzoaAuonFJkI63LucW33GTPWSQRxZ8a7hwj8=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|ipm_end_of_license_ksos.html|paLicA0t7HUJcG4FmugJ7QZR4tuAq71rupVr7XpcjVE=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|LicenseExpirationRegretPage_kav.html|L0IrkrbIpfukCPKR1ZK48UFrNoUfEoijspISlq4wV+Q=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|LicenseExpirationRegretPage_kis.html|DbmZXG7C72nhYIBte6GpahRCdg1xDiwz9djylyh37Qs=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|LicenseExpirationRegretPage_kts.html|QBx6fuTKt1KvNgB6ID/v3bEiRsodee5MF2i3NE1m1jE=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|MidTermExpandPage.html|+OKBPWs4yXqfUL2JkBe1Z3ZnMGC4oOOZ/KC/Ze/g4FA=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|MidTermMainPage.html|2SyIKzieT+onxg4yL5Tpo7NAdMgBvMgDx+LcGPVGcWg=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|UninstallRegretPage_kav.html|ruBQPvxI9dqMAkwpqMszSyGVPkD8635M7aVZxTn1ZaE=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|UninstallRegretPage_kis.html|YYIQGxNARuyZRGmghFBECgahuQZoCTozWSUmPbQyYXY=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|UninstallRegretPage_kts.html|KFPHcm4a8dXRwxUYtGvI2lREffSvTjxueJVQzLFHwZQ=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de\\\\html|UpgradeProtectionPage.html|PmdBh0of63jkr5kp50OPRpFU7KqYPVrZjWmbmBgn9t0=;
+			de|../21.5.11.384_ksos_a/ipm/default/loc/de|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\de|locale.js|Z5Ran+6Kfn4usZeKw4xi0JU8E6+nkjlmPGdbj90iyMk=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|ipm_end_of_license.html|wp8KAn7TzoaAuonFJkI63LucW33GTPWSQRxZ8a7hwj8=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|ipm_end_of_license_ksos.html|paLicA0t7HUJcG4FmugJ7QZR4tuAq71rupVr7XpcjVE=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|LicenseExpirationRegretPage_kav.html|L0IrkrbIpfukCPKR1ZK48UFrNoUfEoijspISlq4wV+Q=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|LicenseExpirationRegretPage_kis.html|DbmZXG7C72nhYIBte6GpahRCdg1xDiwz9djylyh37Qs=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|LicenseExpirationRegretPage_kts.html|QBx6fuTKt1KvNgB6ID/v3bEiRsodee5MF2i3NE1m1jE=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|MidTermExpandPage.html|+OKBPWs4yXqfUL2JkBe1Z3ZnMGC4oOOZ/KC/Ze/g4FA=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|MidTermMainPage.html|2SyIKzieT+onxg4yL5Tpo7NAdMgBvMgDx+LcGPVGcWg=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|UninstallRegretPage_kav.html|ruBQPvxI9dqMAkwpqMszSyGVPkD8635M7aVZxTn1ZaE=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|UninstallRegretPage_kis.html|YYIQGxNARuyZRGmghFBECgahuQZoCTozWSUmPbQyYXY=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|UninstallRegretPage_kts.html|KFPHcm4a8dXRwxUYtGvI2lREffSvTjxueJVQzLFHwZQ=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en/html|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en\\\\html|UpgradeProtectionPage.html|PmdBh0of63jkr5kp50OPRpFU7KqYPVrZjWmbmBgn9t0=;
+			en|../21.5.11.384_ksos_a/ipm/default/loc/en|%DataFolder%\\\\ipm\\\\default\\\\loc\\\\en|locale.js|oFCmRDfFFvhMi7n4ZKE1q/b19x/O2ti+vtFy3gcbeUs=;
+			de|../21.5.11.384_ksos_a/kru/skin/resources/de/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\ksos\\\\locs|backup.lt|tAou/yYlKczrnkvbwkoNcO6YbKHDnloRfkGN0dGz+3c=;
+			de|../21.5.11.384_ksos_a/kru/skin/resources/de/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\ksos\\\\locs|common.lt|O4unngEa5S51dJ+pNNf+HBaRuuLlV6yIC8BeCtJ9L8g=;
+			de|../21.5.11.384_ksos_a/kru/skin/resources/de/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\locs|backup.lt|2aEFcDT0gsb9lHdSIC2uIn4gIVmXNTdmU9bc7DjAH+g=;
+			de|../21.5.11.384_ksos_a/kru/skin/resources/de/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\locs|common.lt|Kho9BwptkyuUd4210TzMyl5h1hde3P30f0uIuIXydW4=;
+			de|../21.5.11.384_ksos_a/kru/skin/resources/de/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\locs|datetime.lt|1Pabpk2cqQVT3g+LKWBaIi26zNMkM2+vWhappCaRTwk=;
+			de|../21.5.11.384_ksos_a/kru/skin/resources/de/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\de\\\\locs|restoretool.lt|JNynybk+i9DngcDI1Ih5UAhWZ4DJeRrkEd9Rm4BDjm4=;
+			en|../21.5.11.384_ksos_a/kru/skin/resources/en/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\ksos\\\\locs|backup.lt|EPtj36T/tMktSb3Oz5O0WQA7hu1lAqjxQzuqPqM/SVI=;
+			en|../21.5.11.384_ksos_a/kru/skin/resources/en/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\ksos\\\\locs|common.lt|R5VpPEdZjMlSykKug0oq1bC9tKE+Hkgz19ft7T7XRBM=;
+			en|../21.5.11.384_ksos_a/kru/skin/resources/en/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\locs|backup.lt|vbgs5h3f1YQw8C3y9iCOACeMVsJ23IjNeSuBKFrIYFE=;
+			en|../21.5.11.384_ksos_a/kru/skin/resources/en/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\locs|common.lt|RDmf14sv4gc8QFzpAGJYuGNhBhNIWwxjx18+6jyzIY8=;
+			en|../21.5.11.384_ksos_a/kru/skin/resources/en/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\locs|datetime.lt|7iV5tkD+Mk2eL9KOaF/QCV0SohtTGxBav3FHvWpMeyk=;
+			en|../21.5.11.384_ksos_a/kru/skin/resources/en/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\en\\\\locs|restoretool.lt|SThPP3R6gDwVLkytHBXoBgcLiG2VWy9eMJK0d7meKRk="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.5.11.384_ksos_a/kru/skin/resources/neutral/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\neutral\\\\ksos\\\\locs|backup.lt|EPtj36T/tMktSb3Oz5O0WQA7hu1lAqjxQzuqPqM/SVI=;
+			../21.5.11.384_ksos_a/kru/skin/resources/neutral/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\neutral\\\\locs|backup.lt|vbgs5h3f1YQw8C3y9iCOACeMVsJ23IjNeSuBKFrIYFE="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			ru|../21.5.11.384_ksos_a/kru/skin/resources/ru/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\ru\\\\ksos\\\\locs|backup.lt|rLv/0hdb3TOJajSQP8nHHsBNvR6oLbjAf59xS8JPy2k=;
+			ru|../21.5.11.384_ksos_a/kru/skin/resources/ru/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\ru\\\\locs|backup.lt|ntMw3lKVYAeUb0sJaqeWi/SIR70U7bu/HtuP3hK9/tQ=;
+			de|../21.5.11.384_ksos_a/skin/loc/de|%ProductFolder%\\\\skin\\\\loc\\\\de|mcouas2010.xml|ZdD/+ZEDFkH2mV1CbtJo6s9RqZ41BinN4bWrFJuLtEA=;
+			de|../21.5.11.384_ksos_a/skin/loc/de|%ProductFolder%\\\\skin\\\\loc\\\\de|resource.loc|ApvNEmNbw115MfRYFnS7Qve68XCLHp2WmVVlgSln8sI=;
+			en|../21.5.11.384_ksos_a/skin/loc/en|%ProductFolder%\\\\skin\\\\loc\\\\en|mcouas2010.xml|buOuZqMz6KZlvgLc+iOQNHTXsrDaCK6AGYlaVk5FEww=;
+			en|../21.5.11.384_ksos_a/skin/loc/en|%ProductFolder%\\\\skin\\\\loc\\\\en|resource.loc|k/cBR4YkRNsGwI3FxY0x9ygj6b+XQL5ABcWATPwlq2I=;
+			de|../21.5.11.384_ksos_a/skin/resources/de/dictionaries|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\dictionaries|livetile.style|3QEtN7kWSUZxJ1xlOmWlZuodvf6gHFhrtx3Zns43VcA=;
+			de|../21.5.11.384_ksos_a/skin/resources/de/html/web_av|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\html\\\\web_av|pup.html|0UVcI7pGUY0O5gwgcOjGGmwHUcxu9QmNppoZpu/GfpE=;
+			de|../21.5.11.384_ksos_a/skin/resources/de/html/web_av|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\html\\\\web_av|templ.html|WJu7PpQ3G277pHJ+YwiqIxVXtJn+jKGD+RyyZZkXzYI=;
+			de|../21.5.11.384_ksos_a/skin/resources/de/ksos/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\ksos\\\\locs|avpui.ini|Tgt31yJ6T4nq5i1KHW1s6esahFEqkLqcroJ4+ar0GKU=;
+			de|../21.5.11.384_ksos_a/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|avpui.ini|r0Gz0o/nmHuy7t+4RB3sqxsFHfoJ2auJfuG6WvkERGk=;
+			de|../21.5.11.384_ksos_a/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|mcou.ini|fYk2DHgOhryu97LYxzlB0vZxdrVklMu1nDqX3leyi/Y=;
+			de|../21.5.11.384_ksos_a/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|safebanking.ini|YS1pKv+zvwByPN7gzKiIn7f2FpOgi/8GsoNcwnqJf1o=;
+			de|../21.5.11.384_ksos_a/patch/skin/resources/de|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\de|resources.zip|dWN5Vj5lQdRMa0eu2MASHy1GxiJSW/s7le6n+MZ7e18=;
+			en|../21.5.11.384_ksos_a/skin/resources/en/html/web_av|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\html\\\\web_av|pup.html|AldV/9eswf7HFqNJDBIn4LJ6YAbQITDfT/HE9N/dkiE=;
+			en|../21.5.11.384_ksos_a/skin/resources/en/html/web_av|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\html\\\\web_av|templ.html|rrGrf7Dp42mfYkGFN8RpnNMv3blLRT7+jJvH4LjAHC8=;
+			en|../21.5.11.384_ksos_a/skin/resources/en/ksos/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\ksos\\\\locs|avpui.ini|NVeR+H3KA5tkn37NIUt4JLb+97jJXBBj2wjqigXGk1g=;
+			en|../21.5.11.384_ksos_a/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|avpui.ini|jqHbP+MEmeo5sHm83XUvkuaxvFH/znVDwuT7/oErf9I=;
+			en|../21.5.11.384_ksos_a/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|mcou.ini|GMxzJWM0gUS0fryglwxg27Ilef4qEA9JcYczLWNxk0c=;
+			en|../21.5.11.384_ksos_a/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|safebanking.ini|+r6bqyvCJHzMRXHCx/zc7rZy2dP95ayDrSuECDWKMhs=;
+			en|../21.5.11.384_ksos_a/patch/skin/resources/en|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\en|resources.zip|ZDUr+1P1MRCcytcb7Sz53azr+MtrWAuc6Vg19YM+LCI="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.5.11.384_ksos_a/patch/skin/resources/neutral"
+		LocalPath="%ProductFolder%\patch\skin\resources\neutral"
+		Name="resources.zip"
+		DSKM="yw60lSLFVjljgjtXwLnXJpjt1T/NduOBxP6J9pNzfHI="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.5.11.384"
+		Lang="ru"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.5.11.384_ksos_a/patch/skin/resources/ru"
+		LocalPath="%ProductFolder%\patch\skin\resources\ru"
+		Name="resources.zip"
+		DSKM="mgtMZ3EsNyx/9D+etxAGNGsCO72ePF0BGyY9tcFBRxI="/>
 	<File
 		CompID="RETR1901_KAV21,RETR1901_KAV21NTR"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-kav21-mr5-1901g.xml"
-		DSKM="2nwJbp0bq+7npac7nxI/FMJy8p3Iz8rrstOuMH5OjAk="/>
+		DSKM="Csmozal7o/fgLEpVBbx/gJ6Zp/FielQTKqSLmJvkxms="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
 </Update>
-;:10KOjOOBFC8CVu0NNegix3YKgTdsYnYPXNietDLC2eJK+odzvoV7xFw3ID9fddEpf1XE6mVR1Ez7q7ZeiyUWquQ0%%
+;:10KEpK0l48QiElbJRFVfXofF0RRAqTi2W4Fx4UeaK5GiLKa/IdD/cdfxafr3mITj17Ks1rDmpifgiRaRX4yq5dTa%%
