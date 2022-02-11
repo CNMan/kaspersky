@@ -1,5 +1,5 @@
 <Update
-	Date="07022022 1024"
+	Date="10022022 0737"
 	ObjectType="2=KES11_CM56;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -974,15 +974,428 @@
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*|ksn.txt|JpaiXMRhFspmIOzRr/DTbO0IwLKNh05dxqv3Dlx4pPI=;
 			KES 11.2.0.*|license.txt|vQLpxqwq2WoWIW2V7zLWOvUCjQ78Y1Z6x0zOqSh9ZPk=;
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*|license.txt|vQLpxqwq2WoWIW2V7zLWOvUCjQ78Y1Z6x0zOqSh9ZPk="/>
+	<Patches
+		Lang="de"
+		SrvPath="kes11/kes11_7/aes56/de"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/de"
+		Name="cleaner.cab"
+		DSKM="IYLrIiBTUA04rlQCDupvsSXldzGesT3oLShN/1z29H4="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|1CEDCDAC-56EC-4DEA-B178-0D6505ED5919;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|2DDB62F0-94AC-468F-80AA-2E5353C0EC62"/>
+	<Patches
+		Lang="de"
+		SrvPath="kes11/kes11_7/aes56/de"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/de"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|Y5e8Xr+CgBPO85WU50Uq1fBDMC0Xu7nhBeWkchSWJEY=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|Y5e8Xr+CgBPO85WU50Uq1fBDMC0Xu7nhBeWkchSWJEY=;
+			KES 11.2.0.*|kes_win.kud|1WA4Ps8K6rGC5bYWBg7P1NdOInlxFgpcK7JR2phvKAo=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|1WA4Ps8K6rGC5bYWBg7P1NdOInlxFgpcK7JR2phvKAo="/>
+	<Patches
+		Lang="de"
+		SrvPath="kes11/kes11_7/aes56/de"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/de"
+		Name="kes_win.msi"
+		DSKM="YwVV6zmt0ZB5x/dQF0REU6+MK0zPvQXtxik/8g6lwN4="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|1CEDCDAC-56EC-4DEA-B178-0D6505ED5919;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|2DDB62F0-94AC-468F-80AA-2E5353C0EC62"/>
+	<Patches
+		Lang="de"
+		SrvPath="kes11/kes11_7/aes56/de"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/de"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|7QZ+cKD/l4s6rIRIcEmIqd9pjTE3eGAOjIFl3TVBsFI=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|7QZ+cKD/l4s6rIRIcEmIqd9pjTE3eGAOjIFl3TVBsFI=;
+			KES 11.2.0.*|license.txt|1ZSvhIHYyMsbBN2ROWCqikW/0W+v5B4NUquxPDScduU=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|1ZSvhIHYyMsbBN2ROWCqikW/0W+v5B4NUquxPDScduU="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|de|1CEDCDAC-56EC-4DEA-B178-0D6505ED5919\;FE00A0C4-D07A-47DE-9615-AAB0BD23B415|kes11/kes11_7/aes56/de|%DataRoot%/Patches/kes11/kes11_7/aes56/de|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|en|03FB391C-3FDF-44E5-ABF9-AC1BACDB8BB3|kes11/kes11_7/aes56/en|%DataRoot%/Patches/kes11/kes11_7/aes56/en|cleaner.cab|iu0II8AK/gptJdzCDgOLjV92bEA/o7XpWKcbRW98ojU=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|en|136E2368-45C3-44C1-8DAC-A3C0AE9E8D50|kes11/kes11_7/aes56/en|%DataRoot%/Patches/kes11/kes11_7/aes56/en|cleaner.cab|iu0II8AK/gptJdzCDgOLjV92bEA/o7XpWKcbRW98ojU="/>
+	<Patches
+		Lang="en"
+		SrvPath="kes11/kes11_7/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/en"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|PSp+WBCYDd8SIGxcFGgfGQj7Fdfw8+PZHcaRBG0dyeU=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|PSp+WBCYDd8SIGxcFGgfGQj7Fdfw8+PZHcaRBG0dyeU=;
+			KES 11.2.0.*|kes_win.kud|v0+h6jKpcHXlQKH52RIdC32bpp5iEGEuTgy9K4yYS/Q=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|v0+h6jKpcHXlQKH52RIdC32bpp5iEGEuTgy9K4yYS/Q="/>
+	<Patches
+		Lang="en"
+		SrvPath="kes11/kes11_7/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/en"
+		Name="kes_win.msi"
+		DSKM="1Q0Oga82fpStp/psd0QIYBZ2YxzlUqrEksVDviKtjuc="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|03FB391C-3FDF-44E5-ABF9-AC1BACDB8BB3;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|136E2368-45C3-44C1-8DAC-A3C0AE9E8D50"/>
+	<Patches
+		Lang="en"
+		SrvPath="kes11/kes11_7/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/en"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|mWeb5UBq8rLjhigt9LzOrde1A+O9NORbXw1UQokwihw=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|mWeb5UBq8rLjhigt9LzOrde1A+O9NORbXw1UQokwihw=;
+			KES 11.2.0.*|license.txt|JLiV2/gy6nkOq1IdZh2qI48Kj4WTyEHQnaPCFDYJPDY=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|JLiV2/gy6nkOq1IdZh2qI48Kj4WTyEHQnaPCFDYJPDY="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|en|03FB391C-3FDF-44E5-ABF9-AC1BACDB8BB3\;136E2368-45C3-44C1-8DAC-A3C0AE9E8D50|kes11/kes11_7/aes56/en|%DataRoot%/Patches/kes11/kes11_7/aes56/en|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|es_MX|AEEF2C98-49E5-40F4-A42F-4BAD396F8BFC|kes11/kes11_7/aes56/es-mx|%DataRoot%/Patches/kes11/kes11_7/aes56/es-MX|cleaner.cab|M8LnmDtg18RA9HvNAF0uxTUPnJouVasMLouA/kAXIus=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|es_MX|FD806356-DB16-4F7F-AF75-E6CE4679F34D|kes11/kes11_7/aes56/es-mx|%DataRoot%/Patches/kes11/kes11_7/aes56/es-MX|cleaner.cab|M8LnmDtg18RA9HvNAF0uxTUPnJouVasMLouA/kAXIus="/>
+	<Patches
+		Lang="es_MX"
+		SrvPath="kes11/kes11_7/aes56/es-mx"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/es-MX"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|aQ0EwsdgeJjIqN85I335uWWpxDE5IkuDTCOa7fT2Nao=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|aQ0EwsdgeJjIqN85I335uWWpxDE5IkuDTCOa7fT2Nao=;
+			KES 11.2.0.*|kes_win.kud|wXzX1Smhs2HR6Ek3HCaPRZ9OKnzca5fVMrtwsMk8Qjs=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|wXzX1Smhs2HR6Ek3HCaPRZ9OKnzca5fVMrtwsMk8Qjs="/>
+	<Patches
+		Lang="es_MX"
+		SrvPath="kes11/kes11_7/aes56/es-mx"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/es-MX"
+		Name="kes_win.msi"
+		DSKM="+GCM1p0mYH8RMv8nEGUPCvq85VAADLiEsCTXk7CBuTE="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|AEEF2C98-49E5-40F4-A42F-4BAD396F8BFC;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|FD806356-DB16-4F7F-AF75-E6CE4679F34D"/>
+	<Patches
+		Lang="es_MX"
+		SrvPath="kes11/kes11_7/aes56/es-mx"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/es-MX"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|//lZcDbKFwQm2A487mu/Cf27Pq9JmmGkktrOqULIINw=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|//lZcDbKFwQm2A487mu/Cf27Pq9JmmGkktrOqULIINw=;
+			KES 11.2.0.*|license.txt|TqPd5/NR/xySlGPNyRaDz1+KFXo61TzRhQc9ad7wLok=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|TqPd5/NR/xySlGPNyRaDz1+KFXo61TzRhQc9ad7wLok="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|es_MX|AEEF2C98-49E5-40F4-A42F-4BAD396F8BFC\;FD806356-DB16-4F7F-AF75-E6CE4679F34D|kes11/kes11_7/aes56/es-mx|%DataRoot%/Patches/kes11/kes11_7/aes56/es-MX|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|es|F532F851-17ED-41E8-ACA4-4355595B6F3D|kes11/kes11_7/aes56/es|%DataRoot%/Patches/kes11/kes11_7/aes56/es|cleaner.cab|zRS3cxyOSqpBAd3ufr0iUwkpCjHJzBjchdQr9kTWGq8=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|es|CC877FCB-A67D-4F0A-BB61-ACA2FD202C85|kes11/kes11_7/aes56/es|%DataRoot%/Patches/kes11/kes11_7/aes56/es|cleaner.cab|zRS3cxyOSqpBAd3ufr0iUwkpCjHJzBjchdQr9kTWGq8="/>
+	<Patches
+		Lang="es"
+		SrvPath="kes11/kes11_7/aes56/es"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/es"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|28x7sYbpP1bG3tXoWZamCScs9f59DcdqdLplRJ0Jxss=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|28x7sYbpP1bG3tXoWZamCScs9f59DcdqdLplRJ0Jxss=;
+			KES 11.2.0.*|kes_win.kud|WMv83qG1ZWG06XLRVM9YxMbEOLT8Gxo8aDnKpOGbnlI=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|WMv83qG1ZWG06XLRVM9YxMbEOLT8Gxo8aDnKpOGbnlI="/>
+	<Patches
+		Lang="es"
+		SrvPath="kes11/kes11_7/aes56/es"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/es"
+		Name="kes_win.msi"
+		DSKM="/R7jhl+3/YsQwYSELPjzGoxXrU2zcMUPHdaYGBzCzsk="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|F532F851-17ED-41E8-ACA4-4355595B6F3D;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|CC877FCB-A67D-4F0A-BB61-ACA2FD202C85"/>
+	<Patches
+		Lang="es"
+		SrvPath="kes11/kes11_7/aes56/es"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/es"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|IrQWqqNLQKo0efppdCtNOysEGNEFE82NbMcGl2vj/k0=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|IrQWqqNLQKo0efppdCtNOysEGNEFE82NbMcGl2vj/k0=;
+			KES 11.2.0.*|license.txt|o+qkfPSGv4S0LThkKXW045D1dY3quLv595EQ8Q6gtzk=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|o+qkfPSGv4S0LThkKXW045D1dY3quLv595EQ8Q6gtzk="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|es|F532F851-17ED-41E8-ACA4-4355595B6F3D\;CC877FCB-A67D-4F0A-BB61-ACA2FD202C85|kes11/kes11_7/aes56/es|%DataRoot%/Patches/kes11/kes11_7/aes56/es|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|fr|E07AAA71-617F-4062-A188-A6CBAF979F5D|kes11/kes11_7/aes56/fr|%DataRoot%/Patches/kes11/kes11_7/aes56/fr|cleaner.cab|lN7bNKSSdLLK9Qb/HmtbffY9v9otgOgqaKssYOaQ4fo=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|fr|BE227B30-0110-43D5-B801-75BA5349544C|kes11/kes11_7/aes56/fr|%DataRoot%/Patches/kes11/kes11_7/aes56/fr|cleaner.cab|lN7bNKSSdLLK9Qb/HmtbffY9v9otgOgqaKssYOaQ4fo="/>
+	<Patches
+		Lang="fr"
+		SrvPath="kes11/kes11_7/aes56/fr"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/fr"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|TxBGaDUvU5cQvLR537iwtEarwsB2aAFhEAhFtQqZee0=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|TxBGaDUvU5cQvLR537iwtEarwsB2aAFhEAhFtQqZee0=;
+			KES 11.2.0.*|kes_win.kud|ICxF8zOCW3LLWtBk+5FmdBq4RBnByr+l6fmoQNJ2qYk=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|ICxF8zOCW3LLWtBk+5FmdBq4RBnByr+l6fmoQNJ2qYk="/>
+	<Patches
+		Lang="fr"
+		SrvPath="kes11/kes11_7/aes56/fr"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/fr"
+		Name="kes_win.msi"
+		DSKM="/M/b1fH5DbGPuTkLJhnMZxcZ86FyRTSkrtki9eyvfgE="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|E07AAA71-617F-4062-A188-A6CBAF979F5D;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|BE227B30-0110-43D5-B801-75BA5349544C"/>
+	<Patches
+		Lang="fr"
+		SrvPath="kes11/kes11_7/aes56/fr"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/fr"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|AODckhBi/5diIBoEl//gHw243mx0ZeP8/BYfXsJk0Yo=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|AODckhBi/5diIBoEl//gHw243mx0ZeP8/BYfXsJk0Yo=;
+			KES 11.2.0.*|license.txt|xtI/SJufTBmrw6k/pu8PBUJUXEUqE6TXCdUdrLhrCPE=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|xtI/SJufTBmrw6k/pu8PBUJUXEUqE6TXCdUdrLhrCPE="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|fr|E07AAA71-617F-4062-A188-A6CBAF979F5D\;BE227B30-0110-43D5-B801-75BA5349544C|kes11/kes11_7/aes56/fr|%DataRoot%/Patches/kes11/kes11_7/aes56/fr|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|it|B47B80A2-4DD7-41C3-8F1A-9D09E101736D|kes11/kes11_7/aes56/it|%DataRoot%/Patches/kes11/kes11_7/aes56/it|cleaner.cab|r3mXEQBdmFKIAsVuR9Z9K5Zf2uUMJjKyxouV6K7FCRw=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|it|03A62954-A160-4B7D-A53D-5C91B6B951BE|kes11/kes11_7/aes56/it|%DataRoot%/Patches/kes11/kes11_7/aes56/it|cleaner.cab|r3mXEQBdmFKIAsVuR9Z9K5Zf2uUMJjKyxouV6K7FCRw="/>
+	<Patches
+		Lang="it"
+		SrvPath="kes11/kes11_7/aes56/it"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/it"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|Fup3OD1vo0FGl+MyADPSTLUSBVUbxUlwzCLA+ErekAM=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|Fup3OD1vo0FGl+MyADPSTLUSBVUbxUlwzCLA+ErekAM=;
+			KES 11.2.0.*|kes_win.kud|QKy7mf6GH+bDK++VnsFuwE2Ozqr7EQlrGN54LkJb1T0=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|QKy7mf6GH+bDK++VnsFuwE2Ozqr7EQlrGN54LkJb1T0="/>
+	<Patches
+		Lang="it"
+		SrvPath="kes11/kes11_7/aes56/it"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/it"
+		Name="kes_win.msi"
+		DSKM="hjQxmtXS0T6BFNWu8OwI+z+dGl88qFbcXBPuWq2qsW0="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|B47B80A2-4DD7-41C3-8F1A-9D09E101736D;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|03A62954-A160-4B7D-A53D-5C91B6B951BE"/>
+	<Patches
+		Lang="it"
+		SrvPath="kes11/kes11_7/aes56/it"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/it"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|chVYZs8wva6EWKrHwhKi19Pi63ssq2/yMthgkcy7Bx4=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|chVYZs8wva6EWKrHwhKi19Pi63ssq2/yMthgkcy7Bx4=;
+			KES 11.2.0.*|license.txt|GfbVTQxwVD96HlzvSAB77oLwSlB7+Robkde/3BUGC2Q=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|GfbVTQxwVD96HlzvSAB77oLwSlB7+Robkde/3BUGC2Q="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|it|B47B80A2-4DD7-41C3-8F1A-9D09E101736D\;03A62954-A160-4B7D-A53D-5C91B6B951BE|kes11/kes11_7/aes56/it|%DataRoot%/Patches/kes11/kes11_7/aes56/it|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|ja|01779E92-E14B-42F9-A9A3-90201B855262|kes11/kes11_7/aes56/ja|%DataRoot%/Patches/kes11/kes11_7/aes56/ja|cleaner.cab|QO0GQEZs+uT97kjzKFJeahs9o5c5dY3BOKVdMtIX3Vs=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ja|C6145B73-09C7-4CCA-A877-2C07D9077710|kes11/kes11_7/aes56/ja|%DataRoot%/Patches/kes11/kes11_7/aes56/ja|cleaner.cab|QO0GQEZs+uT97kjzKFJeahs9o5c5dY3BOKVdMtIX3Vs="/>
+	<Patches
+		Lang="ja"
+		SrvPath="kes11/kes11_7/aes56/ja"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/ja"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|eWXOgG6XrLsCF+bD+jkTWIvzlclT1X0+yPMHlLieqmk=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|eWXOgG6XrLsCF+bD+jkTWIvzlclT1X0+yPMHlLieqmk=;
+			KES 11.2.0.*|kes_win.kud|oi6KPA9D/zLPBlQDU5F29xmK+a/Q+/VLIKUV4/Sa8ac=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|oi6KPA9D/zLPBlQDU5F29xmK+a/Q+/VLIKUV4/Sa8ac="/>
+	<Patches
+		Lang="ja"
+		SrvPath="kes11/kes11_7/aes56/ja"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/ja"
+		Name="kes_win.msi"
+		DSKM="sHcdkILFYfatWxfI+P/qMUWSegIeRwfF3ls1ZV/Sjrk="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|01779E92-E14B-42F9-A9A3-90201B855262;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|C6145B73-09C7-4CCA-A877-2C07D9077710"/>
+	<Patches
+		Lang="ja"
+		SrvPath="kes11/kes11_7/aes56/ja"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/ja"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|dgBWcx2qYeK9uzVo1KIUPNeHdBmOiMfXG17Yq6rwvXc=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|dgBWcx2qYeK9uzVo1KIUPNeHdBmOiMfXG17Yq6rwvXc=;
+			KES 11.2.0.*|license.txt|lJp5XNTjRPc/Wz4FiiVMgRor2CjVJH1hN9N0Winfb7o=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|lJp5XNTjRPc/Wz4FiiVMgRor2CjVJH1hN9N0Winfb7o="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|ja|01779E92-E14B-42F9-A9A3-90201B855262\;C6145B73-09C7-4CCA-A877-2C07D9077710|kes11/kes11_7/aes56/ja|%DataRoot%/Patches/kes11/kes11_7/aes56/ja|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|pl|583FC1AB-D48F-483E-9933-1527FA9EF6B9|kes11/kes11_7/aes56/pl|%DataRoot%/Patches/kes11/kes11_7/aes56/pl|cleaner.cab|2ZOUAynKT0myZ6ZmXpbzE94OLVzqkMYhNPElHQz/O/E=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|pl|EAA401D6-56A3-4231-8844-C54C7A4F1B85|kes11/kes11_7/aes56/pl|%DataRoot%/Patches/kes11/kes11_7/aes56/pl|cleaner.cab|2ZOUAynKT0myZ6ZmXpbzE94OLVzqkMYhNPElHQz/O/E="/>
+	<Patches
+		Lang="pl"
+		SrvPath="kes11/kes11_7/aes56/pl"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/pl"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|7m9vxIshEoCYeDkos5l1D9+oGVW92UIlqop0zbDR3So=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|7m9vxIshEoCYeDkos5l1D9+oGVW92UIlqop0zbDR3So=;
+			KES 11.2.0.*|kes_win.kud|qiX4GBnOjg/Z++JnQp7+9GvWOKN+x4b7Ih0on7Nt1qM=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|qiX4GBnOjg/Z++JnQp7+9GvWOKN+x4b7Ih0on7Nt1qM="/>
+	<Patches
+		Lang="pl"
+		SrvPath="kes11/kes11_7/aes56/pl"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/pl"
+		Name="kes_win.msi"
+		DSKM="cgYK2kkJJJGwcbUZJLlxytUHZH3fFYONPCUsOr1kmNY="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|583FC1AB-D48F-483E-9933-1527FA9EF6B9;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|EAA401D6-56A3-4231-8844-C54C7A4F1B85"/>
+	<Patches
+		Lang="pl"
+		SrvPath="kes11/kes11_7/aes56/pl"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/pl"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|i2oR/MMVV0uPcTwngpwZM3L4oB0Ht1iAqJAGtV1y8Js=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|i2oR/MMVV0uPcTwngpwZM3L4oB0Ht1iAqJAGtV1y8Js=;
+			KES 11.2.0.*|license.txt|4ctdRmVKzfW8CkfOSSNKd/WW21wLhiJYIx8aM04bjz4=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|4ctdRmVKzfW8CkfOSSNKd/WW21wLhiJYIx8aM04bjz4="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|pl|583FC1AB-D48F-483E-9933-1527FA9EF6B9\;EAA401D6-56A3-4231-8844-C54C7A4F1B85|kes11/kes11_7/aes56/pl|%DataRoot%/Patches/kes11/kes11_7/aes56/pl|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|pt_BR|90CA6C73-399C-4E94-AB9A-28C8C5A54223|kes11/kes11_7/aes56/pt-br|%DataRoot%/Patches/kes11/kes11_7/aes56/pt-BR|cleaner.cab|OFZZOUgX1RINlYqGDPFOlWO3YoiiOpSR5y0zWwWx3Ic=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|pt_BR|C4CBD819-441D-4BFE-8DBF-2034A569B7FC|kes11/kes11_7/aes56/pt-br|%DataRoot%/Patches/kes11/kes11_7/aes56/pt-BR|cleaner.cab|OFZZOUgX1RINlYqGDPFOlWO3YoiiOpSR5y0zWwWx3Ic="/>
+	<Patches
+		Lang="pt_BR"
+		SrvPath="kes11/kes11_7/aes56/pt-br"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/pt-BR"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|0xkFJpUbxrCgDJVALch+6Iy8Dd6l4YwVKXhYd+W2d4Y=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|0xkFJpUbxrCgDJVALch+6Iy8Dd6l4YwVKXhYd+W2d4Y=;
+			KES 11.2.0.*|kes_win.kud|KWbXuwrTpYLRYQsm9O1jc07QIYanBMKziniZJf4u9t8=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|KWbXuwrTpYLRYQsm9O1jc07QIYanBMKziniZJf4u9t8="/>
+	<Patches
+		Lang="pt_BR"
+		SrvPath="kes11/kes11_7/aes56/pt-br"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/pt-BR"
+		Name="kes_win.msi"
+		DSKM="28q+sckfYl9wEPGeC2mxzN6KQsBn9DH3gGr908rYgDg="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|90CA6C73-399C-4E94-AB9A-28C8C5A54223;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|C4CBD819-441D-4BFE-8DBF-2034A569B7FC"/>
+	<Patches
+		Lang="pt_BR"
+		SrvPath="kes11/kes11_7/aes56/pt-br"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/pt-BR"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|/WmaSCj1PW0BJDoGrSWtFgn2jjqj43vAfXKTVYWEq2Q=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|/WmaSCj1PW0BJDoGrSWtFgn2jjqj43vAfXKTVYWEq2Q=;
+			KES 11.2.0.*|license.txt|Jp6Ppba2F/XWCPgtIRAiiFAJVI5PeBU4WhACw5OmJ/A=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|Jp6Ppba2F/XWCPgtIRAiiFAJVI5PeBU4WhACw5OmJ/A="/>
+	<Patches
+		KSCMode="B2B"
+		Item="App;Lang;PackageID;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[2-4].0.*\;KES 21.2.16.*\;KES 21.3.10.*|pt_BR|90CA6C73-399C-4E94-AB9A-28C8C5A54223\;C4CBD819-441D-4BFE-8DBF-2034A569B7FC|kes11/kes11_7/aes56/pt-br|%DataRoot%/Patches/kes11/kes11_7/aes56/pt-BR|setup.ini|IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y=;
+			KES 11.2.0.*|ru|012EC396-A4FD-40DB-8C76-525382ABE9CD|kes11/kes11_7/aes56/ru|%DataRoot%/Patches/kes11/kes11_7/aes56/ru|cleaner.cab|031J30p3zc0YQ95HcXz/wNTCkjdnshRdD/m/1nFjBEQ=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ru|0095502F-5D3A-4ABC-B181-08C176F4CBAD|kes11/kes11_7/aes56/ru|%DataRoot%/Patches/kes11/kes11_7/aes56/ru|cleaner.cab|031J30p3zc0YQ95HcXz/wNTCkjdnshRdD/m/1nFjBEQ="/>
+	<Patches
+		Lang="ru"
+		SrvPath="kes11/kes11_7/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/ru"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|description.txt|5U78b7X1j6geIxGCfqdtRQ6Sykp+CRWDnPQBQIV0I4w=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|description.txt|5U78b7X1j6geIxGCfqdtRQ6Sykp+CRWDnPQBQIV0I4w=;
+			KES 11.2.0.*|kes_win.kud|p9rNIAd5tE3Tu8VcglEKXrqTer2oJ4/wUCwcZjQwgLc=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|kes_win.kud|p9rNIAd5tE3Tu8VcglEKXrqTer2oJ4/wUCwcZjQwgLc="/>
+	<Patches
+		Lang="ru"
+		SrvPath="kes11/kes11_7/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/ru"
+		Name="kes_win.msi"
+		DSKM="l3wJXCqauEWdZlnd14CDYhUgxFwOFczbigQm5owSMZc="
+		KSCMode="B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|012EC396-A4FD-40DB-8C76-525382ABE9CD;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|0095502F-5D3A-4ABC-B181-08C176F4CBAD"/>
+	<Patches
+		Lang="ru"
+		SrvPath="kes11/kes11_7/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/ru"
+		KSCMode="B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|rwXOwRIjrHHJ27UHBONklwJ7rJRkYCVIVJn2/OUMaFQ=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|rwXOwRIjrHHJ27UHBONklwJ7rJRkYCVIVJn2/OUMaFQ=;
+			KES 11.2.0.*|license.txt|FMyBeSojLsLqNkEctGd87zSukuBlBk7MG3hwuxEZIEw=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|FMyBeSojLsLqNkEctGd87zSukuBlBk7MG3hwuxEZIEw="/>
+	<Patch
+		App="KES 11.[2-4].0.*;KES 21.2.16.*;KES 21.3.10.*"
+		Lang="ru"
+		PackageID="012EC396-A4FD-40DB-8C76-525382ABE9CD;0095502F-5D3A-4ABC-B181-08C176F4CBAD"
+		SrvPath="kes11/kes11_7/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_7/aes56/ru"
+		Name="setup.ini"
+		DSKM="IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y="
+		KSCMode="B2B"/>
 	<File
 		CompID="RETR1901_KES11_CM56"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kes11_cm56-1901g.xml"
-		DSKM="XagGnZBIvj2tMCDQBoi2qcGZxvJb6aXu0BnkCOKbwKQ="/>
+		DSKM="CzZTi+1w3T7eFutShGO6jt45N0F7MiAas/Z8gSvgQvw="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kes11_cm56-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAApzoqLgaRkay2tmr5VGJCGib19Lo2svDVl8EivSw/d3IfwszpZ5b2S0ULDg97C9nUpzBzWFWCNo0rmZ5x+AmakBAB4JiAEAAAIAAigKAEtFUzExX0NNNTYDAAIoAwBCSU4BAAAJLemjSw0KOzoxMGEwRE9Kb0lQWkpYWHlkcGkrOG5Rbmd1VWZRaHQveERkM1FMQ3Z6eUpjUXA2N21uNFZaNkZCSGtTaksvdFNIYWhQUHE5NWZ0ODZvekVsUVZKUXJvdXpzJSU=</Key>
 </Update>
-;:10KTPK68yCZ/K9nRS2qpPyaLsT94jEQZHAvNw95zNT9rdbrwATX7ywm6xVEyeVbkRYMm+6hidfyckhaialIUKOmV%%
+;:10a3PG42llujWsEdNV2mZE045CrmlwiH4Ru8BQm03Cp8fcXzvq3CjEa6eAD5Ejt7qZ61eLvoT4QwfGsfmpba4Dz0%%
