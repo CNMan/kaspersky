@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-02-09T14:48:00.000Z-1644418087 -->
+	<!-- 2022-02-11T22:40:00.000Z-1644619231 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1187,16 +1187,16 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0033 2022-01-12T20:15:00.000Z-1642018544 -->
-	<Detect Id="{1741DD49-933A-3287-96F02070A68BE4B7}">
+	<Detect Id="{1741DD49-933A-3287-96F02070A68BE4B7}" ContentValue="?*" >
 		<Process CmdLine="powershell Get-Service -Name &#39;?DNS?&#39; | Select-Object -ExpandProperty Name" />
 	</Detect>
-	<Detect Id="{7C0F5D95-5430-6E87-94BD480DC1D12E4B}">
+	<Detect Id="{7C0F5D95-5430-6E87-94BD480DC1D12E4B}" ContentValue="?*" >
 		<Process CmdLine="powershell Get-Service -Name &#39;?Netlogon?&#39; | Select-Object -ExpandProperty Name" />
 	</Detect>
-	<Detect Id="{F2D618B9-760F-A5BF-B77D5E65F6A0B711}">
+	<Detect Id="{F2D618B9-760F-A5BF-B77D5E65F6A0B711}" ContentValue="?*" >
 		<Process CmdLine="powershell Get-Service -Name &#39;Dnscache&#39; | Select-Object -ExpandProperty Status" />
 	</Detect>
-	<Detect Id="{B0D0C718-F5F9-0A9F-FE1F7B20BAC55D87}">
+	<Detect Id="{B0D0C718-F5F9-0A9F-FE1F7B20BAC55D87}" ContentValue="?*" >
 		<Process CmdLine="powershell Get-Service -Name &#39;Netlogon&#39; | Select-Object -ExpandProperty Status" />
 	</Detect>
 	<Detect Id="{17FE3B6B-4FDD-1B4B-6D92F20D06AD91F4}" ContentValue="function script_*main&#10;                               &#10;                     }">
@@ -1249,7 +1249,7 @@
 	<Detect Id="{0F4F6D42-F7D1-8825-4E3A25E778AF2FE7}" ContentValue="*idictionary.exists(&#34;windows internet explorer*" />
 	<Detect Id="{F3C89482-4C60-A3F3-5EBEC2807BE3DFB6}" ContentValue="iswbemobjectex._01000002(&#34;-2147483646&#34;, &#34;software\microsoft\windows\currentversion\uninstall&#34;, &#34;windowsinstaller*idictionary.add(&#34;java*" />
 	<Detect Id="{5BFC6C97-5D5A-3AF2-ECE9658764C45CED}" ContentValue="iswbemobjectex._01800001();*c:\windows&#9;emp ccmsetup.exe&#34;, &#34;0&#34;, &#34;true&#34;);*" />
-	<Detect Id="{451EAA32-1DD4-73B0-FC8BB43FC389A6AF}">
+	<Detect Id="{451EAA32-1DD4-73B0-FC8BB43FC389A6AF}" ContentValue="?*" >
 		<Process CmdLine="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy AllSigned -NoProfile -NonInteractive -Command &#38; {$OutputEncoding = [Console]::OutputEncoding =[System.Text.Encoding]::UTF8;$scriptFileStream = [System.IO.File]::Open('C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\*.ps1' }" />
 	</Detect>
 <!-- Part 0033 2022-01-12T20:15:00.000Z-1642018544 -->
@@ -1271,12 +1271,90 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0035 2022-02-09T14:48:00.000Z-1644418087 -->
-	<Detect Id="{2FCD2BED-CFCE-98B0-A90EBC045684EC75}">
+	<Detect Id="{2FCD2BED-CFCE-98B0-A90EBC045684EC75}" ContentValue="?*">
 		<Process Path="*Lenovo\ImController\PluginHost*">
 			<Signature Subject="*Lenovo*" />
 		</Process>
 	</Detect>
 <!-- Part 0035 2022-02-09T14:48:00.000Z-1644418087 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0036 2022-02-10T19:33:00.000Z-1644521622 -->
+	<Detect Id="{7683EA45-998F-BA47-05335DB9E831724F}" ContentValue="@{?&#10;    moduleversion = &#39;2.0.0.0&#39;?&#10;    formatstoprocess = &#39;netsecurity.formats.ps1xml*aliasestoexport = @(?&#10;    )?&#10;}?&#10;?&#10;" />
+	<Detect Id="{A4E43676-0C73-8845-7B5BC91EDF40EDE6}" ContentValue="*$script:mymodule = $myinvocation.mycommand.scriptblock.module*__cmdletization_defaultvalueispresent = $false?&#10;          if ($psboundparameters.containskey(&#39;description&#39;)) {?&#10; " />
+	<Detect Id="{C84FDBFA-02C1-5F34-DFF390B2CA5B9785}" ContentValue="*$script:mymodule = $myinvocation.mycommand.scriptblock.module*export-modulemember -function &#39;set-netfirewallapplicationfilter&#39; -alias &#39;?&#39;?&#10;        ?&#10;" />
+	<Detect Id="{A4B79DE4-A149-A192-44F43D88223F20EF}" ContentValue="*$script:mymodule = $myinvocation.mycommand.scriptblock.module*    [cmdletbinding(supportsshouldprocess=$true, confirmimpact=&#39;medium&#39;," />
+	<Detect Id="{63983EB5-A519-A749-41BAC742A6ADCE77}" ContentValue="*            write-host &#34;the ou &#x60;&#34;$ignoredou&#x60;&#34; is ignored in $ignoredousfile file. the firewall rules will be created*">
+		<Process CmdLine=" -executionpolicy bypass -file cad-firewall.ps1 -executionpolicy unrestricted" />
+	</Detect>
+	<Detect Id="{058C5385-97C2-E510-1EC75101D833011C}" ContentValue="$hostname = $env:computername.tolower()?&#10;$mainou = *&#10;stop-transcript?&#10;">
+		<Process CmdLine=" -executionpolicy bypass -file cad-firewall.ps1 -executionpolicy unrestricted" />
+	</Detect>
+<!-- Part 0036 2022-02-10T19:33:00.000Z-1644521622 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0037 2022-02-11T22:40:00.000Z-1644619231 -->
+	<Detect Id="{98669323-3E51-563B-6FCC72C7E58FC738}" ContentValue="function getscriptpath()*write-host &#34;&#x60;nscript ended at [$end]&#34; -foregroundcolor cyan;&#9;">
+		<Process CmdLine="*activedirectorypro\ad pro toolkit\adhealthcheck.ps1&#39; 1" />
+	</Detect>
+	<Detect Id="{5EE08956-A0A3-A547-E0F81CBCC47941F5}" ContentValue="*elseif ([globalization.cultureinfo]::installeduiculture.lcid -eq &#39;1049&#39;)*savelogdb $ip $hostname $members $error $datetime}">
+		<Process CmdLine="powershell.exe -executionpolicy bypass -file \\b*machine\preferences\remove_disabled_users_from_local_admin_group_v2.ps1" />
+	</Detect>
+	<Detect Id="{742674CE-224F-FF89-09194A3E915E3A84}" ContentValue="*&#9;foreach ($member in (get-localgroupmember &#34;remote desktop users&#34;).name) { if ($member -eq &#34;aen\$rdpgroup&#34;) { $rdpgroupexist = $true; add-content $logfile &#34;group $rdpgroup already member&#34; } else { $rdpgroupexist = $false } }*">
+		<Process CmdLine="powershell.exe -executionpolicy bypass -windowstyle hidden -file \\aen.*machine\scripts\addadmadgroupslocally.ps1" />
+	</Detect>
+	<Detect Id="{6C144EFC-DED6-AE06-4116D50EC4451A95}" ContentValue="*propertys = get-item -path hklm:\$regpath\printspoolers -erroraction silentlycontinue | select-object -expandproperty property&#10;        if ($propertys*toastnotificationmanager]::createtoastnotifier($app).show($toastxml)&#10;    }        &#10;}&#10;??&#10;">
+		<Process CmdLine="*ce\powershell\rsscripts\*" />
+	</Detect>
+	<Detect Id="{CEEBF14C-1EEB-8BA2-A2589DA92AD1C411}" ContentValue="*if ($assemblyname.fullname -eq &#39;newtonsoft.json, version=6.0.0.0, culture=neutral, publickeytoken=30ad4fe6b2a6aeed&#39;) {*trace-leavinginvocation -invocationinfo $myinvocation?&#10;    }?&#10;}?&#10;" />
+	<Detect Id="{30B53AE1-8900-EEB5-2CFE7482D25C7A18}" ContentValue="*-subject &#34;enable/disable edilenler durum raporu&#34; -encoding $([system.text.encoding]::utf8) -smtpserver &#34;10.*">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe*enable_disable_bildirimi.ps1" />
+	</Detect>
+	<Detect Id="{0ADE91A0-6DB2-C7A1-631938584A907219}" ContentValue="*-subject &#34;active directory/exchange durum raporu&#34; -encoding $([system.text.encoding]::utf8) -smtpserver &#34;10.*">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe*sorgu_problemli_hesaplar3mailli.ps1" />
+	</Detect>
+	<Detect Id="{D3252491-0C14-2BF9-4FBC2C726E1D3484}" ContentValue="*-subject &#34;kilitlenme durum raporu&#34; -encoding $([system.text.encoding]::utf8) -smtpserver &#34;10.*">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe*kilitlenmeraporu.ps1" />
+	</Detect>
+	<Detect Id="{04984209-DBBA-9555-AAEC28CB36129DD0}" ContentValue="*function get-machinereportpath {?&#10;    return &#34;${env:allusersprofile}\microsoft\windows\wer\?eportqueue&#34;*servicecontroller&#34; $servicename?&#10;    [timespan]$timeout = new-object timespan(0,0,0,5,0)?&#10;    $sc.waitforstatus($servicestatus, $timeout)?&#10;}" />
+	<Detect Id="{640B86B9-7D67-362C-3E9C707B9ED08F01}" ContentValue="  &#10;&#10;        $userhash = @{}&#10;        get-ciminstance win32_useraccount -filter &#34;localaccount=true*enabled = $enabled&#10;            }&#10;        &#10;        }&#10;&#10;    ">
+		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{D42CBAC1-6A79-615C-F03EEB640B4F4FE8}" ContentValue="*formatstoprocess=&#34;activedirectory.format.ps1xml&#34;&#10;helpinfouri=&#34;https://go.microsoft.com/fwlink/?linkid=390743 &#34;&#10;cmdletstoexport=&#10;    &#34;add-adcentralaccesspolicymember*adserviceaccount&#34;,&#10;    &#34;uninstall-adserviceaccount&#34;,&#10;    &#34;unlock-adaccount&#34;&#10;}&#10;" />
+	<Detect Id="{F9FE1DFC-D16E-ED0A-083C22CB9CE03160}" ContentValue="*runnercommand $runner system.data.entity.migrations.enablemigrationscommand @( $enableautomaticmigrations.ispresent, $force.ispresent ) @{ &#39;contexttypename&#39; = $contexttypename }*dteversion = [system.text.regularexpressions.regex]::match($dte.version, &#39;^(&#x3f;&#60;version&#62;\d{1,2}(\.\d{1,2})&#x3f;)( \(.+\))&#x3f;$&#39;).groups[&#39;version&#39;].value*" />
+	<Detect Id="{84BA6BFB-7909-0050-BC69B0ACFE8F3B0B}" ContentValue="*runnercommand $runner system.data.entity.connectionfactoryconfig.addprovidercommand @( $invariantname, $typename )*while ($projects.count -ne 0)?&#10;    {?&#10;        $project = $projects.pop();?&#10;        " />
+	<Detect Id="{CAD595B7-B717-0216-2852C5D86BE5B7B5}" ContentValue="clear*until ($retryplease -eq &#34;n&#34;)">
+		<Process CmdLine="*psscripts\check*.exe" />
+	</Detect>
+	<Detect Id="{512A24E7-66DB-D7FA-B45C0B5EB68E48DA}" ContentValue="*if ($env:acc_cloud -eq $null)*if (($context -ne $null) -and $context.extendedproperties.containskey(&#34;default resource group&#34;)) {*" />
+	<Detect Id="{AB243043-0E4A-DEC0-2A3F7262DBE90B5E}" ContentValue="*iswbemservicesex.execquery(&#34;select partcomponent from win32_groupuser where groupcomponent = &#34;\\\\*- script finished&#34;);?&#10;itextstream.close();?&#10;">
+		<Process CmdLine="c:\windows\system32\cscript.exe //nologo c:\windows\ccm\systemtemp*" />
+	</Detect>
+	<Detect Id="{BE7EF5A9-53A0-438E-EA06694FF43B9A5A}" ContentValue="*global:installationdirectory = [system.io.path]::getfullpath(&#34;$psscriptroot\..\&#34;)*configurewerdumps.ps1 -enable $true -dumpfolder $dumpsfolder?&#10;}">
+		<Process CmdLine="*installscripts\\install*.ps1 -*" />
+	</Detect>
+	<Detect Id="{9BE23890-255A-E47A-B44E29580B827B91}" ContentValue="*nestedmodules = @(&#34;ps_dnsservercache_v1.0.0.cdxml&#34;, &#34;ps_dnsserverconditionalforwarder_v*dnsserverresponseratelimitingexceptionlist&#34;, &#34;set-dnsserverresponseratelimitingexceptionlist&#34; )?&#10;?&#10;        }?&#10;?&#10;" />
+	<Detect Id="{BBCD1992-136D-ECC9-AA6A7C84EEF0449A}" ContentValue=" = (get-item hklm:\hardware\description\system\centralprocessor\0).getvalue(&#34;vendoridentifier&#34;)*assembly = [appdomain]::currentdomain.definedynamicas" />
+	<Detect Id="{878AE9F2-A9A8-5029-DF9DDF36650DA0BC}" ContentValue="function new-connectiontojep *jeadnsserverresourcerecord -computername $hostname -zonename $zonename*">
+		<Process CmdLine="*modules\powershelleditorservices\powershelleditorservices.psd1&#39;; start*&#39; -featureflags @() &#34;" />
+	</Detect>
+	<Detect Id="{C3157E49-16B5-E068-2D1E2943AAD89247}" ContentValue="function new-connectiontojep *jeadnsserverresourcerecord -computername $hostname -zonename $zonename*">
+		<Process CmdLine="*modules\powershelleditorservices\powershelleditorservices.psd1&#39;; start*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{388AC71A-31FA-B7CC-CE9F936D34BD1A65}" ContentValue="*where-object { -not $_.name.contains(&#34;.tests.&#34;) } |*licensedextensionpath = join-path $extensionspath -childpath &#39;chocolatey\chocolatey.licensed.dll&#39;*" />
+	<Detect Id="{B9885524-F318-FDA6-720D949482738660}" ContentValue="*linkid=390743 &#34;?&#10;cmdletstoexport=?&#10;    &#34;add-adcentralaccesspolicymember*adserviceaccount&#34;,&#10;    &#34;uninstall-adserviceaccount&#34;,&#10;    &#34;unlock-adaccount&#34;?&#10;}?&#10;" />
+	<Detect Id="{412FD83B-216B-5EF1-5415C87D4328C546}" ContentValue="*yamlmappingnode&#34;, &#34;yamlsequencenode&#34;,*&#34;&#10;        }&#10;    }&#10;}&#10;&#10;initialize-assemblies | out-null&#10;" />
+	<Detect Id="{CB83D015-7A5E-3FD2-B4DAFB5CCF04DB7F}" ContentValue="*linkid=390769&#34;    ?&#10;&#9;&#9;    ?&#10;            nestedmodules = @(&#34;ps_dnsservercache_v*dnsservervirtualizationinstance&#34;, &#34;get-dnsservervirtualizationinstance&#34; )?&#10;?&#10;        }?&#10;?&#10;" />
+	<Detect Id="{E2EA9B17-5410-741B-8E92E49ED346FC32}" ContentValue="*wmi.execquery(select __relpath, processid from win32_process where processid = *wmi.execquery(select __relpath, filesize, __relpath from win32_* where name = &#34;c:\\windows\\temp\\positive technologies\\*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{A6CF252C-A7F0-511D-931B67E9D5B8E8CF}" ContentValue="*wmi.execquery(select __relpath, filesize, __relpath from win32_* where name = &#34;c:\\windows\\temp\\positive technologies\\*wmi.execquery(select __relpath, processid from win32_process where processid = *">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{5EAA7FFD-A1F8-A01F-B8E14C5D24F590D5}" ContentValue="iwshshell3.expandenvironmentstrings(&#34;%temp%&#34;);?&#10;iwshshell3.expandenvironmentstrings(&#34;%windir%&#34;);?&#10;ifilesystem3.createtextfile(&#34;c:\windows\temp\smslocaladmin.mof*" />
+<!-- Part 0037 2022-02-11T22:40:00.000Z-1644619231 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
