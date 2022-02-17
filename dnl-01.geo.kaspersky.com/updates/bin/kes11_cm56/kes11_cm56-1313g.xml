@@ -1,5 +1,5 @@
 <Update
-	Date="10022022 0737"
+	Date="16022022 0948"
 	ObjectType="2=KES11_CM56;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -1387,15 +1387,73 @@
 		Name="setup.ini"
 		DSKM="IKDE+RCMbLPfKfNIr68XZ6sL6OFzrJ2xmws8AAzQu5Y="
 		KSCMode="B2B"/>
+	<Patches
+		Lang="ru"
+		KSN="1"
+		SrvPath="kes11/kes11_8/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_8/aes56/ru"
+		Name="cleaner.cab"
+		DSKM="2+gOF5YvS4DdnZQ7VqzG0gBImUdNmPBBR560b1KNSV4="
+		KSCMode="Off;OnPrem"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|31D05AFA-2725-4386-AF30-B8B312DD6142;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*|0716E4E9-E61C-467D-BEC5-F45DC8A2BE0B"/>
+	<Patches
+		Lang="ru"
+		SrvPath="kes11/kes11_8/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_8/aes56/ru"
+		Name="description.txt"
+		DSKM="U7iZixCisbVecM43rmv3eEnjjyi9yXH6XdBObCRT8ig="
+		KSCMode="Off;OnPrem"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*"/>
+	<Patches
+		Lang="ru"
+		KSN="1"
+		SrvPath="kes11/kes11_8/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_8/aes56/ru"
+		Name="kes_win.kud"
+		DSKM="DWe5BmqhAF6x5lwA5BdjlUXvKmMKKMx7zVmX6fkTsqY="
+		KSCMode="Off;OnPrem"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*"/>
+	<Patches
+		Lang="ru"
+		KSN="1"
+		SrvPath="kes11/kes11_8/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_8/aes56/ru"
+		Name="kes_win.msi"
+		DSKM="xnnFci82CU5XfddR+eqciXWIDbDat67Y0Sl8gtJVxgc="
+		KSCMode="Off;OnPrem"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|31D05AFA-2725-4386-AF30-B8B312DD6142;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*|0716E4E9-E61C-467D-BEC5-F45DC8A2BE0B"/>
+	<Patches
+		Lang="ru"
+		SrvPath="kes11/kes11_8/aes56/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_8/aes56/ru"
+		KSCMode="Off;OnPrem"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|rwXOwRIjrHHJ27UHBONklwJ7rJRkYCVIVJn2/OUMaFQ=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*|ksn.txt|rwXOwRIjrHHJ27UHBONklwJ7rJRkYCVIVJn2/OUMaFQ=;
+			KES 11.2.0.*|license.txt|z3vkltB/EuJdEPEDPrkcaOxC3N161VVxGnEr0/Htseg=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*|license.txt|z3vkltB/EuJdEPEDPrkcaOxC3N161VVxGnEr0/Htseg="/>
 	<File
 		CompID="RETR1901_KES11_CM56"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kes11_cm56-1901g.xml"
-		DSKM="CzZTi+1w3T7eFutShGO6jt45N0F7MiAas/Z8gSvgQvw="/>
+		DSKM="uiIkyHHjyx3dgc1Z9ChlevLozFcTaO3prGkGLV4pagM="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kes11_cm56-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAApzoqLgaRkay2tmr5VGJCGib19Lo2svDVl8EivSw/d3IfwszpZ5b2S0ULDg97C9nUpzBzWFWCNo0rmZ5x+AmakBAB4JiAEAAAIAAigKAEtFUzExX0NNNTYDAAIoAwBCSU4BAAAJLemjSw0KOzoxMGEwRE9Kb0lQWkpYWHlkcGkrOG5Rbmd1VWZRaHQveERkM1FMQ3Z6eUpjUXA2N21uNFZaNkZCSGtTaksvdFNIYWhQUHE5NWZ0ODZvekVsUVZKUXJvdXpzJSU=</Key>
 </Update>
-;:10a3PG42llujWsEdNV2mZE045CrmlwiH4Ru8BQm03Cp8fcXzvq3CjEa6eAD5Ejt7qZ61eLvoT4QwfGsfmpba4Dz0%%
+;:10aFch+lxDE8Q31fBZit+qPyyuNkavunD5OLnS4SvtCX41aPDvghp3t0dar3dSaQSZrjP8yPU1tEhMvnzJ9Qu/JX%%
