@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-02-11T22:40:00.000Z-1644619231 -->
+	<!-- 2022-02-17T21:32:00.000Z-1645133547 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1108,7 +1108,7 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0031 2021-11-11T00:47:00.000Z-1636591624 -->
+<!-- Part 0031 2022-02-17T21:32:00.000Z-1645133547 -->
 	<Detect Id="{37EC4210-FDAA-3676-8129A55702075E8B}" ContentValue="get-ciminstance -query &#39;select *packetsdropped| convertto-json -compress">
 		<Process CmdLine="powershell.exe -noprofile -nologo -noninteractive -executionpolicy bypass -command -" />
 	</Detect>
@@ -1118,13 +1118,13 @@
 	<Detect Id="{2E7D0E93-73D0-67AC-93365E45CBB1C231}" ContentValue="*statusdescription&#34; -value $res.statusdescription;&#10;    return $ret;&#10;   &#10;  }&#10;}">
 		<Process CmdLine="*powershell\rsscripts\client-side*" />
 	</Detect>
-	<Detect Id="{56BA0FF8-A9B4-FDCA-D333528403780D0E}" ContentValue="*scriptuninstallationsucceeded=Сцен">
+	<Detect Id="{56BA0FF8-A9B4-FDCA-D333528403780D0E}" ContentValue="*scriptuninstallationsucceeded=Сцен*">
 		<Process CmdLine="*Конфигурация репозитория powershell*" />
 	</Detect>
 	<Detect Id="{7288C51B-C655-C5FB-7D2B6122F4EA0685}" ContentValue="umentlist $archivefilestreamargs*">
 		<Process CmdLine="*programdata\asus\asus system control interface\log\asus_linkremote_202*" />
 	</Detect>
-<!-- Part 0031 2021-11-11T00:47:00.000Z-1636591624 -->
+<!-- Part 0031 2022-02-17T21:32:00.000Z-1645133547 -->
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
