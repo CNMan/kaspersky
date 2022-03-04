@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-02-17T21:32:00.000Z-1645133547 -->
+	<!-- 2022-03-03T13:28:00.000Z-1646314124 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1355,6 +1355,99 @@
 	</Detect>
 	<Detect Id="{5EAA7FFD-A1F8-A01F-B8E14C5D24F590D5}" ContentValue="iwshshell3.expandenvironmentstrings(&#34;%temp%&#34;);?&#10;iwshshell3.expandenvironmentstrings(&#34;%windir%&#34;);?&#10;ifilesystem3.createtextfile(&#34;c:\windows\temp\smslocaladmin.mof*" />
 <!-- Part 0037 2022-02-11T22:40:00.000Z-1644619231 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
+	<Detect Id="{6455E9A6-D045-4D1F-CEE61642CF62503F}" ContentValue="*{ ?&#10; $_.gettype().invokemember(&#39;adspath&#39;,&#39;getproperty&#39;,$null,$($_),$null) ?&#10;}*">
+		<Process CmdLine="*.hol\scripts\scheduled_powershell\client.ps1" />
+	</Detect>
+	<Detect Id="{F7AB5537-80B3-8161-301D0BB8A56FE5F6}">
+		<Process CmdLine="*executionpolicy remotesigned -command $progresspreference = &#39;silentlycontinue&#39;; hyper-v\get-vm crc | select-object -expandproperty state" />
+	</Detect>
+	<Detect Id="{21EDDF16-9C7B-A66C-A38A6506E3687B39}" ContentValue="?*">
+		<Process>
+			<Signature Subject="*Palo Alto*" />
+		</Process>
+	</Detect>
+	<Detect Id="{F0B27E6A-F35E-A0E0-A6676F60A4D675A5}" ContentValue="{$_.last*.touniversaltime()}" />
+	<Detect Id="{97274EA9-999B-E97B-E1491BC7F2539591}" ContentValue="*retryconnectusingfdqn -and $newsession.session -eq $null -and $newsession.errorcode -ne 33137) {*m = (new-object system.text.regularexpressions.regex (&#39;\d+&#39;)).match($newsession.error.exception.message)*">
+		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{0FA22531-8847-6E77-A98F47FD1D49EFA4}" ContentValue="?*">
+		<Process Path="*Palo Alto*">
+			<Signature Subject="*OPSWAT*" />
+		</Process>
+	</Detect>
+	<Detect Id="{C17F9AF2-E9EE-6F25-236F6DB52EBA0E65}" ContentValue="*wprprofile = &#34;$psscriptroot\msft_mpperformancerecording.wprp&#34;*friendlyduration -match &#39;^(\d+)(?:\.(\d+))?(sec|ms|us)$&#39;)*" />
+	<Detect Id="{D3B64E1F-FF29-D7D1-46ED7F34ADEC3D81}" ContentValue="*rootmodule = &#39;hp.clientmanagement.psm1&#39;*set-hpbiossettingvaluesfromfile&#39;,*" />
+	<Detect Id="{24B81829-8F92-FC03-FBFC9EE64FAD6A5A}" ContentValue="*rootmodule = &#39;microsoft.powershell.odatautils.psm1&#39;*functionstoexport = @(&#39;export-odataendpointproxy&#39;)*" />
+	<Detect Id="{CAF11085-E3E9-3245-32FEC48F56B85027}" ContentValue="*nestedmodules = @( &#39;msft_mpcomputerstatus.cdxml&#39;,*functionstoexport = @( &#39;get-mppreference&#39;,*" />
+	<Detect Id="{2BC5D6CA-517E-30F6-FC742DECEFD55139}" ContentValue="tvalue = $null*scantime&#39;; parametertype = &#39;system.datetime&#39;; bindings = &#39;in&#39;; value = $__cmdletization_defaultvalue; isvaluepresent = $__cmdletization_defaultvalueispr" />
+	<Detect Id="{B7A6D1EE-89AA-FF3D-8229689ED0EBF543}">
+		<Process Path="C:\Program Files (x86)\Lester*">
+			<Signature Subject="Lester Information Technologies" />
+		</Process>
+	</Detect>
+	<Detect Id="{CA1A931B-5910-5FA4-52FB83881156FEE7}">
+		<Process Path="C:\Program Files\Lester*">
+			<Signature Subject="Lester Information Technologies" />
+		</Process>
+	</Detect>
+	<Detect Id="{50808820-FFB9-9FC2-96BAADCFF65869D8}">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy bypass -noprofile -nologo -windowstyle hidden -command &#38; { &#38; &#39;c:\windows\ccmcache\??\deploy-application.ps1&#39;; exit $lastexitcode }" />
+	</Detect>
+	<Detect Id="{29AAC3DE-A948-F00F-E529B98AE20831E5}" ContentValue="?*">
+		<Process Path="*TNIAUDITSERVICE\tniwinagent*" CmdLine="*wuatimeout*">
+			<Signature Subject="*Softinventive*" />
+		</Process>
+	</Detect>
+	<Detect Id="{9C75F12B-D256-68BD-577006DB50A9EF91}" ContentValue="?*">
+		<Process Path="*LSDeployment*">
+			<Signature Subject="*Lansweeper*" />
+		</Process>
+	</Detect>
+	<Detect Id="{EAC6E913-9A0A-2B92-0E345002D03E293E}">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{C0954326-B9EB-80ED-2C77CDBC48873B5E}" ContentValue="*genuine_config = $program_data + &#34;\autodesk\genuine autodesk service&#34;*legacyregistrypresent = $null -ne (get-item -path $registrypath).getvalue(&#34;autodesk genuine service&#34;)*">
+		<Process CmdLine="c:\windows\syswow64\msiexec.exe -embedding * e global\msi0000" />
+	</Detect>
+	<Detect Id="{B988B8D3-F68E-6BCF-F16BCE8AF906CC0F}" ContentValue="if(([security.principal.windowsprincipal] [security.principal.windowsidentity]::getcurrent()).isinrole([security.principal.windowsbuiltinrole] &#34;administrator&#34;)){?&#10;    get-process -includeusername -name &#34;genuineservice&#34; | foreach-object { $_.kill() }?&#10;}*">
+		<Process CmdLine="c:\windows\syswow64\msiexec.exe -embedding * e global\msi0000" />
+	</Detect>
+	<Detect Id="{3E4961C3-5F12-2DF7-8031F094ABFC1773}" ContentValue="*regread(&#34;hklm\software\wow6432node\microsoft\windows\currentversion\uninstall*">
+		<Process CmdLine="cscript  //u //nologo c:\windows\temp\fstmp\fs_apps.vbs application -timeout 120" />
+	</Detect>
+	<Detect Id="{B2580088-11FF-0E60-32B8D33D603A387A}" ContentValue="*regread(&#34;hklm\software\microsoft\windows\currentversion\uninstall*">
+		<Process CmdLine="cscript  //u //nologo c:\windows\temp\fstmp\fs_apps.vbs application -timeout 120" />
+	</Detect>
+	<Detect Id="{7818E157-6594-3CC9-45A93F7798701B53}" ContentValue="*software\wow6432node\microsoft\windows\currentversion\uninstall&#34;, &#34;unsupported*">
+		<Process CmdLine="cscript  //u //nologo c:\windows\temp\fstmp\fs_kb.vbs  -timeout 600" />
+	</Detect>
+	<Detect Id="{DE306813-9A74-66CF-1A725265CE08E6C2}" ContentValue="*software\microsoft\windows\currentversion\uninstall&#34;, &#34;unsupported*">
+		<Process CmdLine="cscript  //u //nologo c:\windows\temp\fstmp\fs_kb.vbs  -timeout 600" />
+	</Detect>
+	<Detect Id="{C0038AA7-58E6-56D2-A59349A168B6B31D}" ContentValue="idictionary.add(&#34;vendor*">
+		<Process CmdLine="wscript  /b parsexml.vbs base_agentdata.xml agentdata.xml" />
+	</Detect>
+	<Detect Id="{2E95355B-BE99-FFE0-C26EF4A4936EBEC0}" ContentValue="ixmldomattribute.value();&#13;&#10;idictionary.add(&#34;vendor*">
+		<Process CmdLine="wscript  /b parsexml.vbs base_agentdata.xml agentdata.xml" />
+	</Detect>
+	<Detect Id="{E23372A0-B4D7-24C2-A4F054F1D0B865FB}" ContentValue="ixmldomnamednodemap.item(&#34;3&#34;);*">
+		<Process CmdLine="wscript  /b parsexml.vbs base_agentdata.xml agentdata.xml" />
+	</Detect>
+	<Detect Id="{F6BBF0E4-0B0F-5CB8-5B42C1FFA8A20436}" ContentValue="*where-object {$_.name -match &#39;^verbs.&#39;} |*str.substring($str.lastindexof(&#39;verbs&#39;) + 5)*" />
+	<Detect Id="{E57090A6-EF2A-A0E4-D875AF463F2F8268}" ContentValue="*nestedmodules" />
+	<Detect Id="{B96BB785-8927-540B-C83488917F6DC843}" ContentValue="=" />
+	<Detect Id="{E4E23A7D-0CBE-10CE-2C87B756D1BB13BC}" ContentValue="@(" />
+	<Detect Id="{EBDEB5D8-F33D-9A70-3A02E1248466C0D1}" ContentValue="&#39;msft_mpcomputerstatus.cdxml&#39;,*functionstoexport" />
+	<Detect Id="{75915AA2-F489-4118-60687F554AB18796}" ContentValue="&#39;get-mppreference&#39;,*&#39;update-mpsignature&#39;,*" />
+	<Detect Id="{9A999246-FFD5-F49D-40CCC4DE743D4A4E}" ContentValue="@{?&#10;  guid = &#39;82b0bf19-c5cd-4c30-8db4-b458a4b84495&#39;?&#10;  rootmodule = &#39;./microsoft.teams.config.psm1&#39;*releasenotes = &#39;&#39;?&#10;    }?&#10;  }?&#10;}?&#10;?&#10;# sig*" />
+	<Detect Id="{E880ECB8-1BA8-2FBD-3191257B0CE974BA}" ContentValue="*nestedmodules=@(&#34;networkswitchconfiguration.psm1&#34;, &#34;networkswitchethernetport.psm1*formatstoprocess = @(&#39;networkswitchmanager.format.ps1xml&#39;)*" />
+	<Detect Id="{5AFC7973-E502-A1F8-DC73A694BBF5298F}" ContentValue="*smapi script cmdlets*function createerrorrecord*errorrecord = new-object system.management.automation.errorrecord @($exception, $errorid, $errorcategory, $targetobject)*pstypename(&#34;microsoft.management.infrastructure.ciminstance#root/microsoft/windows/storage/msft_physicaldisk&#34;)]*" />
+	<Detect Id="{12A1F0F9-A960-E453-BD881C517D39CD25}" ContentValue="??&#10;# module manifest for module &#39;vmware.*companyname = &#39;vmware, inc.&#39;*variablestoexport = &#39;&#x2A;&#39;*# sig # begin signature block*" />
+<!-- Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
