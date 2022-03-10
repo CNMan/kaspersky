@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-01-14T15:24:00.000Z-1642173863 -->
+	<!-- 2022-03-04T23:29:00.000Z-1646436563 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -245,6 +245,20 @@
 	<Image Id="{75BB350D-7575-6FCF-D4ED53CEF96EDA1E}" CmdLine="c:\windows\system32\cmd.exe  /s /d /c ( echo set feedback off &#x26; echo set lines 2000*" />
 	<Image Id="{41EB1778-3B3A-7042-2A923B1F0A7544D6}" CmdLine="c:\windows\system32\cmd.exe /c (echo define report_type=html; &#x26; echo define dbid*" />
 <!-- Part 0007 2022-01-14T15:24:00.000Z-1642173863 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0008 2022-03-04T23:29:00.000Z-1646436563 -->
+	<Image Id="{02FBFBC3-751B-1178-865CEFF35F7F58D0}" CmdLine="c:\windows\system32\cmd.exe /c powershell.exe -noninteractive -command $servicename=&#x27;*if ($srv) { echo $srv.status} else { echo &#x27;=notfound=&#x27; } " />
+	<Image Id="{379EEBEF-02AB-4D9D-27534F8FA90082D6}" CmdLine="c:\windows\system32\cmd.exe /c powershell.exe -noninteractive -command if (!( get-service &#x27;*&#x27; -erroraction silentlycontinue ) ) { exit 1 }" />
+	<Image Id="{0A1AEBD3-CFE4-1406-7FF9C0BB5CD52EA8}" CmdLine="c:\windows\system32\cmd.exe /c powershell.exe -noninteractive -command $srv=get-service &#x27;*&#x27; -erroraction silentlycontinue;\t\t\t\t\tif ($srv) { echo $srv.status } else { exit 1 }" />
+	<Image Id="{CBB17BA3-6817-88D5-FC461664B3997D99}" CmdLine="*powershell.exe -noninteractive -command $servicename=&#x27;*if ($srv) { echo $srv.status} else { echo &#x27;=notfound=&#x27; } " />
+	<Image Id="{EEB33D71-2229-85AE-6FB4041746F891EB}" CmdLine="*powershell.exe -noninteractive -command if (!( get-service &#x27;*&#x27; -erroraction silentlycontinue ) ) { exit 1 }" />
+	<Image Id="{15BD83CD-A39E-B877-41CE70673AD8FFCB}" CmdLine="*powershell.exe -noninteractive -command $srv=get-service &#x27;*&#x27; -erroraction silentlycontinue;\t\t\t\t\tif ($srv) { echo $srv.status } else { exit 1 }" />
+	<Image Id="{7B8D4A2D-A375-2A8C-45F21ACD062971CF}" CmdLine="c:\program files\pandora_agent\util\autodiscover.exe  --default" />
+	<Image Id="{816942A8-743F-E466-A2BFC2B8403DBAA6}" CmdLine="powershell get-service -name &#x27;*&#x27; | select-object -expandproperty name" />
+	<Image Id="{F965B4D1-80AD-BB76-23CF239D209FFCAA}" CmdLine="powershell get-service -name &#x27;*&#x27; | select-object -expandproperty status" />
+<!-- Part 0008 2022-03-04T23:29:00.000Z-1646436563 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

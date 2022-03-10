@@ -1,5 +1,5 @@
 <Update
-	Date="03122020 0756"
+	Date="09032022 0942"
 	ObjectType="2=KAV18;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -1643,8 +1643,17 @@
 			18.0.0.405_kis_l|%ProductFolder%|remove_incompatible_applications.exe|yujGSPDbukxGkGRn+3uhmKdNIffN1Yu5ouw4jBwbAAQ=;
 			18.0.0.405_kis_l/kru|%ProductFolder%\\\\Kaspersky Restore Utility|restore_tool_service.dll|S5B9/zu9HImptcqt3sYIrr5gjBb0TaWFOL8/2kuzTeI=;
 			18.0.0.405_kis_l|%ProductFolder%|safe_banking.dll|KIBkUrmecUkx5YSIg1IPDZE0XpbM5ib/y5Bjqoxh+6E=;
-			18.0.0.405_kis_l/patch|%ProductFolder%\\\\patch|system_interceptors.dll|YaqtL4haPqPfJEkLS5S3tDTBIhIQVfaPyG9k2cJrY5g=;
-			18.0.0.405_kis_l|%ProductFolder%|traffic_processing.dll|LS4+PrGZFXJgW0BPCB9io2qfk8ao6MZWJnTna5s6Zzw="/>
+			18.0.0.405_kis_l/patch|%ProductFolder%\\\\patch|system_interceptors.dll|YaqtL4haPqPfJEkLS5S3tDTBIhIQVfaPyG9k2cJrY5g="/>
+	<Patch
+		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
+		Target="[13108-262143]"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="l"
+		SrvPath="18.0.0.405_kis_l"
+		LocalPath="%ProductFolder%"
+		Name="traffic_processing.dll"
+		DSKM="LS4+PrGZFXJgW0BPCB9io2qfk8ao6MZWJnTna5s6Zzw="/>
 	<Patch
 		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
 		SysArch="x64"
@@ -2328,19 +2337,38 @@
 	<Patches
 		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
 		ApplyPeriod="168"
+		ApplyAction="restart_os"
 		FixName="m"
-		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		SrvPath="18.0.0.405_kis_m"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
 		List="
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|kis2018mp0m.msp|t1IjLSgsM9yJnozunxSNzj3Qksv2PnhUGAJDYqT0brs=;
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|product_metainfo.dll|q7RBFdgglvxYHIMfrabiksF4GEsNXy201hojNfkPgvM=;
-			restart_none|18.0.0.405_kis_m|%ProductFolder%|ver_info.json|zpvKl4G8s+JS4hi6FszI/IvWaGQOVXjoQQjL6PjQsRs=;
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|securityproductinformation.ini|SXwn8WxXRekJw43AJzprCTKOeIjYyCXiidSq+Z4f7p4=;
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|bl.ppl|dWhbGFbhXEPBV7k56Gl31iqXb9f4YkMeCLERHbxmuMA=;
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|kasperskylab.kis.ui.dll|0delGISrndzi8jwuDwxi0BT4DQthEal/7UBdoSZEOrs=;
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|kasperskylab.kis.ui.shell.dll|82I/zsYItuKp8mNezjk2p0gfS+gFNvSKLroOHodeVxk=;
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|4LEetgkqCzyJwhJ8v5vgi1uRsry12bYc9PyT/Wf0Cy4=;
-			restart_os|18.0.0.405_kis_m/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|4LEetgkqCzyJwhJ8v5vgi1uRsry12bYc9PyT/Wf0Cy4=;
-			restart_os|18.0.0.405_kis_m|%ProductFolder%|kpm_integration.dll|eHgvcKfQ0sJepznJZhXcu0LaoY11jLPgqCFDNUtKf8w="/>
+			kis2018mp0m.msp|t1IjLSgsM9yJnozunxSNzj3Qksv2PnhUGAJDYqT0brs=;
+			product_metainfo.dll|q7RBFdgglvxYHIMfrabiksF4GEsNXy201hojNfkPgvM="/>
+	<Patches
+		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
+		Target="[13108-262143]"
+		ApplyPeriod="168"
+		FixName="m"
+		SrvPath="18.0.0.405_kis_m"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_none|ver_info.json|zpvKl4G8s+JS4hi6FszI/IvWaGQOVXjoQQjL6PjQsRs=;
+			restart_os|securityproductinformation.ini|SXwn8WxXRekJw43AJzprCTKOeIjYyCXiidSq+Z4f7p4="/>
+	<Patches
+		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="m"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			18.0.0.405_kis_m|%ProductFolder%|bl.ppl|dWhbGFbhXEPBV7k56Gl31iqXb9f4YkMeCLERHbxmuMA=;
+			18.0.0.405_kis_m|%ProductFolder%|kasperskylab.kis.ui.dll|0delGISrndzi8jwuDwxi0BT4DQthEal/7UBdoSZEOrs=;
+			18.0.0.405_kis_m|%ProductFolder%|kasperskylab.kis.ui.shell.dll|82I/zsYItuKp8mNezjk2p0gfS+gFNvSKLroOHodeVxk=;
+			18.0.0.405_kis_m|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|4LEetgkqCzyJwhJ8v5vgi1uRsry12bYc9PyT/Wf0Cy4=;
+			18.0.0.405_kis_m/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|4LEetgkqCzyJwhJ8v5vgi1uRsry12bYc9PyT/Wf0Cy4=;
+			18.0.0.405_kis_m|%ProductFolder%|kpm_integration.dll|eHgvcKfQ0sJepznJZhXcu0LaoY11jLPgqCFDNUtKf8w="/>
 	<Patch
 		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
 		SysArch="x64"
@@ -2442,9 +2470,21 @@
 			zh-Hans|18.0.0.405_kis_m/skin/resources/zh-Hans/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hans\\\\locs|licensemanager.lt|4SwctMJu8+XqOrSm836Vg5M70HNwqGLRdX8p+IJ3KP4=;
 			zh-Hant-TW-xasus|18.0.0.405_kis_m/skin/resources/zh-Hant-TW-xasus/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant-TW-xasus\\\\locs|licensemanager.lt|fQtUg9j8e4mGi3yhkZUJIO38YLXS+/Kiqkb+DJXCyUo=;
 			zh-Hant|18.0.0.405_kis_m/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|licensemanager.lt|p1skR99BRJvkZzDtr7gA84ncwQal1zQCUyRIMFyrkxY="/>
+	<Patches
+		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
+		Target="[0-13107]"
+		ApplyPeriod="168"
+		FixName="n"
+		SrvPath="18.0.0.405_kis_n"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_none|ver_info.json|6PAOLcSn2bW1YiKPxdxVVvO1PKD/uchnfX8B82t2dGI=;
+			restart_os|securityproductinformation.ini|4hyd/JdNujR/oIS+Y9DIYp34DFWY3ruZdsU7E/YAfzA=;
+			restart_os|traffic_processing.dll|GgPzQ64CbTn3kqaL8sG3iWgo6Zv98gMr6BEhpvSaKK8="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
-		Name="kav18-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGPXvTOqBz/Wdl9Ov7CyrzTIHFmpYyKyx/uc7NOhDEeJAyVRZuD8optPA903gCIDxCJ/A3QOXpHW0ou49CMyC8gBAB4JeQEAAAIAAigFAEtBVjE4AwACKAMAQklOAQAACb+sH6cNCjs6MTBLNUM3Lzl1dXlpRUJZbzVRSC8weCswY0lIcFNiQWdNTXRqTTRsS1dUMkpsaTA2cXZqRU9YUHdjVWJZalJSRFdZWWFqbHFEQXZuRkF4R0loWktBSzRWQyUl</Key>
+		Name="kav18-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGPXvTOqBz/Wdl9Ov7CyrzTIHFmpYyKyx/uc7NOhDEeJAyVRZuD8optPA903gCIDxCJ/A3QOXpHW0ou49CMyC8gBAB4JeQEAAAIAAigFAEtBVjE4AwACKAMAQklOAQAACb+sH6cNCjs6MTBxSVJncGg1Ry80a1NWMXAvNHV3emc2MDdqMW1KdS9TNHJncFFsTVFyZG1ZRTFUTzg0b3ZYeGl6UGpOZTY4RElwRGh1YTNzYnovU29FUldKb1FjU0NycyUl</Key>
 </Update>
-;:10KTO6+GZ/u7h1o+T4vSGijOrswvIFpv8PLQ3zSpMfVlaxXGd0mzK066BvgbfjoTpWqvW/BqEVlx4CVC9oqEW/Zt%%
+;:10qMuHDI4Y7Xq1/nopRXXjkhwfRxzWgZKdGzvuomHKR0jvZpaR2HtKqKw0p9NyfKc0AWZITGgLlZtKeXXoogv77M%%

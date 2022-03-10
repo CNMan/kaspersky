@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-03-03T13:28:00.000Z-1646314124 -->
+	<!-- 2022-03-04T23:31:00.000Z-1646436676 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1448,6 +1448,14 @@
 	<Detect Id="{5AFC7973-E502-A1F8-DC73A694BBF5298F}" ContentValue="*smapi script cmdlets*function createerrorrecord*errorrecord = new-object system.management.automation.errorrecord @($exception, $errorid, $errorcategory, $targetobject)*pstypename(&#34;microsoft.management.infrastructure.ciminstance#root/microsoft/windows/storage/msft_physicaldisk&#34;)]*" />
 	<Detect Id="{12A1F0F9-A960-E453-BD881C517D39CD25}" ContentValue="??&#10;# module manifest for module &#39;vmware.*companyname = &#39;vmware, inc.&#39;*variablestoexport = &#39;&#x2A;&#39;*# sig # begin signature block*" />
 <!-- Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0039 2022-03-04T23:31:00.000Z-1646436676 -->
+	<Detect Id="{F3A9F4E5-C564-8F42-F5C848B629668494}">
+		<Process CmdLine="*powershell.exe -noninteractive -command $servicename=&#x27;*if ($srv) { echo $srv.status} else { echo &#x27;=notfound=&#x27; } " />
+	</Detect>
+<!-- Part 0039 2022-03-04T23:31:00.000Z-1646436676 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
