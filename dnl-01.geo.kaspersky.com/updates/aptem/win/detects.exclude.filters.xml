@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-03-04T23:31:00.000Z-1646436676 -->
+	<!-- 2022-03-09T19:29:00.000Z-1646854197 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1358,15 +1358,21 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
+<!-- Old Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
+<!-- Part 0038 2022-03-09T19:29:00.000Z-1646854197 -->
 	<Detect Id="{6455E9A6-D045-4D1F-CEE61642CF62503F}" ContentValue="*{ ?&#10; $_.gettype().invokemember(&#39;adspath&#39;,&#39;getproperty&#39;,$null,$($_),$null) ?&#10;}*">
 		<Process CmdLine="*.hol\scripts\scheduled_powershell\client.ps1" />
 	</Detect>
 	<Detect Id="{F7AB5537-80B3-8161-301D0BB8A56FE5F6}">
 		<Process CmdLine="*executionpolicy remotesigned -command $progresspreference = &#39;silentlycontinue&#39;; hyper-v\get-vm crc | select-object -expandproperty state" />
 	</Detect>
-	<Detect Id="{21EDDF16-9C7B-A66C-A38A6506E3687B39}" ContentValue="?*">
-		<Process>
+	<Detect Id="{79A4917C-7C0A-037C-D620A39FBE24B45D}" ContentValue="?*">
+		<Process Path="c:\program files\palo alto*">
+			<Signature Subject="*Palo Alto*" />
+		</Process>
+	</Detect>
+	<Detect Id="{B4261766-FE22-806C-0CBC28830ACB368F}" ContentValue="?*">
+		<Process Path="c:\Program Files (x86)\palo alto*">
 			<Signature Subject="*Palo Alto*" />
 		</Process>
 	</Detect>
@@ -1447,7 +1453,8 @@
 	<Detect Id="{E880ECB8-1BA8-2FBD-3191257B0CE974BA}" ContentValue="*nestedmodules=@(&#34;networkswitchconfiguration.psm1&#34;, &#34;networkswitchethernetport.psm1*formatstoprocess = @(&#39;networkswitchmanager.format.ps1xml&#39;)*" />
 	<Detect Id="{5AFC7973-E502-A1F8-DC73A694BBF5298F}" ContentValue="*smapi script cmdlets*function createerrorrecord*errorrecord = new-object system.management.automation.errorrecord @($exception, $errorid, $errorcategory, $targetobject)*pstypename(&#34;microsoft.management.infrastructure.ciminstance#root/microsoft/windows/storage/msft_physicaldisk&#34;)]*" />
 	<Detect Id="{12A1F0F9-A960-E453-BD881C517D39CD25}" ContentValue="??&#10;# module manifest for module &#39;vmware.*companyname = &#39;vmware, inc.&#39;*variablestoexport = &#39;&#x2A;&#39;*# sig # begin signature block*" />
-<!-- Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
+<!-- Old Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
+<!-- Part 0038 2022-03-09T19:29:00.000Z-1646854197 -->
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
