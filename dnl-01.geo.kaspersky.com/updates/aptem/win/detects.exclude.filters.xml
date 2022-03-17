@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-03-14T13:22:00.000Z-1647264174 -->
+	<!-- 2022-03-16T13:05:00.000Z-1647435901 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1466,7 +1466,7 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0040 2022-03-11T16:50:00.000Z-1647017439 -->
+<!-- Part 0040 2022-03-15T14:16:00.000Z-1647353814 -->
 	<Detect Id="{C2566038-37F5-8656-57AF34BEB4DEFDBE}" ContentValue="setpropvalue.hdefkey*">
 		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
 			<Signature Subject="*lansweeper*" />
@@ -1575,6 +1575,150 @@
 		<Process CmdLine="c:\windows\syswow64\msiexec.exe -embedding * e global\msi0000" />
 	</Detect>
 <!-- Part 0041 2022-03-14T13:22:00.000Z-1647264174 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0042 2022-03-15T14:39:00.000Z-1647355147 -->
+	<Detect Id="{4B380E82-A8E4-23E7-4E423E6F68DD0E50}" ContentValue="ifilesystem3.getfileversion(&#34;c:\windows\lsdeployment\remotedeployment_x64.exe*">
+		<Process Path="*lsdeployment*">
+			<Signature Subject="*Lansweeper*" />
+		</Process>
+	</Detect>
+	<Detect Id="{1CB39BD0-57F3-C7F4-D2397215C5F0EF3D}" ContentValue="function get-filehash*pathstoprocess += resolve-path -literalpath $literalpath | foreach-object providerpath*ljtk7ws1gyw0wtyfgbacgbhv2aofx5e3jm3/to9rqrkxqv8=*" />
+	<Detect Id="{CF1E4C8E-BA32-5EFC-DD1D6934BCCE9767}" ContentValue="function get-filehash*function getstreamhash*s5hhtmzkz47z2m+/dswq7nmz1pfjfojtemw8niuupnozwrg=*" />
+	<Detect Id="{025BF61D-04C1-801E-3BA81E869EC00170}" ContentValue="?*">
+		<Process CmdLine="powershell.exe -executionpolicy restricted -command write-host &#39;final result: 1&#39;;" />
+	</Detect>
+	<Detect Id="{FF37EBD8-99F1-B7AE-40C357529D7B34AD}" ContentValue="?*">
+		<Process CmdLine="*logname &#39;microsoft-windows-windows defender/operational&#39; -filterxpath*" />
+	</Detect>
+	<Detect Id="{9DC8B745-D72C-D95C-D00AB307BB732104}" ContentValue="*char]&#39;i&#39; = &#34;ш&#34;?&#10;    [cha" />
+<!-- Part 0042 2022-03-15T14:39:00.000Z-1647355147 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0043 2022-03-16T13:05:00.000Z-1647435901 -->
+	<Detect Id="{223C4A5C-6CC8-AA6A-BC903D3FBA739BF7}" ContentValue="function anonymous() {&#10;return *spec_generic&#34;}]&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{81039002-AD88-BBC8-8CB5013B86B14E9B}" ContentValue="function anonymous() {&#10;return *spec_generic&#34;}]&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{F14EF990-BFF4-CC90-E356CFE39F1A6B07}" ContentValue="function anonymous() {&#10;return *jobcurrentshortcut&#34;:&#34;2&#34;}&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{B305DB1D-9E79-96DC-C204086EB641D441}" ContentValue="function anonymous() {&#10;return *jobcurrentshortcut&#34;:&#34;2&#34;}&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{050B2129-C51B-B1CF-D9847655FF96D86E}" ContentValue="function anonymous() {&#10;return *jobextrauisettings&#39;:{&#39;default&#39;:&#39;&#39;}}&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{0B0D9820-938B-09BE-4857FF5D3EEE7951}" ContentValue="function anonymous() {&#10;return *jobextrauisettings&#39;:{&#39;default&#39;:&#39;&#39;}}&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{D4A6EC27-DC12-330D-91D2419D597CEE3D}" ContentValue="function anonymous() {&#10;return *pagemediasizemediasizeheight&#34;:{}}&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{F24764A4-AF3A-C1D9-AC42C05CDCF2D056}" ContentValue="function anonymous() {&#10;return *pagemediasizemediasizeheight&#34;:{}}&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{E7590268-6DB5-3288-76826F06BFC3EBF5}" ContentValue="function anonymous() {&#10;return *jobextrauisettings&#34;:&#34;2&#34;}&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{30AA5922-2BC5-BEA8-882D8471E508513E}" ContentValue="function anonymous() {&#10;return *jobextrauisettings&#34;:&#34;2&#34;}&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{98C4EB89-0AAD-4F2E-54E08AE6ED5B023B}" ContentValue="function anonymous() {&#10;return *jobcurrentshortcut&#34;:&#34;default&#34;}&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{0439D49D-65A4-2616-F64E02082F9D51FE}" ContentValue="function anonymous() {&#10;return *jobcurrentshortcut&#34;:&#34;default&#34;}&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{258E0F79-9EAE-BF25-E63E32F05AD2CE17}" ContentValue="function anonymous() {&#10;return *pageorientation&#34;:&#34;psk:landscape&#34;}&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{4EC1D417-AF18-DA0A-911A49A9D8688E57}" ContentValue="function anonymous() {&#10;return *pageorientation&#34;:&#34;psk:landscape&#34;}&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{9C666665-6BE3-0194-54F074772220E56D}" ContentValue="function anonymous() {&#10;return *pagemediasizemediasizeheight&#34;:&#34;????00&#34;}&#10;}">
+		<Process Path="program files*microsoft*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{3216AF22-5E56-128E-BC49A17C30FDFB42}" ContentValue="function anonymous() {&#10;return *pagemediasizemediasizeheight&#34;:&#34;????00&#34;}&#10;}">
+		<Process Path="c:\windows\*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{505EA3F4-A14A-235A-A5A6225B265743E5}" ContentValue="function anonymous() {&#10;return *spec_generic&#34;}]&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+	<Detect Id="{E2FF7899-0AD9-60AE-0F61AA9295BAFB59}" ContentValue="function anonymous() {&#10;return *jobcurrentshortcut&#34;:&#34;2&#34;}&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+	<Detect Id="{49D9571D-A977-42D9-363154D004B393CE}" ContentValue="function anonymous() {&#10;return *jobextrauisettings&#39;:{&#39;default&#39;:&#39;&#39;}}&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+	<Detect Id="{3751A4BF-25B5-2CD1-7F3113F2593AF2F7}" ContentValue="function anonymous() {&#10;return *pagemediasizemediasizeheight&#34;:{}}&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+	<Detect Id="{D5B6D3C7-C00F-0D11-8CD00632CAC85940}" ContentValue="function anonymous() {&#10;return *jobextrauisettings&#34;:&#34;2&#34;}&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+	<Detect Id="{03682063-0324-182A-0AD5A6049D115FD7}" ContentValue="function anonymous() {&#10;return *jobcurrentshortcut&#34;:&#34;default&#34;}&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+	<Detect Id="{42283BA2-9BE2-1329-2B067EB39DEC1D46}" ContentValue="function anonymous() {&#10;return *pageorientation&#34;:&#34;psk:landscape&#34;}&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+	<Detect Id="{5B7B40AE-F74B-B656-12CFC4FF282B5A26}" ContentValue="function anonymous() {&#10;return *pagemediasizemediasizeheight&#34;:&#34;????00&#34;}&#10;}">
+		<Process Path="*google\chrome*">
+			<Signature Subject="*google*" />
+		</Process>
+	</Detect>
+<!-- Part 0043 2022-03-16T13:05:00.000Z-1647435901 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
