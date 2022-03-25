@@ -1,5 +1,5 @@
 <Update
-	Date="17032022 0810"
+	Date="24032022 0754"
 	ObjectType="2=KAV18;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -1646,16 +1646,6 @@
 			18.0.0.405_kis_l/patch|%ProductFolder%\\\\patch|system_interceptors.dll|YaqtL4haPqPfJEkLS5S3tDTBIhIQVfaPyG9k2cJrY5g="/>
 	<Patch
 		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
-		Target="[131072-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="l"
-		SrvPath="18.0.0.405_kis_l"
-		LocalPath="%ProductFolder%"
-		Name="traffic_processing.dll"
-		DSKM="LS4+PrGZFXJgW0BPCB9io2qfk8ao6MZWJnTna5s6Zzw="/>
-	<Patch
-		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
 		SysArch="x64"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
@@ -2339,30 +2329,10 @@
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="m"
-		SrvPath="18.0.0.405_kis_m"
-		LocalPath="%ProductFolder%"
-		Item="Name;DSKM"
-		List="
-			kis2018mp0m.msp|t1IjLSgsM9yJnozunxSNzj3Qksv2PnhUGAJDYqT0brs=;
-			product_metainfo.dll|q7RBFdgglvxYHIMfrabiksF4GEsNXy201hojNfkPgvM="/>
-	<Patches
-		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
-		Target="[131072-262143]"
-		ApplyPeriod="168"
-		FixName="m"
-		SrvPath="18.0.0.405_kis_m"
-		LocalPath="%ProductFolder%"
-		Item="ApplyAction;Name;DSKM"
-		List="
-			restart_none|ver_info.json|zpvKl4G8s+JS4hi6FszI/IvWaGQOVXjoQQjL6PjQsRs=;
-			restart_os|securityproductinformation.ini|SXwn8WxXRekJw43AJzprCTKOeIjYyCXiidSq+Z4f7p4="/>
-	<Patches
-		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="m"
 		Item="SrvPath;LocalPath;Name;DSKM"
 		List="
+			18.0.0.405_kis_m|%ProductFolder%|kis2018mp0m.msp|t1IjLSgsM9yJnozunxSNzj3Qksv2PnhUGAJDYqT0brs=;
+			18.0.0.405_kis_m|%ProductFolder%|product_metainfo.dll|q7RBFdgglvxYHIMfrabiksF4GEsNXy201hojNfkPgvM=;
 			18.0.0.405_kis_m|%ProductFolder%|bl.ppl|dWhbGFbhXEPBV7k56Gl31iqXb9f4YkMeCLERHbxmuMA=;
 			18.0.0.405_kis_m|%ProductFolder%|kasperskylab.kis.ui.dll|0delGISrndzi8jwuDwxi0BT4DQthEal/7UBdoSZEOrs=;
 			18.0.0.405_kis_m|%ProductFolder%|kasperskylab.kis.ui.shell.dll|82I/zsYItuKp8mNezjk2p0gfS+gFNvSKLroOHodeVxk=;
@@ -2472,7 +2442,6 @@
 			zh-Hant|18.0.0.405_kis_m/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|licensemanager.lt|p1skR99BRJvkZzDtr7gA84ncwQal1zQCUyRIMFyrkxY="/>
 	<Patches
 		App="KAV|KIS|PURE|KFA|SAAS 18.0.0.405"
-		Target="[0-131071]"
 		ApplyPeriod="168"
 		FixName="n"
 		SrvPath="18.0.0.405_kis_n"
@@ -2487,4 +2456,4 @@
 		LocalPath="%DSKM%"
 		Name="kav18-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGPXvTOqBz/Wdl9Ov7CyrzTIHFmpYyKyx/uc7NOhDEeJAyVRZuD8optPA903gCIDxCJ/A3QOXpHW0ou49CMyC8gBAB4JeQEAAAIAAigFAEtBVjE4AwACKAMAQklOAQAACb+sH6cNCjs6MTBxSVJncGg1Ry80a1NWMXAvNHV3emc2MDdqMW1KdS9TNHJncFFsTVFyZG1ZRTFUTzg0b3ZYeGl6UGpOZTY4RElwRGh1YTNzYnovU29FUldKb1FjU0NycyUl</Key>
 </Update>
-;:10K1EbHO9VHyzmzp7nmKc70Qv7AdOdPPNVtxHEA9es4W0o1lLdPU1nMlCubPaRD/ZGZM+y+ULp7HD/Tpa2f/GCqo%%
+;:10KC7/g+gtJTTTiXewNfmOP6BVXIAlaKngc30u7jhnqQnNp83wnKHD0v3CI6kzIA9WRzmARBM3oBxuBwSrKSF/nT%%
