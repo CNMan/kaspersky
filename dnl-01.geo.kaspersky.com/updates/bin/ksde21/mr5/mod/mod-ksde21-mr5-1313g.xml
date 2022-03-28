@@ -1,9 +1,9 @@
 <Update
-	Date="16022022 1015"
+	Date="22032022 1926"
 	ObjectType="2=KSDE21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="4816"
+	MaxDownloadSizeKb="11867"
 	Shell="bdif;klz;none">
 	<Patches
 		CompID="KSDE21NTR"
@@ -70,15 +70,14 @@
 		CompID="KSDE21NTR"
 		App="KSDE 21.5.11.384"
 		ApplyPeriod="0"
+		ApplyAction="restart_service"
 		FixName="b"
 		SrvPath="../21.5.11.384_ksde_b"
 		LocalPath="%ProductFolder%"
-		Item="ApplyAction;Name;DSKM"
+		Item="Name;DSKM"
 		List="
-			restart_service|kasperskylab.ui.core.dll|KhTA4OCtEvfUKWXTFajOHXOmPjeS5jfXyXcWFHGsdsI=;
-			restart_service|kasperskylab.ui.core.visuals.dll|l5qu1UmfRyeRWJeLFNnXv8Q/FkDxQ2cqUPhaR3yZUvc=;
-			restart_none|ver_info.json|OfacTwrQ5OLoidUfVJFDTUnUg0xLJUeay4AKdTFck7Q=;
-			restart_service|bl_ksde.dll|mUkMOWc+LW0OQ+lwljUjmXzJphlqNAE3wc4uDa6FIXk="/>
+			kasperskylab.ui.core.dll|KhTA4OCtEvfUKWXTFajOHXOmPjeS5jfXyXcWFHGsdsI=;
+			kasperskylab.ui.core.visuals.dll|l5qu1UmfRyeRWJeLFNnXv8Q/FkDxQ2cqUPhaR3yZUvc="/>
 	<Patch
 		CompID="KSDE21NTR"
 		App="KSDE 21.5.11.384"
@@ -90,15 +89,38 @@
 		LocalPath="%ProductFolder%\skin\resources\es-ES\locs"
 		Name="alerts.lt"
 		DSKM="fB/hxwP9RwCXvEYFPx5dYAt5chnlLVauxaey3Dh8v0g="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		FixName="c"
+		SrvPath="../21.5.11.384_ksde_c"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|product_metainfo.dll|wbBI0A6LBJFYY+wuzmgZrty7c9cmpdm4ZtwDCyLYMmc=;
+			restart_none|ver_info.json|ZnaDVylWFeKmSiuXswyxwybCFtkUI8G8kfXJABg7new=;
+			restart_service|bl_ksde.dll|yEHIIuHQs9BszMSLfkzehW5H60Ctb0nII6FI9ezj2oQ="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="c"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			es-ES|../21.5.11.384_ksde_c/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|datetime.lt|jcxVEFL+vfOADLXqQrv8XW/zPNgqh/2mJAQR7OEpMKM=;
+			ja|../21.5.11.384_ksde_c/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|support.lt|Vzcj04cKP5N4yFczo2mfUgIstHGgfivg+OYs17RD4so=;
+			nl|../21.5.11.384_ksde_c/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|mainwindow.lt|qK/rEpKzjdYYP0REnmXY87fU2qa+HCmIm4xDU4ZXTDI="/>
 	<File
 		CompID="RETR1901_KSDE21,RETR1901_KSDE21NTR"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-ksde21-mr5-1901g.xml"
-		DSKM="r1CeJVqFU5DaDlJnmLDw0r02ZWsmN/pJg1JMT/AUvIs="/>
+		DSKM="1RWFo5BSiYxbT2jXRNorW71uAflOQkh4A+LSUvgauxY="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
 </Update>
-;:10qLsCcdMaSKRgJkt0zWrsHB5UKDMLXeFMFp/V0grdl+b+nFmEvv9OL5tGEGAKktqxMTqtLwC4uPSqCMp026jgCU%%
+;:10a89AjhqXV2tnsBp/SedI/X7uA/5GVnHsgtkeDgc6XFl2ZdcHR0pfCaJHN4PhPixjuBdrdEeZiYzA6FIGmqu0qn%%
