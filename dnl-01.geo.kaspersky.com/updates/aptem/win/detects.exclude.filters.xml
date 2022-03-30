@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-03-16T13:05:00.000Z-1647435901 -->
+	<!-- 2022-03-29T18:30:00.000Z-1648578600 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1719,6 +1719,66 @@
 		</Process>
 	</Detect>
 <!-- Part 0043 2022-03-16T13:05:00.000Z-1647435901 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0044 2022-03-29T18:30:00.000Z-1648578600 -->
+	<Detect Id="{2DA44DAF-E7E6-3617-79ADE34097FF845D}" ContentValue="*scanschedulequickscantime&#39;; parametertype = &#39;system.datetime&#39;; bindings = &#39;in&#39;; value = $__cmdletizatio">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{08127C4A-03F4-6227-3AF3755B77DF69DA}" ContentValue="*reportingnoncriticaltimeout&#39;; parametertype = &#39;system.uint32&#39;; bindings = &#39;in">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{60392BE9-7703-4267-88401BC5C97B0E87}" ContentValue="*          [">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{77D4A143-A52A-44E1-513CB3FD11279E70}" ContentValue="*        [object]$__cmdletization_d">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{EBAC2219-07DB-4463-52B03D8170304128}" ContentValue="*reportingnoncriticaltimeout&#39;; parametertype = &#39;">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{C25901F6-4FFA-D39A-A3BE85AE0341EF6D}" ContentValue="*          $__cmdletization_methodparameter = [micr">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{F3591E4E-B178-C4E4-E18003877CE48192}" ContentValue="*          $__cmdlet">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{259738FF-AF2B-B5D5-6D69BD10EA99841E}" ContentValue="*parametertype = &#39;microsoft.powershell.cmdletization.generatedtypes.mppreference.scantype&#39;;">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{97243244-FA74-C424-8308E69E65705C0E}" ContentValue="*        $__cmdletization_methodparamete">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{0BED3C57-B91C-ADA5-1CB1F17D827C7F90}" ContentValue="*        if ($psboundparameters.containskey(&#39;scanavgcpuloadf">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+	<Detect Id="{21708C2D-E16A-083A-A411E99C1628C313}" ContentValue="*        $__cmdletization_methodparameters.add($__cmdletization">
+		<Process Path="*\wa_3rd_party_host_??.exe">
+			<Signature Subject="*opswat*" />
+		</Process>
+	</Detect>
+<!-- Part 0044 2022-03-29T18:30:00.000Z-1648578600 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
