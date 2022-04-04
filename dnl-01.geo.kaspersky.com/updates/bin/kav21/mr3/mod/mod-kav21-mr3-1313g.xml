@@ -1,5 +1,5 @@
 <Update
-	Date="20032022 2210"
+	Date="01042022 2237"
 	ObjectType="2=KAV21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -1806,19 +1806,18 @@
 	<Patches
 		CompID="KAV21NTR"
 		ApplyPeriod="168"
+		ApplyAction="restart_none"
 		FixName="h"
-		Item="App;SysArch;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		Item="App;SysArch;SrvPath;LocalPath;Name;DSKM"
 		List="
-			KSOSPC  21.3.10.391|i386|restart_os|../21.3.10.391_ksos_h/drv32|%WINDIR%\\\\System32\\\\drivers|klkbdflt.sys|IxAsWfuiSxhjGN77PJxCzkiAOLA31rHq5NYxt5+/tUw=;
-			KSOSPC  21.3.10.391|i386|restart_none|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klkbdfltx86|klkbdflt.inf|ZIpUxncCrHSllZC9cjp4uBYpa8n/GVq5GUgsXYQ10is=;
-			KSOSPC  21.3.10.391|i386|restart_none|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klkbdfltx86|klkbdflt.sys|IxAsWfuiSxhjGN77PJxCzkiAOLA31rHq5NYxt5+/tUw=;
-			KSOSPC  21.3.10.391|x64|restart_os|../21.3.10.391_ksos_h/drv64|%WINDIR%\\\\System32\\\\drivers|klkbdflt.sys|F1fQNqfKzDZqmulb15wmcjHY+YhkasM1DBrBS0TGYWs=;
-			KSOSPC  21.3.10.391|x64|restart_none|../21.3.10.391_ksos_h/drv64/p|%ProductFolder%\\\\klkbdfltx64|klkbdflt.inf|ZIpUxncCrHSllZC9cjp4uBYpa8n/GVq5GUgsXYQ10is=;
-			KSOSPC  21.3.10.391|x64|restart_none|../21.3.10.391_ksos_h/drv64/p|%ProductFolder%\\\\klkbdfltx64|klkbdflt.sys|F1fQNqfKzDZqmulb15wmcjHY+YhkasM1DBrBS0TGYWs=;
-			KSOSPC 21.3.10.391|i386|restart_none|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt.inf|AGweT1GwyKX5jtGNBG1IJy5zWOaWX0hgLb9OMWr8hnY=;
-			KSOSPC 21.3.10.391|i386|restart_none|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt.sys|miDrNmr/f7UHgV5t3YVeX2x23gSOKXV+5jAdz0NZdWo=;
-			KSOSPC 21.3.10.391|i386|restart_none|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt_sha1.inf|byCKP3MGCBAhyi//hLnFYE0obvO2jvU6Nybn6qCUbnI=;
-			KSOSPC 21.3.10.391|i386|restart_none|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt_sha1.sys|+tpFChI5LRmn7eJxUxGQNjutVxs4LsQuuG2BeD8RSTc="/>
+			KSOSPC  21.3.10.391|i386|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klkbdfltx86|klkbdflt.inf|ZIpUxncCrHSllZC9cjp4uBYpa8n/GVq5GUgsXYQ10is=;
+			KSOSPC  21.3.10.391|i386|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klkbdfltx86|klkbdflt.sys|IxAsWfuiSxhjGN77PJxCzkiAOLA31rHq5NYxt5+/tUw=;
+			KSOSPC  21.3.10.391|x64|../21.3.10.391_ksos_h/drv64/p|%ProductFolder%\\\\klkbdfltx64|klkbdflt.inf|ZIpUxncCrHSllZC9cjp4uBYpa8n/GVq5GUgsXYQ10is=;
+			KSOSPC  21.3.10.391|x64|../21.3.10.391_ksos_h/drv64/p|%ProductFolder%\\\\klkbdfltx64|klkbdflt.sys|F1fQNqfKzDZqmulb15wmcjHY+YhkasM1DBrBS0TGYWs=;
+			KSOSPC 21.3.10.391|i386|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt.inf|AGweT1GwyKX5jtGNBG1IJy5zWOaWX0hgLb9OMWr8hnY=;
+			KSOSPC 21.3.10.391|i386|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt.sys|miDrNmr/f7UHgV5t3YVeX2x23gSOKXV+5jAdz0NZdWo=;
+			KSOSPC 21.3.10.391|i386|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt_sha1.inf|byCKP3MGCBAhyi//hLnFYE0obvO2jvU6Nybn6qCUbnI=;
+			KSOSPC 21.3.10.391|i386|../21.3.10.391_ksos_h/drv32/p|%ProductFolder%\\\\klmoufltx86|klmouflt_sha1.sys|+tpFChI5LRmn7eJxUxGQNjutVxs4LsQuuG2BeD8RSTc="/>
 	<Patch
 		CompID="KAV21NTR"
 		App="KSOSPC 21.3.10.391"
@@ -2012,7 +2011,7 @@
 		SrvPath="../21.3.10.391_kis_i"
 		LocalPath="%ProductFolder%"
 		Name="ver_info.json"
-		DSKM="+AJr129+Uob0kvdSs8N6zpWoYvNCzjWVWbkFZx0IN6A="/>
+		DSKM="0Wejqy4R/LdBiTdgH5HvBRRisZt2750KNe8NgMg+Oy8="/>
 	<Patch
 		CompID="KAV21NTR"
 		App="KAV|KIS|PURE|KFA|SAAS 21.3.10.391"
@@ -2032,7 +2031,7 @@
 		FixName="i"
 		Item="SrvPath;LocalPath;Name;DSKM"
 		List="
-			../21.3.10.391_kis_i|%ProductFolder%|bl.dll|6MlzOu3yxCypgkLjBM4GZRKS+7WMjfZeuvITy9MidOw=;
+			../21.3.10.391_kis_i|%ProductFolder%|bl.dll|kcHklPTtCWHgUUDDJZm7yv+OJRk6RAAcv0T3mzxQ8/A=;
 			../21.3.10.391_kis_i|%ProductFolder%|compatibility_layer.dll|uu70sKiqsU3gM/M0jUEUsIJM8ipSmYBl64sMEtjfhlM=;
 			../21.3.10.391_kis_i|%ProductFolder%|kasperskylab.kis.ui.dll|q7kBSN6Pbj8JlEO+sqZeODMP3t6jVbhTPjlONA+MDdk=;
 			../21.3.10.391_kis_i|%ProductFolder%|kasperskylab.kis.ui.shell.dll|LCBp5dCWVIJN71wMe8pUy20PVUVPFS8E+6BZad1W69c=;
@@ -2063,7 +2062,7 @@
 			safe_banking.dll|sUxa8/TDJh8MY+9hJNTSQkwo+6HeHFB9tcLoa+Aq+NI=;
 			traffic_processing.dll|ionvGLARxhlWmDUYvkKv1k+Fddkq2aUZS1YnzEonv4g=;
 			product_metainfo.dll|7plNZnSdqKaxg9h0PQDyURIFJkTCRYkyNSl/+q7hcnk=;
-			kis2021mr3.msp|zIDIYnFeXSrc1eHa1HGjZkzbLQCHUvsVNvCX9prj1n8="/>
+			kis2021mr3.msp|7MP41rcHNnSGqBdYT5IljoujJfQKMBomMOvwfih1Eg4="/>
 	<Patches
 		CompID="KAV21NTR"
 		App="KAV|KIS|PURE|KFA|SAAS 21.3.10.391"
@@ -2171,7 +2170,7 @@
 		SrvPath="../21.3.10.391_ksos_i"
 		LocalPath="%ProductFolder%"
 		Name="ver_info.json"
-		DSKM="+AJr129+Uob0kvdSs8N6zpWoYvNCzjWVWbkFZx0IN6A="/>
+		DSKM="0Wejqy4R/LdBiTdgH5HvBRRisZt2750KNe8NgMg+Oy8="/>
 	<Patch
 		CompID="KAV21NTR"
 		App="KSOSPC|KSOSFS 21.3.10.391"
@@ -2191,7 +2190,7 @@
 		FixName="i"
 		Item="SrvPath;LocalPath;Name;DSKM"
 		List="
-			../21.3.10.391_ksos_i|%ProductFolder%|bl.dll|6MlzOu3yxCypgkLjBM4GZRKS+7WMjfZeuvITy9MidOw=;
+			../21.3.10.391_ksos_i|%ProductFolder%|bl.dll|kcHklPTtCWHgUUDDJZm7yv+OJRk6RAAcv0T3mzxQ8/A=;
 			../21.3.10.391_ksos_i|%ProductFolder%|compatibility_layer.dll|uu70sKiqsU3gM/M0jUEUsIJM8ipSmYBl64sMEtjfhlM=;
 			../21.3.10.391_ksos_i|%ProductFolder%|kasperskylab.kis.ui.dll|q7kBSN6Pbj8JlEO+sqZeODMP3t6jVbhTPjlONA+MDdk=;
 			../21.3.10.391_ksos_i|%ProductFolder%|kasperskylab.kis.ui.shell.dll|LCBp5dCWVIJN71wMe8pUy20PVUVPFS8E+6BZad1W69c=;
@@ -2222,7 +2221,7 @@
 			safe_banking.dll|sUxa8/TDJh8MY+9hJNTSQkwo+6HeHFB9tcLoa+Aq+NI=;
 			traffic_processing.dll|ionvGLARxhlWmDUYvkKv1k+Fddkq2aUZS1YnzEonv4g=;
 			product_metainfo.dll|7plNZnSdqKaxg9h0PQDyURIFJkTCRYkyNSl/+q7hcnk=;
-			ksos80mr3.msp|3CZU13EcTYCT5DAjmF/SuSdRubYNZmVoe+Kf7II64Ho="/>
+			ksos80mr3.msp|XkUb+WmF42WndKIml+RIfnh2oq7sJ/SEczcqt37iylo="/>
 	<Patches
 		CompID="KAV21NTR"
 		App="KSOSPC|KSOSFS 21.3.10.391"
@@ -2309,10 +2308,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-kav21-mr3-1901g.xml"
-		DSKM="Szei12feUzlEN1DgVxL3N1sTsmPjzcy9nHDoDvXVd6E="/>
+		DSKM="7N5GAd9rzDZGSROxOtsWncePYR7CaQMW6fe0uM1l4QM="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
 </Update>
-;:10a2J5QrpU8T0cSLFml+hvTQQlHWTef5GBgHn2NSGX6fN3K0Igh7daEgljRxnNe7Y1/Q2k5IPjY9DPTiuvO6ifXp%%
+;:10431GfmavBdOGurygJx60aFVB3IE2kkrlbrx09gZeYsdD5yIJpWyzzfKOaLx5oVJDytlh2Q1SuSPeMYcRinW2/c%%
