@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-03-29T18:30:00.000Z-1648578600 -->
+	<!-- 2022-04-05T16:26:00.000Z-1649175963 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1779,6 +1779,89 @@
 		</Process>
 	</Detect>
 <!-- Part 0044 2022-03-29T18:30:00.000Z-1648578600 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0045 2022-04-05T16:26:00.000Z-1649175963 -->
+	<Detect Id="{076C24AF-22F7-BBA6-B44941E7853CDD92}" ContentValue="*namemap = get-process | select-object id,name,company,description| foreach-object -process{$_.id,$_.name,$_.company,$_.description}*">
+		<Process CmdLine="powershell -executionpolicy bypass -command -" />
+	</Detect>
+	<Detect Id="{52062634-4887-065C-4D36453E76E764C7}" ContentValue="*$tcpnum = $close + $wait + $synsent + $established*">
+		<Process CmdLine="powershell -executionpolicy bypass -command -" />
+	</Detect>
+	<Detect Id="{C5802418-9A17-AE42-31FEA3CBD68BA27A}" ContentValue="*processonestr = $processname+&#34;!&#34; + $processoneversion+&#34;!&#34;+$processid+&#34;!&#34;+$processonebindip+&#34;!&#34;+$starttime*">
+		<Process CmdLine="powershell -executionpolicy bypass -command -" />
+	</Detect>
+	<Detect Id="{D731B41B-C9AF-AFE2-BE5205FB1AC33BFA}" ContentValue="*memutil = [system.math]::round(($total - $free) / $total,2)*info[&#34;memutil&#34;]= $memutilpercent | out-string;*">
+		<Process CmdLine="powershell -executionpolicy bypass -command -" />
+	</Detect>
+	<Detect Id="{492D995F-00E0-1F7B-8DC3B5A330D7586D}" ContentValue="*info[&#34;mainfrequencyraw&#34;]= $maxclockspeed -join &#34;&#13;&#10;&#34;;*info[&#34;cpucores&#34;]= (get-counter &#34;\processor(*)\% processor time&#34;).countersamples.count - 1;*">
+		<Process CmdLine="powershell -executionpolicy bypass -command -" />
+	</Detect>
+	<Detect Id="{DB9E5D9B-06D8-6ADF-2622F9E97BED9295}" ContentValue="?*">
+		<Process CmdLine=" -executionpolicy bypass -file passexpiryonscreenmessage.ps1 -executionpolicy bypass" />
+	</Detect>
+	<Detect Id="{496925A9-1FAE-96F7-3E9D63085749A243}" ContentValue="?*">
+		<Process CmdLine="powershell.exe -command &#13;&#13;&#13;&#13;&#13;$version=&#39;1.0.0.0&#39;&#13;$application=&#39;citrixvpn*write-log &#39;=========================&#39;&#13;}&#13;" />
+	</Detect>
+	<Detect Id="{7414501C-1021-DDA9-F11E434DAD6DB7CB}" ContentValue="function getocitoplevelcommand_*ocicommandstoshortparams&#10;}">
+		<Process CmdLine="powershell.exe  $ex_perms=@();$defaults=@();$macls*" />
+	</Detect>
+	<Detect Id="{BCF5A623-DE12-B12D-C4ECDC1A389FAC3E}" ContentValue="function getocitoplevelcommand_*ocicommandstoshortparams&#10;}&#10;">
+		<Process CmdLine="powershell.exe  $ex_perms=@();$defaults=@();$macls*" />
+	</Detect>
+	<Detect Id="{6446281F-473D-2AF3-E1B3941B23A5BCF5}" ContentValue="*scanschedulequickscantime&#39;; parametertype = &#39;system.datetime&#39;; bindings = &#39;in&#39;; value = $__cmdletizatio">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{64463A87-F6D1-B405-5D0D31B01F587564}" ContentValue="*reportingnoncriticaltimeout&#39;; parametertype = &#39;system.uint32&#39;; bindings = &#39;in">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{64463D9B-4BFE-DD0F-1551948B44352971}" ContentValue="*          [">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{6446869A-1908-32AC-5B06810C144EA1C4}" ContentValue="*        [object]$__cmdletization_d">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{64461450-11D4-4B30-C9AED5540D0D8190}" ContentValue="*reportingnoncriticaltimeout&#39;; parametertype = &#39;">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{6446A0BB-871A-DBCD-D810E473BDE44CF9}" ContentValue="*          $__cmdletization_methodparameter = [micr">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{64469266-9F1B-4B15-BDB00965E4221A06}" ContentValue="*          $__cmdlet">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{644664C1-0496-D478-C6EF9589D9755970}" ContentValue="*parametertype = &#39;microsoft.powershell.cmdletization.generatedtypes.mppreference.scantype&#39;;">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{6446049D-1B63-C394-6A3AE1914E87D06E}" ContentValue="*        $__cmdletization_methodparamete">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{6446E713-5258-4E2E-1644A29E1A680849}" ContentValue="*        if ($psboundparameters.containskey(&#39;scanavgcpuloadf">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{6446F9BC-69DF-ECC5-A152A00A89B0E6EF}" ContentValue="*        $__cmdletization_methodparameters.add($__cmdletization">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{64463EB5-A519-A749-41BAC742A6ADCE77}" ContentValue="*            write-host &#34;the ou &#x60;&#34;$ignoredou&#x60;&#34; is ignored in $ignoredousfile file. the firewall rules will be created*">
+		<Process CmdLine="-executionpolicy bypass -file cad-firewall.ps1 -executionpolicy unrestricted" />
+	</Detect>
+	<Detect Id="{64465385-97C2-E510-1EC75101D833011C}" ContentValue="$hostname = $env:computername.tolower()?&#10;$mainou = *&#10;stop-transcript?&#10;">
+		<Process CmdLine="-executionpolicy bypass -file cad-firewall.ps1 -executionpolicy unrestricted" />
+	</Detect>
+	<Detect Id="{64463EB4-EF9A-6008-1AF4B9FE26B5DBC9}" ContentValue="function get-filehash*">
+		<Process CmdLine="-executionpolicy bypass -file \\*ll.ru\netlogon\*" />
+	</Detect>
+	<Detect Id="{64466CF2-0808-A523-8A32A70A1AE320C1}" ContentValue="function get-filehash*">
+		<Process CmdLine="-executionpolicy bypass -file \\*ll.ru\scripts\*" />
+	</Detect>
+	<Detect Id="{64461A9D-CB76-B231-FCBBE1D14FCA3E26}" ContentValue="set-executionpolicy -executionpolicy remotesigned -scope currentuser*">
+		<Process CmdLine="-executionpolicy bypass -file \\*ll.ru\scripts\*" />
+	</Detect>
+	<Detect Id="{64465D9B-06D8-6ADF-2622F9E97BED9295}" ContentValue="?*">
+		<Process CmdLine="-executionpolicy bypass -file passexpiryonscreenmessage.ps1 -executionpolicy bypass" />
+	</Detect>
+<!-- Part 0045 2022-04-05T16:26:00.000Z-1649175963 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

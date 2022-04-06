@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-01-11T19:09:00.000Z-1641928181 -->
+  <!-- Version: 2022-04-05T16:46:00.000Z-1649177164 -->
 
 <!-- 
 	Part 0001 START
@@ -3446,6 +3446,11 @@
 	</NetworkConnection>
 	<NetworkConnection Id="{D0F7A6B1-F4A9-CEDE-E492A826B5D3890D}" Url="%kl_undef%" RemotePort="8443" RemoteAddress="1?????9?8?" >
 		<Process CmdLine="*cisco anyconnect secure mobility client\\acise.exe --fullclient " >
+			<Signature Subject="*cisco*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{6446A6B1-F4A9-CEDE-E492A826B5D3890D}" Url="%kl_undef%" RemotePort="8443" RemoteAddress="1?????9?8?" >
+		<Process CmdLine="*cisco anyconnect secure mobility client\\acise.exe --fullclient" >
 			<Signature Subject="*cisco*" />
 		</Process>
 	</NetworkConnection>

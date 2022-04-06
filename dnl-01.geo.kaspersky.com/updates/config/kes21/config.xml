@@ -1,2 +1,60 @@
 <root>
+  <service_settings_patch service_key="0x5284bbc5">
+    <replace_value path="useSystemDnsResolver">0</replace_value>
+  </service_settings_patch>
+  <service_settings_patch service_key="0x4a83ea56">
+    <replace_value path="useSystemDnsResolver">0</replace_value>
+  </service_settings_patch>
+  <service_settings_patch service_key="0xeb5102dc">
+    <replace_value path="configSettings_initialized">1</replace_value>
+    <replace_value path="configSettings">
+      <unique_id>0x9d18ab5f</unique_id>
+      <Version>WriteVersionHere</Version>
+      <dnsServerInfo>
+        <item>
+          <dnsAddress>8.8.8.8</dnsAddress>
+          <dnsServerType>0</dnsServerType>
+        </item>
+        <item>
+          <dnsAddress>8.8.4.4</dnsAddress>
+          <dnsServerType>0</dnsServerType>
+        </item>
+      </dnsServerInfo>
+      <hostName>touch.kaspersky.com</hostName>
+      <ipWhiteList>
+        <item>130.117.190.203</item>
+        <item>38.117.98.230</item>
+        <item>62.128.100.148</item>
+        <item>66.110.49.107</item>
+        <item>77.74.177.233</item>
+        <item>80.239.170.149</item>
+        <item>80.239.170.176</item>
+        <item>81.19.104.200</item>
+      </ipWhiteList>
+      <localeFilter>
+        <item>ar</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>es-MX</item>
+        <item>fr</item>
+        <item>hu</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>kk</item>
+        <item>ko</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>pt-BR</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>tr</item>
+        <item>vi</item>
+        <item>zh-Hans</item>
+        <item>zh-Hant</item>
+      </localeFilter>
+    </replace_value>
+  </service_settings_patch>
 </root>
