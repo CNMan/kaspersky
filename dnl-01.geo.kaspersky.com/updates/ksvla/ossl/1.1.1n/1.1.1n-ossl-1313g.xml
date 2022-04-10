@@ -1,6 +1,6 @@
 <Update
-	Date="08042022 2029"
-	BlstDate="06042022 0605"
+	Date="10042022 2044"
+	BlstDate="10042022 0754"
 	ObjectType="2=OSSL;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -99,30 +99,26 @@
 		Name="crypto_ssl_1_1.dll"
 		DSKM="59lDIgpKt7toMUiNlVlN37yI/gR8S+X5gOA2yWnNURY="/>
 	<Files
-		OS="Win"
-		Arch="i386"
 		Shell="bdif;klz;none"
-		SrvPath="i386/win"
-		Name="crypto_ssl_1_1.dll"
-		DSKM="59lDIgpKt7toMUiNlVlN37yI/gR8S+X5gOA2yWnNURY="
-		Item="App;LocalPath"
+		Item="App;OS;Arch;SrvPath;LocalPath;Name;DSKM"
 		List="
-			KES 11.0.*.*|%ProductFolder%;
-			KES 11.[1-4].*.*\;KES 21.[2-6]|%DataFolder%"/>
+			KES 11.0.*.*|Win|i386|i386/win|%ProductFolder%|crypto_ssl_1_1.dll|59lDIgpKt7toMUiNlVlN37yI/gR8S+X5gOA2yWnNURY=;
+			KES 11.[1-4].*.*\;KES 21.[2-6]|Win|i386|i386/win|%DataFolder%|crypto_ssl_1_1.dll|59lDIgpKt7toMUiNlVlN37yI/gR8S+X5gOA2yWnNURY=;
+			KSLS 11.3.0|Linuxs-125|a64|arm64/nix-125|%ProductFolder%|libcrypto_ssl_1_1.so|rwL8BI70Sp8+m711Vvz7MRpKBQoD0C0HVnKOvAfVgXs="/>
 	<File
 		CompID="HASHES_SHA256"
 		LocalPath="%ProductFolder%"
 		Name="1.1.1n-ossl-1313g.sha2rg"
-		DSKM="QPov6KxkPPRl3bi1NwfCKhB8QC7ceQC96bYqR9lBcx8="/>
+		DSKM="5Md9/7gcf/8q6710NN1ABSH0ktvKZfX1dR1EE5Ouj/c="/>
 	<File
 		CompID="RETR1901_OSSL"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="1.1.1n-ossl-1901g.xml"
-		DSKM="eNS+gCBVh/9Q7hmIsCijdEr48bc9fSrwgP7JTbYkVPg="/>
+		DSKM="i6crHmg8Wo3UQMvkBVViG+BiyiKYAib3htN3sf/Sdiw="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ossl-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGvKfo1Hiut567Od1iQfYpN1jUdzXA7vjq8JPGEE9NSgOmXHk4sZCq4whEqYnAaZYGTunLUQLmPMejcrFGjWH24BAB4JQgEAAAIAAigEAE9TU0wDAAIoBABCQVNFAQAACbDKQ0YNCjs6MTBLRkJweTV2RHlOWEVmc3ZCMi9nY1JFTXVBeDZXS2trOGgzQ2pGaTZhUXlGUW91NERaWGVrSld3MDhaTFlEU3Z1UjdMSnFDVnNrWGR6Q2J2bDR2clNzZiUl</Key>
 </Update>
-;:10qKZmuklfzASN4DEtTZwhxoWp7abJQ/AnaEF4rTIPyAPJMZyTpRoTHC3Vjut8P/wWxkdVqzngsDxaiL0U93+r3r%%
+;:104CYyctC28hc1QwhqpODIs8pNeSq4lIXpAL45F33JLcYFmStIquRJBdDDDAtQ/Ewjp7dJIVK5B62eSzdWvHdh/r%%
