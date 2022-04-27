@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-04-05T16:26:00.000Z-1649175963 -->
+	<!-- 2022-04-26T14:24:00.000Z-1650983080 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1862,6 +1862,44 @@
 		<Process CmdLine="-executionpolicy bypass -file passexpiryonscreenmessage.ps1 -executionpolicy bypass" />
 	</Detect>
 <!-- Part 0045 2022-04-05T16:26:00.000Z-1649175963 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0046 2022-04-26T14:24:00.000Z-1650983080 -->
+	<Detect Id="{88C276EE-DBD1-325C-AEF3E45D1AD8380F}" ContentValue="$tempfolder = [system.io.path]::gettemppath();$startdate = [datetime]::parse(&#34;20*force;};}convertto-json -compress $target;">
+		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{D6839DD7-6280-1DEF-97E770330D50A52F}" ContentValue="if (!([security.principal.windowsprincipal][security.principal.windowsidentity]::getcurrent()).isinrole*">
+		<Process CmdLine="powershell.exe  -file c:\program files\zabbix agent\scripts\get_cpu_temp_win10.ps1 " />
+	</Detect>
+	<Detect Id="{A206D1E6-A8CA-0DA7-91128CA822459FDD}" ContentValue="function script_*additem($bag)&#10;$bag         &#10; }">
+		<Process CmdLine="&#34;c:\program files\microsoft monitoring agent\agent\monitoringhost.exe&#34; -embedding" />
+	</Detect>
+	<Detect Id="{4DB1212E-250E-E895-92B2C445F85C2FA5}" ContentValue="function script_*additem($bag)&#10;$bag         &#10; }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{6C533919-0B65-2245-B8C29CC1D7B8E540}" ContentValue="function script_*minvalue;&#10;&#10;    [system.glob">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{ACE84029-9F63-E3FF-143CC330E5048BED}" ContentValue="function script_*out-string&#10;&#9;&#34;error: $err&#34;&#10;}&#10; }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{C4F82BC7-06EA-E87E-4A33E68F0D0C2115}" ContentValue="function script_*loginfo );&#10;                &#10; }&#10;&#10;&#10;&#10;            &#10;                 }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{8E8A600D-1FB3-38D6-9F3277017353AEEE}" ContentValue="function script_*msg);&#10;&#10;  exit -1;&#10;} }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{A9254560-861F-4D96-7846C459296357BF}" ContentValue="function script_*discoverydata&#10;&#9;      exit&#10;      }&#10;    }&#10;} }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{4F1A660F-0FD2-C9A7-1D9CFB941B5D128A}" ContentValue="function script_*discoverydata&#10;&#9;&#9;  exit&#10;&#9;  }&#10;&#10;    }&#10;} }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{432E5E69-0BCE-433F-C4E126418DB1D14B}" ContentValue="*if ($script:__psimplicitremoting_versionofscriptgenerator.major -ne 1.0)*">
+		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
+	</Detect>
+<!-- Part 0046 2022-04-26T14:24:00.000Z-1650983080 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
