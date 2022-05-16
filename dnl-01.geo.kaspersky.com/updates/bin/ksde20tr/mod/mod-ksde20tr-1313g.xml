@@ -1,5 +1,5 @@
 <Update
-	Date="18092020 0200"
+	Date="05052022 1432"
 	ObjectType="2=KSDE20TR;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -723,7 +723,6 @@
 			fr|../20.0.14.1085_ksde_k/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|welcomepage.lt|uBE7Fc9Zw5MZrcAaoNgC4DzP+cbVx7ElzSFZn/q/tKc=;
 			hu|../20.0.14.1085_ksde_k/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|license.lt|aJNl0JwzeUdwhMFcVlBGVSDhs907Ts6eHQyowjNkbu0=;
 			hu|../20.0.14.1085_ksde_k/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|settings.lt|KuvAvgdOBN7flOR0JkcYnpUcs2Ii79tZ6R4DmO0wYaQ=;
-			id|../20.0.14.1085_ksde_k/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|license.lt|HSccL+s2hZtf96ZDwCBbCPGX41PBehI7pnQcoqB34YI=;
 			id|../20.0.14.1085_ksde_k/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|settings.lt|loizXIY5OrTdxK2UOuQAGoN4ffr6IO/jb6YfuAKTmN8=;
 			it|../20.0.14.1085_ksde_k/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|license.lt|ioeoMRCMMNT/alwdFI07kdUU8+iU36uWTHEgO1w1XuE=;
 			it|../20.0.14.1085_ksde_k/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|settings.lt|OP4P2xC99bwgY04xGBTdk/S2tQmyCiLbpAGkYdZiv3w=;
@@ -810,7 +809,6 @@
 			../20.0.14.1085_ksde_l|%ProductFolder%|kasperskylab.ui.core.visuals.dll|KX56wHfszHHLWOjNSfbRA/RL/f6zEaNzxCRSOjHzhX0=;
 			../20.0.14.1085_ksde_l|%ProductFolder%|ksn_facade.dll|SQYtEFGnYp/WR4eMREJWs+M0DSDTZljtjFGLbPGHCew=;
 			../20.0.14.1085_ksde_l|%ProductFolder%|network_services.dll|FvnbIid0G3xsDQuUdsZo8tpcasJ+XEFdOhxT4TyrAHs=;
-			../20.0.14.1085_ksde_l|%ProductFolder%|product_metainfo.dll|Cxqg0bRq6MxD1evIrFh5TIPG3BsHyefgWkfBF1srS7Q=;
 			../20.0.14.1085_ksde_l|%ProductFolder%|ucp_agent.dll|9A93+k+AxgSxqhVWKVBfZBMdcwteqGCPthY/AuO7c+Q=;
 			../20.0.14.1085_ksde_l|%ProductFolder%|updater_facade.dll|senFCmgfmk2WaV0rnMop1tpUVYxrhcQw3FYjDhFpVfc=;
 			../20.0.14.1085_ksde_l|%ProductFolder%|ushata.dll|a5FFgw3eX2orUgw5VZ9FPywem3vyXcAMJD/nprgwa1I=;
@@ -827,19 +825,31 @@
 		List="
 			fr|../20.0.14.1085_ksde_l/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|settings.lt|RgsWyc60xlyovEfZRGBIB1c7AWpw9P+3LgBnubkjV64=;
 			it|../20.0.14.1085_ksde_l/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|mainwindow.lt|F2geOr8BN4sXOnes7OBOLz+C97RZz+13FEMdqG9ROYw="/>
-	<Patch
+	<Patches
 		CompID="KSDE20NTR"
 		App="KSDE 20.0.14.1085"
 		ApplyPeriod="0"
-		ApplyAction="restart_none"
-		FixName="m"
-		SrvPath="../20.0.14.1085_ksde_m"
+		FixName="n"
+		SrvPath="../20.0.14.1085_ksde_n"
 		LocalPath="%ProductFolder%"
-		Name="ver_info.json"
-		DSKM="yoneb2opbrt+MGGV71w/6D35bvtOoI8VN89eZsqN8NA="/>
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|product_metainfo.dll|zFM02bXG8gpnYqwA5VL9NBXGNGa6oUa4QDzPm2IbFFY=;
+			restart_none|ver_info.json|RaEk0waJiNDU6qwiWQocBeRBaD5WdgX5S1zKTsx/Fo4="/>
+	<Patch
+		CompID="KSDE20NTR"
+		App="KSDE 20.0.14.1085"
+		Lang="id"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="n"
+		SrvPath="../20.0.14.1085_ksde_n/skin/resources/id/locs"
+		LocalPath="%ProductFolder%\skin\resources\id\locs"
+		Name="license.lt"
+		DSKM="TY4BVvzrblajT0n1xY4384OB8ZL9CzVOB/jBKzaUe1A="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
-		Name="mod-ksde20tr-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADJtqWi2Ap9GsaRIWAXqV3yOPg+oi1JQtpBjkdu52jurI7GWV/SAjqhpIscXv6LGqUxoaYH7gUs1zlCJ1yZ8//UBAB4J4AEAAAIAAigIAEtTREUyMFRSAwACKAMAQklOAQAACa8eW98NCjs6MTBxT0V6cDBjcGxQUmxhbHNqeHkxTmhHeFg4SHVwd05xTXROSkRRMTl0bUVMZ014UHVwK0JpRDR2aUFEWWlxZWNIRTB3YnBKUTcySEFiZXlFNFN3WXhtMCUl</Key>
+		Name="mod-ksde20tr-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADJtqWi2Ap9GsaRIWAXqV3yOPg+oi1JQtpBjkdu52jurI7GWV/SAjqhpIscXv6LGqUxoaYH7gUs1zlCJ1yZ8//UBAB4J4AEAAAIAAigIAEtTREUyMFRSAwACKAMAQklOAQAACa8eW98NCjs6MTBhNEtvM3grU3IvYS9LNjlnZU5FYnF5Tkg5U0NoTGNXSWZrTm1ZaXI5V2Q4a2NORGtWUW9rcmlCb0FiTDBjclFtQVlyUzFJN25SWDdEL2tKdUhhdFU0RiUl</Key>
 </Update>
-;:1043G/mkaYSW4kC3HjbIXPQMqyFJLkiV88dkWKOSk48n1cW4fZllKH5dVhzg7q6i6TN/tNtNTMv/Zgfq/g+xZKFD%%
+;:104AOVrd29uPR2Yf/ArtlZeJHFbNVQXKowUUhT+cT4SSNM5RUSQts0fUsFe79ij9w6wNqyrPn589FkutPYvlqXyM%%
