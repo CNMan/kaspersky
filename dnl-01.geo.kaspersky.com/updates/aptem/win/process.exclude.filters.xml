@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-04-27T19:14:00.000Z-1651086889 -->
+	<!-- 2022-04-29T16:18:00.000Z-1651249114 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -226,15 +226,14 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
+<!-- Part 0007 2022-04-29T16:18:00.000Z-1651249114 -->
 <!-- Part 0007 2022-04-27T19:14:00.000Z-1651086889 -->
 <!-- Part 0007 2022-01-14T15:24:00.000Z-1642173863 -->
 	<Image Id="{751E146A-5D45-0191-7BF3A5B45E12818F}" CmdLine="*Virtual Machine\Guest\Parameters /v PhysicalHostName&#39;) do @echo %i Auto&#x26;&#x26;exit" />
 	<Image Id="{861E147B-6D46-1292-8CF3A5B45E128190}" CmdLine="*Virtual Machine\Guest\Parameters /v PhysicalHostName&#39;) do @echo %i manual&#x26;&#x26;exit" />
 	<Image Id="{8470769D-3E5B-F4C0-C36A50820A731AF2}" CmdLine="cmd.exe /x/d/c echo select status from v$instance;|sqlplus -s -l system/??????????store 2&#62;&#x26;1" />
-	<Image Id="{3C81BBDE-9893-4C74-EC647678F4E4942A}" CmdLine="*certutil*hashfile*windows\sys*" />
-	<Image Id="{D06093E5-E9DD-D1D0-5795F31E57F4803C}" CmdLine="*certutil*hashfile*bright vpn\net*" />
-	<Image Id="{439A028F-D0FA-7B43-52454FD765C1E5DF}" CmdLine="*certutil*hashfile*google\chrome*" />
-	<Image Id="{DC002A3A-0C5F-01FB-503C1962CEB80BB8}" CmdLine="*certutil*hashfile*windows\winsxs*" />
+	<Image Id="{3C81BBDE-9893-4C74-EC647678F4E4942A}" CmdLine="*certutil.exe -hashfile c:\* sha256*" />
+	<Image Id="{3C81BBDE-9893-4C74-EC647678F4E4942A}" CmdLine="certutil.exe  -hashfile c:\* sha256?" />
 	<Image Id="{51CA92D5-E3DD-A3A5-1A4D4668E42FC0C0}" CmdLine="*if exist c:\inetpub\wwwroot\*api,%i,%j" />
 	<Image Id="{2363CFC4-5842-98CA-EAB421C87E2E5E94}" CmdLine="*if exist c:\inetpub\wwwroot\*{$rol_rem_port}" />
 	<Image Id="{0C3C9B2E-181B-E095-2B21D1AE3D3999DB}" CmdLine="c:\windows\system32\cmd.exe  /s /d /c ( echo define report_type=html; &#x26; echo define*" />
@@ -243,6 +242,7 @@
 	<Image Id="{41EB1778-3B3A-7042-2A923B1F0A7544D6}" CmdLine="c:\windows\system32\cmd.exe /c (echo define report_type=html; &#x26; echo define dbid*" />
 <!-- Part 0007 2022-01-14T15:24:00.000Z-1642173863 -->
 <!-- Part 0007 2022-04-27T19:14:00.000Z-1651086889 -->
+<!-- Part 0007 2022-04-29T16:18:00.000Z-1651249114 -->
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
@@ -263,6 +263,14 @@
 <!-- Part 0009 2022-03-15T14:40:00.000Z-1647355227 -->
 	<Image Id="{EDC66E27-7833-D65D-95BE7C6443526B15}" CmdLine="powershell.exe -executionpolicy restricted -command write-host &#39;final result: 1&#39;;" />
 <!-- Part 0009 2022-03-15T14:40:00.000Z-1647355227 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0010 2022-04-28T15:57:00.000Z-1651161431 -->
+	<Image Id="{4E078141-9A74-D41E-E8AF70796A3AD29E}" CmdLine="*ping -w 200 -n 1 10.?9??1????8*" />
+	<Image Id="{DD7EEE56-1B27-57B4-86E2E87AE2FFC679}" CmdLine="c:\windows\system32\cmd.exe  /s /d /c ( echo n &#x26; echo n )" />
+	<Image Id="{206FA73B-BF59-8263-5F1833A474D82B53}" CmdLine="cmd  /v:on /c @echo off &#x26; (for   %f in (*" />
+<!-- Part 0010 2022-04-28T15:57:00.000Z-1651161431 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

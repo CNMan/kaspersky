@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-04-26T14:24:00.000Z-1650983080 -->
+	<!-- 2022-04-28T15:31:00.000Z-1651159903 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1782,6 +1782,7 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
+<!-- Part 0045 2022-04-28T14:26:00.000Z-1651155962 -->
 <!-- Part 0045 2022-04-05T16:26:00.000Z-1649175963 -->
 	<Detect Id="{076C24AF-22F7-BBA6-B44941E7853CDD92}" ContentValue="*namemap = get-process | select-object id,name,company,description| foreach-object -process{$_.id,$_.name,$_.company,$_.description}*">
 		<Process CmdLine="powershell -executionpolicy bypass -command -" />
@@ -1802,7 +1803,7 @@
 		<Process CmdLine=" -executionpolicy bypass -file passexpiryonscreenmessage.ps1 -executionpolicy bypass" />
 	</Detect>
 	<Detect Id="{496925A9-1FAE-96F7-3E9D63085749A243}" ContentValue="?*">
-		<Process CmdLine="powershell.exe -command &#13;&#13;&#13;&#13;&#13;$version=&#39;1.0.0.0&#39;&#13;$application=&#39;citrixvpn*write-log &#39;=========================&#39;&#13;}&#13;" />
+		<Process CmdLine="powershell.exe -command ?????$version=&#39;1.0.0.0&#39;?$application=&#39;citrixvpn*write-log &#39;=========================&#39;?}?" />
 	</Detect>
 	<Detect Id="{7414501C-1021-DDA9-F11E434DAD6DB7CB}" ContentValue="function getocitoplevelcommand_*ocicommandstoshortparams&#10;}">
 		<Process CmdLine="powershell.exe  $ex_perms=@();$defaults=@();$macls*" />
@@ -1862,6 +1863,7 @@
 		<Process CmdLine="-executionpolicy bypass -file passexpiryonscreenmessage.ps1 -executionpolicy bypass" />
 	</Detect>
 <!-- Part 0045 2022-04-05T16:26:00.000Z-1649175963 -->
+<!-- Part 0045 2022-04-28T14:26:00.000Z-1651155962 -->
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
@@ -1900,6 +1902,17 @@
 		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
 	</Detect>
 <!-- Part 0046 2022-04-26T14:24:00.000Z-1650983080 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0047 2022-04-28T15:31:00.000Z-1651159903 -->
+	<Detect Id="{817B69BA-15D1-5D79-94BDCE4332AE95D0}" ContentValue="$uri = &#34;http://&#34; + $env:computername + &#34;/powershell/&#34;;$session = new-pssession -configurationname*finally {$_ = remove-pssession -session $session;$_ = remove-pssession -session $session;}">
+		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{C208027B-0AD7-25A8-15DF5CADDD3C9922}" ContentValue="*moduletoprocess = @(&#39;tmp_*    formatstoprocess = @(&#39;tmp_*">
+		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
+	</Detect>
+<!-- Part 0047 2022-04-28T15:31:00.000Z-1651159903 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
