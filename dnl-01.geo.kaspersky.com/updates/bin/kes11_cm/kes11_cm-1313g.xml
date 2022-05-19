@@ -1,5 +1,5 @@
 <Update
-	Date="17052022 1054"
+	Date="19052022 1029"
 	ObjectType="2=KES11_CM;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -2301,62 +2301,73 @@
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*|ksn.txt|iw4LGUziu7rcelq+VfoUJrXt6cr0OpctOo6bpRPqmC0=;
 			KES 11.2.0.*|license.txt|IGz1ZT0qBY3O+sIp0yeg6vuUMZ0mduHIq5CNXogj4RE=;
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*|license.txt|IGz1ZT0qBY3O+sIp0yeg6vuUMZ0mduHIq5CNXogj4RE="/>
-	<Patch
-		App="KES 11.2.0.*"
+	<Patches
 		Lang="ru"
-		PackageID="1F60480C-FA41-4BE0-A919-24EF0DA1D76B"
 		KSN="1"
 		SrvPath="kes11/kes11_9/aes256/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_9/aes256/ru"
 		Name="cleaner.cab"
 		DSKM="1drMeYIt8bpFuDfRSWKWasFHmL1kKNS1Uw2NQgX6eOk="
-		KSCMode="Off;OnPrem"/>
-	<Patch
-		App="KES 11.2.0.*"
+		KSCMode="Off;OnPrem"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|1F60480C-FA41-4BE0-A919-24EF0DA1D76B;
+			KES 11.3.0.*|C4303C0E-876C-467E-8C5D-A1880EA54EE1"/>
+	<Patches
 		Lang="ru"
 		SrvPath="kes11/kes11_9/aes256/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_9/aes256/ru"
 		Name="description.txt"
 		DSKM="Sl2gpMDs5BOsInCouCTGaANL2SwV6pY7ghG0/l4nHdo="
-		KSCMode="Off;OnPrem"/>
-	<Patch
-		App="KES 11.2.0.*"
+		KSCMode="Off;OnPrem"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*"/>
+	<Patches
 		Lang="ru"
 		KSN="1"
 		SrvPath="kes11/kes11_9/aes256/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_9/aes256/ru"
 		Name="kes_win.kud"
 		DSKM="RRNAzvDXs3wfTB6Vk73wMQzxcMi+O4BfjLmTPSA2tq0="
-		KSCMode="Off;OnPrem"/>
-	<Patch
-		App="KES 11.2.0.*"
+		KSCMode="Off;OnPrem"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*"/>
+	<Patches
 		Lang="ru"
-		PackageID="1F60480C-FA41-4BE0-A919-24EF0DA1D76B"
 		KSN="1"
 		SrvPath="kes11/kes11_9/aes256/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_9/aes256/ru"
 		Name="kes_win.msi"
 		DSKM="hkO12d9ktQ4u+R7ntZFYEeAlUY6B89o7KuEv8LopNyw="
-		KSCMode="Off;OnPrem"/>
+		KSCMode="Off;OnPrem"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|1F60480C-FA41-4BE0-A919-24EF0DA1D76B;
+			KES 11.3.0.*|C4303C0E-876C-467E-8C5D-A1880EA54EE1"/>
 	<Patches
-		App="KES 11.2.0.*"
 		Lang="ru"
 		SrvPath="kes11/kes11_9/aes256/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_9/aes256/ru"
 		KSCMode="Off;OnPrem"
-		Item="Name;DSKM"
+		Item="App;Name;DSKM"
 		List="
-			ksn.txt|rwXOwRIjrHHJ27UHBONklwJ7rJRkYCVIVJn2/OUMaFQ=;
-			license.txt|akdyXVzfZkndzJweBPQWcxhWjiHrB1ycp+QEJA/C8dY="/>
+			KES 11.2.0.*|ksn.txt|rwXOwRIjrHHJ27UHBONklwJ7rJRkYCVIVJn2/OUMaFQ=;
+			KES 11.3.0.*|ksn.txt|rwXOwRIjrHHJ27UHBONklwJ7rJRkYCVIVJn2/OUMaFQ=;
+			KES 11.2.0.*|license.txt|akdyXVzfZkndzJweBPQWcxhWjiHrB1ycp+QEJA/C8dY=;
+			KES 11.3.0.*|license.txt|akdyXVzfZkndzJweBPQWcxhWjiHrB1ycp+QEJA/C8dY="/>
 	<File
 		CompID="RETR1901_KES11_CM"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kes11_cm-1901g.xml"
-		DSKM="ETd4dCJDfUF4r1UeEYcizRjv79gvZgDJJWUAOCdtHvI="/>
+		DSKM="Gl5iCk/JOBnIk5SrrtLozETuySRe8xLrIW+pfuq7XFI="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kes11_cm-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFMTadbAhtoI7UAT0L/1BnBBW+qnK8thWawYsEiW65VyfdKfWu1hQIqLGC5/VAWOINB27LiJqLCwetn8No319egBAB4JhwEAAAIAAigIAEtFUzExX0NNAwACKAMAQklOAQAACa6ovH8NCjs6MTBxU3VuU2tjelJmclZRU0RLVGlWKzlqaHQ0Sk5KWERaMEdBTlRPVlpwWWlOcUl0bUZqY3dNcnRtYlRBZ2t3VlZ1YUhVMUQwR3FrTVplbGRaQkZMRndPOCUl</Key>
 </Update>
-;:10KJEVzeNzCOXr4CV4MRtyfS5m5Phys0V4JxAhBzGTmSz7IJgJK1grvNR9LfKZwwuo3+3O4DoyHGARhHgcrC+y0T%%
+;:10a2VPxGnN3qh1L/We1W2nnMUy5WcRXH0hUtrvJvUpUm8fdNw3R5kCJnMgs/H8Hcu5nIzog9SI5LfEY0ERIThiip%%
