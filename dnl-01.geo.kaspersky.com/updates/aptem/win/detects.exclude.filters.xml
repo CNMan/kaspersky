@@ -8,7 +8,7 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-04-28T15:31:00.000Z-1651159903 -->
+	<!-- 2022-05-31T17:24:00.000Z-1654017859 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1913,6 +1913,341 @@
 		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
 	</Detect>
 <!-- Part 0047 2022-04-28T15:31:00.000Z-1651159903 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0048 2022-05-31T17:24:00.000Z-1654017859 -->
+	<Detect Id="{7C915B25-2788-9558-3E073BEE21BDB6B1}" ContentValue="function script_*onds 1&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}&#10;} }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{4550DE3B-EEA8-1DF0-FC707AEC1E8C2A20}" ContentValue="function script_*ueries&#34;, $totalqueries)&#10;$bag }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{1E2E6EDE-FABD-7E49-7D4467DEB5F5D284}" ContentValue="function script_*        &#10;                     }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{ABB3353F-11A1-D25D-F44C5D8561AF26D4}" ContentValue="function script_*tprocess-discoveryfailure&#9;&#10;} }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{27EC0BDE-B305-5099-5DF68816C374D63F}" ContentValue="*root\ccm\invagt:c00000000_0000_0000_0000_000000000001.instancekey*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{731998DC-61A8-4DB9-C0C282FBE860D517}" ContentValue="c00000000_000*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{5B75B8A4-9C4C-00B7-0363FB7974ADD6F7}" ContentValue="c00000000_000*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{925DB449-E108-9E1C-7326A3C4BA57395F}" ContentValue="c00000000_000*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{9E7F2271-E5A9-9B4A-7DA91E4A5E84543C}" ContentValue="ccm_ciassignm*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{4A44739E-84D4-B577-CDF0257B882BF49B}" ContentValue="ccm_ciassignm*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{B0888AFC-9453-F56C-75E2C0A092CD0085}" ContentValue="ccm_ciassignm*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{B0472593-B215-3873-B1E681A98223E7C4}" ContentValue="ccm_civersion*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{2E9ABDF0-FEB9-D869-0E52E77643366206}" ContentValue="ccm_civersion*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{4D682962-659F-28BA-EC7ADB9A8E672689}" ContentValue="ccm_rebootset*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{99413A5A-D0BC-201B-5E40A77CCDD1F7A9}" ContentValue="ccm_rebootset*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{291170A7-8B39-1E70-C39D70A7F745199F}" ContentValue="ccm_service_e*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{C2581ABC-BF7E-FFCE-36E78AD9F6D26434}" ContentValue="ccm_service_e*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{698A8EFC-1366-AA0A-1D88D74A84301FAF}" ContentValue="ccm_service_e*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{011E742F-00FD-0928-C8D8E7A5A8CD6F77}" ContentValue="ccm_service_e*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{A1DD9755-94FC-92AE-BA9AC81D57360AAE}" ContentValue="ccm_statemsg.*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{6799E215-2300-F9BA-C424CF90B14059B6}" ContentValue="ccm_statemsg.*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{08FDC2A8-F244-65EC-8CEB1B60CB6E52C2}" ContentValue="ccm_statemsg.*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{EAC9084B-61EE-8EF9-FEDE8202E6B183B0}" ContentValue="ccm_statemsg_*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{5B930BDC-AC9F-3001-8CF8381F8613DD1B}" ContentValue="ccm_superpeer*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{B9687654-C894-FFA8-6F10E5A191CD765A}" ContentValue="ccm_superpeer*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{E4F5022B-575E-57E9-E302FEE2794AEBFA}" ContentValue="ccm_superpeer*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{DEDE3EDA-59EE-0486-8286D45C6A3BC3E5}" ContentValue="cim_datafile.*egprov.execmethod(enumvalues);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{F24F0CC2-0DC1-E899-A9FB83C7743A1ED2}" ContentValue="cim_datafile.*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{65144263-E5F4-1DC7-CA0E5A13DA8CBE76}" ContentValue="cim_datafile.*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{017AC6B5-B7EA-3DB2-3745785C7B8C7795}" ContentValue="cim_datafile.*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{F08BAA43-E9C3-AC63-5B4748A62D9F0E64}" ContentValue="cim_datafile.*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{3DA8C857-EF50-9025-5831E8B3C0031CFA}" ContentValue="mdm_configset*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{69B730FC-1CD7-72C3-1DE076803E006501}" ContentValue="mdm_configset*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{CF24C875-D3C3-D2AA-8B2F8F4523527D7F}" ContentValue="mdm_configset*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{ABA67B33-C5A1-B59E-A0A803A111064F53}" ContentValue="mdm_configset*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{066E72A3-F370-80A8-395286039CDBD504}" ContentValue="ps_vpnconnect*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{30447A5E-0A8F-E39E-C8A7DA9B5D43FD90}" ContentValue="setpropvalue.*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{9418356A-4A05-800C-E069C278D1BE2B4F}" ContentValue="setpropvalue.*ov.execmethod(setstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{E8688C8A-956A-6F84-42A50E3EBA7BA72B}" ContentValue="setpropvalue.*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{00E37440-6A3F-3848-D91CE24DD5BB400A}" ContentValue="setpropvalue.*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{F71C12FA-E661-2095-F9CCAC7BA8AF4EDB}" ContentValue="setpropvalue.*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{EB1E2184-8811-C136-56250019E3D7A1A2}" ContentValue="setpropvalue.*ethod(getexpandedstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{635BC9EB-75D0-DFE1-B2C46A49D06B4147}" ContentValue="setpropvalue.*egprov.execmethod(enumvalues);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{7CF259D3-72CC-8D0A-6854F0D3FD95A64B}" ContentValue="stdregprov.ex*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{52DAB7B4-2783-B5B2-5E3B342D46F267E2}" ContentValue="stdregprov.ex*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{9C3FA627-29D9-BCAE-EBC086C60D026AF8}" ContentValue="stdregprov.ex*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{16C62419-6859-007E-269632CEF0FD5CA1}" ContentValue="stdregprov.ex*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{4FE4727B-6A9C-9FFF-302AA49357D2B8DC}" ContentValue="stdregprov.ex*egprov.execmethod(enumvalues);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{9B205286-DBBB-FF49-D85785D5E7892353}" ContentValue="stdregprov.ex*ov.execmethod(setstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{1203F75E-59F2-5347-0DC27DCF59F85A8B}" ContentValue="win32_codecfi*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{67981E59-3546-9C98-A3735A0417BF949B}" ContentValue="win32_codecfi*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{50CA1CD0-B887-1383-4F0956A8CEFAED10}" ContentValue="win32_codecfi*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{2E75F264-747B-4FE7-D9B7EDABBEABBD6D}" ContentValue="win32_codecfi*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{863E58D5-2ECA-98C0-41E0BCD83C04AE9B}" ContentValue="win32_group.d*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{B3C8A039-46D8-E78E-992B1EC795FADAD6}" ContentValue="win32_logonse*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{15F9E2A9-1A32-1CA9-61A71CF609DD71FD}" ContentValue="win32_logonse*egprov.execmethod(enumvalues);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{9C642724-663A-235A-9B745772B9110602}" ContentValue="win32_logonse*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{643808A6-415E-9D22-2262E69B4EEC1CC5}" ContentValue="win32_logonse*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{ED6AD9B0-A9DB-1BA8-F0555CE516002227}" ContentValue="win32_ntevent*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{28EA7BB8-C96D-4520-58607E1400D1DB13}" ContentValue="win32_ntevent*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{12EF6DCA-A1DB-9997-108FD797CDA61303}" ContentValue="win32_ntevent*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{B1FAA4AF-CA0D-261C-D08C40453C553E5F}" ContentValue="win32_pagefil*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{903E2ED9-5C04-97F1-BC6C97D5F3943110}" ContentValue="win32_pagefil*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{CA1CE2D9-B1D7-27AA-7B98709E230A4A99}" ContentValue="win32_pagefil*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{8293EFF8-E28C-8B15-A1332C3BBD8D8DB2}" ContentValue="win32_pagefil*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{EE35C36D-DBC7-A730-D9446B85EC618C9A}" ContentValue="win32_perffor*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{54ED01FE-F53A-5AD5-8ECC45C5CDFD1BF3}" ContentValue="win32_process*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{89CE3C75-2FFF-3DF9-3974EB5723934AC1}" ContentValue="win32_process*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{9C4327D1-C66D-879E-25C4EEA9BAF6650C}" ContentValue="win32_process*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{155BC096-14DC-FE12-144BBFB395EAAE23}" ContentValue="win32_process*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{BEB49ABC-1483-40DE-E910891283F22E07}" ContentValue="win32_serverf*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{CCD04BC9-459E-DA1F-E54D014E4AA85602}" ContentValue="win32_serverf*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{1BFA9B42-7586-78D7-D669A9C0F6956CAB}" ContentValue="win32_serverf*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{DEDE3C31-D7BF-ECEF-F8A7D8B80A1A48D0}" ContentValue="win32_shortcu*egprov.execmethod(enumvalues);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{65343815-FB17-CA1F-FEED891792A108C4}" ContentValue="win32_shortcu*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{959F13E5-4A09-D1E6-0D55A4592758AFD7}" ContentValue="win32_shortcu*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{6541299C-9789-FDC0-08034676E78B16AE}" ContentValue="win32_shortcu*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{49833455-D0AF-DA42-D4B11AF5C843B8FC}" ContentValue="win32_shortcu*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{27D907C8-C4FB-F633-2FCD508D8F35765A}" ContentValue="win32_systema*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{8226261D-7173-9BBC-28636EF3912E8969}" ContentValue="win32_systema*egprov.execmethod(enumvalues);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{78B103E3-9AB8-7D0F-2687B30A76B9802A}" ContentValue="win32_tpm=@.g*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{E922B40C-7F93-1B4F-B43007D71926DC17}" ContentValue="win32_useracc*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{83B480B9-DA9C-4D78-D046170C0525771D}" ContentValue="wmi.execquery*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{54AAE89A-9454-B5CE-1B8A4D45806CD034}" ContentValue="wmi.execquery*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{74CAA982-3549-46C3-4B5BBAA6A8D8F5B3}" ContentValue="wmi.execquery*rov.execmethod(getdwordvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{27EBE79B-9FB3-57B1-2EED0AA433179F68}" ContentValue="wmi.execquery*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{749F13E6-A38F-55FB-CC63F259D032FC77}" ContentValue="wmi.execquery*egprov.execmethod(enumvalues);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{73C64F63-4ABD-15B5-3D72B100AD9728D0}" ContentValue="wmi.execquery*ov.execmethod(setstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{E208A6ED-3871-F20D-F70EE11949330B15}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function convertfrom-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{BBB7BC98-9654-BE21-399E5AFF933BF96D}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function convertto-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{390DCD22-3021-D213-E0B2994B2302E109}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function get-token {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{7781478D-417A-E04F-00493C4E2FC3B964}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function join-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{F1EFD6E8-959B-6A9D-9F8CD4E608B130F8}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function test-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{9CC7C34D-0953-A538-109227D14C4809F2}" ContentValue="*erroronusernamemessage=the specified object does not exist or is not a user: {0}*">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{0EC0E2CC-32DC-E169-FBAD22E8AD9CDFA2}" ContentValue="*$null = import-module -passthru -name (join-path $psscriptroot &#39;..\bin\az.authorization.private.dll&#39;)*">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{32931773-4260-DE23-6A895973E305AB6F}" ContentValue="*                throw &#39;a non-empty scriptbl">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{BA7F2299-5767-BE27-B95C76B43619ECCF}" ContentValue="convertfrom-stringdata @&#39;?&#10;editorcommandexists=editor command &#39;{0}&#39; already exists, skipping.*end signature block?&#10;">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{FC10A921-9290-0AD9-205C98C92FC79C95}" ContentValue="import-module pode.web?&#10;?&#10;?&#10;?&#10;start-podeserver {?&#10;   &#60;*&#10;}">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{C5E86402-496D-62B2-803C033FA9CD666F}" ContentValue="*add-podeendpoint -address localhost -port 8090 -protocol http -name admin*&#10;}">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
+	</Detect>
+	<Detect Id="{5DF23DBD-0019-CCA1-13FE95DE518D7ED6}" ContentValue="setpropvalue.*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{AB01858D-0952-FA42-AFEDFD4308E8BCE3}" ContentValue="setpropvalue.*ov.execmethod(setstringvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{1818492F-B940-2090-AA4F3F35C6E5D0D7}" ContentValue="setpropvalue.*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{D350DF99-1C93-24AE-3BAD4A98CA194F0C}" ContentValue="stdregprov.ex*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{C36D99D2-56E7-64D3-8E8F8C5310D1F73C}" ContentValue="stdregprov.ex*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{7DD10441-9DB1-74B5-B01F529E0766FB5A}" ContentValue="stdregprov.ex*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{54AC7942-AD72-64FA-C7A4382A5C45790B}" ContentValue="stdregprov.ge*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{22941A2D-1317-AC63-CC9C8353C4CC4D41}" ContentValue="stdregprov.ge*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{3163766A-7FDC-F273-63C52D8CBC8F265C}" ContentValue="wmi.execquery*ov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{2454156F-17E1-DF52-D4C63BDE6FA8CDC9}" ContentValue="wmi.execquery*ov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{06C28890-BF35-B8FB-A0DF66E6097C2895}" ContentValue="wmi.execquery*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+<!-- Part 0048 2022-05-31T17:24:00.000Z-1654017859 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
