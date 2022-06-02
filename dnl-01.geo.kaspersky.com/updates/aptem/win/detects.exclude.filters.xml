@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
         <Process Path="*powershell.exe" />
@@ -8,7 +9,11 @@
 	<!-- For versions 3.10- Replace every &#13; with ? and if it's the case - last CRLF in the end with ?? -->
 	<!-- For versions 3.11+ Replace every &#13; with &#10; -->
 
-	<!-- 2022-05-31T17:24:00.000Z-1654017859 -->
+	<!-- 3.10 - kea removes quotes (") and trims spaces (exactly in such order) in intercepted cmd line, XML trims spaces and \n \r in the values of rules -->
+	<!-- 3.11 - kea removes quotes (") and trims spaces (exactly in such order) in intercepted cmd line, XML DOES NOT trim -->
+	<!-- 3.12+ - kea removes quotes (") only in intercepted cmd line, XML DOES NOT trim -->
+
+	<!-- 2022-06-01T18:05:00.000Z-1654106743 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -1359,7 +1364,8 @@
 
 <!-- ############################################################################################################### -->
 <!-- Old Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
-<!-- Part 0038 2022-03-09T19:29:00.000Z-1646854197 -->
+<!-- Old Part 0038 2022-03-09T19:29:00.000Z-1646854197 -->
+<!-- Part 0038 2022-06-01T18:05:00.000Z-1654106743 -->
 	<Detect Id="{6455E9A6-D045-4D1F-CEE61642CF62503F}" ContentValue="*{ ?&#10; $_.gettype().invokemember(&#39;adspath&#39;,&#39;getproperty&#39;,$null,$($_),$null) ?&#10;}*">
 		<Process CmdLine="*.hol\scripts\scheduled_powershell\client.ps1" />
 	</Detect>
@@ -1416,6 +1422,12 @@
 	<Detect Id="{EAC6E913-9A0A-2B92-0E345002D03E293E}">
 		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
 	</Detect>
+	<Detect Id="{FBC6E924-AB0A-3C92-1F345002D03E3A4F}">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @()" />
+	</Detect>
+	<Detect Id="{0CD7E924-BC0A-4D92-20455002D03E4B50}">
+		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @()?" />
+	</Detect>
 	<Detect Id="{C0954326-B9EB-80ED-2C77CDBC48873B5E}" ContentValue="*genuine_config = $program_data + &#34;\autodesk\genuine autodesk service&#34;*legacyregistrypresent = $null -ne (get-item -path $registrypath).getvalue(&#34;autodesk genuine service&#34;)*">
 		<Process CmdLine="c:\windows\syswow64\msiexec.exe -embedding * e global\msi0000" />
 	</Detect>
@@ -1453,8 +1465,9 @@
 	<Detect Id="{E880ECB8-1BA8-2FBD-3191257B0CE974BA}" ContentValue="*nestedmodules=@(&#34;networkswitchconfiguration.psm1&#34;, &#34;networkswitchethernetport.psm1*formatstoprocess = @(&#39;networkswitchmanager.format.ps1xml&#39;)*" />
 	<Detect Id="{5AFC7973-E502-A1F8-DC73A694BBF5298F}" ContentValue="*smapi script cmdlets*function createerrorrecord*errorrecord = new-object system.management.automation.errorrecord @($exception, $errorid, $errorcategory, $targetobject)*pstypename(&#34;microsoft.management.infrastructure.ciminstance#root/microsoft/windows/storage/msft_physicaldisk&#34;)]*" />
 	<Detect Id="{12A1F0F9-A960-E453-BD881C517D39CD25}" ContentValue="??&#10;# module manifest for module &#39;vmware.*companyname = &#39;vmware, inc.&#39;*variablestoexport = &#39;&#x2A;&#39;*# sig # begin signature block*" />
+<!-- Part 0038 2022-06-01T18:05:00.000Z-1654106743 -->
+<!-- Old Part 0038 2022-03-09T19:29:00.000Z-1646854197 -->
 <!-- Old Part 0038 2022-03-03T13:28:00.000Z-1646314124 -->
-<!-- Part 0038 2022-03-09T19:29:00.000Z-1646854197 -->
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
@@ -1917,6 +1930,7 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0048 2022-05-31T17:24:00.000Z-1654017859 -->
+<!-- Part 0048 2022-06-01T15:51:00.000Z-1654098670 -->
 	<Detect Id="{7C915B25-2788-9558-3E073BEE21BDB6B1}" ContentValue="function script_*onds 1&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}&#10;} }">
 		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
 	</Detect>
@@ -2181,39 +2195,6 @@
 	<Detect Id="{73C64F63-4ABD-15B5-3D72B100AD9728D0}" ContentValue="wmi.execquery*ov.execmethod(setstringvalue);&#10;">
 		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
 	</Detect>
-	<Detect Id="{E208A6ED-3871-F20D-F70EE11949330B15}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function convertfrom-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{BBB7BC98-9654-BE21-399E5AFF933BF96D}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function convertto-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{390DCD22-3021-D213-E0B2994B2302E109}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function get-token {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{7781478D-417A-E04F-00493C4E2FC3B964}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function join-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{F1EFD6E8-959B-6A9D-9F8CD4E608B130F8}" ContentValue="? copyright (c) microsoft corporation.?&#10;# licensed under the mit license.?&#10;?&#10;function test-scriptextent {?&#10;    &#60;#?&#10;    .externalhelp*end signature block?&#10;">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{9CC7C34D-0953-A538-109227D14C4809F2}" ContentValue="*erroronusernamemessage=the specified object does not exist or is not a user: {0}*">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{0EC0E2CC-32DC-E169-FBAD22E8AD9CDFA2}" ContentValue="*$null = import-module -passthru -name (join-path $psscriptroot &#39;..\bin\az.authorization.private.dll&#39;)*">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{32931773-4260-DE23-6A895973E305AB6F}" ContentValue="*                throw &#39;a non-empty scriptbl">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{BA7F2299-5767-BE27-B95C76B43619ECCF}" ContentValue="convertfrom-stringdata @&#39;?&#10;editorcommandexists=editor command &#39;{0}&#39; already exists, skipping.*end signature block?&#10;">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{FC10A921-9290-0AD9-205C98C92FC79C95}" ContentValue="import-module pode.web?&#10;?&#10;?&#10;?&#10;start-podeserver {?&#10;   &#60;*&#10;}">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
-	<Detect Id="{C5E86402-496D-62B2-803C033FA9CD666F}" ContentValue="*add-podeendpoint -address localhost -port 8090 -protocol http -name admin*&#10;}">
-		<Process CmdLine="*vscode\extensions\ms-vscode.powershell*&#39; -featureflags @() " />
-	</Detect>
 	<Detect Id="{5DF23DBD-0019-CCA1-13FE95DE518D7ED6}" ContentValue="setpropvalue.*ov.execmethod(getstringvalue);&#10;">
 		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
 	</Detect>
@@ -2247,6 +2228,7 @@
 	<Detect Id="{06C28890-BF35-B8FB-A0DF66E6097C2895}" ContentValue="wmi.execquery*tdregprov.execmethod(enumkey);&#10;">
 		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
 	</Detect>
+<!-- Part 0048 2022-06-01T15:51:00.000Z-1654098670 -->
 <!-- Part 0048 2022-05-31T17:24:00.000Z-1654017859 -->
 <!-- ############################################################################################################### -->
 
