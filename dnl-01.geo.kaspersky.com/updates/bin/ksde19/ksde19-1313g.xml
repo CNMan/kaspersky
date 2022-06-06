@@ -1,5 +1,5 @@
 <Update
-	Date="14032022 0709"
+	Date="06062022 0949"
 	ObjectType="2=KSDE19;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -206,12 +206,28 @@
 			h|19.0.0.1088_ksde_h/patch|%ProductFolder%\\\\patch|pxstub.ppl|EOKfAv/m+QQwRMvaiRFjfOmMYyCbHcbPhAncqCI3UUc=;
 			i|19.0.0.1088_ksde_i|%ProductFolder%|avpmain.dll|D/xsOvGnatfVD1X4gNBXfao0i1OHBF7L9bkKLnBgJvE=;
 			i|19.0.0.1088_ksde_i|%ProductFolder%|params.ppl|x7gji5DyWFit3P/zrOJvc5Au6/6yIzXTGUfVzEYwPj8=;
-			i|19.0.0.1088_ksde_i/patch|%ProductFolder%\\\\patch|prremote.dll|Z7St6BYY0YHbatPl6F82SNxtWw9mtPW3W9xZj7313yI=;
-			i|19.0.0.1088_ksde_i|%ProductFolder%|ucp_agent.dll|HKoa5jzoESWyZ7lmdqt5PkNFXEn8wwU/jc+5ZcSwIzQ=;
-			i|19.0.0.1088_ksde_i|%ProductFolder%|updater_facade.dll|iNeNWBflZWfSN3wKDNy4Mq2+Dbuwxu6h5ZeJe3dsgOA=;
-			i|19.0.0.1088_ksde_i|%ProductFolder%|ksde2019mp0i.msp|r7gVI8PKZfokTva7m00NYvcRnceaXcwMPpYGEONSRUo=;
-			i|19.0.0.1088_ksde_i|%ProductFolder%|product_info.dll|i5MN1GURkAb3iT5dQh4ViE4FUVZaAPntXreoeb+YegI=;
-			i|19.0.0.1088_ksde_i/ksde|%DataFolder%|settings.patch|UInqvqWGcqWS4A3vmHiL58bTilkP2Xf1QjdtbNglX6g="/>
+			i|19.0.0.1088_ksde_i/patch|%ProductFolder%\\\\patch|prremote.dll|Z7St6BYY0YHbatPl6F82SNxtWw9mtPW3W9xZj7313yI="/>
+	<Patch
+		App="KSDE 19.0.0.1088"
+		Target="[2622-262143]"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="i"
+		SrvPath="19.0.0.1088_ksde_i"
+		LocalPath="%ProductFolder%"
+		Name="ucp_agent.dll"
+		DSKM="HKoa5jzoESWyZ7lmdqt5PkNFXEn8wwU/jc+5ZcSwIzQ="/>
+	<Patches
+		App="KSDE 19.0.0.1088"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="i"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			19.0.0.1088_ksde_i|%ProductFolder%|updater_facade.dll|iNeNWBflZWfSN3wKDNy4Mq2+Dbuwxu6h5ZeJe3dsgOA=;
+			19.0.0.1088_ksde_i|%ProductFolder%|ksde2019mp0i.msp|r7gVI8PKZfokTva7m00NYvcRnceaXcwMPpYGEONSRUo=;
+			19.0.0.1088_ksde_i|%ProductFolder%|product_info.dll|i5MN1GURkAb3iT5dQh4ViE4FUVZaAPntXreoeb+YegI=;
+			19.0.0.1088_ksde_i/ksde|%DataFolder%|settings.patch|UInqvqWGcqWS4A3vmHiL58bTilkP2Xf1QjdtbNglX6g="/>
 	<Patches
 		App="KSDE 19.0.0.1088"
 		ApplyPeriod="0"
@@ -544,25 +560,75 @@
 	<Patches
 		App="KSDE 19.0.0.1088"
 		ApplyPeriod="0"
-		Item="ApplyAction;FixName;SrvPath;LocalPath;Name;DSKM"
+		ApplyAction="restart_service"
+		FixName="m"
+		Item="SrvPath;LocalPath;Name;DSKM"
 		List="
-			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|app_core_legacy.dll|wm0Qsn2GQlT6VDhQDRkhOTsqIlWXc8heeibWNx3b8YQ=;
-			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo=;
-			restart_service|m|19.0.0.1088_ksde_m/kru|%ProductFolder%\\\\Kaspersky Restore Utility|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo=;
-			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|kasperskylab.ui.core.dll|FifZVhQmkWMjjiUHSDdn9dV/H5gFpqkYjBnk3ltNSZs=;
-			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|kasperskylab.ui.core.visuals.dll|rrCqeYn8R5D1pqQZKQwxaDuJU0THahttGfK8zIS2OjA=;
-			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|shell_service.dll|rF4QJwYm15BkfrlMDTY6R3AFsgr5Qtx8dECMMuXcnCk=;
-			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|ksde2019mp0m.msp|DrUNGTVNoAyNJTupYjMgVWvZ+a+Pv8GUtu56FuhmtRQ=;
-			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|product_metainfo.dll|bLHCZ6f2g81i6uhNbkSJXp4Sve0cVHSIBExQBo8goog=;
-			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|ushata.dll|opaSIT5gOLJyrR4pAF7K1fvw5qC9BbkaV0HnaC/guAk=;
-			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|bl_ksde.ppl|1JR9/H0Ep5k8R+go+EGqHLifMaHfDnhox8lj7isFQEQ=;
-			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|kasperskylab.ksde.nativeinterop.dll|0392FZUq2VvuaRiZ17Gpx/2dW82rQvf1D/vwaa2/KK8=;
-			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|kasperskylab.ksde.ui.dll|X9JMt0hxKQqS7nvpj2hstAVb72zBHscYu9TUWoLL5yg=;
-			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|ksdeuimain.dll|LCBgDk136dbbiMLHkzWmFPxQi6ooGNPpFzKHLmzXrmM=;
-			restart_none|o|19.0.0.1088_ksde_o|%ProductFolder%|ver_info.json|zQwA5ZRJgoGH/m1rllUwRH+Cff8R05cRGp1yznZfHgk="/>
+			19.0.0.1088_ksde_m|%ProductFolder%|app_core_legacy.dll|wm0Qsn2GQlT6VDhQDRkhOTsqIlWXc8heeibWNx3b8YQ=;
+			19.0.0.1088_ksde_m|%ProductFolder%|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo=;
+			19.0.0.1088_ksde_m/kru|%ProductFolder%\\\\Kaspersky Restore Utility|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo="/>
+	<Patches
+		App="KSDE 19.0.0.1088"
+		Target="[2622-262143]"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="m"
+		SrvPath="19.0.0.1088_ksde_m"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			kasperskylab.ui.core.dll|FifZVhQmkWMjjiUHSDdn9dV/H5gFpqkYjBnk3ltNSZs=;
+			kasperskylab.ui.core.visuals.dll|rrCqeYn8R5D1pqQZKQwxaDuJU0THahttGfK8zIS2OjA="/>
+	<Patches
+		App="KSDE 19.0.0.1088"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="m"
+		SrvPath="19.0.0.1088_ksde_m"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			shell_service.dll|rF4QJwYm15BkfrlMDTY6R3AFsgr5Qtx8dECMMuXcnCk=;
+			ksde2019mp0m.msp|DrUNGTVNoAyNJTupYjMgVWvZ+a+Pv8GUtu56FuhmtRQ="/>
+	<Patch
+		App="KSDE 19.0.0.1088"
+		Target="[2622-262143]"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="n"
+		SrvPath="19.0.0.1088_ksde_n"
+		LocalPath="%ProductFolder%"
+		Name="product_metainfo.dll"
+		DSKM="bLHCZ6f2g81i6uhNbkSJXp4Sve0cVHSIBExQBo8goog="/>
+	<Patches
+		App="KSDE 19.0.0.1088"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="n"
+		SrvPath="19.0.0.1088_ksde_n"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			ushata.dll|opaSIT5gOLJyrR4pAF7K1fvw5qC9BbkaV0HnaC/guAk=;
+			bl_ksde.ppl|1JR9/H0Ep5k8R+go+EGqHLifMaHfDnhox8lj7isFQEQ=;
+			kasperskylab.ksde.nativeinterop.dll|0392FZUq2VvuaRiZ17Gpx/2dW82rQvf1D/vwaa2/KK8=;
+			kasperskylab.ksde.ui.dll|X9JMt0hxKQqS7nvpj2hstAVb72zBHscYu9TUWoLL5yg=;
+			ksdeuimain.dll|LCBgDk136dbbiMLHkzWmFPxQi6ooGNPpFzKHLmzXrmM="/>
+	<Patches
+		App="KSDE 19.0.0.1088"
+		ApplyPeriod="0"
+		LocalPath="%ProductFolder%"
+		Item="Target;ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			[2622-262143]|restart_none|o|19.0.0.1088_ksde_o|ver_info.json|zQwA5ZRJgoGH/m1rllUwRH+Cff8R05cRGp1yznZfHgk=;
+			[0-2621]|restart_service|p|19.0.0.1088_ksde_p|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
+			[0-2621]|restart_service|p|19.0.0.1088_ksde_p|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
+			[0-2621]|restart_service|p|19.0.0.1088_ksde_p|product_metainfo.dll|ZlOVPmh2PgNAVuFx3N+6jm+Gxj+f/cc0f9yyid9SpsM=;
+			[0-2621]|restart_service|p|19.0.0.1088_ksde_p|ucp_agent.dll|23MwmHRo0iigVA6hSvLmk5oCcVSxjrP0BqKdg9NTr4U=;
+			[0-2621]|restart_none|r|19.0.0.1088_ksde_r|ver_info.json|Rcpz+OiU5gn9AjOEPNy3O+6L5urwboXPMoU8+0XdK8M="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ksde19-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAB8hgOOI1OQxYXPYsW+nj8DxXjcNkO7udKpIucOepfBWVMFcsbB6b/TZ1/Y6INrUEiJXtTAZGoVbidW3yhy4mx8BAB4JkAEAAAIAAigGAEtTREUxOQMAAigDAEJJTgEAAAm9tVA0DQo7OjEwNEZ5VnlBaWptbm5CLzZNcithVW0yN1NsNC9zNkdoSWJNQzJ0bHZOaXVYQnFYZVkwQk5FWUIyNitHRzAyMERZa3lYcE5GL1JsTXVCN09rbTJ3c0hmeE0lJQ==</Key>
 </Update>
-;:10qBI2H3+QI49tiQpmkOvmR6mbQrbzwi0GswChGtXOyEn96buvpDDFySLjSmpXdnWqfMiY+oh6Nzm/rM6P15j2DS%%
+;:10KTeOx7ajnFjmh8GV5JzPiEOgkX1qTJ7/1sgWJycxHmKqH6eOOgeG1dOUbak9a8Oiua0QSP2r+FoIHIqus+/g42%%

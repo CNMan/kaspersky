@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
+	<!-- 2022-06-06T12:46:00.000Z-1654519598 -->
+
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
         <Process Path="*powershell.exe" />
@@ -13,7 +15,6 @@
 	<!-- 3.11 - kea removes quotes (") and trims spaces (exactly in such order) in intercepted cmd line, XML DOES NOT trim -->
 	<!-- 3.12+ - kea removes quotes (") only in intercepted cmd line, XML DOES NOT trim -->
 
-	<!-- 2022-06-01T18:05:00.000Z-1654106743 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START -->
@@ -2230,6 +2231,14 @@
 	</Detect>
 <!-- Part 0048 2022-06-01T15:51:00.000Z-1654098670 -->
 <!-- Part 0048 2022-05-31T17:24:00.000Z-1654017859 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0049 2022-06-06T12:46:00.000Z-1654519598 -->
+	<Detect Id="{66527A4F-E095-C876-A5F898734FD7BF92}" ContentValue="try {&#10;    [console]::inputencoding = [console]::outputencoding = [text.utf8encoding]::utf8&#10;&#9;#Проверка*rez&#10;&#10;}&#10;checkpasswordlen -len 8&#10;&#9;} catch [system.exception] {}" />
+	<Detect Id="{03A61514-1B05-34D4-63B29E3F82BB5152}" ContentValue="*timestamp = dateinfile&#10;    $entry = $timestamp + &#34; - &#34; + $message&#10;&#10;    #*expectedfilesizeinmb) {&#10;                $result = $httpresult.statusdescription&#10;        " />
+	<Detect Id="{98D0B118-5A1F-720D-F2900920C7E4B968}" ContentValue="*timestamp = dateinfile&#10;    $entry = $timestamp + &#34; - &#34; + $message&#10;&#10;    #*expectedfilesizeinmb) {&#10;                $result = $httpresult.statusdescription?????????" />
+<!-- Part 0049 2022-06-06T12:46:00.000Z-1654519598 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
