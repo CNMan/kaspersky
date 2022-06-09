@@ -1,6 +1,6 @@
 <Update
-	Date="08062022 1332"
-	BlstDate="08062022 1149"
+	Date="09062022 1055"
+	BlstDate="08062022 2219"
 	ObjectType="2=KDB;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,25 +8,29 @@
 	CompID="KDB,KDBCUT,KDBAR2,KDBIND,KDBHALF"
 	LocalPath="%BaseFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294"/>
+		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<Files
 		Item="Arch;SrvPath;Name;DSKM"
 		List="
-			i386|i386|kavbase.rms|cygF/mRu3u126qSHziGd/UsEqu2t61ONoK5+Rx3IAfI=;
-			x64|x64|kavbase.rms|3rGKViTbg8TvyiijzWA8nn2BNPsiC1bi3tPpqNXr/no="/>
+			i386|i386|kavbase.rms|1/wY5J6EUmyhzFg5CPUYnlPNGNTBexulSKG117wnq6g=;
+			x64|x64|kavbase.rms|3Akx3tiHCdlawKnWvbiocmtJ4sOqndDpMQ/GasxdkBA="/>
 	<File
 		CompID="HASHES_SHA256"
 		Name="rms-kdb-1313g.sha2rg"
-		DSKM="In3+8GrGeUql/JCzmw49NTkCizQwxTy8kqrLuIcVSRg="/>
+		DSKM="hrw+BYErE/iFHDt5tXGldBqg9uJ2q1xUMg2GLDeQR8c="/>
 	<File
 		CompID="RETR1901_KDB,RETR1901_KDBCUT,RETR1901_KDBAR2,RETR1901_KDBHALF,RETR1901_KDBIND"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="rms-kdb-1901g.xml"
-		DSKM="7xdDxi2Ivf2flmlQwyTWy5EftC12G6HwmbF10bXz+iE="/>
+		DSKM="AGXnKjjQHHGI8va8TXgliUDvbUEN99WzCLEu8sSnPQg="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kdb-i386-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAABGQULGE3kSlRY+f6lenG1HkPTyJsFN4JGnYMFU+MfCMIue6PKeOIW7rBTmnnFmZx4w3PEi1UOuQHXV9aEbrA6MBAB4JlAAAAAIAAigDAEtEQgMAAigEAEJBU0UBAAAJcXy+jg0KOzoxMGFHOWlSZkxUK2cvT0J2cmkwSitFNDEyTVpuUXAwajlscVBacHdHVWJOTU1qYlVhK1o2c0NvZEtBNU9BNWNUNzgrcmV1dlhMdFlvMW9KSnRqVzV4dkJ0JSU=</Key>
 </Update>
-;:10aR3Rz8zSe1BvRQHzU8QUS1AYZRnlE83O/NwF2EBU8NfbGezAsmjdeBwQIWNerTgXK+tIhxiB7vt4XpSxN4FFZ9%%
+;:1044OqdYlrcrkwuvjL6jQkW2ZWxqCYHvRD9jRqsaWphbr1NtvM5/NkBchUEMu9hNowJHoa0eeJdo8rmZj5LVutzF%%

@@ -1,6 +1,6 @@
 <Update
-	Date="08062022 2138"
-	BlstDate="08062022 1149"
+	Date="09062022 2240"
+	BlstDate="09062022 1206"
 	ObjectType="2=APU;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,10 +8,14 @@
 	CompID="APU,KSVLA"
 	LocalPath="%BaseFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294"/>
+		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<File
 		LocalPath="%BaseFolder%\Stat"
-		Name="apu.stt">MzEwODY7MjAyMjA2MDgyMTM4DQo=</File>
+		Name="apu.stt">MzEwNDg7MjAyMjA2MDkyMjQwDQo=</File>
 	<Files
 		Item="App;Name;DSKM"
 		List="
@@ -20,9 +24,9 @@
 	<Files
 		Item="Name;DSKM"
 		List="
-			apu0001.dat|XIKOwcvgPBSczH94pAAZMcqeIwQU3WrRzuRz/cP9IdY=;
-			apu0002.dat|VTAezVk0TfL0hG3XU9XmrflFFZakSIi6eA6sULXYc7U=;
-			apu0003.dat|xml5rRUXMfoZ9wJQE7XguFTfbfWZ4u7iQkx9i2MRXek=;
+			apu0001.dat|plTPPz4dj4JukqDgIr+NArtHA+eHSDdcrZsIz5W7cio=;
+			apu0002.dat|Ct6CO8v7ApzvL9BrDcbkQ5dWCT3idZc0EDTFhktQ6g4=;
+			apu0003.dat|h7FklAi1h6n0Pmgrutn9inBRarrkKPCJCK8p/86yImk=;
 			apu0004.dat|lA5OOjz/o1ZBx+G43CpDmYZb3lcfcN9ePXmmm1w/IaU=;
 			apu0005.dat|8YZnReQihB6CMC7dphYmGge0dK9aEVLhhEXitmJaYvE=;
 			apu0006.dat|lAz34KG70bB8yFcO0ZfXbkW9lGGE2fSzjcQWqvYvw0E=;
@@ -220,7 +224,7 @@
 	<File
 		CompID="HASHES_SHA256"
 		Name="apu-1313g.sha2rg"
-		DSKM="JpY89ipdvlc88b9UIJMzWz1AA6hHmxH9e8vsnnUopRs="/>
+		DSKM="kGBBAtf9jM65bgJxOsscYAugof+riB2uVPui5Z3484w="/>
 	<File
 		App="KASSDK [5-6].*.*.*;KLMS 8.0.[2-3].*;KSE 9.[4-7].*.*;KSMG 1.1.[0-2].*;KSMO 1.2.*.*"
 		SrvPath="legacy"
@@ -244,94 +248,94 @@
 		Shell="bdif;klz;none"
 		Item="Name;DSKM"
 		List="
-			sig_phish.dat|vi0Vv+Qi4VwZmvPBthOa7QSgtd6B+gOq7uuDNZeWjb8=;
-			sig_phish_data.dat|a71xEwk7+9hTwyp8iEPKUNXIRzgcxvtXSwdVOCVxWuM=;
-			sig_phish_hash.dat|2KtE1BosgiGsa4V5T8gN6SWM5H/+yhzlZ1A0HbMVPhM="/>
+			sig_phish.dat|Xz+XXrCjQ6RdSHt2Q6qvF+kyc4OI8HWoagYs3rr7MIA=;
+			sig_phish_data.dat|X+8B8H2zIX3yY0SpWGicgLoYWGSyVsZv9wn35WM4DRg=;
+			sig_phish_hash.dat|apSctDeBstiyHmgbeLXPqt2a/Q2mR2oykvFiavjAwyo="/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="!KAV|KIS|KES|PURE|KFA|KSOSPC|KSOSFS|SAAS|KASPERSKY [11,14-21];KSOSPC|KSOSFS|SAAS [14-20];PURE 15"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS 14"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS 15"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 16"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 17"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 18"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 19"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 20"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 21.[0-2]"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[3-*]"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[3-*]"
 		Target="[1-262143]"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KES 11"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KES 21"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KES 21"
 		Target="[1-262143]"
 		Name="unmod-apu-1313g.xml"
-		Date="08062022 2138"/>
+		Date="09062022 2240"/>
 	<File
 		CompID="RETR1901_APU"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="apu-1901g.xml"
-		DSKM="pipZX3AJzV77sqAjNEIRqWwaU/KA+aFO7jif0rohGaY="/>
+		DSKM="LRQa8AwlKk78E2Cj2NPRh1EXDAnKA/6XAgwF5xpIZwc="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="apu-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAD83c55+H0F6JOBbHmZfX5Lplr2yLo/QoklVRrzMmI8CdOeUP/y6wFJ82OuWFkn3FxxGI61kSOscCTAmuZjcm0MBAB4JiwAAAAIAAigDAEFQVQMAAigEAEJBU0UBAAAJ9jjdrQ0KOzoxMDQ5TjlXWWl2SGNlOWc3Tk1PK0NIZjYxclpaSVNybm05aFh4NjFXUmpVaWpRclNoOS9xMGRRT2lDaEtraHBKQmZmTGU4dVN0c2lQSXRwNWMveGV2MllkJSU=</Key>
 </Update>
-;:10qGnZ41RmPiV1WXiVFEu1VHeJAWWWN9e8bDyjr9YpW351c0T1MzRz8IngzcYIF+ZHMPmoeRpnj+tnNewuDuKeKI%%
+;:10aT68sL1GwQAD90nsvjYmI5li0AvSVdvoFrhaAtvQUjwqc8d+YVNWEoTyJ73jdTVWbK7LS0h9iJ8ZZPmrT08G66%%

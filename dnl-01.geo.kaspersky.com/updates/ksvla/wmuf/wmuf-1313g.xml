@@ -1,6 +1,6 @@
 <Update
-	Date="08062022 1624"
-	BlstDate="08062022 1149"
+	Date="09062022 2202"
+	BlstDate="09062022 2105"
 	ObjectType="2=WMUF;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,36 +8,40 @@
 	CompID="WMUF,KSVLA"
 	LocalPath="%BaseFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294"/>
+		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<File
 		LocalPath="%BaseFolder%\Stat"
-		Name="wmuf.stt">MjQwMTcyOzIwMjIwNjA4MTYyNA0K</File>
+		Name="wmuf.stt">MjQwMjk4OzIwMjIwNjA5MjIwMg0K</File>
 	<Files
 		Item="Name;DSKM"
 		List="
 			wmuf.set|17EPtQGdIP1LLXEAqoDmwWoNbzwhLT/Jcbnx95ua52k=;
-			wmuf0001.dat|elTQszEwG9M0CXkigNZUu2DCdp1VlC8y55aBAEN2X10=;
+			wmuf0001.dat|MwbpGwIxtsIoCV4HqvQmBvdiIh1lJpbFx163hKwaSGQ=;
 			wmuf0002.dat|kUxF9SYw7ZnaamUhly1/7zePLP8MVFBOD8kAO6meXIo=;
 			wmuf0003.dat|nkJxksOgrttei5To8Qjv2WOnTDFqTqzhlCCKa2Aofq4=;
 			wmuf0004.dat|W5wAYFseaYN8YXwJq+OJd/v7nT9I1CCpjsfdmhy3OrE=;
 			wmuf0005.dat|Am4HWHrggl2l93DzdGSqkX/2lRwf+yp32ptSw2PoExo=;
-			wmuf0006.dat|6Eys97nETkq9u420V2Wnw/L2tRrfrZAUM6gKbVLAVFY=;
-			wmuf0007.dat|V1CTc3g94ZGL/05rXnuuHolvD+3WegIxtyYUnbIdIbA=;
-			wmuf0008.dat|D6MwiXcPVLHoTb0GMLgDW6fsMnxkImQq6P1Oz4nE4HM=;
-			wmuf0009.dat|gBBnKZ8aMbMj3mDDSRIjGWUKhTMeB/gIVAWG/mPLKEk=;
+			wmuf0006.dat|DekoIyUmTIqf9SDgBMsJ3sLUCitTzRsDI7i5N6bqigQ=;
+			wmuf0007.dat|ZH3KNw7lWiu8GEgN/Mr7KW3cYMWlqWeItE0hTRgErZ8=;
+			wmuf0008.dat|RjC6EkFznVEi4xOSI1Z/b+peiLA1Ni9A9sclk+lzjhw=;
+			wmuf0009.dat|DIYIxKbdotdjzSGtOqPUE3oxAk8TDKKMy5Ls54VulPM=;
 			wmuf0010.dat|OD2eecJvYruySozJL4bDrksZXi0bGRj7AnSKH+k/vt0=;
-			wmuf0011.dat|bc7g1w/iCI88otSLKsIS5yWtYhde69IPI6SqQxgGJRE=;
-			wmuf0012.dat|D3O9XxZ2k070VRQYutcOatf5MQkokl5gD2xeLI6HWeQ=;
-			wmuf0013.dat|voSfHhnsfLGc0JsMW+b/m/QqRHNFDXRuBlHHgAopnwg=;
-			wmuf0014.dat|0acvtTxwarYoY7UUBOY8nY2OZLS6ZQx/aH2zczbQ/jE=;
-			wmuf0015.dat|AtNyhY5mAAy7fByvlJunoqZRF7KTp9uNL8eXqjdxJD4=;
-			wmuf0016.dat|ibuCyLYsJ0K0/WzEHAWQpy1sTSMddgQTN0iCwMgrp9o=;
-			wmuf0017.dat|SKk3X9/4Lz1UGp0+FcBx+aRjqI4o5U1Ru32S8Mzfl4w=;
-			wmuf0018.dat|hMtoyDxnKvqSpF0/Eo2PEYiKN8Yq0dq4njPPnqM6Ng8=;
-			wmuf0019.dat|kRvcl2lCr60PINB+hRSOTyLQd07R3qT3y3gXmzo8yaE=;
-			wmuf0020.dat|38ch/kHEO5MwllLtnS6YYx0tCHPue4hDFFF6HoewLCs=;
-			wmuf0021.dat|8wbkP7I0c+xJyhIDBVe6gqXd8UMHknD5rcU5t2Edvvg=;
-			wmuf0022.dat|jYTwAyiMT+FEznsfq7QsrjXX7nMWR815nvpN92PVYBQ=;
+			wmuf0011.dat|FzGNVLaaBtBDEwflIcsyCT4jXK9CkMXgGLUuyoHCyig=;
+			wmuf0012.dat|dwqpL6/E0zEGuZ9LKSHDi3JpmJv+W8m2LGJj7+P4McM=;
+			wmuf0013.dat|07ZEF7wDHJsi/aeQ5t3tt6Fh35VPoparX/xY1PBE720=;
+			wmuf0014.dat|VA2N5m9RwPTWlLembbnYq0WiyEg2rT92t+me2HRhO0A=;
+			wmuf0015.dat|y2QwZS9co9MigOSWCDp1JGSE7cSmh2sH3kcH3O+o2EI=;
+			wmuf0016.dat|BUwnNV0icTNmW836Yo1pZklb+ov8LHxKeu1kl5Mrd60=;
+			wmuf0017.dat|ycACSjZ9RBLM9CKQ4dohKk8/0UViBUQx9EGDAErULug=;
+			wmuf0018.dat|z7ylEh+qIKVaIi7RwrDQR93IUBoOW/vB4MqpQmycyU4=;
+			wmuf0019.dat|RgHodXINk2qGBdM5j2YiIWJQM662SZRY9mcm+78OYOc=;
+			wmuf0020.dat|GkXT/Csq0fja/51pvL4KFt901lI8JuZvUz+gbFEBvgo=;
+			wmuf0021.dat|Ks2VpdBt4vaLj220LhG7TQk8/iR/yzHCXmWES1gxHOU=;
+			wmuf0022.dat|tf4A4msJpoNBxsmWYW8sdkQIQ8F3nQS+S6qfkzmcX04=;
 			wmuf0023.dat|RkpY7fHqYklKy4raXtGoJ+s51O4BTjmp6jU6bWMvArE=;
 			wmuf0024.dat|HLj9c6LPsCLjdpQsyt8UUMRE39JYFGc/7T8KT/DbmX0=;
 			wmuf0025.dat|RtaSUAm4wYAxETvFsUMBabpww1k6Rn16i6Ju23WiiWc=;
@@ -136,16 +140,16 @@
 	<File
 		CompID="HASHES_SHA256"
 		Name="wmuf-1313g.sha2rg"
-		DSKM="tPU6Xf79cJgWPlmoXo5tjHsThnuoOCwJJ9ITpddNqDM="/>
+		DSKM="yB5btQ0GfEyfn2lD3Bm2z/ivSqvEp5JcnzLwc+U3H9M="/>
 	<File
 		CompID="RETR1901_WMUF"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="wmuf-1901g.xml"
-		DSKM="Tb2TqtyqAR+fW5RGFgM80YB3Dek8fQCZ653vtfYqwfA="/>
+		DSKM="s5j519/6BB54gmcuiHOolVtQIOsFnrhZBSrbeDxZFlM="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="wmuf-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHiRsJenk+bIFD8fc8vGKuoU3rlCyR8bw1ZyHaESJFTyHAFIw5SuerqkbslpQiPn653VF2Difx69DuSBZ95SqJQBAB4JmQAAAAIAAigEAFdNVUYDAAIoBABCQVNFAQAACVfqLJcNCjs6MTA0OWhyQnFVNDBQd0d6dit2b3d3TzkrczZ1M2U2UE9sekRzcm1kbUNoVjFpbVkrU3FSNi9CWDJ0MG9HYldHUGdFdHRTUFlHODdRay9SWFNiUmJ1OEJaaCUl</Key>
 </Update>
-;:10K7N2mzyLi8zaL9Wwm6RnWujfDR6hJKUTqGYEHESBKPR77KrXm8e7BG7SsQQhuyVdiAlqwLLDE42tqd3COOEwF/%%
+;:10aIJaDHPpYZR7gz9pauppo/3BUno67GuUJ+9EYNGY57lVtwCysTEX9rWp/0c/LayEZvHxylsWvWPRCWLhIuQlbH%%
