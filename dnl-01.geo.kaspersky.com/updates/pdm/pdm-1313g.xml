@@ -1,6 +1,6 @@
 <Update
-	Date="09062022 0331"
-	BlstDate="08062022 2219"
+	Date="10062022 0132"
+	BlstDate="09062022 2105"
 	ObjectType="2=BB;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,7 +8,11 @@
 	CompID="BB"
 	LocalPath="%BaseFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294"/>
+		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<File
 		App="!KSVLA 5.2"
 		Name="regmonitor.ini"
@@ -17,21 +21,21 @@
 	<File
 		Name="pdmkl.dat"
 		Size="273472"
-		DSKM="9bTi9AEqKd3SlnxV7RQciaE0wbEdpYde5p3gv4mFHvE="/>
+		DSKM="92DqkYv2UtMNX1Xeh8XDrEIQUZOih10y3hePx/kUdAA="/>
 	<File
 		CompID="HASHES_SHA256"
 		Name="pdm-1313g.sha2rg"
 		Size="84"
-		DSKM="1/gBEyai+Tj76tqBpmyJcnkHmhZ9EMb2DdicImUhcXk="/>
+		DSKM="Rg+J1lN9+I7/D93gRVytqknQqm+aSrnaLOTfviHg95o="/>
 	<File
 		CompID="RETR1901_BB,RETR1901_RM"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="pdm-1901g.xml"
-		DSKM="0IqektG/8yK7CW2rg7WgEVCWgtAUW1QOPxkMxG8kdd0="/>
+		DSKM="h+fe+ROdn8TWyPKtBsD4xIAZ5s6gC0AWrIoMlwz2npg="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="bb-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGqEk+K7LXJAF2CxLjp4Uaz7+rMopcweYNzbn9Y7qghvFlYw8h4wCqUCEG5RjsCfveQynOLWnH1yQiRDYpExMmQBAB4JDAAAAAIAAigCAEJCAwACKAQAQkFTRQEAAAmGae5GDQo7OjEwcVE4czdPM1J2OHFSZkM2M0kvc1pQYk51NHFmRnk5Z3FVTGZvZ1NFUUNzY01xVStoRzdpOTZKeU9WRXlMQkF6L3JiYnJ4d0hqamNVR05iVFdaeXRJbDklJQ==</Key>
 </Update>
-;:10qCKsY1Wkm7u2Qo+sR30S4J3CHKPzCuAhwdfVwxNd+vXaGx1OlE9xWFLZZFJUA9B/NN6uKY2TJfja9dSQdUkbhd%%
+;:1044kJyHRnhcO+NaSD+UcuHM2Zw4Gax6Y/iDRRnWVjYPMysDMGfbIQJgjLgnL3SPDU4vvTHSRLvsY4O5nmq/ZF39%%

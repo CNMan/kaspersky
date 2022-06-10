@@ -1,6 +1,6 @@
 <Update
-	Date="09062022 0702"
-	BlstDate="08062022 2219"
+	Date="10062022 0702"
+	BlstDate="09062022 2105"
 	ObjectType="2=WA;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,10 +8,14 @@
 	CompID="WA"
 	LocalPath="%BaseFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;SAFEKIDS 1.0.[3-4]"/>
+		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];SAFEKIDS 1.0.[3-4]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<File
 		LocalPath="%BaseFolder%\Stat"
-		Name="wa.stt">MzI0NTg7MjAyMjA2MDkwNzAyDQo=</File>
+		Name="wa.stt">MzI0NTg7MjAyMjA2MTAwNzAyDQo=</File>
 	<File
 		Name="trafmon.xms"
 		DSKM="i5KiuS4XwsTYqYb3cuq8x46TB/kJii83ycvBGlCVoGY="/>
@@ -30,10 +34,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="wa-1901g.xml"
-		DSKM="MBIx7ABs2qZyftTvhEtHJlEcUqqITpj1ajyGb7j+1Uo="/>
+		DSKM="7c8Fo5Y9qWYTeLiQot1YlWfJ4GLDrV+7E5KZi10HtFk="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="wa-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAH1iUPequeO7cSSaIunXXI7jot9XyOfZK3Yjo5Q/OLc5TVTZCcoHuIM4jfNGsNNcbIdvzvHzGL4DS2q+nWget6IBAB4JmgAAAAIAAigCAFdBAwACKAQAQkFTRQEAAAlg4VpHDQo7OjEwNDB5Syt3SERlOVI2ZHdoYlBucjZTN2VZd1paYWZsZFFBOGtnTWUwSEdNcStYNUYzUWZUM3N2cmVESmxJWE1GS3p5eW9SR0I5cENVbE1UeTlmRFVjNlAlJQ==</Key>
 </Update>
-;:104Ubuy6sUZmuCcgCwTbpmc/pOWGQacpZBVej9YRDNP+PM4xmmFbGnowDdFYP/MNWLh2M4ygI56/HOmhzGy8cive%%
+;:10a9yjc47sRGl2zzxP+Rv46qlU3lFGRjpfHdaFtx4jv66qKtRoIrKcvROaspMikkoO7ejGwj1TjkFAPAQzKsIo+1%%
