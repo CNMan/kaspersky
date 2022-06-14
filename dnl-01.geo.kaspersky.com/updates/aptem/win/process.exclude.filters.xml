@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-04-29T16:18:00.000Z-1651249114 -->
+	<!-- 2022-06-10T15:48:00.000Z-1654876096 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -274,12 +274,10 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0011 2022-05-30T13:28:30.000Z-1653917310 -->
-	<Image Id="{3B1731AD-4131-4C6E-AE6FA6C73EFDECEA}" Path="*LANDesk\Shared Files\proxyhost.exe" >
-		<Signature Subject="LANDesk Software, Inc." />
-	</Image>
-	<Image Id="{BE9D43B5-F6BF-4329-B073C0518F0823B7}" CmdLine="C:\Windows\system32\cmd.exe /c &#x5c;&#x5c;C:\Windows\LtcJobs\Jobs\Ltc\Ltc\Work\BAT*" />
-	<Image Id="{0753C5E2-0EAE-4B25-8064DD15995EAED4}" CmdLine="&#x5c;C:\Windows\LtcJobs\Jobs\Ltc\Bin\LtcAgent.EXE&#x5c; &#x5c;C:\Windows\LtcJobs\Jobs\Ltc\Ltc\TEMP\PolicyLink*" />
-<!-- Part 0011 2022-05-30T13:28:30.000Z-1653917310 -->
+<!-- Part 0011 2022-06-10T15:48:00.000Z-1654876096 -->
+	<Image Id="{102A6635-88D1-9947-BC05719077005E34}" CmdLine="c:\windows\sysnative\windowspowershell\v1.0\powershell.exe -noprofile -noninteractive try {&#10;    [console]::inputencoding = [console]::outputencoding = [text.utf8encoding]::utf8&#10;&#9;*rez&#10;&#10;}&#10;checkpasswordlen -len 8&#10;&#9;} catch [system.exception] {}" />
+	<Image Id="{F204EBBF-5005-652A-A5B92959C936115A}" CmdLine="C:\Windows\Microsoft.NET\Framework\v4.?.?????\csc.exe /noconfig /fullpaths @C:\Users\*\AppData\Local\Temp\????????\????????.cmdline" />
+<!-- Part 0011 2022-06-10T15:48:00.000Z-1654876096 -->
 <!-- ############################################################################################################### -->
+
 </Filters>

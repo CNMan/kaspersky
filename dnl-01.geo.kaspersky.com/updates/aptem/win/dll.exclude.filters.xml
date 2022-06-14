@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-01-11T19:14:00.000Z-1641928492 -->
+	<!-- Version: 2022-06-10T15:48:00.000Z-1654876096 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1355,14 +1355,14 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0010 2022-05-30T13:28:30.000Z-1653917310 -->
-	
-	<Image Id="{9C6C9C7C-AF3B-40FE-9D9A2295EEC4996C}" >
-		<Process Path="*SelfService.exe" >
-			<Signature Subject="Citrix Systems, Inc." />
-		</Process>
+<!-- Part 0010 2022-06-10T15:48:00.000Z-1654876096 -->
+	<Image Id="{0E26F0F6-7650-2CB6-1B522AD1FC199CF5}">
+		<Process CmdLine="c:\windows\sysnative\windowspowershell\v1.0\powershell.exe -noprofile -noninteractive try {&#10;    [console]::inputencoding = [console]::outputencoding = [text.utf8encoding]::utf8&#10;&#9;*rez&#10;&#10;}&#10;checkpasswordlen -len 8&#10;&#9;} catch [system.exception] {}" />
 	</Image>
-	
-<!-- Part 0010 2022-05-30T13:28:30.000Z-1653917310 -->
+	<Image Id="{582F04CC-4F08-5B45-96CA8C1725C8DB98}">
+		<Process CmdLine="C:\Windows\Microsoft.NET\Framework\v4.?.?????\csc.exe /noconfig /fullpaths @C:\Users\*\AppData\Local\Temp\????????\????????.cmdline" />
+	</Image>
+<!-- Part 0010 2022-06-10T15:48:00.000Z-1654876096 -->
 <!-- ############################################################################################################### -->
+
 </Filters>

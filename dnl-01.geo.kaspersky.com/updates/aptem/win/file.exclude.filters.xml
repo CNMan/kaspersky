@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-04-08T14:08:00.000Z-1649426903 -->
+	<!-- Version: 2022-06-10T15:48:00.000Z-1654876096 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -8410,10 +8410,44 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0017 2022-05-30T13:28:30.000Z-1653917310 -->
-	<File Id="{15194666-2DE4-45D5-8E5551F7DC6C43AA}" FilePath="c:\windows\temp\__psscriptpolicytest_????????.???.psm1" >
-		<Process Path="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" />
+<!-- Part 0017 2022-06-10T15:48:00.000Z-1654876096 -->
+	<File Id="{0E26F0F6-7650-2CB6-1B522AD1FC199CF5}">
+		<Process CmdLine="c:\windows\sysnative\windowspowershell\v1.0\powershell.exe -noprofile -noninteractive try {&#10;    [console]::inputencoding = [console]::outputencoding = [text.utf8encoding]::utf8&#10;&#9;*rez&#10;&#10;}&#10;checkpasswordlen -len 8&#10;&#9;} catch [system.exception] {}" />
 	</File>
-<!-- Part 0017 2022-04-08T14:08:00.000Z-1649426903 -->
+	<File Id="{98F757EB-C528-9BEB-C13E0D2B6D643D62}">
+		<Process CmdLine="C:\WINDOWS\SYSTEM32\cmd.exe /c C:\WINDOWS\LtcJobs\Task\runonce-MainScript.BAT*" />
+	</File>
+	<File Id="{59056759-932B-8379-541BD8D5C6E4538C}">
+		<Process CmdLine="c:\windows\ltcjobs\task\runonce-mainscript.bat\..\*" />
+	</File>
+	<File Id="{6A6EAA1B-4A03-8DFF-05DB5E657A63B96A}">
+		<Process CmdLine="c:\program files (x86)\initplusmonitor\initplusmonitor\isolatedvivotekplayerserverapp.exe /command-pipe-name vivotekplayercommandpipe*" />
+	</File>
+	<File Id="{4AB528B6-542C-C42F-EE44675A12E74051}">
+		<Process CmdLine="C:\Program Files (x86)\Zecurion\Endpoint\ffcertutils\certutil.exe  -A -n Zecurion Zgate Web*" />
+	</File>
+	<File Id="{75E30D18-A705-DF2A-7785F9527A0F1F5A}">
+		<Process CmdLine="c:\th\td15\rc\exe\curl.exe  -0 --trace-ascii test.txt -x post -h*" />
+	</File>
+	<File Id="{3CB874CA-D875-90CA-CDEFAD09FCEBB820}">
+		<Process CmdLine="c:\windows\ccm\updatetrustedsites.exe false  s-1-5-21-*" />
+	</File>
+	<File Id="{9DFCEC97-13B3-CF7C-AC818B337B2E96D5}">
+		<Process CmdLine="c:\windows\microsoft.net\framework*\csc.exe /noconfig /fullpaths @c:\windows\temp*" />
+	</File>
+	<File Id="{C8641409-5417-2EEC-BA464AF8439396D0}">
+		<Process CmdLine="c:\windows\microsoft.net\framework*\ngen.exe uninstall c:\windows\assembly\nativeimages_v*" />
+	</File>
+	<File Id="{92386CEC-44AE-9481-84243DA310C709FC}">
+		<Process CmdLine="c:\windows\system32\wudfhost.exe -hostguid:{*" />
+	</File>
+	<File Id="{404B46A3-23B5-BBF7-CB7A78ED59EA12AD}">
+		<Process CmdLine="logonui.exe /flags:0x0 /state0:0x???????? /state1:0x????????" />
+	</File>
+	<File Id="{1B10A82C-52E6-5CED-2EC038DFE0C3B389}">
+		<Process CmdLine="c:\cntc\stc.exe  - - 0 - c:\atd\atd\ast*" />
+	</File>
+<!-- Part 0017 2022-06-10T15:48:00.000Z-1654876096 -->
 <!-- ############################################################################################################### -->
+
 </Filters>
