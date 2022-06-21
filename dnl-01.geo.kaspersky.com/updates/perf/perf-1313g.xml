@@ -1,104 +1,110 @@
 <Update
-	Date="09062022 0709"
-	BlstDate="08062022 2219"
+	Date="21062022 1043"
+	BlstDate="20062022 2107"
 	ObjectType="2=PERF;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
 	MaxDownloadSizeKb="10"
 	CompID="PERF"
 	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KES 11.1.[0,1].[126,15919]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="!KAV|KIS|KES|PURE|KAR|KARH|KASPERSKY [3,11,19-21]"
 		Name="unmod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KES 11"
-		Target="[0-262142]"
+		Target="0"
 		SrvPath="mod"
 		Name="mod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KES 11"
-		Target="262143"
+		Target="[1-262143]"
 		Name="unmod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAV|KIS|PURE 19"
-		Target="[0-262142]"
+		Target="0"
 		SrvPath="mod"
 		Name="mod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAV|KIS|PURE 19"
-		Target="262143"
+		Target="[1-262143]"
 		Name="unmod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAV|KIS|PURE 20"
-		Target="[0-262142]"
+		Target="0"
 		SrvPath="mod"
 		Name="mod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAV|KIS|PURE 20"
-		Target="262143"
+		Target="[1-262143]"
 		Name="unmod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAV|KIS|PURE|KASPERSKY 21"
-		Target="[0-262142]"
+		Target="0"
 		SrvPath="mod"
 		Name="mod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAV|KIS|PURE|KASPERSKY 21"
-		Target="262143"
+		Target="[1-262143]"
 		Name="unmod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KES 21"
-		Target="[0-157285]"
+		Target="0"
 		SrvPath="mod"
 		Name="mod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KES 21"
-		Target="[157286-262143]"
+		Target="[1-262143]"
 		Name="unmod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAR|KARH 3"
-		Target="[0-262142]"
+		Target="0"
 		SrvPath="mod"
 		Name="mod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<Index
 		CompID="PERF,RETR1901_PERF"
 		App="KAR|KARH 3"
-		Target="262143"
+		Target="[1-262143]"
 		Name="unmod-perf-1313g.xml"
-		Date="09062022 0709"/>
+		Date="21062022 1043"/>
 	<File
 		CompID="RETR1901_PERF"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="perf-1901g.xml"
-		DSKM="iJQSN4ae1ci+Q6tr+LnYcxWfWiMWc4el1a9UC9ERVa0="/>
+		DSKM="IqcprOjgzytqUfAEYUyWM0nukx+dqyNrylCkU+y9gYM="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="perf-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAACb58KRrcyNBcWpCkCDyUdboQjeDyRt0DUqEA5ifwLWqfagzeGGU8rGwfYPMGmFq9rYpQm0n0s7x4icpWG799hgBAB4JmAEAAAIAAigEAFBFUkYDAAIoBABCQVNFAQAACZdbCa8NCjs6MTBhODU3amxDQTNwYjNya3YyamZrZXAvUG1uVlVGMzFESllqT0xyaENjblBNY1dFU0tjNU40N243dlJ2WWYrSmkxTHg5ZkJwSjJzRkJVR0xFdmJRV2xWeSUl</Key>
 </Update>
-;:10KS9jwBSy9rldChlZGGM/XLyPmY596/3nCClHPARAeZ5ZJkrfyxl44Ub+sBl2gpXtJ7mmzvKE6cdTM0kCn7qv0D%%
+;:10qHPGdWhwRharjDZQbKozr0hC/gqVjdg4PZP4uJLbd6+SJWbVOiBUNf8/hhlopJ1XokuVgBULu0Hladm+U7PIza%%

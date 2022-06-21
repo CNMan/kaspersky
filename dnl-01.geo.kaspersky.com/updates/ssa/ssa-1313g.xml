@@ -1,6 +1,6 @@
 <Update
-	Date="30082021 0925"
-	BlstDate="30082021 0307"
+	Date="21062022 0925"
+	BlstDate="20062022 2107"
 	ObjectType="2=SSA;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,10 +8,14 @@
 	CompID="SSA"
 	LocalPath="%BaseFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294"/>
+		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<File
 		LocalPath="%BaseFolder%\Stat"
-		Name="ssa.stt">NTM4NzsyMDIxMDgzMDA5MjUNCg==</File>
+		Name="ssa.stt">NTM4NzsyMDIyMDYyMTA5MjUNCg==</File>
 	<Files
 		Item="Name;DSKM"
 		List="
@@ -48,10 +52,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="ssa-1901g.xml"
-		DSKM="45Tfxr7KZ+jBWAgQxqICRsRRE5W2lyt8htw6f88FyuY="/>
+		DSKM="fshFSwoHaIQ7m0OiQ3JfgOjU++XVKOwWx8myfdo0cqg="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
-		Name="ssa-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADtSypYBA2H2HoIx9qeavetmSIOtgfAHk6Y9gvTVx1I3d/iWjg1DuCeTjTkwaUaKS64q9cU46zaaX/TQK0e+Q1IBAB4JbgAAAAIAAigDAFNTQQMAAigEAEJBU0UBAAAJV5pVxA0KOzoxMHFIWHBMNEUzSm5NVndqZVpVWWk4a0p0WDd3Njg2NUZINFZSVThGSUtjelZLMEpDZGNWUU5yM3AzelRBb1crNDg5UDZaZkdoc0t3eWxHSi9WY01HTG84JSU=</Key>
+		Name="ssa-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADtSypYBA2H2HoIx9qeavetmSIOtgfAHk6Y9gvTVx1I3d/iWjg1DuCeTjTkwaUaKS64q9cU46zaaX/TQK0e+Q1IBAB4JbgAAAAIAAigDAFNTQQMAAigEAEJBU0UBAAAJV5pVxA0KOzoxMHFWbnpFSmtaSWlSYk9GTFFvUVFPenJDQTJ2UitPQndwOXhFOVBVUkdiYWVmcVphZUVVdGVmV01DcFpBMlBZc0s3QktVNElJdEp5WUdEQW9FdFhxZkNKJSU=</Key>
 </Update>
-;:10aTbKna9KK7V6oviDz2HqYpCPnJy+66kbCkIA3v/wNtE6nqZ6EJzKDJiF6qKtV9YvqkUOflm62oDhBal2xNWVCu%%
+;:104EYLqQKfHrjs4WGW4hna3a+W+hSQfAbJdn79SfnmQbr+J0PnSXuO+mN1zWBFgS/I7R5TsIDelHqcMXJgViN1qB%%
