@@ -1,11 +1,17 @@
 <Update
-	Date="28062022 0118"
+	Date="30062022 0811"
 	ObjectType="2=KES11;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
 	MaxDownloadSizeKb="2918"
 	CompID="KES11"
 	Shell="bdif;klz;none">
+	<Exclude
+		App="KES 11.0.1.90;KES 11.1.[0,1].[126,15919]">
+			<Except
+				App="KES 11.1.1.126"
+				OS="Win-7,1000"/>
+	</Exclude>
 	<Patches
 		App="KES 21.2.16.*"
 		SrvPath="kes11/kes11_5_1"
@@ -108,7 +114,7 @@
 		SrvPath="kes11"
 		LocalPath="%DataRoot%/Patches/kes11"
 		Name="wd_rules.xml"
-		DSKM="Wm40BtuCK9DAw+IfEZcWQ9o1085LGpy3QSzP9bhJdkI="/>
+		DSKM="/PUyQ9Rri4fxqZjXvN5XTRQK3mCDZhglr7X5h8mam6w="/>
 	<File
 		App="KES 11.[0-4].*.*;KES 21.2.*.*;KES 21.3.10.*;KES 21.4.20.*;KES 21.5.11.*"
 		LocalPath="%DataRoot%/Patches"
@@ -119,10 +125,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kes11-1901g.xml"
-		DSKM="mIKanKUaN3/o0/v0T83+qP4V8qLZKKx7gm7N12hXRnU="/>
+		DSKM="N/T/3v2wR7lFahH2RX/JKTJNKpfSJ3CAA724XnsLRMU="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kes11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGsNAtuJ76BIjAPol8V/pvqssmjtZGKD3/PJ74+SepBCEjvhvb/eF+VcxOfNn/uhWo6RJ8I80MgpCJcgawss4MwBAB4JhgEAAAIAAigFAEtFUzExAwACKAMAQklOAQAACR13GJINCjs6MTBhUWd3MHpEQkNRR0VSclVGYlpCM1VQaVhidTJqV3lUV3Jwd1JUdXBzaTR3RG54RWRzcHM5bXY2eDlzU0ZLdm85S1VqcFIyayswY2JTK2NRTGF4N0tPUiUl</Key>
 </Update>
-;:104CC+lqUE2Qd9arCNkft0zOVOKOI2quxszlXVtwuSIEio0Gbx3Y0GWlZHwvdkQ1CJl3nW7L7pG+9cb8xqs668SD%%
+;:10aDnjwZS4euRTete0Aqo2s1euN6p3v8Yp5hVj4GxpQ/mprVPyRJm2KMdQy11r6fvGsoe1Ps/GPQLSGCUne/VD7i%%
