@@ -57,6 +57,7 @@ dnl-01.geo.kaspersky.com/updates/ark/i386/mac/mark.mft
 dnl-01.geo.kaspersky.com/updates/ark/i386/win/mark.mft
 dnl-01.geo.kaspersky.com/updates/ark/x64/mac/mark.mft
 dnl-01.geo.kaspersky.com/updates/hips/intctrl.mft
+dnl-01.geo.kaspersky.com/updates/icsoval/oval.mft
 dnl-01.geo.kaspersky.com/updates/ictrl/intctrl.mft
 dnl-01.geo.kaspersky.com/updates/kavlotus/i386/baseb.mft
 dnl-01.geo.kaspersky.com/updates/kavlotus/i386/basec.mft
@@ -437,6 +438,7 @@ dnl-01.geo.kaspersky.com/updates/adb/subscriptions.xml
 dnl-01.geo.kaspersky.com/updates/adbu/adbu-1313g.xml
 dnl-01.geo.kaspersky.com/updates/adbu/adbu-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ah/ah-1313g.xml
+dnl-01.geo.kaspersky.com/updates/ah/ah-1901g.xml
 dnl-01.geo.kaspersky.com/updates/apcat/apcat-1313g.xml
 dnl-01.geo.kaspersky.com/updates/apcat/apcat-1901g.xml
 dnl-01.geo.kaspersky.com/updates/apd/apd-1313g.xml
@@ -453,6 +455,14 @@ dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.edr.file.exclude.filters.xml
 dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.edr.file.include.filters.xml
 dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.edr.process.exclude.filters.xml
 dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.edr.process.include.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.file.exclude.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.file.include.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.logonsession.exclude.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.logonsession.include.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.network.exclude.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.network.include.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.process.exclude.filters.xml
+dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.kics.process.include.filters.xml
 dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.mdr.autostart.exclude.filters.xml
 dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.mdr.autostart.include.filters.xml
 dnl-01.geo.kaspersky.com/updates/aptem/nix/linux.mdr.event.exclude.filters.xml
@@ -587,6 +597,7 @@ dnl-01.geo.kaspersky.com/updates/bin/kesmac11/mr1/kesmac11-mr1-1313g.xml
 dnl-01.geo.kaspersky.com/updates/bin/kesmac11/sp1/kesmac11-sp1-1313g.xml
 dnl-01.geo.kaspersky.com/updates/bin/kesmac11/sp2/kesmac11-sp2-1313g.xml
 dnl-01.geo.kaspersky.com/updates/bin/kesmac11/sp2mr1/kesmac11-sp2-mr1-1313g.xml
+dnl-01.geo.kaspersky.com/updates/bin/kesmac11/sp2mr1/kesmac11-sp2-mr1-1901g.xml
 dnl-01.geo.kaspersky.com/updates/bin/kesmac11/tr/kesmac11-tr-1313g.xml
 dnl-01.geo.kaspersky.com/updates/bin/kics20/kics20-1313g.xml
 dnl-01.geo.kaspersky.com/updates/bin/kics3/kics3-1313g.xml
@@ -762,6 +773,8 @@ dnl-01.geo.kaspersky.com/updates/hips/unmod-hips-1313g.xml
 dnl-01.geo.kaspersky.com/updates/hips/unmod-hips-1901g.xml
 dnl-01.geo.kaspersky.com/updates/icr/icr-1313g.xml
 dnl-01.geo.kaspersky.com/updates/icscve/icscve-1313g.xml
+dnl-01.geo.kaspersky.com/updates/icsoval/icsoval-1313g.xml
+dnl-01.geo.kaspersky.com/updates/icsoval/icsoval-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ictrl/ictrl-1313g.xml
 dnl-01.geo.kaspersky.com/updates/ictrl/ictrl-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ictrl/mod/mod-ictrl-1313g.xml
@@ -773,6 +786,7 @@ dnl-01.geo.kaspersky.com/updates/ids/ids-1313g.xml
 dnl-01.geo.kaspersky.com/updates/ids/ids-1901g.xml
 dnl-01.geo.kaspersky.com/updates/idsir/idsir-1313g.xml
 dnl-01.geo.kaspersky.com/updates/idsm/idsm-1313g.xml
+dnl-01.geo.kaspersky.com/updates/idsm/idsm-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ids/mod/mod-ids-1313g.xml
 dnl-01.geo.kaspersky.com/updates/ids/mod/mod-ids-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ids/unmod-ids-1313g.xml
@@ -837,6 +851,7 @@ dnl-01.geo.kaspersky.com/updates/kdb/i386/mod/mod-kdb-i386-1901g.xml
 dnl-01.geo.kaspersky.com/updates/kdb/i386/unmod-kdb-i386-1313g.xml
 dnl-01.geo.kaspersky.com/updates/kdb/i386/unmod-kdb-i386-1901g.xml
 dnl-01.geo.kaspersky.com/updates/kdbma64/arm64/kdbma64-1313g.xml
+dnl-01.geo.kaspersky.com/updates/kdbma64/arm64/kdbma64-1901g.xml
 dnl-01.geo.kaspersky.com/updates/kdb/x64/kdba-x64-1313g.xml
 dnl-01.geo.kaspersky.com/updates/kdb/x64/kdba-x64-1901g.xml
 dnl-01.geo.kaspersky.com/updates/kdb/x64/kdb-x64-1313g.xml
@@ -872,6 +887,7 @@ dnl-01.geo.kaspersky.com/updates/ksn/ksn-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ksvla/adbu/adbu-1313g.xml
 dnl-01.geo.kaspersky.com/updates/ksvla/adbu/adbu-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ksvla/ah/ah-1313g.xml
+dnl-01.geo.kaspersky.com/updates/ksvla/ah/ah-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ksvla/apd/apd-1313g.xml
 dnl-01.geo.kaspersky.com/updates/ksvla/apd/apd-1901g.xml
 dnl-01.geo.kaspersky.com/updates/ksvla/apd/mod/mod-apd-1313g.xml
@@ -1054,6 +1070,7 @@ dnl-01.geo.kaspersky.com/updates/rms/kdbarm64/rms-kdbarm64-1901g.xml
 dnl-01.geo.kaspersky.com/updates/rms/kdbel/rms-kdbel-1313g.xml
 dnl-01.geo.kaspersky.com/updates/rms/kdbel/rms-kdbel-1901g.xml
 dnl-01.geo.kaspersky.com/updates/rms/kdbma64/rms-kdbma64-1313g.xml
+dnl-01.geo.kaspersky.com/updates/rms/kdbma64/rms-kdbma64-1901g.xml
 dnl-01.geo.kaspersky.com/updates/rms/kdb/rms-kdb-1313g.xml
 dnl-01.geo.kaspersky.com/updates/rms/kdb/rms-kdb-1901g.xml
 dnl-01.geo.kaspersky.com/updates/rms/sw2/rms-sw2-1313g.xml
