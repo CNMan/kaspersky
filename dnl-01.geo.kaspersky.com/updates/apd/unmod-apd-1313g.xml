@@ -1,39 +1,51 @@
 <Update
-	Date="19072022 0704"
-	BlstDate="18072022 2106"
+	Date="10082022 0721"
+	BlstDate="09082022 2343"
 	ObjectType="2=APD;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="432"
+	MaxDownloadSizeKb="517"
 	CompID="APD"
 	App="*"
 	LocalPath="%BaseFolder%">
 	<File
 		CompID="HASHES_SHA256"
 		Name="unmod-apd-1313g.sha2rg"
-		DSKM="SzZaEouqxVA7ZdQA9m8sBGwjhSFgPVttru6K5QBjnh0="/>
-	<Files
-		App="KASPERSKY|KSOSPC|KSOSFS 21.[4-7];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [16-21].[0-3].*.*;KAVMAC 22;KAVSDK 8.10.0.*;KAVSDK 8.9.*.*;KES 11.[1-4].*.*;KES 21.[2-8];KESMAC 11.[0-2].*.*;KICSNL 1.3.0.*;KISMAC [18-21].[0-1].*.*;KSLS 11.[0-3].0.*;KSVLA 5.[1-2].*.*;SAASMAC [20-21].[0-1].*.*"
-		Item="Name;DSKM"
-		List="
-			apuhttps.esm|KvVKbKjplNWER3xDPHI6SrnwaWyAN2DxUjCCH+1ofyM=;
-			apuhttps.dat|uvXFTi4tphOCewBxbRQ+FGeavIh72R1MdLC3Ql9hH68="/>
+		DSKM="vZAMuyRysxnroYeDct3cbiM/daM5YdlRZEHWtZsa5hY="/>
 	<File
-		App="KASPERSKY|KSOSPC|KSOSFS 21.[4-7];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [16-21].[0-3].*.*;KAVSDK 8.10.0.*;KAVSDK 8.9.*.*;KES 11.[1-4].*.*;KES 21.[2-8];KSVLA 5.[1-2].*.*"
+		App="KASPERSKY|KSOSPC|KSOSFS 21.[4-7];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [16-21].[0-2].*.*;KAVMAC [22-23];KAVSDK 8.10.0.*;KAVSDK 8.9.*.*;KES 11.[1-4].*.*;KES 21.[2,4-8];KESMAC 11.[0-2].*.*;KICSNL 1.3.0.*;KISMAC [18-21].[0-1].*.*;KSLS 11.[0-3].0.*;KSVLA 5.[1-2].*.*;SAASMAC [20-21].[0-1].*.*"
+		Name="apuhttps.esm"
+		DSKM="KvVKbKjplNWER3xDPHI6SrnwaWyAN2DxUjCCH+1ofyM="/>
+	<File
+		App="KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS|KES 21.3.*.*"
+		SrvPath="mr3"
+		Name="apuhttps.esm"
+		DSKM="KvVKbKjplNWER3xDPHI6SrnwaWyAN2DxUjCCH+1ofyM="/>
+	<File
+		App="KASPERSKY|KSOSPC|KSOSFS 21.[4-7];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [16-21].[0-2].*.*;KAVMAC [22-23];KAVSDK 8.10.0.*;KAVSDK 8.9.*.*;KES 11.[1-4].*.*;KES 21.[2,4-8];KESMAC 11.[0-2].*.*;KICSNL 1.3.0.*;KISMAC [18-21].[0-1].*.*;KSLS 11.[0-3].0.*;KSVLA 5.[1-2].*.*;SAASMAC [20-21].[0-1].*.*"
+		Name="apuhttps.dat"
+		DSKM="uvXFTi4tphOCewBxbRQ+FGeavIh72R1MdLC3Ql9hH68="/>
+	<File
+		App="KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS|KES 21.3.*.*"
+		SrvPath="mr3"
+		Name="apuhttps.dat"
+		DSKM="sy990r2wp7CJbKnmTUfLwDTnMcs6S/1u9GQU8W6TjXc="/>
+	<Files
 		OS="Win"
-		SrvPath="i386/win"
-		Name="apuhttps.dll"
-		DSKM="R8ZJGVRDGcEssnL9PrmY2NdwFeitZrx5Yvtfww5lgTc="/>
+		Item="App;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-7]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [16-21].[0-2].*.*\;KAVSDK 8.10.0.*\;KAVSDK 8.9.*.*\;KES 11.[1-4].*.*\;KES 21.[2,4-8]\;KSVLA 5.[1-2].*.*|i386/win|apuhttps.dll|R8ZJGVRDGcEssnL9PrmY2NdwFeitZrx5Yvtfww5lgTc=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS\\|KES 21.3|mr3/i386/win|apuhttps.dll|dijOHe3bx813yP5ugH2sHdbfi9c82hHSpKI5Rkg5Xp8="/>
 	<File
 		CompID="RETR1901_APD"
 		App=""
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="unmod-apd-1901g.xml"
-		DSKM="7/A3jqNPyGUKsEdn2uWSf8sGglJfqp/Ud8xV9IfCjOw="/>
+		DSKM="OgvhcjlE6RmSjqCXZrEAHqNLI6jD9XvQQRuyYC5jLHQ="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="unmod-apd-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAC66asLETHgl/UczJp66Guzgx8NphzxjWgqXfJWUZ7bnBV00uTOTMu1oQEtU2Aa6M9JVOQrvNiHwbsgerDXAS1oBAB4JOAEAAAIAAigDAEFQRAMAAigEAEJBU0UBAAAJURrJJw0KOzoxMEs1R1BTYm95VlRKU01qQWRaRDRJMlNEdnpMVnVkMmc3NGJHTUpTc05WUVVOcVhEZ1lOQTIzRHljRS93VVM5SXNuWDFQRHA4SlcwSXlMcy9TNzRyMWRVJSU=</Key>
 </Update>
-;:10aIeBukz/jZpLOKmMolbY8zYT7g6vIWiXdGuYue9NBWEE2OwMov9ad+oqQmd2A1GtbomEL0ilNwi/RGvNKKfVlA%%
+;:10a91/XES3oiqodRXxajZLkOcogNc4y4viuRuN1+MzpSBjG4FWXitYZ8tUTbr/3IiuPCscsTix5h5/b/CtIxbCWe%%
