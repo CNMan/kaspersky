@@ -1,5 +1,5 @@
 <Update
-	Date="16062022 1051"
+	Date="15082022 1304"
 	ObjectType="2=KAV19;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -4220,40 +4220,56 @@
 		DSKM="M8OpuqkWz6OIkNv/dTprWW1cHFAKgJizIgU+2oVsJZ4="/>
 	<Patches
 		ApplyPeriod="168"
-		Item="App;ApplyAction;FixName;SrvPath;LocalPath;Name;DSKM"
+		ApplyAction="restart_os"
+		Item="App;FixName;SrvPath;LocalPath;Name;DSKM"
 		List="
-			KSOSPC\\|KSOSFS 19.0.0.1088|restart_os|n|19.0.0.1088_ksos_n|%ProductFolder%|ushata.dll|opaSIT5gOLJyrR4pAF7K1fvw5qC9BbkaV0HnaC/guAk=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/patch|%ProductFolder%\\\\patch|avpui.exe|7tyGyTwnOH7W3eD6m4lnU046eB8dku/nRAJU98M1oho=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/patch|%ProductFolder%\\\\patch|avpuimain.dll|/FWapC4YBpgjSNSOaMEMS0ntJRAF0cdDgslnzAag17Q=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.kis.ui.shell.dll|DxMRWMAUD2Aa2kTRenkGeQXnojuyu7QTj3s5J1uRj94=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.pure.backupdiskscanner.dll|oZkHSIjwbfTShBiRKCZXGYa1C7T3dM332wEu6QwGDUc=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.restoretool.exe|Jg+b2m302+c0HQTaqt2+Pfmhsdgl3ktoptdU58vLVUg=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|o2dQmTtlYHDanZKL8eO7TJaBGhCiSqSzdCbC8NCRbnU=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|safe_banking.dll|KG6CFrsVhClwfFeXjNOyTrAYhHdTTp8/QgvRmMfIiDc=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_none|p|19.0.0.1088_kis_p|%ProductFolder%|traffic_processing.dll|ulNAx7VRZA1qAslVpJne7G5s+5clg+2CyzJ7d77ML9A=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|product_metainfo.dll|ZlOVPmh2PgNAVuFx3N+6jm+Gxj+f/cc0f9yyid9SpsM=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|ucp_agent.dll|23MwmHRo0iigVA6hSvLmk5oCcVSxjrP0BqKdg9NTr4U=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|p|19.0.0.1088_kis_p|%ProductFolder%|kis2019mp0p.msp|o8Ya6Z/GfZFdwRwmYVRAxHLTec9OFF9WotxcdtEtFvI=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_none|p|19.0.0.1088_kis_p|%ProductFolder%|configuration_kav.esm|7DYYttPpFX2OJRVT5urcO8N+azODAU3WTmLizcHgrA0=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_none|p|19.0.0.1088_kis_p|%ProductFolder%|configuration_kfa.esm|YqZg3b0jL+iMee+cBf6OXK3BGH4x0ivZyw2y90h9q3Q=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_none|p|19.0.0.1088_kis_p|%ProductFolder%|configuration_kis.esm|/w7qUQnd9fjmrDaGt4ayXjhkqq8XpSf2lMy98jV6ipw=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_none|p|19.0.0.1088_kis_p|%ProductFolder%|configuration_pure.esm|hbW7WjwguHX52T0rAl7eobSFfVYjWgYdx5XjSdFqTC8=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_none|p|19.0.0.1088_kis_p|%ProductFolder%|configuration_saas.esm|HgxIWVU0pjvs5Jzc+KQbznpiw5VDQ49lUrwcxS4c/yU=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_none|p|19.0.0.1088_kis_p/kru/skin/resources/neutral/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\neutral\\\\locs|templateurl.lt|7JpTu36t/jtDqX5s6SE6TqTEun0RxdHWhEOhNWS8YHo="/>
+			KSOSPC\\|KSOSFS 19.0.0.1088|n|19.0.0.1088_ksos_n|%ProductFolder%|ushata.dll|opaSIT5gOLJyrR4pAF7K1fvw5qC9BbkaV0HnaC/guAk=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/patch|%ProductFolder%\\\\patch|avpui.exe|7tyGyTwnOH7W3eD6m4lnU046eB8dku/nRAJU98M1oho=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/patch|%ProductFolder%\\\\patch|avpuimain.dll|/FWapC4YBpgjSNSOaMEMS0ntJRAF0cdDgslnzAag17Q=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.kis.ui.shell.dll|DxMRWMAUD2Aa2kTRenkGeQXnojuyu7QTj3s5J1uRj94=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.pure.backupdiskscanner.dll|oZkHSIjwbfTShBiRKCZXGYa1C7T3dM332wEu6QwGDUc=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.restoretool.exe|Jg+b2m302+c0HQTaqt2+Pfmhsdgl3ktoptdU58vLVUg=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|o2dQmTtlYHDanZKL8eO7TJaBGhCiSqSzdCbC8NCRbnU=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|p|19.0.0.1088_kis_p|%ProductFolder%|safe_banking.dll|KG6CFrsVhClwfFeXjNOyTrAYhHdTTp8/QgvRmMfIiDc="/>
+	<Patch
+		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
+		Target="[13108-262143]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="p"
+		SrvPath="19.0.0.1088_kis_p"
+		LocalPath="%ProductFolder%"
+		Name="traffic_processing.dll"
+		DSKM="ulNAx7VRZA1qAslVpJne7G5s+5clg+2CyzJ7d77ML9A="/>
+	<Patches
+		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
+		ApplyPeriod="168"
+		FixName="p"
+		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			restart_os|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
+			restart_os|19.0.0.1088_kis_p|%ProductFolder%|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
+			restart_os|19.0.0.1088_kis_p|%ProductFolder%|product_metainfo.dll|ZlOVPmh2PgNAVuFx3N+6jm+Gxj+f/cc0f9yyid9SpsM=;
+			restart_os|19.0.0.1088_kis_p|%ProductFolder%|ucp_agent.dll|23MwmHRo0iigVA6hSvLmk5oCcVSxjrP0BqKdg9NTr4U=;
+			restart_os|19.0.0.1088_kis_p|%ProductFolder%|kis2019mp0p.msp|o8Ya6Z/GfZFdwRwmYVRAxHLTec9OFF9WotxcdtEtFvI=;
+			restart_none|19.0.0.1088_kis_p|%ProductFolder%|configuration_kav.esm|7DYYttPpFX2OJRVT5urcO8N+azODAU3WTmLizcHgrA0=;
+			restart_none|19.0.0.1088_kis_p|%ProductFolder%|configuration_kfa.esm|YqZg3b0jL+iMee+cBf6OXK3BGH4x0ivZyw2y90h9q3Q=;
+			restart_none|19.0.0.1088_kis_p|%ProductFolder%|configuration_kis.esm|/w7qUQnd9fjmrDaGt4ayXjhkqq8XpSf2lMy98jV6ipw=;
+			restart_none|19.0.0.1088_kis_p|%ProductFolder%|configuration_pure.esm|hbW7WjwguHX52T0rAl7eobSFfVYjWgYdx5XjSdFqTC8=;
+			restart_none|19.0.0.1088_kis_p|%ProductFolder%|configuration_saas.esm|HgxIWVU0pjvs5Jzc+KQbznpiw5VDQ49lUrwcxS4c/yU=;
+			restart_none|19.0.0.1088_kis_p/kru/skin/resources/neutral/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\neutral\\\\locs|templateurl.lt|7JpTu36t/jtDqX5s6SE6TqTEun0RxdHWhEOhNWS8YHo="/>
 	<Patches
 		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
 		ApplyPeriod="168"
@@ -4384,29 +4400,45 @@
 	<Patches
 		App="KSOSPC|KSOSFS 19.0.0.1088"
 		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="p"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			19.0.0.1088_ksos_p/patch|%ProductFolder%\\\\patch|avpui.exe|7tyGyTwnOH7W3eD6m4lnU046eB8dku/nRAJU98M1oho=;
+			19.0.0.1088_ksos_p/patch|%ProductFolder%\\\\patch|avpuimain.dll|/FWapC4YBpgjSNSOaMEMS0ntJRAF0cdDgslnzAag17Q=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.kis.ui.shell.dll|DxMRWMAUD2Aa2kTRenkGeQXnojuyu7QTj3s5J1uRj94=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.pure.backupdiskscanner.dll|oZkHSIjwbfTShBiRKCZXGYa1C7T3dM332wEu6QwGDUc=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.restoretool.exe|Jg+b2m302+c0HQTaqt2+Pfmhsdgl3ktoptdU58vLVUg=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|o2dQmTtlYHDanZKL8eO7TJaBGhCiSqSzdCbC8NCRbnU=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
+			19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
+			19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
+			19.0.0.1088_ksos_p|%ProductFolder%|safe_banking.dll|KG6CFrsVhClwfFeXjNOyTrAYhHdTTp8/QgvRmMfIiDc="/>
+	<Patch
+		App="KSOSPC|KSOSFS 19.0.0.1088"
+		Target="[13108-262143]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="p"
+		SrvPath="19.0.0.1088_ksos_p"
+		LocalPath="%ProductFolder%"
+		Name="traffic_processing.dll"
+		DSKM="ulNAx7VRZA1qAslVpJne7G5s+5clg+2CyzJ7d77ML9A="/>
+	<Patches
+		App="KSOSPC|KSOSFS 19.0.0.1088"
+		ApplyPeriod="168"
 		FixName="p"
 		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM"
 		List="
-			restart_os|19.0.0.1088_ksos_p/patch|%ProductFolder%\\\\patch|avpui.exe|7tyGyTwnOH7W3eD6m4lnU046eB8dku/nRAJU98M1oho=;
-			restart_os|19.0.0.1088_ksos_p/patch|%ProductFolder%\\\\patch|avpuimain.dll|/FWapC4YBpgjSNSOaMEMS0ntJRAF0cdDgslnzAag17Q=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.kis.ui.shell.dll|DxMRWMAUD2Aa2kTRenkGeQXnojuyu7QTj3s5J1uRj94=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|BDBBdPnnGl1kqPVFKMO99nvN2/NYew6cbZw9ZXjX7x8=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.pure.backupdiskscanner.dll|oZkHSIjwbfTShBiRKCZXGYa1C7T3dM332wEu6QwGDUc=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.restoretool.exe|Jg+b2m302+c0HQTaqt2+Pfmhsdgl3ktoptdU58vLVUg=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.ui.backup.dll|MtcwpItZtNryiOQrnqqAKOGLFjxzl3H1JCXgQff1Ki8=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|PBuMTYUS57hB9PvAvEnUcNxWD9OYJZJyGUAUUJOOs8M=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|o2dQmTtlYHDanZKL8eO7TJaBGhCiSqSzdCbC8NCRbnU=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|iO1EqcdDj+pddHf/sHXEJJRGmXSDKZR8fKj+DjjKOxk=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
-			restart_os|19.0.0.1088_ksos_p/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.views.dll|HHxX1N4uNngcdM1s/P/xwPQQ5KaMBrfoIUWictlJf8g=;
-			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|safe_banking.dll|KG6CFrsVhClwfFeXjNOyTrAYhHdTTp8/QgvRmMfIiDc=;
-			restart_none|19.0.0.1088_ksos_p|%ProductFolder%|traffic_processing.dll|ulNAx7VRZA1qAslVpJne7G5s+5clg+2CyzJ7d77ML9A=;
 			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
 			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
 			restart_os|19.0.0.1088_ksos_p|%ProductFolder%|product_metainfo.dll|ZlOVPmh2PgNAVuFx3N+6jm+Gxj+f/cc0f9yyid9SpsM=;
@@ -4494,6 +4526,7 @@
 			zh-Hant|19.0.0.1088_ksos_p/patch/skin/resources/zh-Hant|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\zh-Hant|resources.zip|5MxMj93L0NXgrk5Noa/zI5s3pigzy0oWBN5xhAKmzkM="/>
 	<Patch
 		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
+		Target="[13108-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_none"
 		FixName="r"
@@ -4504,6 +4537,7 @@
 	<Patch
 		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
 		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		Target="[13108-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_none"
 		FixName="r"
@@ -4512,17 +4546,30 @@
 		Name="securityproductinformation.ini"
 		DSKM="5H/QupxFEJujVW3h0qFgYszfavnrUoTTIF3WrV0vO80="/>
 	<Patches
+		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
 		ApplyPeriod="168"
+		ApplyAction="restart_os"
 		FixName="r"
+		SrvPath="19.0.0.1088_kis_r"
 		LocalPath="%ProductFolder%"
-		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		Item="Name;DSKM"
 		List="
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|19.0.0.1088_kis_r|bl.ppl|ZSElWMzHPGDohij3qmAJOwmV48rsE3RdOC28yvLlixU=;
-			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|restart_os|19.0.0.1088_kis_r|kasperskylab.kis.ui.dll|tthXaRWdIBc23E/IG0CJY3emGxcgmP2O92RJp8rTebg=;
-			KSOSPC\\|KSOSFS 19.0.0.1088|restart_none|19.0.0.1088_ksos_r|ver_info.json|KvPICKNVqytNJy9wMtTOPSrTPyf1Ntmukj9g5YaWhY8="/>
+			bl.ppl|ZSElWMzHPGDohij3qmAJOwmV48rsE3RdOC28yvLlixU=;
+			kasperskylab.kis.ui.dll|tthXaRWdIBc23E/IG0CJY3emGxcgmP2O92RJp8rTebg="/>
+	<Patch
+		App="KSOSPC|KSOSFS 19.0.0.1088"
+		Target="[13108-262143]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="r"
+		SrvPath="19.0.0.1088_ksos_r"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="KvPICKNVqytNJy9wMtTOPSrTPyf1Ntmukj9g5YaWhY8="/>
 	<Patch
 		App="KSOSPC|KSOSFS 19.0.0.1088"
 		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		Target="[13108-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_none"
 		FixName="r"
@@ -4541,9 +4588,61 @@
 		List="
 			bl.ppl|ZSElWMzHPGDohij3qmAJOwmV48rsE3RdOC28yvLlixU=;
 			kasperskylab.kis.ui.dll|tthXaRWdIBc23E/IG0CJY3emGxcgmP2O92RJp8rTebg="/>
+	<Patch
+		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
+		Target="[0-13107]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="s"
+		SrvPath="19.0.0.1088_kis_s"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="cx74Zj/ncbr0Knjvru+PHNom1hMHA9QMnDHFS0H8f8s="/>
+	<Patch
+		App="KAV|KIS|PURE|KFA|SAAS 19.0.0.1088"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		Target="[0-13107]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="s"
+		SrvPath="19.0.0.1088_kis_s"
+		LocalPath="%ProductFolder%"
+		Name="securityproductinformation.ini"
+		DSKM="H83KirZ60flvX1i4Yjfm6py1cGz51E20aA0hu5slHpU="/>
+	<Patches
+		Target="[0-13107]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="s"
+		LocalPath="%ProductFolder%"
+		Item="App;SrvPath;Name;DSKM"
+		List="
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 19.0.0.1088|19.0.0.1088_kis_s|traffic_processing.dll|R5wc9H7pEgWF64m/LBifKlaWR6/eE9tPdjc+bIS6b3Q=;
+			KSOSPC\\|KSOSFS 19.0.0.1088|19.0.0.1088_ksos_s|ver_info.json|cx74Zj/ncbr0Knjvru+PHNom1hMHA9QMnDHFS0H8f8s="/>
+	<Patch
+		App="KSOSPC|KSOSFS 19.0.0.1088"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		Target="[0-13107]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="s"
+		SrvPath="19.0.0.1088_ksos_s"
+		LocalPath="%ProductFolder%"
+		Name="securityproductinformation.ini"
+		DSKM="H83KirZ60flvX1i4Yjfm6py1cGz51E20aA0hu5slHpU="/>
+	<Patch
+		App="KSOSPC|KSOSFS 19.0.0.1088"
+		Target="[0-13107]"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="s"
+		SrvPath="19.0.0.1088_ksos_s"
+		LocalPath="%ProductFolder%"
+		Name="traffic_processing.dll"
+		DSKM="R5wc9H7pEgWF64m/LBifKlaWR6/eE9tPdjc+bIS6b3Q="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kav19-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFtqpbotGEz+db3NrlNnbxZQGJNVRUw9U6MnJfIXTRDrEd6EbqOTDQR/R4LxTf2MPI2yA2p9c5Os/ITO/Aly3IYBAB4JggEAAAIAAigFAEtBVjE5AwACKAMAQklOAQAACTJbhlMNCjs6MTBhOXZPS3VWQmlnc1FZR3RKOHllZ1lpRnRFa3kxOERVQ1h6TVRsWW0wVWdINjRSUEEyc0lkc1ZRK2o1WmpSVm1CWkZPYTNYZU5pRWZlaEI2OE9PMVRoRyUl</Key>
 </Update>
-;:10KQF6zwNTD7+vq4J3TvHBMtTbXwHLsFENb1GQ0SO2lWmrs7wWb4BJ5n6vUWvCWtqhxDCBuMifugyjnPCIbVN+Rw%%
+;:10aMV8p/NvKKOXiuoOJ0qMjw+Ka4fFWTzqd+ngLUlKQjLvsaJ5BPReMtzcn5BLroRok718znKD2P5A3iRmtcr2Dz%%
