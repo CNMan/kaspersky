@@ -5,10 +5,9 @@
 		</ConsoleInput>
 	-->
 
-  <!-- !!! CmdLine does not work in versions before KEA 3.13 !!! -->
-  <!-- !!! CmdLine DOES work in versions starting from KEA 3.13 !!! -->
+  <!-- !!! CmdLine does not work !!! -->
 
-  <!-- Version: 2022-03-29T18:19:00.000Z-1648577963 -->
+  <!-- Version: 2022-08-16T17:08:00.000Z-1660669711 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 START 2020-12-19T01:53:00.000Z-1608342825 -->
@@ -344,6 +343,39 @@
 	<ConsoleInput Id="{F6D715B8-8101-8908-CD2B1137C6C4A7E5}" Type="Pipe" Text="*:::;;;*" />
 	<ConsoleInput Id="{418F11E7-8651-6B11-2A45155A71B2310F}" Type="Pipe" Text="*)))$$$*" />
 <!-- Part 0008 2022-03-18T15:57:00.000Z-1647619025 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0009 2022-08-16T17:08:00.000Z-1660669711 -->
+	<ConsoleInput Id="{8295FDFE-9110-FA8D-F5D696247472BF09}" Text="*guest run time*" Type="Pipe" />
+	<ConsoleInput Id="{51185E3C-4D23-54C2-9F3F07C7A1E33300}" Text="*:src/Application.Function/TimerStarter.cs" />
+	<ConsoleInput Id="{2F4E7200-CBE5-7F39-D4A38D0E54B87867}" Type="Pipe">
+		<Process Path="c:\program files\php\v*\php-cgi.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{939D9BCC-C2D2-2753-B3F4E1EACD429A83}" Type="Pipe">
+		<Process Path="c:\program files*\php\php-cgi.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{5EFCD662-968D-AD09-F500DC05C71696C7}" Type="Pipe">
+		<Process Path="c:\program files\php\php*\php-cgi.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{7167D835-DF7B-C3B7-EFFB3DA6A8679EB3}" Type="Pipe">
+		<Process Path="*btsoft\php\*\php-cgi.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{3E66803B-909F-A04F-E2205EA7B28CD8BC}" Text="*timeout 15">
+		<Process Path="*palo alto networks\dem\bin\mtr-packet.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{02106A75-9013-70AE-C7AADB063D52EA27}" Type="Pipe">
+		<Process Path="*git\usr\bin\grep.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{1F4DA29C-33C3-20B7-37C7618F6685B69C}" Type="Pipe">
+		<Process Path="*apache\bin\httpdloggerwrapper.exe" />
+	</ConsoleInput>
+	<ConsoleInput Id="{EAF91A90-2405-63AC-57F737E4B5DBEFC1}" Type="Pipe">
+		<Process Path="C:\Windows\System32\wsl.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</ConsoleInput>
+<!-- Part 0009 2022-08-16T17:08:00.000Z-1660669711 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

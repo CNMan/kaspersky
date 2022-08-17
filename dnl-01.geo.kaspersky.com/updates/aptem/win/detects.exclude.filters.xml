@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-06-10T15:48:00.000Z-1654876096 -->
+	<!-- 2022-08-16T13:41:00.000Z-1660657285 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2248,5 +2248,23 @@
 	</Detect>
 <!-- Part 0050 2022-06-10T15:48:00.000Z-1654876096 -->
 <!-- ############################################################################################################### -->
+
+<!-- Part 0051 2022-08-16T13:41:00.000Z-1660657285 -->
+<!-- ############################################################################################################### -->
+	<Detect Id="{4874E241-5F81-4F82-6C0A1F789221A002}">
+		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}&#34;" />
+	</Detect>
+	<Detect Id="{37ED9E7C-72C5-0BFD-48135CBAAF8C7EC4}">
+		<Process CmdLine="*noprofile  -executionpolicy bypass &#34;&#38; &#39;c:\windows\ccm\systemtemp\*.ps1&#39;&#34;" />
+	</Detect>
+	<Detect Id="{8B6FE675-78C7-71C6-009158C7D4684EFF}" ContentValue="*390787&#39;?&#10;compatiblepseditions = @(&#39;desktop&#39;)&#10;}??" />
+	<Detect Id="{61BA5C13-EE11-D20C-645B13DB2D861958}">
+		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}" />
+	</Detect>
+	<Detect Id="{E1FADB41-DF31-8A1E-E1E99774C9F7EDFC}">
+		<Process CmdLine="*noprofile  -executionpolicy bypass &#38; &#39;c:\windows\ccm\systemtemp\*.ps1&#39;" />
+	</Detect>
+<!-- ############################################################################################################### -->
+<!-- Part 0051 2022-08-16T13:41:00.000Z-1660657285 -->
 
 </Filters>

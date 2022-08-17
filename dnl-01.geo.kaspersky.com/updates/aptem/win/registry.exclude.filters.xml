@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-03-08T21:10:00.000Z-1646773831 -->
+  <!-- Version: 2022-08-16T14:07:00.000Z-1660658836 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2669,8 +2669,8 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 15: 2022-03-08T21:10:00.000Z-1646773831 -->
-	<Registry Id="{2EFA6C07-1A24-5407-C74CE9DF5A0A47E9}" Path="*custom\sapregsv.exe">
-		<Process>
+	<Registry Id="{2EFA6C07-1A24-5407-C74CE9DF5A0A47E9}" >
+		<Process Path="*custom\sapregsv.exe">
 			<Signature Subject="SAP SE" />
 		</Process>
 	</Registry>
@@ -2678,18 +2678,14 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 16: 2022-05-30T13:28:30.000Z-1653917310 -->
-	<Registry Id="{6946F3A6-5C55-4D3D-91FBFEC826BE8208}" Path="*IDT\WDM\stacsv64.exe">
-		<Process>
-			<Signature Subject="Microsoft Windows Hardware Compatibility Publisher" />
-		</Process>
+<!-- Part 16: 2022-08-16T14:07:00.000Z-1660658836 -->
+	<Registry Id="{4874E241-5F81-4F82-6C0A1F789221A002}">
+		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}&#34;" />
 	</Registry>
-	<Registry Id="{B111AB10-4074-4B0E-880E2AA1037E6AD2}" Path="*SelfService.exe">
-		<Process>
-			<Signature Subject="Citrix Receiver" />
-		</Process>
+	<Registry Id="{61BA5C13-EE11-D20C-645B13DB2D861958}">
+		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}" />
 	</Registry>
-<!-- Part 16: 2022-05-30T13:28:30.000Z-1653917310 -->
+<!-- Part 16: 2022-08-16T14:07:00.000Z-1660658836 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
