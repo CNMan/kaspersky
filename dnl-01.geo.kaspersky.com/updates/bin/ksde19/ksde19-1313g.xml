@@ -1,5 +1,5 @@
 <Update
-	Date="18082022 0731"
+	Date="22082022 0751"
 	ObjectType="2=KSDE19;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -543,35 +543,26 @@
 	<Patches
 		App="KSDE 19.0.0.1088"
 		ApplyPeriod="0"
-		ApplyAction="restart_service"
-		Item="FixName;SrvPath;LocalPath;Name;DSKM"
+		Item="ApplyAction;FixName;SrvPath;LocalPath;Name;DSKM"
 		List="
-			m|19.0.0.1088_ksde_m|%ProductFolder%|app_core_legacy.dll|wm0Qsn2GQlT6VDhQDRkhOTsqIlWXc8heeibWNx3b8YQ=;
-			m|19.0.0.1088_ksde_m|%ProductFolder%|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo=;
-			m|19.0.0.1088_ksde_m/kru|%ProductFolder%\\\\Kaspersky Restore Utility|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo=;
-			m|19.0.0.1088_ksde_m|%ProductFolder%|shell_service.dll|rF4QJwYm15BkfrlMDTY6R3AFsgr5Qtx8dECMMuXcnCk=;
-			m|19.0.0.1088_ksde_m|%ProductFolder%|ksde2019mp0m.msp|DrUNGTVNoAyNJTupYjMgVWvZ+a+Pv8GUtu56FuhmtRQ=;
-			n|19.0.0.1088_ksde_n|%ProductFolder%|ushata.dll|opaSIT5gOLJyrR4pAF7K1fvw5qC9BbkaV0HnaC/guAk=;
-			n|19.0.0.1088_ksde_n|%ProductFolder%|bl_ksde.ppl|1JR9/H0Ep5k8R+go+EGqHLifMaHfDnhox8lj7isFQEQ=;
-			n|19.0.0.1088_ksde_n|%ProductFolder%|kasperskylab.ksde.nativeinterop.dll|0392FZUq2VvuaRiZ17Gpx/2dW82rQvf1D/vwaa2/KK8=;
-			n|19.0.0.1088_ksde_n|%ProductFolder%|kasperskylab.ksde.ui.dll|X9JMt0hxKQqS7nvpj2hstAVb72zBHscYu9TUWoLL5yg=;
-			n|19.0.0.1088_ksde_n|%ProductFolder%|ksdeuimain.dll|LCBgDk136dbbiMLHkzWmFPxQi6ooGNPpFzKHLmzXrmM=;
-			p|19.0.0.1088_ksde_p|%ProductFolder%|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
-			p|19.0.0.1088_ksde_p|%ProductFolder%|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
-			p|19.0.0.1088_ksde_p|%ProductFolder%|product_metainfo.dll|ZlOVPmh2PgNAVuFx3N+6jm+Gxj+f/cc0f9yyid9SpsM=;
-			p|19.0.0.1088_ksde_p|%ProductFolder%|ucp_agent.dll|23MwmHRo0iigVA6hSvLmk5oCcVSxjrP0BqKdg9NTr4U="/>
-	<Patches
-		App="KSDE 19.0.0.1088"
-		ApplyPeriod="0"
-		ApplyAction="restart_none"
-		LocalPath="%ProductFolder%"
-		Item="Target;FixName;SrvPath;Name;DSKM"
-		List="
-			[65536-262143]|r|19.0.0.1088_ksde_r|ver_info.json|Rcpz+OiU5gn9AjOEPNy3O+6L5urwboXPMoU8+0XdK8M=;
-			[0-65535]|s|19.0.0.1088_ksde_s|ver_info.json|UexeMj4XEoQ9Hr7WolNq19Osj5idkZhv7PdUKsmTNdc="/>
+			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|app_core_legacy.dll|wm0Qsn2GQlT6VDhQDRkhOTsqIlWXc8heeibWNx3b8YQ=;
+			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo=;
+			restart_service|m|19.0.0.1088_ksde_m/kru|%ProductFolder%\\\\Kaspersky Restore Utility|instrumental_services.dll|rAK5Wxn3RUZwu3b4TG+baeaYGnwWDA6Wac7DLtjkfFo=;
+			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|shell_service.dll|rF4QJwYm15BkfrlMDTY6R3AFsgr5Qtx8dECMMuXcnCk=;
+			restart_service|m|19.0.0.1088_ksde_m|%ProductFolder%|ksde2019mp0m.msp|DrUNGTVNoAyNJTupYjMgVWvZ+a+Pv8GUtu56FuhmtRQ=;
+			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|ushata.dll|opaSIT5gOLJyrR4pAF7K1fvw5qC9BbkaV0HnaC/guAk=;
+			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|bl_ksde.ppl|1JR9/H0Ep5k8R+go+EGqHLifMaHfDnhox8lj7isFQEQ=;
+			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|kasperskylab.ksde.nativeinterop.dll|0392FZUq2VvuaRiZ17Gpx/2dW82rQvf1D/vwaa2/KK8=;
+			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|kasperskylab.ksde.ui.dll|X9JMt0hxKQqS7nvpj2hstAVb72zBHscYu9TUWoLL5yg=;
+			restart_service|n|19.0.0.1088_ksde_n|%ProductFolder%|ksdeuimain.dll|LCBgDk136dbbiMLHkzWmFPxQi6ooGNPpFzKHLmzXrmM=;
+			restart_service|p|19.0.0.1088_ksde_p|%ProductFolder%|kasperskylab.ui.core.dll|FMCg/N3GqlyP0Kvm8t9ZLaH4OoDnngaodyZe+YhXXms=;
+			restart_service|p|19.0.0.1088_ksde_p|%ProductFolder%|kasperskylab.ui.core.visuals.dll|xkZnYLqUyKPu2Xa9meTAyZ0UqvqMVE+xVzMpyJkOXng=;
+			restart_service|p|19.0.0.1088_ksde_p|%ProductFolder%|product_metainfo.dll|ZlOVPmh2PgNAVuFx3N+6jm+Gxj+f/cc0f9yyid9SpsM=;
+			restart_service|p|19.0.0.1088_ksde_p|%ProductFolder%|ucp_agent.dll|23MwmHRo0iigVA6hSvLmk5oCcVSxjrP0BqKdg9NTr4U=;
+			restart_none|s|19.0.0.1088_ksde_s|%ProductFolder%|ver_info.json|UexeMj4XEoQ9Hr7WolNq19Osj5idkZhv7PdUKsmTNdc="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ksde19-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAB8hgOOI1OQxYXPYsW+nj8DxXjcNkO7udKpIucOepfBWVMFcsbB6b/TZ1/Y6INrUEiJXtTAZGoVbidW3yhy4mx8BAB4JkAEAAAIAAigGAEtTREUxOQMAAigDAEJJTgEAAAm9tVA0DQo7OjEwNEZ5VnlBaWptbm5CLzZNcithVW0yN1NsNC9zNkdoSWJNQzJ0bHZOaXVYQnFYZVkwQk5FWUIyNitHRzAyMERZa3lYcE5GL1JsTXVCN09rbTJ3c0hmeE0lJQ==</Key>
 </Update>
-;:10K8YDtEQGyxn3QGuZn+wLz9DLtwkGOzXJ9aQmcCk8KwnZtlDiahCsfEOX7K9GCNTZMlhUUEgsFAyOpzlkxk++Ua%%
+;:10qAyvqTY8WJvUwzBivWlzFIoWDOkGgobkLvpsVzXdhWcq3fekTx1Vb0W7LMRSG7QnzVpOXdaSIw/fSCMDzjXB8n%%
