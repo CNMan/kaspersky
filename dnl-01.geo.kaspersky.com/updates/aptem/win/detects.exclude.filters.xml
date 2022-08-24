@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-08-16T13:41:00.000Z-1660657285 -->
+	<!-- 2022-08-23T18:56:00.000Z-1661280985 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2249,8 +2249,8 @@
 <!-- Part 0050 2022-06-10T15:48:00.000Z-1654876096 -->
 <!-- ############################################################################################################### -->
 
-<!-- Part 0051 2022-08-16T13:41:00.000Z-1660657285 -->
 <!-- ############################################################################################################### -->
+<!-- Part 0051 2022-08-16T13:41:00.000Z-1660657285 -->
 	<Detect Id="{4874E241-5F81-4F82-6C0A1F789221A002}">
 		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}&#34;" />
 	</Detect>
@@ -2264,7 +2264,69 @@
 	<Detect Id="{E1FADB41-DF31-8A1E-E1E99774C9F7EDFC}">
 		<Process CmdLine="*noprofile  -executionpolicy bypass &#38; &#39;c:\windows\ccm\systemtemp\*.ps1&#39;" />
 	</Detect>
-<!-- ############################################################################################################### -->
 <!-- Part 0051 2022-08-16T13:41:00.000Z-1660657285 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0052 2022-08-23T18:56:00.000Z-1661280985 -->
+	<Detect Id="{4FFF480F-3541-452B-E684AAC08FAA1D18}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{A7ED8C00-67E0-FE48-EE9E9FBB35833511}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process CmdLine="*exclusionprocess*" />
+	</Detect>
+	<Detect Id="{13078AA6-5A7B-5CBF-926C13955BFB8C6E}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process CmdLine="*mpcomputerstatus).amproductversion*" />
+	</Detect>
+	<Detect Id="{9C548140-3B64-143E-D33C79DB6AE955C3}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process CmdLine="*ocs inventory agent\plugins*" />
+	</Detect>
+	<Detect Id="{4F3E94F8-2E58-1C8C-A35EFE3A658079C2}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process CmdLine="*disablerealtimemonitoring*" />
+	</Detect>
+	<Detect Id="{7A731E05-3333-789F-00C68BB1AECF78AB}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process CmdLine="*exclusionpath*" />
+	</Detect>
+	<Detect Id="{F8ADB46C-4112-DA53-0CD83F103F06D705}" ContentValue="idictionary.add(&#34;connections&#34;, &#34;&#60;&#60;&#60;mssql_connections*parameter type 0000200c&#34;);?&#10;">
+		<Process CmdLine="*c:\programdata\checkmk\agent\plugins\mssql.vbs" />
+	</Detect>
+	<Detect Id="{524990C7-55C7-557C-187D4A17ED4A79BC}" ContentValue="iswbemobjectex._0100000*microsoft\microsoft sql server*_recordset.close();?&#10;">
+		<Process CmdLine="*c:\programdata\checkmk\agent\plugins\mssql.vbs" />
+	</Detect>
+	<Detect Id="{D8FF0C75-FF17-CBD9-9C7D4DFE40B0B9E5}" ContentValue="itextstream.atendofstream();*itextstream.close();?&#10;">
+		<Process CmdLine="*c:\programdata\checkmk\agent\plugins\mssql.vbs" />
+	</Detect>
+	<Detect Id="{847492BB-B5E0-0BA6-890696DF3A41B74B}" ContentValue="stdregprov.getobject*tdregprov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{465CF7F2-7757-4014-D5D3ADC8EEC650CD}" ContentValue="stdregprov.getobject*tdregprov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{EA34DB40-8E0C-2791-4B138D0CAB66C1A4}" ContentValue="ps_vpnconnection.execmethod(get)*tdregprov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{06851AA4-157A-E273-0B4FB142E922264B}" ContentValue="?*">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -nologo -noninteractive  -executionpolicy bypass &#38; &#39;c:\windows\ccm\systemtemp\????????-????-????-????-????????????.ps1&#39;" />
+	</Detect>
+	<Detect Id="{F0E80C24-2351-DADC-561425DCD3CFB891}" ContentValue="ps_vpnconnection.execmethod(get)*tdregprov.execmethod(getbinaryvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{787382A1-7E50-6C67-4A5CFDC8D6DC54E2}" ContentValue="ps_vpnconnection.execmethod(get)*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{7B749103-D3AE-952F-04164EB919B8B9BD}" ContentValue="ps_vpnconnection.execmethod(get)*tdregprov.execmethod(enumkey);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{4EFFE0E3-F745-98A4-61FBA1F9136E5DA0}" ContentValue="?&#10;function extractpluginproperties*shellnoterrmsgformat -f $_?&#10;      write-error $errmsg ?&#10;    }     ?&#10;  }?&#10;">
+		<Process CmdLine="powershell  enable-psremoting -force -skipnetworkprofilecheck" />
+	</Detect>
+	<Detect Id="{B21D9E8F-C22C-9DD6-15607E54F28F8E32}" ContentValue="win32_*pnpentity where deviceid like &#34;display*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{17F9AFA2-DB2D-285C-00E9BF5A5C3F66F3}" ContentValue="win32_*pnpentity where deviceid like &#34;display*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+<!-- Part 0052 2022-08-23T18:56:00.000Z-1661280985 -->
+<!-- ############################################################################################################### -->
 
 </Filters>
