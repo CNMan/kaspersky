@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-08-16T13:53:00.000Z-1660658016 -->
+	<!-- Version: 2022-08-24T14:38:00.000Z-1661351901 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1374,6 +1374,14 @@
 		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}" />
 	</Image>
 <!-- Part 0011 2022-08-16T13:53:00.000Z-1660658016 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0012 2022-08-24T14:38:00.000Z-1661351901 -->
+	<Image Id="{1585084F-5EA8-9A9F-94C7A5C6F7331B11}">
+		<Process CmdLine="..\..\third_party\llvm-build\Release+Asserts\bin\clang-cl.exe /c ..*" />
+	</Image>
+<!-- Part 0012 2022-08-24T14:38:00.000Z-1661351901 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-08-23T18:56:00.000Z-1661280985 -->
+	<!-- 2022-08-25T12:56:00.000Z-1661432214 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2272,6 +2272,9 @@
 	<Detect Id="{4FFF480F-3541-452B-E684AAC08FAA1D18}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
 		<Process CmdLine=" --pid=*" />
 	</Detect>
+	<Detect Id="{5FFF480F-3541-452B-E684AAC08FAA1D19}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
+		<Process CmdLine="--pid=*" />
+	</Detect>
 	<Detect Id="{A7ED8C00-67E0-FE48-EE9E9FBB35833511}" ContentValue="*$__cmdletization_objectmodelwrapper.psobject.properties[&#39;throttlelimit&#39;].value = $mypsboundparameters[&#39;throttlelimit&#39;] *">
 		<Process CmdLine="*exclusionprocess*" />
 	</Detect>
@@ -2328,5 +2331,257 @@
 	</Detect>
 <!-- Part 0052 2022-08-23T18:56:00.000Z-1661280985 -->
 <!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0053 2022-08-24T20:59:00.000Z-1661374759 -->
+<!-- Part 0053 2022-08-25T12:56:00.000Z-1661432214 -->
+	<Detect Id="{A00506E3-725B-9809-D8279506DE660435}" ContentValue="*putvaluetocache $paramspath &#34;connectiontime">
+		<Process CmdLine="*microsoft monitoring agent\agent\*cacheexpirationtime 43200" />
+	</Detect>
+	<Detect Id="{6AB189A9-D60C-6C85-B4592BF5B42182BD}" ContentValue="*arg (&#39;search-mailboxauditlog&#39;, $psboundparameters, $positionalarguments) `*">
+		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{65D3122E-430C-C041-922728600FFDBF0F}" ContentValue="*h2 {font-size:7pt; margin-left:20; color:#a9a9a9;}*">
+		<Process CmdLine="powershell.exe c:\jobs\userpasswordchangednotification\userpasswordchangednotification.ps1" />
+	</Detect>
+	<Detect Id="{CE9026C4-4539-D660-BDF91E119C91C815}" ContentValue="[array]$process = get-process -name harmonysc*harmonysc service&#39; | restart-service?&#10;}">
+		<Process CmdLine="*restartharmony.ps1 -noprofile -executionpolicy bypass" />
+	</Detect>
+	<Detect Id="{06868B81-B2BE-1DF2-3AE763120FD283F0}" ContentValue="iwshshell3.exec(&#34;\\vl*local_pass_wks.cmd&#34;);?&#10;">
+		<Process CmdLine="*local_pass_wks.exe" />
+	</Detect>
+	<Detect Id="{478AA3F9-3760-4139-5C7A3EE7C4D22B91}" ContentValue="*friendlyname -match &#34;34.10*">
+		<Process CmdLine=" -executionpolicy bypass -file \\vl*skzi.ps1 " />
+	</Detect>
+	<Detect Id="{6171C7E3-CD1E-1CF0-7A7E7BF5E9C9A329}" ContentValue="*friendlyname -match &#34;34.10*">
+		<Process CmdLine="-executionpolicy bypass -file \\vl*skzi.ps1" />
+	</Detect>
+	<Detect Id="{BE4E30FC-41B8-FAA2-F8670B1D6F668534}" ContentValue="*netlogon\lspush.exe 10.*">
+		<Process CmdLine="*scan.vbs&#34; " />
+	</Detect>
+	<Detect Id="{CC27229B-E7A7-396E-CE0CB5B222EE8502}" ContentValue="*netlogon\lspush.exe 10.*">
+		<Process CmdLine="*scan.vbs " />
+	</Detect>
+	<Detect Id="{401C905A-E1DC-5C95-422F87710B02C3A6}" ContentValue="*netlogon\lspush.exe 10.*">
+		<Process CmdLine="*scan.vbs" />
+	</Detect>
+	<Detect Id="{C9DB0E4D-BE09-AD55-E5F69FE103B1822C}" ContentValue="{ @(&#39;logon&#39;) -contains $_ }" />
+	<Detect Id="{DD64AFFB-A59A-6368-041A89D6A67023D4}" ContentValue="function get-usertype*winusers&#62;`n&#34;&#10;&#9;&#9;&#10;}&#10;&#10;[console]::outputencoding = [system.text.encoding]::utf8&#10;[console]::writeline($xml)&#10;">
+		<Process CmdLine="*ocs inventory agent\plugins*" />
+	</Detect>
+	<Detect Id="{139DC9CF-8E2F-B15F-4A96D33D9EAE74F8}" ContentValue="*loglocation  = &#34;$env:windir\ccm\swdlog\dwg_trueview*">
+		<Process CmdLine="powershell.exe  -executionpolicy bypass -file install_*" />
+	</Detect>
+	<Detect Id="{BDAD3FFA-D542-AAB8-46164E70EC32173E}" ContentValue="function script_*, 0, &#34;finished&#34;);&#10; }">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{F4B87257-EC79-9B99-33578D43B2F47399}" ContentValue="*scriptversion&#34; -type &#34;1&#34; -lastmodified &#34;$scriptdate&#34;">
+		<Process CmdLine="*powershell.exe -noninteractive -noprofile -command &#38; {function run-server*" />
+	</Detect>
+	<Detect Id="{08D0A38C-4D40-9037-242E89F5EEA9C22A}" ContentValue="ihost.scriptfullname*">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\windows\ccmcache\??\acrordrdc*_install.vbs" />
+	</Detect>
+	<Detect Id="{53DD326A-F16C-6F28-0932E56A0E27580A}" ContentValue="ihost.scriptfullname*">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\windows\ccmcache\??\google_chrome_*_install.vbs" />
+	</Detect>
+	<Detect Id="{C501A5F5-7319-A9A7-B91EF01FCA53AD5E}" ContentValue="ihost.scriptfullname*">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\windows\ccmcache\?\acrordrdc*_install.vbs" />
+	</Detect>
+	<Detect Id="{4AF8A475-C69E-0E4B-E59654607D1781CE}" ContentValue="ihost.scriptfullname*">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\windows\ccmcache\?\google_chrome_*_install.vbs" />
+	</Detect>
+	<Detect Id="{F275A135-BD94-1450-239DCB513D292883}" ContentValue="iswbemservicesex.execquery(&#34;select ? from win32_process where name = &#39;wscript.exe*">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\wmfremote\bin\launchapp.vbs " />
+	</Detect>
+	<Detect Id="{128DBAD8-CC66-23C2-533B4A649B19D0B6}" ContentValue="iswbemservicesex.execquery(&#34;select ? from win32_process where name = &#39;wscript.exe*">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\wmfremote\bin\launchapp.vbs" />
+	</Detect>
+	<Detect Id="{A461AD0E-4277-5124-C3161802CB3F594C}" ContentValue="iswbemservicesex.execquery(&#34;select ? from win32_process where name = &#39;wscript.exe*">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\wmfremote\bin\launchapp.vbs?" />
+	</Detect>
+	<Detect Id="{2EF864F0-3ACE-3991-52004A635EF5871C}" ContentValue="*localizationpath/?.yaml&#13;&#10;if ($lastexitcode*">
+		<Process CmdLine="powershell  -executionpolicy remotesigned ./generate-localization.ps1 -projectdir*" />
+	</Detect>
+	<Detect Id="{DE22F678-4862-8CB9-F3A458B35C4EF133}" ContentValue="ccm_virtualmachineinfo*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{6A619475-1EA3-AA95-6C7A1738F077F3AF}" ContentValue="hpqbintm.instancename=&#34;acpi*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{CB469779-3FCB-5F23-6715547C5C6FDCB2}" ContentValue="legacydiags.createinstanceenum*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{170618D7-1825-175A-8EC4FFAC74AD348C}" ContentValue="mdm_windowsdefenderapplicationguard*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{97253BB4-32AB-6A90-9F8F7A11EF5F9ECC}" ContentValue="msft_mpcomputerstatus*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{A6E44AF8-03A3-5AD6-7DFB6DCAD79C48D0}" ContentValue="msft_netroute.instanceid=&#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{EBEB8730-63E4-6CCC-73C51ECB2B98C15B}" ContentValue="msft_smbshare.name=&#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{CED9B133-0892-6CFC-337D2CD47FF5A2A8}" ContentValue="msft_somfilter.domain=&#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{9D948110-430E-116D-D89DF6855EBA6E2A}" ContentValue="msft_somfilter.id=&#34;{*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{4F576A68-407A-503C-B950D2917F59EF69}" ContentValue="setpropvalue.providername(&#34;winmgmt*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{FFFFD62E-5457-939C-6BD5C4654B9D4FD2}" ContentValue="win32_baseboard*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{00EDCDFD-4D7B-0093-920826A5B585D34C}" ContentValue="win32_bios.*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{01D1F26C-2AEA-760E-A4DB08642DEB2106}" ContentValue="win32_computersystem.*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{A05055CC-C7B3-8D41-C660BE3FFE3574A8}" ContentValue="win32_computersystemproduct*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{A36C16CA-82A0-081E-0AE166F8F5FAF476}" ContentValue="win32_desktopmonitor*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{8DFF054A-0657-1CF9-779894F0C61E5426}" ContentValue="win32_deviceguard*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{F2DBD1CE-C7E8-0946-9B3DC6EE750DD223}" ContentValue="win32_diskdrive*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{429A3E7D-D5AA-B6FF-31ADE586D62387D4}" ContentValue="win32_diskpartition*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{B790B095-AF39-DABA-2EAD9309D3B19AE7}" ContentValue="win32_encryptablevolume*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{433EF05D-87FB-8D2C-D8DACC32D114CDDF}" ContentValue="win32_group.domain=&#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{B57D13FC-AAF4-7A4C-6F98B1AC15C7544B}" ContentValue="win32_ip4routetable*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{A2AED189-CF33-E3A9-F349780205417610}" ContentValue="win32_logicaldisktopartition*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{BFFF5ABB-9288-A24E-59614A0B8DD6E46E}" ContentValue="win32_operatingsystem*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{C7CE33AD-D76C-9757-7699709566214BEB}" ContentValue="win32_pagefilesetting*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{16618AFA-ED94-563A-542E49BE6D3C0BF4}" ContentValue="win32_perfformatteddata_counters_processorinformation*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{D8B04B40-A86C-55B6-D30F1EDA02EFDE27}" ContentValue="win32_perfformatteddata_perf*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{F93A6C1A-9FBA-4A90-C7F95922B73C777F}" ContentValue="win32_perfformatteddata_tcpip_networkinterface*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{BAE9E4B1-A000-D61F-F3FD33344A6A2A77}" ContentValue="win32_quickfixengineering*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{23C5DCD7-BAD6-44D3-2FD55EABE5D8D953}" ContentValue="win32_systemaccount.domain=&#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{8E602B1F-24A7-4995-8AC21C5347E63236}" ContentValue="win32_systemenclosure*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{ED9D6BC8-073B-C61D-80228F6A4BF282E5}" ContentValue="win32_usbhub*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{EE9EB179-0CBA-5543-5D7EF347D8BC519A}" ContentValue="win32_useraccount.domain=&#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{A90E435D-939A-8701-BB0A5A1475F8DBFA}" ContentValue="wmi.execquery(select ? from win32_networkadapterconfiguration where ipenabled = true*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{CC4D4C50-8685-66D8-A6A601696EC4A5E3}" ContentValue="wmi.execquery(select __relpath,*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{F2884692-C3E4-FD1D-C00F55284F602957}" ContentValue="win32_perfrawdata*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{1CAE307C-FC4F-8AB2-2BA4DB01439FEFB4}" ContentValue="stdregprov.getobject*wow6432node\microsoft\microsoft sql server*">
+		<Process CmdLine="*c:\programdata\checkmk\agent\plugins\mssql.vbs" />
+	</Detect>
+	<Detect Id="{2AB86309-ED8A-421C-6BA3A0B055B3E54E}" ContentValue="@{?&#10;guid=&#34;*&#10;compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;}?&#10;" />
+	<Detect Id="{16A56266-27C9-879E-0445F77E6DB56197}" ContentValue="$g_traceregroot = &#34;hku:\s-1-5-20\software\microsoft\windows\currentversion\deliveryoptimization\trace*">
+		<Process CmdLine="*sourceurl | convertto-xml -as string -notypeinformation" />
+	</Detect>
+	<Detect Id="{AA83CF4B-80CD-97E1-22F147769431F3F1}" ContentValue="param(&#10;&#9;$targetid*script finished&#34;&#10;&#9;exitwrapper&#10;}">
+		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+	</Detect>
+	<Detect Id="{6BB2A684-86E1-2373-257676EF9381296D}" ContentValue="start-transcript -path &#39;\\msk*transcript.log&#39; -append*">
+		<Process CmdLine="*cmp_rdp.ps1" />
+	</Detect>
+	<Detect Id="{A79AE5C1-98E5-1DFE-17F8D093D76241F2}" ContentValue="*csvpath=$badcomputersfolder+&#34;\&#34;+$env:computername+&#34;.csv&#34;*">
+		<Process CmdLine="powershell  -file c:\windows\system32\test-*" />
+	</Detect>
+	<Detect Id="{310E2E9B-0EE2-1E49-B8EC9C06F39679AE}" ContentValue="$agent1 = get-service -name &#34;bamboo*">
+		<Process CmdLine="*startagentsifdown.ps1" />
+	</Detect>
+	<Detect Id="{BE9457CC-4F95-460D-32C7538BA27EEC94}" ContentValue="*licensingtype from win32_terminalservicesetting&#39; -erroraction silentlycontinue).licensingtype">
+		<Process CmdLine="powershell.exe  (get-wmiobject*" />
+	</Detect>
+	<Detect Id="{DE548E79-7475-CAC5-C5231CD9ECF4CA84}" ContentValue="*$r | add-member -membertype noteproperty -name $servicedisplayname -value $servicestate*">
+		<Process CmdLine="powershell  -file &#34;c:\windows\system32\test-*" />
+	</Detect>
+	<Detect Id="{9934D339-00F4-6C79-3F32ABC4B58BB593}" ContentValue="*$r | add-member -membertype noteproperty -name $servicedisplayname -value $servicestate*">
+		<Process CmdLine="powershell  -file c:\windows\system32\test-*" />
+	</Detect>
+	<Detect Id="{DF3C55B5-7694-3A3D-F68D336322350601}" ContentValue="*software\zoho corp\manageengine assetexplorer*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{CAC15E87-078F-B9C6-E39E834B83D99A64}" ContentValue="*ssubkeyname(&#34;software\microsoft\office*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{1413220D-4266-B685-7AA0322E9D32D05D}" ContentValue="?*">
+		<Process Path="c:\program files (x86)\lansweeperagent\lansweeperagentservice.exe">
+			<Signature Subject="*Lansweeper*" />
+		</Process>
+	</Detect>
+	<Detect Id="{6951EA63-26E4-D62B-7F4FB94C5D710D76}" ContentValue="*wmi.execquery(select ? from win32_service where (name = &#34;windefend&#34; or name = &#34;msmpsvc&#34;));&#10;wmi.execquery(select ? from win32_service where (name = &#34;windefend&#34; or name = &#34;msmpsvc&#34;));*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{3E618A90-0FBF-2CBF-11F13C456EBD2B6B}" ContentValue="*wmi.execquery(select ? from win32_terminalservice where (name = &#34;windefend&#34; or name = &#34;msmpsvc&#34;));&#10;wmi.execquery(select ? from win32_service where (name = &#34;windefend*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{C310F373-3E2D-C6EF-5DE44ABE8387DCB6}" ContentValue="*wmi.execquery(select ? from win32_service where name = &#34;clicktorunsvc*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{59A6B616-E67D-7B21-E74C7F219A8E086D}" ContentValue="*wmi.execquery(select ? from win32_terminalservice where name = &#34;clicktorunsvc*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{5BB3B2DA-D88C-B226-784E52DFD9A540E3}" ContentValue="*wmi.execquery(select ? from ccm_service_*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{68CBB8B4-0DDA-9FAE-FAA3136DCB9CF2A4}" ContentValue="*wmi.execquery(select ? from win32_service where (name = &#34;windefend&#34; or name = &#34;msmpsvc&#34;));&#10;wmi.execquery(select ? from win32_terminalservice where (name = &#34;windefend*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{F445C487-0664-C59B-1F0BCB0A4024B48A}" ContentValue="wmi.execquery(select ? from win32_terminalservice where (name = &#34;windefend&#34; or name = &#34;msmpsvc*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{54005436-3A3A-F25D-204E414083F72860}" ContentValue="wmi.execquery(select ? from win32_service where (name = &#34;windefend&#34; or name = &#34;msmpsvc*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{E8C94B1C-DD67-EC6B-79E142C1703A470B}" ContentValue="*win32_process.handle=&#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{04A80B5E-DFCE-B986-EA86CDFBC08FCAE7}" ContentValue="*running&#34;));&#10;wmi.execquery(select __relpath*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+	<Detect Id="{62130D58-2A64-D439-AA0563FE9BC71690}" ContentValue="*and domain = &#34;*&#34;));&#10;wmi.execquery(select ? from win32_useraccount where (name = &#34;*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
+	</Detect>
+<!-- Part 0053 2022-08-25T12:56:00.000Z-1661432214 -->
+<!-- Part 0053 2022-08-24T20:59:00.000Z-1661374759 -->
+<!-- ############################################################################################################### -->
+
 
 </Filters>
