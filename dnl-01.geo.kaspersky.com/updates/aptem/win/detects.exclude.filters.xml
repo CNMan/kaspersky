@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-08-25T12:56:00.000Z-1661432214 -->
+	<!-- 2022-08-26T15:33:00.000Z-1661528010 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -200,7 +200,9 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0007 START 2021-03-30T16:26:00.000Z-1617121577 -->
-	<Detect Id="{DD8636B2-034C-0D9B-6084EC4A8F716EC5}" ContentValue="function Get-FileHash?&#10;{?&#10;    [CmdletBinding(DefaultParameterSetName*$systemAcl)?&#10;            RawDescriptor = $rawSecurityDescriptor?&#10;        }?&#10;    }?&#10;}??" />
+<!-- Part 0007 START 2022-08-25T14:39:00.000Z-1661438379 -->
+<!-- DD8636B2-034C-0D9B-6084EC4A8F716EC5 was a double of D7E94DAD-D1E9-37A2-402882732C488FBD -->
+<!-- Part 0007 END 2022-08-25T14:39:00.000Z-1661438379 -->
 <!-- Part 0007 END 2021-03-30T16:26:00.000Z-1617121577 -->
 
 <!-- ############################################################################################################### -->
@@ -2583,5 +2585,26 @@
 <!-- Part 0053 2022-08-24T20:59:00.000Z-1661374759 -->
 <!-- ############################################################################################################### -->
 
+<!-- ############################################################################################################### -->
+<!-- Part 0054 2022-08-26T15:33:00.000Z-1661528010 -->
+	<Detect Id="{49EAD741-F712-7E9C-09A0631770F91FE7}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  get-wmiobject -class win32_*" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</Detect>
+	<Detect Id="{59EAD741-F712-7E9C-09A0631770F91FE7}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  [system.net.dns]::gethostname()" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</Detect>
+	<Detect Id="{11ED458D-776D-DF0F-D573AFD35B5AA6D0}">
+		<Process CmdLine="powershell (get-counter -counter \\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure\, \\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory\, \\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time\).countersamples.cookedvalue" />
+	</Detect>
+	<Detect Id="{4CD38DCE-D471-E6FE-D0373CBA359FF3EC}" ContentValue="{([datetime]::parseexact($_.basename.trimstart(&#34;u_ex&#34;).substring(0,6), &#34;yymmdd&#34;, $null)).date -ge $startdate.date;}" />
+	<Detect Id="{F7F079F6-B5F8-7770-966F6B2C4016F2CD}">
+		<Process CmdLine="*&#38; {&#38; &#39;c:\program files\ocs inventory agent*" />
+	</Detect>
+<!-- Part 0054 2022-08-26T15:33:00.000Z-1661528010 -->
+<!-- ############################################################################################################### -->
 
 </Filters>

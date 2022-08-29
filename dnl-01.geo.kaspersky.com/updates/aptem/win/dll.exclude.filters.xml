@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-08-24T14:38:00.000Z-1661351901 -->
+	<!-- Version: 2022-08-26T18:09:00.000Z-1661537345 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1382,6 +1382,33 @@
 		<Process CmdLine="..\..\third_party\llvm-build\Release+Asserts\bin\clang-cl.exe /c ..*" />
 	</Image>
 <!-- Part 0012 2022-08-24T14:38:00.000Z-1661351901 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0013 2022-08-26T18:09:00.000Z-1661537345 -->
+	<Image Id="{69EAD741-F712-7E9C-09A0631770F91FE9}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  get-wmiobject -class win32_*" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</Image>
+	<Image Id="{79EAD741-F712-7E9C-09A0631770F91FE7}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  [system.net.dns]::gethostname()" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</Image>
+	<Image Id="{11ED458D-776D-DF0F-D573AFD35B5AA6D0}">
+		<Process CmdLine="powershell (get-counter -counter \\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure\, \\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory\, \\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time\).countersamples.cookedvalue" />
+	</Image>
+	<Image Id="{E744EFEA-E0A9-87FB-63C65ADDC6D525D5}" Path="C:\Program Files\DeviceLock Agent*">
+		<Signature Subject="*DeviceLock*" />
+	</Image>
+	<Image Id="{14A96564-75BA-6A80-03D45EDC0AB787D4}" Path="C:\Program Files\DeviceLock Agent\FreeImage_x64.dll">
+		<VersionInfo ProductName="FreeImage" OrignFileName="FreeImage.dll" />
+	</Image>
+	<Image Id="{A3F9AC03-A32A-6FFE-3BE21C3A52819BB9}" Path="C:\Program Files\DeviceLock Agent\FreeImage.dll">
+		<VersionInfo ProductName="FreeImage" OrignFileName="FreeImage.dll" />
+	</Image>
+<!-- Part 0013 2022-08-26T18:09:00.000Z-1661537345 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

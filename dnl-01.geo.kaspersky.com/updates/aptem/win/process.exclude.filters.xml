@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-08-24T14:40:00.000Z-1661352007 -->
+	<!-- 2022-08-26T13:03:00.000Z-1661518986 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -291,6 +291,24 @@
 <!-- Part 0013 2022-08-24T14:40:00.000Z-1661352007 -->
 	<Image Id="{177888B5-5014-F2AE-F83797881CBD3ECF}" CmdLine="..\..\third_party\llvm-build\Release+Asserts\bin\clang-cl.exe /c ..*" />
 <!-- Part 0013 2022-08-24T14:40:00.000Z-1661352007 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0014 2022-08-26T13:03:00.000Z-1661518986 -->
+	<Image Id="{F7118A74-CFC2-1CB4-B3DE8D7BDB9FCAA7}" CmdLine="c:\windows\system32\cmd.exe /c c:/windows/system32/windowspowershell/v1.0/powershell.exe get-wmiobject -class win32_*" >
+		<Hash MD5="911d039e71583a07320b32bde22f8e22" />
+	</Image>
+	<Image Id="{602A384C-98F0-8BFF-8D70C3E8F90A695F}" CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  get-wmiobject -class win32_*" >
+		<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+	</Image>
+	<Image Id="{07118A74-CFC2-1CB4-B3DE8D7BDB9FCAA7}" CmdLine="c:\windows\system32\cmd.exe /c c:/windows/system32/windowspowershell/v1.0/powershell.exe [system.net.dns]::gethostname()" >
+		<Hash MD5="911d039e71583a07320b32bde22f8e22" />
+	</Image>
+	<Image Id="{702A384C-98F0-8BFF-8D70C3E8F90A695F}" CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  [system.net.dns]::gethostname()" >
+		<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+	</Image>
+	<Image Id="{4D03E570-16F2-D5D8-86FEE40F01C41DA1}" CmdLine="powershell (get-counter -counter \\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure\&#x2c; \\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory\&#x2c; \\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time\).countersamples.cookedvalue" />
+<!-- Part 0014 2022-08-26T13:03:00.000Z-1661518986 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

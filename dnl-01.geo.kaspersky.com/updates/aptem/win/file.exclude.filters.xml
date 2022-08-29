@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-08-16T13:49:00.000Z-1660657772 -->
+	<!-- Version: 2022-08-26T12:54:00.000Z-1661518476 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -8459,6 +8459,30 @@
 		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}" />
 	</File>
 <!-- Part 0018 2022-08-16T13:49:00.000Z-1660657772 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0019 2022-08-26T12:54:00.000Z-1661518476 -->
+	<File Id="{E8C066D9-5DB7-4194-D68096BB8C4DC9A4}" FilePath="*AppData\Local\Temp\__PSScriptPolicyTest_*.???.ps1">
+		<Process Path="*\powershell.exe" />
+	</File>
+	<File Id="{7FDD5CF6-C735-B454-EB4B1878C9C5D5EB}" FilePath="*AppData\Local\Temp\__PSScriptPolicyTest_*.???.psm1">
+		<Process Path="*\powershell.exe" />
+	</File>
+	<File Id="{59EAD741-F712-7E9C-09A0631770F91FE8}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  get-wmiobject -class win32_*" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</File>
+	<File Id="{69EAD741-F712-7E9C-09A0631770F91FE7}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  [system.net.dns]::gethostname()" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</File>
+	<File Id="{11ED458D-776D-DF0F-D573AFD35B5AA6D0}">
+		<Process CmdLine="powershell (get-counter -counter \\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure\, \\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory\, \\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time\).countersamples.cookedvalue" />
+	</File>
+<!-- Part 0019 2022-08-26T12:54:00.000Z-1661518476 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
