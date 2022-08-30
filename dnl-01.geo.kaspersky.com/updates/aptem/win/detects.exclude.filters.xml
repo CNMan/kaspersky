@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-08-26T15:33:00.000Z-1661528010 -->
+	<!-- 2022-08-29T17:48:00.000Z-1661795332 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -1045,7 +1045,9 @@
 		<Process CmdLine="*vmware\infrastructure\powercli\scripts\initialize-powerclienvironment.ps1*" />
 	</Detect>
 	<Detect Id="{FF6AE4C1-18FA-1B6F-54D80F881766CB21}" ContentValue="function script_*main&#10;                 }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 <!-- Part 0027 End 2021-10-16T16:56:00.000Z-1634403366 -->
 <!-- ############################################################################################################### -->
@@ -1090,10 +1092,14 @@
 	<Detect Id="{95067905-89EF-A56F-4CDACF79B0B36DFA}" ContentValue="*typedefinition (get-content -path (join-path -path $psscriptroot -childpath &#34;resource\bxrrpackagestate.cs*" />
 	<Detect Id="{16ECB011-2AAA-4D58-688C4EE408E76132}" ContentValue="*regitem = get-itemproperty -path &#34;hklm:software\microsoft\microsoft services bootxray&#34; -name optout -erroraction silentlycontinue) -and*" />
 	<Detect Id="{D6BEBCE5-BE79-6CF5-6091036A9FADDD89}" ContentValue="function script_*, 0, &#34;finished&#34; );&#10;&#10;$discoverydata&#10; }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{AD56DE89-1B8A-09A0-A1EC31CA3BD2FA99}" ContentValue="function script_*total script runtime ($scripttime) seconds.&#34;)&#10; }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{B49769D7-720A-1820-451EFA70E1C3292C}" ContentValue="?*">
 		<Process CmdLine="powershell.exe  $ex_perms=@();$defaults=@();$macls=(get-acl \c:\users\*\.oci\config\).access.identityreference;$defaults+=[wmi]\win32_sid.sid=&#39;s-1-*" />
@@ -1107,7 +1113,9 @@
 		<Process CmdLine="powershell.exe  $ex_perms=@();$defaults=@();$macls=(get-acl \c:\users\*\.oci\oci_api_key.pem\).access.identityreference;$defaults+=[wmi]\win32_sid.sid=&#39;s-1-*" />
 	</Detect>
 	<Detect Id="{BD2C0940-BB85-CE95-96AAA50A9660BC4C}" ContentValue="function script_*opropertybag.addvalue(&#34;scompercentagecputime&#34;, $finalpercentprocessortime)&#10;}&#10;$opropertybag&#10;&#10;                   }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{A8B48F0F-2B70-39B0-4AFB67A5A7EFEF68}" ContentValue="*manual&#39;    {[int]$expectedstart = 3}?&#10;        &#39;disabled&#39;  {[int]$expectedstart = 4}?&#10;        &#39;notdisabled">
 		<Process CmdLine="*microsoft pfe remediation for configuration manager\pferemediationscript.ps1" />
@@ -1208,10 +1216,14 @@
 		<Process CmdLine="powershell Get-Service -Name &#39;Netlogon&#39; | Select-Object -ExpandProperty Status" />
 	</Detect>
 	<Detect Id="{17FE3B6B-4FDD-1B4B-6D92F20D06AD91F4}" ContentValue="function script_*main&#10;                               &#10;                     }">
-		<Process CmdLine="C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe -Embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{B704E491-7128-50FF-AECC79CAC7FA4E8D}" ContentValue="function script_*cimcmdlets&#10;&#9;&#9;&#9;$error.clear()&#10;&#9;}&#10;} }">
-		<Process CmdLine="C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe -Embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{C11A6B22-90C3-245F-AE7DAD850B30BCE1}" ContentValue="$pwd = convertto-securestring &#39;??????????????????????&#39; -asplaintext -force;;echo &#34;ps????????????????????????&#34;; [console]::error.writeline(&#34;ps????????????????????????&#34;)" />
 	<Detect Id="{5E99E574-5BF6-BF58-97AEC25DB5C2022D}" ContentValue="$session = get-pssession -id 1; if (($session -ne $null) -and ($session.state.tostring() -eq &#34;opened&#34;))  {i*echo &#34;ps????????????????????????&#34;; [console]::error.writeline(&#34;ps????????????????????????&#34;)" />
@@ -1269,10 +1281,14 @@
 		<Process CmdLine="*::open(&#39;c:\programdata\microsoft\windows defender advanced threat protection\*" />
 	</Detect>
 	<Detect Id="{9564BA13-A5BB-1761-30E39CE4E339A4CF}" ContentValue="function script_*)&#10;}&#10;&#10;$discoverydata }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{56452745-FCF3-929F-A1DC81D023A3CE20}" ContentValue="function script_*                       }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 <!-- Part 0034 2022-01-31T19:04:00.000Z-1643655895 -->
 <!-- ############################################################################################################### -->
@@ -1884,39 +1900,52 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0046 2022-04-26T14:24:00.000Z-1650983080 -->
+<!-- Part 0046 2022-08-29T15:42:00.000Z-1661787766 -->
 	<Detect Id="{88C276EE-DBD1-325C-AEF3E45D1AD8380F}" ContentValue="$tempfolder = [system.io.path]::gettemppath();$startdate = [datetime]::parse(&#34;20*force;};}convertto-json -compress $target;">
 		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
 	</Detect>
 	<Detect Id="{D6839DD7-6280-1DEF-97E770330D50A52F}" ContentValue="if (!([security.principal.windowsprincipal][security.principal.windowsidentity]::getcurrent()).isinrole*">
 		<Process CmdLine="powershell.exe  -file c:\program files\zabbix agent\scripts\get_cpu_temp_win10.ps1 " />
 	</Detect>
-	<Detect Id="{A206D1E6-A8CA-0DA7-91128CA822459FDD}" ContentValue="function script_*additem($bag)&#10;$bag         &#10; }">
-		<Process CmdLine="&#34;c:\program files\microsoft monitoring agent\agent\monitoringhost.exe&#34; -embedding" />
-	</Detect>
 	<Detect Id="{4DB1212E-250E-E895-92B2C445F85C2FA5}" ContentValue="function script_*additem($bag)&#10;$bag         &#10; }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{6C533919-0B65-2245-B8C29CC1D7B8E540}" ContentValue="function script_*minvalue;&#10;&#10;    [system.glob">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{ACE84029-9F63-E3FF-143CC330E5048BED}" ContentValue="function script_*out-string&#10;&#9;&#34;error: $err&#34;&#10;}&#10; }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{C4F82BC7-06EA-E87E-4A33E68F0D0C2115}" ContentValue="function script_*loginfo );&#10;                &#10; }&#10;&#10;&#10;&#10;            &#10;                 }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{8E8A600D-1FB3-38D6-9F3277017353AEEE}" ContentValue="function script_*msg);&#10;&#10;  exit -1;&#10;} }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{A9254560-861F-4D96-7846C459296357BF}" ContentValue="function script_*discoverydata&#10;&#9;      exit&#10;      }&#10;    }&#10;} }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{4F1A660F-0FD2-C9A7-1D9CFB941B5D128A}" ContentValue="function script_*discoverydata&#10;&#9;&#9;  exit&#10;&#9;  }&#10;&#10;    }&#10;} }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{432E5E69-0BCE-433F-C4E126418DB1D14B}" ContentValue="*if ($script:__psimplicitremoting_versionofscriptgenerator.major -ne 1.0)*">
 		<Process CmdLine="c:\windows\system32\wsmprovhost.exe -embedding" />
 	</Detect>
+<!-- Part 0046 2022-08-29T15:42:00.000Z-1661787766 -->
 <!-- Part 0046 2022-04-26T14:24:00.000Z-1650983080 -->
 <!-- ############################################################################################################### -->
 
@@ -1935,16 +1964,24 @@
 <!-- Part 0048 2022-05-31T17:24:00.000Z-1654017859 -->
 <!-- Part 0048 2022-06-01T15:51:00.000Z-1654098670 -->
 	<Detect Id="{7C915B25-2788-9558-3E073BEE21BDB6B1}" ContentValue="function script_*onds 1&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}&#10;} }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{4550DE3B-EEA8-1DF0-FC707AEC1E8C2A20}" ContentValue="function script_*ueries&#34;, $totalqueries)&#10;$bag }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{1E2E6EDE-FABD-7E49-7D4467DEB5F5D284}" ContentValue="function script_*        &#10;                     }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{ABB3353F-11A1-D25D-F44C5D8561AF26D4}" ContentValue="function script_*tprocess-discoveryfailure&#9;&#10;} }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{27EC0BDE-B305-5099-5DF68816C374D63F}" ContentValue="*root\ccm\invagt:c00000000_0000_0000_0000_000000000001.instancekey*">
 		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
@@ -2375,7 +2412,9 @@
 		<Process CmdLine="powershell.exe  -executionpolicy bypass -file install_*" />
 	</Detect>
 	<Detect Id="{BDAD3FFA-D542-AAB8-46164E70EC32173E}" ContentValue="function script_*, 0, &#34;finished&#34;);&#10; }">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{F4B87257-EC79-9B99-33578D43B2F47399}" ContentValue="*scriptversion&#34; -type &#34;1&#34; -lastmodified &#34;$scriptdate&#34;">
 		<Process CmdLine="*powershell.exe -noninteractive -noprofile -command &#38; {function run-server*" />
@@ -2517,7 +2556,9 @@
 		<Process CmdLine="*sourceurl | convertto-xml -as string -notypeinformation" />
 	</Detect>
 	<Detect Id="{AA83CF4B-80CD-97E1-22F147769431F3F1}" ContentValue="param(&#10;&#9;$targetid*script finished&#34;&#10;&#9;exitwrapper&#10;}">
-		<Process CmdLine="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe -embedding" />
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding" >
+			<Signature Subject="*microsoft*" />
+		</Process>
 	</Detect>
 	<Detect Id="{6BB2A684-86E1-2373-257676EF9381296D}" ContentValue="start-transcript -path &#39;\\msk*transcript.log&#39; -append*">
 		<Process CmdLine="*cmp_rdp.ps1" />
@@ -2587,6 +2628,7 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0054 2022-08-26T15:33:00.000Z-1661528010 -->
+<!-- Part 0054 2022-08-29T14:41:00.000Z-1661784065 -->
 	<Detect Id="{49EAD741-F712-7E9C-09A0631770F91FE7}">
 		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  get-wmiobject -class win32_*" >
 			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
@@ -2597,14 +2639,54 @@
 			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
 		</Process>
 	</Detect>
-	<Detect Id="{11ED458D-776D-DF0F-D573AFD35B5AA6D0}">
-		<Process CmdLine="powershell (get-counter -counter \\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure\, \\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory\, \\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time\).countersamples.cookedvalue" />
-	</Detect>
+	<Detect Id="{FBAA2D60-7BFB-39B8-6A50B6DD760BD934}" ContentValue="(get-counter -counter &#34;\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure&#34;, &#34;\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory&#34;, &#34;\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time&#34;).countersamples.cookedvalue" />
 	<Detect Id="{4CD38DCE-D471-E6FE-D0373CBA359FF3EC}" ContentValue="{([datetime]::parseexact($_.basename.trimstart(&#34;u_ex&#34;).substring(0,6), &#34;yymmdd&#34;, $null)).date -ge $startdate.date;}" />
 	<Detect Id="{F7F079F6-B5F8-7770-966F6B2C4016F2CD}">
 		<Process CmdLine="*&#38; {&#38; &#39;c:\program files\ocs inventory agent*" />
 	</Detect>
+<!-- Part 0054 2022-08-29T14:41:00.000Z-1661784065 -->
 <!-- Part 0054 2022-08-26T15:33:00.000Z-1661528010 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0055 2022-08-29T17:48:00.000Z-1661795332 -->
+	<Detect Id="{655BFAAA-946C-14C7-C759E0756EC468E4}" ContentValue="function script_*monitoring script complete&#34;)&#10; }">
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{C80A9984-88CC-474B-4D7ED41095AA15B4}" ContentValue="function script_*error code&#34;, $errcode);&#10;$bag; }">
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{9FBB332C-1765-B921-63470BF8B0989E09}" ContentValue="function script_*totalseconds) seconds.&#34;); }">
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{7DF6B909-674F-D19F-48C80A52FAE78904}" ContentValue="function script_*traffic keys check finished&#34;)&#10; }">
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{AD19BA60-2D90-9185-B6A313E7D6A41402}" ContentValue="function script_*erroractionpreference =">
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{95664844-3D69-C28E-B9F494BD6F3679B2}" ContentValue="function script_*api.return($discoverydata)&#10;$discoverydata&#10; }">
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{ECB416C1-1D00-D083-6ADE3944389ED504}" ContentValue="function script_*continue&#34;&#10;  $sqlconnection.close()&#10;}&#10;&#10;&#10; }">
+		<Process CmdLine="?:\program files\microsoft*\monitoringhost.exe -embedding">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Detect>
+	<Detect Id="{A127CF3C-DAEF-224A-E02A0CB40115D649}" ContentValue="{$_ -match $validationtimestatusmatch}" />
+<!-- Part 0055 2022-08-29T17:48:00.000Z-1661795332 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
