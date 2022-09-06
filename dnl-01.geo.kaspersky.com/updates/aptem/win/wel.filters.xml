@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2022-01-11T19:21:00.000Z-1641928882 -->
+  <!-- Version: 2022-09-06T12:56:00.000Z-1662469011 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -1005,6 +1005,30 @@
         <Equal OrderNum="12" Value="-"/>
         <Equal OrderNum="13" Value="seprofilesingleprocessprivilege"/>
         <Match OrderNum="15" Value="*microsoft\teams\current\teams.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*Microsoft\Edge\Application\msedge.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*google\chrome\application\chrome.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*plustek\plustek*\docuaction.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*adobe\acrobat reader*\rdrcef.exe"/>
       </Conjunction>
     </Exclusions>
   </Event>
