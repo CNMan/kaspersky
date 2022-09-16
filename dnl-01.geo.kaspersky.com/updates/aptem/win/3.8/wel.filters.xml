@@ -493,6 +493,7 @@
 
   <Event Name="NetworkShareAccessedEx.Vista" Id="5145" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Exclusions>
+      <Equal OrderNum="14" Value="\\*\IPC$"/>
       <Equal OrderNum="14" Value="\\*\NETLOGON"/>
       <Equal OrderNum="14" Value="\\*\SYSVOL"/>
       <Equal OrderNum="16" Value="spoolss"/>
@@ -816,6 +817,18 @@
 
   <Event Name="PrivilegedServiceCalled.Vista" Id="4673" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
     <Exclusions>
+      <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="seprofilesingleprocessprivilege"/>
+        <Match OrderNum="15" Value="C:\Windows\System32\SearchIndexer.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="seprofilesingleprocessprivilege"/>
+        <Match OrderNum="15" Value="*\Microsoft\Edge\Application\msedge.exe"/>
+      </Conjunction>
       <Conjunction>
         <Equal OrderNum="11" Value="security"/>
         <Equal OrderNum="12" Value="-"/>

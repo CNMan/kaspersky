@@ -3877,4 +3877,24 @@
 	</NetworkConnection>
 <!-- Part 0016 2022-05-30T13:28:30.000Z-1653917310 -->
 <!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0017 2022-09-15T05:48:00.000Z-1663220880 -->
+	<NetworkConnection Id="{6A5BB4DD-181B-493D-AAD3C2E3BB29CD59}">
+		<Process Path="*Karmasis\Infraskope Agent\EventLogForwarder.exe">
+			<Signature Subject="Karmasis*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{2F375038-46BE-405A-90AC272D5B2603FC}">
+		<Process Path="C:\Program Files\Zabbix Agent\zabbix_agent2.exe">
+			<Signature Subject="Zabbix SIA" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{4D269572-BBDA-4693-B1CBD9927F7B5CC4}">
+		<Process Path="*\Cisco Systems\Cisco IP Communicator\communicatork9.exe">
+			<Signature Subject="Cisco*" />
+		</Process>
+	</NetworkConnection>
+<!-- Part 0017 2022-09-15T05:48:00.000Z-1663220880 -->
+<!-- ############################################################################################################### -->
 </Filters>

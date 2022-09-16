@@ -2688,4 +2688,24 @@
 <!-- Part 16: 2022-08-16T14:07:00.000Z-1660658836 -->
 <!-- ############################################################################################################### -->
 
+<!-- ############################################################################################################### -->
+<!-- Part 17: 2022-09-15T05:48:00.000Z-1663220880 -->
+	<Registry Id="{38169F72-12B6-4CB4-9FE8F6B95D04ABD3}" Path="*\SOFTWARE\BGInfo.tmp">
+		<Process Path="C:\ProgramData\BGINFO\KTB\Bginfo.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{8122BD2B-A1AB-49C6-A8C6605FCEC3807B}" Path="\REGISTRY\MACHINE\SOFTWARE\WOW6432Node\EventLogForwarder\Bookmarks">
+		<Process Path="*Karmasis\Infraskope Agent\EventLogForwarder.exe">
+			<Signature Subject="Karmasis*" />
+		</Process>
+	</Registry>
+	<Registry Id="{7A8E0190-639A-428D-B04894232D5A972D}" Path="\REGISTRY\USER\S-1-5-21-523111424-226049479-1908750753*">
+		<Process Path="*Cisco Systems\Cisco IP Communicator\communicatork9.exe">
+			<Signature Subject="Cisco*" />
+		</Process>
+	</Registry>
+<!-- Part 17: 2022-09-15T05:48:00.000Z-1663220880 -->
+<!-- ############################################################################################################### -->
+
 </Filters>
