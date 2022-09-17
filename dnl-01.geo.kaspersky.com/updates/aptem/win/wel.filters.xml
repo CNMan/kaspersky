@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2022-09-06T12:56:00.000Z-1662469011 -->
+  <!-- Version: 2022-09-16T13:04:00.000Z-1663333454 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -484,6 +484,7 @@
 
   <Event Name="NetworkShareAccessedEx.Vista" Id="5145" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Exclusions>
+      <Equal OrderNum="14" Value="\\*\IPC$"/>
       <Equal OrderNum="14" Value="\\*\NETLOGON"/>
       <Equal OrderNum="14" Value="\\*\SYSVOL"/>
       <Equal OrderNum="16" Value="spoolss"/>
@@ -808,6 +809,18 @@
   <Event Name="PrivilegedServiceCalled.Vista" Id="4673" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
     <Exclusions>
       <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="seprofilesingleprocessprivilege"/>
+        <Match OrderNum="15" Value="C:\Windows\System32\SearchIndexer.exe"/>
+	  </Conjunction>
+	  <Conjunction>
+        <Equal OrderNum="11" Value="security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="seprofilesingleprocessprivilege"/>
+        <Match OrderNum="15" Value="*\Microsoft\Edge\Application\msedge.exe"/>
+	  </Conjunction>
+	  <Conjunction>
         <Equal OrderNum="11" Value="security"/>
         <Equal OrderNum="12" Value="-"/>
         <Equal OrderNum="13" Value="seprofilesingleprocessprivilege"/>
