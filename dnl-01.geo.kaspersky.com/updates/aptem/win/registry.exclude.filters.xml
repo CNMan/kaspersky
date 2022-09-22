@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-08-16T14:07:00.000Z-1660658836 -->
+  <!-- Version: 2022-09-21T19:26:00.000Z-1663788374 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2689,23 +2689,129 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 17: 2022-09-15T05:48:00.000Z-1663220880 -->
-	<Registry Id="{38169F72-12B6-4CB4-9FE8F6B95D04ABD3}" Path="*\SOFTWARE\BGInfo.tmp">
-		<Process Path="C:\ProgramData\BGINFO\KTB\Bginfo.exe">
-			<Signature Subject="*Microsoft*" />
+<!-- Part 17: 2022-09-21T19:26:00.000Z-1663788374 -->
+	<Registry Id="{F3919E9A-C19E-8C21-0D0C2CB640D0FFEC}" Path="\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\SensorFramework-*">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</Registry>
+	<Registry Id="{B3965DC5-D636-B36E-6CCBF1CB1A394842}" Path="\REGISTRY\MACHINE\SOFTWARE\Microsoft\CCM*">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</Registry>
+	<Registry Id="{A5E272D4-F7BC-17B0-ABCBD860B76A202B}" Path="\REGISTRY\MACHINE\SOFTWARE\Classes\Installer\Products\*">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</Registry>
+	<Registry Id="{6BD3F5C8-E5C1-0E7C-CCC0373962C55237}" Path="\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Rollback*">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</Registry>
+	<Registry Id="{704D2D6C-A605-C65A-64B8B1103FE855FF}" Path="*SOFTWARE\Microsoft\ServerManager\ServicingStorage\ServerComponentCache*">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</Registry>
+	<Registry Id="{AABBB327-93C3-6E8F-AA65300B86362A7D}" Path="\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows Media Foundation\FrameServer*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{3414F490-312D-40D8-32E44056D205CABC}" Path="\REGISTRY\MACHINE\SYSTEM\ControlSet001\Services\DsmSvc\State">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{CDCD3F84-39E9-A40B-B1829EB7DFCE220C}" Path="*SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{F92F21E5-C8A1-EFF6-7D82F7DCF6457953}" Path="\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Wosc\Client\Persistent\ClientState*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{B197361B-6D06-1005-2054BA97C81D6D49}" Path="\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Installer\CurrentStatus">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{37FA6E40-6489-6332-E6A81FE1FE7D546B}" Path="\registry\machine\software\policies\microsoft\windows\appprivacy">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{CAED8907-3DA6-BAE2-00494CBC0C03A94B}" Path="\registry\machine\system\controlset001\services\lanmanworkstation">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{17D293C1-1FDE-C888-EF90394855C77C25}" Path="\registry\machine\system\controlset001\control\storage\enableddenygp\{*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{9EDF4F35-06A5-B617-2404CA5EED4A4AAC}" Path="\registry\machine\software\microsoft\windows\currentversion\appmodel\staterepositorystatus">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{10A10F85-BCAA-0E76-361744D3C2BA09D7}" Path="\registry\machine\software\policies\microsoft\windows\system">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{5304FD69-661C-A718-668CB1C95604A6F7}" Path="\registry\machine\software\policies\microsoft\windows\windows search">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{1520F833-B746-4FE6-25330C15AEA4651D}" Path="\registry\machine\software\policies\microsoft services\admpwd">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{F5D864C3-5DE4-667E-3C8AFA1BCE72A55B}" Path="\registry\machine\software\microsoft\analog\facedeviceinfo">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{5A0F2744-F793-ECE5-A5EBFEF75C53C0AA}" Path="*local settings\muicache*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Registry>
+	<Registry Id="{CAE2F630-937C-25CD-C700790A602B525E}" Path="*software\plustek*">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</Registry>
+	<Registry Id="{3DC57584-BC5F-F5C8-12123057C9ED4D31}" Path="*systemcertificates*">
+		<Process Path="*Nexthink*">
+			<Signature Subject="*NEXThink*" />
 		</Process>
 	</Registry>
-	<Registry Id="{8122BD2B-A1AB-49C6-A8C6605FCEC3807B}" Path="\REGISTRY\MACHINE\SOFTWARE\WOW6432Node\EventLogForwarder\Bookmarks">
-		<Process Path="*Karmasis\Infraskope Agent\EventLogForwarder.exe">
-			<Signature Subject="Karmasis*" />
+	<Registry Id="{4AFDE40A-AA23-EDAE-7AE79CA3376154BE}" Path="*nexthink*">
+		<Process Path="*Nexthink*">
+			<Signature Subject="*NEXThink*" />
 		</Process>
 	</Registry>
-	<Registry Id="{7A8E0190-639A-428D-B04894232D5A972D}" Path="\REGISTRY\USER\S-1-5-21-523111424-226049479-1908750753*">
-		<Process Path="*Cisco Systems\Cisco IP Communicator\communicatork9.exe">
-			<Signature Subject="Cisco*" />
+	<Registry Id="{2AF22C71-B809-5941-291D47579BA6B729}" Path="*settings\muicache*">
+		<Process Path="*Nexthink*">
+			<Signature Subject="*NEXThink*" />
 		</Process>
 	</Registry>
-<!-- Part 17: 2022-09-15T05:48:00.000Z-1663220880 -->
+	<Registry Id="{F54BD5FD-AAA1-B3A2-F153521E5999FB3A}" Path="*software\ssprint*">
+		<Process Path="*Nexthink*">
+			<Signature Subject="*NEXThink*" />
+		</Process>
+	</Registry>
+	<Registry Id="{27E1319B-42AE-AA3C-D099794856B10780}" Path="*software\ssprint*" Name="%kl_undef%" />
+	<Registry Id="{B0E9AD92-E186-69CE-E1CEEDE7B1382B14}" Path="*software\ssprint*" Name="adv*" />
+	<Registry Id="{3AE737A2-541B-44A0-764BC993466C8E69}" Path="*software\ssprint*" Name="amp*" />
+	<Registry Id="{811E79AF-ED70-4AE7-2C10723ADE7FD2EF}" Path="*software\ssprint*" Name="apppath*" />
+	<Registry Id="{75C6FA29-E1E1-5F15-C45C0250D80EF30E}" Path="*software\ssprint*" Name="attributes*" />
+	<Registry Id="{08DA01B1-49D5-8CFC-89920833AFFBF144}" Path="*software\ssprint*" Name="autoconfig*" />
+	<Registry Id="{E46F4AB4-2499-0248-45EC4DAB8258BDED}" Path="*software\ssprint*" Name="bidi*" />
+	<Registry Id="{F3B44AA5-056F-511A-B8CEBBB54A4F740C}" Path="*software\ssprint*" Name="cmstable_value*" />
+	<Registry Id="{7725E0FE-3D9F-EDEE-622A745FC6CDF562}" Path="*software\ssprint*" Name="devicedata*" />
+	<Registry Id="{C0C8C642-9E92-A958-511698D7628D87F6}" Path="*software\ssprint*" Name="devmode*" />
+	<Registry Id="{D981B6CF-2EB3-C5F1-7F29BE0253975594}" Path="*software\ssprint*" Name="drivername*" />
+	<Registry Id="{E2F229B2-AC62-68AD-423032B80C0D560D}" Path="*software\ssprint*" Name="drvcntcode*" />
+	<Registry Id="{175D9597-46B1-2BB1-F1B7D077EDF69A95}" Path="*software\ssprint*" Name="emfspooling*" />
+	<Registry Id="{A6B9D9A4-0FF3-F3D6-23C73C88A37FD729}" Path="*software\ssprint*" Name="fileprint*" />
+	<Registry Id="{2BB37D26-33D5-9FB9-CACDF6AE3D9BDA6B}" Path="*software\ssprint*" Name="getprinter*" />
+	<Registry Id="{D67E1E4A-6406-88EE-3F453AD0635129B1}" Path="*software\ssprint*" Name="key*" />
+	<Registry Id="{64E62D90-D6A3-FDB2-1A5786E688439251}" Path="*software\ssprint*" Name="liveupdate*" />
+	<Registry Id="{47C76179-904F-8B4C-1C03C8D25A157CCF}" Path="*software\ssprint*" Name="muidata*" />
+	<Registry Id="{30037363-3EA3-C6A3-BD58A3137E6AF0BA}" Path="*software\ssprint*" Name="port*" />
+	<Registry Id="{E497E2AA-B291-A381-01A0CD1A994BC008}" Path="*software\ssprint*" Name="pp_ssi5m*" />
+	<Registry Id="{3712A0E8-2F67-916A-7498721E36E0F570}" Path="*software\ssprint*" Name="ppkey*" />
+	<Registry Id="{5044DB59-AD48-3900-4EC7A02091EA74AB}" Path="*software\ssprint*" Name="printername*" />
+	<Registry Id="{30EBE6EC-4B28-7FAF-02FFA1FACAF7A080}" Path="*software\ssprint*" Name="rd_autoconfig*" />
+	<Registry Id="{2D8400D1-B524-B65D-1A8FED25E2B81A9A}" Path="*software\ssprint*" Name="servername*" />
+	<Registry Id="{C04B6D13-4352-B9C8-8BB43381648E83F5}" Path="*software\ssprint*" Name="smsupport*" />
+	<Registry Id="{4EFE62C7-2075-E107-C5475BAF2FB79A05}" Path="*software\ssprint*" Name="tech*" />
+	<Registry Id="{FFF04DBE-1AE0-3044-5C3714D9D80C6D68}" Path="*software\ssprint*" Name="uipreset*" />
+	<Registry Id="{A94FC5BD-0B11-267E-B53EDCC8B6B7F0C8}" Path="*software\ssprint*" Name="uitype*" />
+	<Registry Id="{D5349AFC-DE3E-BBF4-0572C04B0CCA12EA}" Path="*software\ssprint*" Name="warmup*" />
+	<Registry Id="{ACED3ADC-D570-1D9D-C6216AB35C0D9498}" Path="*software\microsoft\windows\currentversion\searchsettings">
+		<Process Path="C:\WINDOWS\SystemApps\*\SearchApp.exe" />
+	</Registry>
+	<Registry Id="{47D6FBCB-BC7E-3796-450CF30C75BAD77D}" Path="*software\microsoft\windows\currentversion\windowproperties*">
+		<Process Path="*Microsoft\Edge\Application\msedge.exe" />
+	</Registry>
+	<Registry Id="{381D19DC-48E4-34B2-F567E6DE39BD0F0C}" Path="\registry\machine\software\cvsm">
+		<Process Path="C:\WINDOWS\system32\CompatTelRunner.exe" />
+	</Registry>
+	<Registry Id="{441F7385-7242-F9DC-9DDCC6F8943CD0B6}" Path="*software\microsoft\windows\currentversion\feeds">
+		<Process Path="C:\WINDOWS\system32\backgroundTaskHost.exe" />
+	</Registry>
+<!-- Part 17: 2022-09-21T19:26:00.000Z-1663788374 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

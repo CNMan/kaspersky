@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2022-09-19T12:01:00.000Z-1663588878 -->
+  <!-- Version: 2022-09-21T14:44:00.000Z-1663771449 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -1404,6 +1404,24 @@
       <Match OrderNum="14" Value="*p traffic to cdpsvc*" />
       <Match OrderNum="14" Value="windows media* block *" />
       <Match OrderNum="14" Value="cast to device streaming* block *" />
+      <Conjunction>
+        <Equal OrderNum="11" Value="@bfe.dll,-1209"/>
+        <Match OrderNum="21" Value="*(A;;CC;;;WD)(A;;CC;;;AN)??"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="@bfe.dll,-1209"/>
+        <Match OrderNum="21" Value="*d78e1e87-8644-4ea5-9437-d809ecefc971*"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="8" Value="S-1-5-19"/>
+        <Match OrderNum="14" Value="InternetClient*"/>
+        <Match OrderNum="21" Value="*(A;;CC;;;WD)(A;;CC;;;AN)??"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="8" Value="S-1-5-19"/>
+        <Match OrderNum="14" Value="PrivateNetwork*"/>
+        <Match OrderNum="21" Value="*(A;;CC;;;WD)(A;;CC;;;AN)??"/>
+      </Conjunction>
     </Exclusions>
   </Event>
 

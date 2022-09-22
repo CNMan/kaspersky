@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-08-26T18:09:00.000Z-1661537345 -->
+	<!-- Version: 2022-09-21T19:24:00.000Z-1663788256 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -146,43 +146,7 @@
 		<Process Path="*\usocoreworker.exe" />
 	</Image>
 	<Image Id="{1FF8E59D-FF50-A2D2-30B502339297D26E}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
-	</Image>
-	<Image Id="{0A743B69-0325-A900-6031A8E29C56D846}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localservicenonetwork*" />
-	</Image>
-	<Image Id="{E35A8699-16A1-11F4-F2781C1B9C9D5C1F}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localsystemnetworkrestricted*" />
-	</Image>
-	<Image Id="{FAA1CF4C-C135-25CB-7081287978E690D7}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s gpsvc" />
-	</Image>
-	<Image Id="{BBD581A9-2581-40CD-E7D935B20E801B05}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s profsvc" />
-	</Image>
-	<Image Id="{BC125A32-A340-0DEF-0C35CF1DE2E93AA7}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s pushtoinstall" />
-	</Image>
-	<Image Id="{D69632E6-79B8-6AEC-B11E4B7584615EC1}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s usosvc" />
-	</Image>
-	<Image Id="{6E1332E4-5B48-8151-DF26E8E5D106D68E}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s wisvc" />
-	</Image>
-	<Image Id="{4D3E11B6-A0E2-6442-9222A97B3357DB82}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s wuauserv" />
-	</Image>
-	<Image Id="{9D96A46B-1128-DC01-8DDE62D134A055CC}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p" />
-	</Image>
-	<Image Id="{E5DE7BE5-CE58-90EC-B4141F4EAC30439C}" Path="c:\windows\system32\taskschd.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k networkservice -p" />
-	</Image>
-	<Image Id="{E3BEA317-42B7-EADC-D79F1914FF025CBE}" Path="c:\windows\system32\adsldp.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s gpsvc" />
-	</Image>
-	<Image Id="{89BB77F7-63AE-FC2C-9320353D9B8AC2EE}" Path="c:\windows\system32\adsldp.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</Image>
 	<Image Id="{B7F86656-5608-FB80-226B59660EA6FCE2}" Path="c:\windows\system32\adsldp.dll" >
 		<Process Path="*\ccmexec.exe" />
@@ -221,16 +185,7 @@
 		<Process Path="*\wmiprvse.exe" />
 	</Image>
 	<Image Id="{00B99932-7828-999D-661243E75A2ECFC3}" Path="c:\windows\system32\vaultcli.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localservice -p -s licensemanager" />
-	</Image>
-	<Image Id="{A11A264E-230A-12BD-3B17DD7E271EA87C}" Path="c:\windows\system32\vaultcli.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localsystemnetworkrestricted -p -s ngcsvc" />
-	</Image>
-	<Image Id="{BD8E9604-818D-A591-66EC71449B1182F7}" Path="c:\windows\system32\vaultcli.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p*" />
-	</Image>
-	<Image Id="{864E9638-8227-4689-B6B5A65EA8B59087}" Path="c:\windows\system32\vaultcli.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k unistacksvcgroup*" />
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</Image>
 	<Image Id="{5CFF9797-775A-B9A9-761414A3ED5E9D83}" Path="c:\windows\system32\vaultcli.dll" >
 		<Process Path="*\backgroundtaskhost.exe" />
@@ -419,61 +374,7 @@
 		<Process Path="*\opera.exe" />
 	</Image>
 	<Image Id="{1869DF0A-A7AF-E6D3-6D681212E11C65C1}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k camera -s frameserver" />
-	</Image>
-	<Image Id="{F03768C7-C09C-28F4-55C7FB0E808D74A8}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k clipboardsvcgroup -p -s cbdhsvc" />
-	</Image>
-	<Image Id="{98B05C77-59B8-B0E1-30FFCB970C526C37}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
-	</Image>
-	<Image Id="{E38EB6FB-D0D7-8C35-5C57BA454E191819}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localservice -p -s*" />
-	</Image>
-	<Image Id="{75923272-6928-2E48-3C052B4DF14143BB}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localserviceandnoimpersonation -p -s *" />
-	</Image>
-	<Image Id="{1E358D65-003B-1630-FE97C2FAF3197EA7}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localservicenetworkrestricted -p -s *" />
-	</Image>
-	<Image Id="{488C9B5C-CF81-3BE0-ADFEEFC30B455379}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localservicenetworkrestricted -p" />
-	</Image>
-	<Image Id="{C2182843-83A2-A5FB-A0A8228B35E17731}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localservicenonetwork -p -s dps" />
-	</Image>
-	<Image Id="{451F0970-4C7B-5D5F-66EB7FA3B4F6AD9A}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k localsystemnetworkrestricted -p -s *" />
-	</Image>
-	<Image Id="{BEC91F3E-FC70-8001-3255F103AF196210}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p*" />
-	</Image>
-	<Image Id="{5570385C-26A7-9BFB-6F7A14910A017EA2}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -s certpropsvc" />
-	</Image>
-	<Image Id="{333C81AD-A8A9-AF30-B236A0146641E4B1}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k networkservice -p -s cryptsvc" />
-	</Image>
-	<Image Id="{E74524DA-032A-B4FC-1B6F4AD769228B28}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k networkservice -p -s dnscache" />
-	</Image>
-	<Image Id="{8FF82913-3EFA-9C04-8069EAD8EDB00F16}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k networkservice -p -s dosvc" />
-	</Image>
-	<Image Id="{643785A1-8778-99F5-14A4F1CC37D0C3BE}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k smphost" />
-	</Image>
-	<Image Id="{47FFF182-C259-7FAF-C0A21E8CD6352AD1}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k unistacksvcgroup -s cdpusersvc" />
-	</Image>
-	<Image Id="{6FBAB8E5-621A-E3E0-1AE3104F56910DF6}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k unistacksvcgroup -s wpnuserservice" />
-	</Image>
-	<Image Id="{01C5DC79-5782-E070-C3F75910A16B9712}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k unistacksvcgroup" />
-	</Image>
-	<Image Id="{EB66228A-D7FD-B721-27525C918ABF3B25}" Path="c:\windows\system32\cryptbase.dll" >
-		<Process CmdLine="c:\windows\system32\svchost.exe -k wbiosvcgroup -s wbiosrvc" />
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</Image>
 	<Image Id="{A6DA1635-0A9C-BA10-DA27443206058258}" Path="refemit_inmemorymanifestmodule" >
 		<Process Path="*\powershell.exe" />
@@ -1412,14 +1313,25 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0014 2022-09-15T05:48:00.000Z-1663220880 -->
-	<Image Id="{7C0EA434-CE7D-4721-8C6FEE85E2097B02}" Path="C:\Windows\System32\scrobj.dll" >
-		<Process Path="C:\ProgramData\BGINFO\KTB\bginfo.exe" />
+<!-- Part 0014 2022-09-21T19:24:00.000Z-1663788256 -->
+	<Image Id="{87DA7CD0-A296-BD3F-D2713E35CFD59B5E}" Path="C:\Windows\assembly\NativeImages_v*System*.ni.dll">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
 	</Image>
-	<Image Id="{5097133B-A1D1-49E3-824486778B483E6E}" Path="C:\Windows\System32\cryptbase.dll" >
-		<Process Path="C:\ProgramData\BGINFO\KTB\bginfo.exe" />
+	<Image Id="{BC6346E0-6154-39AA-75538F6FD9423B4B}" Path="c:\windows\apppatch\apppatch64\ummon.dll">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</Image>
-<!-- Part 0014 2022-09-15T05:48:00.000Z-1663220880 -->
+	<Image Id="{E8133D1C-1629-86E9-6ACE9BDF1600D41D}" Path="*Plustek\*OpticSlim*">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</Image>
+	<Image Id="{9B53861E-588A-AA0F-F0B47302E4841F00}" Path="*common files\impacct\*">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</Image>
+	<Image Id="{DE411D1D-4EF4-29D0-5917FB06F457C80C}">
+		<Process Path="*Nexthink*">
+			<Signature Subject="*NEXThink*" />
+		</Process>
+	</Image>
+<!-- Part 0014 2022-09-21T19:24:00.000Z-1663788256 -->
 <!-- ############################################################################################################### -->
-	
+
 </Filters>

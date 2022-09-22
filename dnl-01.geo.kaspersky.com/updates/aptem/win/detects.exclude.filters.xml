@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-08-30T18:58:00.000Z-1661885929 -->
+	<!-- 2022-09-21T19:12:00.000Z-1663787542 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2589,6 +2589,16 @@
 		<Process CmdLine="wscript  /b parsexml.vbs base_agentdata.xml agentdata.xml" />
 	</Detect>
 <!-- Part 0056 2022-08-30T18:58:00.000Z-1661885929 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0057 2022-09-21T19:12:00.000Z-1663787542 -->
+	<Detect Id="{5B6BB4B2-1C23-5425-B7769FABCA7C81E7}">
+		<Process Path="*NEXThink*">
+			<Signature Subject="*NEXThink*" />
+		</Process>
+	</Detect>
+<!-- Part 0057 2022-09-21T19:12:00.000Z-1663787542 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

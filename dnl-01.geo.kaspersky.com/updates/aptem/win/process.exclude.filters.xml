@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-08-26T13:03:00.000Z-1661518986 -->
+	<!-- 2022-09-21T19:25:00.000Z-1663788319 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -309,6 +309,17 @@
 	</Image>
 	<Image Id="{4D03E570-16F2-D5D8-86FEE40F01C41DA1}" CmdLine="powershell (get-counter -counter \\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure\&#x2c; \\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory\&#x2c; \\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time\).countersamples.cookedvalue" />
 <!-- Part 0014 2022-08-26T13:03:00.000Z-1661518986 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0015 2022-09-21T19:25:00.000Z-1663788319 -->
+	<Image Id="{D9BF8004-D02A-B30F-F59E30DFF2C2B173}" CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	<Image Id="{A01985D1-6BCC-3ECB-7BAE9208D2C64F9B}" CmdLine="c:\windows\system32\svchost.exe -k *" />
+	<Image Id="{0C0EFEFC-A74F-51CD-E3ADFB4199BA72FA}" Path="*Plustek\*OpticSlim*\DocuAction.exe" />
+	<Image Id="{1DDEB6F8-27BE-DD39-777296F75B87F840}" Path="*Nexthink*" >
+		<Signature Subject="*NEXThink*" />
+	</Image>
+<!-- Part 0015 2022-09-21T19:25:00.000Z-1663788319 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

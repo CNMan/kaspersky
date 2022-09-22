@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-08-26T12:54:00.000Z-1661518476 -->
+	<!-- Version: 2022-09-21T19:14:00.000Z-1663787673 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -8486,12 +8486,85 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0020 2022-09-15T05:48:00.000Z-1663220880 -->
-	<File Id="{D1C573BB-5B20-4C6D-A16F3BD6E0D82914}">
-		<Process Path="*Karmasis\Infraskope Agent\EventLogForwarder.exe" >
-			<Signature Subject="Karmasis*" />
+<!-- Part 0020 2022-09-21T19:14:00.000Z-1663787673 -->
+	<File Id="{8F5EF2CE-507E-6487-A2EDF02CC39A5296}" FilePath="C:\Windows\CCM\*">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</File>
+	<File Id="{CD678B6F-F3FB-6C0F-F4C67C6F273960D1}" FilePath="C:\Windows\Temp\????????-????-*.mof">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</File>
+	<File Id="{A89D29E2-8FA3-3FD3-82111431F35CB941}" FilePath="*\discoverytree.xml">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{E5E56D2D-DD8F-D7A0-E7EAF8FBFA9591DE}" FilePath="*\scannercapabilities">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{9A3CA0A7-5D76-0C25-4E18C580E901E588}" FilePath="c:\programdata\microsoft\diagnosis\*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{77FCC805-39FF-9713-1412228B891B779A}" FilePath="c:\programdata\microsoft\network\downloader\edb*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{DA65AB6D-8E19-EFC9-15B517B334BA3046}" FilePath="c:\programdata\microsoft\network\downloader\qmgr.jfm">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{A8935002-507F-9769-B812B1A6C6B75A81}" FilePath="c:\programdata\microsoft\windows\wer\temp\wer*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{16FDBA0E-7BF9-524B-CAF4627200AD0EB2}" FilePath="c:\programdata\ntuser.pol">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{8D24FECA-A142-D464-61BA73595DD17D23}" FilePath="c:\programdata\tempntuser.pol">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{51B8C700-10A4-CCFF-85E2D7664C9B2BD9}" FilePath="c:\windows\ccm*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{E706D851-C9E0-BF4F-89533A20D8225587}" FilePath="c:\windows\serviceprofiles\localservice\appdata\local\temp\*.tmp">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{3EA093EE-7084-13A2-12354008F1CA8B89}" FilePath="c:\windows\system32\logfiles\sum\*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{32A7E7D9-ED11-8836-7DD9F9388539D0BC}" FilePath="c:\windows\temp\his*.tmp">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{D1EAD74A-6477-AE29-44888368EC2A2FA2}" FilePath="c:\windows\temp\msi*.log">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{C4967775-6808-D618-F8FB30CC2A27DE5C}" FilePath="c:\windows\temp\udd*.tmp">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{DE619676-C3F9-EEF0-D9098C82F34AC499}" FilePath="C:\ProgramData\Microsoft\SmsRouter\MessageStore\*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{0DE5A30E-3D62-708D-DF66F7CC5563E198}" FilePath="C:\ProgramData\Microsoft\Windows\DeviceMetadataCache\*">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{D70652A2-2D63-D893-EE47DA3CBE7C675A}" FilePath="C:\Windows\Prefetch\Layout.ini">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{D44C33FF-0F18-1DA8-AD86CE1FEC88EFB5}" FilePath="C:\Windows\Prefetch\*History.db">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{0B489314-159D-8DF3-6678AE8B336225C0}" FilePath="C:\Windows\INF\setupapi.dev.log">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</File>
+	<File Id="{C43F95A2-4B86-5FC5-677ABDE51FBA218D}" FilePath="*appdata\local\temp\*.bmp">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</File>
+	<File Id="{1097A991-BEEA-6712-F14584A7C61ED976}" FilePath="*appdata\local\temp\tem*">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</File>
+	<File Id="{80C7B02E-065C-9834-B248A1EE5CCDE276}" FilePath="*public\documents\scandoc*">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</File>
+	<File Id="{DDC98954-D741-792C-32FFB39179B7CA0B}" FilePath="*NEXThink*">
+		<Process Path="*Nexthink*">
+			<Signature Subject="*NEXThink*" />
 		</Process>
 	</File>
-<!-- Part 0020 2022-09-15T05:48:00.000Z-1663220880 -->
+<!-- Part 0020 2022-09-21T19:14:00.000Z-1663787673 -->
 <!-- ############################################################################################################### -->
+
 </Filters>
