@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-09-21T19:24:00.000Z-1663788256 -->
+	<!-- Version: 2022-09-22T13:55:00.000Z-1663854950 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1332,6 +1332,35 @@
 		</Process>
 	</Image>
 <!-- Part 0014 2022-09-21T19:24:00.000Z-1663788256 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0015 2022-09-22T13:55:00.000Z-1663854940 -->
+	<Image Id="{8AB881A7-DBD2-3A13-3280C4A42ACF6000}" Path="c:\windows\syswow64\gdi32.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{71731B9C-0E2F-18DF-6D8848510D2D5DAD}" Path="c:\windows\syswow64\crypt32.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{F60FFA5D-8006-0400-9A1DFB048CB43A52}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{95ECBDA3-9B2A-57BE-41D8A651333548D8}" Path="*robot js add-on\uipath*">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{AC2E6D1E-7E01-A07A-7C5D4D14A12BCC40}" Path="refemit_inmemorymanifestmodule">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{93D46E32-447B-C149-FB5DC6479FBA1C4F}" Path="c:\windows\assembly\nativeimages_v*.ni.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{E4460F6B-8A9F-5140-F4421D4DF6F3B865}" Path="c:\windows\microsoft.net\assembly\*\system.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{BD0D9E8E-5A37-4CCC-D6AAFB6F340311A4}" Path="*uipathpackages*\uipath.uiautomation.activities.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+<!-- Part 0015 2022-09-22T13:55:00.000Z-1663854940 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
