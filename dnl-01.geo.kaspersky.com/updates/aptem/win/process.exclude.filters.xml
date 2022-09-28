@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-09-22T13:38:00.000Z-1663853926 -->
+	<!-- 2022-09-27T13:35:00.000Z-1664285714 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -323,10 +323,28 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0016 2022-09-22T13:38:00.000Z-1663853926 -->
+<!-- Part 0016 2022-09-22T14:39:00.000Z-1663857588 -->
 	<Image Id="{FC734465-C08A-AB67-6BF4D075D3B835A7}" CmdLine="C:\windows\system32\BackgroundTaskHost.exe -ServerName:BackgroundTaskHost.*" />
+	<Image Id="{B83C4BC0-8868-E9BC-615F3DD7CE1A4F21}" CmdLine="wscript.exe  wait.vbs" />
 	<Image Id="{88CB27EB-96AA-6C20-C0CD156599159662}" Path="*robot js add-on\uipath.robotjs.userhost.exe" />
-<!-- Part 0016 2022-09-22T13:38:00.000Z-1663853926 -->
+	<Image Id="{4564E2D5-AAAE-E2F1-507071C2245357ED}" CmdLine="..\..\third_party\llvm-build\release+asserts\bin\clang-cl.exe /c gen*" />
+<!-- Part 0016 2022-09-22T14:39:00.000Z-1663857588 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0017 2022-09-27T13:35:00.000Z-1664285714 -->
+	<Image Id="{98EB9961-5469-501B-6422220404A7F59C}" CmdLine="c:\windows\system32\csrss.exe objectdirectory=\windows sharedsection*" />
+	<Image Id="{4EFE5FA0-2EF1-989D-504DFA1FE942B664}" Path="C:\Windows\System32\fontdrvhost.exe" CmdLine="fontdrvhost.exe" />
+	<Image Id="{B8E7048F-A7F0-B45A-DDA074CCCE9FB2FE}" Path="C:\Windows\System32\dwm.exe" CmdLine="dwm.exe" />
+	<Image Id="{4AA39DDC-18BE-113A-0294CCAB4A17CF6F}" Path="c:\windows\servicing\trustedinstaller.exe" />
+	<Image Id="{0A0D32E5-05FD-3349-4CADC03BF9893D36}" Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	<Image Id="{99ABBD93-70D8-5768-6E2DEF239A079444}" Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
+	<Image Id="{EF0D6B4E-A665-393A-58776DDAB0714DA2}" Path="C:\WINDOWS\System32\smss.exe" />
+	<Image Id="{D3181069-785D-C434-A33ABD03F54A2246}" CmdLine="c:\windows\system32\wbem\wmiprvse.exe -secured -embedding" />
+	<Image Id="{DA569C0B-2D7B-635A-880B069B3384AE49}" CmdLine="c:\windows\winsxs\amd64_microsoft-windows-servicingstack_*\tiworker.exe -embedding" />
+	<Image Id="{CD134E3C-BB7B-EAEF-EC44107C86555F85}" Path="C:\Windows\System32\sihost.exe" CmdLine="sihost.exe" />
+	<Image Id="{2B879D8F-250E-F426-18BDC70D2F49EC00}" Path="c:\windows\ccm\scnotification.exe" />
+<!-- Part 0017 2022-09-27T13:35:00.000Z-1664285714 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

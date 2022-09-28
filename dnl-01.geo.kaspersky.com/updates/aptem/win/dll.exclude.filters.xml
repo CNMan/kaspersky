@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-09-22T13:55:00.000Z-1663854950 -->
+	<!-- Version: 2022-09-27T13:32:00.000Z-1664285565 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1335,7 +1335,7 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0015 2022-09-22T13:55:00.000Z-1663854940 -->
+<!-- Part 0015 2022-09-22T14:39:00.000Z-1663857542 -->
 	<Image Id="{8AB881A7-DBD2-3A13-3280C4A42ACF6000}" Path="c:\windows\syswow64\gdi32.dll">
 		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
 	</Image>
@@ -1360,7 +1360,60 @@
 	<Image Id="{BD0D9E8E-5A37-4CCC-D6AAFB6F340311A4}" Path="*uipathpackages*\uipath.uiautomation.activities.dll">
 		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
 	</Image>
-<!-- Part 0015 2022-09-22T13:55:00.000Z-1663854940 -->
+	<Image Id="{4D357BB4-1F78-03A8-AC79224569A4A0F7}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{CB8177D1-3924-3F61-7E4DAB7989D0E90A}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{23B93AAD-6762-1B47-19B3994B6CAA15FD}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{A439CFDB-774C-383F-2C2C8E32F0DB8A3B}" Path="c:\windows\system32\scrobj.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{12D099D4-AEBE-D2DE-379B2C481F084847}" Path="c:\windows\syswow64\crypt32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{82B21A58-7EDD-938F-126585157F80CFC1}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{B01A6EAD-ADEF-F0FF-C1C2C6FD0B4AF6DD}" Path="c:\windows\syswow64\gdi32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{118D06B3-601C-9DCC-7C765CA1C110806E}" Path="c:\windows\syswow64\scrobj.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{4078FBFA-0B8F-C7F3-5DF1449851A5C0E5}">
+		<Process CmdLine="..\..\third_party\llvm-build\release+asserts\bin\clang-cl.exe /c gen*" />
+	</Image>
+<!-- Part 0015 2022-09-22T14:39:00.000Z-1663857542 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0016 2022-09-27T13:32:00.000Z-1664285565 -->
+	<Image Id="{EFB1C007-6570-8AE5-277393556C153D0C}" Path="C:\Windows\System32\cryptbase.dll">
+		<Process Path="C:\Windows\System32\dwm.exe" CmdLine="dwm.exe" />
+	</Image>
+	<Image Id="{740876D1-A7E5-712B-247E79D8E82D7ECB}" Path="*Pulse Secure*">
+		<Signature Subject="*Pulse Secure*" />
+	</Image>
+	<Image Id="{B1F0C317-E9D3-1891-164DE57D4821C81A}">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+		<Signature Subject="*Thales*" />
+	</Image>
+	<Image Id="{05C51CE0-63EA-14D4-FC1EA3EDF0B54C72}" Path="c:\windows\system32\mspwdcredprov.dll">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+		<VersionInfo FileDescription="MsPwdCredProv" OrignFileName="MsPwdCredProv.dll" ProductName="*Identity Manager*" />
+	</Image>
+	<Image Id="{466E694F-B83C-FDDD-7244A3B47DE7AC4A}" Path="C:\Windows\System32\cryptbase.dll">
+		<Process Path="c:\windows\ccm\scnotification.exe" />
+	</Image>
+<!-- Part 0016 2022-09-27T13:32:00.000Z-1664285565 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

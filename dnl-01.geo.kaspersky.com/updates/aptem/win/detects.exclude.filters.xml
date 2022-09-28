@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-09-21T19:12:00.000Z-1663787542 -->
+	<!-- 2022-09-26T12:07:00.000Z-1664194048 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2599,6 +2599,14 @@
 		</Process>
 	</Detect>
 <!-- Part 0057 2022-09-21T19:12:00.000Z-1663787542 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0058 2022-09-26T12:07:00.000Z-1664194048 -->
+	<Detect Id="{689F828D-70CB-3987-B58C442DF9BD21E8}">
+		<Process CmdLine="powershell.exe -file *programdata\controlup\scriptsupport\horizon_sync.log -delete" />
+	</Detect>
+<!-- Part 0058 2022-09-26T12:07:00.000Z-1664194048 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

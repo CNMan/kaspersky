@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-09-21T19:26:00.000Z-1663788374 -->
+  <!-- Version: 2022-09-27T13:36:00.000Z-1664285779 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2812,6 +2812,80 @@
 		<Process Path="C:\WINDOWS\system32\backgroundTaskHost.exe" />
 	</Registry>
 <!-- Part 17: 2022-09-21T19:26:00.000Z-1663788374 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 17: 2022-09-27T13:36:00.000Z-1664285779 -->
+	<Registry Id="{CAEEC0D4-A9EC-F739-BD234EBDC1E492C7}" Path="*software\microsoft\windows\currentversion\thememanager" Name="lastloadedppi">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{972C6873-96F4-0A2D-65FBD22D857ACDD5}" Path="*software\microsoft\windows\currentversion\thememanager" Name="lastloadeddpiplateaus">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{8DEA80EE-CBDD-87D8-B98B4C9B13911DA2}" Path="*software\microsoft\ctf\remotesession" Name="clsid">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{B6159274-0D23-F372-BEA3E8CAE8B06572}" Path="*software\microsoft\ctf\remotesession" Name="profile">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{BE1CBC6C-3238-ADFF-9B17AB121E43C959}" Path="\registry\machine\software\microsoft\windows\currentversion\authentication\logonui\sessiondata*" Name="loggedon*">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{94E60B50-0FD2-28FA-B6789887778E2579}" Path="\registry\machine\software\microsoft\windows\currentversion\authentication\logonui\sessiondata*" Name="lastloggedon*">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{C8C0312F-9A21-07E4-2F202F4D20460DD1}" Path="\registry\machine\software\microsoft\windows nt\currentversion\winlogon" Name="lastlogoffendtimeperfcounter">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{B377F551-9E2D-D11C-0D8527A6FF2928B7}" Path="\registry\machine\software\microsoft\windows\dwm" Name="dwminitsessionactivityid_*">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{F80E589F-052B-3EFF-D7175A5A9F705969}" Path="*software\microsoft\windows\winlogon\passwordexpirynotification" Name="notshownreason">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{E9B7BCCB-034D-131E-A20CB57371882019}" Path="*software\microsoft\windows\winlogon\passwordexpirynotification" Name="notshowntime">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{7F80C3CB-EE3E-5156-C0125BCAAA6500F1}" Path="*software\microsoft\windows\winlogon\passwordexpirynotification" Name="notshownerrorreason">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{29F4E46B-8AA9-D209-3C32B7FC512CA51E}" Path="*software\microsoft\windows\winlogon\passwordexpirynotification" Name="notshownerrortime">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{F52D4449-7102-7160-0331E2045AC80043}" Path="*software\microsoft\windows\winlogon\passwordexpirynotification" Name="showntime">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{8239A062-AE28-7820-585C4DE43C7421F2}" Path="\registry\machine\software\microsoft\windows nt\currentversion\accessibility\session*" Name="%kl_undef%">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{19FBE6B4-6DB2-61A8-A0FB897D20DCEA55}" Path="\registry\machine\software\microsoft\windows nt\currentversion\winlogon\autologonchecked" Name="%kl_undef%">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{A8A65C61-1878-A5D6-D16E6DE5AA86A4D5}" Name="dllname" Value="%systemroot%\resources\themes\aero\aero.msstyles*">
+		<Process Path="C:\Windows\System32\winlogon.exe" CmdLine="winlogon.exe" />
+	</Registry>
+	<Registry Id="{E565F629-0087-434F-7C7BB3A5FC676C66}" Path="*Local Settings\MuiCache\*">
+		<Process Path="C:\Windows\System32\sihost.exe" CmdLine="sihost.exe" />
+	</Registry>
+	<Registry Id="{F2B9014E-F241-8703-4C44B5EB63F403EC}" Path="*Local Settings\MrtCache\*">
+		<Process Path="C:\Windows\System32\sihost.exe" CmdLine="sihost.exe" />
+	</Registry>
+	<Registry Id="{39D17089-C73A-C76A-1AD0BCDA38207612}" Path="*SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.*&#39;,">
+		<Process Path="C:\Windows\System32\sihost.exe" CmdLine="sihost.exe" />
+	</Registry>
+	<Registry Id="{12C1658D-C404-BF80-F2068E34213FDE00}" Path="*software\microsoft\windows\currentversion\explorer\plmvolatile\terminationtype" Name="microsoft.*">
+		<Process Path="C:\Windows\System32\sihost.exe" CmdLine="sihost.exe" />
+	</Registry>
+	<Registry Id="{23321B5B-B46A-1C6E-58AC598A410AC3D1}" Path="*software\microsoft\windows\currentversion\explorer\advanced\packageactivate" Name="microsoft.*">
+		<Process Path="C:\Windows\System32\sihost.exe" CmdLine="sihost.exe" />
+	</Registry>
+	<Registry Id="{82EB5C6B-E340-900F-3A78602FB7285443}" Path="\registry\machine\software\microsoft\sms\mobile client\presentationmode\s-1-*" Name="presentationmodeison">
+		<Process Path="c:\windows\ccm\scnotification.exe" />
+	</Registry>
+	<Registry Id="{DCC3E4C4-58DA-BD63-651543800F3EDC50}" Path="\registry\machine\system\software\microsoft\tip\aggregateresults" Name="data">
+		<Process Path="c:\windows\ccm\scnotification.exe" />
+	</Registry>
+<!-- Part 17: 2022-09-27T13:36:00.000Z-1664285779 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

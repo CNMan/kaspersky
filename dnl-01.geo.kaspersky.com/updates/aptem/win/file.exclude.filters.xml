@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-09-21T19:14:00.000Z-1663787673 -->
+	<!-- Version: 2022-09-27T13:31:00.000Z-1664285483 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -8565,6 +8565,37 @@
 		</Process>
 	</File>
 <!-- Part 0020 2022-09-21T19:14:00.000Z-1663787673 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0021 2022-09-27T13:31:00.000Z-1664285483 -->
+	<File Id="{BF093F0A-003E-BDC4-31FA8C1E514689C1}" FilePath="c:\programdata\microsoft\windows\systemdata\s-1-*\lockscreen*">
+		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
+	</File>
+	<File Id="{40701C58-46A7-1D53-205D1D3F47E777FC}" FilePath="&#39;c:\programdata\microsoft\windows\systemdata\s-1-*\lockscreen*">
+		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
+	</File>
+	<File Id="{17D69C49-B65D-364E-B7A679AB496E78E8}" FilePath="c:\windows\temp\etoken.cache\*.cache">
+		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
+	</File>
+	<File Id="{4634915A-B4AA-8779-00BF80D98FA0C813}" FilePath="c:\windows\temp\etoken.hid\sharedinfo.bin">
+		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
+	</File>
+	<File Id="{15160BA0-ACF6-748F-26BE565DFEB3F122}" FilePath="c:\windows\temp\etoken.log\*\logonui_*">
+		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
+	</File>
+	<File Id="{AC7AB53C-015F-A2A5-0585C10747EC8007}" FilePath="c:\programdata\pulse secure\logging\debuglog.log">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{5FA1E608-7242-3452-7D5F190F6B71D5F8}" FilePath="c:\windows\ccm\logs\_scnotify_*">
+		<Process Path="c:\windows\ccm\scnotification.exe" />
+	</File>
+	<File Id="{0D472D1F-F1C2-16E2-67658EF78BB83A24}" FilePath="c:\windows\ccm\logs\scnotify_*">
+		<Process Path="c:\windows\ccm\scnotification.exe" />
+	</File>
+<!-- Part 0021 2022-09-27T13:31:00.000Z-1664285483 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
