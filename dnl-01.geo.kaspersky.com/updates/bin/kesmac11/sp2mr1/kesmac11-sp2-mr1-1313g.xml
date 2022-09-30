@@ -1,29 +1,35 @@
 <Update
-	Date="04052022 0729"
+	Date="29092022 0851"
 	ObjectType="2=KESMAC11;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="10"
+	MaxDownloadSizeKb="45367"
 	Shell="bdif;klz;none">
-	<Patch
+	<Patches
 		CompID="KESMAC11"
-		App="!KESMAC 11.*.*.*"
-		Lang="LangNone"
+		App="KESMAC 11.2.1.145"
+		OS="Mac"
 		FixName="a"
-		Patch="none"
-		SrvPath="dummy"
-		LocalPath="%ProductFolder%"
-		Name="dummy.txt"
-		DSKM="/dVk1hcoLeSkjIl2RpM3J0YwR1nYDv+5kQpzbMZMnNU="/>
+		SrvPath="11.2.1.145"
+		Item="LocalPath;Name;DSKM"
+		List="
+			%ProductRoot%/Binaries|libbl.dylib|aIjJNUEe31JUA4Q1sB15aEzBsSr9OQKD+mXMbuxYosI=;
+			%ProductRoot%/Binaries|libconnector.dylib|dJs3qUuuTcUtckkWcMUtL5qp1D7Re1v/A1BODBTuoLM=;
+			%ProductRoot%/Binaries|libui_permission_sheet.dylib|ayN39FwXQr5GXcuEtrcve8fsWZixNBsi1h6E3qxLJgw=;
+			%ProductRoot%/Data|kav_app.tar.gz|T1u5U/gtPi8v/AWkc2YQsMyYzCkhkLOs/myyz8uKvEI=;
+			%ProductRoot%/Data|kav_agent.tar.gz|Lq9BCLtd7yfKR0v/wHbA1hK0wkmYFkm8SatUYPIlsQs=;
+			%ProductRoot%/Data|loc.tar.gz|xt8PnIGztYAAg0TNtP099Wr46Gj1X0bNl4TmdjCHgUI=;
+			%ProductRoot%/Binaries|patch|xZhOsJqYDpI7jF+qhnFUsbP6IUogywIc0af5VQJeJVM=;
+			%ProductRoot%/Binaries|libtraffic_processing.dylib|+LckEIihJeQvDwsjirC5ukWtG7m2VBiBK+sjlABrClg="/>
 	<File
 		CompID="RETR1901_KESMAC11"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kesmac11-sp2-mr1-1901g.xml"
-		DSKM="uEUpSJaMIh1yvMwd3KHVDLBFeRsJPiqbXlZVN0l1xqI="/>
+		DSKM="k/p68Thc4OWigzJ2KjoeBAhsTSaUHFPTPuwtZbRDu2g="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kesmac11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFIcNj5kzZjhig3r4CqBVoX5B89m2iiB6W8MfTSkCPcFXwVfhHuO77Lg02UivKaGthr1/xJsxbzCKxLEBg6cJ1wBAB4JuQEAAAIAAigIAEtFU01BQzExAwACKAMAQklOAQAACW997MENCjs6MTBhMlZobld4WHlzZy9oRDRiVSsvZTlmdG0zMkVHQVVUcVg5M21HQVJmVTRVc05Fc1M5a2VyTjJBYUhoWXh5eXZJbzF1WTVpemRxS1R2ZDJ3aG4vMlljeiUl</Key>
 </Update>
-;:10a37nXVAcl7nzxNOT6bZveUTADYysby1q/y0cUXZFOaxis47M0yA0WL6fIgvNP7Le+Jadx5kU8+P5ME7NKfOFC0%%
+;:10q8XtZW62U9wSTPtSOrAv4sJmPmvy/XsxTwq74Wi2N+Ly4uV2cbVzxZ2FIctdwdsfP3+WNyD8CeHWZsUN1tsNLz%%

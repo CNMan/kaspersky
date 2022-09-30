@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-09-26T12:07:00.000Z-1664194048 -->
+	<!-- 2022-09-28T19:13:00.000Z-1664392424 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2607,6 +2607,155 @@
 		<Process CmdLine="powershell.exe -file *programdata\controlup\scriptsupport\horizon_sync.log -delete" />
 	</Detect>
 <!-- Part 0058 2022-09-26T12:07:00.000Z-1664194048 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0059 2022-09-28T19:13:00.000Z-1664392424 -->
+	<Detect Id="{905ACA66-3162-8748-CFA1CDD579BCF977}" ContentValue="ortsshow:start">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{C5722110-AEF7-282A-FB6E30D4F7D0C85F}" ContentValue="taoptionsshow:complete">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{2A739BA6-66AA-338B-852E09354A981150}" ContentValue="taoptionshide:start">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{116CDD27-E0AA-5C5D-B51B5614A3298837}" ContentValue="ortsshow:complete">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{DFD5C115-891B-9066-FDE3C193863E4F3E}" ContentValue="ortshide:start">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{5F980C53-1E02-5FB0-AA9CA1C3D2BC5B15}" ContentValue="taoptionsshow:start">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{8EF9EE9F-20BF-6495-1F3C3F2BA8B36B8B}" ContentValue="(player.*">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{4635607C-65E2-422B-A640E401C012DDFF}" ContentValue="blendplaybackoverlayview(*">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{58140E04-14DB-9F9A-82787EE820EBBD57}" ContentValue="ible:false">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{D2CF0D9F-BC17-47D7-3E2C4F016AD8C04C}" ContentValue="if(player.*">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{25C3FDD1-232F-58EB-4C4D6C67E39AC72B}" ContentValue="ortshide:complete">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{5B19D246-EE22-5022-8FBF5E6FC230A2E4}" ContentValue="tionsvisible:false">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{5A97E7BD-3977-D5C8-529DD929460AF6C9}" ContentValue="updatemetadata();updatealbumartmmo();">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{5DFFF3EA-09E3-BEF3-1B591D4E4388262C}" ContentValue="true" />
+	<Detect Id="{3F047829-8B6E-B82C-F4B7D257C82E7981}" ContentValue="????????" />
+	<Detect Id="{BD159B8E-64FF-33A4-145ECE84922A994F}" ContentValue="@{?&#10;    guid = &#34;{*compatiblepseditions = @(&#39;desktop&#39;,&#39;core&#39;)?&#10;    powershellversion=*" />
+	<Detect Id="{B8B266F2-9D83-B8A9-739B0D11AB678011}" ContentValue="@{?&#10;rootmodule = &#39;psmodule.psm1*linkid=393271&#39;?&#10;}?&#10;" />
+	<Detect Id="{B49BC040-10E8-FAD2-45518AFDE470E43A}" ContentValue="(get-appxpackagemanifest -package *application.id &#62; c:/temp/details.csv" />
+	<Detect Id="{CB34CD51-EB0A-96B4-47707995767D9570}" ContentValue="@{?&#10;    guid = &#34;{*compatiblepseditions = @(&#39;desktop&#39;)?&#10;    powershellversion=*" />
+	<Detect Id="{12EB37E8-AD12-3943-63B137A987BF84EF}" ContentValue="@{?&#10;guid=&#34;{*https://aka.ms/winsvr-2022-pshelp&#34;?&#10;}?&#10;" />
+	<Detect Id="{466125EE-E1E9-4841-ED81174D6B1101E9}" ContentValue="@{?&#10;guid=&#34;{*linkid=285540&#34;?&#10;}?&#10;" />
+	<Detect Id="{E2E3E57C-2817-C28C-ADCD065A83E16167}" ContentValue="@{?&#10;moduleversion = &#39;*functionstoexport = &#39;get-appvvirtualprocess&#39;, &#39;start-appvvirtualprocess&#39;?&#10;?&#10;}?&#10;" />
+	<Detect Id="{4420108A-AD5C-A394-560C85361FD7F59D}" ContentValue="ifilesystem3.opentextfile*">
+		<Process CmdLine="aax5bf.exe " />
+	</Detect>
+	<Detect Id="{9D487A59-E607-427D-6936B9AA41DB63F9}" ContentValue="getminfo(&#39;*">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</Detect>
+	<Detect Id="{92F6F993-92E3-DC81-CBC98320A25C652A}" ContentValue="getpinfo(&#39;*">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</Detect>
+	<Detect Id="{5389F22D-A4C8-9D31-B0A33A37C2A17FE2}" ContentValue="getartist()">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</Detect>
+	<Detect Id="{CE508967-2F1C-4786-7A85C78D131A939A}" ContentValue="echo &#34;end&#34;" />
+	<Detect Id="{673395B7-1B4A-B65A-2DAB974034444F9C}" ContentValue="{ $_.name}" />
+	<Detect Id="{4F49D3F0-F2EC-B461-5E341CBD34D3E18E}" ContentValue="{$_.name}" />
+	<Detect Id="{7DE7BB5C-BBF5-A9DD-3568A71D3A756A7B}" ContentValue="prompt" />
+	<Detect Id="{93755BC2-B57B-F678-D64700AF809CEF34}" ContentValue="(get-mpcomputerstatus).amproductversion">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{08AC3CFB-3AE9-EC8C-7F198E3F7ED77428}" ContentValue="wmic os get osarchitecture">
+		<Process CmdLine=" --pid=*" />
+	</Detect>
+	<Detect Id="{27839EA4-6A05-33BD-57A60D900D85EE1A}" ContentValue="(get-mpcomputerstatus).amproductversion">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{D5D8F8C8-0A86-543A-88FE7830093D7830}" ContentValue="wmic os get osarchitecture">
+		<Process CmdLine="--pid=*" />
+	</Detect>
+	<Detect Id="{A994BAA3-84C3-1F89-A805367339573A5B}">
+		<Process Path="c:\program files\dell\supportassistagent\bin\supportassistagent.exe">
+			<Signature Subject="*dell*" />
+		</Process>
+	</Detect>
+	<Detect Id="{C2E30F54-EC2A-EE82-EFA8F7B68281BB76}" ContentValue="ifilesystem3.opentextfile*">
+		<Process CmdLine="abhkof abhkof abhkof * aut" />
+	</Detect>
+	<Detect Id="{B3A00877-C8C1-8AAE-502107B35AF6BDE7}" ContentValue="stdregprov.getobject*stdregprov.execmethod(enumkey);&#10;">
+		<Process>
+			<Signature Subject="*Ivanti*" />
+		</Process>
+	</Detect>
+	<Detect Id="{EA756E52-CB9A-A57F-21E8E098077547B0}" ContentValue="stdregprov.execmethod(getstringvalue);&#10;*stdregprov.execmethod(getstringvalue);&#10;">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -s winmgmt" />
+	</Detect>
+	<Detect Id="{F62F2CE3-BF3F-4E66-1F19DEB29F354134}" ContentValue="([&#34;&#34;,&#34;9*&#38;,&#34;])">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -secured -embedding" />
+	</Detect>
+	<Detect Id="{2A81EC4B-8091-9907-9D58803EED361521}" ContentValue="({ &#34;parameterdef&#34;:[&#10;        { &#34;name&#34;: &#34;psk:documentbindinggutter*number&#34;                   }&#10; ">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -secured -embedding" />
+	</Detect>
+	<Detect Id="{EBF1B7A2-61D7-A142-4EEE96F61BB78F2B}" ContentValue="@{?&#10;    guid = &#39;*vpnconnectiontriggertrustednetwork&#34;)?&#10;}?&#10;?&#10;" />
+	<Detect Id="{7C78FFE7-5DE1-C9DB-68095DC6B7421755}" ContentValue="@{?&#10;    guid = &#39;*formatstoprocess = @(&#39;pcsvdevice.format.ps1xml&#39;)?&#10;}?&#10;" />
+	<Detect Id="{BA81B34D-7933-8A6F-CAF0C0AEDFD1F6D4}" ContentValue="@{?&#10;    guid=&#34;{*troubleshootingpack&#34;,&#34;invoke-troubleshootingpack&#34;?&#10;}?&#10;" />
+	<Detect Id="{0F57E2D8-8A4A-D8F8-6246A8B4BD252053}" ContentValue="@{?&#10;guid = &#34;*linkid=517537&#34; ?&#10;}" />
+	<Detect Id="{8C8C96A9-3181-5EE9-653E664ECECA55D4}" ContentValue="@{?&#10;guid=&#34;{*tlsecccurve&#34;,?&#10;        &#34;disable-tlsecccurve&#34;?&#10;}?&#10;" />
+	<Detect Id="{AE84104D-715B-05CC-E2F91B379D607477}" ContentValue="@{?&#10;guid=&#34;{*linkid=390817&#39;?&#10;}?&#10;" />
+	<Detect Id="{DC1ECC36-8D8D-31B3-D05BFC9E7B112E3E}" ContentValue="@{?&#10;guid=&#34;{*linkid=390758&#34;?&#10;}?&#10;" />
+	<Detect Id="{73914498-329D-FB6A-5D9B4CEBA65352CB}" ContentValue="@{?&#10;rootmodule = &#39;psmodule.psm1&#39;?&#10;moduleversion*linkid=393271&#39;?&#10;}?&#10;" />
+	<Detect Id="{F687F6A0-B6B6-5CC2-981D4AC3CFFB8FBB}" ContentValue="?&#10;" />
+	<Detect Id="{66B3010F-350B-C336-909C001CBBD9CF62}" ContentValue="@{?&#10;    guid              = &#39;*end signature block?&#10;" />
+	<Detect Id="{28E2656A-BF84-D7CE-B7E1874946819E91}" ContentValue="ihost.arguments();?&#10;iarguments2.count*unsupported parameter type 00000000&#34;);?&#10;">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{145BC7C3-66CA-8B07-005F2B9BD1FBA437}" ContentValue="iswbemobjectex._01000003(&#34;-2147483646&#34;, &#34;software\microsoft\windows nt\currentversion\print\providers\client si*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{EAE3C2F3-3D9E-3D57-223A3A5B523DBC3A}" ContentValue="*win32_useraccount where name=&#39;ksnproxy&#39; and domain=&#39;*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{74BF3054-7428-A66F-DEF3C8453714E4EA}" ContentValue="*uninstall\addressbook&#34;)*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{24774662-CE5D-2909-6008832D7FCE8E53}" ContentValue="*uninstall\fontcore&#34;);*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{DE0227DB-D7DD-5266-64A985B233C37C9B}" ContentValue="*uninstall\microsoft edge&#34;);*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{3DCA4C6E-5F00-E5D0-12C4EC2C5B303F0D}" ContentValue="*uninstall\teamviewer&#34;);*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{87ED59F2-FBE7-D4A7-058C9C7BAEDB45B5}" ContentValue="*setpropvalue.svaluename(&#34;slowinfocache&#34;);*">
+		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
+	</Detect>
+	<Detect Id="{D88F4511-DC68-FE25-339D2BFAEF08659F}" ContentValue="*description&#34;);?&#10;idictionary.item(&#34;description&#34;);?&#10;idictionary.item(&#34;type*">
+		<Process CmdLine="wscript  /b parsexml.vbs base_agentdata.xml agentdata.xml" />
+	</Detect>
+	<Detect Id="{AFAF03EE-2EBE-2444-0DF5F4E893286F77}" ContentValue="*fileexists(&#34;..\log\scandiff.log&#34;);*">
+		<Process CmdLine="wscript  /b parsexml.vbs base_agentdata.xml agentdata.xml" />
+	</Detect>
+<!-- Part 0059 2022-09-28T19:13:00.000Z-1664392424 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
