@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-09-27T13:36:00.000Z-1664285779 -->
+  <!-- Version: 2022-10-03T13:44:00.000Z-1664804679 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2886,6 +2886,77 @@
 		<Process Path="c:\windows\ccm\scnotification.exe" />
 	</Registry>
 <!-- Part 17: 2022-09-27T13:36:00.000Z-1664285779 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 18: 2022-10-03T13:44:00.000Z-1664804679 -->
+	<Registry Id="{642EB341-BF32-EB40-39CADB286DEBFA3C}" Path="\registry\machine\software\wow6432node\adventnet*">
+		<Process>
+			<Signature Subject="*ZOHO*" />
+		</Process>
+	</Registry>
+	<Registry Id="{6E767C94-2E35-6F53-30387E8D7D247EBB}" Path="*software\adventnet\*">
+		<Process>
+			<Signature Subject="*ZOHO*" />
+		</Process>
+	</Registry>
+	<Registry Id="{74DFD1F4-B84B-0C3C-7F98D40297F728B0}" Path="\registry\machine\software\fortinet*">
+		<Process>
+			<Signature Subject="*Fortinet*" />
+		</Process>
+	</Registry>
+	<Registry Id="{35D6F129-B2E3-787D-32B5EBF59FA4DF9A}" Path="\registry\machine\software\wow6432node\fortinet*,&#39;*_classes\local settings\mrtcache*">
+		<Process>
+			<Signature Subject="*Fortinet*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F1234D7E-5687-3520-EF844DF58FB62D72}" Path="\registry\machine\software\wow6432node\infoblox*">
+		<Process>
+			<Signature Subject="*INFOBLOX*" />
+		</Process>
+	</Registry>
+	<Registry Id="{91E48F75-51F3-775B-94C0FBA46D298294}" Path="\registry\machine\software\wow6432node\kasperskylab*">
+		<Process>
+			<Signature Subject="*Kaspersky*" />
+		</Process>
+	</Registry>
+	<Registry Id="{B723F323-5A06-BE6A-74E8D6BDB5E87AA1}" Path="\registry\machine\system\controlset001\services\sifiltersvc\agents\{*">
+		<Process CmdLine="c:\program files (x86)\searchinformagent\sifiltersvc?\sifiltersvc_manager.exe -i ????" />
+	</Registry>
+	<Registry Id="{03120465-32EA-2D12-C5D7778D1101CBEB}" Path="\registry\machine\system\controlset001\services\sifiltersvc">
+		<Process CmdLine="c:\program files (x86)\searchinformagent\sifiltersvc?\sifiltersvc_manager.exe -i ????" />
+	</Registry>
+	<Registry Id="{D99FD694-B6EC-F85E-0C0734393E7F7F27}" Path="\registry\machine\software\wow6432node\waters\instruments*">
+		<Process Path="c:\empower\instruments\wdhcpserversvc.exe">
+			<VersionInfo OrignFileName="WDHCPServerSvc.exe" ProductName="Waters*" />
+		</Process>
+	</Registry>
+	<Registry Id="{792F308A-AEA9-7CC3-A799FF52FC1A49A8}" Path="*software\citrix\ica*">
+		<Process Path="*Citrix*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C637C44C-6A51-BA53-E34B8AFBD636862F}" Path="*software\pdfforge\pdfcreator\settings*">
+		<Process CmdLine="*/infodatafile=*">
+			<Signature Subject="*pdfforge*" />
+		</Process>
+	</Registry>
+	<Registry Id="{9B89A195-EDB3-2FAE-43A9FEB492EBA4EB}" Path="\REGISTRY\MACHINE\SOFTWARE\Symantec*">
+		<Process Path="*Symantec*">
+			<Signature Subject="*Symantec*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3E39D8D6-DED9-E22E-F2B189AB4DBCEC15}" Path="\registry\machine\software\wow6432node\symantec*">
+		<Process Path="*Symantec*">
+			<Signature Subject="*Symantec*" />
+		</Process>
+	</Registry>
+	<Registry Id="{E1D246C0-36BF-A4CF-07325FD4E0FE38E4}" Path="*software\microsoft\edgewebview*">
+		<Process Path="*microsoft\edgewebview*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+<!-- Part 18: 2022-10-03T13:44:00.000Z-1664804679 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

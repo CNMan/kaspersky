@@ -1,5 +1,5 @@
 <Update
-	Date="29092022 0757"
+	Date="03102022 0935"
 	ObjectType="2=KAV16;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -420,7 +420,7 @@
 	<Patch
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		Target="[13108-262143]"
+		Target="[65536-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="f"
@@ -617,7 +617,7 @@
 	<Patch
 		CompID="KAV16"
 		App="KSM 16.0.1.445"
-		Target="[13108-262143]"
+		Target="[65536-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="f"
@@ -1331,7 +1331,7 @@
 	<Patch
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		Target="[13108-262143]"
+		Target="[65536-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="k"
@@ -1386,7 +1386,7 @@
 	<Patch
 		CompID="KAV16"
 		App="KSM 16.0.1.445"
-		Target="[13108-262143]"
+		Target="[65536-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="k"
@@ -1714,7 +1714,7 @@
 	<Patch
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		Target="[13108-262143]"
+		Target="[65536-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_none"
 		FixName="n"
@@ -1726,7 +1726,7 @@
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
 		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[13108-262143]"
+		Target="[65536-262143]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="n"
@@ -1754,15 +1754,15 @@
 		LocalPath="%ProductFolder%"
 		Item="App;Target;ApplyAction;FixName;SrvPath;Name;DSKM"
 		List="
-			KSM 16.0.1.445|[13108-262143]|restart_none|n|16.0.1.445_ksm_n|ver_info.json|EqVIuoZBYtYG5sF8BKwGnlig+WZcQdr7to0aL0PZKSU=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-13107]|restart_os|o|16.0.1.445_kis_o|traffic_processing.dll|rMkLkeeD446tIFEX3gh/WXQ0JxE9M/CSaeaYU31v+yI=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-13107]|restart_os|o|16.0.1.445_kis_o|traffic_processing_meta.dll|SdSpj7tQtS8TFMqEMUUQVdbZ5EASxhIpXkTkkW0BAQk=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-13107]|restart_none|o|16.0.1.445_kis_o|ver_info.json|OvKQbS4dDUlt8Qh5lumUYk/VPo8MYywl0tzJ83zlxP0="/>
+			KSM 16.0.1.445|[65536-262143]|restart_none|n|16.0.1.445_ksm_n|ver_info.json|EqVIuoZBYtYG5sF8BKwGnlig+WZcQdr7to0aL0PZKSU=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-65535]|restart_os|o|16.0.1.445_kis_o|traffic_processing.dll|rMkLkeeD446tIFEX3gh/WXQ0JxE9M/CSaeaYU31v+yI=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-65535]|restart_os|o|16.0.1.445_kis_o|traffic_processing_meta.dll|SdSpj7tQtS8TFMqEMUUQVdbZ5EASxhIpXkTkkW0BAQk=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-65535]|restart_none|o|16.0.1.445_kis_o|ver_info.json|OvKQbS4dDUlt8Qh5lumUYk/VPo8MYywl0tzJ83zlxP0="/>
 	<Patch
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
 		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[0-13107]"
+		Target="[0-65535]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="o"
@@ -1773,7 +1773,7 @@
 	<Patches
 		CompID="KAV16"
 		App="KSM 16.0.1.445"
-		Target="[0-13107]"
+		Target="[0-65535]"
 		ApplyPeriod="168"
 		FixName="o"
 		SrvPath="16.0.1.445_ksm_o"
@@ -1788,4 +1788,4 @@
 		LocalPath="%DSKM%"
 		Name="kav16-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAABy+r4H3ZMARQ1n1gz2yLRwatt4OTYvOjo8gl0GkZQxAMZPl/tMng8jHojDCeEUteljz3XXjJZUMwL4F6qJ4+9gBAB4JMAEAAAIAAigFAEtBVjE2AwACKAMAQklOAQAACdRuQZUNCjs6MTBhVEh3SkVPR1BmUDJ0ZTl1NTQxQms4NXlReDBhbHpBK3k5aWZhTFdUTEp0UjdDOWtDTE94Nk9wQTNKTDg5bHdOWW1vWDl3SSthcjVlay91SGprV1RUcCUl</Key>
 </Update>
-;:10a1MFqP+N5tNDaKuH2z1oN5xrrRlxsVMLa4luQ6k8Dfp2obzSrQTq/u8/piv84n4R3Vrm6C+m5/sO7EUSlLD7kQ%%
+;:10a5VXYVxAxuJElpz/VC7jucVvrbvWaFpXNk6zO68Becu7Kbfr+a7gWAGH/j6h83RiMEu1lhy9zeI/E/cFPexomY%%

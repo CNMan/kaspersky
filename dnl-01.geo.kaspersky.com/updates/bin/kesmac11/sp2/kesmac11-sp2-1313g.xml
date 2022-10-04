@@ -1,9 +1,9 @@
 <Update
-	Date="01032022 0953"
+	Date="03102022 1033"
 	ObjectType="2=KESMAC11;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="45278"
+	MaxDownloadSizeKb="45314"
 	Shell="bdif;klz;none">
 	<Patches
 		CompID="KESMAC11"
@@ -13,15 +13,15 @@
 		Item="FixName;LocalPath;Name;DSKM"
 		List="
 			a|%ProductRoot%/Binaries|libmdr_services.dylib|5jlwRmeLz1yb+r5IpX5/506OpNUjKdYn2cl+ouZr+Lg=;
-			c|%ProductRoot%/Binaries|libbl.dylib|exQSqUy8IGA7FeQXdn6rendQl9tF9niynWt4kG8QEos=;
+			d|%ProductRoot%/Binaries|libbl.dylib|Q96lGM8KyX3JmYEzfI5OU48pC/+WdcNEkh3rvC2YDgM=;
 			c|%ProductRoot%/Binaries|libconnector.dylib|lu+7GRXyArsfhWCxXFV7qfyZQzf5gXDctIQ8t46c2g0=;
 			b|%ProductRoot%/Binaries|libsystem_extension.dylib|eUZiTnsWqyNOBf6KTQijK85FSwkGcfTBqjSZm8xj46c=;
-			b|%ProductRoot%/Binaries|UninstallScript|IwUnAde8hctoO1zaYM7CUds8IRsihmLJp2jM5kYTkco=;
+			d|%ProductRoot%/Binaries|UninstallScript|SaYWM85cCklXp5jgdkj7NN9aUocHAJP3vBo/ISTdv5E=;
 			c|%ProductRoot%/Data|klif.notarized.tar.gz|oekIyJLo3hCvTDxXxKYWVJ6MOGmXscf57tNq5dzv4eg=;
 			b|%ProductRoot%/Data|kav_agent.tar.gz|2kz2dq00cFW5RF71qiebIKePMpeH1EczudZthC6saLw=;
-			b|%ProductRoot%/Data|kav_app.tar.gz|DhACAQ0ptNs7sLrioi1YhiLObqmsUno+ETdR95f3Vms=;
-			b|%ProductRoot%/Data|loc.tar.gz|Jx/m7mn++ggy38f5SWp11lkV6ITOkzIZeaGYTH8qyoQ=;
-			b|%ProductRoot%/Binaries|patch|YgLBPzrUAwXWoTnepx31+jVDwBKM3C1KUiiFOsEJ3+g=;
+			c|%ProductRoot%/Data|kav_app.tar.gz|DhACAQ0ptNs7sLrioi1YhiLObqmsUno+ETdR95f3Vms=;
+			c|%ProductRoot%/Data|loc.tar.gz|Jx/m7mn++ggy38f5SWp11lkV6ITOkzIZeaGYTH8qyoQ=;
+			d|%ProductRoot%/Binaries|patch|fO8wPQJE6Tc7kdZFKyc6Cn6b16rDPPNI+xUkL6YYWYk=;
 			b|%ProductRoot%/Binaries|libfile_interceptor_legacy.dylib|4Dmc6j6x8m4IOvhUCIh0Et3X7/DC8Uglp9Y0IC/IK1w=;
 			b|%ProductRoot%/Binaries|libkl_appkit.dylib|vrfyc1ZmkR0581szxCoxhoIQC5t6ZY5w8BDdpnhEuV4=;
 			c|%ProductRoot%/Binaries|libsystem_interceptors.dylib|lvbsIBNVNdhSzacP0YU1dQ2OuyO0C4Uil1W68Oj1A9I=;
@@ -30,7 +30,7 @@
 			c|%ProductRoot%/Binaries|libmdr_task.dylib|6p3vjj0ASHpuXKMZm1KuL81GbnP46RFuSHDxhx5YbZE=;
 			c|%ProductRoot%/Binaries|libconnection_redirector.dylib|YI8xDneJIoDfa9FuyLlwHiYp1DNcP4tCysiAGngb56E=;
 			c|%ProductRoot%/Binaries|libnetwork_services.dylib|E1cO5zMq4u9hsDnwv6YmIJQu9qLqSR0f/s3o9xX8ekg=;
-			c|%ProductRoot%/Binaries|libtraffic_processing.dylib|DAhdNU4gHLYTgJxILDJ+oZYa1LYfu3gsOuh5YEQEZvk=;
+			d|%ProductRoot%/Binaries|libtraffic_processing.dylib|2QJ4ZMwSikM2m318xYtlxuNGPthQ1+MP+an2zWP6yKE=;
 			c|%ProductRoot%/Binaries|libinstrumental_services.dylib|jpv3ieQAFsEKG0+AHQxKIVOcWNBppMfzvGucnIDlgXc=;
 			c|%ProductRoot%/Binaries|libcrypto_ssl_1_1.dylib|O3x3Bw+BMDF0s2M/EYXlZvU+9bZu8XsJGogB9feBlt0=;
 			c|%ProductRoot%/Data|kav_uninstaller.tar.gz|Uwod+ZFhvnmzsU37Sd67DX49C58AOlZTNduJD6IotkI="/>
@@ -39,4 +39,4 @@
 		LocalPath="%DSKM%"
 		Name="kesmac11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFIcNj5kzZjhig3r4CqBVoX5B89m2iiB6W8MfTSkCPcFXwVfhHuO77Lg02UivKaGthr1/xJsxbzCKxLEBg6cJ1wBAB4JuQEAAAIAAigIAEtFU01BQzExAwACKAMAQklOAQAACW997MENCjs6MTBhMlZobld4WHlzZy9oRDRiVSsvZTlmdG0zMkVHQVVUcVg5M21HQVJmVTRVc05Fc1M5a2VyTjJBYUhoWXh5eXZJbzF1WTVpemRxS1R2ZDJ3aG4vMlljeiUl</Key>
 </Update>
-;:10qQeQdpbg7DuB6SUH66c8rU+zODH+cZhRbgHj8VAbalmMIMy6QmBXXB8WuI3AVQ8xQdboklMi//8RSxa1S3nV4U%%
+;:10qRbzZRcXVI2aYUP6blUgLRiNXUrUO42Tke2lfxa+0rKPJEYaQop5jU7bfbJpsnfBSXPYnq4yYbPbsauqDH1OX9%%
