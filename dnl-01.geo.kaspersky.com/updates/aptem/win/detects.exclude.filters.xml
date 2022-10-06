@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-09-28T19:13:00.000Z-1664392424 -->
+	<!-- 2022-10-04T17:41:00.000Z-1664905312 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2756,6 +2756,18 @@
 		<Process CmdLine="wscript  /b parsexml.vbs base_agentdata.xml agentdata.xml" />
 	</Detect>
 <!-- Part 0059 2022-09-28T19:13:00.000Z-1664392424 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0059 2022-10-04T17:41:00.000Z-1664905312 -->
+	<Detect Id="{7C0EC470-FB7C-592C-32347B7C360008A0}">
+		<Process CmdLine="powershell.exe (get-appxpackagemanifest -package*).package.applications.application.id &#62; c:/temp/details.csv " />
+	</Detect>
+	<Detect Id="{4A5C1F3E-071B-3AC3-3290D810D04B9801}">
+		<Process CmdLine="powershell.exe (get-appxpackagemanifest -package*).package.applications.application.id &#62; c:/temp/details.csv" />
+	</Detect>
+	<Detect Id="{2C56DFE6-571F-1655-9C98AE835E1BC98F}" ContentValue="get-appxpackage -allusers | select name,packagefullname,publisher,publisherid,version,installlocation" />
+<!-- Part 0059 2022-10-04T17:41:00.000Z-1664905312 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
