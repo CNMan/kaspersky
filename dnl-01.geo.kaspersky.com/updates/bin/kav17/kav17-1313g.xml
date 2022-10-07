@@ -1,5 +1,5 @@
 <Update
-	Date="03102022 1236"
+	Date="06102022 0740"
 	ObjectType="2=KAV17;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -2989,16 +2989,6 @@
 			kis2017mp0n.msp|cWlkiuRrzuSzSaUW6n4U6OOe7mhTc7aTGkn2Vp1qlMY=;
 			kasperskylab.platform.nativeinterop.dll|MuCqxLcHqVNakQqk5qy5TvGTuwkM7ar4Wb4vR2xuEV0=;
 			processmonitor.dll|Gjzz1G/+pzPw25qkFnoXl/kNpH3dkux0CnlR7r/QmdE="/>
-	<Patch
-		App="KAV|KIS|PURE|KFA 17.0.0.611"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="n"
-		SrvPath="17.0.0.611_kis_n"
-		LocalPath="%ProductFolder%"
-		Name="traffic_processing.dll"
-		DSKM="ds/tZzXBcu7pMqwi9XGn9EiHVglELVRqNZZAABvfv58="/>
 	<Patches
 		App="KAV|KIS|PURE|KFA 17.0.0.611"
 		SysArch="x64"
@@ -3590,16 +3580,6 @@
 			kis2017mp0n.msp|cWlkiuRrzuSzSaUW6n4U6OOe7mhTc7aTGkn2Vp1qlMY=;
 			kasperskylab.platform.nativeinterop.dll|MuCqxLcHqVNakQqk5qy5TvGTuwkM7ar4Wb4vR2xuEV0=;
 			processmonitor.dll|Gjzz1G/+pzPw25qkFnoXl/kNpH3dkux0CnlR7r/QmdE="/>
-	<Patch
-		App="KSOSPC|KSOSFS 17.0.0.611"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="n"
-		SrvPath="17.0.0.611_ksos_n"
-		LocalPath="%ProductFolder%"
-		Name="traffic_processing.dll"
-		DSKM="ds/tZzXBcu7pMqwi9XGn9EiHVglELVRqNZZAABvfv58="/>
 	<Patches
 		App="KSOSPC|KSOSFS 17.0.0.611"
 		SysArch="x64"
@@ -3947,98 +3927,26 @@
 			zh-Hant|17.0.0.611_ksos_n/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|settings.lt|CbE7pZONr1HOWjHSmZGxLPOBXCDiTRRe5YLeqS4XkH4=;
 			zh-Hant|17.0.0.611_ksos_n/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|systemadaptationdialogs.lt|HTEo8G2lf5ScTZWcIgeY+46zFuwUBqmDZ7lbAoNIYkk="/>
 	<Patches
-		App="KAV|KIS|PURE|KFA 17.0.0.611"
 		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="o"
-		SrvPath="17.0.0.611_kis_o"
 		LocalPath="%ProductFolder%"
-		Item="Name;DSKM"
+		Item="App;ApplyAction;FixName;SrvPath;Name;DSKM"
 		List="
-			kis2017mp0o.msp|2ZT7ZK4y04ETDKPcYxB1CNkQsxOPQYk34bRflwEycZI=;
-			avpmain.dll|Vd95gslk1f1m3qxdoFOCUZHDHlkhHRSRvYrdWnHWWyw="/>
-	<Patch
-		App="KAV|KIS|PURE|KFA 17.0.0.611"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_none"
-		FixName="o"
-		SrvPath="17.0.0.611_kis_o"
-		LocalPath="%ProductFolder%"
-		Name="ver_info.json"
-		DSKM="/uQzM3AsIijKPqDZniDqW8QjmEp0e9JcKCMvWhH1/cc="/>
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_os|o|17.0.0.611_kis_o|kis2017mp0o.msp|2ZT7ZK4y04ETDKPcYxB1CNkQsxOPQYk34bRflwEycZI=;
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_os|o|17.0.0.611_kis_o|avpmain.dll|Vd95gslk1f1m3qxdoFOCUZHDHlkhHRSRvYrdWnHWWyw=;
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_os|o|17.0.0.611_kis_o|bl.ppl|icq/Nk45TEp7JIyzY5wuVir1yc2BedZzuGFEiNMRbxc=;
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_os|o|17.0.0.611_kis_o|kasperskylab.kis.ui.dll|VmXepVW3xBPJq0eE4ZFswcORIuRdbBESas42/eD0wPQ=;
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_os|o|17.0.0.611_kis_o|kpm_integration.dll|aG6ItZGrXZ5ADtXMDduzCax+JOs37QkO3+ArAM8Gq3s=;
+			KSOSPC\\|KSOSFS 17.0.0.611|restart_os|o|17.0.0.611_ksos_o|kis2017mp0o.msp|2ZT7ZK4y04ETDKPcYxB1CNkQsxOPQYk34bRflwEycZI=;
+			KSOSPC\\|KSOSFS 17.0.0.611|restart_os|o|17.0.0.611_ksos_o|avpmain.dll|Vd95gslk1f1m3qxdoFOCUZHDHlkhHRSRvYrdWnHWWyw=;
+			KSOSPC\\|KSOSFS 17.0.0.611|restart_os|o|17.0.0.611_ksos_o|bl.ppl|icq/Nk45TEp7JIyzY5wuVir1yc2BedZzuGFEiNMRbxc=;
+			KSOSPC\\|KSOSFS 17.0.0.611|restart_os|o|17.0.0.611_ksos_o|kasperskylab.kis.ui.dll|VmXepVW3xBPJq0eE4ZFswcORIuRdbBESas42/eD0wPQ=;
+			KSOSPC\\|KSOSFS 17.0.0.611|restart_os|o|17.0.0.611_ksos_o|kpm_integration.dll|aG6ItZGrXZ5ADtXMDduzCax+JOs37QkO3+ArAM8Gq3s=;
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_os|p|17.0.0.611_kis_p|traffic_processing.dll|WQ93ZvU0y2CFH9wyHAjQEuao/p+j/t+vjbmi0zHv8cI=;
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_os|p|17.0.0.611_kis_p|traffic_processing_meta.dll|2hEqCwrF2mbZNESo22/eHnU7/jbDYk0VXybs8NAN3Yk=;
+			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|restart_none|p|17.0.0.611_kis_p|ver_info.json|/uQzM3AsIijKPqDZniDqW8QjmEp0e9JcKCMvWhH1/cc="/>
 	<Patch
 		App="KAV|KIS|PURE|KFA 17.0.0.611"
 		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="o"
-		SrvPath="17.0.0.611_kis_o"
-		LocalPath="%ProductFolder%"
-		Name="securityproductinformation.ini"
-		DSKM="laPXLkhuyc4shc8Vcc6gcus6YLB397wxv3WtUbxxoIY="/>
-	<Patches
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="o"
-		LocalPath="%ProductFolder%"
-		Item="App;SrvPath;Name;DSKM"
-		List="
-			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|17.0.0.611_kis_o|bl.ppl|icq/Nk45TEp7JIyzY5wuVir1yc2BedZzuGFEiNMRbxc=;
-			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|17.0.0.611_kis_o|kasperskylab.kis.ui.dll|VmXepVW3xBPJq0eE4ZFswcORIuRdbBESas42/eD0wPQ=;
-			KAV\\|KIS\\|PURE\\|KFA 17.0.0.611|17.0.0.611_kis_o|kpm_integration.dll|aG6ItZGrXZ5ADtXMDduzCax+JOs37QkO3+ArAM8Gq3s=;
-			KSOSPC\\|KSOSFS 17.0.0.611|17.0.0.611_ksos_o|kis2017mp0o.msp|2ZT7ZK4y04ETDKPcYxB1CNkQsxOPQYk34bRflwEycZI=;
-			KSOSPC\\|KSOSFS 17.0.0.611|17.0.0.611_ksos_o|avpmain.dll|Vd95gslk1f1m3qxdoFOCUZHDHlkhHRSRvYrdWnHWWyw="/>
-	<Patch
-		App="KSOSPC|KSOSFS 17.0.0.611"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_none"
-		FixName="o"
-		SrvPath="17.0.0.611_ksos_o"
-		LocalPath="%ProductFolder%"
-		Name="ver_info.json"
-		DSKM="/uQzM3AsIijKPqDZniDqW8QjmEp0e9JcKCMvWhH1/cc="/>
-	<Patch
-		App="KSOSPC|KSOSFS 17.0.0.611"
-		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="o"
-		SrvPath="17.0.0.611_ksos_o"
-		LocalPath="%ProductFolder%"
-		Name="securityproductinformation.ini"
-		DSKM="laPXLkhuyc4shc8Vcc6gcus6YLB397wxv3WtUbxxoIY="/>
-	<Patches
-		App="KSOSPC|KSOSFS 17.0.0.611"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="o"
-		SrvPath="17.0.0.611_ksos_o"
-		LocalPath="%ProductFolder%"
-		Item="Name;DSKM"
-		List="
-			bl.ppl|icq/Nk45TEp7JIyzY5wuVir1yc2BedZzuGFEiNMRbxc=;
-			kasperskylab.kis.ui.dll|VmXepVW3xBPJq0eE4ZFswcORIuRdbBESas42/eD0wPQ=;
-			kpm_integration.dll|aG6ItZGrXZ5ADtXMDduzCax+JOs37QkO3+ArAM8Gq3s="/>
-	<Patches
-		App="KAV|KIS|PURE|KFA 17.0.0.611"
-		Target="[0-65535]"
-		ApplyPeriod="168"
-		FixName="p"
-		SrvPath="17.0.0.611_kis_p"
-		LocalPath="%ProductFolder%"
-		Item="ApplyAction;Name;DSKM"
-		List="
-			restart_os|traffic_processing.dll|WQ93ZvU0y2CFH9wyHAjQEuao/p+j/t+vjbmi0zHv8cI=;
-			restart_os|traffic_processing_meta.dll|2hEqCwrF2mbZNESo22/eHnU7/jbDYk0VXybs8NAN3Yk=;
-			restart_none|ver_info.json|/uQzM3AsIijKPqDZniDqW8QjmEp0e9JcKCMvWhH1/cc="/>
-	<Patch
-		App="KAV|KIS|PURE|KFA 17.0.0.611"
-		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[0-65535]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="p"
@@ -4048,7 +3956,6 @@
 		DSKM="eeQhzb7y4+lsQ5zvFYeIiLTF32Qq8dv+5oLX6O5sixk="/>
 	<Patches
 		App="KSOSPC|KSOSFS 17.0.0.611"
-		Target="[0-65535]"
 		ApplyPeriod="168"
 		FixName="p"
 		SrvPath="17.0.0.611_ksos_p"
@@ -4061,7 +3968,6 @@
 	<Patch
 		App="KSOSPC|KSOSFS 17.0.0.611"
 		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[0-65535]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="p"
@@ -4074,4 +3980,4 @@
 		LocalPath="%DSKM%"
 		Name="kav17-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFQKjYm6NrAXAjqLOjDyXQEuIoD2NtMjjbTsc1gu89GybngqvSWlX0EbbNIaCChhV75G72J+hDUq9GS8ZeMnoyEBAB4JVQEAAAIAAigFAEtBVjE3AwACKAMAQklOAQAACcgOT3wNCjs6MTA0MklOWFRPREYzRUI0WlgydFVuVkZvYzlCNjlRQS9KUmo1ZWRUNEp3TjkzczE5VEwyWXhOOTlKcC8wQi9tUlMycXZoS0taY1VDaDkzTEx0bXpENnhHQyUl</Key>
 </Update>
-;:10aLiTUJVfWE1baYRku6F4aJJ21Hir2Ft8F1bI5KLmrtAaMkYaNVSmMSlsp/7bCFS1fn7NpnhM8MoMweaBcyS+Tw%%
+;:104PQy5/3Yx6NO51VIxSyutJXBTfqSYKCbZJfCZQ7TpHV7Jp9WAOSHwcTmbqIGJHnW9exjivVV1V87mRvylVhdvz%%

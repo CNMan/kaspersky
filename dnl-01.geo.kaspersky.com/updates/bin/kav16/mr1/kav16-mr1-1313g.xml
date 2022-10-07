@@ -1,5 +1,5 @@
 <Update
-	Date="03102022 0935"
+	Date="06102022 0736"
 	ObjectType="2=KAV16;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -416,30 +416,11 @@
 			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|cf_mgmt_facade.dll|Fw7IKxKEdldsb9ly777zq/2bDn5owTvY1Ru85+7RVnk=;
 			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|content_filtering_meta.dll|vYWc1hnpOzEsIIgjAue4EVzq6Tz0iHva3ekq05vvMKk=;
 			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|licensing_meta.dll|9YkY3XrCqsRb9vW1WSqAYhzThw/69AcoI8RTnmDcEM0=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|ods.ppl|l6Q+2kj5hY9MzcPEvprv/U5W2WQalEbIj3XnC2MbUxU="/>
-	<Patch
-		CompID="KAV16"
-		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="f"
-		SrvPath="16.0.1.445_kis_f"
-		LocalPath="%ProductFolder%"
-		Name="traffic_processing_meta.dll"
-		DSKM="Cr7YH+beW+0jxSqjCvC/3ccezY1qXJK0xrjvdbhgn3k="/>
-	<Patches
-		CompID="KAV16"
-		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="f"
-		Item="SrvPath;LocalPath;Name;DSKM"
-		List="
-			16.0.1.445_kis_f|%ProductFolder%|threats_disinfection.dll|uNDiqeg7SjtfS+rpmSSmhhiqoGDj6LvcY37Ao7VDq38=;
-			16.0.1.445_kis_f|%ProductFolder%|kis2016mp1f.msp|xMA05g0ST1mkY0qoC5Rs0jBkL2f5fEFBRjp4Y59hL9I=;
-			16.0.1.445_kis_f|%ProductFolder%|kasperskylab.kis.ui.balloons.dll|hRPY/hs2wqRNL7AERc6f0TDQx36wfOhKX+gMZLzM5eE=;
-			16.0.1.445_kis_f/skin/resources/neutral/locs|%ProductFolder%/skin/resources/neutral/locs|cf_categorization_wcc.lt|+ifpm3X5tiG5oADUGCkTE3oOlnP4n9FP0ghtZtavNHI="/>
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|ods.ppl|l6Q+2kj5hY9MzcPEvprv/U5W2WQalEbIj3XnC2MbUxU=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|threats_disinfection.dll|uNDiqeg7SjtfS+rpmSSmhhiqoGDj6LvcY37Ao7VDq38=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|kis2016mp1f.msp|xMA05g0ST1mkY0qoC5Rs0jBkL2f5fEFBRjp4Y59hL9I=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f|%ProductFolder%|kasperskylab.kis.ui.balloons.dll|hRPY/hs2wqRNL7AERc6f0TDQx36wfOhKX+gMZLzM5eE=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|f|16.0.1.445_kis_f/skin/resources/neutral/locs|%ProductFolder%/skin/resources/neutral/locs|cf_categorization_wcc.lt|+ifpm3X5tiG5oADUGCkTE3oOlnP4n9FP0ghtZtavNHI="/>
 	<Patches
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
@@ -598,40 +579,19 @@
 			zh-Hant|16.0.1.445_kis_f/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|webmonitorsettings.lt|t/eJ6iZubh/rDcNeEhytHNfb4rHRqn29I7QP3V10v3Q="/>
 	<Patches
 		CompID="KAV16"
-		App="KSM 16.0.1.445"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="f"
-		SrvPath="16.0.1.445_ksm_f"
-		LocalPath="%ProductFolder%"
-		Item="Name;DSKM"
-		List="
-			am_facade.dll|qRLqI5H6YGmjHtmUMXHnc1gNXj0rze4eVTEjxoUYbgI=;
-			am_meta.dll|SfJO9oKPlULCLUGjSMh9TsAr0f9tCWlSoheAIpctYe8=;
-			avs_eka.dll|bCbR1QSyFCgSegUSNuRN93+/ryYBZL7Uqkusf9UPavg=;
-			bi_meta.dll|bdt9i3hZw8QRpiLHDNCJygMvbvhW8WN1jUb3qifaELM=;
-			cf_mgmt_facade.dll|Fw7IKxKEdldsb9ly777zq/2bDn5owTvY1Ru85+7RVnk=;
-			content_filtering_meta.dll|vYWc1hnpOzEsIIgjAue4EVzq6Tz0iHva3ekq05vvMKk=;
-			licensing_meta.dll|9YkY3XrCqsRb9vW1WSqAYhzThw/69AcoI8RTnmDcEM0=;
-			ods.ppl|l6Q+2kj5hY9MzcPEvprv/U5W2WQalEbIj3XnC2MbUxU="/>
-	<Patch
-		CompID="KAV16"
-		App="KSM 16.0.1.445"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="f"
-		SrvPath="16.0.1.445_ksm_f"
-		LocalPath="%ProductFolder%"
-		Name="traffic_processing_meta.dll"
-		DSKM="Cr7YH+beW+0jxSqjCvC/3ccezY1qXJK0xrjvdbhgn3k="/>
-	<Patches
-		CompID="KAV16"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		LocalPath="%ProductFolder%"
 		Item="App;FixName;SrvPath;Name;DSKM"
 		List="
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|am_facade.dll|qRLqI5H6YGmjHtmUMXHnc1gNXj0rze4eVTEjxoUYbgI=;
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|am_meta.dll|SfJO9oKPlULCLUGjSMh9TsAr0f9tCWlSoheAIpctYe8=;
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|avs_eka.dll|bCbR1QSyFCgSegUSNuRN93+/ryYBZL7Uqkusf9UPavg=;
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|bi_meta.dll|bdt9i3hZw8QRpiLHDNCJygMvbvhW8WN1jUb3qifaELM=;
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|cf_mgmt_facade.dll|Fw7IKxKEdldsb9ly777zq/2bDn5owTvY1Ru85+7RVnk=;
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|content_filtering_meta.dll|vYWc1hnpOzEsIIgjAue4EVzq6Tz0iHva3ekq05vvMKk=;
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|licensing_meta.dll|9YkY3XrCqsRb9vW1WSqAYhzThw/69AcoI8RTnmDcEM0=;
+			KSM 16.0.1.445|f|16.0.1.445_ksm_f|ods.ppl|l6Q+2kj5hY9MzcPEvprv/U5W2WQalEbIj3XnC2MbUxU=;
 			KSM 16.0.1.445|f|16.0.1.445_ksm_f|threats_disinfection.dll|uNDiqeg7SjtfS+rpmSSmhhiqoGDj6LvcY37Ao7VDq38=;
 			KSM 16.0.1.445|f|16.0.1.445_ksm_f|kis2016mp1f.msp|xMA05g0ST1mkY0qoC5Rs0jBkL2f5fEFBRjp4Y59hL9I=;
 			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|g|16.0.1.445_kis_g|kis2016mp1g.msp|QUyn5zlCrQwz7VHXgAtjOdMEoV2aPNTzIfQ60z+PEgY=;
@@ -1328,17 +1288,6 @@
 		LocalPath="%ProductFolder%/x64"
 		Name="ffcert.exe"
 		DSKM="7aCkSQaL6pMUjX0Zz1yUSUkI5JQher9uKWWIrqdTS5A="/>
-	<Patch
-		CompID="KAV16"
-		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="k"
-		SrvPath="16.0.1.445_kis_k"
-		LocalPath="%ProductFolder%"
-		Name="traffic_processing.dll"
-		DSKM="nQTVdL2tv+9iJvKNwdQL2ryLdsav7cW6li6zg4P2gvY="/>
 	<Patches
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
@@ -1383,17 +1332,6 @@
 		LocalPath="%ProductFolder%/x64"
 		Name="ffcert.exe"
 		DSKM="7aCkSQaL6pMUjX0Zz1yUSUkI5JQher9uKWWIrqdTS5A="/>
-	<Patch
-		CompID="KAV16"
-		App="KSM 16.0.1.445"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="k"
-		SrvPath="16.0.1.445_ksm_k"
-		LocalPath="%ProductFolder%"
-		Name="traffic_processing.dll"
-		DSKM="nQTVdL2tv+9iJvKNwdQL2ryLdsav7cW6li6zg4P2gvY="/>
 	<Patches
 		CompID="KAV16"
 		App="KSM 16.0.1.445"
@@ -1691,78 +1629,38 @@
 	<Patches
 		CompID="KAV16"
 		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		Item="App;FixName;SrvPath;LocalPath;Name;DSKM"
+		Item="App;ApplyAction;FixName;SrvPath;LocalPath;Name;DSKM"
 		List="
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m|%ProductFolder%|bl_sm.ppl|Uy/SfIMlsUbV+xLG1dZJdHIMsSpFQcgwK/jkI7Epjps=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m|%ProductFolder%|kasperskylab.safemoney.ui.dll|TDADM1bl/VRdUuavT7yT3M1AgoR1W7YM3N9WybaPN6M=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m|%ProductFolder%|kasperskylab.safemoney.ui.generatedregistrations.dll|UwL81GLeSprsMX45S0a9qeqvOszKIAax89Iu9yveOlQ=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/ffext/light_plugin_firefox|%ProductFolder%/FFExt/light_plugin_firefox|addon.xpi|qfVjftvGIZAwArQQyiFI+hFEX7WU23U6uhAJk+SpOe8=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/ffext/light_plugin_firefox|%ProductFolder%/FFExt/light_plugin_firefox|version|4XJA0RhrKY1Bgf8Z6uxQtz8rNMT42Q8NGaSj3Mcahc8=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/skin/resources/neutral/templates/css/safe_banking|%ProductFolder%/skin/resources/neutral/templates/css/safe_banking|tooltip_styles.css|BoQtstm3sS66OOV2nNpKvBDf/IEWoyjo0IOIZqR+v4A=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|plugins_activated_tooltip.html|bquHDL3HS22f1rbD1EeMjhmmICYzYet9N9s7Gfw7kjs=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|plugins_installed_not_activated_tooltip.html|UFkw+8qvjPWPvxNfwNpbH8yR0/j4uWUjULDlMymjFgU=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|plugins_not_installed_tooltip.html|Ck2VHKzHBqPzOy+EQwpkX1lpGq1bwhTcB1xnO+mcVzE=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|safe_message_tooltip.html|IAh237Ec3ydNc5LpxdkjowP/fm577u4FDXT59LDL+Xw=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|unsafe_message_tooltip.html|XdnmfLnSI9FjUnur+hJW8+kGpO+xwTVcMKI9tegORis=;
-			KSM 16.0.1.445|m|16.0.1.445_ksm_m|%ProductFolder%|plugins-setup.cfg|Tb6k6wHI58mdD/LSgNGDf5GHOjuwCYi6/leBX8lmnKo=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|n|16.0.1.445_kis_n|%ProductFolder%|avpmain.dll|eQ9tqWANdga+nkjRuGVQ4701PtrOxyxtu7QE6xalIUE=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|n|16.0.1.445_kis_n|%ProductFolder%|avpmain16.dll|oAkcbrxdjDxlRAQOWte7VODli5X07ZTYzQmhSlWgIAE=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|n|16.0.1.445_kis_n|%ProductFolder%|ckahcomm.dll|/oCflB1ZnjBSE98af+6CN+nhF00NnkEMW948uXIOCBs=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|n|16.0.1.445_kis_n|%ProductFolder%|ckahrule.dll|WSHrOCRynb9wAMZ7jXZliAUJ3TaWqIjO0kvxhxmdZaM=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|n|16.0.1.445_kis_n|%ProductFolder%|ckahum.dll|Mx8ZdceTYrkH48bviiiDU9blz9GbiFpS1XB/vQyE5aM="/>
-	<Patch
-		CompID="KAV16"
-		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_none"
-		FixName="n"
-		SrvPath="16.0.1.445_kis_n"
-		LocalPath="%ProductFolder%"
-		Name="ver_info.json"
-		DSKM="OvKQbS4dDUlt8Qh5lumUYk/VPo8MYywl0tzJ83zlxP0="/>
-	<Patch
-		CompID="KAV16"
-		App="KAV|KIS|PURE|KFA 16.0.1.445"
-		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[65536-262143]"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="n"
-		SrvPath="16.0.1.445_kis_n"
-		LocalPath="%ProductFolder%"
-		Name="securityproductinformation.ini"
-		DSKM="XBgh/djI5uKRyvgggihdaOvLvOm44XJn71R8qG7Fwbo="/>
-	<Patches
-		CompID="KAV16"
-		ApplyPeriod="168"
-		ApplyAction="restart_os"
-		FixName="n"
-		LocalPath="%ProductFolder%"
-		Item="App;SrvPath;Name;DSKM"
-		List="
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|16.0.1.445_kis_n|configuration.esm|mX2Yo/I657QmQwz8UNBxq05vf4YIHrW7H+BvVp4kSGM=;
-			KSM 16.0.1.445|16.0.1.445_ksm_n|avpmain.dll|eQ9tqWANdga+nkjRuGVQ4701PtrOxyxtu7QE6xalIUE=;
-			KSM 16.0.1.445|16.0.1.445_ksm_n|avpmain16.dll|oAkcbrxdjDxlRAQOWte7VODli5X07ZTYzQmhSlWgIAE=;
-			KSM 16.0.1.445|16.0.1.445_ksm_n|ckahcomm.dll|/oCflB1ZnjBSE98af+6CN+nhF00NnkEMW948uXIOCBs=;
-			KSM 16.0.1.445|16.0.1.445_ksm_n|ckahrule.dll|WSHrOCRynb9wAMZ7jXZliAUJ3TaWqIjO0kvxhxmdZaM=;
-			KSM 16.0.1.445|16.0.1.445_ksm_n|ckahum.dll|Mx8ZdceTYrkH48bviiiDU9blz9GbiFpS1XB/vQyE5aM="/>
-	<Patches
-		CompID="KAV16"
-		ApplyPeriod="168"
-		LocalPath="%ProductFolder%"
-		Item="App;Target;ApplyAction;FixName;SrvPath;Name;DSKM"
-		List="
-			KSM 16.0.1.445|[65536-262143]|restart_none|n|16.0.1.445_ksm_n|ver_info.json|EqVIuoZBYtYG5sF8BKwGnlig+WZcQdr7to0aL0PZKSU=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-65535]|restart_os|o|16.0.1.445_kis_o|traffic_processing.dll|rMkLkeeD446tIFEX3gh/WXQ0JxE9M/CSaeaYU31v+yI=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-65535]|restart_os|o|16.0.1.445_kis_o|traffic_processing_meta.dll|SdSpj7tQtS8TFMqEMUUQVdbZ5EASxhIpXkTkkW0BAQk=;
-			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|[0-65535]|restart_none|o|16.0.1.445_kis_o|ver_info.json|OvKQbS4dDUlt8Qh5lumUYk/VPo8MYywl0tzJ83zlxP0="/>
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m|%ProductFolder%|bl_sm.ppl|Uy/SfIMlsUbV+xLG1dZJdHIMsSpFQcgwK/jkI7Epjps=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m|%ProductFolder%|kasperskylab.safemoney.ui.dll|TDADM1bl/VRdUuavT7yT3M1AgoR1W7YM3N9WybaPN6M=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m|%ProductFolder%|kasperskylab.safemoney.ui.generatedregistrations.dll|UwL81GLeSprsMX45S0a9qeqvOszKIAax89Iu9yveOlQ=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/ffext/light_plugin_firefox|%ProductFolder%/FFExt/light_plugin_firefox|addon.xpi|qfVjftvGIZAwArQQyiFI+hFEX7WU23U6uhAJk+SpOe8=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/ffext/light_plugin_firefox|%ProductFolder%/FFExt/light_plugin_firefox|version|4XJA0RhrKY1Bgf8Z6uxQtz8rNMT42Q8NGaSj3Mcahc8=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/skin/resources/neutral/templates/css/safe_banking|%ProductFolder%/skin/resources/neutral/templates/css/safe_banking|tooltip_styles.css|BoQtstm3sS66OOV2nNpKvBDf/IEWoyjo0IOIZqR+v4A=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|plugins_activated_tooltip.html|bquHDL3HS22f1rbD1EeMjhmmICYzYet9N9s7Gfw7kjs=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|plugins_installed_not_activated_tooltip.html|UFkw+8qvjPWPvxNfwNpbH8yR0/j4uWUjULDlMymjFgU=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|plugins_not_installed_tooltip.html|Ck2VHKzHBqPzOy+EQwpkX1lpGq1bwhTcB1xnO+mcVzE=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|safe_message_tooltip.html|IAh237Ec3ydNc5LpxdkjowP/fm577u4FDXT59LDL+Xw=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m/skin/resources/neutral/templates|%ProductFolder%/skin/resources/neutral/templates|unsafe_message_tooltip.html|XdnmfLnSI9FjUnur+hJW8+kGpO+xwTVcMKI9tegORis=;
+			KSM 16.0.1.445|restart_os|m|16.0.1.445_ksm_m|%ProductFolder%|plugins-setup.cfg|Tb6k6wHI58mdD/LSgNGDf5GHOjuwCYi6/leBX8lmnKo=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|n|16.0.1.445_kis_n|%ProductFolder%|avpmain.dll|eQ9tqWANdga+nkjRuGVQ4701PtrOxyxtu7QE6xalIUE=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|n|16.0.1.445_kis_n|%ProductFolder%|avpmain16.dll|oAkcbrxdjDxlRAQOWte7VODli5X07ZTYzQmhSlWgIAE=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|n|16.0.1.445_kis_n|%ProductFolder%|ckahcomm.dll|/oCflB1ZnjBSE98af+6CN+nhF00NnkEMW948uXIOCBs=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|n|16.0.1.445_kis_n|%ProductFolder%|ckahrule.dll|WSHrOCRynb9wAMZ7jXZliAUJ3TaWqIjO0kvxhxmdZaM=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|n|16.0.1.445_kis_n|%ProductFolder%|ckahum.dll|Mx8ZdceTYrkH48bviiiDU9blz9GbiFpS1XB/vQyE5aM=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|n|16.0.1.445_kis_n|%ProductFolder%|configuration.esm|mX2Yo/I657QmQwz8UNBxq05vf4YIHrW7H+BvVp4kSGM=;
+			KSM 16.0.1.445|restart_os|n|16.0.1.445_ksm_n|%ProductFolder%|avpmain.dll|eQ9tqWANdga+nkjRuGVQ4701PtrOxyxtu7QE6xalIUE=;
+			KSM 16.0.1.445|restart_os|n|16.0.1.445_ksm_n|%ProductFolder%|avpmain16.dll|oAkcbrxdjDxlRAQOWte7VODli5X07ZTYzQmhSlWgIAE=;
+			KSM 16.0.1.445|restart_os|n|16.0.1.445_ksm_n|%ProductFolder%|ckahcomm.dll|/oCflB1ZnjBSE98af+6CN+nhF00NnkEMW948uXIOCBs=;
+			KSM 16.0.1.445|restart_os|n|16.0.1.445_ksm_n|%ProductFolder%|ckahrule.dll|WSHrOCRynb9wAMZ7jXZliAUJ3TaWqIjO0kvxhxmdZaM=;
+			KSM 16.0.1.445|restart_os|n|16.0.1.445_ksm_n|%ProductFolder%|ckahum.dll|Mx8ZdceTYrkH48bviiiDU9blz9GbiFpS1XB/vQyE5aM=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|o|16.0.1.445_kis_o|%ProductFolder%|traffic_processing.dll|rMkLkeeD446tIFEX3gh/WXQ0JxE9M/CSaeaYU31v+yI=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_os|o|16.0.1.445_kis_o|%ProductFolder%|traffic_processing_meta.dll|SdSpj7tQtS8TFMqEMUUQVdbZ5EASxhIpXkTkkW0BAQk=;
+			KAV\\|KIS\\|PURE\\|KFA 16.0.1.445|restart_none|o|16.0.1.445_kis_o|%ProductFolder%|ver_info.json|OvKQbS4dDUlt8Qh5lumUYk/VPo8MYywl0tzJ83zlxP0="/>
 	<Patch
 		CompID="KAV16"
 		App="KAV|KIS|PURE|KFA 16.0.1.445"
 		OS="Win-Vista,7,2008,8,81,2012,1000"
-		Target="[0-65535]"
 		ApplyPeriod="168"
 		ApplyAction="restart_os"
 		FixName="o"
@@ -1773,7 +1671,6 @@
 	<Patches
 		CompID="KAV16"
 		App="KSM 16.0.1.445"
-		Target="[0-65535]"
 		ApplyPeriod="168"
 		FixName="o"
 		SrvPath="16.0.1.445_ksm_o"
@@ -1788,4 +1685,4 @@
 		LocalPath="%DSKM%"
 		Name="kav16-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAABy+r4H3ZMARQ1n1gz2yLRwatt4OTYvOjo8gl0GkZQxAMZPl/tMng8jHojDCeEUteljz3XXjJZUMwL4F6qJ4+9gBAB4JMAEAAAIAAigFAEtBVjE2AwACKAMAQklOAQAACdRuQZUNCjs6MTBhVEh3SkVPR1BmUDJ0ZTl1NTQxQms4NXlReDBhbHpBK3k5aWZhTFdUTEp0UjdDOWtDTE94Nk9wQTNKTDg5bHdOWW1vWDl3SSthcjVlay91SGprV1RUcCUl</Key>
 </Update>
-;:10a5VXYVxAxuJElpz/VC7jucVvrbvWaFpXNk6zO68Becu7Kbfr+a7gWAGH/j6h83RiMEu1lhy9zeI/E/cFPexomY%%
+;:10qK67Hd2Igu8nlUpL569cMvz8sAZBKNoHDwoJ2qDu+ioItT2kmDo/I4A2WgiqdvvMwGHcf1PHIeAmjAbumYtCL1%%
