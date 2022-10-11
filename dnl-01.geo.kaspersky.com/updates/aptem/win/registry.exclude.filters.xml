@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-10-03T13:44:00.000Z-1664804679 -->
+  <!-- !!! DWORD QWORD values in Value="..." has to be specified as they are presented in regedit when you click "Modify binary data" on such parameters. -->
+  <!-- !!! For example, 0x1 dword value is Value="01000000" -->
+
+  <!-- Version: 2022-10-06T14:15:00.000Z-1665065734 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -147,6 +150,7 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 2 -->
+<!-- Part 2 2022-10-06T14:15:00.000Z-1665065734 *count* removed -->
 	<Registry Id="{C8713ACE-6D77-09CA-F3A99A700A0B39B1}" Path="*software\microsoft\windows\currentversion\group policy*" Value="????0000" />
 	<Registry Id="{2D9E8E55-2BE0-153A-0BB7B6D1AB00DFFD}" Path="*software\microsoft\windows\currentversion\group policy*" Value="????000000000000" />
 	<Registry Id="{9E29E143-EA8E-7DFB-3EA014868C6819E3}" Path="*software\microsoft\windows\currentversion\group policy*" Value="??00??000000" />
@@ -394,8 +398,6 @@
 	<Registry Id="{74869781-B442-EDC6-42DECE5AC5DC2367}" Name="drive type" Value="????000000000000" />
 	<Registry Id="{70319729-879F-47C1-DAE826134E4278CC}" Name="drivenumber" Value="????0000" />
 	<Registry Id="{65B17804-A03A-043D-6A14E1D03E72F956}" Name="drivenumber" Value="????000000000000" />
-	<Registry Id="{B42F31A4-A59A-94E8-2F8271899A6EE8D0}" Name="*count*" Value="????0000" />
-	<Registry Id="{15B1E48A-CDC2-25B6-C2915DC4D183F87F}" Name="*count*" Value="????000000000000" />
 	<Registry Id="{F519B983-A15D-8908-C389B70097913EFF}" Name="fontsmoothingtype" Value="????0000" />
 	<Registry Id="{AB4773BD-DE29-81CA-448FE113FEC2D8A0}" Name="fontsmoothingtype" Value="????000000000000" />
 	<Registry Id="{6982DE6A-C112-61F5-164F8F5E893E9504}" Name="groupbydirection" Value="????0000" />
@@ -1325,6 +1327,9 @@
 			<Signature Subject="*Adobe*" />
 		</Process>
 	</Registry>
+<!-- Part 2 2022-10-06T14:15:00.000Z-1665065734 *count* removed -->
+<!-- Part 2 -->
+<!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 3 -->

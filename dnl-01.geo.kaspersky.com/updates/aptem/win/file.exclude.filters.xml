@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-09-27T13:31:00.000Z-1664285483 -->
+	<!-- Version: 2022-10-06T17:26:00.000Z-1665077162 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -8596,6 +8596,271 @@
 		<Process Path="c:\windows\ccm\scnotification.exe" />
 	</File>
 <!-- Part 0021 2022-09-27T13:31:00.000Z-1664285483 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0022 2022-10-06T17:26:00.000Z-1665077162 -->
+	<File Id="{F9EE5D86-937F-36AB-0599CBF1611F50F4}" FilePath="c:\empower\instruments\html\acq-sm*">
+		<Process CmdLine="C:\Empower\Instruments\Bin\AcquitySMServer.exe -Embedding">
+			<VersionInfo OrignFileName="AcquitySMServer.exe" ProductName="Sample Manager" FileDescription="Sample Manager Server" />
+		</Process>
+	</File>
+	<File Id="{BAB318B1-F4D1-CB5B-BDD66A74E947E53F}" FilePath="*modem\config.ini">
+		<Process>
+			<Signature Subject="ZTE CORPORATION" />
+		</Process>
+	</File>
+	<File Id="{68E64360-9F37-64D0-0F51155AA5D2D55A}" FilePath="*appdata\local\temp\acrocef_low\*.tmp">
+		<Process Path="*adobe\acrobat reader*">
+			<Signature Subject="*Adobe*" />
+		</Process>
+	</File>
+	<File Id="{AF3A922F-FEB2-62E6-CA7EAE561F2A1448}" FilePath="*appdata\locallow\adobe\acrocef\dc\acrobat\cache\code cache\js\????????????????_?">
+		<Process Path="*adobe\acrobat reader*">
+			<Signature Subject="*Adobe*" />
+		</Process>
+	</File>
+	<File Id="{6C583D8A-517D-8E72-416CEF32C8E606BE}" FilePath="*appdata\local\temp\acrord32_sbx\*.tmp">
+		<Process Path="*adobe\acrobat reader*">
+			<Signature Subject="*Adobe*" />
+		</Process>
+	</File>
+	<File Id="{85B9D40F-48CC-791F-B247DC2BE371A1DD}" FilePath="*appdata\local\temp\*.tmp">
+		<Process Path="*adobe\acrobat reader*">
+			<Signature Subject="*Adobe*" />
+		</Process>
+	</File>
+	<File Id="{25A10C19-43F6-6DBB-ECB9863F5CDBC863}" FilePath="c:\windows\temp\enumwin.tmp">
+		<Process CmdLine="c:\program files (x86)\automatos\desktop agent\enumwindows.exe c:\windows\temp\\enumwin.tmp">
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</File>
+	<File Id="{1C47ED88-735D-7C91-49B5A2718CB75E49}" FilePath="*appdata\local\cisco\cisco anyconnect secure mobility client\aciseposture.log">
+		<Process Path="*cisco\cisco*">
+			<Signature Subject="*cisco*" />
+		</Process>
+	</File>
+	<File Id="{F5DA530B-B88A-E569-B0308BB882A72C52}" FilePath="*appdata\local\temp\waapi-??????????\????????????????????????">
+		<Process Path="*cisco\cisco*">
+			<Signature Subject="*cisco*" />
+		</Process>
+	</File>
+	<File Id="{EE89050B-49DC-2BD0-3F04D4670AAE374A}" FilePath="c:\programdata\cisco\cisco anyconnect secure mobility client\nvm\nvm.db-journal">
+		<Process Path="*cisco\cisco*">
+			<Signature Subject="*cisco*" />
+		</Process>
+	</File>
+	<File Id="{695C8BBA-3280-26A4-4D479BEE0E263301}" FilePath="*appdata\local\citrix\selfservice*">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{83968C6D-79CB-2285-03A222EFC2F348F5}" FilePath="c:\programdata\boost_interprocess\1664942621\mutex_cwa_config*">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{E42264BE-2EAD-C5EA-ED2D4CB0CCEA7C96}" FilePath="c:\programdata\citrix\receiver\storage\cwa_config*">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{5846558F-D586-07D1-AA1C02604223CF31}" FilePath="*appdata\local\citrix\receiver\microsoft.*manifest">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{3FF2BEB5-715B-5B93-856E7DAF58198ADA}" FilePath="*appdata\local\citrix\receiver\msvcr*">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{5168E2BF-85EF-1671-D8C6BF7E49BCE998}" FilePath="*appdata\local\citrix\selfservice\bn-*_cache.xml">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{1DC39D2D-9D85-23DC-484AF511E0DB7E30}" FilePath="appdata\local\citrix\selfservice\citrixwebcontrolcache\code cache\js\????????????????_?">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{8E3FF9E6-7C66-ECFF-64C511279DCAB3ED}" FilePath="*appdata\local\microsoft\*\usagelogs\selfservice.exe.log">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{C310C479-5849-C37D-AF99A17E82DDA617}" FilePath="appdata\local\temp\ctxreceiverlogs\*selfservice.exe-*.etl">
+		<Process Path="*citrix\ica client*">
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</File>
+	<File Id="{B6F068FE-5F1D-D7C5-24228DB5306C7CB5}" FilePath="c:\windows\temp\armreport.ini">
+		<Process Path="*Adobe\ARM*">
+			<Signature Subject="*Adobe*" />
+		</Process>
+	</File>
+	<File Id="{BD55595B-AF18-C558-FA897F5443333601}" FilePath="*appdata\local\temp\adobearm_notlocked.log">
+		<Process Path="*Adobe\ARM*">
+			<Signature Subject="*Adobe*" />
+		</Process>
+	</File>
+	<File Id="{CD52933D-5231-62EE-6B7FCCA9A21B8DAE}" FilePath="*appdata\local\temp\a9r????-????????">
+		<Process CmdLine="C:\Program Files (x86)\Common Files\Objectif Lune\PlanetPress Suite*\PSRip\ppalmbic.exe -server -*">
+			<VersionInfo OrignFileName="AcquitySMServer.exe" ProductName="PlanetPress Suite*" FileDescription="PlanetPress Alambic" />
+		</Process>
+	</File>
+	<File Id="{FEE55F5A-613D-A94F-46D05E172FF4A51D}" FilePath="*appdata\local\temp\tmp?????-?\?????????.???.???.???">
+		<Process CmdLine="C:\Program Files (x86)\Common Files\Objectif Lune\PlanetPress Suite*\PSRip\ppalmbic.exe -server -*">
+			<VersionInfo OrignFileName="AcquitySMServer.exe" ProductName="PlanetPress Suite*" FileDescription="PlanetPress Alambic" />
+		</Process>
+	</File>
+	<File Id="{F4BDDED6-04ED-09C2-D10602B57D7C7CC5}" FilePath="*appdata\local\temp\tmp?????-?\tmp????.tmp">
+		<Process CmdLine="C:\Program Files (x86)\Common Files\Objectif Lune\PlanetPress Suite*\PSRip\ppalmbic.exe -server -*">
+			<VersionInfo OrignFileName="AcquitySMServer.exe" ProductName="PlanetPress Suite*" FileDescription="PlanetPress Alambic" />
+		</Process>
+	</File>
+	<File Id="{36D9756D-C6C8-AE40-4BAC7D0BB2648DAF}" FilePath="*appdata\local\temp\tmp????-?\????????">
+		<Process CmdLine="C:\Program Files (x86)\Common Files\Objectif Lune\PlanetPress Suite*\PSRip\ppalmbic.exe -server -*">
+			<VersionInfo OrignFileName="AcquitySMServer.exe" ProductName="PlanetPress Suite*" FileDescription="PlanetPress Alambic" />
+		</Process>
+	</File>
+	<File Id="{0E7619C3-4C45-377E-4D1123C75666EA6A}" FilePath="*appdata\local\temp\???????.tmp.pre\prev_??.jpg">
+		<Process Path="*files\scan*">
+			<Signature Subject="*Samsung*" />
+		</Process>
+	</File>
+	<File Id="{3C7FEA85-EE3C-2FD1-FAA440142547963B}" FilePath="*appdata\local\temp\sie_file_*\preview.jpg">
+		<Process Path="*files\scan*">
+			<Signature Subject="*Samsung*" />
+		</Process>
+	</File>
+	<File Id="{C81F7761-2A9A-55B6-9F833C3244F0F7D9}" FilePath="*appdata\local\temp\siet_*_*">
+		<Process Path="*files\scan*">
+			<Signature Subject="*Samsung*" />
+		</Process>
+	</File>
+	<File Id="{7972E426-E689-086E-66F5D909D81FC58F}" FilePath="c:\program files (x86)\common files\securit\*.ttf">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{80F9DFF6-1EC9-6666-E0B06B48AE69BE11}" FilePath="c:\program files (x86)\common files\securit\configurations\{*}\config.data">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{09C12230-8567-BAED-89151C20AF4D6177}" FilePath="c:\program files (x86)\common files\securit\configurations\{*}\config.info">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{9E51639F-173A-78D0-FAEE61906730C82F}" FilePath="c:\program files (x86)\zecurion\endpoint\temp\in\{*">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{E74D2D37-3792-D064-034180A2FE3E3703}" FilePath="c:\program files (x86)\zecurion\endpoint\temp\mirrortemp\{*">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{EA07317E-5CCB-AE4B-A873952B72E83178}" FilePath="c:\program files (x86)\zecurion\endpoint\temp\s-1-*">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{AF47FF00-6D8A-D55F-20112E9E7ACB3009}" FilePath="c:\program files (x86)\zecurion\endpoint\temp\work\{*">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{3D37CCAD-868F-69B8-2F206815A25595A9}" FilePath="c:\windows\system32\shadowcopy\{*">
+		<Process Path="*files\securit*">
+			<Signature Subject="*Zecurion*" />
+		</Process>
+	</File>
+	<File Id="{44A5F6BA-AC44-875D-CA5671581884EF96}" FilePath="*appdata\local\hp\hp*">
+		<Process Path="*hp\hp*">
+			<Signature Subject="*HP Inc*" />
+		</Process>
+	</File>
+	<File Id="{02786C9A-88EC-63E5-5F239074B30FD8C9}" FilePath="*appdata\local\temp\hpscan*">
+		<Process Path="*hp\hp*">
+			<Signature Subject="*HP Inc*" />
+		</Process>
+	</File>
+	<File Id="{B8CDC83E-2C73-4BEA-AC8C1D50413D73B5}" FilePath="c:\windows\debug\wia\wiatrace.log">
+		<Process Path="*hp\hp*">
+			<Signature Subject="*HP Inc*" />
+		</Process>
+	</File>
+	<File Id="{95E7C5F6-B27E-7A1A-B7685988A526B696}" FilePath="*appdata\local\adobe\acrobat\dc\adobesysfnt*.lst">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{D4D8104E-ECD8-6B3E-973FF1053A0BF435}" FilePath="*appdata\local\amd\dxcache\*.bin">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{631CA343-4BA0-6E42-399162E0BEA923B7}" FilePath="*microsoft\internet explorer\domstore\*.xml">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{31069442-8DEC-26D6-8B99F2AACADA829E}" FilePath="*appdata\local\microsoft\internet explorer\imagestore\*\imagestore.dat">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{E8620421-B6D8-5980-11E6B2A63EA3B265}" FilePath="*appdata\local\microsoft\windows\inetcache\low\msimgsiz.dat">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{EA0AB693-4D22-9DB6-477315A6F5E3BFEC}" FilePath="*appdata\local\microsoft\windows\inetcache\low\smartscreencache.dat">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{341CF761-68DE-7A46-BF8A55E4ED3C9ADC}" FilePath="*appdata\local\temp\dlp_*.tmp">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{2920D574-FCE4-845B-AB3992FE3162A290}" FilePath="*appdata\local\temp\????????.htm">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{FE93D435-0408-DE75-85F55F193E25F2E6}" FilePath="*appdata\local\temp\????????_*.tmp">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{9D3ACEB5-98BF-F7E8-338B045B60FD37DA}" FilePath="*appdata\local\temp\low\dlp_*.tmp">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{32235E0B-54E6-BAAB-1E4DC3501CEC6259}" FilePath="*appdata\local\temp\tr?????.tmp">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{9F322A73-62EC-DCDF-DF40BB15EFF0C1EB}" FilePath="*appdata\local\temp\tr????.tmp">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{D5C4B7F6-5E31-66DA-36EE5C87C1B8C349}" FilePath="c:\windows\system32\spool\printers\?????.spl">
+		<Process CmdLine="*internet explorer\iexplore.exe scodef:*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+<!-- Part 0022 2022-10-06T17:26:00.000Z-1665077162 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
