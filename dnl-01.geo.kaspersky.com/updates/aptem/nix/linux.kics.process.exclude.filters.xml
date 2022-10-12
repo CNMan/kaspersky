@@ -4,15 +4,7 @@
     <Image Id="{094C3856-951F-DA56-40EF-2C6517BE6A9D}">
         <Process Path="*/prlshprint" />
     </Image>
-    <Image Id="{C46B04CE-0751-957A-76FA-97A61612C9FA}" CmdLine="/kesl-supervisor start*" /> 
-    <Image Id="{137019D0-ECB7-BCEF-A7DD-AAA7B9CE1BA4}">
-        <ParentProcess CmdLine="/bin/sh -u /opt/kaspersky/kesl/libexec/kesl_launcher.sh*" />
-    </Image>  
-    <Image Id="{FB25986C-F830-8068-781A-FF9ADBDC9C52}">
-        <Process CmdLine="/bin/sh -u /opt/kaspersky/kesl/libexec/kesl_launcher.sh*" />
-    </Image>
-    <Image Id="{29128EDA-C155-5DC5-C659-51ACBD9A9101}" CmdLine="*libexec/kesl_launcher.sh*" />
-    <Image Id="{FD1DF3F7-6E15-CB7E-454E-CC1B41E6FE30}" CmdLine="pidof /opt/kaspersky/kesl/libexec/wdserver" />
+    <Image Id="{FD1DF3F7-6E15-CB7E-454E-CC1B41E6FE30}" CmdLine="pidof /opt/kaspersky/kics/libexec/wdserver" />
     <Image Id="{6962E396-6D33-BE1F-8F99-41E6D99C115F}" CmdLine="sh -c ip *">
         <Process Path="/usr/sbin/hypervkvpd" />
     </Image>
@@ -48,8 +40,8 @@
         <Process Path="/usr/libexec/postfix/master" />
     </Image>
     <Image Id="{4C0C255A-9558-0289-2AA5-29D34F1435FF}">
-        <Process CmdLine="/opt/kaspersky/kesl/libexec/kesl" />
-        <ParentProcess Path="*/opt/kaspersky/kesl/libexec/wdserver" />
+        <Process CmdLine="/opt/kaspersky/kics/libexec/kics" />
+        <ParentProcess Path="*/opt/kaspersky/kics/libexec/wdserver" />
     </Image>
 	<Image Id="{407DCC45-E754-3E6E-31D6-152333E9167D}" CmdLine="(mkfifo)">
         <Process Path="/usr/lib/systemd/systemd" />
@@ -140,9 +132,6 @@
     <Image Id="{6BDD02DB-5090-49C8-401F-7FB9E4742961}" CmdLine="/bin/sh -c command -v debian-sa1 ? /dev/null ?? debian-sa1*" />
     <Image Id="{2A1ACE11-19BC-1680-96B6-44DA2D1C5477}">
         <Process CmdLine="*bin/klnagent -d -from_wd" />
-    </Image>
-    <Image Id="{47AD0F38-707A-288C-87CD-C593EB6F185E}">
-        <Process CmdLine="*/opt/kaspersky/kesl/libexec/kesl_launcher.sh" />
     </Image>
     <Image Id="{29511A7A-9BF2-FFBB-F8CA-B50E3471E546}">
         <Process Path="*bin/klnagent" />

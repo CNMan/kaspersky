@@ -104,11 +104,11 @@
     <File Id="{F23368E8-FCC7-7A2C-D767-8DA963EF97D2}">
         <Process CmdLine="*/bin/python*bin/pip3 install -U --force-reinstall --extra-index-url=*" />
     </File>
-    <File Id="{ABB816E1-298F-5CF1-FDC9-30843ED2BD6A}" Path="/var/opt/kaspersky/*">
-        <Process Path="*/opt/kaspersky/kesl/libexec/kesl" />
+    <File Id="{ABB816E1-298F-5CF1-FDC9-30843ED2BD6A}">
+        <Process Path="*/opt/kaspersky/kics/libexec/kics" />
     </File>
     <File Id="{55D0B930-FB19-4E43-CEFA-F3B873F59212}" Path="/sys/fs/*">
-        <Process Path="*/opt/kaspersky/kesl/libexec/kesl" />
+        <Process Path="*/opt/kaspersky/kics/libexec/kics" />
     </File>
     <File Id="{AF8A0101-1EF5-F923-FB56-D1EAB352000A}" Path="/sys/fs/*">
         <Process Path="*/lib/systemd/systemd" />
@@ -160,7 +160,7 @@
         <Process CmdLine="/bin/sh /var/opt/kaspersky/klnagent*" />
     </File>
     <File Id="{231D9CF5-C75E-70D0-8036-28751E6E38B7}" Path="base/*">
-        <Process CmdLine="*opt/kaspersky/kesl/libexec/wdserver" />
+        <Process CmdLine="*opt/kaspersky/kics/libexec/wdserver" />
     </File>
     <File Id="{8A0D062C-243E-6252-E1E0-4316047C299E}" Path="base/*">
         <ParentProcess Path="*bin/postgres*" />
@@ -200,7 +200,7 @@
         <Process Path="/usr/sbin/cron" />
     </File>
     <File Id="{6B4DB2D5-60D7-D9E7-9D6A-41FFF74F59FC}" FileOperationType="6">
-        <Process Path="/var/opt/kaspersky/*/kesl" />
+        <Process Path="/var/opt/kaspersky/kics" />
     </File>
     <File Id="{2E613AE5-DA16-39CD-FA1A-20757E71A573}" FileOperationType="6">
         <Process Path="/bin/ls" />
