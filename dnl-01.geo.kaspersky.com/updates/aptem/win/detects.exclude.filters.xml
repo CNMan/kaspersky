@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-10-04T17:41:00.000Z-1664905312 -->
+	<!-- 2022-10-18T11:52:00.000Z-1666093936 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2768,6 +2768,32 @@
 	</Detect>
 	<Detect Id="{2C56DFE6-571F-1655-9C98AE835E1BC98F}" ContentValue="get-appxpackage -allusers | select name,packagefullname,publisher,publisherid,version,installlocation" />
 <!-- Part 0059 2022-10-04T17:41:00.000Z-1664905312 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0060 2022-10-18T11:52:00.000Z-1666093936 -->
+	<Detect Id="{29633481-4AE6-2A26-9C45EC90E75F3CD7}" ContentValue="*is-bcdentry-resume-set { &#13;&#10;&#13;&#10;    log-info (&#34;checking if bcd resume is set&#34;)&#13;&#10;    $result = cmd.exe /c \&#39;bcdedit  /enum*">
+		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
+	</Detect>
+	<Detect Id="{1CB71DDF-E620-3AF8-10C49139EF8514FF}" ContentValue="*config_registry_root=&#34;hklm:\\software\\amazon\\skylight*">
+		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
+	</Detect>
+	<Detect Id="{5A874A63-2619-826B-17D8A7B9E8294B8C}" ContentValue="*ion = (get-childitem -path &#34;$env:programfiles\amazon\amazon workspaces application manager&#34; -filter &#34;streamingcore.exe*">
+		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
+	</Detect>
+	<Detect Id="{13141523-D0D4-49A8-3960DF14247FF957}" ContentValue="function set-scriptvariable {*stop&#34;&#13;&#10;&#13;&#10;    # set script name and version.&#13;&#10;    $script:scriptname = &#34;update*">
+		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
+	</Detect>
+	<Detect Id="{99BC9E53-DA4E-CE4D-77F9C5C4BFB69E33}" ContentValue="function set-scriptvariable {*stop&#34;&#13;&#10;    # set script name and version.&#13;&#10;    $script:scriptname = &#34;update*">
+		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
+	</Detect>
+	<Detect Id="{9496BFD1-9C68-2862-155EF459C9ACD435}" ContentValue="function set-scriptvariable {*stop&#34;&#13;&#10;    $script:scriptname = &#34;update*">
+		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
+	</Detect>
+	<Detect Id="{040152FA-A939-9E09-FC2E568C53C45D06}" ContentValue="function set-scriptvariable {*script:officeregpath = &#34;hklm:\software\microsoft\office\clicktorun\configuration*">
+		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
+	</Detect>
+<!-- Part 0060 2022-10-18T11:52:00.000Z-1666093936 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
