@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-10-18T11:52:00.000Z-1666093936 -->
+	<!-- 2022-10-19T16:10:00.000Z-1666195856 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2794,6 +2794,23 @@
 		<Process CmdLine="* allsigned *amazon\workspacesconfig\scripts*" />
 	</Detect>
 <!-- Part 0060 2022-10-18T11:52:00.000Z-1666093936 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0061 2022-10-19T16:10:00.000Z-1666195856 -->
+	<Detect Id="{BF795254-E7E2-6B45-36129A8959F91C43}" ContentValue="@{&#13;&#10;guid=&#34;{cf094c6b-*test-certificate&#39;)&#13;&#10;compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)&#13;&#10;}&#13;&#10;">
+		<Process Path="*\powershell.exe" />
+	</Detect>
+	<Detect Id="{1F2D9529-DA14-28F1-F3822C83E2EE2ADB}" ContentValue="@{&#13;&#10;guid=&#34;{cf094c6b-*test-certificate&#39;)&#13;&#10;}&#13;&#10;">
+		<Process Path="*\powershell.exe" />
+	</Detect>
+	<Detect Id="{A96AD40C-6147-330F-392F661CA54DBD40}" ContentValue="@{?&#10;guid=&#34;{cf094c6b-*test-certificate&#39;)?&#10;compatiblepseditions = @(&#39;desktop&#39;, &#39;core&#39;)?&#10;}?&#10;">
+		<Process Path="*\powershell.exe" />
+	</Detect>
+	<Detect Id="{20433C36-F905-D961-ECCC4520223AC885}" ContentValue="@{?&#10;guid=&#34;{cf094c6b-*test-certificate&#39;)?&#10;}?&#10;">
+		<Process Path="*\powershell.exe" />
+	</Detect>
+<!-- Part 0061 2022-10-19T16:10:00.000Z-1666195856 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
