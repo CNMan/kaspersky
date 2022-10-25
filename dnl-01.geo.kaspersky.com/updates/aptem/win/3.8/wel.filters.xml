@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2022-09-27T13:39:00.000Z-1664285994 -->
+  <!-- Version: 2022-10-21T18:05:00.000Z-1666375542 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -715,6 +715,11 @@
     <Exclusions>
       <Match OrderNum="11" Value="*LSA"/>
       <Match OrderNum="11" Value="*WMI"/>
+      <Conjunction>
+          <Equal OrderNum="12" Value="%{bf967a86-0de6-11d0-a285-00aa003049e2}"/>
+          <Equal OrderNum="15" Value="0x0"/>
+          <Match OrderNum="18" Value="%%7688&#10;&#9;&#9;{771727b1**-00aa003049e2}&#10;"/>
+      </Conjunction>
     </Exclusions>
   </Event>
 
@@ -1261,6 +1266,13 @@
   <Event Name="EventID5049.Vista" Id="5049" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
   <Event Name="EventID5050.Vista" Id="5050" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
   <Event Name="EventID5057.Vista" Id="5057" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="DSObjectModified" Id="5136" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectCreated" Id="5137" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectUndeleted" Id="5138" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectMoved" Id="5139" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectDeleted" Id="5141" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
   <Event Name="EventID5146.Vista" Id="5146" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
   <Event Name="EventID5147.Vista" Id="5147" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
   <Event Name="EventID5148.Vista" Id="5148" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
