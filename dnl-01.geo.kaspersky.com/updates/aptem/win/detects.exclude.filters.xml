@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-10-19T16:10:00.000Z-1666195856 -->
+	<!-- 2022-10-26T15:12:00.000Z-1666797170 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2811,6 +2811,23 @@
 		<Process Path="*\powershell.exe" />
 	</Detect>
 <!-- Part 0061 2022-10-19T16:10:00.000Z-1666195856 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0062 2022-10-26T15:12:00.000Z-1666797170 -->
+	<Detect Id="{BF726EDF-47E1-80B2-4DEB3AB97F5B7914}" ContentValue="&#13;&#10;function extractpluginproperties([string]$plugindir, $objecttowriteto) &#13;&#10;{&#13;&#10;    function unescape-xml*containswildcardcharacters($_)))&#13;&#10;    {&#13;&#10;      $errmsg = $shellnoterrmsgformat -f $_&#13;&#10;      write-error $errmsg &#13;&#10;    }     &#13;&#10;  }&#13;&#10;">
+		<Process Path="*\powershell.exe" />
+	</Detect>
+	<Detect Id="{09A3BB44-1BA9-6900-08B2F66E34A9F540}" ContentValue="?&#10;function extractpluginproperties([string]$plugindir, $objecttowriteto) ?&#10;{?&#10;    function unescape-xml*containswildcardcharacters($_)))?&#10;    {?&#10;      $errmsg = $shellnoterrmsgformat -f $_?&#10;      write-error $errmsg ?&#10;    }     ?&#10;  }?&#10;">
+		<Process Path="*\powershell.exe" />
+	</Detect>
+	<Detect Id="{7BE0BD75-30CD-2ACF-9D042D80AC98876C}">
+		<Process CmdLine="powershell.exe -executionpolicy bypass -file &#34;c:\programdata\cmclienthealth\configmgrclienthealth.ps1 &#34; -config &#34;c:\programdata\cmclienthealth\config.xml&#34;" />
+	</Detect>
+	<Detect Id="{7D33A123-CCCB-9878-B0B55444121B5E2E}">
+		<Process CmdLine="powershell.exe -executionpolicy bypass -file c:\programdata\cmclienthealth\configmgrclienthealth.ps1  -config c:\programdata\cmclienthealth\config.xml" />
+	</Detect>
+<!-- Part 0062 2022-10-26T15:12:00.000Z-1666797170 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-10-25T16:50:00.000Z-1666716646 -->
+	<!-- 2022-10-26T15:13:00.000Z-1666797225 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -351,6 +351,18 @@
 	<Image Id="{1476BF5A-94AB-1029-293AE824E75A1B69}" CmdLine="powershell.exe  -windowstyle hidden -ExecutionPolicy Bypass -File C:\Program Files (x86)\MDIO Software\Autochartist MetaTrader Expert Advisor\DownloadVAFiles.ps1" />
 <!-- Part 0018 2022-10-25T16:50:00.000Z-1666716646 -->
 <!-- Part 0018 2022-10-24T18:27:00.000Z-1666636075 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0019 2022-10-26T15:13:00.000Z-1666797225 -->
+	<Image Id="{3BECF452-BA83-6890-94C5D56392C1FB7A}" CmdLine="powershell.exe -executionpolicy bypass -file c:\programdata\cmclienthealth\configmgrclienthealth.ps1  -config c:\programdata\cmclienthealth\config.xml" />
+	<Image Id="{B7E2AC3D-E284-07E0-DFE5E2B09709A9F8}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file configurator/aem-configurator.ps1 http://localhost:*.config" />
+	<Image Id="{407E74C9-714D-F122-93C017035AAB28D7}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file configurator/aem-configurator.ps1 http://localhost:*.config " />
+	<Image Id="{8678ED65-B96C-E789-D21B57C425A75D90}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file configurator/aem-configurator.ps1 http://localhost:*.config?" />
+	<Image Id="{385C398E-58F9-E26B-D6F787DBADF54A99}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file package-installer.ps1 curl\curl.exe *.zip $true" />
+	<Image Id="{69BB345E-1B06-C2C9-106661A0385488E3}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file package-installer.ps1 curl\curl.exe *.zip $true " />
+	<Image Id="{4A41310F-6C23-E8F4-53C8B2283340186C}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file package-installer.ps1 curl\curl.exe *.zip $true?" />
+<!-- Part 0019 2022-10-26T15:13:00.000Z-1666797225 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
