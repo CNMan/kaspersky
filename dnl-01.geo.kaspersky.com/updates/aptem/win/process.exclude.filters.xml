@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-10-26T15:13:00.000Z-1666797225 -->
+	<!-- 2022-10-27T14:34:00.000Z-1666881254 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -363,6 +363,25 @@
 	<Image Id="{69BB345E-1B06-C2C9-106661A0385488E3}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file package-installer.ps1 curl\curl.exe *.zip $true " />
 	<Image Id="{4A41310F-6C23-E8F4-53C8B2283340186C}" CmdLine="powershell.exe  -version 3 -executionpolicy bypass -file package-installer.ps1 curl\curl.exe *.zip $true?" />
 <!-- Part 0019 2022-10-26T15:13:00.000Z-1666797225 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0020 2022-10-27T14:34:00.000Z-1666881254 -->
+	<Image Id="{D5538BCA-0E33-B652-774113AA4A25B818}" CmdLine="c:\program files\powershell\7\pwsh.exe c:\scripts\neo4j\mainscripts\ad\adassetsadenrichment.ps1" />
+	<Image Id="{054D6654-392D-5D70-AF08D1A128EAC3DE}" CmdLine="c:\program files\powershell\7\pwsh.exe c:\scripts\neo4j\mainscripts\ad\cleanadcsvfolder.ps1" />
+	<Image Id="{9A079054-A450-AD19-A76C66758121084F}" CmdLine="c:\program files\powershell\7\pwsh.exe c:\scripts\neo4j\mainscripts\ipam\cleanipamcsvfolder.ps1" />
+	<Image Id="{D8CD0066-1CB6-E47D-9BE3B87A792B1CFD}" CmdLine="c:\program files\powershell\7\pwsh.exe c:\scripts\neo4j\mainscripts\isy\cleanisycsvfolder.ps1" />
+	<Image Id="{29C60CE9-709D-7294-9801A2A25CE743C7}" CmdLine="c:\program files\powershell\7\pwsh.exe c:\scripts\neo4j\mainscripts\nlyte\cleannlytecsvfolder.ps1" />
+	<Image Id="{B6ED03D5-8908-3924-84E92D8D0B287C5C}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\sysmon\wec_upd.vbs " />
+	<Image Id="{1B60885F-F0F5-DFCC-F62D56E9BE763D86}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\terhun\th_20_upd.vbs " />
+	<Image Id="{6BA35622-0C65-1DB4-BF24C0B116BC33B3}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\terhun\th_20_upd_test.vbs " />
+	<Image Id="{C7A09B2A-10D0-C765-A29074A39035260C}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\sysmon\wec_upd.vbs" />
+	<Image Id="{DE667D5F-32F8-6714-42A127FC295EF364}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\terhun\th_20_upd.vbs" />
+	<Image Id="{00804021-91A0-AB27-6660F83E3BC89564}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\terhun\th_20_upd_test.vbs" />
+	<Image Id="{1094F5BF-54EE-3417-91D9C89610FB89AB}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\sysmon\wec_upd.vbs?" />
+	<Image Id="{30E76A8D-A983-9CA7-BD938156C424EE81}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\terhun\th_20_upd.vbs?" />
+	<Image Id="{08ECA0A1-04BF-7497-CF567A7B49343241}" CmdLine="c:\windows\system32\wscript.exe c:\programdata\terhun\th_20_upd_test.vbs?" />
+<!-- Part 0020 2022-10-27T14:34:00.000Z-1666881254 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

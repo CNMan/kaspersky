@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-10-26T15:12:00.000Z-1666797170 -->
+	<!-- 2022-10-27T14:33:00.000Z-1666881205 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2828,6 +2828,18 @@
 		<Process CmdLine="powershell.exe -executionpolicy bypass -file c:\programdata\cmclienthealth\configmgrclienthealth.ps1  -config c:\programdata\cmclienthealth\config.xml" />
 	</Detect>
 <!-- Part 0062 2022-10-26T15:12:00.000Z-1666797170 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0063 2022-10-27T14:33:00.000Z-1666881205 -->
+	<Detect Id="{DE951F1E-F193-E3FC-F57E6827E9CEEF23}" ContentValue="?&#10;function disable-psremoting?&#10;{?&#10;[cmdletbinding(supportsshouldprocess*whatif:$args[4] -confirm:$args[5]?&#10;">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy -bypass -command &#38; disable-psremoting -force" />
+	</Detect>
+	<Detect Id="{F835DF4E-77B5-E6AF-D36243332DCD77FB}" ContentValue="*select localaddress,localport,remoteaddress,remoteport | ft -autosize | out-file -filepath c:&#9;emp\output\$($_).txt -append*">
+		<Process CmdLine="c:\program files\powershell\7\pwsh.exe -workingdirectory ~" />
+	</Detect>
+	<Detect Id="{31AF1167-302C-CD76-85D5EEC2789D778F}" ContentValue="? localized&#9;*.psd1?&#10;convertfrom-stringdata -stringdata @&#39; ?&#10;###psloc?&#10;*?&#10;&#39;@?&#10;" />
+<!-- Part 0063 2022-10-27T14:33:00.000Z-1666881205 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
