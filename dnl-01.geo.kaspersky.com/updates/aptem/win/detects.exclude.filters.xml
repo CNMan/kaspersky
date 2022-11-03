@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-10-27T14:33:00.000Z-1666881205 -->
+	<!-- 2022-11-02T13:27:00.000Z-1667395627 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2840,6 +2840,20 @@
 	</Detect>
 	<Detect Id="{31AF1167-302C-CD76-85D5EEC2789D778F}" ContentValue="? localized&#9;*.psd1?&#10;convertfrom-stringdata -stringdata @&#39; ?&#10;###psloc?&#10;*?&#10;&#39;@?&#10;" />
 <!-- Part 0063 2022-10-27T14:33:00.000Z-1666881205 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0064 2022-11-02T13:27:00.000Z-1667395627 -->
+	<Detect Id="{A7002DC9-6588-5620-BB55BE50EED97D6E}" ContentValue="            get-item -path &#34;registry::hkey_local_machine\software\microsoft\windows\currentversion\explorer\controlpanel\namespace*convertto-json">
+		<Process CmdLine="powershell.exe -noprofile -nologo -noexit -command -" />
+	</Detect>
+	<Detect Id="{13BA0070-58F5-6686-541AD9E461CA9930}" ContentValue="            $iconextractorcode = &#39;&#10;using system*$erroractionpreference = &#34;silentlycontinue&#34;;">
+		<Process CmdLine="powershell.exe -noprofile -nologo -noexit -command -" />
+	</Detect>
+	<Detect Id="{67DED04D-1059-77E4-7BF8EEE169F739A7}" ContentValue=" $erroractionpreference = &#39;silentlycontinue&#39;; [system.console]::outputencoding = [system.text.encoding]::utf8;  filter arraytohash*removedappids = @($removedappids); } | convertto-json" />
+	<Detect Id="{6F913420-A8FC-7B37-5EBAED6624F3C193}" ContentValue="{&#10;                    $defaulticonvalue = get-itemproperty -path &#34;registry::hkey_classes_root\clsid\$_\defaulticon*$iconbase64;&#10;                    };&#10;                }" />
+	<Detect Id="{71CC90A8-975D-958C-534B0CC97C8750D4}" ContentValue="? .externalhelp microsoft.systemcenter.operationsmanagerv10.commands.dll-help.xml*&#10;       [validatenotnullorem" />
+<!-- Part 0064 2022-11-02T13:27:00.000Z-1667395627 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
