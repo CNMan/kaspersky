@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2022-10-21T18:05:00.000Z-1666375542 -->
+  <!-- Version: 2022-11-03T15:03:00.000Z-1667487813 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -496,6 +496,10 @@
       <Equal OrderNum="14" Value="\\*\IPC$"/>
       <Equal OrderNum="14" Value="\\*\NETLOGON"/>
       <Equal OrderNum="14" Value="\\*\SYSVOL"/>
+      <Equal OrderNum="14" Value="\\?\b???-??l"/>
+      <Equal OrderNum="14" Value="\\?\BU??EP"/>
+      <Equal OrderNum="14" Value="\\?\?o??o??ec?"/>
+      <Equal OrderNum="14" Value="\\?\FH????c??n?e"/>
       <Equal OrderNum="16" Value="spoolss"/>
       <Equal OrderNum="16" Value="srvsvc"/>
       <Equal OrderNum="16" Value="wkssvc"/>
@@ -1076,6 +1080,10 @@
       </Conjunction>
       <Conjunction>
         <Match OrderNum="12" Value="0x1???"/>
+        <Equal OrderNum="14" Value="0x4"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="12" Value="0x4"/>
         <Equal OrderNum="14" Value="0x4"/>
       </Conjunction>
     </Exclusions>
