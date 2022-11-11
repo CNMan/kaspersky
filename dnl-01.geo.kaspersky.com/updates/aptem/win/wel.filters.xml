@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2022-11-03T15:03:00.000Z-1667487813 -->
+  <!-- Version: 2022-11-10T20:48:00.000Z-1668113284 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -324,6 +324,22 @@
         <Equal OrderNum="16" Value="ntlmssp "/>
         <Match OrderNum="18" Value="t?n??l???a????td"/>
       </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="S??C???A????R??P"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Kerberos"/>
+        <Equal OrderNum="18" Value="-"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Authz   "/>
+        <Match OrderNum="18" Value="W?P-DC?"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="18" Value="W?P-DC?"/>
+      </Conjunction>
     </Exclusions>
   </Event>
 
@@ -513,9 +529,35 @@
 
   <Event Name="CredManagerCredsWereBackedUp.Vista" Id="5377" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
 
-  <Event Name="KerberosServiceTicketRequested.Vista" Id="4769" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="KerberosServiceTicketRequested.Vista" Id="4769" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Match OrderNum="9" Value="s??s??-?-1?a?p-??v"/>
+      <Match OrderNum="9" Value="W?P-DC?$"/>
+      <Equal OrderNum="9" Value="krbtgt"/>
+      <Match OrderNum="9" Value="??-svc-m?af??-krb"/>
+      <Match OrderNum="9" Value="W?P-RODC?$"/>
+      <Match OrderNum="9" Value="W??-?S-APP$"/>
+      <Match OrderNum="9" Value="W?P-CTX-DC?$"/>
+      <Equal OrderNum="9" Value="WHQ-SCCM$"/>
+      <Match OrderNum="9" Value="WHQ-DC??$"/>
+      <Match OrderNum="9" Value="WHQ-DC?$"/>
+      <Match OrderNum="9" Value="WRDC-DC??$"/>
+      <Match OrderNum="9" Value="WRDC-DC?$"/>
+      <Match OrderNum="9" Value="WHP-WEC?$"/>
+      <Match OrderNum="9" Value="WSP-CTX-APP?$"/>
+      <Match OrderNum="9" Value="REB-DC?$"/>
+      <Match OrderNum="9" Value="WK??-DC?$"/>
+    </Exclusions>
+  </Event>
 
-  <Event Name="KerberosAuthTicketRequested.Vista" Id="4768" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="KerberosAuthTicketRequested.Vista" Id="4768" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Conjunction>
+        <Equal OrderNum="9" Value="S-1-0-0"/>
+        <Equal OrderNum="11" Value="S-1-0-0"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
 
   <Event Name="KerberosPreAuthFailed.Vista" Id="4771" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
 
@@ -713,8 +755,22 @@
       <Conjunction>
           <Equal OrderNum="12" Value="%{bf967a86-0de6-11d0-a285-00aa003049e2}"/>
           <Equal OrderNum="15" Value="0x0"/>
-          <Match OrderNum="18" Value="%%7688&#10;&#9;&#9;{771727b1**-00aa003049e2}&#10;"/>
+          <Match OrderNum="18" Value="%%7688&#10;&#9;&#9;{771727b1*-00aa003049e2}&#10;"/>
       </Conjunction>
+      <Conjunction>
+          <Equal OrderNum="8" Value="%{2b0b01c7-ebc5-48e2-952f-88cd212d8881}"/>
+          <Match OrderNum="13" Value="WRP-RODC?$"/>
+      </Conjunction>
+      <Conjunction>
+          <Equal OrderNum="8" Value="%{2b0b01c7-ebc5-48e2-952f-88cd212d8881}"/>
+          <Match OrderNum="13" Value="W?P-DC?$"/>
+      </Conjunction>
+      <Equal OrderNum="8" Value="%{546c2db2-e999-4130-9ad3-cda3afc3291a}"/>
+      <Equal OrderNum="8" Value="%{5938b8de-5168-4e07-8ecc-94d8176ac186}"/>
+      <Equal OrderNum="8" Value="%{c4516143-3593-4534-9381-70c8f275b501}"/>
+      <Equal OrderNum="8" Value="%{517f000a-8de7-4445-a150-356e89c53b48}"/>
+      <Equal OrderNum="8" Value="%{bda9dee8-0922-4e93-9a16-aeaf021ac332}"/>
+      <Equal OrderNum="8" Value="%{bfabbf78-66c7-4c02-b78a-bacf047b5724}"/>
     </Exclusions>
   </Event>
 

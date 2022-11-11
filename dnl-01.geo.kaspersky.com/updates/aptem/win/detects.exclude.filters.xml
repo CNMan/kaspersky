@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-11-02T13:27:00.000Z-1667395627 -->
+	<!-- 2022-11-10T10:16:00.000Z-1668075387 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2854,6 +2854,49 @@
 	<Detect Id="{6F913420-A8FC-7B37-5EBAED6624F3C193}" ContentValue="{&#10;                    $defaulticonvalue = get-itemproperty -path &#34;registry::hkey_classes_root\clsid\$_\defaulticon*$iconbase64;&#10;                    };&#10;                }" />
 	<Detect Id="{71CC90A8-975D-958C-534B0CC97C8750D4}" ContentValue="? .externalhelp microsoft.systemcenter.operationsmanagerv10.commands.dll-help.xml*&#10;       [validatenotnullorem" />
 <!-- Part 0064 2022-11-02T13:27:00.000Z-1667395627 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0065 2022-11-10T10:16:00.000Z-1668075387 -->
+	<Detect Id="{C1ECBB81-887A-E234-59513B10CDAA5110}" ContentValue="???">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{DCD56444-72AD-6BD8-131B64B5D9C62BA1}" ContentValue="????">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{D1CAA8AC-8F84-995E-7F020771FEE71C28}" ContentValue="?????">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{B4627997-05C7-93EA-826174AE4C4188FB}" ContentValue="??????">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{4C53433B-5366-58A2-627B594738776110}" ContentValue="???????">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{ACE9678E-76D7-E159-DA37CE63AEE7C4ED}" ContentValue="????????">
+		<Process Path="*\wmplayer.exe" />
+	</Detect>
+	<Detect Id="{B37190E6-42E6-9AA9-8D675476610B3187}" ContentValue="&#38; disable-psremoting -force">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy -bypass -command &#38; disable-psremoting -force" />
+	</Detect>
+	<Detect Id="{D5816B00-A314-9209-066DEF24B779051B}" ContentValue="*custompluginobject.filename -match &#39;pwrshplugin.dll&#39;*">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy -bypass -command &#38; disable-psremoting -force" />
+	</Detect>
+	<Detect Id="{54C32F6C-AE62-2797-A4AF892A6138369E}" ContentValue="*_.accessmask -eq 268435456*">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy -bypass -command &#38; disable-psremoting -force" />
+	</Detect>
+	<Detect Id="{08F09073-3776-86ED-9011531C1ACA1161}" ContentValue="{ $_.name -like &#34;$filter&#34; }">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -executionpolicy -bypass -command &#38; disable-psremoting -force" />
+	</Detect>
+	<Detect Id="{8F030760-C9E8-D7A6-51229BED02657E4F}">
+		<Process CmdLine="powershell.exe get-wmiobject -class win32_printer | select-object name, printerstate, printerstatus | where {$_.name -eq &#39;npi integration driver&#39;}" />
+	</Detect>
+	<Detect Id="{D0371DD9-6602-F207-F1B5E18FD1EFC86D}">
+		<Process Path="*paperstream*">
+			<Signature Subject="PFU LIMITED" />
+		</Process>
+	</Detect>
+<!-- Part 0065 2022-11-10T10:16:00.000Z-1668075387 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
