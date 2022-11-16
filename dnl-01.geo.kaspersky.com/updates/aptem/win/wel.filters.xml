@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2022-11-10T20:48:00.000Z-1668113284 -->
+  <!-- Version: 2022-11-15T13:35:00.000Z-1668519317 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -339,6 +339,12 @@
         <Equal OrderNum="15" Value="3"/>
         <Equal OrderNum="16" Value="Advapi  "/>
         <Match OrderNum="18" Value="W?P-DC?"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="12" Value="hq-svc-n??a???t"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="NtLmSsp "/>
+        <Match OrderNum="18" Value="W?P?N????T?AP??"/>
       </Conjunction>
     </Exclusions>
   </Event>
