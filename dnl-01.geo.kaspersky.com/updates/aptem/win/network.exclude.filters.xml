@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-10-24T16:25:00.000Z-1666628734 -->
+  <!-- Version: 2022-11-22T12:20:00.000Z-1669119625 -->
 
 <!-- 
 	Part 0001 START
@@ -3982,6 +3982,89 @@
 	</NetworkConnection>
 <!-- Part 0018 2022-10-24T16:25:00.000Z-1666628734 -->
 <!-- Part 0018 2022-10-18T13:34:00.000Z-1666100078 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0019 2022-11-22T12:20:00.000Z-1669119625 -->
+	<NetworkConnection Id="{389F977E-8C86-615F-EDE3C4765FC55B73}" Url="*.kaspersky-labs.com:443" />
+	<NetworkConnection Id="{CB46B928-E364-605F-FA8610F18CFD28F3}" Url="*.smartadserver.com:443" />
+	<NetworkConnection Id="{0C94FA92-D253-A55C-0A5592B8548381C9}" Url="*.avito.st:443" />
+	<NetworkConnection Id="{550263EA-0495-7D2C-EFE3BCAE1DDA48E8}" Url="*.ozone.ru:443" />
+	<NetworkConnection Id="{75A3625C-40C6-A4BC-2D5AFBC85922EC14}" Url="*.mozilla.org:443" />
+	<NetworkConnection Id="{AAC0DE7C-AECC-84E2-019D2EC9B3557487}" Url="*.office.com:443" />
+	<NetworkConnection Id="{A363BB6B-2B7C-AE71-334602C57C7D3051}" Url="*.avp.ru:*" />
+	<NetworkConnection Id="{A04DAB3B-8424-5BEB-FF74A2629B546A47}" Url="*.dzeninfra.ru:443" />
+	<NetworkConnection Id="{E729A38A-CBEA-4EAA-35690DCEC3DF54C4}" Url="*.googlevideo.com:443" />
+	<NetworkConnection Id="{EA072C3D-8E26-DA98-4D1C3D520B4C4E09}" Url="http://kis??a-??/manager*" />
+	<NetworkConnection Id="{F2E13C98-54FB-A92F-9D76E1FC19008D6D}" Url="*.imgsmail.ru:443" />
+	<NetworkConnection Id="{A853EF54-2C10-908B-39BC9BEE67BD7A39}" Url="*.kaspersky-labs.com/*" />
+	<NetworkConnection Id="{A6E343B3-B91F-C6F6-80097FD264D1252F}" Url="*.kaspersky.com/*" />
+	<NetworkConnection Id="{6297149C-55AE-A2EE-73A4E43463C418CB}" Url="*.kaspersky.ru:443" />
+	<NetworkConnection Id="{B15206E2-8657-9471-4E697B423A8F52A1}" Url="*.opera.com:443" />
+	<NetworkConnection Id="{E76AAE6D-175F-81A2-0D38DD35BBF96C58}" Url="*.pubmatic.com:443" />
+	<NetworkConnection Id="{7478D377-24A0-3933-00F4ED97F01DE404}" Url="*.qualtrics.com:443" />
+	<NetworkConnection Id="{7B3E9748-DD5A-ED28-E2DA205C0E83EC30}" Url="*.rubiconproject.com:443" />
+	<NetworkConnection Id="{57EFC3C9-CD25-55B9-2C2D82B2F0F21F8B}" Url="*.smi2.net:443" />
+	<NetworkConnection Id="{13277DA7-6866-6615-6BAC06CC43379F18}" Url="*.taboola.com:443" />
+	<NetworkConnection Id="{413748BA-9B95-2661-C94A16F8EC4F0A23}" Url="*.tradingview.com:443" />
+	<NetworkConnection Id="{B1426F56-73D3-A8AD-754EDBF70632378A}" Url="*.avp.ru/*" />
+	<NetworkConnection Id="{F9942D73-DC35-1FF1-3A2B5367D900298B}" Url="*.vmware.com:443" />
+	<NetworkConnection Id="{685D4A40-2A6D-272B-4E43C94A988C2DF7}" RemoteAddress="10.*" RemotePort="53">
+		<Process Path="*google\chrome\application\chrome.exe">
+			<Signature Subject="*google*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{B9CB4FE7-F576-9011-975C3C8F1318A67A}" RemoteAddress="192.168*" RemotePort="53">
+		<Process Path="*google\chrome\application\chrome.exe">
+			<Signature Subject="*google*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{2F745584-1F4E-A110-F1552A5DED92E858}" RemoteAddress="172.??.*" RemotePort="53">
+		<Process Path="*google\chrome\application\chrome.exe">
+			<Signature Subject="*google*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{9E15ECBE-B500-60EB-C2CC642E2DC53376}" RemoteAddress="2a02:????????????00::1" RemotePort="53">
+		<Process Path="*system32\svchost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{3CF303C6-99BB-F9F7-AD5C399F0477B683}" RemoteAddress="fe80::??????????????:8?64" RemotePort="53">
+		<Process Path="*system32\svchost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{91D02F0A-E205-D7A6-2B0224C00B95A8BD}" Url="%kl_undef%" RemotePort="443">
+		<Process Path="*\vmware.exe">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{C952AE80-D7A4-9224-02463DAE6069D58B}" Url="%kl_undef%" RemotePort="443">
+		<Process Path="*\lync.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{F5E3AE55-5256-C052-E58F64D078613EB9}" Url="%kl_undef%" RemotePort="443">
+		<Process Path="*system32\svchost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{B93F3964-2B2B-7360-20CE48A72D12C9F2}" Url="%kl_undef%" RemotePort="80">
+		<Process Path="*appdata\roaming\telegram desktop\telegram.exe">
+			<VersionInfo ProductName="Telegram Desktop" FileDescription="Telegram Desktop" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{0DFE3170-483F-8771-56DEB9D69DF9E9DA}" Url="%kl_undef%" RemotePort="443">
+		<Process Path="*appdata\roaming\telegram desktop\telegram.exe">
+			<VersionInfo ProductName="Telegram Desktop" FileDescription="Telegram Desktop" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{FB605970-EFB3-23C4-C70EC2043B3EF0B1}" Url="%kl_undef%" RemotePort="8080">
+		<Process Path="*appdata\roaming\telegram desktop\telegram.exe">
+			<VersionInfo ProductName="Telegram Desktop" FileDescription="Telegram Desktop" />
+		</Process>
+	</NetworkConnection>
+<!-- Part 0019 2022-11-22T12:20:00.000Z-1669119625 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
