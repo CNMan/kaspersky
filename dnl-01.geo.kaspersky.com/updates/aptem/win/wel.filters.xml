@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2022-11-15T13:35:00.000Z-1668519317 -->
+  <!-- Version: 2022-11-23T12:32:00.000Z-1669206746 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -460,6 +460,7 @@
   </Event>
 
   <Event Name="ServiceCreated.Vista" Id="4697" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ServiceCrashed.Vista" Id="7031" Channel="System" Provider="Service Control Manager" OsType="Vista+" />
   <Event Name="ServiceCreated.Vista" Id="7045" Channel="System" Provider="Service Control Manager" OsType="Vista+" />
 
   <Event Name="PortListen.Success.Vista" Id="5154" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
