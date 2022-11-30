@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-11-09T13:28:00.000Z-1668000536 -->
+	<!-- Version: 2022-11-29T17:41:00.000Z-1669743683 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1423,6 +1423,164 @@
 		<VersionInfo FileDescription="%kl_undef%" ProductName="%kl_undef%" />
 	</Image>
 <!-- Part 0017 2022-11-09T13:28:00.000Z-1668000536 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0017 2022-11-29T17:41:00.000Z-1669743683 -->
+	<Image Id="{B3E1B2DA-F844-8AAF-4D115883F9F303A3}" Path="c:\windows\system32\ole32.dll">
+		<Process Path="c:\program files\splunkuniversalforwarder\bin\splunk-*">
+			<Signature Subject="*splunk*" />
+		</Process>
+	</Image>
+	<Image Id="{AC0CC97B-D198-EF50-C0A896895D8AF560}">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+		<Signature Subject="*reactive extensions*" />
+	</Image>
+	<Image Id="{A42C06CB-768E-F42A-014A39BDCF960D63}">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+		<Signature Subject="*solarwinds*" />
+	</Image>
+	<Image Id="{F38E7EC2-F7D8-3E04-F9F8D6CD8DE4FC38}" Path="c:\program files (x86)\solarwinds\agent\plugins\*">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</Image>
+	<Image Id="{84EBC303-91D7-E20A-B2B12E880EA7B829}" Path="refemit_inmemorymanifestmodule">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</Image>
+	<Image Id="{F046B5AD-4B57-B3E3-EE79B67202A7CAEE}" Path="c:\windows\system32\cryptbase.dll">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</Image>
+	<Image Id="{2672DB2A-AC2F-6AC8-D3ADDAAB77B6B940}" Path="c:\windows\system32\gdi32.dll">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</Image>
+	<Image Id="{61220560-DB63-2FB2-54E62CF209888AD6}" Path="c:\windows\system32\crypt32.dll">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</Image>
+	<Image Id="{DBAFF0DF-CBDE-C28C-90651004C83619FF}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="c:\program files (x86)\veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{B654895F-7CFA-E2F8-9E0E264C957D4785}" Path="*oracle*bin\ora*">
+		<Process Path="c:\program files\veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{7A4D5BB9-C8EA-6015-EB40EDE5A3459CC8}" Path="*service*service.ni.dll">
+		<Process Path="c:\program files\veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{8762FA17-E1BB-CBD0-4FD43331CFB8C325}" Path="*service*service.xmlserializers.ni.dll">
+		<Process Path="c:\program files\veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{E88FB852-B513-6037-0EBAD08A07890EE9}" Path="refemit_inmemorymanifestmodule">
+		<Process Path="c:\program files\veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{577EE788-8431-3C34-04BE33FF8ECA899D}" Path="c:\windows\system32\cryptbase.dll">
+		<Process Path="c:\program files\veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{DE7773FE-F9E1-AB8B-7855A507F35FF2B4}" Path="c:\windows\system32\cryptbase.dll">
+		<Process Path="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\*Tools\Binn\bcp.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{9F05E59A-ABD7-CD38-29B13E17AD1C643C}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\windows\system32\manage-bde.exe -status *" />
+	</Image>
+	<Image Id="{77F583CA-8BC6-579F-88E83F67A750C028}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\windows\system32\manage-bde.exe -status *" />
+	</Image>
+	<Image Id="{9D67E559-A6A5-FB4E-C20E9B1F4B91A414}" Path="c:\program files\avecto\privilege guard client\pghook.dll">
+		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\windows\system32\manage-bde.exe -status *" />
+	</Image>
+	<Image Id="{C1EC86B3-45BB-4518-4274B5F87D40CB1C}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	</Image>
+	<Image Id="{FA43C537-BD48-A644-71C08CCEE89F1365}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	</Image>
+	<Image Id="{E053F047-D430-DAFB-629F311090E9C966}" Path="c:\program files\avecto\privilege guard client\pghook.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	</Image>
+	<Image Id="{FE617BED-A529-318D-557C976BE2676BC3}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status" />
+	</Image>
+	<Image Id="{256C85CA-E19C-2682-3140A2EF714F2FEB}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status" />
+	</Image>
+	<Image Id="{5CB543F2-B441-4848-58D77C87D63BEF1A}" Path="c:\program files\avecto\privilege guard client\pghook.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status" />
+	</Image>
+	<Image Id="{D749BA64-97B2-C217-042A435D14D8FD79}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\temp\????????-????-*dismhost.exe {*">
+			<VersionInfo OrignFileName="DismHost.exe" ProductName="Microsoft® Windows® Operating System" FileDescription="Dism Host Servicing Process" />
+		</Process>
+	</Image>
+	<Image Id="{0ACB4067-22E5-D111-152DD301AB8DB1E9}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\temp\????????-????-*dismhost.exe {*">
+			<VersionInfo OrignFileName="DismHost.exe" ProductName="Microsoft® Windows® Operating System" FileDescription="Dism Host Servicing Process" />
+		</Process>
+	</Image>
+	<Image Id="{09DE515D-379E-8745-4FD7C18FC7154C20}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe&#34; /md /external*" />
+	</Image>
+	<Image Id="{A8072FA5-E304-CB73-B07630955C1D3394}" Path="*windows_sandbox\x64\detoursservices.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe&#34; /md /external*" />
+	</Image>
+	<Image Id="{FBE42931-23A2-81CF-36031CE805A5D8F6}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe /md /external*" />
+	</Image>
+	<Image Id="{C50EB185-4F72-5832-8FEDB12C25205FD4}" Path="*windows_sandbox\x64\detoursservices.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe /md /external*" />
+	</Image>
+	<Image Id="{F7AFDADF-4235-459B-A400205885C4671E}" Path="c:\windows\system32\cryptbase.dll">
+		<Process Path="*bin\hostx64\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{4050C9F2-885C-5504-AB74B0C1A7591BEF}" Path="*windows_sandbox\x64\detoursservices.dll">
+		<Process Path="*bin\hostx64\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{7ECAC067-D319-2A03-1EE55A8F9B167021}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{55E5308A-F395-D836-AC5A05797C97B90F}" Path="*conemu\conemuhk64.dll">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config  credential*" />
+	</Image>
+	<Image Id="{832BD39C-0320-C162-969E99A3E380C752}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config  credential*" />
+	</Image>
+	<Image Id="{6F11D893-4EAF-3B24-9AB1D8F7B31DF5C6}" Path="*conemu\conemuhk64.dll">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe credential-manager store" />
+	</Image>
+	<Image Id="{85145CD9-70F3-1907-A5C17BEDF462666B}" Path="*windows_sandbox\x64\buildxlnatives.dll">
+		<Process CmdLine="*windows_sandbox\bazelsandbox.exe @*monorepo/component*" />
+	</Image>
+<!-- Part 0017 2022-11-29T17:41:00.000Z-1669743683 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

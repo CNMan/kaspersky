@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-10-06T17:26:00.000Z-1665077162 -->
+	<!-- Version: 2022-11-29T17:39:00.000Z-1669743579 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -8861,6 +8861,514 @@
 		</Process>
 	</File>
 <!-- Part 0022 2022-10-06T17:26:00.000Z-1665077162 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0023 2022-11-29T17:39:00.000Z-1669743579 -->
+	<File Id="{344C0D9E-2651-ED9A-CBFAC59DA2239C98}">
+		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\program files (x86)\kaspersky lab\kaspersky endpoint security for windows\kescli.exe*" />
+	</File>
+	<File Id="{E3E8D2C3-F457-0267-F04B2B6955244D1A}">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	</File>
+	<File Id="{9B838A0E-0AF0-7F2F-F280CBDD90F33E93}" FilePath="c:\programdata\milestone\xprotect recording server\*">
+		<Process>
+			<Signature Subject="*Milestone*" />
+			<VersionInfo ProductName="VideoOS" />
+		</Process>
+	</File>
+	<File Id="{70EBBF14-DAB8-411D-F21E8F9A66B17242}" FilePath="c:\program files\bmc software\client management\client\data\*-journal">
+		<Process Path="*Program Files*BMC*">
+			<Signature Subject="BMC*Software*" />
+		</Process>
+	</File>
+	<File Id="{1A171445-D600-8632-5313C62246CD60AA}" FilePath="c:\windows\temp\sqlite_*">
+		<Process Path="*Program Files*BMC*">
+			<Signature Subject="BMC*Software*" />
+		</Process>
+	</File>
+	<File Id="{7CACD0B4-EFF8-3632-30455417FF2AE210}" FilePath="c:\programdata\microsoft\edgeupdate\log\microsoftedgeupdate.log">
+		<Process CmdLine="*microsoft\edgeupdate\microsoftedgeupdate.exe /ua /installsource scheduler" />
+	</File>
+	<File Id="{FEBD682E-F5CF-5568-779F2F298712C7C2}" FilePath="*appdata\local\temp\microsoftedgeupdate.log">
+		<Process CmdLine="*microsoft\edgeupdate\microsoftedgeupdate.exe /ua /installsource scheduler" />
+	</File>
+	<File Id="{43381A73-5D59-9417-7D42CFB35CE6E335}" FilePath="c:\kronos\interfacedesigner\interfaces\mapped_folders\wim_in\kronos_*.csv">
+		<Process CmdLine="%kl_undef%" />
+	</File>
+	<File Id="{882ABBE3-B241-2D40-21ECC6E21452EE52}" FilePath="*usr\sap\zep\sys\global*">
+		<Process CmdLine="%kl_undef%" />
+	</File>
+	<File Id="{E9095501-BED0-94EC-E0F571ED26F78F5B}" FilePath="*usr\sap\zfp\sys\global*">
+		<Process CmdLine="%kl_undef%" />
+	</File>
+	<File Id="{863B3F09-864D-2817-0744921100FE7F6A}" FilePath="*usr\sap\zsp\sys\global*">
+		<Process CmdLine="%kl_undef%" />
+	</File>
+	<File Id="{0995349E-C5F0-7FFE-3BCC0935AF724AA8}" FilePath="c:\program files (x86)\guardium\guardium installation manager\gim\current\tmp*.txt">
+		<Process CmdLine=" -i*gim\current\gim_client.pl " />
+	</File>
+	<File Id="{4F5E4295-4CFE-7197-9618DCDEE04E8DF9}" FilePath="c:\program files (x86)\guardium\guardium installation manager\gim\current\tmp*.txt">
+		<Process CmdLine="-i*gim\current\gim_client.pl" />
+	</File>
+	<File Id="{E3D3A361-85F5-3363-766858EB64CB8C79}" FilePath="c:\programdata\usoshared\logs\user\notificationux.*.etl">
+		<Process CmdLine="%systemroot%\system32\musnotificationux.exe *" />
+	</File>
+	<File Id="{7A4AB527-E6F0-ECBB-B1052F5A15B9478F}" FilePath="*manageengine\adaudit plus*">
+		<Process CmdLine="..\jre\bin\java -dcatalina.home=.. -dserver.home=.. -dserver.stats=1000*" />
+	</File>
+	<File Id="{CF0FF5AF-1261-1704-29F69B97054D6ABD}" FilePath="&#39;c:\program files (x86)\sap\sapsetup*">
+		<Process>
+			<Signature Subject="SAP SE" />
+		</Process>
+	</File>
+	<File Id="{D00743A5-79C8-87CA-AB08DA5205C81B71}" FilePath="appdata\local\temp\ops*.tmp">
+		<Process Path="*Program Files*Cisco*">
+			<Signature Subject="*Cisco*" />
+		</Process>
+	</File>
+	<File Id="{3408EA81-EC45-8ACD-C368AB4743093F75}" FilePath="c:\users\*.cisco\vpn\log\uihistory_*_log.txt">
+		<Process Path="*Program Files*Cisco*">
+			<Signature Subject="*Cisco*" />
+		</Process>
+	</File>
+	<File Id="{DCD2BC16-1669-4650-F4EBCE90E74D152F}" FilePath="c:\windows\syswow64\config\systemprofile\appdata\local\assembly\tmp\*__assemblyinfo__.ini">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{E19D0B07-3775-0521-C56667FE65317F43}" FilePath="*solarwinds.*.dll">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{D7808F20-4E57-8962-5F960E7760A115DA}" FilePath="c:\windows\temp\tmp*.tmp">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{4C57FF24-10DC-12F6-A87EB2629D0BCCDF}" FilePath="c:\programdata\solarwinds\*.result">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{C1307106-C24A-4EC5-079133312B302433}" FilePath="c:\programdata\solarwinds\*.result.streamdata">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{2A720179-6AA7-F3A5-E6059509494B03AE}" FilePath="c:\programdata\solarwinds\*thresholdstreams\workermonitor\*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{AEC471F8-5C08-1088-A29A23A282FA0003}" FilePath="c:\programdata\solarwinds\cortex\cache_*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{2168588D-CEBC-0429-BBB70358AD80DE39}" FilePath="c:\programdata\solarwinds\servicehost\serviceregistry.db-???">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{CB49B27A-7A1B-81F9-D2E166BFD26A55A5}" FilePath="c:\programdata\solarwinds\logs*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{67F206F6-F3C8-0145-7F6AC0B931E7CE68}" FilePath="c:\programdata\solarwinds\cortex_agent*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{A75D7A16-4A4A-1621-A2014E25149A0E89}" FilePath="c:\programdata\solarwinds\*solarwinds.*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{38229704-5871-C596-F6C0BE6A1BD81356}" FilePath="c:\programdata\solarwinds\*.sdf">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{CB1511E9-E91D-A922-03B309760B3A84A0}" FilePath="c:\windows\temp\taskproperties.*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{6F2B0063-E499-C574-A37FB5AB279EB701}" FilePath="c:\windows\temp\solarwinds*solarwinds.*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{2CC1D5E3-190E-27DF-C807E6A3A0DBD889}" FilePath="c:\windows\ccm\logs\ccmperf.log">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{C528BA7B-0B20-A1FE-F13688B528ECF6B5}" FilePath="c:\programdata\solarwinds\agent\tmp\taskproperties.*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{0F8615F6-D95E-56AE-436918F8DF7AA091}" FilePath="c:\programdata\solarwinds\agentmanagement\tmp\taskproperties.*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{854A927E-DBDC-9950-D65B5B601EF62324}" FilePath="c:\programdata\solarwinds\agentmanagement\tmp\tmp*">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</File>
+	<File Id="{78AFF268-7410-E254-8096047BB19A9F05}" FilePath="c:\users\*appdata\local\temp\casesensitivetest*">
+		<Process Path="c:\program files (x86)\datapatrol\agenthost\agenthostwinform.exe">
+			<VersionInfo ProductName="AgentHostWinForm" OrignFileName="AgentHostWinForm.dll" FileDescription="AgentHostWinForm" />
+		</Process>
+	</File>
+	<File Id="{9478861A-369C-BE68-26948D7193BC694C}" FilePath="*appdata\local\temp\imageio*.tmp">
+		<Process Path="c:\program files (x86)\hiperwall\hiper*jre\bin\javaw.exe" />
+	</File>
+	<File Id="{AA8DA683-6BE6-2963-CB2BA895B82F3937}" FilePath="*appdata\local\hiperwall\browser\cache\*">
+		<Process Path="c:\program files (x86)\hiperwall\hipersource.browser\build\browser.exe">
+			<VersionInfo OrignFileName="Browser.exe" ProductName="HiperSource.Browser" FileDescription="Browser" />
+		</Process>
+	</File>
+	<File Id="{257DD79A-3A86-8726-552B78AE40D4E162}" FilePath="*appdata\roaming\sas\enterpriseguide*">
+		<Process>
+			<Signature Subject="*SAS Institute*" />
+		</Process>
+	</File>
+	<File Id="{8857047B-6402-EFB8-4AB0E045D3A3611B}" FilePath="c:\windows\syswow64\config\systemprofile\.unison\*">
+		<Process CmdLine="&#34;c:\program files (x86)\stonevoiceas\lib\unison\unison.exe&#34; -batch -confirmbigdel=false -halfduplex*" />
+	</File>
+	<File Id="{7F044C8D-EF27-A6BC-39199C0B9E58019F}" FilePath="c:\windows\syswow64\config\systemprofile\.unison\*">
+		<Process CmdLine="c:\program files (x86)\stonevoiceas\lib\unison\unison.exe -batch -confirmbigdel=false -halfduplex*" />
+	</File>
+	<File Id="{64263E49-3131-8856-09B7BA00F5E26A08}" FilePath="*veeam*.vbk">
+		<Process Path="*Program Files*Veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</File>
+	<File Id="{446DB1A7-68FB-3748-923B5C030955C1A8}" FilePath="c:\programdata\veeam*">
+		<Process Path="*Program Files*Veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</File>
+	<File Id="{3B551F1C-9C9C-CBE6-F178F97B4A494A87}" FilePath="*veeam*.vab">
+		<Process Path="*Program Files*Veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</File>
+	<File Id="{7C5FF36A-D290-DA6C-959F344289D1B3B7}" FilePath="c:\windows\temp\veeambackup*">
+		<Process Path="*Program Files*Veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</File>
+	<File Id="{B5E5328E-E75A-2BBD-BC17AC348576D446}" FilePath="*vmware*.lck">
+		<Process Path="*Program Files*Veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</File>
+	<File Id="{BE0B8947-4A53-3840-863A02A2D2969872}" FilePath="c:\windows\temp\ntuser.dat*">
+		<Process Path="*Program Files*Veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</File>
+	<File Id="{DCEEA5AB-CD32-C15F-622BCB813C1376E5}" FilePath="c:\windows\temp\tmp????.tmp">
+		<Process Path="*Program Files*Veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</File>
+	<File Id="{F08B22FA-6EAF-BABB-69A8947F59AB5C5A}" FilePath="c:\programdata\vmware\*">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{4F86B46C-3864-EBBE-4B4E47D8EEE81EAA}" FilePath="*appdata\local\vmware\vmware*">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{AFBC8066-25B1-7C94-4B091E7DA4671196}" FilePath="*appdata\roaming\microsoft\windows\recent\customdestinations*">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{D7F039CA-4C06-21F8-9C6FDFF3C34644D7}" FilePath="*appdata\roaming\vmware*">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{007ED7B1-1E28-C03C-4916A7351BD81C55}" FilePath="*appdata\local\temp\cdstmp_*">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{45872680-7FE6-DBC3-A1226F8A16956153}" FilePath="c:\windows\system32\spool\printers\?????.spl">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{BCD7C870-7AE9-F372-85F656CB11FFFE52}" FilePath="*appdata\local\temp\fnt*.tmp">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{FDA50CFD-8416-FE0E-ACEE1E17528342FC}" FilePath="c:\windows\system32\fxstmp\fxs*.tmp">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{8833A187-731E-9CFF-E45F21076B0099C9}" FilePath="*appdata\local\temp\vmware*">
+		<Process Path="*Program Files*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{54081E32-46F1-2F51-75C5F67C1D2410F0}" FilePath="*program files (x86)\websense\data security\tempfiles\dss_*">
+		<Process Path="*Program Files (x86)\Websense\Data Security\mgmtd.exe" />
+	</File>
+	<File Id="{8B602518-6143-343B-4C23BF34FBED13C9}" FilePath="c:\programdata\alteryx\errorlogs*">
+		<Process Path="*Program Files*Alteryx*">
+			<Signature Subject="*Alteryx*" />
+		</Process>
+	</File>
+	<File Id="{1FAD69C5-7688-E10C-2996761779E5396A}" FilePath="c:\windows\system32\config\systemprofile\appdata\local\microsoft\office\otele\{*otele.dat">
+		<Process Path="Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{88E69E0E-2ADF-0BF3-B9DA57799B097A09}" FilePath="c:\windows\temp\*-????.log">
+		<Process Path="Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{2BBCC146-9354-1F03-1050F9786C3874C7}" FilePath="*appdata\local\temp\toa????.tmp">
+		<Process Path="*program files*dell*">
+			<Signature Subject="*Dell*" />
+		</Process>
+	</File>
+	<File Id="{FCD41112-1919-63D6-4B17BDA03746564E}" FilePath="*appdata\roaming\dell\toad for oracle*">
+		<Process Path="*program files*dell*">
+			<Signature Subject="*Dell*" />
+		</Process>
+	</File>
+	<File Id="{1B552EDF-4DA8-38EF-98D99D73C2FDDFDA}" FilePath="c:\program files\fidelis\*">
+		<Process Path="c:\program files\Fidelis*">
+			<Signature Subject="*Fidelis*" />
+		</Process>
+	</File>
+	<File Id="{33B4DCB4-F5F8-9408-89679D5ED2B43F18}" FilePath="*appdata\local\packages\*.wefs">
+		<Process Path="*office*winword.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{E5FB0A6B-6268-4283-82AE9ED037DA11B1}" FilePath="*appdata\local\packages\*.wefs">
+		<Process Path="*office*powerpnt.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{F82511E5-5226-5F95-E69489744EB60178}" FilePath="*appdata\local\packages\*.wefs">
+		<Process Path="*office*excel.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{86B35224-B52B-E17B-03D5450E2F7CBF40}" FilePath="*appdata\local\packages\*.qipt">
+		<Process Path="*office*winword.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{53F6FA1E-E60F-2876-F8E312342689EB43}" FilePath="*appdata\local\packages\*.qipt">
+		<Process Path="*office*powerpnt.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{1B40ABDA-FA06-8861-E249BE7D00B3C363}" FilePath="*appdata\local\packages\*.qipt">
+		<Process Path="*office*excel.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{3F802C5B-960B-CF3B-788D49A234582ABD}" FilePath="c:\program files\microsoft power bi report server\pbirs\asengine\microsoft\mashupprovider\cache*">
+		<Process Path="c:\program files\microsoft power bi report server\pbirs\asengine\mdataengine\microsoft.mashup.container.netfx45.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{D5436649-95F2-B183-75A244A3BC9A40CD}" FilePath="*\db*\e??????????.log">
+		<Process Path="c:\program files\microsoft\exchange server\v15\bin\microsoft.exchange.store.worker.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{A3BB9385-3E2B-6C48-446B0AA99CC5E0BF}" FilePath="c:\program files\microsoft\exchange server*">
+		<Process Path="c:\program files\microsoft\exchange server\v15\bin\microsoft.exchange.store.worker.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{00B63228-B6BF-15A2-965785852E990AE3}" FilePath="*_archive_*\block*.blk">
+		<Process Path="c:\program files\Milestone*">
+			<Signature Subject="*Milestone*" />
+		</Process>
+	</File>
+	<File Id="{722CB6E6-3A23-A8CD-EDD6AC2387E736A0}" FilePath="*_archive_*\?index*.idx">
+		<Process Path="c:\program files\Milestone*">
+			<Signature Subject="*Milestone*" />
+		</Process>
+	</File>
+	<File Id="{4E4867A1-10F1-EF4B-604B062F998A7F29}" FilePath="*_archive_*\config.xml">
+		<Process Path="c:\program files\Milestone*">
+			<Signature Subject="*Milestone*" />
+		</Process>
+	</File>
+	<File Id="{BEF3FBBF-64E8-1706-4DAE2FE6C1B322BB}" FilePath="*_archive_*\desktop.ini">
+		<Process Path="c:\program files\Milestone*">
+			<Signature Subject="*Milestone*" />
+		</Process>
+	</File>
+	<File Id="{FDD92C8D-683E-CF0D-9DEB24176726E864}" FilePath="c:\programdata\milestone\*-journal">
+		<Process Path="c:\program files\Milestone*">
+			<Signature Subject="*Milestone*" />
+		</Process>
+	</File>
+	<File Id="{E01451C4-E632-B1A8-30DCF33E3981E23B}" FilePath="c:\programdata\milestone\*-mj?????????">
+		<Process Path="c:\program files\Milestone*">
+			<Signature Subject="*Milestone*" />
+		</Process>
+	</File>
+	<File Id="{BC54C406-3203-7FFF-DA474A09A7897E87}" FilePath="c:\programdata\mozilla*backgroundupdate\datareporting\glean\tmp*">
+		<Process Path="c:\program files\Mozilla*">
+			<Signature Subject="*Mozilla*" />
+		</Process>
+	</File>
+	<File Id="{A487B3AA-202E-22B6-24E3C2A2C53DDC88}" FilePath="*appdata\roaming\mozilla\firefox\background tasks profiles*">
+		<Process Path="c:\program files\Mozilla*">
+			<Signature Subject="*Mozilla*" />
+		</Process>
+	</File>
+	<File Id="{7C3EEDF7-47B2-0F9D-1391380E982A7C73}" FilePath="c:\programdata\cyvera\*">
+		<Process Path="c:\program files\palo alto*">
+			<Signature Subject="*Palo Alto*" />
+		</Process>
+	</File>
+	<File Id="{8C9E697C-8AE5-BCCB-9E1005D680A186FF}" FilePath="*appdata\local\packages\microsoft.windows.photos_*\tempstate\etilqs_*">
+		<Process Path="c:\program files\windowsapps\microsoft.windows.photos_2017.35063.44410.1000_x64__8wekyb3d8bbwe\microsoft.photos.exe" />
+	</File>
+	<File Id="{77A98951-5BEC-1CD1-3E98B3E2FBAE6A9C}" FilePath="c:\windows\temp\expression_host_*">
+		<Process Path="c:\windows\microsoft.net\framework*\vbc.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{E2025B14-3CB1-8E79-F41CCC563E75086F}" FilePath="windows\temp\vbc*.tmp">
+		<Process Path="c:\windows\microsoft.net\framework*\vbc.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{B42D2D75-BDB5-7189-339371C57F867C75}" FilePath="c:\windows\temp\????????-????-*.dll.mui">
+		<Process CmdLine="&#34;c:\windows\system32\dism.exe&#34; /online /remove-provisionedappxpackage*" />
+	</File>
+	<File Id="{208ED12C-225A-9CA5-0A0C3F9DE4FD32CD}" FilePath="c:\windows\temp\????????-????-*.dll">
+		<Process CmdLine="&#34;c:\windows\system32\dism.exe&#34; /online /remove-provisionedappxpackage*" />
+	</File>
+	<File Id="{483F8FEB-4DC0-7A6B-9CA073C787A78923}" FilePath="*appdata\roaming\microsoft\signatures*">
+		<Process CmdLine="* -executionpolicy bypass -nologo -command .\eus.ps1" />
+	</File>
+	<File Id="{7FF74A0D-C0A6-015F-70217DAC5CDD4F4C}" FilePath="*tableau*hyper_*.tmp">
+		<Process Path="*Tableau*">
+			<Signature Subject="*Tableau*" />
+		</Process>
+	</File>
+	<File Id="{C41392CA-483D-5B41-5CEF316F3B365645}" FilePath="*appdata\local\conda\conda*">
+		<Process CmdLine="*scripts\anaconda-navigator-script.py" />
+	</File>
+	<File Id="{105AB28F-1B66-089E-AD0A9B21C34C188C}" FilePath="c:\users\*conda*\envs\?????">
+		<Process CmdLine="*scripts\anaconda-navigator-script.py" />
+	</File>
+	<File Id="{E17E8335-ED24-AC74-F451FDD63847C646}" FilePath="c:\users\*conda*\pkgs\?????">
+		<Process CmdLine="*scripts\anaconda-navigator-script.py" />
+	</File>
+	<File Id="{D47C33C5-7B38-8BBB-B0ABC6F44EC6E7EE}" FilePath="c:\windows\temp\????????-????-*">
+		<Process CmdLine="c:\windows\cluster\clussvc.exe -s">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{AC3E29E4-C24D-8EBF-29ED0F90EFB159AF}" FilePath="*appdata\local\temp\ops????.tmp">
+		<Process CmdLine="*kaspersky lab\kaspersky endpoint security for windows\kescli.exe*" Path="*system32\cmd.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{480067AC-F271-C1CC-61E97DC2686D1F9E}" FilePath="*appdata\local\temp\ops????.tmp">
+		<Process CmdLine="*c:\windows\system32\manage-bde.exe*" Path="*system32\cmd.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{0E5F3A71-B6C8-3BD4-58EC2D23814D48A9}" FilePath="*appdata\local\temp\ops????.tmp">
+		<Process CmdLine="* 437 *os get osarchitecture*" Path="*system32\cmd.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{5BBFB41A-9F4E-BDF3-F1CC563D6E12E8BD}" FilePath="c:\windows\serviceprofiles\networkservice\appdata\local\microsoft\windows\deliveryoptimization\logs\*.etl">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -secured -embedding" />
+	</File>
+	<File Id="{4F95C818-B85D-5329-228E6B3BE4CCDD2B}" FilePath="*index_share\index\enterprise\data_flow*">
+		<Process CmdLine="*jre/bin/otupdatedistributor  -xrs*" />
+	</File>
+	<File Id="{5969CB48-A7FB-5577-4E9EE517FE4A1C14}" FilePath="*index_share\index\enterprise\data_flow*">
+		<Process CmdLine="*bin/ipmove -config*" />
+	</File>
+	<File Id="{7A6A9F65-9D11-BE82-AE6B333A52E78378}" FilePath="*\data.;1">
+		<Process Path="*bin\tomcat*">
+			<Signature Subject="*Apache*" />
+		</Process>
+	</File>
+	<File Id="{A98967E0-2DD8-94E5-577B4751CDBF72D1}" FilePath="*\attrib.atr">
+		<Process Path="*bin\tomcat*">
+			<Signature Subject="*Apache*" />
+		</Process>
+	</File>
+	<File Id="{8885A7B5-DBF0-6560-52AC73FEA90635D0}" FilePath="*\.attrib.atr.old">
+		<Process Path="*bin\tomcat*">
+			<Signature Subject="*Apache*" />
+		</Process>
+	</File>
+	<File Id="{AAD64809-89C0-C435-FAC4C384DC9A89B8}" FilePath="*\.job.envision_envisionpool">
+		<Process Path="*bin\tomcat*">
+			<Signature Subject="*Apache*" />
+		</Process>
+	</File>
+	<File Id="{7400866D-16FB-1158-7DDEB98262BB3722}" FilePath="*orant\report60*">
+		<Process CmdLine="rwrbe60 -ssl09@" />
+	</File>
+	<File Id="{ED5FA368-E2E4-6F24-3BB15A4306C8B739}" FilePath="*UsageLogs\VCTIP.EXE.log">
+		<Process Path="*bin\hostx64\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{53B32A33-B3EE-0FC7-DBC636A0CF3746AD}" FilePath="*UsageLogs\VCTIP.EXE.log">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{1723859F-ED0A-BA5D-158724EC98666FCB}" FilePath="*usagelogs\vctip.exe.log">
+		<Process CmdLine="c:\program files\gvfs\gvfs.hooks.exe pre-command*" />
+	</File>
+	<File Id="{F18B04DB-57CA-5877-DA3D68CE083E748D}" FilePath="*usagelogs\gvfs.hooks.exe.log">
+		<Process CmdLine="c:\program files\gvfs\gvfs.hooks.exe pre-command*" />
+	</File>
+	<File Id="{04E3F626-1E0C-1263-1CD74F79BD8F7385}" FilePath="*usagelogs\vctip.exe.log">
+		<Process Path="C:\Windows\Temp\DPTF\esif_assist_64.exe">
+			<Signature Subject="*Intel*" />
+		</Process>
+	</File>
+	<File Id="{65EE6E2C-DE8B-C1D3-4E6C248567228398}" FilePath="*usagelogs\gvfs.hooks.exe.log">
+		<Process Path="C:\Windows\Temp\DPTF\esif_assist_64.exe">
+			<Signature Subject="*Intel*" />
+		</Process>
+	</File>
+	<File Id="{3046D651-0865-F853-2D0DD79831F85F00}" FilePath="c:\windows\temp\dptf\esif_assist_64.exe">
+		<Process Path="C:\Windows\Temp\DPTF\esif_assist_64.exe">
+			<Signature Subject="*Intel*" />
+		</Process>
+	</File>
+<!-- Part 0023 2022-11-29T17:39:00.000Z-1669743579 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

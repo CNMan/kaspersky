@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-11-22T12:20:00.000Z-1669119625 -->
+  <!-- Version: 2022-11-29T17:38:00.000Z-1669743527 -->
 
 <!-- 
 	Part 0001 START
@@ -4065,6 +4065,69 @@
 		</Process>
 	</NetworkConnection>
 <!-- Part 0019 2022-11-22T12:20:00.000Z-1669119625 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0020 2022-11-29T17:38:00.000Z-1669743527 -->
+	<NetworkConnection Id="{C056CFB9-B926-6F65-D95512423621EAE8}" RemoteAddress="10.*" RemotePort="49670">
+		<Process Path="c:\program files\splunkuniversalforwarder\bin\splunk-*">
+			<Signature Subject="*splunk*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{8B76C04D-2C0C-27DE-D7B7E788728DB49E}" RemotePort="135">
+		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\ServiceHost\SolarWinds.ServiceHost.Process.exe">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{900FD610-DD5F-2774-78CCD58B73A0C0D3}" RemoteAddress="10.?4??8???" RemotePort="8080">
+		<Process Path="*bin\hostx64\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{EFD210F9-91AA-D313-F90729A6E7E7C2AB}" RemoteAddress="10.?4??8???" RemotePort="8080">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{B151FE09-6DBB-ACFB-08FC4C48818AE3BD}" RemoteAddress="104.43.2*" RemotePort="443">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{7639B3E9-C053-2A16-549F5584CAA26D71}" RemoteAddress="152.199.1*" RemotePort="443">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{B94F0618-4611-E620-E72995C927FCA861}" RemoteAddress="23.96.2*" RemotePort="443">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{BAF2FB32-D5D7-1682-BF2B47ED0F82A1E8}" RemoteAddress="2606:2800:133:206e:1315:22a5:2006:24fd" RemotePort="443">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{72F7F2BB-DE13-1BDE-9733540FA9BBDB7B}" RemoteAddress="10.?9??0??0?" RemotePort="443">
+		<Process Path="*appdata\local\apps\*task..tion_*\tasklist.exe" />
+	</NetworkConnection>
+	<NetworkConnection Id="{D57839F5-2733-4D84-6B8FF8FF25894712}" RemoteAddress="10.?4??4?4" RemotePort="49671">
+		<Process Path="c:\windows\system32\lsass.exe" />
+	</NetworkConnection>
+	<NetworkConnection Id="{F96D6B08-969E-9C0A-7105EED48A98E664}" RemoteAddress="10.?4??8?2?" RemotePort="8080" Url="%kl_undef%" />
+	<NetworkConnection Id="{F0AB0346-9C9D-746F-AEA983CA54767D14}" RemoteAddress="10.?4??8?1?" RemotePort="8080" Url="%kl_undef%" />
+	<NetworkConnection Id="{FFE96FF6-8F64-BC96-EA526EDFE53B804E}" Url="http://192.168.1.1:40977/ctl/cmnifcfg" />
+	<NetworkConnection Id="{5F07FC47-AD1B-9E52-E17061FBD24BC6A4}" Url="bam.nr-data.net:443" />
+	<NetworkConnection Id="{C368B676-0636-E32B-2E277C2CE2B74C55}" Url="http://msdl.microsoft.com/download/symbols*" />
+	<NetworkConnection Id="{42BA3EDB-B345-FC3E-9039031CD68DDF51}" Url="http://woshub.com/wp-content*" />
+	<NetworkConnection Id="{DBE06039-39E9-C88E-367758CA89027C8B}" Url="http://www.gravatar.com/avatar*" />
+	<NetworkConnection Id="{BF93ED58-029C-9396-25DE3BE9641BC61E}" RemoteAddress="10.6??6??2?3" RemotePort="443">
+		<Process Path="*office*\ucmapi.exe" />
+	</NetworkConnection>
+	<NetworkConnection Id="{DB792CCD-41C2-F36E-64EF1CA41594F47B}" RemoteAddress="224.0.0.251" RemotePort="5353" />
+	<NetworkConnection Id="{E91DC6DC-14EA-2D32-0EF62910B6AB4D04}" RemoteAddress="ff02::fb" RemotePort="5353" />
+<!-- Part 0020 2022-11-29T17:38:00.000Z-1669743527 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

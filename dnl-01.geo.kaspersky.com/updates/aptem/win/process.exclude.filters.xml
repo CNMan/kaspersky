@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-11-22T13:54:00.000Z-1669125274 -->
+	<!-- 2022-11-29T17:42:00.000Z-1669743724 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -491,6 +491,62 @@
 	<Image Id="{19C347C8-DB89-6131-9E5CD50E02A89731}" CmdLine="*bin\hostx64\x86\cl.exe /c /i*" />
 	<Image Id="{4948300C-57EA-CC59-1A327AFF9854975A}" CmdLine="c:\sandbox\bin\cmder\vendor\*\conemu\conemuc.exe /sethooks*" />
 <!-- Part 0024 2022-11-22T13:54:00.000Z-1669125274 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0025 2022-11-29T17:42:00.000Z-1669743724 -->
+	<Image Id="{AAD59A03-D290-6266-520C70051E34CFB1}" Path="c:\program files\splunkuniversalforwarder\bin\splunk-powershell.exe" >
+		<Signature Subject="*splunk*" />
+	</Image>
+	<Image Id="{71E740BF-0DBB-D862-9FF261BBF5694CF4}" CmdLine="c:\program files (x86)\stonevoiceas\lib\unison\unison.exe -batch -confirmbigdel=false -halfduplex -killserver -ignorelocks -prefer=newer -log=false*" />
+	<Image Id="{5EACE73F-2FB0-8619-AFEDC064902AAB3E}" CmdLine="c:\program files (x86)\stonevoiceas\lib\unison\unison.exe -socket ?????" />
+	<Image Id="{882C3091-A2C0-3889-3A4EF56EFF79F980}" Path="*Program Files*SolarWinds*" >
+		<Signature Subject="*Solarwinds*" />
+	</Image>
+	<Image Id="{BF4FB178-261D-5B1D-022C7965E5CE4BD7}" Path="c:\program files (x86)\veeam\*" >
+		<Signature Subject="*Veeam*" />
+	</Image>
+	<Image Id="{FCE648EB-B768-7A43-0B78754762865661}" Path="c:\program files\veeam\*" >
+		<Signature Subject="*Veeam*" />
+	</Image>
+	<Image Id="{2D112265-D2E9-F284-FA906A2345F06120}" Path="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\*Tools\Binn\bcp.exe" >
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{08CE0593-9140-C2A1-C7F169C7597ACA9C}" CmdLine="c:\windows\system32\cmd.exe /s /c c:\program files (x86)\kaspersky lab\kaspersky endpoint security for windows\kescli.exe*" />
+	<Image Id="{989668F7-CE73-B413-B4D0E7C43B70D30D}" CmdLine="c:\windows\system32\cmd.exe /s /c c:\windows\system32\manage-bde.exe -status *" />
+	<Image Id="{717B6D82-48EC-A726-25A43782EDADE8AC}" CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	<Image Id="{95159A42-DC98-06D0-0F868A2B023549CA}" CmdLine="c:\windows\system32\pacjsworker.exe ????????-????-*" >
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{B55F2E84-109B-9145-C041F47D46F17681}" CmdLine="c:\windows\system32\wscript.exe c:\users\*appdata\roaming\eus\eusvb.vbs //b" />
+	<Image Id="{9F7A92A9-073D-176E-08F53529C40F5503}" CmdLine="c:\windows\temp\????????-????-*dismhost.exe {*" >
+		<VersionInfo OrignFileName="DismHost.exe" ProductName="Microsoft® Windows® Operating System" FileDescription="Dism Host Servicing Process" />
+	</Image>
+	<Image Id="{9CCC4D9D-8B9E-0307-2A0746C9CE6724BC}" CmdLine=".git/hooks/virtual-filesystem 1" />
+	<Image Id="{FE1F9480-2195-69DB-1312B57550C17E15}" Path="*bin\hostx64\x86\vctip.exe" >
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{AE03E214-7A87-FCAB-C374BEF21DFDEBC8}" Path="*hostx86\x86\vctip.exe" >
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{CBE16A2C-85D9-6147-0385F6BCE1DB9A12}" CmdLine="*bin/hostx64/x86/cl.exe /md /external*" />
+	<Image Id="{F84FDA65-4A28-C386-0F9190AB92CC253B}" CmdLine="c:/program files/git/mingw64/bin/git.exe  -c gc.auto*c:/program files/git/mingw64/bin\git-askpass.exe*" />
+	<Image Id="{F632FE8F-2006-D51E-C28C5F3D83B55BBC}" CmdLine="c:\program files\git\bin\git.exe ls-remote origin refs/heads/user*" />
+	<Image Id="{D7A531E7-E2A3-E24D-970A3EC1BBC004D3}" CmdLine="c:\program files\git\cmd\git.exe --git-dir*" />
+	<Image Id="{1D878CF5-35E9-D077-C969CC70C7407AA5}" CmdLine="c:\program files\git\cmd\git.exe --no-optional-locks status --serialize*" />
+	<Image Id="{286E5660-22DC-06E1-80CA0919F007B4C4}" CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config  credential*" />
+	<Image Id="{8EC24E88-D853-8AE7-F92DCD8E6900BB2F}" Path="C:\Windows\Temp\DPTF\esif_assist_64.exe" >
+		<Signature Subject="*Intel*" />
+	</Image>
+	<Image Id="{560692F8-7956-3025-F191C004B8613AE8}" CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config --null  --list" />
+	<Image Id="{353B2A76-670A-4357-3149AD34424D8E32}" CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe credential-manager store" />
+	<Image Id="{83BAD400-20D4-E042-86F54CC1C2A415E5}" CmdLine="c:\program files\gvfs\gvfs.hooks.exe post-command*" />
+	<Image Id="{7943A9A7-9131-74EC-1A50CF628CC12BE9}" CmdLine="c:\program files\gvfs\gvfs.hooks.exe pre-command*" />
+	<Image Id="{F0EE0769-BB94-03CF-6CD38699CA687243}" CmdLine="*windows_sandbox\bazelsandbox.exe @*monorepo/component*" />
+	<Image Id="{67A2C24B-DE66-D4AA-668E8634632EB7F2}" CmdLine="c:\windows\system32\msiexec.exe /y c:\windows\ccm\*.dll" />
+	<Image Id="{2F3555AC-6949-0510-08D2AC9C2BE8734E}" CmdLine="*git/hooks/pre-command.exe*" />
+	<Image Id="{61C5919E-45C4-BBAD-DA4714ECE86CC16F}" CmdLine="*git/hooks/post-command.exe*" />
+<!-- Part 0025 2022-11-29T17:42:00.000Z-1669743724 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

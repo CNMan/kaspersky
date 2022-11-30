@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-11-10T10:16:00.000Z-1668075387 -->
+	<!-- 2022-11-29T17:37:00.000Z-1669743442 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -2897,6 +2897,14 @@
 		</Process>
 	</Detect>
 <!-- Part 0065 2022-11-10T10:16:00.000Z-1668075387 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0065 2022-11-29T17:37:00.000Z-1669743442 -->
+	<Detect Id="{EB11F0DF-4F55-5E66-F3F2592C66A4B130}" ContentValue="iwshshell3.run(&#34;powershell.exe -executionpolicy bypass -nologo -command .\eus.ps1&#34;, &#34;0&#34;);?&#10;">
+		<Process CmdLine="c:\windows\system32\wscript.exe c:\users\*appdata\roaming\eus\eusvb.vbs //b" />
+	</Detect>
+<!-- Part 0065 2022-11-29T17:37:00.000Z-1669743442 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

@@ -4,7 +4,7 @@
   <!-- !!! DWORD QWORD values in Value="..." has to be specified as they are presented in regedit when you click "Modify binary data" on such parameters. -->
   <!-- !!! For example, 0x1 dword value is Value="01000000" -->
 
-  <!-- Version: 2022-10-06T14:15:00.000Z-1665065734 -->
+  <!-- Version: 2022-11-29T17:43:00.000Z-1669743793 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -2962,6 +2962,206 @@
 		</Process>
 	</Registry>
 <!-- Part 18: 2022-10-03T13:44:00.000Z-1664804679 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 19: 2022-11-29T17:43:00.000Z-1669743793 -->
+	<Registry Id="{877D73F2-F881-FDCC-FC97DFE47B160AE0}" Path="\registry\machine\system\controlset001\services\asp.net_*\names">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*SolarWinds*" />
+		</Process>
+	</Registry>
+	<Registry Id="{E8BE68C3-69A3-7023-C9E464901BFBB489}" Path="\registry\machine\software\veeam*">
+		<Process Path="*program files*veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Registry>
+	<Registry Id="{47E3D084-78C4-DA06-9E0E0732B35B8991}" Path="\registry\machine\system\*services\vss\diag\vssapipublisher">
+		<Process Path="*program files*veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Registry>
+	<Registry Id="{ADE20789-238B-AD36-FFBF9F7B28F4BAD6}" Path="\registry\machine\system\controlset*\control\session manager">
+		<Process Path="*program files*veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3885EF04-713E-1DB6-B74D84A7DFBFF246}" Path="\registry\machine\system\controlset*services\vss\settings">
+		<Process Path="*program files*veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Registry>
+	<Registry Id="{CB33F07D-2105-04FC-E139910AF5BD3FA4}" Path="\registry\machine\system\controlset*control\backuprestore\filesnottosnapshot">
+		<Process Path="*program files*veeam*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Registry>
+	<Registry Id="{45A16229-5C24-1B11-A958E3695C58C8C9}" Path="\registry\machine\software\carbonblack\config">
+		<Process Path="c:\windows\carbonblack\cb.exe">
+			<Signature Subject="*Carbon*" />
+		</Process>
+	</Registry>
+	<Registry Id="{015A246C-E51E-5012-7BCA100E2C63E062}" Path="\registry\machine\system\controlset001\services\carbonblackk">
+		<Process Path="c:\windows\carbonblack\cb.exe">
+			<Signature Subject="*Carbon*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F273C5BF-E6F1-1CFA-B1A9EABB92C3678E}" Path="\registry\machine\cluster*">
+		<Process CmdLine="c:\windows\cluster\clussvc.exe -s" />
+	</Registry>
+	<Registry Id="{B68C5631-01FF-608C-3F3A70B9D7A7E1B6}" Path="\registry\machine\0.cluster*">
+		<Process CmdLine="c:\windows\cluster\clussvc.exe -s" />
+	</Registry>
+	<Registry Id="{043A3F29-5CD2-BF57-464F65C6F58E94C6}" Path="\registry\machine\software\hp\security update service\state">
+		<Process Path="*\securityupdateservice.exe">
+			<Signature Subject="*Bromium*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C181538A-A5D8-B8BB-574DECFF07F7EC72}" Path="\registry\machine\software\cxuiusvc">
+		<Process Path="C:\Windows\System32\CxUIUSvc64.exe">
+			<Signature Subject="*Synaptics*" />
+			<VersionInfo ProductName="*CxUIUSvc*" />
+		</Process>
+	</Registry>
+	<Registry Id="{7905AD23-63FD-836B-B637FDF8BC9177A8}" Path="*software\google\update\proxy">
+		<Process Path="*google\update\googleupdate.exe">
+			<Signature Subject="*google*" />
+		</Process>
+	</Registry>
+	<Registry Id="{A65380A6-CF50-EAA9-C3321E9BFA4F16B5}" Path="*software\microsoft\edge\preferencemacs\default\extensions.settings">
+		<Process Path="*microsoft\edge\application\msedge.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{92D899E8-5221-B325-158C51A78C934BB9}" Path="*software\seclore*">
+		<Process Path="*Program Files*Seclore*">
+			<Signature Subject="*Seclore*" />
+		</Process>
+	</Registry>
+	<Registry Id="{83B0FB1B-A77E-BADA-49874EDC34AB3C9D}" Path="*software\mozilla\firefox\prexulskeletonuisettings">
+		<Process Path="*Program Files*mozilla*">
+			<Signature Subject="*mozilla*" />
+		</Process>
+	</Registry>
+	<Registry Id="{230124E7-31C5-1B18-F15B8C4B78D957DD}" Path="*software\mozilla\firefox\launcher">
+		<Process Path="*Program Files*mozilla*">
+			<Signature Subject="*mozilla*" />
+		</Process>
+	</Registry>
+	<Registry Id="{B79B2EAE-8B82-65AE-7FA0E613579C4304}" Path="*software\mozilla\firefox\dllprefetchexperiment">
+		<Process Path="*Program Files*mozilla*">
+			<Signature Subject="*mozilla*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3F10B695-7DC0-9611-D72B31628FE842A0}" Path="*software\microsoft\office*outlook\profiles\outlook*">
+		<Process CmdLine="* -executionpolicy bypass -nologo -command .\eus.ps1" />
+	</Registry>
+	<Registry Id="{36A15F65-106B-13F5-65B4E50E5B76FCAE}" Path="*software\microsoft\windows\currentversion\search\microsoft.windows.search_*\appsconstraintindex">
+		<Process Path="c:\windows\systemapps\microsoft.windows.search_*\searchapp.exe" />
+	</Registry>
+	<Registry Id="{F72280B0-0EE3-886B-27E5488EC36D9075}" Path="\registry\machine\software\microsoft\systemcertificates\addressbook\certificates\*">
+		<Process Path="c:\windows\system32\lsass.exe" />
+	</Registry>
+	<Registry Id="{897B4361-2759-EEC2-4BF765B4BF12E0FD}" Path="*software\microsoft\internet explorer\suggested sites">
+		<Process CmdLine="c:\windows\system32\msfeedssync.exe sync" />
+	</Registry>
+	<Registry Id="{A306C0D7-7EFA-7A71-F590335F12D622A7}" Path="\registry\machine\software\microsoft\ccm\performance\ccmframework*">
+		<Process CmdLine="c:\windows\system32\msiexec.exe -embedding * e global\msi0000" />
+	</Registry>
+	<Registry Id="{11B98D8D-532F-535B-E5FB7E8497963065}" Path="\registry\machine\software\wow6432node\microsoft\ccm\performance\ccmframework*">
+		<Process CmdLine="c:\windows\system32\msiexec.exe -embedding * e global\msi0000" />
+	</Registry>
+	<Registry Id="{299D1492-727D-E25E-26A9CE61C412A04F}" Path="\registry\machine\system\waas\upfc">
+		<Process CmdLine="c:\windows\system32\upfc.exe /launchtype periodic /cv *" />
+	</Registry>
+	<Registry Id="{0ECD0710-C8BB-AD65-52F7D695C00C27A9}" Path="*software\bginfo.tmp*">
+		<Process CmdLine="c:\windows\temp\bginfo.exe /silent /timer /accepteula*" />
+	</Registry>
+	<Registry Id="{9DC8D18D-B905-1AAA-4D0147D45AF5B7F7}" Path="*bginfo.config.1*">
+		<Process CmdLine="c:\windows\temp\bginfo.exe /silent /timer /accepteula*" />
+	</Registry>
+	<Registry Id="{2548F390-77D7-57E8-F4B0A326A8612D22}" Path="*\.bgi">
+		<Process CmdLine="c:\windows\temp\bginfo.exe /silent /timer /accepteula*" />
+	</Registry>
+	<Registry Id="{DDEEE72B-09C4-9DF7-EDC30AF1E4E7ADD6}" Path="*control panel\desktop">
+		<Process CmdLine="c:\windows\temp\bginfo.exe /silent /timer /accepteula*" />
+	</Registry>
+	<Registry Id="{5F3F96D4-8244-A1AA-2B5CBF58A56CAC6F}" Path="*software\sysinternals\bginfo">
+		<Process CmdLine="c:\windows\temp\bginfo.exe /silent /timer /accepteula*" />
+	</Registry>
+	<Registry Id="{D65DF55F-830B-611D-95A46B6604FB2DAA}" Path="*software\microsoft\office\*outlook\profiles*">
+		<Process Path="C:\Program Files (x86)\Enterprise Vault\ArchiveTask.exe">
+			<Signature Subject="*Veritas*" />
+		</Process>
+	</Registry>
+	<Registry Id="{DD9F66C5-E30A-4B56-34E02AC14AA2682F}" Path="*device parameters">
+		<Process CmdLine="taskhostw.exe system">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{60387F8B-162B-7DE5-93D9D01FBC2AE8A6}" Path="*device parameters\ceip">
+		<Process CmdLine="taskhostw.exe system">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{187F3DB4-8090-0671-C826751664A68754}">
+		<Process CmdLine=".git/hooks/virtual-filesystem 1" />
+	</Registry>
+	<Registry Id="{C83F2FEC-62E6-36BB-C31366ED88B2E49F}">
+		<Process Path="*bin\hostx64\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{01738F4A-B054-4154-35DC38B880756F26}">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{DEA535CA-F8AD-8814-028AF036640635C2}">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe /md /external*" />
+	</Registry>
+	<Registry Id="{101C0868-CE45-37E7-7AB2936A7D8DB14E}">
+		<Process CmdLine="c:/program files/git/mingw64/bin/git.exe  -c gc.auto*c:/program files/git/mingw64/bin\git-askpass.exe*" />
+	</Registry>
+	<Registry Id="{F830748C-2AC9-5585-6BEDEDBBF4AAC8ED}">
+		<Process CmdLine="c:\program files\git\bin\git.exe ls-remote origin refs/heads/user*" />
+	</Registry>
+	<Registry Id="{A48638BC-946C-7543-715055DDB171C9FD}">
+		<Process CmdLine="c:\program files\git\cmd\git.exe --git-dir*" />
+	</Registry>
+	<Registry Id="{F20797FF-5006-759A-602A3C463B179092}">
+		<Process CmdLine="c:\program files\git\cmd\git.exe --no-optional-locks status --serialize*" />
+	</Registry>
+	<Registry Id="{06A70E29-1AA3-895B-F532A9317C0AE6D7}">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config  credential*" />
+	</Registry>
+	<Registry Id="{ADB778BA-756D-7A11-D33D8A57F97096B6}">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config --null  --list" />
+	</Registry>
+	<Registry Id="{99228B5C-BEBE-2289-81EBD650A6B9DEA7}">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe credential-manager store" />
+	</Registry>
+	<Registry Id="{F35F1938-AF25-04E3-648A4DEE3F42FA67}">
+		<Process CmdLine="c:\program files\gvfs\gvfs.hooks.exe post-command*" />
+	</Registry>
+	<Registry Id="{8F70106F-1659-F5FC-ED552A5D2BD91D1E}">
+		<Process CmdLine="c:\program files\gvfs\gvfs.hooks.exe pre-command*" />
+	</Registry>
+	<Registry Id="{8EA25F1F-01ED-DA10-22E34718E7743E26}">
+		<Process CmdLine="c:\windows\system32\msiexec.exe /y c:\windows\ccm\*.dll" />
+	</Registry>
+	<Registry Id="{D18A279F-F190-3CD2-9020A8821A47E017}">
+		<Process Path="C:\Windows\Temp\DPTF\esif_assist_64.exe">
+			<Signature Subject="*Intel*" />
+		</Process>
+	</Registry>
+	<Registry Id="{213FF48A-1FA3-2B5B-0D08654A81AA2D02}">
+		<Process CmdLine="*git/hooks/pre-command.exe*" />
+	</Registry>
+	<Registry Id="{3B1A6AAB-E452-B348-105753DD988E08B9}">
+		<Process CmdLine="*git/hooks/post-command.exe*" />
+	</Registry>
+<!-- Part 19: 2022-11-29T17:43:00.000Z-1669743793 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

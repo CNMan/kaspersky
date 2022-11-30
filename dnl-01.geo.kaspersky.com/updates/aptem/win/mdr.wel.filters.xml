@@ -142,7 +142,33 @@
       <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-120732"/>
       <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-85236"/>
       <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2672"/>
-    </Exclusions>
+      <Equal OrderNum="11" Value="S-1-5-7"/>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="3"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-19"/>
+        <Equal OrderNum="15" Value="3"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-20"/>
+        <Equal OrderNum="15" Value="3"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-19"/>
+        <Equal OrderNum="15" Value="5"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-20"/>
+        <Equal OrderNum="15" Value="5"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-19"/>
+        <Equal OrderNum="15" Value="9"/>
+      </Conjunction>
+      <Match OrderNum="12" Value="HealthMailbox*"/>
+	</Exclusions>
   </Event>
 
   <Event Name="NewUserCreated.Vista" Id="4720" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
@@ -228,6 +254,8 @@
       <Equal OrderNum="16" Value="MsFteWds"/>
       <Equal OrderNum="16" Value="netdfs"/>
       <Equal OrderNum="16" Value="\"/>
+      <Equal OrderNum="17" Value="0x100080"/>
+      <Equal OrderNum="17" Value="0x80"/>
     </Exclusions>
   </Event>
 
