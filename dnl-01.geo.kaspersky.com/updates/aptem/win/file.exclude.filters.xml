@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-11-29T17:39:00.000Z-1669743579 -->
+	<!-- Version: 2022-11-30T13:52:00.000Z-1669816359 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -8864,7 +8864,15 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0023 2022-11-29T17:39:00.000Z-1669743579 -->
+<!-- Part 0023 2022-11-28T14:07:59.000Z-1669633679 -->
+	<File Id="{4BF04564-24EC-44A5-AE6EDE4DFFDE8D84}" FilePath="C:\Windows\SystemTemp\????????-????-*" >
+		<Process Path="C:\Windows\System32\spoolsv.exe" />
+	</File>
+<!-- Part 0023 2022-11-28T14:07:59.000Z-1669633679 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0024 2022-11-29T17:39:00.000Z-1669743579 -->
 	<File Id="{344C0D9E-2651-ED9A-CBFAC59DA2239C98}">
 		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\program files (x86)\kaspersky lab\kaspersky endpoint security for windows\kescli.exe*" />
 	</File>
@@ -9368,7 +9376,232 @@
 			<Signature Subject="*Intel*" />
 		</Process>
 	</File>
-<!-- Part 0023 2022-11-29T17:39:00.000Z-1669743579 -->
+<!-- Part 0024 2022-11-29T17:39:00.000Z-1669743579 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0025 2022-11-30T13:52:00.000Z-1669816359 -->
+	<File Id="{4B691BEC-5599-1A86-96A104FEA902E531}" FilePath="*data\manictime*.db-journal">
+		<Process Path="*Manic*">
+			<Signature Subject="*Finkit*" />
+		</Process>
+	</File>
+	<File Id="{C7B0DD8F-1655-9D08-08D6D2FCD2A980B2}" FilePath="*\user data\profile *network\transportsecurity">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{DB74784D-F94B-50E5-54A1739E0F10EAB7}" FilePath="*user data\hyphen-data\*hyph-*.hyb">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{CB55B48C-FC7E-95DE-B9476244F10E5067}" FilePath="*appdata\local\temp\casesensitivetest*">
+		<Process Path="*msbuild\current\bin\amd64\msbuild.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{1D62AAE3-69A7-6A26-A7A8C3C29FF6C98F}" FilePath="*appdata\local\temp\tmp*.rsp">
+		<Process Path="*msbuild\current\bin\amd64\msbuild.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{F4C746FF-39B3-0ADA-A6389EA5B6581474}" FilePath="*appdata\local\temp\msbuildtempmolaev\tmp*.rsp">
+		<Process Path="*msbuild\current\bin\amd64\msbuild.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{9E38947A-B2D3-CBD7-EF40C9CD804A9121}" FilePath="*appdata\local\temp\res*.tmp">
+		<Process Path="*tools\tlbimp.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{9CF366BE-9968-C4DF-6F36D8B7F1E96F99}" FilePath="*appdata\local\.identityservice*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{D9A3BD32-E1D6-8A6C-15107CB1CF1A8249}" FilePath="*appdata\local\.identityservice*">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{A77C4BD6-2327-8E2B-F85C48148E6CB69C}" FilePath="*appdata\local\temp\*_analysis\*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{274E9892-FE42-3AE3-E2ED4E515BEA4B46}" FilePath="*appdata\local\temp\*_analysis\*">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{B59C61F2-E9BA-D114-1C6D00CC1A87F06F}" FilePath="*appdata\local\jetbrains\resharperplatform*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{AFAD619E-0021-F5E9-8AEB70B26D8FD27E}" FilePath="*appdata\local\jetbrains\resharperplatform*">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{DF9C7ECD-4540-935F-833ED006324BBF94}" FilePath="*appdata\local\temp\servicehub\logs*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{46B1892E-12E5-0BAF-88A35A264E6F6D3B}" FilePath="*appdata\local\temp\servicehub\logs*">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{92A8FC88-ED5A-3E22-40EA5BAFD72337E2}" FilePath="*appdata\local\temp\vs*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{46F16EC8-5042-9996-DD5F7A96E2C7E3F4}" FilePath="*appdata\local\temp\vs*">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{FBDD30B2-978C-36A6-B884918C852EBE1C}" FilePath="*appdata\local\temp\wpf*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{90092684-4FD2-60DA-0C20532719776B80}" FilePath="*appdata\local\temp\wpf*">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{DDA88445-D863-255A-D42FFE961135EBC5}" FilePath="*appdata\roaming\microsoft\visualstudio*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{34BF6029-E95D-41EE-82F108B53BFB0980}" FilePath="*appdata\roaming\microsoft\visualstudio*">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{DEFFAE8E-E1E3-3901-20BA6B584E18F34B}" FilePath="*appdata\local\temp\????????.???">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{5C6B9781-B5E4-2B6D-106FAD68FF844EC6}" FilePath="*appdata\local\temp\????????.???">
+		<Process Path="*servicehub.host.clr*\servicehub.identityhost.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{70382B82-E2C4-906A-EDC5351A41AD9A37}" FilePath="*appdata\local\temp\*_analysis\esp*.tmp">
+		<Process Path="*bin\host*\cl.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{D573195E-1FDE-DE4B-FDE670455BE2F81A}" FilePath="*appdata\local\temp\vmware*">
+		<Process Path="*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{3E388EAC-0CA9-DAC8-DFDFBB542E4D9CAD}" FilePath="*appdata\roaming\vmware*">
+		<Process Path="*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{C34EB7B5-CBB4-4F58-30152930434DA45E}" FilePath="*.vmsd.lck\*.lck">
+		<Process Path="*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{B21A9D8B-DFB9-8541-204E505ED5ADD5D2}" FilePath="*.vmdk.lck\*.lck">
+		<Process Path="*vmware*">
+			<Signature Subject="*vmware*" />
+		</Process>
+	</File>
+	<File Id="{83836575-14A6-4F2C-57B20025601C76B3}" FilePath="*appdata\local\temp\vs\analyzerassemblyloader*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{89A9A243-5DA2-D519-FDFE8FD4FA64B389}" FilePath="*appdata\local\temp\vslogs*">
+		<Process Path="*common7\ide\devenv.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{8E43E307-06FE-3BBD-9CEE3DC065AC73FE}" FilePath="*appdata\local\microsoft\visualstudio*">
+		<Process Path="*hosts\servicehub.host*\servicehub.*.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{30370183-AFF4-1D36-EE8EE0C4BA54AA9D}" FilePath="*appdata\local\temp\servicehub\logs*">
+		<Process Path="*hosts\servicehub.host*\servicehub.*.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{13C933F9-81AD-41B5-49A838C2ED3F3F2C}" FilePath="*appdata\local\temp\etilqs_*">
+		<Process Path="*hosts\servicehub.host*\servicehub.*.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{EDA30E1F-0037-09E6-BCFD6E189DB16510}" FilePath="*appdata\local\temp\vs\analyzerassemblyloader*">
+		<Process Path="*hosts\servicehub.host*\servicehub.*.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{C8788DD4-6886-AEF7-3770D098D6AB578F}" FilePath="*appdata\local\temp\????????.???">
+		<Process Path="*msbuild\current\bin\amd64\msbuild.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{95C11299-C136-2E7F-AB6B2A2BA696D87D}" FilePath="*appdata\local\temp\????????.???">
+		<Process Path="*msbuild\current\bin\msbuild.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{96CBC5F3-9A34-496C-7F50C61DCA90C74A}" FilePath="*appdata\local\temp\????????.cmdline">
+		<Process Path="*msbuild\current\bin\amd64\msbuild.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{ABED8C6C-D7F2-6169-748088AF13815BD9}" FilePath="*appdata\local\temp\????????.cmdline">
+		<Process Path="*msbuild\current\bin\msbuild.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{838FB991-451D-237C-798513612FE9C8EA}" FilePath="*appdata\local\temp\vbcscompiler\analyzerassemblyloader*">
+		<Process Path="*msbuild\current\bin\*\vbcscompiler.exe">
+			<Signature Subject=".NET" />
+		</Process>
+	</File>
+	<File Id="{2199E72C-83AB-EC89-FB35FCC1EC30E0A0}" FilePath="*appdata\local\microsoft\tokenbroker\cache*">
+		<Process Path="*appdata\local\microsoft\onedrive*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{22F618EF-3B43-E220-F8F73550D668267F}" FilePath="*appdata\local\microsoft\identitycache*">
+		<Process Path="*appdata\local\microsoft\onedrive*">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{4B1BF2A8-100B-92EB-52954A95AC47946C}" FilePath="*appdata\local\microsoft\visualstudio*">
+		<Process Path="*AppData\Local\Microsoft\VisualStudio*">
+			<Signature Subject="*Idera*" />
+		</Process>
+	</File>
+	<File Id="{3BEAA16E-4C12-9C8A-EFCBA612E7EA0630}" FilePath="c:\windows\assembly\temp\*microsoft.*">
+		<Process Path="*framework*\mscorsvw.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{66278524-EEA9-1128-5076C36CEDB97339}" FilePath="c:\windows\assembly\temp\*system.*">
+		<Process Path="*framework*\mscorsvw.exe">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+<!-- Part 0025 2022-11-30T13:52:00.000Z-1669816359 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

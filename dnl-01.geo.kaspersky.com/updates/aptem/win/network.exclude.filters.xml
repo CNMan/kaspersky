@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-11-29T17:38:00.000Z-1669743527 -->
+  <!-- Version: 2022-11-29T19:03:00.000Z-1669748604 -->
 
 <!-- 
 	Part 0001 START
@@ -4068,7 +4068,7 @@
 <!-- ############################################################################################################### -->
 
 <!-- ############################################################################################################### -->
-<!-- Part 0020 2022-11-29T17:38:00.000Z-1669743527 -->
+<!-- Part 0020 2022-11-29T19:03:00.000Z-1669748604 -->
 	<NetworkConnection Id="{C056CFB9-B926-6F65-D95512423621EAE8}" RemoteAddress="10.*" RemotePort="49670">
 		<Process Path="c:\program files\splunkuniversalforwarder\bin\splunk-*">
 			<Signature Subject="*splunk*" />
@@ -4127,7 +4127,42 @@
 	</NetworkConnection>
 	<NetworkConnection Id="{DB792CCD-41C2-F36E-64EF1CA41594F47B}" RemoteAddress="224.0.0.251" RemotePort="5353" />
 	<NetworkConnection Id="{E91DC6DC-14EA-2D32-0EF62910B6AB4D04}" RemoteAddress="ff02::fb" RemotePort="5353" />
-<!-- Part 0020 2022-11-29T17:38:00.000Z-1669743527 -->
+	<NetworkConnection Id="{98157CEE-5A51-9875-2769B18CE7C7530F}" RemotePort="49673">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{22E5D9B1-D507-4352-D86A21900CA63B8D}" RemotePort="135">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{5A27FBA5-82F4-D8A5-78AE0175A597A485}" RemotePort="49677">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{178315F4-8ED2-6E3C-18522D0D123D6115}" RemoteAddress="10.*" RemotePort="17778">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{DBDC5B9C-CE79-FC58-A5326689F2A87B87}" RemoteAddress="178.79.*" RemotePort="80">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{19B88CF9-FE69-619E-F1D4B018E92ACF06}" RemoteAddress="209.197.*" RemotePort="80">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{114B9765-A43E-2519-395B9E3C2216157D}" RemoteAddress="93.184.*" RemotePort="80">
+		<Process Path="*Program Files*SolarWinds*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+	</NetworkConnection>
+<!-- Part 0020 2022-11-29T19:03:00.000Z-1669748604 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
