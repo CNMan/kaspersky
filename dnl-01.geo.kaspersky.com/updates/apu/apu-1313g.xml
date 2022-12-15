@@ -1,5 +1,5 @@
 <Update
-	Date="13122022 2326"
+	Date="14122022 2302"
 	BlstDate="12122022 2245"
 	ObjectType="2=APU;3=BASE"	
 	Format="2.0"
@@ -15,7 +15,7 @@
 	</Exclude>
 	<File
 		LocalPath="%BaseFolder%\Stat"
-		Name="apu.stt">MjM5Mzg7MjAyMjEyMTMyMzI2DQo=</File>
+		Name="apu.stt">MjU1NDY7MjAyMjEyMTQyMzAyDQo=</File>
 	<Files
 		Item="App;Name;DSKM"
 		List="
@@ -24,9 +24,9 @@
 	<Files
 		Item="Name;DSKM"
 		List="
-			apu0001.dat|foL+XnFGuzya3g+DLgerK8CElI0boJJRk6mEDgq2hGU=;
-			apu0002.dat|ZausUVjvRemrDAyRQUGw+HeCSra6g2+M/wEEjRnBl+k=;
-			apu0003.dat|cecsaLEIzRC2FdNp/lWHRNHBX/iHx8IJymc0fOk7sXI=;
+			apu0001.dat|vjjmjdPRTH3K5+044RXcR3nsR/e16PfwWSAdYeGHfGs=;
+			apu0002.dat|QUoe7Gxiq7sz69uKPD8B8TKWNI0fEyhH6S2Ibsn+/2A=;
+			apu0003.dat|rYF3JYC49DhpddQfnoHjI5CuCBmVCe19U0y1yqr4nWU=;
 			apu0004.dat|7RyPc2+auiEPrEJwJxQPWnWTCVX47cQ4Qqk7Gmb31sY=;
 			apu0005.dat|VipgHE3xz931EMWMKP/kmPheZ1dwwp4aobAsLTI28WI=;
 			apu0006.dat|82XWJONtaVVcmwAS7DQfBZEI29fswWJApBDro/P33ww=;
@@ -141,34 +141,19 @@
 			apu0115.dat|B3K6+nkkMuhPok5mkX+kWYZAl5Ell5dK5mlCJ9VNZgA=;
 			apu0116.dat|/yC6T2VpZn87U0GAP7XFxUpERQfFL7qN6L02V+lh2rU=;
 			apu0117.dat|sDf49DcO3G+I8QEAxRX/b2+hxwAmkT9SdoivXQ+HGok="/>
-	<File
-		App="KESMAC 10.1.0.*;KESMAC 10.2.1.*;KISMAC [16-18].*.*.*"
-		OS="Mac"
-		Arch="i386"
-		SrvPath="i386/mac"
-		Name="libheurap.dylib"
-		DSKM="pcxu4jF6XI6ECrIu1qQP1uwNTtLFXTQzeO9977LX54M="/>
-	<File
-		OS="Mac"
-		Arch="x64"
-		SrvPath="x64/mac"
-		Name="libheurap.dylib"
-		DSKM="ER0BnphHdjhG3w5TBb3B9Ji+YDmP4MJwTcrWD1Ef138="/>
 	<Files
-		OS="Win"
-		Arch="x64"
-		Shell="bdif;klz;none"
-		Item="App;SrvPath;Name;DSKM"
-		List="
-			KAVSDK 8.[6-8].*.*|x64/win|heurap.dll|Al6DmEyJ5b+++URL0Ctyb+5D7ZkpsSKIf1aSczirZZU=;
-			KASSDK [5-6].*.*.*|legacy/x64/win|heurap.dll|mQM4x9o9ryCQmY0ivPQf/kIoJ41difWlPh1PnQ6XT2o="/>
-	<File
 		OS="Mac"
-		Arch="a64"
+		Item="App;Arch;SrvPath;Name;DSKM"
+		List="
+			KESMAC 10.1.0.*\;KESMAC 10.2.1.*\;KISMAC [16-18].*.*.*|i386|i386/mac|libheurap.dylib|pcxu4jF6XI6ECrIu1qQP1uwNTtLFXTQzeO9977LX54M=;
+			!KESMAC [11-12]\;KESMAC 11.[0-2]|x64|x64/mac|libheurap.dylib|ER0BnphHdjhG3w5TBb3B9Ji+YDmP4MJwTcrWD1Ef138="/>
+	<Files
 		Shell="bdif;klz;none"
-		SrvPath="arm64/mac"
-		Name="libheurap.dylib"
-		DSKM="V+BW8RYGSlh48Os+z6nt5EySqML8foIo9s0jCLsapOE="/>
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KAVSDK 8.[6-8].*.*|Win|x64|x64/win|heurap.dll|Al6DmEyJ5b+++URL0Ctyb+5D7ZkpsSKIf1aSczirZZU=;
+			KASSDK [5-6].*.*.*|Win|x64|legacy/x64/win|heurap.dll|mQM4x9o9ryCQmY0ivPQf/kIoJ41difWlPh1PnQ6XT2o=;
+			!KESMAC [11-12]\;KESMAC 11.[0-2]|Mac|a64|arm64/mac|libheurap.dylib|V+BW8RYGSlh48Os+z6nt5EySqML8foIo9s0jCLsapOE="/>
 	<Files
 		App="KSLS 11.3.0.*"
 		Arch="a64"
@@ -218,7 +203,7 @@
 	<File
 		CompID="HASHES_SHA256"
 		Name="apu-1313g.sha2rg"
-		DSKM="kfP9Kio/nK9Y+jCllP/tnM5/WVRQj96mhj02hdbdjHA="/>
+		DSKM="an2sLq+I9qD6UobIkxLDs6ZYXqM4RXnylTYnl6wsf+k="/>
 	<File
 		App="KASSDK [5-6].*.*.*;KLMS 8.0.[2-3].*;KSE 9.[4-7].*.*;KSMG 1.1.[0-2].*;KSMO 1.2.*.*"
 		SrvPath="legacy"
@@ -242,9 +227,9 @@
 		Shell="bdif;klz;none"
 		Item="Name;DSKM"
 		List="
-			sig_phish.dat|7I1YXsxlBbrjt0DDncyvJvgj6n3hToUA6Ze4ALGCrm0=;
-			sig_phish_data.dat|XXzb+zCWZCObTdDY5XHTMJx2zsN9QN2kIld5QjcVhdY=;
-			sig_phish_hash.dat|GYAEbszRUzMMKdZNFJljHviYURB8N3/+q6pyBo7bvXQ="/>
+			sig_phish.dat|x9MVrpS9H+p6nA+ZEROdCetBlvk6KlR7UPjDULpiIvk=;
+			sig_phish_data.dat|HfefnLY6uKurask9VC+SEzLtZNRfa9ERi90C4ThZT8c=;
+			sig_phish_hash.dat|TRehdPDV705BBd5sU5h0HYUDlwrkG9ujUrAdK8+yS58="/>
 	<File
 		App="!KES|WSEE|KSVLA|KSMG|KASSDK|KLMS|KSE|KSMO [1-11].*.*.*;KES 10.[3-*].*.*;KES 11;KSVLA 5.[0-2]"
 		Name="apu14.dat"
@@ -253,87 +238,87 @@
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="!KAV|KIS|KES|PURE|KFA|KSOSPC|KSOSFS|SAAS|KASPERSKY [11,14-21];KSOSPC|KSOSFS|SAAS [14-20];PURE 15"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS 14"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS 15"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 16"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 17"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 18"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 19"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA 20"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 21.[0-2]"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[3-*]"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[3-*]"
 		Target="[1-262143]"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KES 11"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KES 21"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<Index
 		CompID="APU,KSVLA,RETR1901_APU,RETR1901_KSVLA"
 		App="KES 21"
 		Target="[1-262143]"
 		Name="unmod-apu-1313g.xml"
-		Date="13122022 2326"/>
+		Date="14122022 2302"/>
 	<File
 		CompID="RETR1901_APU"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="apu-1901g.xml"
-		DSKM="F9fOe9yetUtR5w8mlHmm87bRtT8l/huG1UslEd8dSE8="/>
+		DSKM="2wxqPYDULrMU8xZU/l796Xzvdnw8vYY3MFtk582DO8U="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="apu-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAD83c55+H0F6JOBbHmZfX5Lplr2yLo/QoklVRrzMmI8CdOeUP/y6wFJ82OuWFkn3FxxGI61kSOscCTAmuZjcm0MBAB4JiwAAAAIAAigDAEFQVQMAAigEAEJBU0UBAAAJ9jjdrQ0KOzoxMDQ5TjlXWWl2SGNlOWc3Tk1PK0NIZjYxclpaSVNybm05aFh4NjFXUmpVaWpRclNoOS9xMGRRT2lDaEtraHBKQmZmTGU4dVN0c2lQSXRwNWMveGV2MllkJSU=</Key>
 </Update>
-;:10q3eIm3Whai0qI+6k05UES88+AKl1K9xopjOlTPIZ+lzyLfDuYPX2NFjod5SvKTqoDMDu+xWyl+m7Rp2wHA5TEt%%
+;:10aAL96sqB7IW5nq/AIhjJXR6QWsmpm5XeAvZwmoYO+Rgr7fQadkaCUlPnD3ksGeYqPfjJQa3TGrVDcbi8dU+d0f%%
