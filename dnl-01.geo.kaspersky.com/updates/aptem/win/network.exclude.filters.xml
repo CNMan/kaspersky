@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-11-29T19:03:00.000Z-1669748604 -->
+  <!-- Version: 2022-12-19T18:20:00.000Z-1671474017 -->
 
 <!-- 
 	Part 0001 START
@@ -4163,6 +4163,20 @@
 		</Process>
 	</NetworkConnection>
 <!-- Part 0020 2022-11-29T19:03:00.000Z-1669748604 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0021 2022-12-19T18:20:00.000Z-1671474017 -->
+	<NetworkConnection Id="{A7DC5215-20AC-81CD-4428481859FCB364}" RemoteAddress="10.*" RemotePort="5355" Url="%kl_undef%">
+		<Process CmdLine="C:\Windows\system32\svchost.exe -k NetworkService -p -s Dnscache" />
+	</NetworkConnection>
+	<NetworkConnection Id="{DE6C0553-721B-CE1B-1721C285E258F137}" RemoteAddress="192.168*" RemotePort="5355" Url="%kl_undef%">
+		<Process CmdLine="C:\Windows\system32\svchost.exe -k NetworkService -p -s Dnscache" />
+	</NetworkConnection>
+	<NetworkConnection Id="{03B1297F-3859-3C66-5D6CA8E75AB37DF0}" RemoteAddress="172*" RemotePort="5355" Url="%kl_undef%">
+		<Process CmdLine="C:\Windows\system32\svchost.exe -k NetworkService -p -s Dnscache" />
+	</NetworkConnection>
+<!-- Part 0021 2022-12-19T18:20:00.000Z-1671474017 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
