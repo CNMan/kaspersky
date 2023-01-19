@@ -1,24 +1,34 @@
 <Update
-	Date="14122022 0702"
+	Date="18012023 0816"
 	ObjectType="2=KAV21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
 	MaxDownloadSizeKb="17"
 	Shell="bdif;klz;none">
+	<Param
+		CompID="KAV21,KAV21NTR"
+		Key="ForceInstallAnyDate"
+		Data="1"/>
 	<Index
 		CompID="KAV21,KAV21NTR,RETR1901_KAV21,RETR1901_KAV21NTR"
+		Target="[0-78642]"
 		SrvPath="mod"
 		Name="mod-kav21-mr8-1313g.xml"
-		Date="11122022 2021"/>
+		Date="16012023 1415"/>
+	<Index
+		CompID="KAV21,KAV21NTR,RETR1901_KAV21,RETR1901_KAV21NTR"
+		Target="[78643-262143]"
+		Name="unmod-kav21-mr8-1313g.xml"
+		Date="16012023 1415"/>
 	<File
 		CompID="RETR1901_KAV21,RETR1901_KAV21NTR"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kav21-mr8-1901g.xml"
-		DSKM="zx2c0A5NvumGAtbczp+nBrw2Y7893zITpnrkrUZvHdI="/>
+		DSKM="rhRTt8s2tdwBVlM9anc2yIvAjZFY6WxoVQ2medvTb3U="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
 </Update>
-;:10KDpDz39dn6QdU5pORRFoyEyqozq03paJvp3IR22hLWtIIJkO5c/1Di39jr/+ATRBJIH5SyJVoPiQqvbdZmdDEJ%%
+;:10K0EDmiC9OqMEP5F7JOkE7kWKb+ptyej0odEeanYcn1lWaIi5LP3cCG6UTYqXSdXk7cDsDHzYb5Z29BPoFWUTMq%%

@@ -1,5 +1,5 @@
 <Update
-	Date="22032022 1926"
+	Date="16012023 1323"
 	ObjectType="2=KSDE21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -19,7 +19,6 @@
 			kldw.exe|mp/NSX6MwUhcKOtUjEeCpWmqw//NtTE6FoiY4JOO+OE=;
 			ucp_agent.dll|znP8UXfMS4FshV3K7AjlXr+rMnUffBJGhNIvcOxV+NM=;
 			ushata.dll|k1iGZJ1Ylj5mibYWGZn5zkGMOmf2LWDiDBcvWuPNlkM=;
-			kasperskylab.ksde.ui.dll|ILVz9OLlE6GQ1z2FXriA8oCPlwHh9DrUM8I1VDnA6y8=;
 			ksdeuimain.dll|4XCsejKg5NcDXvaxmzfzNfTHelLzre6+1muhee8UI3Q="/>
 	<Patches
 		CompID="KSDE21NTR"
@@ -66,7 +65,7 @@
 			pt-PT|../21.5.11.384_ksde_a/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|settings.lt|Em4NcvF7pgrHMdUfL/Nb0Lz+HAYjP09A920JLKZ3QBY=;
 			pt-PT|../21.5.11.384_ksde_a/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|welcomepage.lt|Wud4FVkxqqpP443cdjje8pf06XcslplrSZ0XsQVF5zE=;
 			ru|../21.5.11.384_ksde_a/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|settings.lt|0kq/lGU6qmGLco2ptIgLlYJI0NHtFiT1wKWFii92gy0="/>
-	<Patches
+	<Patch
 		CompID="KSDE21NTR"
 		App="KSDE 21.5.11.384"
 		ApplyPeriod="0"
@@ -74,10 +73,8 @@
 		FixName="b"
 		SrvPath="../21.5.11.384_ksde_b"
 		LocalPath="%ProductFolder%"
-		Item="Name;DSKM"
-		List="
-			kasperskylab.ui.core.dll|KhTA4OCtEvfUKWXTFajOHXOmPjeS5jfXyXcWFHGsdsI=;
-			kasperskylab.ui.core.visuals.dll|l5qu1UmfRyeRWJeLFNnXv8Q/FkDxQ2cqUPhaR3yZUvc="/>
+		Name="kasperskylab.ui.core.visuals.dll"
+		DSKM="l5qu1UmfRyeRWJeLFNnXv8Q/FkDxQ2cqUPhaR3yZUvc="/>
 	<Patch
 		CompID="KSDE21NTR"
 		App="KSDE 21.5.11.384"
@@ -93,14 +90,14 @@
 		CompID="KSDE21NTR"
 		App="KSDE 21.5.11.384"
 		ApplyPeriod="0"
+		ApplyAction="restart_service"
 		FixName="c"
 		SrvPath="../21.5.11.384_ksde_c"
 		LocalPath="%ProductFolder%"
-		Item="ApplyAction;Name;DSKM"
+		Item="Name;DSKM"
 		List="
-			restart_service|product_metainfo.dll|wbBI0A6LBJFYY+wuzmgZrty7c9cmpdm4ZtwDCyLYMmc=;
-			restart_none|ver_info.json|ZnaDVylWFeKmSiuXswyxwybCFtkUI8G8kfXJABg7new=;
-			restart_service|bl_ksde.dll|yEHIIuHQs9BszMSLfkzehW5H60Ctb0nII6FI9ezj2oQ="/>
+			product_metainfo.dll|wbBI0A6LBJFYY+wuzmgZrty7c9cmpdm4ZtwDCyLYMmc=;
+			bl_ksde.dll|yEHIIuHQs9BszMSLfkzehW5H60Ctb0nII6FI9ezj2oQ="/>
 	<Patches
 		CompID="KSDE21NTR"
 		App="KSDE 21.5.11.384"
@@ -112,15 +109,27 @@
 			es-ES|../21.5.11.384_ksde_c/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|datetime.lt|jcxVEFL+vfOADLXqQrv8XW/zPNgqh/2mJAQR7OEpMKM=;
 			ja|../21.5.11.384_ksde_c/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|support.lt|Vzcj04cKP5N4yFczo2mfUgIstHGgfivg+OYs17RD4so=;
 			nl|../21.5.11.384_ksde_c/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|mainwindow.lt|qK/rEpKzjdYYP0REnmXY87fU2qa+HCmIm4xDU4ZXTDI="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		FixName="d"
+		SrvPath="../21.5.11.384_ksde_d"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|kasperskylab.ui.core.dll|UX15Pnu5aPM/iJlrPpGLbw5GZK468dByPltiGp9yZG8=;
+			restart_none|ver_info.json|LXHWr4thLlWSzIg7JLtm0bx6BiPOHl7/2EhcdEknTTo=;
+			restart_service|kasperskylab.ksde.ui.dll|1AbQqdb09D3mXx+VVBRThs8BbxRFCC8vacuAO+0c6uk="/>
 	<File
 		CompID="RETR1901_KSDE21,RETR1901_KSDE21NTR"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-ksde21-mr5-1901g.xml"
-		DSKM="1RWFo5BSiYxbT2jXRNorW71uAflOQkh4A+LSUvgauxY="/>
+		DSKM="K250fnhM6hCzIiSqYKrmAlPZnZ+bc+PERB3qtHP6Zok="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
 </Update>
-;:10a89AjhqXV2tnsBp/SedI/X7uA/5GVnHsgtkeDgc6XFl2ZdcHR0pfCaJHN4PhPixjuBdrdEeZiYzA6FIGmqu0qn%%
+;:10KUh1FyYzG9YiGxeqLf/HAMhdEHi27gBHCubvS5CDJxyvYbvBrbyhsAmzj59tLdrxUwVCyy//3LYwWlXNBh6s3v%%
