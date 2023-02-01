@@ -1,3 +1,7 @@
+https://support.kaspersky.com/dl_kes
+
+https://support.kaspersky.com/corporate/lifecycle
+
 # Kaspersky Database Information
 
 ## Kaspersky Endpoint Security 11 for Windows
