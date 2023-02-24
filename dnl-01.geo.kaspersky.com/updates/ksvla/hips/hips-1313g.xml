@@ -1,18 +1,14 @@
 <Update
-	Date="21022023 2245"
-	BlstDate="21022023 1720"
+	Date="23022023 2245"
+	BlstDate="23022023 1235"
 	ObjectType="2=HIPS;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="4373"
+	MaxDownloadSizeKb="4379"
 	CompID="HIPS2"
 	LocalPath="%BaseFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];SAFEKIDS 1.0.[3-4]">
-			<Except
-				App="KES 11.1.1.126"
-				OS="Win-7,1000"/>
-	</Exclude>
+		App="KES 10.[2-3].*.*;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];SAFEKIDS 1.0.[3-4]"/>
 	<File
 		App="CIP 1.0.0.*;KES 10.[2-3].*.*;KES 11.[0-1].*.*;KIS [14-19];KSVLA;PURE|KSOSPC|KSOSFS|SAAS|KSM [15-19]"
 		Name="intctrl.kdc"
@@ -22,13 +18,13 @@
 		App="KSVLA 5.1"
 		OS="Linux"
 		Name="certdb.dat"
-		DSKM="Egc3ygutNid7J3sOhDMJ6Ky+qT3I95Er5A5lNKX5bWY="/>
+		DSKM="54AAKCCc9xSYEhnudFQAUcvPQfFRJtOc0wZNiA8cq/8="/>
 	<File
 		CompID="HIPS2,CDB"
 		App="!KSC|KES|KAVSDK|KSV|KSVLA *.*.*;KAVSDK 8.[5-8].*.*;KAVSDK 8.9.0.*;KES 10;KES 11.0.*.*;KSV [1-5].*.*;KSVLA 4;KSVLA 5.0.*.*"
 		Shell="bdif;klz;none"
 		Name="certdb.dat"
-		DSKM="Egc3ygutNid7J3sOhDMJ6Ky+qT3I95Er5A5lNKX5bWY="/>
+		DSKM="54AAKCCc9xSYEhnudFQAUcvPQfFRJtOc0wZNiA8cq/8="/>
 	<File
 		OS="Win"
 		Name="version_locales.xms"
@@ -109,20 +105,20 @@
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.1.xms|GwlZyD2RkZE62dy8wjS02HBiiWnSpMjnqegJwdEwL40=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.10.xms|KYNPu3HIv6IiiKTqJvxq5IhRIM14Pjxeo0Oj7Etx5lc=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.104.xms|89LYa4CJbFDAFX416Vq+vsycSr7HDeLH6uE/skSjEx8=;
-			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.12.xms|s6rIiE4qUf4t6Dt6/H8rNPkn5i03QRxmKpaW5c109tA=;
+			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.12.xms|p1d01H8XI//05pB33EviagdSPYsM0uLFC/+9JVahlJw=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.120.xms|CrQ5OCztvI0mGVM0q6skLL2MSrVMyAtXWUzMb9Zwprc=;
-			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.13.xms|HZvmh7pJGAJ0ya5GR0jAV5mwRmDa4/rUdb1Sb7M45lE=;
+			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.13.xms|wNoye7AcpyhrwyjOjnc8Cqw4X10q4z3VihfA2Kdt2Xg=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.14.xms|7oBYgXxNB73RecXW3APJ248Kg0ZuKxfoHrVlghh48WA=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.15.xms|Mo1f+gMcj4N/4nW2r8hfxTPPiNDhLB+UVma/+zCvnE0=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.16.xms|oRfXsbtAAWbokQJSmaEEqTFgjoJOSdIfFe7WjseB9Zg=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.17.xms|US1isMkNnAchhA0MX12qko5wqJ7v28mH2dhDjvkQ3Kc=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.18.xms|8RknOCNd7Gpd4do+qmX4XRBGm+2T9qlTOAfTOVbmK4M=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.2.xms|nqnCaDKAY/IiewEfAmjHfimTdUo63cXYp18J1lAS3zc=;
-			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.3.xms|K9LglE/lphPE49TjVH8Ay3azmb/rxvUGFMxo6k9nFNM=;
+			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.3.xms|m7Rl/1QraESnrBOJSC0VHgmwuRVvchjtY3FAdLoc5QY=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.35.xms|0fenEYPAyRISHk5aBN7Nu2fJ9fT+2Az5aYSXoaESEuo=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.36.xms|svEsigSfuGOydnTVvAD9C6zIQICDLUjGgk+A8NF0WzU=;
 			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.4.xms|SJQwpHJqwEmuUdoYqCW0APTynYf8XZZERMB8sazejq8=;
-			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.index.xms|rHk1CRlpszgakxUv28LLm/D5434PF1MpMVfBRqyYFaY="/>
+			KES 11.[0-1].*.*\;KSC [11-15]\;KSC 10.5.*.*\;KSVLA 5.[0-2]|ckl3|catkl3.index.xms|dQOMJ787MZ8WTl4D//EsOSG/s2efH76wVYvTl+4eE5I="/>
 	<Files
 		App="CIP 1.0.0.*"
 		LocalPath="%DataFolder%"
@@ -192,125 +188,125 @@
 	<File
 		CompID="HASHES_SHA256"
 		Name="hips-1313g.sha2rg"
-		DSKM="7JnKkfKumKMGRkDsIzSdDTAp/yFyqVlEY2PLVVmIYE8="/>
+		DSKM="W5uQ816B0sCySQGjjQoZX9nlVhcMq9YTyOLcffL1eEo="/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 18"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 18"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 19"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 19"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 17"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 17"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS 15"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS 15"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS 14"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS 14"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KES 10"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KES 10"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KES 11"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KES 11"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="!KAV|KIS|KES|PURE [10,11,14-19];PURE 15"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 16"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<Index
 		CompID="HIPS2,RETR1901_HIPS2"
 		App="KAV|KIS|PURE 16"
 		Target="[1-262143]"
 		Name="unmod-hips-1313g.xml"
-		Date="21022023 2245"/>
+		Date="23022023 2245"/>
 	<File
 		CompID="RETR1901_HIPS2,RETR1901_CDB"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="hips-1901g.xml"
-		DSKM="4Bnw+wyTCAfXmvAuesPW3RaTouQQNJvhemsWD9wUXIo="/>
+		DSKM="VUJEvj+u0tuDuExreG4ou9YWwFfKJrShvukpvg4w/TA="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="hips-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADHZy2QD2f1qp5n+JxWm94nRB0+qWsGa1ghBAsWo7cKzQZ9Cj8rp20GLJO87DJ36Rc7kiS2oj6u7N8cjl8LPnYIBAB4JZwAAAAIAAigEAEhJUFMDAAIoBABCQVNFAQAACeOBSGcNCjs6MTBLOWNraVA3TjVLcTZKb3Qyc1FLTG1BR1BudmxIeVFtMG9iSUk0S2duY002OE1CN3pxcU5TY1NwV25ibitTL2VjOUpITXdlMkU5Y01tVjFyOUdpYmJOUCUl</Key>
 </Update>
-;:10KLaXnaWOa95Hc+exgwkrOj+/bbkGlgPNX5GXGoPZSffRKVSAFZfKbSXR5oDEvnaqqh4eGspGZ4dm2CT/62ZOqn%%
+;:10KNerQxXiGcbz4hU/+OlJNc39vva54x6F4+oLdnfYBnYb6GLRqmFowNZ8LFr1Hh1RTkjQRO5zPTWeNaGp53JdU2%%
