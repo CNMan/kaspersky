@@ -1,18 +1,14 @@
 <Update
-	Date="26022023 2200"
-	BlstDate="26022023 1106"
+	Date="27022023 2201"
+	BlstDate="26022023 2306"
 	ObjectType="2=KSN;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="33"
+	MaxDownloadSizeKb="32"
 	CompID="KSN"
 	LocalPath="%DataFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAFEKIDS 1.0.[3-4]">
-			<Except
-				App="KES 11.1.1.126"
-				OS="Win-7,1000"/>
-	</Exclude>
+		App="KES 10.[2-3].*.*;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAFEKIDS 1.0.[3-4]"/>
 	<Files
 		App="KSMG 1.1.[0-2].*"
 		OS="Linux"
@@ -329,7 +325,7 @@
 			KSDE 21.8.*.*|ksn_ksde21_8.xms|XDYsp1HonLDnDcDjIN3/iwC/eIcbqRtNY3eBc9E460A=;
 			KES 21.8.*.*|ksn_kes21_8.xms|PVXZCqV+vTy0RpBTM8AUwzBlzhO8jXeQEcvPgGr6xuI=;
 			KAVMAC 23|ksn_kavmac23.xms|bJXPOSl6MBp6zjjEp8OO3VofIV1KhZitYDpEQx7bY64=;
-			KESMAC 11.3.*|ksn_kesmac11_3.xms|2eYx9AGzymvXXgRFc6USa+oDSe67YdEXal/SLltw7w0=;
+			KESMAC 11.3.*|ksn_kesmac11_3.xms|KBPU4Y8qA4BBa7sVFek+fmwrRAIksS29EUzuHru13wY=;
 			KPMMAC 10.[0-1].0.*|ksn_kpm_mac_10.0.xms|i8GTS7NNSJr5hY0HScSaWcMqOzb3XO71Cbhy0q8KpzI=;
 			KASPERSKY 21.9.*.*|ksn_kaspersky21_9.xms|8I+axTWWnnMq5aUfW2OgwP7zwJfmRApBYKyWCXRREII=;
 			KSOSPC\\|KSOSFS 21.9.*.*|ksn_ksos21_9.xms|BL6Po5g8BnnnwGPqTQF9RP0r0QBe1NxrnmtmlpyqlBM=;
@@ -339,15 +335,15 @@
 	<File
 		CompID="HASHES_SHA256"
 		Name="ksn-1313g.sha2rg"
-		DSKM="4CwNX0giYNUcY2or6GaiWRFWd7V9QdJU1FbUZGg9MGk="/>
+		DSKM="vgBTyRLz64s0Fj3AeMhMpmgkGnp2KJU7UlUPUpcBFdI="/>
 	<File
 		CompID="RETR1901_KSN"
 		Shell="xdif;klz;none"
 		Name="ksn-1901g.xml"
-		DSKM="SVhgH71Zv95mTUhLCpY+M5Yudprnn59x5uEPynGZeqU="/>
+		DSKM="VUVSl2xb6SJMLQY/2pMyZU/RTA56ZHjwsCbh6DGh0a4="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ksn-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHv7UWjxCazxN4NUDun9LwJXO+WMVd4AXSfZ25dzr238KZqJAFQJcOACAnxmp7Kca7f8VU/pQfCHWzGEACm3MjoBAB4JpgAAAAIAAigDAEtTTgMAAigEAEJBU0UBAAAJTsvPSg0KOzoxMDRQdGRSWUZrdlBEbXlNYVpIa3pJcXBmTnB0WWJLYTZNZWhQVGdOVkVNa3hwWktuRDVldXV4ZU9BK0Z1ejJRSGo2enRVcDdJRmlMOTFPWTBXOUNQZGFKJSU=</Key>
 </Update>
-;:10KSMG1VCl264EOP8dBEWKGoJupdkLWCWTocMmWa/NrL0L7EAXmqtAa+BwUXrAqN/D76YdAyjOpqiczLOqnG+4na%%
+;:104T0jGeF0EgisBH0cWqGC81xIDJdJE76x753vE19J3PGisF6WbeJDcftPoZb1B6dsaMlfHsEd9twj3MWT5OU7H2%%
