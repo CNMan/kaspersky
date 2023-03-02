@@ -1,73 +1,73 @@
 <Update
-	Date="14122022 1236"
-	BlstDate="12122022 2245"
+	Date="01032023 1513"
+	BlstDate="01032023 1250"
 	ObjectType="2=APSIG;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="852"
+	MaxDownloadSizeKb="1350"
 	CompID="APSIG"
 	LocalPath="%BaseFolder%">
 	<Files
-		App="KASPERSKY|KSOSPC|KSOSFS|KES 21.9.*.*;KESMAC 11.3"
+		App="KASPERSKY|KSOSPC|KSOSFS|KES 21.[9,13].*.*;KESMAC 11.3"
 		Shell="bdif;klz;none"
 		Item="Name;DSKM"
 		List="
-			sig_phish.dat|aOVkRCJYJttf81fa2l9Z5+BZhaC+kOf6PfHxggPd0qI=;
-			sig_phish_data.dat|g79aBxczvIWgnvYD2f6ZSOJNDQngcHPEL3He1pSoM3Q=;
-			sig_phish_hash.dat|g9Ir4raK3mKIvcYQ5okRQeJtt7XFd+xFbw/1WSpBWa0="/>
+			sig_phish.dat|ABJMprOUF3Pmcq5EpGEf7VRX6Eb7ID1r7QCxpCD2MgM=;
+			sig_phish_data.dat|ASFes7jHZWExxrN5v0lDITB0lqm2eHZfU81/Ewu2GnQ=;
+			sig_phish_hash.dat|brOGqkC7AW58rp6+If/sv1iayiZV123S/z1SaVgK9fM="/>
 	<Index
 		CompID="APSIG,RETR1901_APSIG"
 		App="!KASPERSKY|KES|KESMAC [11,21]"
 		Name="unmod-apsig-1313g.xml"
-		Date="14122022 1236"/>
+		Date="01032023 1513"/>
 	<Index
 		CompID="APSIG,RETR1901_APSIG"
 		App="KASPERSKY 21"
-		Target="0"
+		Target="[0-5242]"
 		SrvPath="mod"
 		Name="mod-apsig-1313g.xml"
-		Date="14122022 1236"/>
+		Date="01032023 1513"/>
 	<Index
 		CompID="APSIG,RETR1901_APSIG"
 		App="KASPERSKY 21"
-		Target="[1-262143]"
+		Target="[5243-262143]"
 		Name="unmod-apsig-1313g.xml"
-		Date="14122022 1236"/>
+		Date="01032023 1513"/>
 	<Index
 		CompID="APSIG,RETR1901_APSIG"
 		App="KES 21"
-		Target="0"
+		Target="[157285-159907]"
 		SrvPath="mod"
 		Name="mod-apsig-1313g.xml"
-		Date="14122022 1236"/>
+		Date="01032023 1513"/>
 	<Index
 		CompID="APSIG,RETR1901_APSIG"
 		App="KES 21"
-		Target="[1-262143]"
+		Target="[0-157284,159908-262143]"
 		Name="unmod-apsig-1313g.xml"
-		Date="14122022 1236"/>
+		Date="01032023 1513"/>
 	<Index
 		CompID="APSIG,RETR1901_APSIG"
 		App="KESMAC 11"
-		Target="0"
+		Target="[0-262142]"
 		SrvPath="mod"
 		Name="mod-apsig-1313g.xml"
-		Date="14122022 1236"/>
+		Date="01032023 1513"/>
 	<Index
 		CompID="APSIG,RETR1901_APSIG"
 		App="KESMAC 11"
-		Target="[1-262143]"
+		Target="262143"
 		Name="unmod-apsig-1313g.xml"
-		Date="14122022 1236"/>
+		Date="01032023 1513"/>
 	<File
 		CompID="RETR1901_APSIG"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="apsig-1901g.xml"
-		DSKM="TTb1XJfq7ZA4xQXRGLbGV4ExARCxzEOMsixH7ZBbQyc="/>
+		DSKM="UEM91FwTegm4Kff23fQzQAfu3GPF6zRtP/XFjU6Q0Sk="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="apsig-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAAJlrzs9USzSU2U6smWByZcOT0QaeN0K3W2tHZJO/wbDYXyEm/Kd0frRPUX0WiVdn6dNQIkRVZ0FoqW/WwFhygoBAB4JGQIAAAIAAigFAEFQU0lHAwACKAQAQkFTRQEAAAlGOLj9DQo7OjEwNDJ5c2t2QVk4Rng1VzhCN0lEcEVTcytmSXdyVVgwQkFncmtkQ3dNUlhYWU9HN2oydUV1MG9Mc2NKNVhsNGFYK2ZSKys3SnhnaS9JTk5GS1doRlpKa1UlJQ==</Key>
 </Update>
-;:104M3kFs0fDzEVlu+venh81/tGqpp5Z7NUYqe9ArGkjkVOHWePZxlOx1n6WwU5qv1OWVzEhm7DwIeYsvWsmQytDt%%
+;:10KLbIC/2OcA6XqUJ8cSXyGZjbHTQoia/z5C6vM8MlD7giocS0eK0TOLyXYfVfI+h8hBRGpPPnBoTJtXGvmdRT++%%
