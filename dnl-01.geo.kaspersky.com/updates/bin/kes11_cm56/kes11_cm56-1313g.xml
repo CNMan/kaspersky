@@ -1,5 +1,5 @@
 <Update
-	Date="22022023 0721"
+	Date="02032023 0407"
 	ObjectType="2=KES11_CM56;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -7,11 +7,7 @@
 	CompID="KES11_CM56"
 	Shell="bdif;klz;none">
 	<Exclude
-		App="KES 11.0.1.90;KES 11.1.[0,1].[126,15919]">
-			<Except
-				App="KES 11.1.1.126"
-				OS="Win-7,1000"/>
-	</Exclude>
+		App="KES 11.0.1.90;KES 11.1.[0,1].[126,15919]"/>
 	<Patches
 		Lang="ar"
 		SrvPath="kes11/kes11_10/aes56/ar"
@@ -1948,6 +1944,64 @@
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*|ksn.txt|sxX3KF4FR9goyR6npzn6S6QiE+7jtNFO2t8NOTAgepM=;
 			KES 11.2.0.*|license.txt|6L0xKEELQs92cV3xEpzIc6RcHVYPR8O/kFkQNa5a+0Q=;
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*|license.txt|6L0xKEELQs92cV3xEpzIc6RcHVYPR8O/kFkQNa5a+0Q="/>
+	<Patches
+		Lang="en"
+		KSN="1"
+		SrvPath="kes11/kes11_12/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_12/aes56/en"
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;PackageID;Name;DSKM"
+		List="
+			KES 11.2.0.*|E02FB1F2-FA44-42AD-B5D1-DE1843B35D41|cleaner_v2.cab|MHKHmxemlm0Akyz+S6DHOEZGxYkD7rfHkzgRE5OlMOQ=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|D9D5D6A9-6F7E-41D4-95CA-B82F79727C1A|cleaner_v2.cab|MHKHmxemlm0Akyz+S6DHOEZGxYkD7rfHkzgRE5OlMOQ=;
+			KES 11.2.0.*|E02FB1F2-FA44-42AD-B5D1-DE1843B35D41|cleanerapi_v2.cab|5G4KoCRjOnrcDo7C3EIAgOG2d/7cOeG4jHmgn2jKFE4=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|D9D5D6A9-6F7E-41D4-95CA-B82F79727C1A|cleanerapi_v2.cab|5G4KoCRjOnrcDo7C3EIAgOG2d/7cOeG4jHmgn2jKFE4="/>
+	<Patches
+		Lang="en"
+		SrvPath="kes11/kes11_12/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_12/aes56/en"
+		Name="description.txt"
+		DSKM="E6kLmbmQw28RJDVpSqsVKL2aq+qQV5ucy+eQ1UjYlLk="
+		KSCMode="Off;OnPrem;B2B"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*"/>
+	<Patches
+		Lang="en"
+		KSN="1"
+		SrvPath="kes11/kes11_12/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_12/aes56/en"
+		Name="kes_win.kud"
+		DSKM="DfzsqtweICyWrQTnVB4nIY45N020s3iprx9HBBwmggQ="
+		KSCMode="Off;OnPrem;B2B"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*"/>
+	<Patches
+		Lang="en"
+		KSN="1"
+		SrvPath="kes11/kes11_12/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_12/aes56/en"
+		Name="kes_win.msi"
+		DSKM="PQ2t/I7ra9XhMRpdz+gX+DVLQFkWwKT6W5S2gGptYF4="
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|E02FB1F2-FA44-42AD-B5D1-DE1843B35D41;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|D9D5D6A9-6F7E-41D4-95CA-B82F79727C1A"/>
+	<Patches
+		Lang="en"
+		SrvPath="kes11/kes11_12/aes56/en"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_12/aes56/en"
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|Md7ORj+oY548lgnoEqqzQZrRNM6rotlxp10ske0+LSA=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|Md7ORj+oY548lgnoEqqzQZrRNM6rotlxp10ske0+LSA=;
+			KES 11.2.0.*|license.txt|IPMXbhBmGNBwBa7SLYadlWR+Z09T1QmVHMGHmiwebNI=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|IPMXbhBmGNBwBa7SLYadlWR+Z09T1QmVHMGHmiwebNI="/>
 	<Patches
 		Lang="ru"
 		KSN="1"
@@ -3907,10 +3961,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kes11_cm56-1901g.xml"
-		DSKM="bD41m5xlrLhdlYLWnlLLwj4bo9lQIyIIX1h4dGrYUss="/>
+		DSKM="leZ+D4k32J+4zDQPhdb2XK79qhomicTZodkCrUsV3Os="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kes11_cm56-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAApzoqLgaRkay2tmr5VGJCGib19Lo2svDVl8EivSw/d3IfwszpZ5b2S0ULDg97C9nUpzBzWFWCNo0rmZ5x+AmakBAB4JiAEAAAIAAigKAEtFUzExX0NNNTYDAAIoAwBCSU4BAAAJLemjSw0KOzoxMGEwRE9Kb0lQWkpYWHlkcGkrOG5Rbmd1VWZRaHQveERkM1FMQ3Z6eUpjUXA2N21uNFZaNkZCSGtTaksvdFNIYWhQUHE5NWZ0ODZvekVsUVZKUXJvdXpzJSU=</Key>
 </Update>
-;:104OjW8teqk0SIm372oEVXNdm0/55dOuuopZZGVRR2joPT25200Sii03rVrYvl17JjfpSAbzGlCiOAZ3+VZgaUv6%%
+;:10a68v7TpAq4DbCH1hPw0oZYPv0DTXva5fxz1wAL+P7ODlpd6kPSgIFxm6G3Csg96MiVWHuDAYIdsLMaXxiq0cjz%%
