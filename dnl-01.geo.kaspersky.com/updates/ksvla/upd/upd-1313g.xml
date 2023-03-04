@@ -1,6 +1,6 @@
 <Update
-	Date="28022023 2130"
-	BlstDate="28022023 1415"
+	Date="03032023 2215"
+	BlstDate="03032023 1107"
 	ObjectType="2=Updater;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,11 +8,7 @@
 	CompID="Updater"
 	LocalPath="%DataFolder%">
 	<Exclude
-		App="KES 10.2.[2,4,5,6].*;KES 10.3.0.6294;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAFEKIDS 1.0.[3-4]">
-			<Except
-				App="KES 11.1.1.126"
-				OS="Win-7,1000"/>
-	</Exclude>
+		App="KES 10.[2-3].*.*;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAFEKIDS 1.0.[3-4]"/>
 	<Files
 		Item="Name;DSKM"
 		List="
@@ -26,9 +22,9 @@
 		Item="App;Name;DSKM"
 		List="
 			AVSL [18,21-22]\;DEEPUNPACK 8.9.2.*\;ESS 3.[1-2].*.*\;KAR\\|KARH 3.0.1.*\;KAR\\|KARH 6.[0-1].0.*\;KAVLOTUS 8.0.[5-*].*\;KAVSDK 8.10.*.*\;KAVSDK 8.9.*.*\;KES [11,21]\;KESMAC 11.2.1.*\;KICS 3.[0-1].*.*\;KICSNET 2.9.*.*\;KICSNET 3.[0-1].*.*\;KICSNET 4.0\;KICSNL 1.3.0.*\;KIS\\|KAV\\|PURE\\|KFA\\|KSDE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KASPERSKY [20-*]\;KPMWIN 10.[0-2].*.*\;KPMWIN 9.0.2.*\;KSB [1-2].0.0.*\;KSC [11-14]\;KSE 9.[6-*].*.*\;KSLS 10.1.[2,4].*\;KSLS 11.[0-3].*.*\;KSMG 2.0.*.*\;KSMO 1.2.*.*\;KUU 4.[0-1].*.*\;KWTS 6.1.0.*\;LENA 3.12\;SAFEKIDS 1.0.5.*\;SOYUZ 3.[11-14].*.*|updcfg2.xml|aAYL4buocTeSeSfB0qZwPbLSm7TrFP5GweYe6NrIJ8Y=;
-			KAR\\|KARH 6.[0-2]\;KASPERSKY\\|KSOSPC\\|KSOSFS\\|KSDE 21.[6-9]\;KAVMAC 23\;KAVSDK 8.10.*\;KESMAC 11.3.*.*\;KFA\\|KAV\\|KIS\\|PURE\\|SAAS\\|KSOSPC\\|KSOSFS\\|KSDE 21.[2-3]\;KIS\\|KAV\\|PURE\\|KFA\\|KSDE\\|KSOSPC\\|KSOSFS\\|SAAS [18,20]\;KPMMAC 10.1\;KPMWIN 10.[2-*]\;KSC 14.2\;KSC 15\;KUMA 2.1\;SAFEKIDS 1.0.5\;SAFEKIDS 23|updcfg3.xms|0885fgZxUsxVFN5xVU7JH/P6sAcpK4/RbH/0VbenO5A="/>
+			KAR\\|KARH 6.[0-2]\;KASPERSKY\\|KSOSPC\\|KSOSFS\\|KSDE 21.[6-9,13]\;KAVMAC 23\;KAVSDK 8.10.*\;KESMAC 11.3.*.*\;KFA\\|KAV\\|KIS\\|PURE\\|SAAS\\|KSOSPC\\|KSOSFS\\|KSDE 21.[2-3]\;KIS\\|KAV\\|PURE\\|KFA\\|KSDE\\|KSOSPC\\|KSOSFS\\|SAAS [18,20]\;KPMMAC 10.1\;KPMWIN 10.[2-*]\;KSC 14.2\;KSC 15\;KUMA 2.1\;SAFEKIDS 1.0.5\;SAFEKIDS 23|updcfg3.xms|0885fgZxUsxVFN5xVU7JH/P6sAcpK4/RbH/0VbenO5A="/>
 	<File
-		App="KES 11.4;KES 21.[2-9]"
+		App="KES 11.4;KES 21.[2-9,13]"
 		SrvPath="kes"
 		Name="updcfg3.xms"
 		DSKM="m9vsGFqMbJ98SP1zfd3YHj/ULPqj8PuANdS8sVp6f7M="/>
@@ -36,10 +32,10 @@
 		CompID="RETR1901_Updater"
 		Shell="xdif;klz;none"
 		Name="upd-1901g.xml"
-		DSKM="6Z3ey+yZdfHZ3BnILGl5J+Cij5a+Y5c/Wi2sftTJcnA="/>
+		DSKM="IpNyg3hcS5OxeeoGzcMGMBpfH027m5BMXWPet6K131k="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="upd-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHZqLsulCw7Vs/RKGBZk9QXx99MyuqZXP+/YkBSzyotwWnqdI3lL4ahPFbNj52uSAVAINLqw1YXkGZK/Ckqtv5EBAB4JDQAAAAIAAigHAFVwZGF0ZXIDAAIoBABCQVNFAQAACavyGqwNCjs6MTBxSys2SCtsamE5S0tGNHY2Uk9DdHF0YktraXhMQjE3QzluQS9RVmgxRXNQRUlBYldwT3JEc08vN3NTOWMrUTFVQVBMdm05TUlocHJMSjBHZUFPS1NNVCUl</Key>
 </Update>
-;:10KHHCaajJuNfi/ER5usEhFN2yAZTpShgtSdpfcdMz8Kzndg04zjPzWxjAuv4RBONsHP+shQQSJcGgKmgWwSpGFG%%
+;:10a9sKeIK8n7lkKT3zrq7/8ZMbXbssbrvrtCgRPOwQwvm8M69Lhzz3+OxV0c/lSgPSmQWvrYsSHkhDaAV17aFo/R%%
