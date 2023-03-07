@@ -1,6 +1,6 @@
 <Update
-	Date="15112022 0712"
-	BlstDate="14112022 2106"
+	Date="06032023 1010"
+	BlstDate="05032023 2305"
 	ObjectType="2=KASPL;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -44,23 +44,29 @@
 		SrvPath="x64/win"
 		Name="ubllist_win_mp1.set.keb"
 		DSKM="qOgktaU8LZZf+a05QaJqLl4O9LvXJbnvHQbnOrrhHDE="/>
-	<File
-		App="KAVSDK 8.10.1.*;KSMG 2.0.[0-1].*"
-		OS="Linux"
+	<Files
 		Arch="x64"
-		SrvPath="x64/nix"
 		ApplyAction="restart_none"
 		LocalPath="%BaseFolder%"
-		Name="ubllist_nix.set.keb"
-		DSKM="Ei5dDdyc3imzC7xZ0QKESXvEitdGQSf/mMX1lMNm12Q="/>
+		Item="App;OS;SrvPath;Name;DSKM"
+		List="
+			KAVSDK 8.10.1.*\;KSMG 2.0.[0-1].*|Linux|x64/nix|ubllist_nix.set.keb|Ei5dDdyc3imzC7xZ0QKESXvEitdGQSf/mMX1lMNm12Q=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|cpconvert.kep|KQzjgQeQxBIjt7G9b+oq9NXK92hgTUO5uxYFoSBeRlY=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|dns_resolver.kep|rzr7pqM64LFlKSwkHXjUo3USD9uqBTp4F3x21vzj6sk=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|engine.kep|S3npugvS9K+sS0sTPgbS0Fyk/An/IwKc7eq/PNYmeDM=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|filtration.kep|LBjJJNXqp1nzjYqCxoH3VLWgJj7U0tn5pK56dlBDqpY=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|gsg.kep|knrgoZBkkkm6DtNvNAtUTewUFBJDAem8OO8wGIRsYyw=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|kas_engine_eka.kep|GPq7q/SB8Q1siFKiFjKhtrwFo3pmRobL3/l56YnF9AU=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|moebius.kep|reVXx4f98Uxu4OeisUyEh7yoX8ACzOL+bPYEWtlP1nY=;
+			KLMS 10.0.*.*|Linuxs-108|x64/nix-108|ubllist_nix.set.keb|e4/InAKSKaGBfAU/dtGa5KaLp0PSLovnxP0Z0eDfWHo="/>
 	<File
 		CompID="RETR1901_KASPL"
 		Shell="xdif;klz;none"
 		Name="mod-kaspl-1901g.xml"
-		DSKM="MkHkk6JM2lUjD190KGP9UHmL+BK022pha0BiIhdULfk="/>
+		DSKM="YwqkLMogKm5gjobX35OCnSiclDMQXPJ7pq4XJspkQwU="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-kaspl-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAACnAfYLJNv9KKjV65TzkAq3roqEasvnvLUQM3Sn+HAFCSSg8i7iU1tP3NEcbAFw7XyGjY44cmBPJQBzZcdrHxnkBAB4JjwEAAAIAAigFAEtBU1BMAwACKAQAQkFTRQEAAAkmdopFDQo7OjEwcUNPTXJGQU5VQUpsSXA3aHZJVXpNWHF1c09vSVRQY0VFK0RZV0wwa3FEL3BaUE0rc3FWbDhoY2t4d2l1UDg1eG9hb2wvdUwzRjFCbjNBcU5sQlJpM1klJQ==</Key>
 </Update>
-;:10K4CtXYl/n+mP53sdQnGOMTzdJBjyyLn0GuFRWiijO9yPtrI/IB4VZERHuM7U03ccevr1l+sFEi6DsYjN8oR88L%%
+;:10aKx4qh4p27AuxAXWCZRRIAxSi3LrzKtF2VTHCgBigmziXnUcBwv1wlFKdJLEclsw8d5o3yNQh6d7qeawsRhUoy%%
