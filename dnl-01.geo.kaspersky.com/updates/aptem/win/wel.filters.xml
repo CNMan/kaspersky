@@ -505,6 +505,8 @@
     </Exclusions>
   </Event>
 
+<!-- too many events. disabled.
+
   <Event Name="NetworkShareAccessedEx.Vista" Id="5145" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Exclusions>
       <Equal OrderNum="14" Value="\\*\IPC$"/>
@@ -547,7 +549,7 @@
 	      <Match OrderNum="15" Value="\??\?:\1C"/>
       </Conjunction>
     </Exclusions>
-  </Event>
+  </Event> -->
 
   <Event Name="SidHistoryAddedToAccount.Vista" Id="4765" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
   <Event Name="AddSidHistoryToAccountFailed.Vista" Id="4766" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
