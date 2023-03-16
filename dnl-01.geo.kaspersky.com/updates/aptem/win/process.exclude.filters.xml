@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-11-29T17:42:00.000Z-1669743724 -->
+	<!-- 2023-03-14T15:18:00.000Z-1678807139 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -189,8 +189,8 @@
 	<Image Id="{66D3B8A3-4346-A685-3E2AA6C87A4FC088}" CmdLine="logonui.exe /flags:0x0 /state0:0x???????? /state1:0x????????" />
 	<Image Id="{387067D8-EC38-5342-88C51DDD942A9B0D}" CmdLine="c:\cntc\stc.exe  - - 0 - c:\atd\atd\ast*" />
 	<Image Id="{D2C3649A-E461-DF81-CF044572E8AB029A}" CmdLine="c:\cntc\stc.exe  - - 0 - wrevis*" />
-	<Image Id="{24A220FE-3D8D-C6C9-A5FE5C1292C0D8EF}" CmdLine="c:\program files (x86)\citrix\ica client\ssonsvr.exe /htc:*" >
-		<Signature Subject="*Citrix*" />
+	<Image Id="{24A220FE-3D8D-C6C9-A5FE5C1292C0D8EF}" CmdLine="c:\program files (x86)\citrix*" >
+		<Signature Subject="Citrix*" />
 	</Image>
 	<Image Id="{34F2D1BB-A7FA-18B3-1D0A24584BA805D9}" CmdLine="c:\windows\microsoft.net\framework*\cvtres.exe /nologo /readonly /machine:*" />
 	<Image Id="{407600C4-DC3C-F963-C01D025AAD3AE60A}" CmdLine="c:\windows\microsoft.net\framework*\mscorsvw.exe -startupevent ??? -interruptevent ? -ngenprocess*" />
@@ -437,9 +437,6 @@
 		<Signature Subject="*Microsoft*" />
 	</Image>
 	<Image Id="{2B22B0CA-A475-0F81-045996766E78A78F}" CmdLine="c:\monitoring\python36\python  c:\monitoring\hw_support\snmpv2ping.py 10.*" />
-	<Image Id="{ECA7EA0B-8F60-01FF-AE0574FAED338080}" CmdLine="c:\program files (x86)\citrix\ica client\ssonsvr.exe /htc:??? /luid:????????????????" >
-		<Signature Subject="*Citrix*" />
-	</Image>
 	<Image Id="{5D66A878-256D-4274-025DC3EE4187162C}" CmdLine="c:\windows\system32\cmd.exe  /s /d /c echo c:\*systemprofile\appdata\local\microsoft\windowsapps; " />
 	<Image Id="{875841F5-72C8-BFB0-C0C3479A40B2DED3}" CmdLine="c:\windows\system32\cmd.exe /c c:\program files (x86)\zecurion\endpoint\mff_*.bat" />
 	<Image Id="{15A094E3-B5A1-4311-0F5CD387C3168A7A}" CmdLine="c:\windows\system32\cmd.exe /c c:\windows\ltcjobs\jobs\ltc\ltc\work\bat\*.bat.log 2&#62;&#62;&#38;1" />
@@ -547,6 +544,35 @@
 	<Image Id="{2F3555AC-6949-0510-08D2AC9C2BE8734E}" CmdLine="*git/hooks/pre-command.exe*" />
 	<Image Id="{61C5919E-45C4-BBAD-DA4714ECE86CC16F}" CmdLine="*git/hooks/post-command.exe*" />
 <!-- Part 0025 2022-11-29T17:42:00.000Z-1669743724 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0026 2023-03-14T15:18:00.000Z-1678807139 -->
+	<Image Id="{D04E8C6F-EE94-60EC-529CF52947A50823}" CmdLine="ctxsession.exe -s 1" >
+		<Signature Subject="Citrix*" />
+	</Image>
+	<Image Id="{51BCE651-1822-F60D-E63094179CDADB4C}" CmdLine="powershell  -NonInteractive [System.Net.Dns]::GetHostByName(($env:computerName)).Hostname" />
+	<Image Id="{D7AC37A8-3AD5-66E1-16641AECD62B8EEE}" CmdLine="cmd /C powershell -NonInteractive [System.Net.Dns]::GetHostByName(($env:computerName)).Hostname" />
+	<Image Id="{EEDCF2B3-247A-99DE-241F23D4D5EA6A01}" Path="C:\Program Files (x86)\FireEye\*" >
+		<Signature Subject="FireEye*" />
+	</Image>
+	<Image Id="{599581BC-41EB-49C9-14175DF65A55C875}" Path="C:\Windows\FireEye*" >
+		<Signature Subject="FireEye*" />
+	</Image>
+	<Image Id="{605CE07F-B830-3E7A-779A07349073ECE2}" Path="C:\tools\Utilities\rebootIndicator.exe" >
+		<VersionInfo FileDescription="Reboot Indicator" ProductName="%kl_undef%" />
+	</Image>
+	<Image Id="{0BF3C1A4-036B-98FC-E45D3DE277F9B126}" Path="C:\Program Files (x86)\Boldon James\*" >
+		<Signature Subject="Boldon James*" />
+	</Image>
+	<Image Id="{C8C218DA-EB59-CD2E-BFC65B0F2619B5A2}" CmdLine="C:\Program Files\Zabbix\bin\zabbix_agentd.exe --config C:\Program Files\Zabbix\conf\zabbix_agentd.conf" >
+		<VersionInfo ProductName="Zabbix" FileDescription="zabbix_agentd.exe" OrignFileName="%kl_undef%" />
+	</Image>
+	<Image Id="{C607C59D-DE06-34C7-C80D6D1E4EDC5BEB}" CmdLine="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle hidden -file C:\Program Files\Zabbix\MainWindow1.ps1" />
+	<Image Id="{116AD76A-5432-CC99-1CE4E8741C399F34}" Path="C:\Program Files (x86)\Cisco\*" >
+		<Signature Subject="Cisco*" />
+	</Image>
+<!-- Part 0026 2023-03-14T15:18:00.000Z-1678807139 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
