@@ -1,10 +1,10 @@
 <Update
-	Date="19032023 2200"
-	BlstDate="19032023 0412"
+	Date="20032023 2200"
+	BlstDate="20032023 1106"
 	ObjectType="2=KSN;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="32"
+	MaxDownloadSizeKb="33"
 	CompID="KSN"
 	LocalPath="%DataFolder%">
 	<Exclude
@@ -85,7 +85,7 @@
 			KAVSDK 8.9.1.*|kc_kavsdkl3_3.xms|KLK2mC7YmB0eHgtxD8PUDxI0jrS2nJY1sT9GB8Upl80=;
 			KAVSDK 8.9.1.*|kh_kavsdkl3_3.xms|2Cg5ItlrLllsUylQs4RJtinNQTYlBqspY4yL960cqK8=;
 			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*|klsrl.xml|u8pg6qAFMD33RZsRqmXFKhkg7XigkwUNaG33b+37VKI=;
-			ESS [2-3].[0-3].*.*\;KES 10.[2-3].*.*\;KES 11.[0-4].*.*\;KES 21.[2-9].*.*\;KESMAC 10.2.*.*\;KESMAC 11.[1-3]\;KESMAC 11.0.[0-1].*\;KICS 2.[0,5,6].*.*\;KICS 3.[0-1].0.*\;KSC *.*.*\;KSLS 10.1.*.*\;KSLS 11.[0-3].*.*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;LENA 3.12.*.*\;LENA 3.9.*.*\;SOYUZ 3.[7-14].*.*\;WSEE [10-11].*.*.*|kpsn_certs.pem|41/MH3g2KAjLjLI509sgczLfVCdyi3ZlVJ059nHIhq4=;
+			ESS [2-3].[0-3].*.*\;KES 10.[2-3].*.*\;KES 11.[0-4].*.*\;KES 21.[2-9,13].*.*\;KESMAC 10.2.*.*\;KESMAC 11.[1-3]\;KESMAC 11.0.[0-1].*\;KICS 2.[0,5,6].*.*\;KICS 3.[0-1].0.*\;KSC *.*.*\;KSLS 10.1.*.*\;KSLS 11.[0-3].*.*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;LENA 3.12.*.*\;LENA 3.9.*.*\;SOYUZ 3.[7-14].*.*\;WSEE [10-11].*.*.*|kpsn_certs.pem|41/MH3g2KAjLjLI509sgczLfVCdyi3ZlVJ059nHIhq4=;
 			KSC 10.*.*.*|kc_sc.xms|JpIPxLwYe+/3EFWfjc8wt3CAHnn2HrzJs4/W1/eJaqY=;
 			KSC 10.[2-4]|ksn_helper.xms|Jly8Iz8dD1VL8wXi6FrkF7wd83HiavWggV56JOgmsl0=;
 			KES 10.[2-3].*.*|kc_kes10sp1.xms|DjF9IGCvZUy9ZhH97FXglJ5PlhKBQ/GFD/EqyCEkh5s=;
@@ -328,19 +328,23 @@
 			KSDE 21.9.*.*|ksn_ksde21_9.xms|k1FYwR+BpR1JtoqDB4yMGMiv83nT6zircejtl4PmeYE=;
 			KES 21.9.*.*|ksn_kes21_9.xms|veT3/0vF6YllIsKR0no8LKCRkwFZqcOD3LTCeHeoVcc=;
 			KAR\\|KARH 6.2.0.*|ksn_config_ar62.xms|G5cs2FcoDwItBUg+nC7aBAqC+jtzFc2K27DdWXpp6SU=;
-			KLMS 10.0|ksn_config_klms10.xms|Q+gYhckfIQ5YB2gUMDzKXunC8nXBt0jSZXiCIPhnM28="/>
+			KLMS 10.0|ksn_config_klms10.xms|Q+gYhckfIQ5YB2gUMDzKXunC8nXBt0jSZXiCIPhnM28=;
+			KASPERSKY 21.13.*.*|ksn_kaspersky21_13.xms|aXQgrO9/Mce0YKVb4XVSrXriLBjRgbcO91SA8mqtL7A=;
+			KSOSPC\\|KSOSFS 21.13.*.*|ksn_ksos21_13.xms|tmvxALDgQajquuATBT+IzWOzVeAewgyjH2coJzMG0jA=;
+			KSDE 21.13.*.*|ksn_ksde21_13.xms|HNmjSkejPT//N6rf/zVEBVskHHTgcw5klON6QvKUx6w=;
+			KES 21.13.*.*|ksn_kes21_13.xms|L0Rk4qFPBTts41V40h3hFec3aLrIJ2TS1wPlPMAocS4="/>
 	<File
 		CompID="HASHES_SHA256"
 		Name="ksn-1313g.sha2rg"
-		DSKM="cMtZCBHn980XVTHTeGmN9fkCqW2ynwdh02tNjm+MbrA="/>
+		DSKM="16owg0la3yMtwYH6x/NQ5sS+L3y2RWQgWeea+DnmfE0="/>
 	<File
 		CompID="RETR1901_KSN"
 		Shell="xdif;klz;none"
 		Name="ksn-1901g.xml"
-		DSKM="2NYwX6Y6fEMU81oMhKQt12/rtf6KCnUM+fA5fJY1hgs="/>
+		DSKM="P9/zEztwil2ypfBBaGGddZi2KR5qKf5YFBt8ECmc048="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ksn-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHv7UWjxCazxN4NUDun9LwJXO+WMVd4AXSfZ25dzr238KZqJAFQJcOACAnxmp7Kca7f8VU/pQfCHWzGEACm3MjoBAB4JpgAAAAIAAigDAEtTTgMAAigEAEJBU0UBAAAJTsvPSg0KOzoxMDRQdGRSWUZrdlBEbXlNYVpIa3pJcXBmTnB0WWJLYTZNZWhQVGdOVkVNa3hwWktuRDVldXV4ZU9BK0Z1ejJRSGo2enRVcDdJRmlMOTFPWTBXOUNQZGFKJSU=</Key>
 </Update>
-;:10KRCJpIRSAgpYd08CP/9YhcNVT/Bhg8ZwOtxvldLUOLuF54U7+N6vUuyv9CGk16FgH9qYb6D2R2BjbjzD+Aj6Au%%
+;:10KF6cK9AXYv+Ksdhbyeh+kHzhng+Nx3hc9UNzAYwcfOevJyTb2/3b2SMyEDx4PFpmwuNkqobXyXnnyUnjaHhqfK%%
