@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-12-19T18:16:00.000Z-1671473819 -->
+	<!-- Version: 2023-03-21T10:59:00.000Z-1679396361 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -10,36 +10,6 @@
 	</File>
 	<File Id="{2F416AAC-3F26-6C33-A5DD56F20872F304}" FilePath="*\Microsoft\Group Policy\History\?????????-????-????-????-?????????????\*\Preferences\Services\*.xml" >
 		<Process Path="*system32\svchost.exe" />
-	</File>
-	<File Id="{C204B815-A923-B86B-0AF36F407D08E92F}" FilePath="*\google\chrome\user data\default\local extension settings\????????????????????????????????\??????.???" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{4A442333-B70A-10EB-9091A16226CAE293}" FilePath="*\google\chrome\user data\browsermetrics\browsermetrics-????????-???.pma" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{46633ED4-B3A9-0EB6-09D205E789E58D30}" FilePath="*\google\chrome\user data\default\*\log" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{E4658601-884B-9C5B-B7A64385365B5415}" FilePath="*\google\chrome\user data\default\*-journal" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{D4C66955-C8DB-E783-81F7949FADC20D98}" FilePath="*\google\chrome\user data\default\search logos\metadata" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{07AB3B53-A2D8-0099-6AF9A3F85B529C3C}" FilePath="*\admin\appdata\local\google\chrome\user data\default\search logos\logo" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{955E7079-CF51-0B74-2FFD7BC380CA0E1A}" FilePath="*\google\chrome\user data\default\current session" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{37813EF6-64D5-4631-226CCC34F6D519D7}" FilePath="*\google\chrome\user data\crashpadmetrics-active.pma" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{F377E233-B514-6991-8E6E5E8BEA9001C5}" FilePath="*\google\chrome\user data\default\data_reduction_proxy_leveldb\manifest-??????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{DC5D8E67-B3B4-C2C1-396BACAF4EAFC468}" FilePath="*google\chrome\user data\default\code cache\js\index-dir\temp-index" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
 	</File>
 	<File Id="{1FC11CBF-A4F7-2CF7-F7455EDB5B16DF51}" FilePath="?:\$extend\$deleted\????????????????????????" >
 		<Process Path="*\google\chrome\application\chrome.exe" />
@@ -166,15 +136,6 @@
 	<File Id="{A6FB80B1-CE9A-2753-3B5AB3BA7D22D677}" FilePath="*appdata\local\temp\vscode-chrome-debug-userdatadir_????\default\code cache\js\????????????????_?" >
 		<Process Path="*\google\chrome\application\chrome.exe" />
 	</File>
-	<File Id="{32C6DA7A-49F2-84BF-D2F104B94F75F645}" FilePath="*\local\google\chrome\user data\default\service worker\cachestorage\????????????????????????????????????????\????????-????-????-????-????????????\????????????????_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{95D084B4-9269-B129-1132384E074125CD}" FilePath="*\local\google\chrome\user data\default\service worker\scriptcache\????????????????_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{418170CB-EF31-514B-A4CCB03E6023F61B}" FilePath="*\local\google\chrome\user data\default\sync data\leveldb\??????.ldb" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
 	<File Id="{223B74CB-D7B8-2710-16DC6E8629D4F95B}" FilePath="*\favorites\global it servicedesk.url" >
 		<Process Path="*system32\svchost.exe" />
 	</File>
@@ -190,10 +151,14 @@
 		<Process Path="*\windowsapps\microsoft.office.onenote_*\onenoteim.exe" />
 	</File>
 	<File Id="{FEDD1F1B-723E-3180-8E996370DB911B87}" FilePath="*appdata\local\temp\??????.png" >
-		<Process Path="*\microsoft office\office??\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{E005793C-0657-511D-A2AF05F45D6F868D}" FilePath="*appdata\local\microsoft\windows\inetcache\ie\????????\macro-icon*.png" >
-		<Process Path="*\microsoft office\office??\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{D7D159B2-9B6A-3185-AC1A3CF610F64896}" FilePath="*\programdata\microsoft\group policy\history\{*" >
 		<Process Path="*system32\svchost.exe" />
@@ -212,15 +177,6 @@
 	</File>
 	<File Id="{C3B62B9B-8BA5-560C-92934A10C9BDD156}" FilePath="*programdata\microsoft\windows\devicemetadatacache\????.idx" >
 		<Process Path="*system32\svchost.exe" />
-	</File>
-	<File Id="{1672AB39-5426-6311-55AD1E8D3AA3269A}" FilePath="*appdata\local\google\chrome\user data\profile ?\indexeddb\https_docs.google.com_0.indexeddb.leveldb\log" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{1CD2E4F3-5627-92F7-8EE965503FFA5BAA}" FilePath="*appdata\local\google\chrome\user data\profile ?\cache\?_??????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{AD390567-D342-9AB8-5D5BE9150688A111}" FilePath="*appdata\local\google\chrome\user data\profile ?\code cache\js\????????????????_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
 	</File>
 	<File Id="{525ADE5D-16C3-0B01-6BCF639F88898580}" FilePath="*appdata\local\temp\vscode-chrome-debug-userdatadir_*\default\cache\?_??????" >
 		<Process Path="*\google\chrome\application\chrome.exe" />
@@ -342,7 +298,9 @@
 		<Process Path="*system32\svchost.exe" />
 	</File>
 	<File Id="{DCC20A9A-E8BF-ABC0-46CF07F014588C02}" FilePath="*\outlook logging\prof_*.txt" >
-		<Process Path="*\microsoft office\office??\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{10FC6164-6183-7E5E-0782686E26608CB5}" FilePath="*\local\microsoft\onedrive\setup\logs\standaloneupdate_*.log" >
 		<Process Path="*appdata\local\microsoft\onedrive\onedrivestandaloneupdater.exe" />
@@ -352,9 +310,6 @@
 	</File>
 	<File Id="{3C487ACD-15D6-FAC0-8D9EB1E7536C31F4}" FilePath="*\programdata\kasperskylab\adminkit\data\.updater\~.upd_temp\temporaryfolder\updates\*.xml" >
 		<Process Path="*\Program Files (x86)\kaspersky lab\networkagent\up2date.exe" />
-	</File>
-	<File Id="{A1DEF134-4D2B-33C5-3076776F6FF99532}" FilePath="*\local\google\chrome\user data\default\indexeddb\*\??????.ldb" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
 	</File>
 	<File Id="{D62631FB-4F5D-AAF2-E70C2716B15B813C}" FilePath="*appdata\local\packages\microsoft.windowscommunicationsapps_?????????????\localstate\hxcommalwaysonlog.etl" >
 		<Process Path="*\Program Files\windowsapps\microsoft.windowscommunicationsapps_*\hxtsr.exe" />
@@ -382,9 +337,6 @@
 	</File>
 	<File Id="{30CF4B9F-0216-FAC7-E5432E07E0C9C9D4}" FilePath="*\Program Files\postgresql\??\data\pg_stat_tmp\db_?.tmp" >
 		<Process Path="*\Program Files\postgresql\??\bin\postgres.exe" />
-	</File>
-	<File Id="{AD23EBE5-8474-0668-B15A2BD034748E5E}" FilePath="*\local\google\chrome\user data\profile ?\cache\?_??????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
 	</File>
 	<File Id="{BC3FD61D-36D7-E68F-C6BFD4BE6094995A}" FilePath="*\local\mozilla\firefox\profiles\*\safebrowsing-updating\*\*.metadata" >
 		<Process Path="*\mozilla firefox\firefox.exe" />
@@ -517,9 +469,6 @@
 	<File Id="{59B6299B-2892-DA97-9C14B4F50EA1D854}" FilePath="*\git_sparse\product\test\corporate\endpoint\framework\emulation\disks\bin\framework\*" >
 		<Process Path="*\msbuild.exe" />
 	</File>
-	<File Id="{C2B6DFA6-C9F7-C317-A44469D7F4B294F6}" FilePath="*\local\google\chrome\user data\default\indexeddb\*.ldb" >
-		<Process Path="*\Google\Chrome\Application\chrome.exe" />
-	</File>
 	<File Id="{340C3CA5-3E4C-91A9-33091011D5EEEAA8}" FilePath="*\jetbrains\transient\resharperplatform*" >
 		<Process Path="*\ide\devenv.exe" />
 	</File>
@@ -550,14 +499,8 @@
 	<File Id="{8A9DA3C2-B86C-9B7A-FD0E5A3B523CF61B}" FilePath="*\local\temp\*\compile_commands.json" >
 		<Process Path="*\ide\devenv.exe" />
 	</File>
-	<File Id="{758AC93A-1FE1-0F4F-6B28C47761BE937B}" FilePath="*\local\vivaldi\user data\default\*" >
-		<Process Path="*\local\vivaldi\application\vivaldi.exe" />
-	</File>
 	<File Id="{D3B36B52-F48E-A92A-8BB2F8A67CD80D44}" FilePath="*\roaming\microsoft\windows\cookies\*.txt" >
 		<Process Path="*\microsoft\teams\current\teams.exe" />
-	</File>
-	<File Id="{19918902-ECA8-4FE6-E1A340B5F1BF011A}" FilePath="*appdata\local\google\chrome\user data\*" >
-		<Process Path="*appdata\local\google\chrome\application\chrome.exe" />
 	</File>
 	<File Id="{0489C80B-C6A3-F151-9E5C3C90FBF77F97}" FilePath="*appdata\local\jetbrains\plugins\jetbrains.externalannotations*" >
 		<Process Path="*\ide\devenv.exe" />
@@ -584,7 +527,9 @@
 		<Process Path="*\windows\explorer.exe" />
 	</File>
 	<File Id="{1DEDB4B4-5DFE-D1C0-AEDCD31F5089910F}" FilePath="*appdata\local\microsoft\windows\inetcache\ie\*" >
-		<Process Path="*\microsoft office\office??\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{B46C9894-819E-1ED6-4F8803BFA9A961B4}" FilePath="*appdata\local\microsoft\windows\inetcache\ie\*" >
 		<Process Path="*\Internet Explorer\iexplore.exe" />
@@ -780,36 +725,6 @@
 	<File Id="{5F1F34C0-CB30-08FD-0646A98A31EAC49E}" FilePath="*atlassian\sourcetree.exe_url_*.newcfg" >
 		<Process Path="*sourcetree\app*\sourcetree.exe" />
 	</File>
-	<File Id="{EB99162C-CC1F-2B71-280BCAAAD70F660D}" FilePath="*\user data*\????????-????-*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{16903FFF-B629-1A50-005583C73B8A04A6}" FilePath="*\user data*\????????-????-*.tmp" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{2EB65F27-F2F0-E031-8EEB527AD5C85948}" FilePath="*\user data*cache\?_??????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{067BC977-7D2E-DBCE-DAEE9D53D6E7ED6A}" FilePath="*\user data*cache\?_??????" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{D6183607-962A-2A4C-D6F49ADA8E555E76}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{A70BBBB3-2B54-8F1B-D7DF901B4EF08D87}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{66A6C55B-3D40-76F9-49DB11BC12B25F0B}" FilePath="*\user data*\??????.log" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{50DCA1FB-A6B2-6257-2AEE15D4DDB08D13}" FilePath="*\user data*\??????.log" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{BDCC3EAC-E673-EA54-5A68569B451FBC95}" FilePath="*\user data*\??????.ldb" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{7DA81ED6-2C1E-F8C3-0B836BD029B46571}" FilePath="*\user data*\??????.ldb" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
 	<File Id="{1B6E084C-83B4-7D7C-ABA0CBD3CB2D7617}" FilePath="*microsoft\team foundation\*.curcache" >
 		<Process Path="*\common7\ide\devenv.exe" />
 	</File>
@@ -848,201 +763,6 @@
 	</File>
 	<File Id="{85D134ED-AD50-AB6F-3B570CD381F3F932}" FilePath="?:\windows\system32\config\systemprofile\appdata\local\tpm-????-????-????????.tmp" >
 		<Process Path="?:\windows\system32\provtool.exe" />
-	</File>
-	<File Id="{03FB299C-491C-A750-BCD2E84437E4ADF3}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{34B3DD1C-0879-3340-412C6B729CCF940C}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{D887A9E6-68EB-A87A-FAE7BA629B44EA33}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{37BADB70-2810-3FCE-D37B7D0EF40BC38C}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{B3BFA198-430E-8193-797F71A9F45AAF17}" FilePath="*\user data\default\preferences" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{55954BC5-CF13-B563-E41BD9EB0D05AB4A}" FilePath="*\user data\default\preferences" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{101830B7-2940-F062-9678BCD78472B268}" FilePath="*\user data\default\preferences" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{299FD09C-0B6B-0C46-75A74BCDFD0FF178}" FilePath="*\user data\default\preferences" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{7C1D99D2-92FE-EED8-CA579B65C2ECD282}" FilePath="*\user data\local state" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{0DF485B1-CE51-01A7-E1E7AF0D83515F3D}" FilePath="*\user data\local state" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{44C32AA0-7720-0D93-6C6702EEA1421A1A}" FilePath="*\user data\local state" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{A6CC5818-F89C-6396-039693C2B26FBEB9}" FilePath="*\user data\local state" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{3FE19A1E-D765-094F-A7E1FA39CB117724}" FilePath="*appdata\local\temp\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{530B6CBE-7C66-92A0-1DEFE977A205E71C}" FilePath="*appdata\local\temp\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{F959E365-B29B-5CB8-FDFB08F67559B6C0}" FilePath="*appdata\local\temp\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{A3915E50-99CD-7CA5-FA63EDD5A58A27EC}" FilePath="*appdata\local\temp\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{42A5509F-43A5-A2A2-9AB70E3311520BAB}" FilePath="*\user data\crashpadmetrics*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{CEC4A033-07EB-CCF3-01B36A0D050E525A}" FilePath="*\user data\crashpadmetrics*.tmp" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{4AF05FC9-FE86-CE3A-777A5770B8DE1599}" FilePath="*\user data\crashpadmetrics*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{56D7D2C8-AB9A-A37D-EEC56B50A40C66A4}" FilePath="*\user data\crashpadmetrics*.tmp" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{B363C3D1-AF75-847C-00869A7217E3EF3F}" FilePath="*\user data\default\*~rf*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{20E9A00E-DC04-0E1C-DEFBC15F80F5B0E7}" FilePath="*\user data\default\*~rf*.tmp" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{284DCD44-85DD-B092-2250A0D7EBC53F45}" FilePath="*\user data\default\*~rf*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{55D0B15C-0B22-FB92-A980EDD2266F970E}" FilePath="*\user data\default\*~rf*.tmp" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{D901ABDF-7F2A-9136-5E1ADAD0D9785A0B}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{8372A5F2-E21A-D6D5-401F8A0EA3BCC3AE}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{3CD7FDD7-4E95-1A04-A81BE3276D2B91D8}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{F319B925-583F-67B5-AA8188A858317F4C}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{504AAF7E-BC2D-AF95-0D11F6ABB5D6A94D}" FilePath="*\user data\profile 1\transportsecurity" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{2810C7C7-A7BD-26DE-C7683FD622DAF5A9}" FilePath="*\user data\profile 1\transportsecurity" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{1F90E17A-004A-A13B-8C910D97938497F0}" FilePath="*\user data\profile 1\transportsecurity" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{EB68396F-9A34-587E-9D0C2E7D6BCE3A0D}" FilePath="*\user data\profile 1\preferences" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{A743BDAD-2279-B331-B69021E45C5A8EBD}" FilePath="*\user data\profile 1\preferences" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{47C799FF-5285-AA3D-A7D62FB87BC1D82A}" FilePath="*\user data\profile 1\preferences" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{F3739D4D-24E7-BF01-732BD5F1A53DD573}" FilePath="*\user data\profile 1\*~rf*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{56B73EAD-C584-B66B-04CAE72A77E9624C}" FilePath="*\user data\profile 1\*~rf*.tmp" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{AB9EA0FA-57FB-5500-0AC707079B20C2C1}" FilePath="*\user data\profile 1\*~rf*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{5E2139CB-7AE3-5413-9CC3CE25F4F8B6F5}" FilePath="*\user data\browsermetrics\browsermetrics-????????-????.pma" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{89DAD172-B0E6-3CFD-18C0F07598023568}" FilePath="*\user data\browsermetrics\browsermetrics-????????-????.pma" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{FE5C94E1-84AF-A323-A36E432866390112}" FilePath="*\user data\browsermetrics\browsermetrics-????????-????.pma" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{72B2DE28-3561-A4C1-825AFD3C96604C43}" FilePath="*\user data\browsermetrics\browsermetrics-????????-????.pma" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{734C0F7E-58A1-0C0E-4ABF38EB62873D00}" FilePath="*\user data\default\service worker\cachestorage\*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{BCD18223-2A4B-0162-2C70B2450D15C43A}" FilePath="*\user data\default\service worker\cachestorage\*" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{CC070AF0-8F17-A3B6-E3E4D524ED98A9F5}" FilePath="*\user data\default\service worker\cachestorage\*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{5F2F10C7-2D10-C030-4B8BFB7569D19037}" FilePath="*\user data\default\service worker\cachestorage\*" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{40E5D80A-0BD1-50EE-BD6FDCB1D1CEF858}" FilePath="*\user data\default\*_?????????????????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{24F5E9B2-4EA3-C465-7600E955E832B008}" FilePath="*\user data\default\*_?????????????????" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{3638A68B-FAA6-39E9-40C388FBBC28DAEE}" FilePath="*\user data\default\*_?????????????????" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{4AB4E8A0-E1A9-2C92-94FE725FAA8A7F51}" FilePath="*\user data\default\*_?????????????????" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{A562D05D-9F0B-6643-9167E007C9451C00}" FilePath="*\user data\default\indexeddb\*.indexeddb.*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{2779536F-4A3C-9740-C64EE56C7D422C30}" FilePath="*\user data\default\indexeddb\*.indexeddb.*" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{A7BD458C-DA01-3B4C-5A7F70DAEEF33EE9}" FilePath="*\user data\default\indexeddb\*.indexeddb.*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{4080449B-B9CA-A32A-2EF762FA69648316}" FilePath="*\user data\default\indexeddb\*.indexeddb.*" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{92E270A8-6F96-C232-2C8FFAECBB05521B}" FilePath="*\user data\profile 1\indexeddb\*.indexeddb.*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{F95FF61C-851C-39E6-185D3397C2BAE46A}" FilePath="*\user data\profile 1\indexeddb\*.indexeddb.*" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{FE519975-57EE-4AED-05D0F3AD0004CD66}" FilePath="*\user data\profile 1\indexeddb\*.indexeddb.*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{0ACCBA74-E82F-3EB2-0ABAA63FE9727930}" FilePath="*\user data\profile 1\indexeddb\*.indexeddb.*" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{5352E35F-8474-FF51-2B4974593E6F5613}" FilePath="*\user data\profile 1\service worker\cachestorage\*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{00CE7C8D-73F8-8A09-E417CF25131E0B25}" FilePath="*\user data\profile 1\service worker\cachestorage\*" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{0D96F054-67AC-DAB8-C8AE13269373AF2B}" FilePath="*\user data\profile 1\service worker\cachestorage\*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{7AE8A446-5BBE-D155-D07BD2513CEEE6AF}" FilePath="*\user data\profile 1\service worker\cachestorage\*" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
-	</File>
-	<File Id="{E262E200-5858-F7C7-EB9B90213EE14E90}" FilePath="*\user data\profile 1\*_?????????????????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{FCC26418-6CC1-AB9D-F7D7710B804993DE}" FilePath="*\user data\profile 1\*_?????????????????" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" />
-	</File>
-	<File Id="{499583FA-30FF-C6EA-E104AC803F28292D}" FilePath="*\user data\profile 1\*_?????????????????" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{9DF167FB-77F1-813A-628364FF17C922A0}" FilePath="*\user data\profile 1\*_?????????????????" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
 	</File>
 	<File Id="{74F73F5B-8270-28E0-F323726B6549FA36}" FilePath="*appdata\local\temp\scoped_dir*.tmp" >
 		<Process Path="*\google\chrome\application\chrome.exe" />
@@ -1150,10 +870,14 @@
 		<Process Path="*\office*\ucmapi.exe" />
 	</File>
 	<File Id="{CDA94A86-31FE-FB06-C044A63EED5122DB}" FilePath="*\microsoft\outlook\*@*.*.xml" >
-		<Process Path="*\office*\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{21B8F28F-D195-2B9D-986E002520069641}" FilePath="*\microsoft\windows\inetcache\content.*" >
-		<Process Path="*\office*\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{A896BE79-52CD-B260-2D6F20E70A20D3CD}" FilePath="*\microsoft\windows\inetcache\content.*" >
 		<Process Path="*\office*\winword.exe" />
@@ -1177,7 +901,9 @@
 		<Process Path="*\internet explorer\iexplore.exe" />
 	</File>
 	<File Id="{9F348FE9-C6B3-9312-8D85FE9096034809}" FilePath="*\microsoft\windows\inetcache\ie\????????\*" >
-		<Process Path="*\office*\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{FEB456F8-4632-370E-51C7F626547C486B}" FilePath="*\microsoft\windows\inetcache\ie\????????\*" >
 		<Process Path="*\office*\winword.exe" />
@@ -1216,7 +942,9 @@
 		<Process Path="*\internet explorer\iexplore.exe" />
 	</File>
 	<File Id="{E2731BF3-3A5D-257D-95772210100C82B6}" FilePath="*\microsoft\windows\inetcache\low\ie\????????\*" >
-		<Process Path="*\office*\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{E4355293-2582-3A38-BAE363E66144E251}" FilePath="*\microsoft\windows\inetcache\low\ie\????????\*" >
 		<Process Path="*\office*\winword.exe" />
@@ -1261,7 +989,9 @@
 		<Process Path="*\internet explorer\iexplore.exe" />
 	</File>
 	<File Id="{0F2D649D-3474-2F3D-9FA5F1EAC52A3EAC}" FilePath="*appdata\local\temp\~df????????????????.tmp" >
-		<Process Path="*\office*\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{B0C5B15E-AFAF-9B72-0446B1D50DB2B573}" FilePath="*appdata\local\temp\~df????????????????.tmp" >
 		<Process Path="*\common*\ide\devenv.exe" />
@@ -1273,10 +1003,14 @@
 		<Process Path="*\office*\ucmapi.exe" />
 	</File>
 	<File Id="{B224AB6C-4901-7BA7-A490136A66B19EFD}" FilePath="*appdata\local\temp\hsc*.tmp" >
-		<Process Path="*\office*\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{56422ED9-5E93-B066-E391DC3CEBBC2805}" FilePath="*appdata\local\temp\tmp????.tmp" >
-		<Process Path="*\office*\outlook.exe" />
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{607BFB90-D3C4-5BC1-C03F4B992BA717BB}" FilePath="*\code\cacheddata\*" >
 		<Process Path="*\programs\microsoft vs code\code.exe" />
@@ -1344,10 +1078,10 @@
 	<File Id="{C3737412-9168-FA0C-71B630E67997397F}" FilePath="c:\windows\system32\config\systemprofile\appdata\local\*.tmp*" >
 		<Process Path="c:\windows\system32\wbem\wmiprvse.exe" />
 	</File>
-	<File Id="{93C9B977-B39C-852A-62976FCABEB28609}" FilePath="c:\windows\temp\klsc-*" >
+	<File Id="{93C9B977-B39C-852A-62976FCABEB28609}" FilePath="*temp\klsc-*" >
 		<Process Path="*\kaspersky lab\networkagent\vapm.exe" />
 	</File>
-	<File Id="{D2432503-2C60-D363-42798042792BD535}" FilePath="c:\windows\temp\klsc-*" >
+	<File Id="{D2432503-2C60-D363-42798042792BD535}" FilePath="*temp\klsc-*" >
 		<Process Path="*\kaspersky lab\networkagent\klnagent.exe" />
 	</File>
 	<File Id="{CE42E691-D150-91E1-CE047C2A38FFE3ED}" FilePath="*\idx\?\_??.???" >
@@ -1357,9 +1091,6 @@
 		<Process Path="*tomcat\bin\tcmsearchhost.exe" />
 	</File>
 	<File Id="{DB828BF4-48CE-89D3-1295436694205A6C}" FilePath="c:\programdata\kaspersky lab\tw*" Operation="Delete" />
-	<File Id="{0E88DC16-550F-CFBC-0AFB035DD2226A23}" FilePath="*\local\temp\????????-????-????-????-????????????.tmp" Operation="Delete" />
-	<File Id="{1F133771-7E99-3658-D1BB2CBDD7EC1912}" FilePath="*\user data\default\????????-????-????-????-????????????.tmp" Operation="Delete" />
-	<File Id="{4B9A9C2D-0ABD-B7D4-7C1E6EA2E8BB26D9}" FilePath="*\user data\profile 1\????????-????-????-????-????????????.tmp" Operation="Delete" />
 	<File Id="{DD319E92-FE53-DD8B-96569EC2C8F29784}" FilePath="*health service state\health service store\edb?????.log" >
 		<Process Path="*\microsoft monitoring agent\agent\healthservice.exe" >
 			<Signature Subject="*Microsoft*" />
@@ -1597,24 +1328,6 @@
 	<File Id="{1B081D85-AEFC-B79E-96361365DC0C8271}" FilePath="*.common.services\*.tmp" >
 		<Process Path="*\microsoft vs code\code.exe" />
 	</File>
-	<File Id="{DCFD7F3A-B839-C1EA-08A370A23B976887}" FilePath="*\user data\default\cache\f_??????" >
-		<Process Path="*\application\msedge.exe" />
-	</File>
-	<File Id="{E263B144-E93D-156D-756537711CCF0C30}" FilePath="*\user data\default\cache\f_??????" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{32DBE361-B896-8B08-66E164CBA0CBA4F2}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*\application\msedge.exe" />
-	</File>
-	<File Id="{02147C4B-C6BF-2D81-B4C1CCF81F9DF3A7}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
-	<File Id="{F6B8BA3D-05AA-E09D-D5E939F737E4BBDB}" FilePath="*\user data\*~rf*.tmp" >
-		<Process Path="*\application\msedge.exe" />
-	</File>
-	<File Id="{D70F9921-D3E5-1406-84503A019359B0BC}" FilePath="*\user data\*~rf*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" />
-	</File>
 	<File Id="{9301F703-7276-1822-4508DE8355B0E487}" FilePath="*\microsoft\office\*.cache" >
 		<Process Path="*\office16\lync.exe" />
 	</File>
@@ -1645,11 +1358,15 @@
 	<File Id="{3A0DEBBB-D03F-0637-C8596AF35A7466A6}" FilePath="*appdata\local\temp\interceptor(20*.log" >
 		<Process Path="c:\windows\system32\searchprotocolhost.exe" />
 	</File>
-	<File Id="{B7CE98D1-25FA-F60D-77FBEA661266C514}" FilePath="*appdata\local\temp\mso????.tmp" >
-		<Process Path="*\office*\outlook.exe" />
+	<File Id="{B7CE98D1-25FA-F60D-77FBEA661266C514}" FilePath="*appdata\local\temp*mso????.tmp" >
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
-	<File Id="{FA10155F-F2F5-E7BE-FE7898E776D5C863}" FilePath="*appdata\local\temp\olk????.tmp" >
-		<Process Path="*\office*\outlook.exe" />
+	<File Id="{FA10155F-F2F5-E7BE-FE7898E776D5C863}" FilePath="*appdata\local\temp*olk????.tmp" >
+		<Process Path="*office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{E8FDEFD1-E7F2-7E12-70918CA6EF8FD550}" FilePath="*appdata\local\temp\nglclient_cc*.log" >
 		<Process Path="*\libs\node.exe" />
@@ -1666,19 +1383,19 @@
 	<File Id="{050AE5E2-332A-B72D-C3376C6ADF889194}" FilePath="*appdata\local\temp\res????.tmp" >
 		<Process Path="c:\windows\microsoft.net\framework\v*\csc.exe" />
 	</File>
-	<File Id="{1E85D3C3-8D51-48FE-19C1A0071042140C}" FilePath="c:\windows\temp\res????.tmp" >
+	<File Id="{1E85D3C3-8D51-48FE-19C1A0071042140C}" FilePath="*temp\res????.tmp" >
 		<Process Path="c:\windows\microsoft.net\framework\v*\vbc.exe" />
 	</File>
-	<File Id="{268C6471-AF9B-DD6C-44055A965B602638}" FilePath="c:\windows\temp\res????.tmp" >
+	<File Id="{268C6471-AF9B-DD6C-44055A965B602638}" FilePath="*temp\res????.tmp" >
 		<Process Path="c:\windows\microsoft.net\framework\v*\cvtres.exe" />
 	</File>
-	<File Id="{0E19E678-7753-21BB-05D5E02A37A1826B}" FilePath="c:\windows\temp\res????.tmp" >
+	<File Id="{0E19E678-7753-21BB-05D5E02A37A1826B}" FilePath="*temp\res????.tmp" >
 		<Process Path="c:\windows\microsoft.net\framework\v*\csc.exe" />
 	</File>
-	<File Id="{5C8C28F6-CCAF-6E96-EC67A9EFF88D4591}" FilePath="c:\windows\temp\tmp????.tmp" >
+	<File Id="{5C8C28F6-CCAF-6E96-EC67A9EFF88D4591}" FilePath="*temp\tmp????.tmp" >
 		<Process Path="c:\windows\microsoft.net\framework\v*\csc.exe" />
 	</File>
-	<File Id="{D961A0E8-A898-769C-FF9AE9A865C57528}" FilePath="c:\windows\temp\tmp????.tmp" >
+	<File Id="{D961A0E8-A898-769C-FF9AE9A865C57528}" FilePath="*temp\tmp????.tmp" >
 		<Process Path="*\bin\tcmpublisher.exe" />
 	</File>
 	<File Id="{720DD2A1-CC7B-057A-B74A1F8092580989}" FilePath="*appdata\local\temp\screentogif\recording\20*" >
@@ -1695,9 +1412,6 @@
 	</File>
 	<File Id="{25247875-C3F3-5CC1-6A8A2AA0C3BBD354}" FilePath="*appdata\local\temp\vstfsbuild\*" >
 		<Process Path="*\common*\ide\devenv.exe" />
-	</File>
-	<File Id="{6055FA86-29F4-CF85-FBF6B7AF4E8C8D67}" FilePath="*appdata\local\vivaldi\user data\default\*cache\*" >
-		<Process Path="*\vivaldi\application\vivaldi.exe" />
 	</File>
 	<File Id="{71DE3CBC-AD05-AB73-BD25BB70B6EAC31D}" FilePath="*appdata\locallow\microsoft\windows\appcache\*" >
 		<Process Path="c:\windows\system32\taskhostw.exe" />
@@ -1733,7 +1447,7 @@
 	<File Id="{E285C450-4B05-B605-7AFDFCADB26106A7}" FilePath="c:\windows\microsoft.net\framework64\v*\temporary asp.net files\webui\*" >
 		<Process Path="c:\windows\system32\inetsrv\w3wp.exe" />
 	</File>
-	<File Id="{7BD456ED-60D1-0F93-FF0C6EFBE6D20B79}" FilePath="c:\windows\temp\tcm_?-???????-?????_*" >
+	<File Id="{7BD456ED-60D1-0F93-FF0C6EFBE6D20B79}" FilePath="*temp\tcm_?-???????-?????_*" >
 		<Process Path="c:\windows\system32\inetsrv\w3wp.exe" />
 	</File>
 	<File Id="{C48C103A-083E-B464-8B06697A8DBD927F}" FilePath="*\tcm_?-???????-?????.content*" >
@@ -1748,73 +1462,67 @@
 	<File Id="{32C2D8A5-D44E-1A20-5F3D7E79042B5895}" FilePath="*\web\webui\webroot\thumbnailcache\*" >
 		<Process Path="c:\windows\system32\inetsrv\w3wp.exe" />
 	</File>
-	<File Id="{D5DFA4F1-6E32-0D75-C2C83D719060A5A7}" FilePath="c:\windows\temp\.opera\*" >
+	<File Id="{D5DFA4F1-6E32-0D75-C2C83D719060A5A7}" FilePath="*temp\.opera\*" >
 		<Process Path="*\opera\*\opera_autoupdate.exe" />
 	</File>
-	<File Id="{F6D00822-DBBD-5D1A-A23684CB58BF10BE}" FilePath="c:\windows\temp\__psscriptpolicytest_????????.???.psm1" >
+	<File Id="{F6D00822-DBBD-5D1A-A23684CB58BF10BE}" FilePath="*temp\__psscriptpolicytest_????????.???.psm1" >
 		<Process Path="*\microsoft monitoring agent\agent\monitoringhost.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{11192D13-2972-FC3E-8A644DC2271E58F1}" FilePath="c:\windows\temp\__psscriptpolicytest_????????.???.psm1" >
-		<Process Path="c:\windows\system32\windowspowershell\v1.0\powershell.exe" />
-	</File>
-	<File Id="{7CEB0BB3-EE54-3B3F-DC880155A1F5EA48}" FilePath="c:\windows\temp\__psscriptpolicytest_????????.???.psm1" >
+	<File Id="{7CEB0BB3-EE54-3B3F-DC880155A1F5EA48}" FilePath="*temp\__psscriptpolicytest_????????.???.psm1" >
 		<Process Path="c:\windows\system32\remotefxvgpudisablement.exe" />
 	</File>
-	<File Id="{CA75DCF7-321C-F5C9-3E6CEC6997856AB3}" FilePath="c:\windows\temp\__psscriptpolicytest_????????.???.ps1" >
+	<File Id="{CA75DCF7-321C-F5C9-3E6CEC6997856AB3}" FilePath="*temp\__psscriptpolicytest_????????.???.ps1" >
 		<Process Path="*\microsoft monitoring agent\agent\monitoringhost.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{FB39EF8E-D62E-4444-B4EC083B738B84AF}" FilePath="c:\windows\temp\__psscriptpolicytest_????????.???.ps1" >
-		<Process Path="c:\windows\system32\windowspowershell\v1.0\powershell.exe" />
-	</File>
-	<File Id="{099922C4-0B0F-E053-C3912933EE885FDE}" FilePath="c:\windows\temp\__psscriptpolicytest_????????.???.ps1" >
+	<File Id="{099922C4-0B0F-E053-C3912933EE885FDE}" FilePath="*temp\__psscriptpolicytest_????????.???.ps1" >
 		<Process Path="c:\windows\system32\remotefxvgpudisablement.exe" />
 	</File>
-	<File Id="{BA5E6031-0BA8-7D9C-97F0BB9C4D0E5224}" FilePath="c:\windows\temp\????????.???.ps1" >
+	<File Id="{BA5E6031-0BA8-7D9C-97F0BB9C4D0E5224}" FilePath="*temp\????????.???.ps1" >
 		<Process Path="*\microsoft monitoring agent\agent\monitoringhost.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{D06908FC-E7DD-7733-F9146D1EE3F6191E}" FilePath="c:\windows\temp\????????.???.ps1" >
+	<File Id="{D06908FC-E7DD-7733-F9146D1EE3F6191E}" FilePath="*temp\????????.???.ps1" >
 		<Process Path="c:\windows\system32\windowspowershell\v1.0\powershell.exe" />
 	</File>
-	<File Id="{7EEFB7A7-4EE9-E5FA-AA3B5AF33C1BE337}" FilePath="c:\windows\temp\????????.???.ps1" >
+	<File Id="{7EEFB7A7-4EE9-E5FA-AA3B5AF33C1BE337}" FilePath="*temp\????????.???.ps1" >
 		<Process Path="c:\windows\system32\remotefxvgpudisablement.exe" />
 	</File>
-	<File Id="{4DDA7FE0-5E44-BFEE-5E2E50663E29F2DA}" FilePath="c:\windows\temp\????????.???.psm1" >
+	<File Id="{4DDA7FE0-5E44-BFEE-5E2E50663E29F2DA}" FilePath="*temp\????????.???.psm1" >
 		<Process Path="*\microsoft monitoring agent\agent\monitoringhost.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{49E620C9-D652-3FB5-AED0001B72AFCFE0}" FilePath="c:\windows\temp\????????.???.psm1" >
+	<File Id="{49E620C9-D652-3FB5-AED0001B72AFCFE0}" FilePath="*temp\????????.???.psm1" >
 		<Process Path="c:\windows\system32\windowspowershell\v1.0\powershell.exe" />
 	</File>
-	<File Id="{65A4A430-EE75-533B-1C9F3181ACC7FE34}" FilePath="c:\windows\temp\????????.???.psm1" >
+	<File Id="{65A4A430-EE75-533B-1C9F3181ACC7FE34}" FilePath="*temp\????????.???.psm1" >
 		<Process Path="c:\windows\system32\remotefxvgpudisablement.exe" />
 	</File>
-	<File Id="{C475F467-1D30-8ED3-63B0CC18DC94915D}" FilePath="c:\windows\temp\????????\????????.?.cs" >
+	<File Id="{C475F467-1D30-8ED3-63B0CC18DC94915D}" FilePath="*temp\????????\????????.?.cs" >
 		<Process Path="*\microsoft monitoring agent\agent\monitoringhost.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{E5B19A99-731B-77C4-13B7F98FF5B5D8FD}" FilePath="c:\windows\temp\????????\????????.?.cs" >
+	<File Id="{E5B19A99-731B-77C4-13B7F98FF5B5D8FD}" FilePath="*temp\????????\????????.?.cs" >
 		<Process Path="c:\windows\system32\windowspowershell\v1.0\powershell.exe" />
 	</File>
-	<File Id="{A8B81057-1268-ED15-0B284BBD88695BB3}" FilePath="c:\windows\temp\????????\????????.?.cs" >
+	<File Id="{A8B81057-1268-ED15-0B284BBD88695BB3}" FilePath="*temp\????????\????????.?.cs" >
 		<Process Path="c:\windows\system32\remotefxvgpudisablement.exe" />
 	</File>
-	<File Id="{4A3B3887-E695-B665-505D80FFDB61A7A4}" FilePath="c:\windows\temp\????????\????????.cmdline" >
+	<File Id="{4A3B3887-E695-B665-505D80FFDB61A7A4}" FilePath="*temp\????????\????????.cmdline" >
 		<Process Path="*\microsoft monitoring agent\agent\monitoringhost.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{D0947266-1E1E-F9D6-1132464815FED0D6}" FilePath="c:\windows\temp\????????\????????.cmdline" >
+	<File Id="{D0947266-1E1E-F9D6-1132464815FED0D6}" FilePath="*temp\????????\????????.cmdline" >
 		<Process Path="c:\windows\system32\windowspowershell\v1.0\powershell.exe" />
 	</File>
-	<File Id="{A21FA8D3-28D6-8D58-765BEC51ABE2F27C}" FilePath="c:\windows\temp\????????\????????.cmdline" >
+	<File Id="{A21FA8D3-28D6-8D58-765BEC51ABE2F27C}" FilePath="*temp\????????\????????.cmdline" >
 		<Process Path="c:\windows\system32\remotefxvgpudisablement.exe" />
 	</File>
 	<File Id="{28C78B11-A121-89B1-17CCDAA7499471DB}" FilePath="*\eventing\database\d20*" >
@@ -1849,132 +1557,6 @@
 	</File>
 	<File Id="{E14E579A-3853-2E35-554358DB8083313A}" FilePath="*\temp\*_????????.tmp" >
 		<Process Path="*\bin\tcmsearchhost.exe" />
-	</File>
-	<File Id="{C0E50608-4132-25F3-94CCABDA7E885DA5}" FilePath="*\google\chrome\user data\*.usage" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{6173E071-014E-B5FD-8C8B95FE401C151D}" FilePath="*\google\chrome\user data\*\????????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{568D4EDA-B733-5776-C0111ED1B5E60BB1}" FilePath="*\google\chrome\user data\*\??????.log" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{52AC9516-D3CD-DE2C-A31ED52666DFE160}" FilePath="*\google\chrome\user data\*\??????.dbtmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{C280F518-C618-3ED6-186F400D6ADB220C}" FilePath="*\google\chrome\user data\*\????????????????_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{5FD47647-C889-0877-011FD7CB3642DBD2}" FilePath="*\google\chrome\user data\*\?" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{DB7D760F-27BD-714D-87CD66D9451EDE8A}" FilePath="*\google\chrome\user data\*\??" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{C9E0437D-4ABB-7B19-165CB6E8CA3942D9}" FilePath="*\google\chrome\user data\*\????????-guid.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{C398BEAB-5864-16B0-7E9EB4C56C822746}" FilePath="*\google\chrome\user data\*\browsermetrics-spare.pma*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{53ABE362-EB32-4C2E-EB6BEDDDC06D208F}" FilePath="*\google\chrome\user data\*\chrome_shutdown_ms.txt" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{60FF33FD-A336-7B3C-CE1E34FBB6961A7D}" FilePath="*\google\chrome\user data\*\chromeextmalware.store*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{8EE110A8-9A5B-053F-316CC2337B02E811}" FilePath="*\google\chrome\user data\*\crashpadmetrics.pma" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{E546DCC5-E077-6DF4-61E035589EA57B71}" FilePath="*\google\chrome\user data\*\crl-set" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{837E34EF-D49E-E149-C8379BC0E8AA7031}" FilePath="*\google\chrome\user data\*\current" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{0DF70DE2-7334-9BE6-889B881B9A118639}" FilePath="*\google\chrome\user data\*\data_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{B58D670C-5273-2ACD-EC75915C6B9F9874}" FilePath="*\google\chrome\user data\*\f_??????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{4AEAD52D-F427-6693-1E0E71A1307D23F8}" FilePath="*\google\chrome\user data\*\favicons" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{266802A9-6961-6EB5-E3B34A35D840A1E9}" FilePath="*\google\chrome\user data\*\history provider cache" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{793A2883-A8C8-7135-BBC8A82127BD97F5}" FilePath="*\google\chrome\user data\*\history" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{6667F2E7-FAC8-B428-D0399C5775B5A891}" FilePath="*\google\chrome\user data\*\index" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{FA30A4FB-8596-35E2-4BE51C3E155A5243}" FilePath="*\google\chrome\user data\*\last *" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{FB9943E7-0B71-FD69-22E2C1B4372A0CDD}" FilePath="*\google\chrome\user data\*\license" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{097090C6-8321-6873-967F557AA7057D9C}" FilePath="*\google\chrome\user data\*\lockfile" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{E9423E29-B322-012F-B0786B0E7E152694}" FilePath="*\google\chrome\user data\*\log.old" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{3D553692-7100-BFA8-82E37B1B7DE020A8}" FilePath="*\google\chrome\user data\*\logo" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{1755DFCD-A39C-ABC1-9F0274AD7C0EB89F}" FilePath="*\google\chrome\user data\*\manifest-??????" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{5E02C8FB-3F84-3F26-DB483AAD2254D562}" FilePath="*\google\chrome\user data\*\manifest.*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{EF40A81B-F3C2-6A11-6CB300DC0181AD9A}" FilePath="*\google\chrome\user data\*\module info cache*" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{EE3AF214-9CB5-A0FF-7FE3C2733E07FC4E}" FilePath="*\google\chrome\user data\*\network *" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{5518F860-4215-4689-C713BA3488286620}" FilePath="*\google\chrome\user data\*\nigori.bin" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{361F3014-66BD-87FD-42530237EAAFC0FB}" FilePath="*\google\chrome\user data\*\quotamanager" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{0DA70088-4264-5FBC-A21B963BD1838E17}" FilePath="*\google\chrome\user data\*\safety_tips.pb" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{9E3487BC-A88B-C5C2-6B07FE0A26C47FF0}" FilePath="*\google\chrome\user data\*\serenity.s??" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{34C8FF1F-C171-B9C0-6DA580CC10608BF8}" FilePath="*\google\chrome\user data\*\settings.???" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{565E3321-F654-FCDE-EA547112822F3C92}" FilePath="*\google\chrome\user data\*\smashtest-meta.s??" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{48307E0B-6140-0F11-2AC3BD27F268A1F2}" FilePath="*\google\chrome\user data\*\temp-index" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{B9BEBE8C-C547-5F98-E422A02DE74AD3C6}" FilePath="*\google\chrome\user data\*\the-real-index" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{B688AC5C-E153-3A97-AAFC9D64B64513D9}" FilePath="*\google\chrome\user data\*.store" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{151EE506-4D95-3A1F-CBBCEE8FA85708B1}" FilePath="*\google\chrome\user data\*.store_mew" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{9B013883-B81D-32ED-1FA2352564895EB5}" FilePath="*\google\chrome\user data\*\verified_contents.json" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{BD4F0259-355E-C27C-BFC8CE20CB7DFA71}" FilePath="*\google\chrome\user data\*\visited links" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
-	</File>
-	<File Id="{D2E7AD17-710B-A5B2-30B55A95EE3FFBE0}" FilePath="*\google\chrome\user data\*\web data" >
-		<Process Path="*\google\chrome\application\chrome.exe" />
 	</File>
 
 <!-- ############################################################################################################### -->
@@ -2080,11 +1662,6 @@
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{8BE0FA86-A0D0-B09F-726A0337060DCA2E}" FilePath="*\google\chrome\user data\safe browsing\url*" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*Google*" />
-		</Process>
-	</File>
 	<File Id="{4A6D616F-FA10-DB8D-67EE849C00B2E2B8}" FilePath="*appdata\local\temp\vbcscompiler\analyzerassemblyloader\????????????????????????????????\*" >
 		<Process Path="*\professional\msbuild\current\bin\roslyn\vbcscompiler.exe" >
 			<Signature Subject="*Microsoft*" />
@@ -2100,11 +1677,6 @@
 			<Signature Subject="*Kaspersky*" />
 		</Process>
 	</File>
-	<File Id="{7EEF0A8A-3BCB-2D6D-D0CA1CCA8778E350}" FilePath="*\google\chrome\user data\safe browsing\urlmalware.store_new" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*Google*" />
-		</Process>
-	</File>
 	<File Id="{1C524C46-934C-A2F8-BA98F815EA9B706B}" FilePath="*\ccm\statemessagestore.sdf" >
 		<Process Path="*system32\wbem\wmiprvse.exe" >
 			<Signature Subject="*Microsoft*" />
@@ -2113,21 +1685,6 @@
 	<File Id="{E625A3B5-8CB6-9516-2DA68AB63BAA77FB}" FilePath="*\microsoft\teams\cs_skylib\cs_shared.*" >
 		<Process Path="*\microsoft\teams\current\teams.exe" >
 			<Signature Subject="*Microsoft*" />
-		</Process>
-	</File>
-	<File Id="{4C91EE7E-2D75-B754-0BE7F4EABA36CA6C}" FilePath="*\user data\default\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*Google*" />
-		</Process>
-	</File>
-	<File Id="{CDF10B08-BEC1-B5C8-D6B70A807CB0A4F5}" FilePath="*\user data\default\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\microsoft\edge\application\msedge.exe" >
-			<Signature Subject="*Microsoft*" />
-		</Process>
-	</File>
-	<File Id="{F798F443-739B-3D96-88972A8CAB477B5C}" FilePath="*\user data\default\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*Yandex*" />
 		</Process>
 	</File>
 	<File Id="{78061CE0-9CF9-98AF-60D1C0607A44CFD1}" FilePath="?:\.gvfscache\????????????????????????????????\*" >
@@ -2173,11 +1730,6 @@
 			<Signature Subject="*Google*" />
 		</Process>
 	</File>
-	<File Id="{7F788FDC-032E-BE5E-0BDF5C14AE982A00}" FilePath="*\google\chrome\user data\crashpadmetrics.pma" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*Google*" />
-		</Process>
-	</File>
 	<File Id="{C80F0526-42E1-2935-9522FC8EC41F1C7A}" FilePath="*\google\drive\user_default\uploader.db-wal" >
 		<Process Path="*\google\drive\googledrivesync.exe" >
 			<Signature Subject="*Google*" />
@@ -2211,11 +1763,6 @@
 	<File Id="{C7DD259C-A550-750C-86E99E9223A1F9BF}" FilePath="*appdata\local\temp\casesensitivetest????????????????????????????????" >
 		<Process Path="*\professional\msbuild\current\bin\msbuild.exe" >
 			<Signature Subject="*Microsoft*" />
-		</Process>
-	</File>
-	<File Id="{235D5F4F-30D4-9E32-F4C865A78AE693DD}" FilePath="*\yandex\yandexbrowser\user data*\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\Yandex\YandexBrowser\Application\browser.exe" >
-			<Signature Subject="*Yandex*" />
 		</Process>
 	</File>
 	<File Id="{249393E2-AC5B-EE89-C7B361160D4806F1}" FilePath="*\microsoft\skype for desktop\transportsecurity" >
@@ -2293,12 +1840,12 @@
 			<Signature Subject="*Slack*" />
 		</Process>
 	</File>
-	<File Id="{7B3CF567-7273-3B3D-A1E7DB46F4CA0D7A}" FilePath="*\documents\outlook files\~archive.pst.tmp" >
+	<File Id="{7B3CF567-7273-3B3D-A1E7DB46F4CA0D7A}" FilePath="*documents*.pst.tmp" >
 		<Process Path="*\office*\outlook.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{F63A31E2-2091-A7A1-C6F09D3382E108DE}" FilePath="*outlook\~archive.pst.tmp" >
+	<File Id="{F63A31E2-2091-A7A1-C6F09D3382E108DE}" FilePath="*outlook*.pst.tmp" >
 		<Process Path="*\office*\outlook.exe" >
 			<Signature Subject="*Microsoft*" />
 		</Process>
@@ -2717,46 +2264,6 @@
 			<Signature Subject="*mozilla*" />
 		</Process>
 	</File>
-	<File Id="{9756B8C4-30B2-7F19-8A0756D1630192A5}" FilePath="*\user data\default\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{E3413FB6-1955-61B3-0A61BC670FD71269}" FilePath="*\user data\default\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{D7EE26AF-6657-FACC-2B9FD4179F2A0EC1}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{1D9C411C-E351-D972-98DFE8B8D5E7EF03}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{D69BF341-F908-5114-A60A6374BA6C404F}" FilePath="*\user data\profile 2\preferences" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{A194AAE6-EF56-8081-944EF5C636316CDC}" FilePath="*\user data\profile 2\preferences" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{3AD9BAA0-D8AE-EBF5-7313D299CBCC391A}" FilePath="*\user data\profile 2\transportsecurity" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{8B64E6BF-54BC-A0FE-99AFBE94101D918D}" FilePath="*\user data\profile 2\transportsecurity" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
 	<File Id="{6D407298-E70E-62E9-E77DD89E8FEE15D9}" FilePath="*microsoft\windows\explorer\iconcache_16.db" >
 		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
 			<Signature Subject="*google*" />
@@ -2773,76 +2280,6 @@
 		</Process>
 	</File>
 	<File Id="{0ED8F106-D4AB-EFD4-536133FE7AB0930B}" FilePath="*microsoft\windows\explorer\iconcache_idx.db" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{08462CEF-6507-E007-F8758706A30AE3AC}" FilePath="*\user data\default\cache\f_??????" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{0D38FDB5-3D6C-1C14-2E0658F4AF6F3D6A}" FilePath="*\user data\default\cache\f_??????" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{445A4477-CF86-BAF4-F017B6C93DE39CF6}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{1999F634-205E-BFAA-A5F4AA7F6E370C80}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{EE561B50-9C06-FF6F-B38A3D27F874C6AB}" FilePath="*\user data\default\service worker\scriptcache\????????????????_?" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{F43DC3F9-D091-F4AF-4B31874CD3D4DEDE}" FilePath="*\user data\default\service worker\scriptcache\????????????????_?" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{BFA75F11-0577-25FE-6B7208F4BB6359ED}" FilePath="*\user data\default\extensions\*\messages.json" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{F2BF75C5-8926-0B77-6EF2129CEE8D0897}" FilePath="*\user data\default\extensions\*\messages.json" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{19E3B879-2C54-E481-A33B2EF13B243B9C}" FilePath="*\user data\default\indexeddb\https_*.indexeddb.blob\*" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{6C136A41-3FEE-C839-5E1B60D22A9EB051}" FilePath="*\user data\default\indexeddb\https_*.indexeddb.blob\*" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{AAE4AE3B-A657-6AD9-91D7DC5301F1A43F}" FilePath="*\user data\default\local storage\leveldb\??????.ldb" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{BC9887C8-CCF5-5139-62B01DC89C0C471F}" FilePath="*\user data\default\local storage\leveldb\??????.ldb" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{B283354A-077E-C234-F504835CC21E9941}" FilePath="*\user data\default\*~rf*.tmp" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{B7169BA4-12D7-5CA7-206E44D01DC05DC0}" FilePath="*\user data\default\*~rf*.tmp" >
 		<Process Path="*\google\chrome\application\chrome.exe" >
 			<Signature Subject="*google*" />
 		</Process>
@@ -2917,76 +2354,6 @@
 			<Signature Subject="*google*" />
 		</Process>
 	</File>
-	<File Id="{627F6A6B-3CA1-5A55-23D9ED877B315D8B}" FilePath="*\user data\configs\*_*.json" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{472CCD7B-3E42-90A6-0DECDAB17BF40C72}" FilePath="*\user data\configs\*_*.json" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{DBEF3296-D12D-A3B5-F8C6B4B86BA25708}" FilePath="*\user data\crashpad*" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{B18F741C-E6CC-BBFD-E8B6C9365E716B45}" FilePath="*\user data\crashpad*" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{193C737D-ACD6-DF42-8CEB7095003E6173}" FilePath="*\user data\grshadercache\gpucache\*" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{4523B195-574B-7DE7-9B62A75E576631B2}" FilePath="*\user data\grshadercache\gpucache\*" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{1D43A78A-56DB-DD20-C0DFD258ADFB32A6}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{2E2739AD-73B7-FAC1-98C7DC1CEA07A317}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{06234741-46A6-18BA-9F0FA5DF81E43B7E}" FilePath="*\user data\module info cache~rf*.tmp" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{CB534274-77BD-70F0-7A212CD17B1C1390}" FilePath="*\user data\module info cache~rf*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{CD7AE9F3-A55D-7EDC-74314291F170984B}" FilePath="*\user data\profile*~rf*.tmp" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{FAFB41B8-CACD-2253-CDE4395E2A68A3A8}" FilePath="*\user data\profile*~rf*.tmp" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{C72D9F18-563C-BE16-5B12DC1868839205}" FilePath="*\user data\smartscreen\remote\synchronouslookup*" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{3524316A-2849-A025-28F0543CBEA8C8F6}" FilePath="*\user data\smartscreen\remote\synchronouslookup*" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
 	<File Id="{5F975990-7F73-3058-4846C295C8537E97}" FilePath="?:\users\*\downloads\unconfirmed *.crdownload" >
 		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
 			<Signature Subject="*google*" />
@@ -3003,176 +2370,6 @@
 		</Process>
 	</File>
 	<File Id="{AF5CB52C-2BB0-6664-1F01E304E7ECEF05}" FilePath="*\nvidia corporation\drs\nvapptimestamps" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{EF6096D5-AB0A-F75A-8D99B16F6586DC44}" FilePath="*\user data\browsermetrics-spare.*" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{61B1FAE7-5245-E06F-F899BA70F24C28C9}" FilePath="*\user data\browsermetrics-spare.*" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{37E4151E-47F6-F46A-F8C683CD17D1D10F}" FilePath="*\user data\chrome_shutdown_ms.txt" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{3A086A63-54AE-F434-2DD0E51A30C58294}" FilePath="*\user data\chrome_shutdown_ms.txt" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{3AFB3ACE-0360-9BBA-6E9301330E4162A7}" FilePath="*\user data\default\bookmarks" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{A707E18D-DEB9-CCAD-93F75DA9036679D1}" FilePath="*\user data\default\bookmarks" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{EDE22527-E820-5B91-827844028659CF68}" FilePath="*\user data\default\code cache\js\index-dir\temp-index" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{5637011A-7E30-5C11-34BB02B66BC1B51D}" FilePath="*\user data\default\code cache\js\index-dir\temp-index" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{9176F87F-11F6-D40A-5986D3CF69C9C382}" FilePath="*\user data\default\code cache\js\index-dir\the-real-index" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{1A8AFF8A-D12E-968E-9DDE17EEDCF4B72F}" FilePath="*\user data\default\code cache\js\index-dir\the-real-index" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{27FE0C26-38ED-2C18-C0CDF6AA34A0E22E}" FilePath="*\user data\default\cookies" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{43CD0C5A-1A24-8A14-03640B1782534EA9}" FilePath="*\user data\default\cookies" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{13C5DF60-D529-3596-2AE948282E0E93C0}" FilePath="*\user data\default\downloadmetadata" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{BB64A410-7D7A-F05E-8E098153A63BA483}" FilePath="*\user data\default\downloadmetadata" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{8DDC91B3-F4E6-F962-DEDDDAB1C98BB874}" FilePath="*\user data\default\preferences" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{CDF2A5A3-4AB7-9706-8BE86A2F96F129A2}" FilePath="*\user data\default\preferences" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{64381EE2-85B6-5027-A512F616C5378EC6}" FilePath="*\user data\default\sync data\nigori.bin" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{2D8A0E46-6CE2-A501-71D5B6D0496D0493}" FilePath="*\user data\default\sync data\nigori.bin" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{C4D5B1FB-0E05-3508-A2C3CBF7212386AD}" FilePath="*\user data\last browser" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{7293FEF4-35C7-3481-9B30C3FFF6AD3C97}" FilePath="*\user data\last browser" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{679A37AF-3D77-050D-55D1A06230455DB0}" FilePath="*\user data\last version" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{F3E9BA1C-BD08-D597-B88AAF4EE091AB2F}" FilePath="*\user data\last version" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{3D8FC5A7-2CEA-22A7-194633842308BEF5}" FilePath="*\user data\local state" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{D28BEC24-E357-6F14-F42A3A9F50E99D52}" FilePath="*\user data\local state" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{777980B0-AE8B-B3AE-BED26C9F44756BEB}" FilePath="*\user data\lockfile" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{30054316-BEB1-76D5-F32940F3AB139B32}" FilePath="*\user data\lockfile" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{0FF8235F-55A3-E5CF-CBB03E2DD50E8A22}" FilePath="*\user data\module info cache" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{F2353D65-8E64-BDA4-F8A7690B1BAF2664}" FilePath="*\user data\module info cache" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{4B9B4CFF-8CDC-9442-D801ACE2D0988CC7}" FilePath="*\user data\profile ?\preferences" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{7CD9122D-CEB9-13D8-BE41C532A9570753}" FilePath="*\user data\profile ?\preferences" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{4FB30DAC-7896-F851-A067C20DEAB4401F}" FilePath="*\user data\profile ?\transportsecurity" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{85B9960F-F992-A372-F4FAC3C122D7C98A}" FilePath="*\user data\profile ?\transportsecurity" >
-		<Process Path="*\google\chrome\application\chrome.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{E7C5C8C7-0CF5-EE5E-99C34D743F22E52A}" FilePath="*\user data\tab lifetime" >
-		<Process Path="*\google\chrome\application\*\installer\setup.exe" >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{23C7B527-F6FE-AA0E-BDF73E6770FC2C1A}" FilePath="*\user data\tab lifetime" >
 		<Process Path="*\google\chrome\application\chrome.exe" >
 			<Signature Subject="*google*" />
 		</Process>
@@ -3257,67 +2454,12 @@
 			<Signature Subject="*google*" />
 		</Process>
 	</File>
-	<File Id="{94FD22C5-B35E-8ECD-4ADFA40E08C4E3A6}" FilePath="*user data\default\????????-????-????-????-????????????.tmp" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{C3327E2C-A41E-33D4-06F26F21C7A9F399}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{C299329A-1880-6307-9F4B38866C55CD20}" FilePath="*\user data\profile 2\preferences" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{060EF8ED-8247-B0C1-B99FE4C503DF0DE8}" FilePath="*\user data\profile 2\transportsecurity" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
 	<File Id="{07EC2A03-547C-2B59-7078ECB393F0849C}" FilePath="*microsoft\windows\explorer\iconcache_16.db" >
 		<Process Path="*microsoft\edge*\application\msedge.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
 	<File Id="{852F1ECE-0C8B-7BF2-E58907D7F960E4CA}" FilePath="*microsoft\windows\explorer\iconcache_idx.db" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{334F4E85-13F8-0B4A-612A79E391FBF1B0}" FilePath="*\user data\default\cache\f_??????" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{52F3F139-445A-A235-3FB697F5087E1A9A}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{20BF30E4-4B0C-6CF3-B7823ED19FC0177D}" FilePath="*\user data\default\service worker\scriptcache\????????????????_?" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{48C17E80-66EE-FD3C-DDBBBDFFD4864005}" FilePath="*\user data\default\extensions\*\messages.json" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{D5B7CDBD-7368-EE31-2463A01B744B0FF8}" FilePath="*\user data\default\indexeddb\https_*.indexeddb.blob\*" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{E11594CB-E9FD-7348-9EF3435220BFFEF2}" FilePath="*\user data\default\local storage\leveldb\??????.ldb" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{657BFEBF-39C7-D6AE-08DFDFC53D49A74A}" FilePath="*\user data\default\*~rf*.tmp" >
 		<Process Path="*microsoft\edge*\application\msedge.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -3357,132 +2499,12 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{2BB0C562-46A9-F52B-96A258992DBBF502}" FilePath="*\user data\configs\*_*.json" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{E101E29E-24E4-479D-6AB0525BE17BE0AD}" FilePath="*\user data\crashpad*" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{77EDBBCF-1FFA-8A8D-29B58CBAEC26BFA8}" FilePath="*\user data\grshadercache\gpucache\*" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{A839B55F-8548-A2EC-985C27B1159C2FA3}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{4725D2C7-3ADA-A72B-C4BF7030225038A2}" FilePath="*\user data\module info cache~rf*.tmp" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{2FD8E03F-25C6-924E-49F38FCA94D0BA78}" FilePath="*\user data\profile*~rf*.tmp" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{E5266A73-AB46-C5E7-27863CA213906733}" FilePath="*\user data\smartscreen\remote\synchronouslookup*" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
 	<File Id="{3674F3E4-CF40-0B74-8A02263A80214A72}" FilePath="?:\users\*\downloads\unconfirmed *.crdownload" >
 		<Process Path="*microsoft\edge*\application\msedge.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
 	<File Id="{0167A863-6A83-379F-27E6541B9E6AB6F0}" FilePath="*\nvidia corporation\drs\nvapptimestamps" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{D9EFEF6A-8168-D8E4-D82680DDFDF3AB2F}" FilePath="*\user data\browsermetrics-spare.*" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{401486EC-ECFC-AC02-469D49E9CD35F872}" FilePath="*\user data\chrome_shutdown_ms.txt" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{29611B68-EEF0-DA81-E8E554F96D516A7D}" FilePath="*\user data\default\bookmarks" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{0EF4E3CA-E172-CE15-8105E1AB411D8540}" FilePath="*\user data\default\code cache\js\index-dir\temp-index" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{8CD77FDF-BEC6-90B9-6DDED01B485330AC}" FilePath="*\user data\default\code cache\js\index-dir\the-real-index" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{C8566288-93EA-0920-46C35F59AC179093}" FilePath="*\user data\default\cookies" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{3B2AD3D3-38BC-2C52-097D5F481FA97372}" FilePath="*\user data\default\downloadmetadata" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{9B5AA132-D1D1-A9F8-1F60B8C1B8E2B584}" FilePath="*\user data\default\preferences" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{A8BE5B06-FB5F-A8FE-EEA348311B421468}" FilePath="*\user data\default\sync data\nigori.bin" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{3DBAEFC8-FFCE-A5FF-AD834EE9479A7265}" FilePath="*\user data\last browser" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{6302F3A6-A455-9EC2-6443DD7B1EDF3FA6}" FilePath="*\user data\last version" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{B0C925AE-1A08-348A-2E5C3C6E03458E68}" FilePath="*\user data\local state" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{32C43876-A4E4-F58A-F2FBBDF283456BBD}" FilePath="*\user data\lockfile" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{61B5B022-F573-7125-F136958296560B98}" FilePath="*\user data\module info cache" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{612036F3-935E-DEBA-7936B22D78D65C83}" FilePath="*\user data\profile ?\preferences" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{75AB3C3E-666A-C322-61DA7E642CE79EDB}" FilePath="*\user data\profile ?\transportsecurity" >
-		<Process Path="*microsoft\edge*\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{4DAD17FD-4473-92FF-93382FC21B48E786}" FilePath="*\user data\tab lifetime" >
 		<Process Path="*microsoft\edge*\application\msedge.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -3542,67 +2564,12 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{4C15EF32-8EA9-5061-32A8A4DB4C247D33}" FilePath="*\user data\default\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{F7132D47-4A1E-A7B5-FA831B4F06285E78}" FilePath="*\user data\default\transportsecurity" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{70AA0E1C-897A-2D9E-88189B07E4B15C90}" FilePath="*\user data\profile 2\preferences" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{F9516A55-6DD0-492A-A2E43A28C821C8EF}" FilePath="*\user data\profile 2\transportsecurity" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
 	<File Id="{862D0CBD-E0E6-7920-6032EC5A60EB198D}" FilePath="*microsoft\windows\explorer\iconcache_16.db" >
 		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
 			<Signature Subject="*yandex*" />
 		</Process>
 	</File>
 	<File Id="{4276B1B5-F7EC-6765-62B4D1C07FD78495}" FilePath="*microsoft\windows\explorer\iconcache_idx.db" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{FB4B0034-3C4E-8BCC-768E9AD7447FFB9E}" FilePath="*\user data\default\cache\f_??????" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{4E30492A-D7F5-B43A-B16298FB37569915}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{E9493A0E-A070-F7DA-2AD6B693FF15EE0F}" FilePath="*\user data\default\service worker\scriptcache\????????????????_?" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{BD93D32F-B3B3-4F03-0B0A7BDB425E5448}" FilePath="*\user data\default\extensions\*\messages.json" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{E35697A9-7C22-CAE0-934A54C276468879}" FilePath="*\user data\default\indexeddb\https_*.indexeddb.blob\*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{CDC00B04-9191-667C-A337A7230E706BB1}" FilePath="*\user data\default\local storage\leveldb\??????.ldb" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{4FE6384C-B086-E60A-D55D6154078C077E}" FilePath="*\user data\default\*~rf*.tmp" >
 		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
 			<Signature Subject="*yandex*" />
 		</Process>
@@ -3642,132 +2609,12 @@
 			<Signature Subject="*yandex*" />
 		</Process>
 	</File>
-	<File Id="{D84B82E9-DDD9-4A8B-03A6F96B913DB056}" FilePath="*\user data\configs\*_*.json" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{0AEE2941-673B-F4F0-A5D3D79B7EE46184}" FilePath="*\user data\crashpad*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{F731ECAC-D99D-F85F-3F517B95616BB8B1}" FilePath="*\user data\grshadercache\gpucache\*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{9453CBAB-107E-D9DF-7286DB7E615E6E71}" FilePath="*\user data\local state~rf*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{928BB542-0B5F-C80F-CA7ED2BA31F73A48}" FilePath="*\user data\module info cache~rf*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{2F0B43FE-F0EF-A172-3AD2832262CF32E3}" FilePath="*\user data\profile*~rf*.tmp" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{3E660AD8-976E-1A78-9880F59FBF454DDA}" FilePath="*\user data\smartscreen\remote\synchronouslookup*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
 	<File Id="{B93B81ED-1C61-B13F-50EAA989E89FEEE1}" FilePath="?:\users\*\downloads\unconfirmed *.crdownload" >
 		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
 			<Signature Subject="*yandex*" />
 		</Process>
 	</File>
 	<File Id="{612D2E26-082F-0AF9-B0B6AE8A44118A48}" FilePath="*\nvidia corporation\drs\nvapptimestamps" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{5EBC089B-6C3C-398A-13B114EDF97AAB6D}" FilePath="*\user data\browsermetrics-spare.*" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{F08737E2-F55A-7D23-C0EAA5C887655490}" FilePath="*\user data\chrome_shutdown_ms.txt" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{B0609988-7560-B9CD-2F0E3E9730855F54}" FilePath="*\user data\default\bookmarks" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{8AF355A4-E79B-4C4B-A3160A5522C70AA0}" FilePath="*\user data\default\code cache\js\index-dir\temp-index" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{D748E78F-ABDB-814C-B5C3391ADFAE5FD8}" FilePath="*\user data\default\code cache\js\index-dir\the-real-index" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{47D5FC6D-FD8B-46C1-4D2F0DCFEC7ED1D1}" FilePath="*\user data\default\cookies" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{0CE1C270-5F95-CB6D-5EE132AC8B0FE614}" FilePath="*\user data\default\downloadmetadata" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{DC87A440-9749-D0E0-D700DDAFA3273B71}" FilePath="*\user data\default\preferences" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{4D2AE522-1BE2-4C2F-102240FCEF27BA76}" FilePath="*\user data\default\sync data\nigori.bin" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{8E646AD2-0D69-E739-581A31F1A1DA5DE1}" FilePath="*\user data\last browser" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{3600394D-CAB5-63E1-91B40249BA592E44}" FilePath="*\user data\last version" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{B067F2F6-F6E2-ECE6-D25C2BE55D35E35C}" FilePath="*\user data\local state" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{50D5C2C4-762C-5C68-49166C6A004B03B8}" FilePath="*\user data\lockfile" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{9A2D1C32-F668-AC51-732212C1889E7738}" FilePath="*\user data\module info cache" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{B8A5BC45-2F76-9323-13A057FAEC67F40A}" FilePath="*\user data\profile ?\preferences" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{6206F38E-F5AD-7CE1-9A3CA44C04D8B2BE}" FilePath="*\user data\profile ?\transportsecurity" >
-		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
-			<Signature Subject="*yandex*" />
-		</Process>
-	</File>
-	<File Id="{6CDB1DC1-03C0-A01D-70057D0B88C1DC56}" FilePath="*\user data\tab lifetime" >
 		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
 			<Signature Subject="*yandex*" />
 		</Process>
@@ -3857,11 +2704,6 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{757DE83C-849A-63CE-4C18667C78344CF8}" FilePath="*documents\outlook files\~archive*.pst.tmp" >
-		<Process Path="*\office*\outlook.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
 	<File Id="{AC53126D-A181-9F7A-D1A674BDD4FCF38B}" FilePath="*microsoft\office\*\outlook.exe_rules.xml" >
 		<Process Path="*\office*\outlook.exe" >
 			<Signature Subject="*microsoft*" />
@@ -3878,11 +2720,6 @@
 		</Process>
 	</File>
 	<File Id="{5C8E3384-7647-23AA-B6C8F1FF25DFD465}" FilePath="*microsoft\outlook\???????????????????????????????? - autodiscover.xml" >
-		<Process Path="*\office*\outlook.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{B2685B3A-70E8-C060-ABDF03167EC725D5}" FilePath="*microsoft\outlook\~sharepoint lists.pst.tmp" >
 		<Process Path="*\office*\outlook.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -4386,9 +3223,6 @@
 	<File Id="{9D65D608-56C0-8FEE-001444BA1F80C7B4}" FilePath="*postgresql\*\data\pg_stat_tmp\db_*.tmp" >
 		<Process Path="*postgresql\??\bin\postgres.exe" />
 	</File>
-	<File Id="{AEEA75C7-5C85-889D-3E9BE9FFEC3631C2}" FilePath="*serviceprofiles\networkservice\appdata\local\temp\tridiontempfiles\????????-????-????-????-????????????.tmp" >
-		<Process Path="*Tridion\bin\TcmServiceHost.exe" />
-	</File>
 	<File Id="{0E1800D8-A4A5-FA6E-FD21B073D012EA17}" FilePath="*supportassist\client\agent\db\supportassist.db-journal" >
 		<Process Path="*SupportAssistAgent\bin\SupportAssistAgent.exe" >
 			<Signature Subject="*Dell*" />
@@ -4404,12 +3238,12 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{8032B457-FE13-97C1-6184D408F983C3DD}" FilePath="c:\windows\temp\sccm_credentialguardstatus.log" >
+	<File Id="{8032B457-FE13-97C1-6184D408F983C3DD}" FilePath="*temp\sccm_credentialguardstatus.log" >
 		<Process Path="*\powershell.exe" CmdLine="*C:\windows\CCM\SystemTemp\????????-????-????-????-????????????.ps1&#39;" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{562AA81E-E394-A852-B06E361239BA9162}" FilePath="c:\windows\temp\sccm_installedupdates.log" >
+	<File Id="{562AA81E-E394-A852-B06E361239BA9162}" FilePath="*temp\sccm_installedupdates.log" >
 		<Process Path="*\powershell.exe" CmdLine="*C:\windows\CCM\SystemTemp\????????-????-????-????-????????????.ps1&#39;" >
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -4425,11 +3259,6 @@
 	</File>
 	<File Id="{481FA214-35F2-9B1D-EED8D7DBFB521082}" FilePath="*system32\spp\store\2.0\data.dat.tmp" >
 		<Process Path="C:\Windows\System32\sppsvc.exe" />
-	</File>
-	<File Id="{E22A2C31-9168-B419-B7FE58B6466FDEAC}" FilePath="*user data*\????????-????-????-????-????????????.tmp" >
-		<Process Path="*\Vivaldi\Application\vivaldi.exe" >
-			<Signature Subject="*Vivaldi*" />
-		</Process>
 	</File>
 	<File Id="{0362E2A6-8595-48F5-76B29BE6DB452576}" FilePath="*usoprivate\updatestore\updatestoretemp????????-????-????-????-????????????.xml" >
 		<Process Path="C:\Windows\System32\usocoreworker.exe" CmdLine="*Embedding" />
@@ -4452,7 +3281,7 @@
 			<Signature Subject="*Yandex*" />
 		</Process>
 	</File>
-	<File Id="{0DEE11AC-B3EE-AF5A-47B195A46FC4CC27}" FilePath="c:\windows\temp\sccmlocalgroupmembers.log" >
+	<File Id="{0DEE11AC-B3EE-AF5A-47B195A46FC4CC27}" FilePath="*temp\sccmlocalgroupmembers.log" >
 		<Process Path="C:\Windows\System32\cscript.exe" CmdLine="*//nologo C:\WINDOWS\CCM\SystemTemp\????????-????-????-????-????????????.vbs" />
 	</File>
 	<File Id="{5A619DFB-C648-5ADA-A7B394B497C260C9}" FilePath="*\ClientHealthLogs\*.log" >
@@ -4706,11 +3535,6 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0004 Start 2021-03-31T23:27:00.000Z-1617233233 -->
-	<File Id="{968A8FE0-464D-E2DB-A18064FF716BEC00}" FilePath="*appdata\roaming\microsoft\teams\????????-????-????-????-????????????.tmp" >
-		<Process Path="*microsoft\teams\current\teams.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
 	<File Id="{1F8D6BF3-A6D8-3607-22560BB05C757E33}" FilePath="*appdata\local\temp\vsi\activesessions.local.log" >
 		<Process Path="*AppData\Local\Temp\VSI\RunTime\VSI.exe" >
 			<VersionInfo FileDescription="Login VSI Engine*" />
@@ -5592,11 +4416,6 @@
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{E8A92DF0-591B-26E9-3C074433552C98BC}" FilePath="*appdata\local\temp\vsi\homedrive\outlook\~personalfolders.pst.tmp" >
-		<Process Path="*\office*\outlook.exe" >
-			<Signature Subject="*Microsoft*" />
-		</Process>
-	</File>
 	<File Id="{1E460313-9700-1000-A5E629CFADDAE275}" FilePath="*appdata\roaming\microsoft\outlook\outlook.srs" >
 		<Process Path="*\office*\outlook.exe" >
 			<Signature Subject="*Microsoft*" />
@@ -6438,22 +5257,12 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{F1707183-4692-9545-74B66A73F2B8D6F2}" FilePath="*appdata\local\temp\__psscriptpolicytest_*.psm1" >
+	<File Id="{F1707183-4692-9545-74B66A73F2B8D6F2}" FilePath="*temp\__psscriptpolicytest_*.psm1" >
 		<Process Path="*system32\*\powershell.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{804DADB1-95AF-ACD4-5D019673DA223698}" FilePath="*appdata\local\temp\__psscriptpolicytest_*.ps1" >
-		<Process Path="*system32\*\powershell.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{FD54641E-D290-AB74-EFFE16D7AA1ECB9B}" FilePath="*windows\temp\__psscriptpolicytest_*.psm1" >
-		<Process Path="*system32\*\powershell.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{ADF72FD2-40B6-6D02-E3C7F564FAF77531}" FilePath="*windows\temp\__psscriptpolicytest_*.ps1" >
+	<File Id="{804DADB1-95AF-ACD4-5D019673DA223698}" FilePath="*temp\__psscriptpolicytest_*.ps1" >
 		<Process Path="*system32\*\powershell.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -6621,7 +5430,7 @@
 			<Signature Subject="*adobe*" />
 		</Process>
 	</File>
-	<File Id="{A21E5340-5A8F-910A-28872E84E91D5867}" FilePath="c:\windows\temp\tmp????.tmp" >
+	<File Id="{A21E5340-5A8F-910A-28872E84E91D5867}" FilePath="*temp\tmp????.tmp" >
 		<Process >
 			<Signature Subject="*adobe*" />
 		</Process>
@@ -6677,16 +5486,6 @@
 	<File Id="{4E21E5C7-06C8-30C1-8CF1783A2CC501AD}" FilePath="c:\program files (x86)\globitel\speechlog retail client*" >
 		<Process Path="c:\program files (x86)\globitel\speechlog retail client*" />
 	</File>
-	<File Id="{164DEFE6-7341-AED3-40E9364EBA05964E}" FilePath="*\user data\default\cache\f_??????" >
-		<Process >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
-	<File Id="{FE7154B0-BC2B-E4CC-67729B0E930DF159}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process >
-			<Signature Subject="*google*" />
-		</Process>
-	</File>
 	<File Id="{BF1CAD02-26B0-F225-5AFBDC94A376EB84}" FilePath="*appdata\local\temp\ge????\kmz\khtemp_*.kmz" >
 		<Process >
 			<Signature Subject="*google*" />
@@ -6714,21 +5513,6 @@
 	</File>
 	<File Id="{E5191784-C510-941B-05D286AD3CFBF55A}" FilePath="*.jpg" >
 		<Process Path="c:\program files (x86)\knoahsoft\screen\harmonysc.exe" />
-	</File>
-	<File Id="{AA23AF6E-7B00-F23E-6C83C94AD7E0BB88}" FilePath="*\user data\default\cache\f_??????" >
-		<Process Path="*edge\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{83A3E304-0749-9CDA-EE0B8047EA6646F7}" FilePath="*\user data\default\code cache\js\????????????????_?" >
-		<Process Path="*edge\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
-	</File>
-	<File Id="{B2975D1B-8662-4BF0-211C87B6F6031103}" FilePath="*\user data\default\service worker\cache*" >
-		<Process Path="*edge\application\msedge.exe" >
-			<Signature Subject="*microsoft*" />
-		</Process>
 	</File>
 	<File Id="{16958FDC-3F47-0825-AE3BEB6E770E777C}" FilePath="*appdata\local\microsoft\edge*" >
 		<Process Path="*edge\application\msedge.exe" >
@@ -6884,12 +5668,12 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{FD4CA026-F217-54B8-B52F1A83C40C84BE}" FilePath="c:\windows\temp\appx.?????????????????????????.tmp" >
+	<File Id="{FD4CA026-F217-54B8-B52F1A83C40C84BE}" FilePath="*temp\appx.?????????????????????????.tmp" >
 		<Process >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{7B8009AC-066D-1C99-3648D1B3058AE706}" FilePath="c:\windows\temp\appx.????????????????????????.tmp" >
+	<File Id="{7B8009AC-066D-1C99-3648D1B3058AE706}" FilePath="*temp\appx.????????????????????????.tmp" >
 		<Process >
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -7038,32 +5822,32 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{AEDF780E-FE9B-AF96-9738F57ACAA4E230}" FilePath="c:\windows\temp\????????????????????.bin" >
+	<File Id="{AEDF780E-FE9B-AF96-9738F57ACAA4E230}" FilePath="*temp\????????????????????.bin" >
 		<Process Path="C:\Windows\System32\spoolsv.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{6D9ECB3B-918A-17E0-A1E0D67FBB5739FE}" FilePath="c:\windows\temp\cdm\plist\plist_*.inf" >
+	<File Id="{6D9ECB3B-918A-17E0-A1E0D67FBB5739FE}" FilePath="*temp\cdm\plist\plist_*.inf" >
 		<Process Path="C:\Windows\System32\spoolsv.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{7953A005-4ECC-E7D3-DA10299BC7AEEFA9}" FilePath="c:\windows\temp\etilqs_???????????????" >
+	<File Id="{7953A005-4ECC-E7D3-DA10299BC7AEEFA9}" FilePath="*temp\etilqs_???????????????" >
 		<Process Path="C:\Windows\System32\spoolsv.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{07D1C607-3854-F2D8-60FA8B2B50906F86}" FilePath="c:\windows\temp\{????????-????-????-????-????????????}\i386\*" >
+	<File Id="{07D1C607-3854-F2D8-60FA8B2B50906F86}" FilePath="*temp\{????????-????-????-????-????????????}\i386\*" >
 		<Process Path="C:\Windows\System32\spoolsv.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{00227E24-A0DF-6EDC-B8B17883B2E4FC45}" FilePath="c:\windows\temp\{????????-????-????-????-????????????}\amd64\*" >
+	<File Id="{00227E24-A0DF-6EDC-B8B17883B2E4FC45}" FilePath="*temp\{????????-????-????-????-????????????}\amd64\*" >
 		<Process Path="C:\Windows\System32\spoolsv.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{E21C7135-5D76-43E4-2C1B47B862A14B6E}" FilePath="c:\windows\temp\{????????-????-????-????-????????????}" >
+	<File Id="{E21C7135-5D76-43E4-2C1B47B862A14B6E}" FilePath="*temp\{????????-????-????-????-????????????}" >
 		<Process Path="C:\Windows\System32\spoolsv.exe" >
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -7083,7 +5867,7 @@
 			<Signature Subject="SecurIT*" />
 		</Process>
 	</File>
-	<File Id="{33DE8F05-4F8A-B3E1-E320ABC5F518EB25}" FilePath="c:\windows\temp\dup2e4a.tmp*" >
+	<File Id="{33DE8F05-4F8A-B3E1-E320ABC5F518EB25}" FilePath="*temp\dup2e4a.tmp*" >
 		<Process >
 			<Signature Subject="SecurIT*" />
 		</Process>
@@ -7103,61 +5887,6 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0010 2021-12-24T20:48:00.000Z-1640378914 -->
-	<File Id="{B94D3414-DA44-9F2C-CF74248F58B76941}" FilePath="*\user data\default\network\transportsecurity" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{DA5FCB42-18EF-4A74-368C1F41C88E64E9}" FilePath="*\user data\default\code cache\js\index-dir\*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{2780F855-6234-5ABC-309FBA28F659B1FD}" FilePath="*\user data\default\indexeddb\https_*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{AD65E7CD-8090-F9B7-2344C646E45DCA50}" FilePath="*\user data\default\network\transportsecurity~rf*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{094B10DF-A649-009A-1E80E62D22D1C59D}" FilePath="*\user data\default\preferences~*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{9A367B43-6922-E673-D3E857D531CB3CDA}" FilePath="*\user data\default\session storage\*.ldb" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{1384A475-7E19-E48D-0462B9596112C04E}" FilePath="*\user data\default\sessions\session_*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{A1C0AB56-19BE-1179-79D31E6072342BA9}" FilePath="*\user data\default\transportsecurity~*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{1846DA32-23C3-FC24-B1258882233CD05F}" FilePath="*\user data\profile ?\network\transportsecurity~*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{C893CC8A-5C0B-EB2F-A7862880B0CB5941}" FilePath="*\user data\profile ?\preferences~*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{37C1B4F9-8F01-E915-CAF45AACFF0F8641}" FilePath="*appdata\local\google\chrome\user data\local state~*" >
-		<Process >
-			<Signature Subject="?*" />
-		</Process>
-	</File>
 	<File Id="{64031243-7B14-5530-CD5164E1340DF4FA}" FilePath="*appdata\local\temp\???????\*" >
 		<Process Path="*common7\ide\devenv.exe" >
 			<Signature Subject="*microsoft*" />
@@ -7355,7 +6084,7 @@
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
-	<File Id="{F3121934-D32C-6CDD-0BCC8BAC48ADCE37}" FilePath="c:\windows\temp\tmp*.tmp" >
+	<File Id="{F3121934-D32C-6CDD-0BCC8BAC48ADCE37}" FilePath="*temp\tmp*.tmp" >
 		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
@@ -7365,17 +6094,17 @@
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
-	<File Id="{5CF012DE-5084-4CA5-E44364A449B319F4}" FilePath="c:\windows\temp\etilqs_???????????????" >
+	<File Id="{5CF012DE-5084-4CA5-E44364A449B319F4}" FilePath="*temp\etilqs_???????????????" >
 		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
-	<File Id="{FE7A69DA-5F95-FE44-B8A4D48F699922CF}" FilePath="c:\windows\temp\dre*.tmp" >
+	<File Id="{FE7A69DA-5F95-FE44-B8A4D48F699922CF}" FilePath="*temp\dre*.tmp" >
 		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
-	<File Id="{79F4F6E9-9BE0-17E5-11C0E24E7CB0AB29}" FilePath="c:\windows\temp\vs??????.???" >
+	<File Id="{79F4F6E9-9BE0-17E5-11C0E24E7CB0AB29}" FilePath="*temp\vs??????.???" >
 		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
@@ -7391,16 +6120,6 @@
 		</Process>
 	</File>
 	<File Id="{D9E808D3-6630-83F3-F3A3E10D75DE079A}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="c:\program files (x86)\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{C48D9A89-B5EB-DE29-F6DC2A9EA4FFC84B}" FilePath="*user data\default\cache\*" >
-		<Process Path="c:\program files (x86)\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{68AF53A3-0CC1-8BF5-B6617AD5C7F64D2B}" FilePath="*user data\default\preferences~*" >
 		<Process Path="c:\program files (x86)\360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
@@ -7440,16 +6159,6 @@
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{917B5985-49F0-92D8-14B3BC42E8C08768}" FilePath="*user data\default\cache\*" >
-		<Process Path="c:\program files\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{9F6C1E42-7E01-0778-6E01D9A2BF5216CF}" FilePath="*user data\default\preferences~*" >
-		<Process Path="c:\program files\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
 	<File Id="{CB0F90E0-8A1C-AD8A-8240E275D7BD5EFF}" FilePath="*appdata\local\360chrome\chrome\*" >
 		<Process Path="c:\program files\360\*" >
 			<Signature Subject="*Beijing Qihu*" />
@@ -7481,16 +6190,6 @@
 		</Process>
 	</File>
 	<File Id="{99CC0372-F1C9-7E32-6ED1C66498E3FBF8}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{EB847348-BDC4-47D9-16FD0AD6AE8F1E81}" FilePath="*user data\default\cache\*" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{4FF115C8-A815-D947-1C5A8C4501D4BB80}" FilePath="*user data\default\preferences~*" >
 		<Process Path="*appdata\local\360chrome\chrome\application\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
@@ -7530,16 +6229,6 @@
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{4A2CB8FC-F51A-B588-DDB6C928259D4A15}" FilePath="*user data\default\cache\*" >
-		<Process Path="*appdata\roaming\360*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{CA5C5D4D-88BB-0B98-8B055DCF06A7E48A}" FilePath="*user data\default\preferences~*" >
-		<Process Path="*appdata\roaming\360*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
 	<File Id="{DF067997-98AA-05DA-F0E1DF5CFDC83EBE}" FilePath="*appdata\local\360chrome\chrome\*" >
 		<Process Path="*appdata\roaming\360*" >
 			<Signature Subject="*Beijing Qihu*" />
@@ -7571,16 +6260,6 @@
 		</Process>
 	</File>
 	<File Id="{47A8D68F-3DC7-872E-57D68B727323BF95}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="*appdata\roaming\secoresdk\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{FA99231E-CF9F-EA57-7342D3804CDEF3D9}" FilePath="*user data\default\cache\*" >
-		<Process Path="*appdata\roaming\secoresdk\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{27741CC4-9890-16F0-72E43B6AB1216CC5}" FilePath="*user data\default\preferences~*" >
 		<Process Path="*appdata\roaming\secoresdk\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
@@ -7660,11 +6339,6 @@
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
-	<File Id="{5721928A-4574-CDA0-172F0182EB198FCE}" FilePath="*user data\default\cache\*" >
-		<Process Path="*\program files (x86)\tencent\*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
 	<File Id="{A5069827-7E92-A2BF-B7CC42E7870A23FA}" FilePath="c:\programdata\tencent\*" >
 		<Process Path="*\program files (x86)\tencent\*" >
 			<Signature Subject="*Tencent*" />
@@ -7681,11 +6355,6 @@
 		</Process>
 	</File>
 	<File Id="{5419F2A1-1B57-2396-D648D06BA425D063}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="c:\program files (x86)\tsoft\*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{0A3F6209-7A12-FF9D-710EEC17096A2C68}" FilePath="*user data\default\cache\*" >
 		<Process Path="c:\program files (x86)\tsoft\*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
@@ -7710,11 +6379,6 @@
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
-	<File Id="{3CFEAC16-E7CE-DF0E-6F0D0AA4489B3C2F}" FilePath="*user data\default\cache\*" >
-		<Process Path="c:\program files (x86)\wxwork*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
 	<File Id="{D25FE53C-CD0E-B600-7FB5B8399F3DFD92}" FilePath="c:\programdata\tencent\*" >
 		<Process Path="c:\program files (x86)\wxwork*" >
 			<Signature Subject="*Tencent*" />
@@ -7731,11 +6395,6 @@
 		</Process>
 	</File>
 	<File Id="{B716E120-B297-74C6-E251CEF498173FE5}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="c:\program files\tencentdocs*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{0379EBDE-6524-F602-059F58B70212CE67}" FilePath="*user data\default\cache\*" >
 		<Process Path="c:\program files\tencentdocs*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
@@ -7760,11 +6419,6 @@
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
-	<File Id="{744D0A07-EECE-023E-6577350CA7D735D3}" FilePath="*user data\default\cache\*" >
-		<Process Path="*appdata\roaming\tencent\*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
 	<File Id="{73E33673-66DF-EC06-655C3F104F239801}" FilePath="c:\programdata\tencent\*" >
 		<Process Path="*appdata\roaming\tencent\*" >
 			<Signature Subject="*Tencent*" />
@@ -7781,11 +6435,6 @@
 		</Process>
 	</File>
 	<File Id="{090E7D18-500F-F8C3-708CCAB70ECE9413}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="c:\program files\windowsapps\tencentwechatlimited*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{604C852F-9641-6ACD-80702BE2AC5197B4}" FilePath="*user data\default\cache\*" >
 		<Process Path="c:\program files\windowsapps\tencentwechatlimited*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
@@ -7826,13 +6475,13 @@
 	<File Id="{7F960EED-BA75-1C98-906EDDF0630FAC46}" FilePath="'c:\program files\itassetagent\*" >
 		<Process Path="c:\program files\itassetagent\*" />
 	</File>
-	<File Id="{2D44BF40-1C71-3BAD-8BFA9CE684341DBF}" FilePath="c:\windows\temp\$ma*.tmp" >
+	<File Id="{2D44BF40-1C71-3BAD-8BFA9CE684341DBF}" FilePath="*temp\$ma*.tmp" >
 		<Process Path="c:\program files\itassetagent\*" />
 	</File>
 	<File Id="{6BD8B751-CF18-D836-C5204EE444D5B0C3}" FilePath="*appdata\local\temp\$ma*.tmp" >
 		<Process Path="c:\program files\itassetagent\*" />
 	</File>
-	<File Id="{7C9F4CB5-EB5C-A832-95330E83CA767A0F}" FilePath="c:\windows\temp\mc*.tmp" >
+	<File Id="{7C9F4CB5-EB5C-A832-95330E83CA767A0F}" FilePath="*temp\mc*.tmp" >
 		<Process Path="c:\program files\itassetagent\*" />
 	</File>
 	<File Id="{D69319CA-02C5-A145-36C16F5A145D81DE}" FilePath="*landesk\shared files\*" >
@@ -7870,17 +6519,17 @@
 			<Signature Subject="*dalian lide*" />
 		</Process>
 	</File>
-	<File Id="{9D74FAD2-1FEE-6064-E6582311DD3CF915}" FilePath="c:\windows\temp\????.tmp" >
+	<File Id="{9D74FAD2-1FEE-6064-E6582311DD3CF915}" FilePath="*temp\????.tmp" >
 		<Process Path="c:\program files\lide\*" >
 			<Signature Subject="*dalian lide*" />
 		</Process>
 	</File>
-	<File Id="{0D5E7D04-56AA-2C31-54EC60AC42EAF76C}" FilePath="c:\windows\temp\???.tmp" >
+	<File Id="{0D5E7D04-56AA-2C31-54EC60AC42EAF76C}" FilePath="*temp\???.tmp" >
 		<Process Path="c:\program files\lide\*" >
 			<Signature Subject="*dalian lide*" />
 		</Process>
 	</File>
-	<File Id="{4CBA63AD-29F5-3201-C3D254BBC463E11B}" FilePath="c:\windows\temp\tem????.tmp" >
+	<File Id="{4CBA63AD-29F5-3201-C3D254BBC463E11B}" FilePath="*temp\tem????.tmp" >
 		<Process Path="c:\program files\lide\*" >
 			<Signature Subject="*dalian lide*" />
 		</Process>
@@ -8271,11 +6920,6 @@
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{49BC430B-B3B8-50D9-4F1CC5DC58FA15D2}" FilePath="*documents\outlook files\~outlook.pst.tmp" >
-		<Process Path="*office*\outlook.exe" >
-			<Signature Subject="*Microsoft*" />
-		</Process>
-	</File>
 	<File Id="{E7B60948-77CC-D381-FD194F4993100E3C}" FilePath="*appdata\local\microsoft\outlook\*.ost" >
 		<Process Path="*office*\outlook.exe" >
 			<Signature Subject="*Microsoft*" />
@@ -8463,12 +7107,6 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0019 2022-08-26T12:54:00.000Z-1661518476 -->
-	<File Id="{E8C066D9-5DB7-4194-D68096BB8C4DC9A4}" FilePath="*AppData\Local\Temp\__PSScriptPolicyTest_*.???.ps1">
-		<Process Path="*\powershell.exe" />
-	</File>
-	<File Id="{7FDD5CF6-C735-B454-EB4B1878C9C5D5EB}" FilePath="*AppData\Local\Temp\__PSScriptPolicyTest_*.???.psm1">
-		<Process Path="*\powershell.exe" />
-	</File>
 	<File Id="{59EAD741-F712-7E9C-09A0631770F91FE8}">
 		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  get-wmiobject -class win32_*" >
 			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
@@ -8490,7 +7128,7 @@
 	<File Id="{8F5EF2CE-507E-6487-A2EDF02CC39A5296}" FilePath="C:\Windows\CCM\*">
 		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
 	</File>
-	<File Id="{CD678B6F-F3FB-6C0F-F4C67C6F273960D1}" FilePath="C:\Windows\Temp\????????-????-*.mof">
+	<File Id="{CD678B6F-F3FB-6C0F-F4C67C6F273960D1}" FilePath="*temp\????????-????-*.mof">
 		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
 	</File>
 	<File Id="{A89D29E2-8FA3-3FD3-82111431F35CB941}" FilePath="*\discoverytree.xml">
@@ -8526,13 +7164,13 @@
 	<File Id="{3EA093EE-7084-13A2-12354008F1CA8B89}" FilePath="c:\windows\system32\logfiles\sum\*">
 		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</File>
-	<File Id="{32A7E7D9-ED11-8836-7DD9F9388539D0BC}" FilePath="c:\windows\temp\his*.tmp">
+	<File Id="{32A7E7D9-ED11-8836-7DD9F9388539D0BC}" FilePath="*temp\his*.tmp">
 		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</File>
-	<File Id="{D1EAD74A-6477-AE29-44888368EC2A2FA2}" FilePath="c:\windows\temp\msi*.log">
+	<File Id="{D1EAD74A-6477-AE29-44888368EC2A2FA2}" FilePath="*temp\msi*.log">
 		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</File>
-	<File Id="{C4967775-6808-D618-F8FB30CC2A27DE5C}" FilePath="c:\windows\temp\udd*.tmp">
+	<File Id="{C4967775-6808-D618-F8FB30CC2A27DE5C}" FilePath="*temp\udd*.tmp">
 		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
 	</File>
 	<File Id="{DE619676-C3F9-EEF0-D9098C82F34AC499}" FilePath="C:\ProgramData\Microsoft\SmsRouter\MessageStore\*">
@@ -8575,13 +7213,13 @@
 	<File Id="{40701C58-46A7-1D53-205D1D3F47E777FC}" FilePath="&#39;c:\programdata\microsoft\windows\systemdata\s-1-*\lockscreen*">
 		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
 	</File>
-	<File Id="{17D69C49-B65D-364E-B7A679AB496E78E8}" FilePath="c:\windows\temp\etoken.cache\*.cache">
+	<File Id="{17D69C49-B65D-364E-B7A679AB496E78E8}" FilePath="*temp\etoken.cache\*.cache">
 		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
 	</File>
-	<File Id="{4634915A-B4AA-8779-00BF80D98FA0C813}" FilePath="c:\windows\temp\etoken.hid\sharedinfo.bin">
+	<File Id="{4634915A-B4AA-8779-00BF80D98FA0C813}" FilePath="*temp\etoken.hid\sharedinfo.bin">
 		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
 	</File>
-	<File Id="{15160BA0-ACF6-748F-26BE565DFEB3F122}" FilePath="c:\windows\temp\etoken.log\*\logonui_*">
+	<File Id="{15160BA0-ACF6-748F-26BE565DFEB3F122}" FilePath="*temp\etoken.log\*\logonui_*">
 		<Process Path="C:\Windows\System32\LogonUI.exe" CmdLine="LogonUI.exe *" />
 	</File>
 	<File Id="{AC7AB53C-015F-A2A5-0585C10747EC8007}" FilePath="c:\programdata\pulse secure\logging\debuglog.log">
@@ -8630,7 +7268,7 @@
 			<Signature Subject="*Adobe*" />
 		</Process>
 	</File>
-	<File Id="{25A10C19-43F6-6DBB-ECB9863F5CDBC863}" FilePath="c:\windows\temp\enumwin.tmp">
+	<File Id="{25A10C19-43F6-6DBB-ECB9863F5CDBC863}" FilePath="*temp\enumwin.tmp">
 		<Process CmdLine="c:\program files (x86)\automatos\desktop agent\enumwindows.exe c:\windows\temp\\enumwin.tmp">
 			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
 		</Process>
@@ -8695,7 +7333,7 @@
 			<Signature Subject="*Citrix*" />
 		</Process>
 	</File>
-	<File Id="{B6F068FE-5F1D-D7C5-24228DB5306C7CB5}" FilePath="c:\windows\temp\armreport.ini">
+	<File Id="{B6F068FE-5F1D-D7C5-24228DB5306C7CB5}" FilePath="*temp\armreport.ini">
 		<Process Path="*Adobe\ARM*">
 			<Signature Subject="*Adobe*" />
 		</Process>
@@ -8890,7 +7528,7 @@
 			<Signature Subject="BMC*Software*" />
 		</Process>
 	</File>
-	<File Id="{1A171445-D600-8632-5313C62246CD60AA}" FilePath="c:\windows\temp\sqlite_*">
+	<File Id="{1A171445-D600-8632-5313C62246CD60AA}" FilePath="*temp\sqlite_*">
 		<Process Path="*Program Files*BMC*">
 			<Signature Subject="BMC*Software*" />
 		</Process>
@@ -8950,7 +7588,7 @@
 			<Signature Subject="*Solarwinds*" />
 		</Process>
 	</File>
-	<File Id="{D7808F20-4E57-8962-5F960E7760A115DA}" FilePath="c:\windows\temp\tmp*.tmp">
+	<File Id="{D7808F20-4E57-8962-5F960E7760A115DA}" FilePath="*temp\tmp*.tmp">
 		<Process Path="*Program Files*SolarWinds*">
 			<Signature Subject="*Solarwinds*" />
 		</Process>
@@ -9000,12 +7638,12 @@
 			<Signature Subject="*Solarwinds*" />
 		</Process>
 	</File>
-	<File Id="{CB1511E9-E91D-A922-03B309760B3A84A0}" FilePath="c:\windows\temp\taskproperties.*">
+	<File Id="{CB1511E9-E91D-A922-03B309760B3A84A0}" FilePath="*temp\taskproperties.*">
 		<Process Path="*Program Files*SolarWinds*">
 			<Signature Subject="*Solarwinds*" />
 		</Process>
 	</File>
-	<File Id="{6F2B0063-E499-C574-A37FB5AB279EB701}" FilePath="c:\windows\temp\solarwinds*solarwinds.*">
+	<File Id="{6F2B0063-E499-C574-A37FB5AB279EB701}" FilePath="*temp\solarwinds*solarwinds.*">
 		<Process Path="*Program Files*SolarWinds*">
 			<Signature Subject="*Solarwinds*" />
 		</Process>
@@ -9069,7 +7707,7 @@
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</File>
-	<File Id="{7C5FF36A-D290-DA6C-959F344289D1B3B7}" FilePath="c:\windows\temp\veeambackup*">
+	<File Id="{7C5FF36A-D290-DA6C-959F344289D1B3B7}" FilePath="*temp\veeambackup*">
 		<Process Path="*Program Files*Veeam*">
 			<Signature Subject="*Veeam*" />
 		</Process>
@@ -9079,12 +7717,12 @@
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</File>
-	<File Id="{BE0B8947-4A53-3840-863A02A2D2969872}" FilePath="c:\windows\temp\ntuser.dat*">
+	<File Id="{BE0B8947-4A53-3840-863A02A2D2969872}" FilePath="*temp\ntuser.dat*">
 		<Process Path="*Program Files*Veeam*">
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</File>
-	<File Id="{DCEEA5AB-CD32-C15F-622BCB813C1376E5}" FilePath="c:\windows\temp\tmp????.tmp">
+	<File Id="{DCEEA5AB-CD32-C15F-622BCB813C1376E5}" FilePath="*temp\tmp????.tmp">
 		<Process Path="*Program Files*Veeam*">
 			<Signature Subject="*Veeam*" />
 		</Process>
@@ -9147,7 +7785,7 @@
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</File>
-	<File Id="{88E69E0E-2ADF-0BF3-B9DA57799B097A09}" FilePath="c:\windows\temp\*-????.log">
+	<File Id="{88E69E0E-2ADF-0BF3-B9DA57799B097A09}" FilePath="*temp\*-????.log">
 		<Process Path="Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe">
 			<Signature Subject="*Microsoft*" />
 		</Process>
@@ -9260,7 +7898,7 @@
 	<File Id="{8C9E697C-8AE5-BCCB-9E1005D680A186FF}" FilePath="*appdata\local\packages\microsoft.windows.photos_*\tempstate\etilqs_*">
 		<Process Path="c:\program files\windowsapps\microsoft.windows.photos_2017.35063.44410.1000_x64__8wekyb3d8bbwe\microsoft.photos.exe" />
 	</File>
-	<File Id="{77A98951-5BEC-1CD1-3E98B3E2FBAE6A9C}" FilePath="c:\windows\temp\expression_host_*">
+	<File Id="{77A98951-5BEC-1CD1-3E98B3E2FBAE6A9C}" FilePath="*temp\expression_host_*">
 		<Process Path="c:\windows\microsoft.net\framework*\vbc.exe">
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -9270,10 +7908,10 @@
 			<Signature Subject="*microsoft*" />
 		</Process>
 	</File>
-	<File Id="{B42D2D75-BDB5-7189-339371C57F867C75}" FilePath="c:\windows\temp\????????-????-*.dll.mui">
+	<File Id="{B42D2D75-BDB5-7189-339371C57F867C75}" FilePath="*temp\????????-????-*.dll.mui">
 		<Process CmdLine="&#34;c:\windows\system32\dism.exe&#34; /online /remove-provisionedappxpackage*" />
 	</File>
-	<File Id="{208ED12C-225A-9CA5-0A0C3F9DE4FD32CD}" FilePath="c:\windows\temp\????????-????-*.dll">
+	<File Id="{208ED12C-225A-9CA5-0A0C3F9DE4FD32CD}" FilePath="*temp\????????-????-*.dll">
 		<Process CmdLine="&#34;c:\windows\system32\dism.exe&#34; /online /remove-provisionedappxpackage*" />
 	</File>
 	<File Id="{483F8FEB-4DC0-7A6B-9CA073C787A78923}" FilePath="*appdata\roaming\microsoft\signatures*">
@@ -9293,7 +7931,7 @@
 	<File Id="{E17E8335-ED24-AC74-F451FDD63847C646}" FilePath="c:\users\*conda*\pkgs\?????">
 		<Process CmdLine="*scripts\anaconda-navigator-script.py" />
 	</File>
-	<File Id="{D47C33C5-7B38-8BBB-B0ABC6F44EC6E7EE}" FilePath="c:\windows\temp\????????-????-*">
+	<File Id="{D47C33C5-7B38-8BBB-B0ABC6F44EC6E7EE}" FilePath="*temp\????????-????-*">
 		<Process CmdLine="c:\windows\cluster\clussvc.exe -s">
 			<Signature Subject="*microsoft*" />
 		</Process>
@@ -9371,7 +8009,7 @@
 			<Signature Subject="*Intel*" />
 		</Process>
 	</File>
-	<File Id="{3046D651-0865-F853-2D0DD79831F85F00}" FilePath="c:\windows\temp\dptf\esif_assist_64.exe">
+	<File Id="{3046D651-0865-F853-2D0DD79831F85F00}" FilePath="*temp\dptf\esif_assist_64.exe">
 		<Process Path="C:\Windows\Temp\DPTF\esif_assist_64.exe">
 			<Signature Subject="*Intel*" />
 		</Process>
@@ -9384,16 +8022,6 @@
 	<File Id="{4B691BEC-5599-1A86-96A104FEA902E531}" FilePath="*data\manictime*.db-journal">
 		<Process Path="*Manic*">
 			<Signature Subject="*Finkit*" />
-		</Process>
-	</File>
-	<File Id="{C7B0DD8F-1655-9D08-08D6D2FCD2A980B2}" FilePath="*\user data\profile *network\transportsecurity">
-		<Process>
-			<Signature Subject="?*" />
-		</Process>
-	</File>
-	<File Id="{DB74784D-F94B-50E5-54A1739E0F10EAB7}" FilePath="*user data\hyphen-data\*hyph-*.hyb">
-		<Process>
-			<Signature Subject="?*" />
 		</Process>
 	</File>
 	<File Id="{CB55B48C-FC7E-95DE-B9476244F10E5067}" FilePath="*appdata\local\temp\casesensitivetest*">
@@ -9612,6 +8240,967 @@
 		</Process>
 	</File>
 <!-- Part 0026 2022-12-19T18:16:00.000Z-1671473819 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0027 2023-03-17T13:27:00.000Z-1679059621 -->
+	<File Id="{EE277DF2-11E1-B212-A41E5078BD335815}" FilePath="*data\default\local extension settings\????????????????????????????????\??????.???" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{527617DD-8343-022E-7810F8BC153CCD96}" FilePath="*data\browsermetrics\browsermetrics-????????-???.pma" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1FF498AB-1046-C7D6-225AE81CE4B19DBE}" FilePath="*data\default\*\log" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{28813F77-748B-7F1A-BABC8A3CC6D3E152}" FilePath="*data\default\*-journal" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{215B6546-E030-D6E4-30F5195E1FE323DF}" FilePath="*data\default\search logos\metadata" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C01C8DDA-8793-C59E-B00BA8AD6EC4BA7A}" FilePath="*data\default\search logos\logo" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{BD70EF2F-17C4-8F94-C7C201BC550CAE52}" FilePath="*data\default\current session" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{4A3B85F1-D4DB-208F-38D0E7FE9CE4DF42}" FilePath="*data\crashpadmetrics-active.pma" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1E1B7DB0-17DC-DB8D-FA1220779D4D0E86}" FilePath="*data\default\data_reduction_proxy_leveldb\manifest-??????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{A2931163-A114-67DB-C9C35FDC1FBD08EC}" FilePath="*data\default\code cache\js\index-dir\temp-index" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{E2D6FDEE-C2E7-3EDC-7688850BA1AD16BB}" FilePath="*data\default\service worker\cachestorage\????????????????????????????????????????\????????-????-????-????-????????????\????????????????_?" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{DDCA50A8-2948-4806-E4324FB35C6D68D6}" FilePath="*data\default\service worker\scriptcache\????????????????_?" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{347E8EE0-FD3D-DE92-2C2C3F7DB4986DC3}" FilePath="*data\default\sync data\leveldb\??????.ldb" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{B86E017F-8C3C-EA7E-6D23F3FD5C0D55CB}" FilePath="*data\profile ?\indexeddb\https_docs.google.com_0.indexeddb.leveldb\log" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{CE2F0331-1D00-67C3-21A34D83ED9901FA}" FilePath="*data\profile ?\cache\?_??????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{D941A03B-C18D-247E-9A789F32C524D182}" FilePath="*data\profile ?\code cache\js\????????????????_?" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{60DF7058-F40F-AB4B-B9FB35ADAF9029B7}" FilePath="*data\default\indexeddb\*\??????.ldb" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{FA04A80A-DB20-4EAE-52E6B0D53F824501}" FilePath="*data\default\indexeddb\*.ldb" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{26488361-CAEB-5691-43350150E45BC795}" FilePath="*data\default\*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{2AE07081-205B-1147-803AA859F9C83C9B}" FilePath="*data*\????????-????-*.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{93DD4494-7CCD-0BA3-58FE9DB49A1F836E}" FilePath="*data*cache\?_??????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{A0C22334-105C-BF6A-0372C8319249529A}" FilePath="*data\default\code cache\js\????????????????_?" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{FACED973-0FF6-812B-3D71F1BEBCF8DCA3}" FilePath="*data*\??????.log" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C956DCF3-B8DF-6C63-E54BF6B6BABAF4FF}" FilePath="*data*\??????.ldb" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{E1AD6DE3-D4BD-B43D-786C85281536D8AF}" FilePath="*data\default\transportsecurity" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{CD3B8C78-F344-3B8F-685E5207C59D3483}" FilePath="*data\default\preferences" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{EBFFC4EA-25C7-59BA-B1AE21956E4D4213}" FilePath="*data\local state" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{95D3BABC-C8BB-569A-CF5FCB9062D9C091}" FilePath="*data\crashpadmetrics*.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6DA3DAB9-2B6D-FEF7-2D52621EA25A4CAA}" FilePath="*data\default\*~rf*.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F9DB9FD7-B614-0F9C-2AB01ED9CB4C48A6}" FilePath="*data\profile 1\transportsecurity" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{0091523F-0E60-43FD-62B2D85DBB27B6B1}" FilePath="*data\profile 1\preferences" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{032D0D95-E218-7A47-2FCADFEDFE29B49B}" FilePath="*data\profile 1\*~rf*.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{13861E7F-B07D-2EF2-F9995A3AB694EA63}" FilePath="*data\browsermetrics\browsermetrics-????????-????.pma" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{7C9588D7-9C14-5A65-B59B32299401EFD9}" FilePath="*data\default\service worker\cachestorage\*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{D1474067-62D3-7810-E4BCD649E631B48E}" FilePath="*data\default\*_?????????????????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{90FB864D-22FE-4453-67A96F817BDFF707}" FilePath="*data\default\indexeddb\*.indexeddb.*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{4C6A44B9-6B59-C4A1-2663C001FFFE4E94}" FilePath="*data\profile 1\indexeddb\*.indexeddb.*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1B01119A-BCAE-F349-48FD51B002473E26}" FilePath="*data\profile 1\service worker\cachestorage\*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F2133CC4-5BDF-C6AB-0CB05C04B3E472C9}" FilePath="*data\profile 1\*_?????????????????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{B13C5B85-9471-FDEE-B50A3A2834B0F4CD}" FilePath="*data\default\cache\f_??????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{833BBF6F-7BEF-BD11-C7EAE5902F36C2EA}" FilePath="*data\*~rf*.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{217B74FC-CA2E-FAEA-67F6664269B10D41}" FilePath="*data\default\*cache\*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{3842F6DD-79B6-EE34-FC4A2E5D0AFD97D3}" FilePath="*data\*.usage" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{896DFC2D-A0D4-228C-BD64EF97400B0418}" FilePath="*data\*\????????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C896A6A5-8159-7BBF-287EB3554EE4845A}" FilePath="*data\*\??????.log" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{3F81DBD8-53AC-B9D5-8C6B379DA3613A6C}" FilePath="*data\*\??????.dbtmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6AD1420F-04AF-F03A-812509463FBDCDD1}" FilePath="*data\*\????????????????_?" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{D5EA3847-A9B2-A42B-0DEA1618D8D911F0}" FilePath="*data\*\?" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{8C5058D8-45C0-2EC2-7DE668C4A4498D0E}" FilePath="*data\*\??" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{E98485C9-E139-4293-2B2534B5EEA420AF}" FilePath="*data\*\????????-guid.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{62B22E80-C936-3E0F-5A4FB5119E5A672F}" FilePath="*data\*\browsermetrics-spare.pma*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{E18C7F11-938F-33AD-32C84642B002C9E7}" FilePath="*data\*\chrome_shutdown_ms.txt" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C7F72875-A4B8-55F7-0C01A15B1691BCDE}" FilePath="*data\*\chromeextmalware.store*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6A5887A3-6134-8A9E-0C3CC592617007A1}" FilePath="*data\*\crashpadmetrics.pma" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{A519BE8F-C218-E6C4-863B75D53A4EF3EF}" FilePath="*data\*\crl-set" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6F93B49E-C96D-B2CE-70AC29F651438757}" FilePath="*data\*\current" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{0B604E20-F83A-6CD9-843E9C38899D09AC}" FilePath="*data\*\data_?" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6B68EC88-A4B0-ACCE-27024A4975838000}" FilePath="*data\*\f_??????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{0DC313CF-A9F6-55D1-C541937C9F13FDF7}" FilePath="*data\*\favicons" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{7A7847D2-300C-E127-70C8BE1D90981325}" FilePath="*data\*\history provider cache" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{DE75476A-EC79-6CB2-55D6353415012FBB}" FilePath="*data\*\history" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{3C81E594-4C99-E7A2-97A746A3785BB163}" FilePath="*data\*\index" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{2F84A737-361F-8C3F-743826B3A69F8818}" FilePath="*data\*\last *" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{647D2524-7D35-5F87-5B9AF8AFD2D797CB}" FilePath="*data\*\license" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{444FF1DF-4F47-9A65-8EBDE6E9BD3FAFCC}" FilePath="*data\*\lockfile" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{59969EFF-F113-B2DC-628F78CA5C504926}" FilePath="*data\*\log.old" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{0F7F6EC0-77E8-166C-F08F30FD6DD43AB4}" FilePath="*data\*\logo" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{ECDF54F1-D1A1-99C7-0C3CF1302BC554C4}" FilePath="*data\*\manifest-??????" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6FD0676A-8378-E4A3-6B8768659DB04DCA}" FilePath="*data\*\manifest.*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F09B1DCE-7C90-A1CD-8804996804BE0AF0}" FilePath="*data\*\module info cache*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C25334C7-445B-324F-879533E7DD0296DC}" FilePath="*data\*\network *" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{AF68FFAB-6D91-D477-4FC053A191972BB7}" FilePath="*data\*\nigori.bin" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{774ADDDB-0F82-0ABF-9E0AF905D321677D}" FilePath="*data\*\quotamanager" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{70C8D297-AD80-F1AB-F65D0182E286151F}" FilePath="*data\*\safety_tips.pb" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{84312A9C-8EEE-139E-F0BB5FEE3DFD72F9}" FilePath="*data\*\serenity.s??" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C36F2AFF-961D-3452-E3E13A7220DA4A9F}" FilePath="*data\*\settings.???" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{E6556516-8ED2-07BD-57377921A0CBE8C1}" FilePath="*data\*\smashtest-meta.s??" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{659F4AB2-8592-D03B-004217C9F9705023}" FilePath="*data\*\temp-index" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{EAB5A34B-4EA6-C3C8-69A7708F30F8D032}" FilePath="*data\*\the-real-index" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{B0A09CED-E575-7BE9-41D5FF186535C590}" FilePath="*data\*.store" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6C4C9BE4-F1B6-7BB0-E743E40FB03CEFE3}" FilePath="*data\*.store_mew" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{3D9F6A6F-1F6E-102A-C36950019B895052}" FilePath="*data\*\verified_contents.json" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C34AF184-4CD1-5B69-9EF6DF77C1903FF0}" FilePath="*data\*\visited links" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{0967FD10-48C2-22F3-1E0B8ACDD71A15EC}" FilePath="*data\*\web data" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C6464E83-0639-5229-8DFC1B374C242D5D}" FilePath="*data\safe browsing\url*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{EBBC0401-4A0B-CAFB-7795178C6D38081F}" FilePath="*data\safe browsing\urlmalware.store_new" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F1EB6CC5-7695-59D2-13BA398E18AE6972}" FilePath="*data\crashpadmetrics.pma" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{AE9E3305-AB49-D23A-DA556BC446BBC525}" FilePath="*data*\????????-????-????-????-????????????.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{51D524CF-53C0-D5C8-DDFD008824A19CA4}" FilePath="*data\profile 2\preferences" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{12619D76-D2B7-109F-B501F9DFB09A28E0}" FilePath="*data\profile 2\transportsecurity" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{0B5600A7-6CA4-A0A7-39FEEB4888D090D8}" FilePath="*data\default\extensions\*\messages.json" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{749019F5-F441-B1F1-517B2EE798BAB19A}" FilePath="*data\default\indexeddb\https_*.indexeddb.blob\*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{BE97EA88-4CD7-12EA-A30318089826F7F1}" FilePath="*data\default\local storage\leveldb\??????.ldb" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6E316278-DF83-6EE4-95656DB083783B9C}" FilePath="*data\configs\*_*.json" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{24C77EDB-3595-C193-701D3662A1E489A3}" FilePath="*data\crashpad*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{8CB5F100-B802-2A21-572F3F4F325133FB}" FilePath="*data\grshadercache\gpucache\*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1D83D512-2228-9A91-C0B1FA95877F7CF3}" FilePath="*data\module info cache~rf*.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{39073062-E4C9-29D0-6D4AD775DCC641B7}" FilePath="*data\profile*~rf*.tmp" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{53A5D05A-AD2F-5FBF-BA78DF7CCA1A79FC}" FilePath="*data\smartscreen\remote\synchronouslookup*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{9B6C8421-47D0-6A15-15C7591024AFD097}" FilePath="*data\browsermetrics-spare.*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{BC762A81-2442-8FF6-A52ECAA1F6228F4B}" FilePath="*data\chrome_shutdown_ms.txt" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{D721C461-D043-9A65-07D890AB53BACB5B}" FilePath="*data\default\bookmarks" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F1DEE2FC-57D0-A780-AAB1562CECEC0C4F}" FilePath="*data\default\code cache\js\index-dir\the-real-index" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F4125B8D-F1C8-CB59-DDA07A15ECA5E7A7}" FilePath="*data\default\cookies" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{3C24D6F1-DDE3-7A8A-893BEAC26D7D3C9A}" FilePath="*data\default\downloadmetadata" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{17953ECA-B1F9-085F-8B536679F90094A6}" FilePath="*data\default\sync data\nigori.bin" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{74E50385-5E41-19F5-48EFF735EEF67EA9}" FilePath="*data\last browser" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{58D49C11-605E-2245-AD427E0AB5FD1375}" FilePath="*data\last version" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{6FF079B1-5D75-18D2-04362826EB942CF9}" FilePath="*data\lockfile" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1F6741F9-7277-9CC1-2889261D89AA7C4D}" FilePath="*data\module info cache" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{9E6E6A32-2AC6-F725-5F2723CDA703BE4F}" FilePath="*data\profile ?\preferences" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{38205925-416D-05FC-BD96ECD817F344A1}" FilePath="*data\profile ?\transportsecurity" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F9A3D2D5-0D23-03D9-A0634CB078194F87}" FilePath="*data\tab lifetime" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{DB0ECCD7-ED43-A686-F5637473184AD0E9}" FilePath="*data\default\cache\f_??????" >
+		<Process >
+			<Signature Subject="*google*" />
+		</Process>
+	</File>
+	<File Id="{658A072C-0D2E-3E31-F00B467C32B00EBB}" FilePath="*data\default\code cache\js\????????????????_?" >
+		<Process >
+			<Signature Subject="*google*" />
+		</Process>
+	</File>
+	<File Id="{EC3BEFF7-179C-0727-F8567F943173B33C}" FilePath="*data\default\service worker\cache*" >
+		<Process Path="*application\*" >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{F754FFDE-BD3F-9BC9-D85254D902465AB3}" FilePath="*data\default\network\transportsecurity" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{0699AF3F-09A5-5CDB-6AE10D33A817E030}" FilePath="*data\default\code cache\js\index-dir\*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{A1B94F29-7DA5-A8E8-8AF55B98B5084732}" FilePath="*data\default\indexeddb\https_*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1BD089CC-BC66-52A1-751203E323B166D0}" FilePath="*data\default\network\transportsecurity~rf*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{A8CDAEE8-7388-A5BF-5792647405D0C6EA}" FilePath="*data\default\preferences~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{E33193C2-3DDC-5BCC-4F0DAECAC29F7D88}" FilePath="*data\default\session storage\*.ldb" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{2AE3B358-482C-DB3D-44CD354DD7DEA13C}" FilePath="*data\default\sessions\session_*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{DA522AB3-67DF-B312-1F17EBE643F3DF31}" FilePath="*data\default\transportsecurity~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{C0058044-BEE4-D8A6-3B09A374B3A07CB5}" FilePath="*data\profile ?\network\transportsecurity~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{DC68AF4B-0994-6262-2F76050D4EC8BEFF}" FilePath="*data\profile ?\preferences~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{34367B9A-E835-6613-96BAA4306ED72F53}" FilePath="*data\local state~*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{EE998960-6F6E-14DA-C1FB6C840644F9F3}" FilePath="*data\default\cache\*" >
+		<Process Path="c:\program files (x86)\360\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{790B6BF7-E827-CB3A-D6A74F29199E0EE9}" FilePath="*data\default\preferences~*" >
+		<Process Path="c:\program files (x86)\360\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{C1FAFF40-4489-FD49-28C3CD3F6AB7F6B0}" FilePath="*data\default\cache\*" >
+		<Process Path="c:\program files\360\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{DF8E98A8-1FD3-9ADD-EF03BB0AF017B0A6}" FilePath="*data\default\preferences~*" >
+		<Process Path="c:\program files\360\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{6CC9F325-4350-2896-87593B108F37374A}" FilePath="*data\default\cache\*" >
+		<Process Path="*appdata\local\360chrome\chrome\application\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{F1A9144A-C710-2E8F-3A442D8A7FE912D6}" FilePath="*data\default\preferences~*" >
+		<Process Path="*appdata\local\360chrome\chrome\application\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{D446068A-4001-662B-53F45DC0F06BAD67}" FilePath="*data\default\cache\*" >
+		<Process Path="*appdata\roaming\360*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{0685D075-CD97-5962-5E5BB8B6421B7D0F}" FilePath="*data\default\preferences~*" >
+		<Process Path="*appdata\roaming\360*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{939F8DF6-9962-AB8D-99493833C994F704}" FilePath="*data\default\cache\*" >
+		<Process Path="*appdata\roaming\secoresdk\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{1F2A663C-3771-CA0A-98901B5D6F260042}" FilePath="*data\default\preferences~*" >
+		<Process Path="*appdata\roaming\secoresdk\*" >
+			<Signature Subject="*Beijing Qihu*" />
+		</Process>
+	</File>
+	<File Id="{DF24533E-6264-47BB-002B540D7E62BDB6}" FilePath="*data\default\cache\*" >
+		<Process Path="*\program files (x86)\tencent\*" >
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</File>
+	<File Id="{5F944FD6-18B6-F68C-2DCB4716242FEB95}" FilePath="*data\default\cache\*" >
+		<Process Path="c:\program files (x86)\tsoft\*" >
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</File>
+	<File Id="{5287EA36-1295-87A4-2159FD85B6596B84}" FilePath="*data\default\cache\*" >
+		<Process Path="c:\program files (x86)\wxwork*" >
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</File>
+	<File Id="{6951778E-0E28-216C-8591997A9B00ABAB}" FilePath="*data\default\cache\*" >
+		<Process Path="c:\program files\tencentdocs*" >
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</File>
+	<File Id="{D523C7F4-3C48-ED62-03C83A5031D5FA40}" FilePath="*data\default\cache\*" >
+		<Process Path="*appdata\roaming\tencent\*" >
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</File>
+	<File Id="{A464818A-5CFC-1AB9-9E5FCF4767A62675}" FilePath="*data\default\cache\*" >
+		<Process Path="c:\program files\windowsapps\tencentwechatlimited*" >
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</File>
+	<File Id="{15C0514A-F8FF-B638-931CB63006B39AF0}" FilePath="*data\profile *network\transportsecurity">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{EDC0CE00-02D6-3F10-A21E2304DD55E2C0}" FilePath="*data\hyphen-data\*hyph-*.hyb">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{1EC253B2-B294-EBB1-73D01F219DB3F307}" FilePath="*appdata\roaming\microsoft\Шаблоны\normal.dotm" >
+		<Process Path="*svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{2F4CB972-7E89-A01B-F69912558FA66274}" FilePath="*appdata\roaming\microsoft\Шаблоны\normalemail.dotm" >
+		<Process Path="*svchost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{3F4EDD79-B99C-3923-4A7DA2C59BBBF6E1}" FilePath="*appdata\roaming\microsoft\Шаблоны\normalemail.dotm" >
+		<Process Path="*\office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{48D42E00-3C91-9D57-7FDF9A9F306C38F1}" FilePath="*appdata\roaming\microsoft\Шаблоны\~$rmalemail.dotm" >
+		<Process Path="*\office*\outlook.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{5B2C1D87-E3E0-2018-1F2038DA24BE29C5}" FilePath="*appdata\roaming\microsoft\Шаблоны\~$normal.dotm" >
+		<Process Path="*winword.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+	<File Id="{6EE4C0E7-EE5E-3030-C301C36FE41FFD4B}" FilePath="*appdata\roaming\microsoft\Шаблоны\normal.dotm" >
+		<Process Path="*winword.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</File>
+<!-- Part 0027 2023-03-17T13:27:00.000Z-1679059621 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0028 2023-03-20T17:54:00.000Z-1679334893 -->
+<!-- Part 0028 2023-03-21T10:59:00.000Z-1679396361 -->
+	<File Id="{D346D4A7-0994-F18B-7896418894309E91}" FilePath="c:\windows\system32\ms-in\*">
+		<Process Path="c:\windows\system32\ms-in\commandcenter.exe">
+			<Signature Subject="Solar*" />
+		</Process>
+	</File>
+	<File Id="{93B1C344-ADE9-37C1-7EBAA70A5E625347}" FilePath="c:\windows\temp\????????????????????????????????">
+		<Process Path="c:\windows\system32\ms-in\networkservice.exe">
+			<Signature Subject="Solar*" />
+		</Process>
+	</File>
+	<File Id="{36E8D3B8-517C-C848-8AC31604D166D360}" FilePath="c:\temp\????????????????????????????????">
+		<Process Path="c:\windows\system32\ms-in\networkservice.exe">
+			<Signature Subject="Solar*" />
+		</Process>
+	</File>
+	<File Id="{05D6810D-2962-DE29-B08CAE296EEA46C8}" FilePath="*Boldon James*">
+		<Process Path="*Boldon James*">
+			<Signature Subject="Boldon James*" />
+		</Process>
+	</File>
+	<File Id="{7672FA7D-3F47-6804-538D16ADF4285BFF}" FilePath="*fireeye*">
+		<Process Path="*fireeye*">
+			<Signature Subject="fireeye*" />
+		</Process>
+	</File>
+	<File Id="{D510322A-15BE-CCCE-6E9229ED80B56932}" FilePath="c:\windows\!checkupdates\!lastupdate.txt">
+		<Process CmdLine="powershell.exe -file c:\windows\!checkupdates\lastupdate_every_half_hours.ps1" />
+	</File>
+	<File Id="{0BCF80BF-5B7D-8A69-26F2B0340270BD74}" FilePath="c:\windows\system32\grouppolicy\datastore*\gpt.ini">
+		<Process Path="c:\windows\system32\svchost.exe" />
+	</File>
+	<File Id="{25D63B9E-420E-8E37-AF9B8976968C54F2}" FilePath="c:\windows\system32\grouppolicy\datastore\*machine\registry.pol">
+		<Process Path="c:\windows\system32\svchost.exe" />
+	</File>
+	<File Id="{5ED7A999-E428-AC69-1D0170CDD9FAB849}" FilePath="c:\windows\system32\grouppolicy\datastore\*machine\microsoft\windows nt\secedit\gpttmpl.inf">
+		<Process Path="c:\windows\system32\svchost.exe" />
+	</File>
+	<File Id="{33979C35-AF7A-2417-8E724DED1F672AC8}" FilePath="c:\windows\system32\grouppolicy\datastore\*machine\comment.cmtx">
+		<Process Path="c:\windows\system32\svchost.exe" />
+	</File>
+	<File Id="{A6B820A5-1296-4A04-6D8EAE86E655364F}" FilePath="c:\windows\system32\grouppolicy\datastore*machine\scripts\scripts.ini">
+		<Process Path="c:\windows\system32\svchost.exe" />
+	</File>
+	<File Id="{8155DFE8-63EB-E84F-26C5F8C35FB0D251}" FilePath="c:\programdata\microsoft\network\downloader\qmgr.db">
+		<Process Path="c:\windows\system32\svchost.exe" />
+	</File>
+	<File Id="{41780F97-8F68-6B65-093EC869F1657DBF}" FilePath="c:\users\*security_attr_temp\securityattributes.ini">
+		<Process Path="c:\program files\citrix\user profile manager\userprofilemanager.exe">
+			<Signature Subject="Citrix*" />
+		</Process>
+	</File>
+	<File Id="{EED6D803-955B-15B4-C627A3D7964A5366}" FilePath="*dialogs\chats_threads.cache.tmp">
+		<Process CmdLine="c:\users\*appdata\roaming\vk teams\bin\vkteams.exe /startup">
+			<Signature Subject="*Mail.ru*" />
+		</Process>
+	</File>
+	<File Id="{8599B03D-B70E-6D89-85308B74585A7AC1}" FilePath="c:\programdata\usoprivate\updatestore\store.db">
+		<Process CmdLine="c:\windows\system32\mousocoreworker.exe -embedding" />
+	</File>
+	<File Id="{A800E031-7542-9BC6-8F7AAC1CFD859224}" FilePath="*temp\*hyph-*.hyb">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{8AF36275-192B-10D2-9C3755F5D109926D}" FilePath="*temp\*.crx3">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{BF16A229-102A-F768-4D61FEF29FF16E5F}" FilePath="*d3dscache\*.lock">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</File>
+	<File Id="{5A98C227-59B9-8B30-BEAB94C91809CB76}" FilePath="*appdata\local\microsoft\office*history*.hist">
+		<Process Path="*office*">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{11B0F632-9189-5FEC-B6A9BD89D0D1936F}" FilePath="*temp*\olk????.tmp">
+		<Process Path="*office*\outlook.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{B4AB821F-EB20-AB2C-CC9DE1014CF2347C}" FilePath="*temp*\mso????.tmp">
+		<Process Path="*office*\outlook.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{840617C1-F023-1A5B-A3016BBE9CEB8B0F}" FilePath="*temp*\????????.???.jpg">
+		<Process Path="*office*\outlook.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{E27094D7-F414-D7F8-5A0CACBAD26A3108}" FilePath="*temp*\????????.???.png">
+		<Process Path="*office*\outlook.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{61574DB7-EBA1-005C-290E99C5CE9BEB38}" FilePath="*temp*\????????.???.gif">
+		<Process Path="*office*\outlook.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{20AA51AA-D675-7FC8-73BC0E916D05C6AC}" FilePath="*\thinclient\profiles*">
+		<Process Path="*citrix*\userprofilemanager.exe">
+			<Signature Subject="Citrix*" />
+		</Process>
+	</File>
+	<File Id="{D2630436-FE87-1E13-ABDDBA1472F47DB3}" FilePath="*microsoft\systemcertificates\my\certificates\????????????????????????????????????????">
+		<Process Path="*citrix*\userprofilemanager.exe">
+			<Signature Subject="Citrix*" />
+		</Process>
+	</File>
+	<File Id="{47B28A14-D8A4-3744-7293C581B6B63AE5}" FilePath="*pls-recovery*\?????.???">
+		<Process Path="*PLSQL*">
+			<Signature Subject="Allround Automations" />
+		</Process>
+	</File>
+	<File Id="{CBA147FE-D983-7D16-57C1861DC1D493AE}" FilePath="*pls-recovery*\??????.???">
+		<Process Path="*PLSQL*">
+			<Signature Subject="Allround Automations" />
+		</Process>
+	</File>
+	<File Id="{09779F2D-21D1-6CD0-F5F32C3A26A99359}" FilePath="*pls-recovery*\???????.???">
+		<Process Path="*PLSQL*">
+			<Signature Subject="Allround Automations" />
+		</Process>
+	</File>
+	<File Id="{9AB2F67B-C4D8-583C-184C3737FA1CFA38}" FilePath="*trueconf\client*">
+		<Process Path="*Trueconf*">
+			<Signature Subject="TrueConf*" />
+		</Process>
+	</File>
+	<File Id="{5181CCC9-9B39-B3A3-D1A5F87699B961BD}" FilePath="c:\programdata\*.db-journal">
+		<Process Path="*\dwm.exe">
+			<Signature Subject="Teramind*" />
+		</Process>
+	</File>
+	<File Id="{AF7DB6FE-91C9-5B1D-75B26F53A2D38021}" FilePath="*documents\project-temp-????????????????????.xml">
+		<Process CmdLine="C:\ProgramWork\SoapUI-*\bin\SoapUI-*.exe ">
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</File>
+	<File Id="{B6BB6EEA-E3E4-A410-1250701FF157DC6F}" FilePath="*documents\project-temp-???????????????????.xml">
+		<Process CmdLine="C:\ProgramWork\SoapUI-*\bin\SoapUI-*.exe ">
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</File>
+	<File Id="{7E6069B6-876A-C5BD-C5B5DAFCAB79F3A6}" FilePath="*documents\project-temp-??????????????????.xml">
+		<Process CmdLine="C:\ProgramWork\SoapUI-*\bin\SoapUI-*.exe ">
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</File>
+	<File Id="{F48C54EF-9905-CC79-F059DA40C58042B1}" FilePath="*documents\project-temp-?????????????????.xml">
+		<Process CmdLine="C:\ProgramWork\SoapUI-*\bin\SoapUI-*.exe ">
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</File>
+	<File Id="{4A15E11B-AF81-A671-75B9967FC5869E81}" FilePath="*appdata\local\temp\toa????.tmp">
+		<Process Path="*Quest*">
+			<Signature Subject="Quest*" />
+		</Process>
+	</File>
+	<File Id="{21BA3E3B-50CD-2044-671E2CA04EE5B7F1}" FilePath="*appdata\local\temp\toa???.tmp">
+		<Process Path="*Quest*">
+			<Signature Subject="Quest*" />
+		</Process>
+	</File>
+	<File Id="{CE71B029-A7D5-6F35-38E334E470062E15}" FilePath="*appdata\local\temp\bginfo.bmp">
+		<Process CmdLine="c:\windows\bginfo.exe c:\users\*/bginfo.bgi  /timer:0 /nolicprompt /silent">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{520C2D58-16C3-9432-8A5995F91F465EBB}" FilePath="*appdata\local\temp\~df????????????????.tmp">
+		<Process CmdLine="c:\windows\bginfo.exe c:\users\*/bginfo.bgi  /timer:0 /nolicprompt /silent">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</File>
+	<File Id="{EAF9DD7A-1BD6-FF4E-0DBC4F3F8B98FBF2}" FilePath="*appdata\local\temp\*">
+		<Process CmdLine="*windowstyle hidden -file &#34;c:\program files\tlm\mainwindow1.ps1&#34;" />
+	</File>
+	<File Id="{66C69FAE-D7A3-A1C5-FB078A75CE3E31BA}" FilePath="*appdata\local\zabbix\log*">
+		<Process CmdLine="*windowstyle hidden -file &#34;c:\program files\tlm\mainwindow1.ps1&#34;" />
+	</File>
+	<File Id="{1B949C20-4B64-B8D4-DD79631E7BC390BA}" FilePath="*\Информационные системы*.url">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
+	</File>
+	<File Id="{B6DC8EC7-CF18-B833-8C2CEC98E53A96AD}" FilePath="c:\windows\system32\sleepstudy*.etl">
+		<Process Path="c:\windows\system32\taskhostw.exe" CmdLine="taskhostw.exe idle" />
+	</File>
+	<File Id="{1EC8F3D9-6D37-2E19-8BF6EF0E96984510}" FilePath="*\Информационные системы*.url">
+		<Process CmdLine="xcopy *dpoint*thinclient*z /q" />
+	</File>
+<!-- Part 0028 2023-03-21T10:59:00.000Z-1679396361 -->
+<!-- Part 0028 2023-03-20T17:54:00.000Z-1679334893 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
