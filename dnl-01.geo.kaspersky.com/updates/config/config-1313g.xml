@@ -1,428 +1,439 @@
 <Update
-	Date="20032023 0723"
-	BlstDate="19032023 2306"
+	Date="27032023 1113"
+	BlstDate="26032023 2306"
 	ObjectType="2=CONFIG;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="13"
+	MaxDownloadSizeKb="14"
 	CompID="CONFIG"
 	LocalPath="%BaseFolder%">
+	<File
+		App="KAVSDK 8.10.0.*"
+		OS="Win"
+		SrvPath="kavsdk/win"
+		Name="cfg_kavsdk_win_8_10_0.xml"
+		DSKM="tTDVQ9NAE2h/RoO0O9RwuZ99WKJ1x+cq53KRZ1GkgT8="/>
 	<Files
 		Item="App;SrvPath;Name;DSKM"
 		List="
-			KAVSDK 8.10.0.*|kavsdk/win|cfg_kavsdk_win_8_10_0.xml|tTDVQ9NAE2h/RoO0O9RwuZ99WKJ1x+cq53KRZ1GkgT8=;
 			KICSNL 1.3.0.*\;KSLS 11.3.0.*|kesl|cfg_kesl_11.3.0.xml|zKWeUHNWgEkSNrm2x1KP2/QgwryxAPi6HM9WhjFxo+0=;
 			AVSL 22|avsl|cfg_avslite_22_0_1.xml|/NsDiJBobugxtsyBdJkfXdD9jmokQJVe4h4sU16tarI=;
 			KSC 14.2\;KSC 15.0|ksc|cfg_ksc.xml|2XZoUJ+zji5FCxnJzvPmXGCBqX2PARBjBK9u3s6gCrg=;
 			KICSNET 4.0.1.*|kicsnet|cfg_kicsnet.xml|aT4vWbUNngsot/JrnaqSw6+bF2W5R4Ar13vcYcdiAdc="/>
 	<File
+		App="KAVSDK 8.10.1.*"
+		OS="Linux"
+		SrvPath="kavsdk/nix"
+		Name="cfg_kavsdk_nix_8_10_1.xml"
+		DSKM="tBewS8qNx2bvJFkSrUK6w+18RbjYeArM1ml8r40sjGY="/>
+	<File
 		CompID="HASHES_SHA256"
 		Name="config-1313g.sha2rg"
-		DSKM="DXbCrgtE15Bl6ZMRMYaqw435cHAKKQWwtI+uHxnDyhA="/>
+		DSKM="LbP9Y5DZ76bZ+yNy4vKTKYeLhv8plS3N98+irwaFhDI="/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="!KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS|KSDE|KASPERSKY|KES|SAFEKIDS|KPMWIN|KAR|KARH|KAVMAC [1,6,10,19-21,23];KSDE 19"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[0-4].*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[0-4].*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.5.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.5.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KASPERSKY 21.6.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KASPERSKY 21.6.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS 21.6.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS 21.6.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.7.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.7.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.8.*.*"
 		Target="[13107-222821]"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.8.*.*"
 		Target="[0-13106,222822-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.9.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.9.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.13.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSOSPC|KSOSFS|KASPERSKY 21.13.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.[0-4].*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.[0-4].*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.5.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.5.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.6.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.6.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.7.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.7.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.8.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.8.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.9.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.9.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.13.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 21.13.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 20"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KSDE 20"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.3"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.3"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.4"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.4"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.5"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.5"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.6"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.6"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.7"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.7"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.8"
 		Target="[0-262142]"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.8"
 		Target="262143"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.9"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KES 21.9"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS 20.*.*.*"
 		Target="2621"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS 20.*.*.*"
 		Target="[0-2620,2622-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="SAFEKIDS [1,23]"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="SAFEKIDS [1,23]"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KPMWIN 10.1"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KPMWIN 10.1"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KPMWIN 10.[2-3]"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KPMWIN 10.[2-3]"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KPMWIN 23"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KPMWIN 23"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAR|KARH 6"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAR|KARH 6"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAVMAC 23"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<Index
 		CompID="CONFIG,RETR1901_CONFIG"
 		App="KAVMAC 23"
 		Target="[1-262143]"
 		Name="unmod-config-1313g.xml"
-		Date="20032023 0723"/>
+		Date="27032023 1113"/>
 	<File
 		CompID="RETR1901_CONFIG"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="config-1901g.xml"
-		DSKM="PB39KkcGk+Y6rL7yAc/BUBP+YWpApQLySkNgNWOgsj0="/>
+		DSKM="mdxayQ2BmH1r181rNvN0bPg0MRYqG+JpOc1KBnKKCis="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="config-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGbC9678UHNtTS0NF0Go5oLDBkmCx2bdP8RYXbNzlVD6doMJ3rwjkNsKypVOw6NIDQmg+o7kPliBSU0zyEZstkMBAB4JogEAAAIAAigGAENPTkZJRwMAAigEAEJBU0UBAAAJfO/4VA0KOzoxMDRMN0FXMWhpaWpyeHp5ZjQwMG1keEFVRWowVStKQjJYNUhHM0JSc3pPYnNuWGJzZUt5Ulo0UVpJNFRFSHN3azgrU3dGcGhkczg4VTI1QWNkUWlTMkxhJSU=</Key>
 </Update>
-;:10a8n6fChloXCLZn0DU/JUbp4e3yqGhe+salr0aalJV7+Q7N78HARMORBniLY6SmpDsgAjqtL4GguXTgQNnhYNho%%
+;:10q5a9qbwKrB3FwA6Y5RHicDs8asGZXKbr0fEcFs2G8V3u6GEUJQ2jwp2yNBhAGMz+4wvmS3rgiWPIaxMwj5GjbE%%
