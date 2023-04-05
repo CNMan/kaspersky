@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2023-02-20T18:27:00.000Z-1676917664 -->
+  <!-- Version: 2023-04-03T18:57:00.000Z-1680548241 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -498,14 +498,14 @@
 
   <Event Name="SystemAuditPolicyChanged.Vista" Id="4719" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
 
+<!-- too many events. disabled.
+
   <Event Name="NetworkShareAccessed.Vista" Id="5140" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Exclusions>
       <Equal OrderNum="14" Value="\\*\IPC$"/>
       <Equal OrderNum="14" Value="\\*\NETLOGON"/>
     </Exclusions>
   </Event>
-
-<!-- too many events. disabled.
 
   <Event Name="NetworkShareAccessedEx.Vista" Id="5145" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Exclusions>
