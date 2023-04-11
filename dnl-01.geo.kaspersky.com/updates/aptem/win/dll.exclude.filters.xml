@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2022-11-29T17:41:00.000Z-1669743683 -->
+	<!-- Version: 2023-04-06T16:42:00.000Z-1680799357 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -946,12 +946,6 @@
 	<Image Id="{5CFA7D70-2EFD-558D-1CD3CF20228086AA}" Path="*citrix\system32*" >
 		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
 	</Image>
-	<Image Id="{F8F25D6A-D7A1-12DF-38E59FABD68D76D3}" >
-		<Signature Subject="*Citrix*" />
-		<Process >
-			<Signature Subject="*Citrix*" />
-		</Process>
-	</Image>
 	<Image Id="{271FFE3D-6B03-55E2-EEF6FB56770F19F4}" Path="c:\windows\ltcjobs\jobs\ltc\bin\snpa_res.dll" >
 		<Process Path="*LtcJobs\Jobs\Ltc\Bin*" />
 	</Image>
@@ -1581,6 +1575,23 @@
 		<Process CmdLine="*windows_sandbox\bazelsandbox.exe @*monorepo/component*" />
 	</Image>
 <!-- Part 0017 2022-11-29T17:41:00.000Z-1669743683 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 18: 2023-04-06T16:42:00.000Z-1680799357 -->
+	<Image Id="{4A6A14A2-17BD-36C7-92F99E66603C0372}">
+		<Signature Subject="*Solar Security*" />
+	</Image>
+	<Image Id="{5D8EA677-73B3-DC68-15284FA3AB837134}">
+		<Signature Subject="Citrix*" />
+	</Image>
+	<Image Id="{F7AFDADF-4235-459B-A400205885C4671E}" Path="*\windows\*">
+		<Signature Subject="*Microsoft*" />
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Image>
+<!-- Part 18: 2023-04-06T16:42:00.000Z-1680799357 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

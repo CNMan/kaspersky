@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2022-12-19T18:20:00.000Z-1671474017 -->
+  <!-- Version: 2023-04-07T19:35:00.000Z-1680896125 -->
 
 <!-- 
 	Part 0001 START
@@ -4177,6 +4177,392 @@
 		<Process CmdLine="C:\Windows\system32\svchost.exe -k NetworkService -p -s Dnscache" />
 	</NetworkConnection>
 <!-- Part 0021 2022-12-19T18:20:00.000Z-1671474017 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0022 2023-04-07T19:35:00.000Z-1680896125 -->
+	<NetworkConnection Id="{6961AC64-5F14-6A3F-57EA59B38D319819}" RemoteAddress="10.*" RemotePort="443">
+		<Process Path="*\bdagent.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{F39471E3-E567-F60A-B334F5A8A01681B3}" RemoteAddress="172*" RemotePort="53">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{25D15D76-907B-BA55-55F2F7196D1EB79B}" RemoteAddress="2400:da00:c0bc:1001::6666" RemotePort="53">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{8DE14A98-BF7F-59B3-CCEB2F11F53B973B}" RemoteAddress="2400:da00:c0bc:1002::6666" RemotePort="53">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{72E64961-179D-EA83-B4B5BD34BBB0E66F}" RemoteAddress="10.*" RemotePort="80">
+		<Process Path="*\bztagent.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{757160A5-AB65-4D19-CB09A058EC2C4F3D}" RemoteAddress="172*" RemotePort="80">
+		<Process Path="*\duguanjianeisou.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{6FB99C1E-DA1A-4149-938EF392912D667F}" RemoteAddress="10.*" RemotePort="443">
+		<Process Path="*\duguanjiasvc.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{729476C7-6D64-4EEF-1B5B08FA3D7106C1}" RemoteAddress="10.*" RemotePort="443">
+		<Process Path="*\infoflow.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{884A5E1F-31E3-430D-823070D4D61DDCDF}" RemoteAddress="124.237.17*" RemotePort="443">
+		<Process Path="*\infoflow.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{9D7932DD-4555-D48E-11804EC6DEE9BD69}" RemoteAddress="14.215.17*" RemotePort="443">
+		<Process Path="*\infoflow.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{FAA86779-1624-2C6F-80EEA576DAC3BB88}" RemoteAddress="220.181.10*" RemotePort="443">
+		<Process Path="*\infoflow.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{57F148AC-21D4-642E-2EA3DB2C3D46BAA3}" RemoteAddress="114.114.114.114" RemotePort="53">
+		<Process Path="*\svchost.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{5BC10B63-C5BE-92EF-5104A0E503D13202}" RemoteAddress="211.136.1*" RemotePort="53">
+		<Process Path="*\svchost.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{7F746EC7-140A-F5B2-5306B64558EF7467}" RemoteAddress="110.242.6*" RemotePort="80">
+		<Process Path="*\wpscloudsvr.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{29B781D8-C023-0F65-5A8A2AD8E3286DF2}" RemoteAddress="14.119.10*" RemotePort="80">
+		<Process Path="*\wpscloudsvr.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{C7897BAE-993B-CE00-35E475B3B25CF6E1}" RemoteAddress="14.215.17*" RemotePort="80">
+		<Process Path="*\wpscloudsvr.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{619DF177-2DD0-A39D-170CFB7E519AF009}" RemoteAddress="220.181.3*" RemotePort="80">
+		<Process Path="*\wpscloudsvr.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{AE0F544F-C847-2FF9-931AA616A55117D8}" RemoteAddress="182.254.11*" RemotePort="80">
+		<Process Path="*\wxwork.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{8D87A90E-5824-AC88-3651C7B17A36C59F}" RemoteAddress="10.*" RemotePort="80">
+		<Process Path="*\企业云盘.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{20A0EE3C-C102-4555-5924C18F190344D4}" RemoteAddress="45.254.4*" RemotePort="443">
+		<Process Path="*\有道云笔记.exe">
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{9765CB9E-F3BC-15D9-0D6ABFDCF8A5012A}" Url="*baidu.com/workmanagement/workstate/get" />
+	<NetworkConnection Id="{01B382C7-D566-8B29-012AD60BBD0F571D}" Url="*yy.com/dns_query_v*" />
+	<NetworkConnection Id="{29D4C662-3429-84F8-187D6609433762B3}" Url="*baidu.com:8530/clientwebservice/client.asmx" />
+	<NetworkConnection Id="{1DE41BB3-AF70-568F-BF1946C0C74F1BE6}" Url="*baidu.com/workmanagement/push*" />
+	<NetworkConnection Id="{8E317077-73E3-AF7B-576E4ED233592504}" Url="*baidu.com/pmanagement/push*" />
+	<NetworkConnection Id="{805A2566-DA2D-24F0-2E2F2C44685C10D1}" Url="*baidu.com/tips*" />
+	<NetworkConnection Id="{8AF68512-0B90-414D-DEF5CB9B0CB7A058}" Url="http://get.sogou.com/q" />
+	<NetworkConnection Id="{B105BA8B-34F2-BC7A-64F6C937C387A336}" Url="*yy.com/management/resource*" />
+	<NetworkConnection Id="{DCCFB60F-7865-41E1-80050DE5BAECDA1C}" Url="*baidu.com/assess-answer*" />
+	<NetworkConnection Id="{BA3718D6-5D1A-9D0D-8ED01DB1FBCFCB89}" Url="*bcebos.com/v1/yy-ai-train*" />
+	<NetworkConnection Id="{137DFF11-1638-84C2-3608BCA598476390}" Url="*baidu.com/auditperson*" />
+	<NetworkConnection Id="{8A39DFBC-25B3-FD45-099AAC2C2A26E708}" Url="*baidu.com/duxuetang/rs*" />
+	<NetworkConnection Id="{225AC66A-7ED7-5CBD-E09EFD85E7EA1968}" Url="http://turing.map.baidu.com*" />
+	<NetworkConnection Id="{CB1326CF-6576-A6FA-0FDF2066FA3E1A67}" Url="http://wup.imtt.qq.com:8080/?encrypt*" />
+	<NetworkConnection Id="{98951F4C-F2A3-BDB6-B0710CB44890E0EF}" RemoteAddress="101.227.13*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{9D33B970-5882-2F98-D8AB476706EC119D}" RemoteAddress="101.91.3*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{398E24E8-24DB-DA04-C04645B104115321}" RemoteAddress="112.65.19*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{2FDC4CF8-D755-9297-9706C495E5093A2A}" RemoteAddress="117.89.17*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{59DD34BA-E266-347A-51F7AD2E02BA340D}" RemoteAddress="119.147.1*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{EEBA2ACE-547A-C245-376F9076413C3CE1}" RemoteAddress="140.207.12*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{CABDF7E5-F7FD-2AA1-2F0641AE3809948A}" RemoteAddress="157.255.*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{F22D4ABC-8B83-C907-64E224589872029C}" RemoteAddress="180.101.24*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{D634B921-AF5B-CBA6-389120A0D95477BF}" RemoteAddress="182.50.*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{3EDAE4A6-332E-C374-0244468EF1AD771B}" RemoteAddress="183.47.*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{4EA4885A-4830-4900-F2B4EBC111BBA4B0}" RemoteAddress="183.60.*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{476525BC-DF51-9F4D-6656113DAE3CB847}" RemoteAddress="2408:80f1:21:*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{745FFDCD-E531-6275-CFD3D1BD01FD1FEF}" RemoteAddress="2408:80f1:31:*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{1E0561CE-EB48-C824-963D066D44DF74FF}" RemoteAddress="2408:8756:3af0:2013::85" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{D74316AA-3FDF-B1EB-14EB15C7DA771DB0}" RemoteAddress="240e:e1:a*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{6204ED2D-18BD-8964-13341EF2740AE3E5}" RemoteAddress="42.187*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{64AD1A37-0849-76D7-2C9D245FF84A2949}" RemoteAddress="14.29*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{7500A31C-1D48-C578-24D0DF945610F355}" RemoteAddress="112.132*" RemotePort="80">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{64F202E0-4500-7C28-EEBC81D2F07D2B64}" RemoteAddress="42.81*" RemotePort="8080">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{5A05AE40-05BD-F9B1-36D1047D8FF6AF2C}" RemoteAddress="101.32*" RemotePort="8080">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{E0E09D50-98FC-65A0-8DABA0A9611E8227}" RemoteAddress="42.18*" RemotePort="8080">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{D2181EDF-236F-68E3-0DD69B6DEE826FF7}" RemoteAddress="123.15*" RemotePort="8080">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{61390A4C-E87B-1FB2-2FD6FAAEFEAA531E}" Url="http://dns.weixin.qq.com.cn*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{A78FF727-C7CC-5FA1-1A7CEE3B4E9B23A1}" Url="http://extshort.weixin.qq.com*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{0510F4B0-E4C7-ED07-CBDE0BAF2D67CF40}" Url="http://minorshort.weixin.qq.com*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{12B0FBF4-B31A-DECF-0253C822E12BE9C4}" Url="http://shmmsns.qpic.cn/mmsns*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{512F1A31-E452-3994-408ADEC86BC4B19D}" Url="http://szextshort.weixin.qq.com*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{83466471-FE3B-7EBB-C89E4B0E8272CCBF}" Url="*baidu.com/it/u=*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{51D578E5-D4B0-6443-2A84C4A75C918CF1}" Url="http://vd3.bdstatic.com/mda*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{8BDE05C7-6A31-4D42-B45EC9F30FB30C51}" Url="http://wx.qlogo.cn/mmhead*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{69DC9F31-EB8C-878F-78CDD58A478B83D2}" Url="http://wxapp.tc.qq.com*">
+		<Process>
+			<Signature Subject="Tencent*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{326A162C-6EAC-22B2-6237A4017AF91998}" RemoteAddress="36.110.19*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{75B32588-FEF6-D704-64DF9EB1A2987F24}" RemoteAddress="153.35.8*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{8CCEDA55-2EEF-41DC-B89948D9CF4926AC}" RemoteAddress="182.61*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{04AC6257-15FB-EB91-E81DBE192D85E284}" RemoteAddress="110.242*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{1FDE15C7-2F21-1400-61BF13114BF183E8}" RemoteAddress="180.101*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{70821467-E489-4AC8-12EBD6715F25E610}" RemoteAddress="119.39*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{FF6EF55F-6F02-C162-68BFD6DE38FEC85D}" RemoteAddress="101.72*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{1EECC3C3-B8B5-49B3-597E4FE61B884C09}" RemoteAddress="36.99*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{D045FC83-77DF-E250-22BD7E59F043F4B4}" RemoteAddress="221.195*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{A822A378-AF54-9910-F1159D9703B80234}" RemoteAddress="157.148*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{C5455A78-9DE7-1D22-AB7D37D72C00FA04}" RemoteAddress="111.206*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{7E81EF15-616E-7187-D0FA6E18C70F7EAC}" RemoteAddress="2408:80f0:4*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{A54EFB35-9B53-04B4-B4DEEEB449AA08E1}" RemoteAddress="157.148*" RemotePort="8080">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{A7B14ADA-E3A9-69C2-FC722CDB73F1C468}" RemoteAddress="183.47*" RemotePort="8080">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{9FCED3B8-578F-1892-197ADCFE44290D7F}" RemoteAddress="49.7*">
+		<Process>
+			<Signature Subject="*Sogou*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{4233FD3D-4650-D091-803BFCFDB42C87C4}" RemoteAddress="*sogou.com*">
+		<Process>
+			<Signature Subject="*Sogou*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{10C24184-97CE-99CC-69BF3E3D4063BEC0}" RemoteAddress="121.11*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+			<VersionInfo FileDescription="YY*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{E70B56E5-9DAD-50A6-852036B7E82619A9}" RemoteAddress="58.215.18*" RemotePort="80">
+		<Process>
+			<Signature Subject="?*" />
+			<VersionInfo FileDescription="YY*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{1031F57D-B59A-D9F7-D7CE6C79F6F70922}" RemoteAddress="124.237.17*">
+		<Process Path="*\audit.exe">
+			<VersionInfo FileDescription="audit" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{152E776D-B83E-5425-879966BA47B9EA98}" RemoteAddress="180.97*">
+		<Process Path="*\audit.exe">
+			<VersionInfo FileDescription="audit" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{4E5C668C-24A8-1ED0-A90972ACA57E394D}" RemoteAddress="112.80*">
+		<Process Path="*\audit.exe">
+			<VersionInfo FileDescription="audit" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{326D98C2-76E4-57A7-D325DBED20437516}" RemoteAddress="110.242*">
+		<Process Path="*\audit.exe">
+			<VersionInfo FileDescription="audit" />
+		</Process>
+	</NetworkConnection>
+<!-- Part 0022 2023-04-07T19:35:00.000Z-1680896125 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
