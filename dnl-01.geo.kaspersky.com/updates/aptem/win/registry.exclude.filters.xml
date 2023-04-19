@@ -4,7 +4,7 @@
   <!-- !!! DWORD QWORD values in Value="..." has to be specified as they are presented in regedit when you click "Modify binary data" on such parameters. -->
   <!-- !!! For example, 0x1 dword value is Value="01000000" -->
 
-  <!-- Version: 2022-11-29T17:43:00.000Z-1669743793 -->
+  <!-- Version: 2023-04-18T13:22:00.000Z-1681824146 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -3170,6 +3170,146 @@
 		<Process Path="*Guardware\Integrity Management\GWClient.exe" />
 	</Registry>
 <!-- Part 20: 2023-01-18T09:40:04.000Z-1674034807 -->
+<!-- ############################################################################################################### -->
+	
+<!-- ############################################################################################################### -->
+<!-- Part 21: 2023-04-18T13:22:00.000Z-1681824146 -->
+	<Registry Id="{7F7D07C6-AA42-E116-FAA61F07CE93DE6B}" Path="\registry\machine\software\wow6432node\altiris\*">
+		<Process Path="c:\program files\altiris*">
+			<Signature Subject="*Symantec*" />
+		</Process>
+	</Registry>
+	<Registry Id="{02CCF1CE-05FA-6205-4FCB4B03E07FAB3E}" Path="*software\sogouinput.user">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F1F54FE6-185D-2EB2-2B5119427183184B}" Path="*software\kingsoft\office*">
+		<Process Path="*office*">
+			<Signature Subject="*Kingsoft Office*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C6D86393-A511-9F00-2A7F7DB2987A3CD8}" Path="*software\kingsoft\wpscloud*">
+		<Process Path="*office*">
+			<Signature Subject="*Kingsoft Office*" />
+		</Process>
+	</Registry>
+	<Registry Id="{E746C7F8-BE54-9FB7-270A7798DB46D293}" Path="*software\kingsoft\pdf*">
+		<Process Path="*office*">
+			<Signature Subject="*Kingsoft Office*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3730E8B7-8DA2-F2B5-FADA72748D28D453}" Name="shutdownflyoutoptions">
+		<Process Path="c:\windows\system32\mousocoreworker.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{893DD597-0940-6007-A1823704017BDC41}" Name="enhancedshutdownenabled">
+		<Process Path="c:\windows\system32\mousocoreworker.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{A8F4882B-CB2E-0310-4CB443920B192A7B}" Name="etag">
+		<Process Path="c:\windows\system32\mousocoreworker.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{7CED932C-7FBC-8CE5-7AA3CC89A1D44515}" Name="currentcallsperdaycount">
+		<Process Path="c:\windows\system32\mousocoreworker.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{B4E26EE0-EF2E-466D-EF554134B8239E52}" Path="*software\microsoft\inputmethod*">
+		<Process Path="c:\windows\system32\ctfmon.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{FE3052CD-797C-34F5-3BD092761340E53A}" Path="*software\microsoft\ctf\inputsession*">
+		<Process Path="c:\windows\system32\ctfmon.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{8757C952-C946-37AE-9137ACCAC9CDC6B4}" Path="*contentdeliverymanager\creativeevents\subscribedcontent*">
+		<Process Path="C:\Windows\SystemApps\Microsoft.LockApp_*\LockApp.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{9EF5978C-AD98-D20B-CBA2600A459E7E86}" Path="*software\realtek\audio\rtkauduservice*">
+		<Process>
+			<Signature Subject="*Realtek*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1A6A432F-DA7F-0121-1145D0751D701521}" Path="*microsoft\windows\currentversion\uninstall*">
+		<Process>
+			<Signature Subject="*Baidu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{23B3C24C-EC84-5F0E-691416703241811E}" Name="left">
+		<Process>
+			<Signature Subject="*Baidu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{EB2A93EA-3B8B-F785-DCCEEE2E7F899277}" Name="superresolutionenabled">
+		<Process>
+			<Signature Subject="*Baidu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{56C31E4C-166D-E9FE-DA171AB367FEB47C}" Name="colinfo">
+		<Process>
+			<Signature Subject="*Baidu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{180CC578-91B0-C271-5F943DA0F4BB4FA6}" Name="sniffedfoldertype">
+		<Process>
+			<Signature Subject="*Baidu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{DC863F1B-34DA-250C-CF3E8F463AA3DB5B}" Name="groupbykey*">
+		<Process>
+			<Signature Subject="*Baidu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{65D950C5-F104-C062-7D6A9771EE8EEFB0}" Name="%kl_undef%">
+		<Process>
+			<Signature Subject="*Baidu*" />
+		</Process>
+	</Registry>
+	<Registry Id="{FF7942C0-DE39-5287-D18F6894DD1BE953}" Name="left">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</Registry>
+	<Registry Id="{FC21FE63-96D8-B19D-129D3AF796F5C70A}" Name="crashcnt">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</Registry>
+	<Registry Id="{BF1AD336-9A61-3275-723D7CE1B12B69A8}" Name="checkfastpassport">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F579FDEC-1F41-D024-0B625C95A01575E5}" Name="crashrecord">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F85FE359-3A32-8499-72E77657427526C2}" Name="alphaback_*">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C5F164BA-F617-488E-0EE401E5A759F06C}" Path="*microsoft\ctf\cuas\defaultcompositionwindow">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1B20DA38-FC80-650C-D12170CCA4BB3008}" Path="*software\tencent\qqbrowser*">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+	</Registry>
+<!-- Part 21: 2023-04-18T13:22:00.000Z-1681824146 -->
 <!-- ############################################################################################################### -->
 	
 </Filters>
