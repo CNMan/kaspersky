@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2023-04-06T16:42:00.000Z-1680799357 -->
+	<!-- Version: 2023-04-25T17:33:00.000Z-1682443980 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -996,7 +996,7 @@
 		<Process CmdLine="c:\cntc\stc.exe  - - 0 - c:\atd\atd\ast*" />
 	</Image>
 	<Image Id="{72825E47-E8DB-66DD-7ADDC5B0529D5A3F}" >
-		<Process CmdLine="c:\program files (x86)\citrix\ica client\ssonsvr.exe /htc:*" >
+		<Process CmdLine="*citrix*" >
 			<Signature Subject="*Citrix*" />
 		</Process>
 	</Image>
@@ -1097,14 +1097,9 @@
 			<Signature Subject="*sangfor technologies*" />
 		</Process>
 	</Image>
-	<Image Id="{20AFD060-5FCB-C475-6D481EA2A6957BC2}" Path="c:\program files (x86)\sangfor\*" >
+	<Image Id="{20AFD060-5FCB-C475-6D481EA2A6957BC2}" Path="*sangfor\*" >
 		<Process >
-			<Signature Subject="*sangfor technologies*" />
-		</Process>
-	</Image>
-	<Image Id="{1988AA8A-1B26-F7EC-882774CB1D87AF51}" Path="c:\program files\sangfor\*" >
-		<Process >
-			<Signature Subject="*sangfor technologies*" />
+			<Signature Subject="*sangfor*" />
 		</Process>
 	</Image>
 	<Image Id="{79FEFF28-2178-6E36-4D5D66C2442CEBED}" Path="c:\windows\system32\cryptbase.dll" >
@@ -1158,23 +1153,12 @@
 			<Signature Subject="*Hitachi*" />
 		</Process>
 	</Image>
-	<Image Id="{2365EE79-A392-CB91-36FDB6C38D737FFB}" Path="C:\Program Files (x86)\Hitachi\*" >
+	<Image Id="{2365EE79-A392-CB91-36FDB6C38D737FFB}" Path="*Hitachi\*" >
 		<Process >
 			<Signature Subject="*Hitachi*" />
 		</Process>
 	</Image>
-	<Image Id="{3830D001-047F-88B9-03AED1A07C8BC52F}" Path="C:\Program Files\Hitachi\*" >
-		<Process >
-			<Signature Subject="*Hitachi*" />
-		</Process>
-	</Image>
-	<Image Id="{D7FB48EA-D67E-2202-4BA37FFBAB1CAD90}" Path="C:\Program Files (x86)\Dell*" >
-		<VersionInfo FileDescription="*Dell*" />
-		<Process >
-			<Signature Subject="*Dell*" />
-		</Process>
-	</Image>
-	<Image Id="{89D8A62A-68C3-818A-748602EB486AB790}" Path="C:\Program Files\Dell*" >
+	<Image Id="{D7FB48EA-D67E-2202-4BA37FFBAB1CAD90}" Path="*Dell*" >
 		<VersionInfo FileDescription="*Dell*" />
 		<Process >
 			<Signature Subject="*Dell*" />
@@ -1427,69 +1411,38 @@
 		</Process>
 	</Image>
 	<Image Id="{AC0CC97B-D198-EF50-C0A896895D8AF560}">
-		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
+		<Process Path="*SolarWinds\*">
 			<Signature Subject="*Solarwinds*" />
 		</Process>
 		<Signature Subject="*reactive extensions*" />
 	</Image>
-	<Image Id="{A42C06CB-768E-F42A-014A39BDCF960D63}">
-		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
-			<Signature Subject="*Solarwinds*" />
-		</Process>
-		<Signature Subject="*solarwinds*" />
-	</Image>
-	<Image Id="{F38E7EC2-F7D8-3E04-F9F8D6CD8DE4FC38}" Path="c:\program files (x86)\solarwinds\agent\plugins\*">
-		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
-			<Signature Subject="*Solarwinds*" />
-		</Process>
-	</Image>
-	<Image Id="{84EBC303-91D7-E20A-B2B12E880EA7B829}" Path="refemit_inmemorymanifestmodule">
-		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
-			<Signature Subject="*Solarwinds*" />
-		</Process>
-	</Image>
-	<Image Id="{F046B5AD-4B57-B3E3-EE79B67202A7CAEE}" Path="c:\windows\system32\cryptbase.dll">
-		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
-			<Signature Subject="*Solarwinds*" />
-		</Process>
-	</Image>
-	<Image Id="{2672DB2A-AC2F-6AC8-D3ADDAAB77B6B940}" Path="c:\windows\system32\gdi32.dll">
-		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
-			<Signature Subject="*Solarwinds*" />
-		</Process>
-	</Image>
-	<Image Id="{61220560-DB63-2FB2-54E62CF209888AD6}" Path="c:\windows\system32\crypt32.dll">
-		<Process Path="C:\Program Files (x86)\SolarWinds\Agent\Plugins\*">
-			<Signature Subject="*Solarwinds*" />
-		</Process>
-	</Image>
 	<Image Id="{DBAFF0DF-CBDE-C28C-90651004C83619FF}" Path="c:\windows\system32\cryptbase.dll">
-		<Process CmdLine="c:\program files (x86)\veeam\*">
+		<Process CmdLine="*veeam\*">
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</Image>
 	<Image Id="{B654895F-7CFA-E2F8-9E0E264C957D4785}" Path="*oracle*bin\ora*">
-		<Process Path="c:\program files\veeam\*">
+		<Process Path="*veeam\*">
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</Image>
 	<Image Id="{7A4D5BB9-C8EA-6015-EB40EDE5A3459CC8}" Path="*service*service.ni.dll">
-		<Process Path="c:\program files\veeam\*">
+		<Process Path="*veeam\*">
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</Image>
 	<Image Id="{8762FA17-E1BB-CBD0-4FD43331CFB8C325}" Path="*service*service.xmlserializers.ni.dll">
-		<Process Path="c:\program files\veeam\*">
+		<Process Path="*veeam\*">
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</Image>
 	<Image Id="{E88FB852-B513-6037-0EBAD08A07890EE9}" Path="refemit_inmemorymanifestmodule">
-		<Process Path="c:\program files\veeam\*">
+		<Process Path="*veeam\*">
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</Image>
 	<Image Id="{577EE788-8431-3C34-04BE33FF8ECA899D}" Path="c:\windows\system32\cryptbase.dll">
-		<Process Path="c:\program files\veeam\*">
+		<Process Path="*veeam\*">
 			<Signature Subject="*Veeam*" />
 		</Process>
 	</Image>

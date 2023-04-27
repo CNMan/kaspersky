@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2022-11-29T17:37:00.000Z-1669743442 -->
+	<!-- 2023-04-25T17:33:00.000Z-1682443980 -->
 
     <!-- sample exclude rule
     <Detect Id="{00DB798F-6609-574D-91FF1451E53425A1}" ContentValue="*#KLBssNotBlockMeBasesKdbAmsi#*" ContentType="1" >
@@ -1372,7 +1372,7 @@
 		</Process>
 	</Detect>
 	<Detect Id="{B4261766-FE22-806C-0CBC28830ACB368F}" ContentValue="?*">
-		<Process Path="c:\Program Files (x86)\palo alto*">
+		<Process Path="*palo alto*">
 			<Signature Subject="*Palo Alto*" />
 		</Process>
 	</Detect>
@@ -1391,13 +1391,8 @@
 	<Detect Id="{CAF11085-E3E9-3245-32FEC48F56B85027}" ContentValue="*nestedmodules = @( &#39;msft_mpcomputerstatus.cdxml&#39;,*functionstoexport = @( &#39;get-mppreference&#39;,*" />
 	<Detect Id="{2BC5D6CA-517E-30F6-FC742DECEFD55139}" ContentValue="tvalue = $null*scantime&#39;; parametertype = &#39;system.datetime&#39;; bindings = &#39;in&#39;; value = $__cmdletization_defaultvalue; isvaluepresent = $__cmdletization_defaultvalueispr" />
 	<Detect Id="{B7A6D1EE-89AA-FF3D-8229689ED0EBF543}">
-		<Process Path="C:\Program Files (x86)\Lester*">
-			<Signature Subject="Lester Information Technologies" />
-		</Process>
-	</Detect>
-	<Detect Id="{CA1A931B-5910-5FA4-52FB83881156FEE7}">
-		<Process Path="C:\Program Files\Lester*">
-			<Signature Subject="Lester Information Technologies" />
+		<Process Path="*Lester*">
+			<Signature Subject="*Lester*" />
 		</Process>
 	</Detect>
 	<Detect Id="{50808820-FFB9-9FC2-96BAADCFF65869D8}">
@@ -1408,7 +1403,7 @@
 			<Signature Subject="*Softinventive*" />
 		</Process>
 	</Detect>
-	<Detect Id="{9C75F12B-D256-68BD-577006DB50A9EF91}" ContentValue="?*">
+	<Detect Id="{9C75F12B-D256-68BD-577006DB50A9EF91}" >
 		<Process Path="*LSDeployment*">
 			<Signature Subject="*Lansweeper*" />
 		</Process>
@@ -1474,66 +1469,6 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0040 2022-03-15T14:16:00.000Z-1647353814 -->
-	<Detect Id="{C2566038-37F5-8656-57AF34BEB4DEFDBE}" ContentValue="setpropvalue.hdefkey*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{2B9DAE2F-D095-D29F-FE4F3B460B235243}" ContentValue="setpropvalue.ssubkeyname*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{8EF78D67-B598-3668-D8FAD3345696D752}" ContentValue="setpropvalue.svaluename*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{F12DB153-AB08-43AD-981BF6E533BB8D41}" ContentValue="stdregprov.execmethod(*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{CA55B0C1-C2DF-0B98-25579CFE57CCC61E}" ContentValue="stdregprov.getobject();&#10;setpropvalue.hdefkey*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{65971446-B58B-1420-5B63614F5DCBF3E6}" ContentValue="stdregprov.getobject();&#10;stdregprov.getobject*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{A9C05A1D-D3C1-87E4-F43308B6B1A1599E}" ContentValue="stdregprov.getobject();&#10;wmi.execquery(select name*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{FAFEE9F5-C073-FD38-230461A848E86C41}" ContentValue="win32_process.getobject();&#10;win32_process.handle=*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{617B4483-787D-8CA5-F995767E596DC569}" ContentValue="win32_process.handle=*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{BAAE64B2-E71F-90F4-529B7D7764475EB7}" ContentValue="win32_sid.sid=&#34;s-1-5-21-*">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{FBC92728-5479-1456-737FD00FD3DE0D6C}" ContentValue="wmi.execquery(associators of *">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
-	<Detect Id="{84754162-0375-7239-ED669BDC15A336F6}" ContentValue="wmi.execquery(select *">
-		<Process Path="c:\program files (x86)\lansweeper\service\lansweeperservice.exe*">
-			<Signature Subject="*lansweeper*" />
-		</Process>
-	</Detect>
 	<Detect Id="{C160B6AF-841E-F627-70BC6E03BD8EF87B}" ContentValue="*caption = &#34;kavfs.exe&#34; or caption = &#34;svchost.exe*">
 		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s winmgmt" />
 	</Detect>
@@ -1586,11 +1521,6 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0042 2022-03-15T14:39:00.000Z-1647355147 -->
-	<Detect Id="{4B380E82-A8E4-23E7-4E423E6F68DD0E50}" ContentValue="ifilesystem3.getfileversion(&#34;c:\windows\lsdeployment\remotedeployment_x64.exe*">
-		<Process Path="*lsdeployment*">
-			<Signature Subject="*Lansweeper*" />
-		</Process>
-	</Detect>
 	<Detect Id="{1CB39BD0-57F3-C7F4-D2397215C5F0EF3D}" ContentValue="function get-filehash*pathstoprocess += resolve-path -literalpath $literalpath | foreach-object providerpath*ljtk7ws1gyw0wtyfgbacgbhv2aofx5e3jm3/to9rqrkxqv8=*" />
 	<Detect Id="{CF1E4C8E-BA32-5EFC-DD1D6934BCCE9767}" ContentValue="function get-filehash*function getstreamhash*s5hhtmzkz47z2m+/dswq7nmz1pfjfojtemw8niuupnozwrg=*" />
 	<Detect Id="{025BF61D-04C1-801E-3BA81E869EC00170}" ContentValue="?*">
@@ -2506,8 +2436,8 @@
 	<Detect Id="{CAC15E87-078F-B9C6-E39E834B83D99A64}" ContentValue="*ssubkeyname(&#34;software\microsoft\office*">
 		<Process CmdLine="wscript  /b ae_scan.vbs agentdata" />
 	</Detect>
-	<Detect Id="{1413220D-4266-B685-7AA0322E9D32D05D}" ContentValue="?*">
-		<Process Path="c:\program files (x86)\lansweeperagent\lansweeperagentservice.exe">
+	<Detect Id="{1413220D-4266-B685-7AA0322E9D32D05D}" >
+		<Process Path="*lansweeper*lansweeper*">
 			<Signature Subject="*Lansweeper*" />
 		</Process>
 	</Detect>

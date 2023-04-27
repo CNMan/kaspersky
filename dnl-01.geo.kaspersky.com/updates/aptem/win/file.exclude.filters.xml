@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2023-04-19T13:50:00.000Z-1681912200 -->
+	<!-- Version: 2023-04-25T17:33:00.000Z-1682443980 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -5415,12 +5415,7 @@
 			<Signature Subject="*adobe*" />
 		</Process>
 	</File>
-	<File Id="{4BAD50D6-802F-698B-20B6AE50034F0F7B}" FilePath="c:\program files (x86)\adobe\*" >
-		<Process >
-			<Signature Subject="*adobe*" />
-		</Process>
-	</File>
-	<File Id="{0C1D824E-7F59-6F7D-F47BD5E5A784C798}" FilePath="c:\program files\adobe\*" >
+	<File Id="{4BAD50D6-802F-698B-20B6AE50034F0F7B}" FilePath="*adobe\*" >
 		<Process >
 			<Signature Subject="*adobe*" />
 		</Process>
@@ -6039,7 +6034,7 @@
 		<Process Path="c:\mlevel\mlevel.exe" />
 	</File>
 	<File Id="{5C49E2AC-596A-9016-CF4A0906D78248B0}" >
-		<Process Path="C:\Program Files (x86)\Common Files\SecurIT\zservice6415.exe" >
+		<Process Path="*SecurIT\*" >
 			<Signature Subject="*SecurIT*" />
 		</Process>
 	</File>
@@ -6079,157 +6074,97 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0012 2022-01-11T19:13:00.000Z-1641928381 -->
-	<File Id="{C676FDB6-6651-D238-2FEE7187F3E45FBE}" FilePath="C:\Program Files (x86)\Trend Micro\*" >
-		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
+	<File Id="{C676FDB6-6651-D238-2FEE7187F3E45FBE}" FilePath="*Trend Micro\*" >
+		<Process Path="*Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
 	<File Id="{F3121934-D32C-6CDD-0BCC8BAC48ADCE37}" FilePath="*temp\tmp*.tmp" >
-		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
+		<Process Path="*Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
 	<File Id="{DC4B7A24-13AB-68CF-0D030AB094A1F641}" FilePath="c:\programdata\trend micro\*" >
-		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
+		<Process Path="*Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
 	<File Id="{5CF012DE-5084-4CA5-E44364A449B319F4}" FilePath="*temp\etilqs_???????????????" >
-		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
+		<Process Path="*Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
 	<File Id="{FE7A69DA-5F95-FE44-B8A4D48F699922CF}" FilePath="*temp\dre*.tmp" >
-		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
+		<Process Path="*Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
 	<File Id="{79F4F6E9-9BE0-17E5-11C0E24E7CB0AB29}" FilePath="*temp\vs??????.???" >
-		<Process Path="C:\Program Files (x86)\Trend Micro\*" >
+		<Process Path="*Trend Micro\*" >
 			<Signature Subject="*Trend Micro*" />
 		</Process>
 	</File>
-	<File Id="{909AA56A-C9AA-EA50-B805FCE9F381FEE0}" FilePath="*appdata\roaming\360drvmgr\360drvmgr_202*.dat" >
-		<Process Path="c:\program files (x86)\360\*" >
+	<File Id="{909AA56A-C9AA-EA50-B805FCE9F381FEE0}" FilePath="*appdata\roaming\360*" >
+		<Process Path="*360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{1D1D6D92-A330-C5AA-1A0390D047B0A3BD}" FilePath="*appdata\roaming\360drvmgr\config.ini" >
-		<Process Path="c:\program files (x86)\360\*" >
+	<File Id="{D9E808D3-6630-83F3-F3A3E10D75DE079A}" FilePath="*360\360safe*" >
+		<Process Path="*360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{D9E808D3-6630-83F3-F3A3E10D75DE079A}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="c:\program files (x86)\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{9FA88384-5243-B436-D8DEDBAD00FD4CB1}" FilePath="*appdata\local\360chrome\chrome\*" >
-		<Process Path="c:\program files (x86)\360\*" >
+	<File Id="{9FA88384-5243-B436-D8DEDBAD00FD4CB1}" FilePath="*appdata\local\360*" >
+		<Process Path="*360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
 	<File Id="{4AA6A58F-9484-1075-54DAFD43618FD0C9}" FilePath="*appdata\local\microsoft\windows\inetcache\*" >
-		<Process Path="c:\program files (x86)\360\*" >
+		<Process Path="*360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
 	<File Id="{68B3C90A-D4F7-6FCD-8281ED2CE766630D}" FilePath="*appdata\local\temp\chromeshell\default\*" >
-		<Process Path="c:\program files (x86)\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{015E6E00-128C-EC6C-C07D58624B30BE61}" FilePath="*appdata\roaming\360safe\*" >
-		<Process Path="c:\program files (x86)\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{AE09181A-FEBA-11F1-6D99BE537E354FC9}" FilePath="*appdata\roaming\360drvmgr\360drvmgr_202*.dat" >
-		<Process Path="c:\program files\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{9F0C2C48-FDB1-ECF2-CAA73657771851B6}" FilePath="*appdata\roaming\360drvmgr\config.ini" >
-		<Process Path="c:\program files\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{53DC2903-0B6C-F920-3955A9A8F45DB18F}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="c:\program files\360\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{CB0F90E0-8A1C-AD8A-8240E275D7BD5EFF}" FilePath="*appdata\local\360chrome\chrome\*" >
-		<Process Path="c:\program files\360\*" >
+		<Process Path="*360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
 	<File Id="{32F6C3C7-B22C-DBF3-090B5C63CCD9D96F}" FilePath="*appdata\local\microsoft\windows\inetcache\*" >
-		<Process Path="c:\program files\360\*" >
+		<Process Path="*360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
 	<File Id="{57816D19-9EA1-C597-DC2756E7DCC63F86}" FilePath="*appdata\local\temp\chromeshell\default\*" >
-		<Process Path="c:\program files\360\*" >
+		<Process Path="*360\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{0BF3CBC7-62DC-0AFD-4A7C35908651914F}" FilePath="*appdata\roaming\360safe\*" >
-		<Process Path="c:\program files\360\*" >
+	<File Id="{99CC0372-F1C9-7E32-6ED1C66498E3FBF8}" FilePath="*360\360safe*" >
+		<Process Path="*appdata\local\360*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{CD62D6DC-2479-B8D6-9850581A1E88EBCC}" FilePath="*appdata\roaming\360drvmgr\360drvmgr_202*.dat" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{22FE7745-BC6B-8E0D-3B337C4CF1F9AC48}" FilePath="*appdata\roaming\360drvmgr\config.ini" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{99CC0372-F1C9-7E32-6ED1C66498E3FBF8}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{8EC5EF5B-7DC2-1669-042500A16D5881DF}" FilePath="*appdata\local\360chrome\chrome\*" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
+	<File Id="{8EC5EF5B-7DC2-1669-042500A16D5881DF}" FilePath="*appdata\local\360*" >
+		<Process Path="*appdata\local\360*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
 	<File Id="{E3351635-08AF-3AB5-648D638153CE881A}" FilePath="*appdata\local\microsoft\windows\inetcache\*" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
+		<Process Path="*appdata\local\360*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
 	<File Id="{78A3AABD-11A1-4CE5-A61794074813767D}" FilePath="*appdata\local\temp\chromeshell\default\*" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
+		<Process Path="*appdata\local\360*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{1077B685-62D6-307D-EFE87ECFBC037230}" FilePath="*appdata\roaming\360safe\*" >
-		<Process Path="*appdata\local\360chrome\chrome\application\*" >
+	<File Id="{1077B685-62D6-307D-EFE87ECFBC037230}" FilePath="*appdata\roaming\360*" >
+		<Process Path="*appdata\local\360*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{16E0A483-78E9-0053-6632B544012AE886}" FilePath="*appdata\roaming\360drvmgr\360drvmgr_202*.dat" >
-		<Process Path="*appdata\roaming\360*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{EDD9DD70-7208-702B-26F6A5C4812E0DDA}" FilePath="*appdata\roaming\360drvmgr\config.ini" >
-		<Process Path="*appdata\roaming\360*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{1177326D-3C64-86FE-5DB7C589065DCD2B}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="*appdata\roaming\360*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{DF067997-98AA-05DA-F0E1DF5CFDC83EBE}" FilePath="*appdata\local\360chrome\chrome\*" >
+	<File Id="{1177326D-3C64-86FE-5DB7C589065DCD2B}" FilePath="*360\*" >
 		<Process Path="*appdata\roaming\360*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
@@ -6244,27 +6179,17 @@
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{F72165F3-2D93-840D-B246CC4D2DDC444A}" FilePath="*appdata\roaming\360safe\*" >
-		<Process Path="*appdata\roaming\360*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{BBD650A7-2DDF-8047-49F329995E1C3A8B}" FilePath="*appdata\roaming\360drvmgr\360drvmgr_202*.dat" >
+	<File Id="{BBD650A7-2DDF-8047-49F329995E1C3A8B}" FilePath="*appdata\roaming\360*" >
 		<Process Path="*appdata\roaming\secoresdk\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{46B19E99-8D16-5DBD-68262D44BC143AB9}" FilePath="*appdata\roaming\360drvmgr\config.ini" >
+	<File Id="{47A8D68F-3DC7-872E-57D68B727323BF95}" FilePath="*360\360safe*" >
 		<Process Path="*appdata\roaming\secoresdk\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{47A8D68F-3DC7-872E-57D68B727323BF95}" FilePath="c:\program files (x86)\360\360safe*" >
-		<Process Path="*appdata\roaming\secoresdk\*" >
-			<Signature Subject="*Beijing Qihu*" />
-		</Process>
-	</File>
-	<File Id="{A9C00D27-03A9-ABA3-1061282B1E432085}" FilePath="*appdata\local\360chrome\chrome\*" >
+	<File Id="{A9C00D27-03A9-ABA3-1061282B1E432085}" FilePath="*appdata\local\360*" >
 		<Process Path="*appdata\roaming\secoresdk\*" >
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
@@ -6284,48 +6209,48 @@
 			<Signature Subject="*Beijing Qihu*" />
 		</Process>
 	</File>
-	<File Id="{04C8DD29-3999-5EFD-5D47F00B691DDFED}" FilePath="c:\program files (x86)\sogouinput\*" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+	<File Id="{04C8DD29-3999-5EFD-5D47F00B691DDFED}" FilePath="*sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
 	<File Id="{2A983DC0-BA7F-83CB-F769FF73BF9E50C6}" FilePath="*appdata\local\microsoft\windows\inetcache\*" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
 	<File Id="{0061820B-BF79-FD56-EB5388B35640898C}" FilePath="*appdata\local\temp\sgpicfacetpbq\*" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
 	<File Id="{BB050A4A-E512-38D8-6EDF17E17FAA7CB0}" FilePath="*appdata\local\temp\tfr*.tmp" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
 	<File Id="{023CD002-E705-D128-A024E5E38E0237D0}" FilePath="*appdata\locallow\sogoupy*" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
 	<File Id="{589EEB97-D452-05B9-992F5399781C7E2B}" FilePath="*appdata\roaming\sogouexplorer\*" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
 	<File Id="{706B08E4-107A-1ADB-46054630637D86CF}" FilePath="*appdata\local\temp\tempfastpassport.ini" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
 	<File Id="{6BAF734C-282A-BBFA-4DB4D81B59920E16}" FilePath="*appdata\locallow\sogoupy\env.ini" >
-		<Process Path="c:\program files (x86)\sogouinput\*" >
+		<Process Path="*sogouinput\*" >
 			<Signature Subject="*Beijing Sogou Technology*" />
 		</Process>
 	</File>
-	<File Id="{7018E427-5A96-E152-0CD1795C391D7C92}" FilePath="C:\Program Files (x86)\Hitachi\*" >
-		<Process Path="C:\Program Files (x86)\Hitachi\*" >
+	<File Id="{7018E427-5A96-E152-0CD1795C391D7C92}" FilePath="*Hitachi\*" >
+		<Process Path="*Hitachi\*" >
 			<Signature Subject="*Hitachi*" />
 		</Process>
 	</File>
@@ -6335,42 +6260,42 @@
 		</Process>
 	</File>
 	<File Id="{FFDAE382-7A2B-C186-4A0C4B23D877A69E}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="*\program files (x86)\tencent\*" >
+		<Process Path="*\tencent*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
 	<File Id="{A5069827-7E92-A2BF-B7CC42E7870A23FA}" FilePath="c:\programdata\tencent\*" >
-		<Process Path="*\program files (x86)\tencent\*" >
+		<Process Path="*\tencent*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
-	<File Id="{BC2A8B35-0B27-32B3-F98C74CC89C16B0A}" FilePath="c:\program files (x86)\tencent\*" >
-		<Process Path="*\program files (x86)\tencent\*" >
+	<File Id="{BC2A8B35-0B27-32B3-F98C74CC89C16B0A}" FilePath="c:\program files*tencent\*" >
+		<Process Path="*\tencent*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
 	<File Id="{589989B5-35BD-7A5C-8CDABC6B78CB5DCF}" FilePath="*appdata\locallow\sogoupy*" >
-		<Process Path="*\program files (x86)\tencent\*" >
+		<Process Path="*\tencent*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
 	<File Id="{5419F2A1-1B57-2396-D648D06BA425D063}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="c:\program files (x86)\tsoft\*" >
+		<Process Path="*tsoft\*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
 	<File Id="{F77F11DD-8F88-61D7-B2AD75C843A38597}" FilePath="c:\programdata\tencent\*" >
-		<Process Path="c:\program files (x86)\tsoft\*" >
+		<Process Path="*tsoft\*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
-	<File Id="{4E1EA4D5-2225-7758-173995DE3CA14E5A}" FilePath="c:\program files (x86)\tencent\*" >
-		<Process Path="c:\program files (x86)\tsoft\*" >
+	<File Id="{4E1EA4D5-2225-7758-173995DE3CA14E5A}" FilePath="c:\program files*tencent\*" >
+		<Process Path="*tsoft\*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
 	<File Id="{4FBBF14C-C351-ED08-4E92F7B961DA2660}" FilePath="*appdata\locallow\sogoupy*" >
-		<Process Path="c:\program files (x86)\tsoft\*" >
+		<Process Path="*tsoft\*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
@@ -6380,77 +6305,17 @@
 		</Process>
 	</File>
 	<File Id="{D25FE53C-CD0E-B600-7FB5B8399F3DFD92}" FilePath="c:\programdata\tencent\*" >
-		<Process Path="c:\program files (x86)\wxwork*" >
+		<Process Path="*wxwork*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
-	<File Id="{646F5ED1-A1E7-79BC-CA5B7B781AD5EBD6}" FilePath="c:\program files (x86)\tencent\*" >
-		<Process Path="c:\program files (x86)\wxwork*" >
+	<File Id="{646F5ED1-A1E7-79BC-CA5B7B781AD5EBD6}" FilePath="c:\program files*tencent\*" >
+		<Process Path="*wxwork*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
 	<File Id="{19468AE0-425C-0FEF-00292FC954816272}" FilePath="*appdata\locallow\sogoupy*" >
-		<Process Path="c:\program files (x86)\wxwork*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{B716E120-B297-74C6-E251CEF498173FE5}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="c:\program files\tencentdocs*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{4CEA27B8-B303-0F36-BDAD78EAD0EBF66F}" FilePath="c:\programdata\tencent\*" >
-		<Process Path="c:\program files\tencentdocs*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{0ACB48C2-F535-1374-996C46F8E5CA5EAF}" FilePath="c:\program files (x86)\tencent\*" >
-		<Process Path="c:\program files\tencentdocs*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{7F65295E-B9F9-DCDE-A4EBB6AC16402784}" FilePath="*appdata\locallow\sogoupy*" >
-		<Process Path="c:\program files\tencentdocs*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{D5A22DB8-8CBE-F5CA-36EFC9875CBFC1E8}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="*appdata\roaming\tencent\*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{73E33673-66DF-EC06-655C3F104F239801}" FilePath="c:\programdata\tencent\*" >
-		<Process Path="*appdata\roaming\tencent\*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{60D37480-CC49-0D7B-386DFF18B5C55CB0}" FilePath="c:\program files (x86)\tencent\*" >
-		<Process Path="*appdata\roaming\tencent\*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{0B8B092B-AAC1-19CD-05F5BAF1D0A242C6}" FilePath="*appdata\locallow\sogoupy*" >
-		<Process Path="*appdata\roaming\tencent\*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{090E7D18-500F-F8C3-708CCAB70ECE9413}" FilePath="*appdata\roaming\tencent\*" >
-		<Process Path="c:\program files\windowsapps\tencentwechatlimited*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{CBB0BD47-5CD4-B60C-B1A229CCA9C1C97A}" FilePath="c:\programdata\tencent\*" >
-		<Process Path="c:\program files\windowsapps\tencentwechatlimited*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{7F0A77C1-503C-105E-696C9012658424CD}" FilePath="c:\program files (x86)\tencent\*" >
-		<Process Path="c:\program files\windowsapps\tencentwechatlimited*" >
-			<Signature Subject="*Tencent*" />
-		</Process>
-	</File>
-	<File Id="{9B7B5D40-5E57-F16D-A3521A46970E897C}" FilePath="*appdata\locallow\sogoupy*" >
-		<Process Path="c:\program files\windowsapps\tencentwechatlimited*" >
+		<Process Path="*wxwork*" >
 			<Signature Subject="*Tencent*" />
 		</Process>
 	</File>
@@ -6560,12 +6425,12 @@
 <!-- ############################################################################################################### -->
 <!-- Part 0013 2022-03-15T19:09:00.000Z-1647371340 -->
 	<File Id="{5203F565-818D-F426-2696853E2224809D}" FilePath="c:\indexes*" >
-		<Process Path="c:\program files\searchinform*" >
+		<Process Path="*\searchinform*" >
 			<Signature Subject="*Searchinform*" />
 		</Process>
 	</File>
 	<File Id="{68563D3A-BB8D-3D43-DB11A7E66A533602}" FilePath="c:\programdata\searchinform*" >
-		<Process Path="c:\program files\searchinform*" >
+		<Process Path="*\searchinform*" >
 			<Signature Subject="*Searchinform*" />
 		</Process>
 	</File>
