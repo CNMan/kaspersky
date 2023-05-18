@@ -4,7 +4,7 @@
   <!-- !!! DWORD QWORD values in Value="..." has to be specified as they are presented in regedit when you click "Modify binary data" on such parameters. -->
   <!-- !!! For example, 0x1 dword value is Value="01000000" -->
 
-  <!-- Version: 2023-04-18T13:22:00.000Z-1681824146 -->
+  <!-- Version: 2023-05-16T15:54:00.000Z-1684252445 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -3312,4 +3312,335 @@
 <!-- Part 21: 2023-04-18T13:22:00.000Z-1681824146 -->
 <!-- ############################################################################################################### -->
 	
+<!-- ############################################################################################################### -->
+<!-- Part 22: 2023-05-16T15:54:00.000Z-1684252445 -->
+	<Registry Id="{D2462C81-80DF-2599-041218234E819D32}" Path="*software\microsoft\group policy\client\runonce" Operation="Deleted">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{06E33BC2-09ED-2404-6CACF0248C6C873D}" Path="*group policy\state\machine\gplink-list\*" Operation="Deleted">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{757D1F42-D49E-9A60-4573B3618B3860FD}" Path="*group policy\state\machine\gpo-list\*" Operation="Deleted">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{EE360185-34A2-DD0A-A2C38CC347D1E9CD}" Path="*policies\microsoft\systemcertificates*" Operation="Deleted">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{90DC5691-8F56-F156-78D233B09888987A}" Path="*internet settings\lockdown_zones*" Operation="Deleted">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{D63AD3E0-B0BF-6A78-1D98354E871DA193}" Path="*internet settings\zones*" Operation="Deleted">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{BA4162D2-C79F-9AF2-961FB2E2079DBFFE}" Name="extension" Operation="Deleted">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{71B9CF3E-DC95-1030-ED2454DC55DDCE6C}" Path="*currentversion\fonts*">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{703BA2C2-D6E7-63C6-CD9EA969873962FC}" Path="*group policy*history*">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{619C6022-12AB-7D78-F4BB6B323B3C9C46}" Path="*group policy*shadow*">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{28606C6B-4FBE-0F89-0B35C6B0C4AD3C8C}" Path="*group policy\serviceinstances">
+		<Process CmdLine="*svchost* gpsvcgroup*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1921839F-72C1-392D-AFBB891688B24247}" Path="*windows error reporting\termreason*">
+		<Process CmdLine="*svchost* dcomlaunch*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{BD43C96B-466B-B361-A546A047538D2C88}" Operation="Deleted">
+		<Process CmdLine="*system32\svchost.exe*schedule*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C798A8BD-1B39-ACD0-AA7EB18D8A5E45F0}" Operation="Deleted">
+		<Process CmdLine="*system32\svchost.exe*dhcp*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{161949AD-0FBA-0007-85307A626AEB0875}" Operation="Deleted">
+		<Process CmdLine="*system32\svchost.exe*winhttpautoproxysvc*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3BC44575-18F2-01DE-560D62C206AAAF83}" Operation="Deleted">
+		<Process CmdLine="*system32\svchost.exe*winmgmt*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1938DAE1-2482-0E2C-3ACD66B79A5D658E}" Operation="Deleted">
+		<Process CmdLine="*system32\svchost.exe*wuauserv*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{8B334555-E2B6-3A1B-10ADAF2A1DF0FCE1}" Name="%kl_undef%">
+		<Process CmdLine="*system32\svchost.exe*dhcp*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{A04549BA-A33F-DDB4-9156A8F8DF90B807}" Name="%kl_undef%">
+		<Process CmdLine="*system32\svchost.exe*winhttpautoproxysvc*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1E0A4AAB-09C1-8498-77C4D012FF730002}" Name="%kl_undef%">
+		<Process CmdLine="*system32\svchost.exe*winmgmt*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{922C51C9-FD3B-BD00-4DC17C1CEC71EAB3}" Name="%kl_undef%">
+		<Process CmdLine="*system32\svchost.exe*wuauserv*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{45B26EF8-E7D0-0CB2-A5BAA620E944D79D}" Name="%kl_undef%">
+		<Process Path="*files\microsoft*lync.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{CCCBA7EA-96C0-425F-93B6BFABF2636ABD}" Name="%kl_undef%">
+		<Process Path="files\microsoft*outlook.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{EAB0036F-A7F6-7EA6-3C50453AFD005AD6}" Operation="Deleted">
+		<Process Path="*files\microsoft*lync.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{A931F619-F7BF-7CF4-8EF5F90FED146F96}" Operation="Renamed">
+		<Process Path="*files\microsoft*lync.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{CD8C0266-0DDF-E62A-D9A9FB8230141B32}" Operation="Deleted">
+		<Process Path="*files\microsoft*outlook.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1379AC25-9ADC-F82B-D0C3316FC42BC8A6}" Operation="Renamed">
+		<Process Path="*files\microsoft*outlook.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{57C6093B-D227-9AFE-1C7748E49204AF26}" Path="*TortoiseGit*">
+		<Process Path="*TortoiseGit*">
+			<Signature Subject="*Strickroth*" />
+		</Process>
+	</Registry>
+	<Registry Id="{16F1BDF7-FC5A-641E-5E0FBF901CD64E71}" Path="*microsoft visual studio*">
+		<Process Path="*microsoft visual studio*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{EA34156F-9EF4-7A2D-1E481BD939990AC3}" Path="*microsoft\vscommon*">
+		<Process Path="*microsoft visual studio*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{5C3794F0-2140-AB2A-0253661F70048DEC}" Path="*microsoft\visualstudio*">
+		<Process Path="*microsoft visual studio*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{D89363DA-8739-4127-30EF832E9DD610B2}" Path="*classes\visualstudio*">
+		<Process Path="*microsoft visual studio*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F4AA5B89-EC86-E6A6-2ABE990680D06218}" Path="*microsoft\vscommon*">
+		<Process Path="*microsoft sql server management studio*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{348B2322-38FB-51E0-C82D82FE6CC163B5}" Path="*google\update">
+		<Process Path="*google\update\googleupdate.exe">
+			<Signature Subject="*Google*" />
+		</Process>
+	</Registry>
+	<Registry Id="{07DFD6AB-F98A-5868-C5D5748E95301D55}" Path="*software\microsoft\office*">
+		<Process Path="*microsoft shared\clicktorun*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{89BFF678-CB12-8FCD-4633BFAD784D224A}" Path="*software\microsoft\intelli*">
+		<Process Path="*ipoint.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1CE40821-1875-4413-C37B3EA510FBAB89}" Path="*software\microsoft\intelli*">
+		<Process Path="*itype.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F54E60B1-C5C3-2894-1C424D2A63E2D1F2}" Name="extensions.settings" Operation="Deleted" />
+	<Registry Id="{5B1EC0D3-CB8A-AC0B-F4E5F737748787E2}" Name="*ping*">
+		<Process Path="*iexplore.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{4DBF3788-0CFD-D674-1DD7756549054F6A}" Name="*datetime*">
+		<Process Path="*iexplore.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{4574A2A6-DA0C-769C-92495F2DAF7CC664}" Path="*software\jetbrains*">
+		<Process Path="*jetbrains*">
+			<Signature Subject="*JetBrains*" />
+		</Process>
+	</Registry>
+	<Registry Id="{DE010293-CD86-75F0-D64D3F2B625C5A3E}" Path="*clienttelemetry\rulesmetadata\*.exe*">
+		<Process Path="*office*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F2BEAF5C-6608-6924-70CA51A86F0567D4}" Path="*_adal\settings*">
+		<Process Path="*office*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{8E24AD71-A7E9-7D71-9731059129BF4557}" Name="*.exe*">
+		<Process Path="*office*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{6A3CD44A-C9E4-EA7A-0D74603441A95AC4}" Name="inputlocale">
+		<Process Path="*ctfmon.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{1C5731EF-DF5E-1953-E5D0F2B6155B83B4}" Name="%kl_undef%">
+		<Process Path="*ctfmon.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{01DB8C6F-AEF8-F2CC-C0DB96D482095BF5}" Operation="Deleted">
+		<Process Path="*ctfmon.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{73E562E4-8875-35C6-53DEE2F49348CC88}" Path="*microsoft\office*" Operation="Deleted">
+		<Process Path="*office*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{D74DC70A-0475-D5E9-E965114148757088}" Path="*microsoft\exchange*" Operation="Deleted">
+		<Process Path="*office*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C1C9961A-E6D2-A41C-50E1D77B02451959}" Path="*microsoft\shared tools*" Operation="Deleted">
+		<Process Path="*office*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{5245EE4D-30B6-68B6-D91962091EED54C0}" Path="*microsoft*framework*">
+		<Process Path="*.net*framework*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{CDA11795-B936-5BA7-FE15204F493214EE}" Operation="Deleted">
+		<Process Path="*backgroundtaskhost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{7771339B-07D0-513D-F6434D3E585DD747}" Path="*localstate\throttling*">
+		<Process Path="*backgroundtaskhost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C7FA2378-8239-A9B9-8F3EFCB3940EA929}" Value="????????">
+		<Process Path="*backgroundtaskhost.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{50275134-4062-1967-695CC133D71E083A}" Value="????????">
+		<Process Path="*searchapp.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{5C3210CB-438D-9672-A8E26907DB643E2A}" Path="*microsoft\workspaces*">
+		<Process Path="*rundll32.exe" CmdLine="*tsworkspace*">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{6C5DFF42-5256-A3AA-B0C4B0246F910220}" Operation="Deleted">
+		<Process Path="*searchapp.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{CCDEE094-6F80-843B-E510C61952A22D3F}" Name="taskbar*">
+		<Process Path="*explorer.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{6D728921-4D14-6262-4DC88CEE4D27FF4E}" Name="tray*">
+		<Process Path="*explorer.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3767004A-A602-4F0A-81ACDEF780A29B1F}" Name="%kl_undef%">
+		<Process Path="*mousocoreworker.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{5B7464A0-D4FA-B690-853F26D01267B545}" Name="%kl_undef%">
+		<Process Path="*spoolsv.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{D0D9FED9-EA17-CC5B-E57ABD3985A66ABA}" Operation="Deleted">
+		<Process Path="*mousocoreworker.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{22BDD078-7CCA-A628-1A7CA530F061322D}" Operation="Deleted">
+		<Process Path="*spoolsv.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{793EF91A-86BB-7541-108A51E18539F523}" Name="driverstate">
+		<Process Path="*spoolsv.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{73D52240-2534-1EC1-3A4A59A05881FA0D}" Name="lasttouched">
+		<Process Path="*spoolsv.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C79E31A7-9AB1-8B59-4BA8DD6F7125352F}" Name="print*">
+		<Process Path="*spoolsv.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Registry>
+<!-- Part 22: 2023-05-16T15:54:00.000Z-1684252445 -->
+<!-- ############################################################################################################### -->
+
 </Filters>

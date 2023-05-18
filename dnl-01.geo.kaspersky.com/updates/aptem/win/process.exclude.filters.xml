@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2023-03-14T15:18:00.000Z-1678807139 -->
+	<!-- 2023-05-16T18:25:00.000Z-1684261512 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -573,6 +573,30 @@
 		<Signature Subject="Cisco*" />
 	</Image>
 <!-- Part 0026 2023-03-14T15:18:00.000Z-1678807139 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0027 2023-05-16T18:25:00.000Z-1684261512 -->
+	<Image Id="{8CEC5782-38CE-57B7-33168C390C805CA6}" Path="c:\program files\microsoft visual studio*ide\devenv.exe" >
+		<Signature Subject="*Microsoft*" />
+		<VersionInfo ProductName="*Visual Studio*" />
+	</Image>
+	<Image Id="{46F06C32-7237-CCE7-5F0ADE9CE64D04FF}" CmdLine="*system32\wsl.exe  -d docker-desktop cat /proc*" >
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{925380EF-77BA-ED9E-3832655BE39E4AA2}" CmdLine="*system32\lxss\wslhost.exe {*" >
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{B647739F-7C81-13A3-2DAEBB432E38F0D3}" CmdLine="*system32\searchprotocolhost.exe*DownLevelDaemon*" >
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{8410D1CE-2236-D6CF-3E0525ED9D8B1248}" CmdLine="*git*git*" >
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{2EAAEF81-0697-3093-04AAFAB08B6E8455}" Path="*jetbrains*" >
+		<Signature Subject="*jetbrains*" />
+	</Image>
+<!-- Part 0027 2023-05-16T18:25:00.000Z-1684261512 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

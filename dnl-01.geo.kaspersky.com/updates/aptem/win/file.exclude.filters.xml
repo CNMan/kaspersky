@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2023-04-25T17:33:00.000Z-1682443980 -->
+	<!-- Version: 2023-05-03T10:25:00.000Z-1683109554 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -9554,6 +9554,34 @@
 		</Process>
 	</File>
 <!-- Part 0030 2023-04-19T13:50:00.000Z-1681912200 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0031 2023-05-03T10:25:00.000Z-1683109554 -->
+	<File Id="{3F0DA99E-AF9D-5F95-ABE9A471C38AAEFB}" FilePath="c:\windows\system32\tasks\disable_pre-boot_pin">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k netsvcs -p -s schedule" />
+	</File>
+	<File Id="{33CBC4E1-32AE-E017-689D0EE623704E5A}" FilePath="c:\windows\system32\ms-in\temp\????????????????????????????????.txt">
+		<Process Path="c:\windows\system32\ms-in\networkservice.exe">
+			<Signature Subject="*Solar*" />
+		</Process>
+	</File>
+	<File Id="{42A0F0BA-AE4D-EFC2-8A0717FB834EE187}" FilePath="c:\flex4you\*.pdf">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
+	</File>
+	<File Id="{24321514-4172-FCFA-A713B26B18E5A74E}" FilePath="c:\flex4you\desktop.ini">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
+	</File>
+	<File Id="{70F583C4-936F-720A-D6007C0C989BC42F}" FilePath="c:\windows\system32\grouppolicy\datastore*machine\preferences\files\files.xml">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
+	</File>
+	<File Id="{938DB4C9-1069-B5CA-6AF7A4B193F5EBB3}" FilePath="c:\users\*\favorites\*.url">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
+	</File>
+	<File Id="{FBC8DD5F-DAF5-53D2-3C1656FBBDC62EF9}" FilePath="c:\users\*\autodiscover.xml">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
+	</File>
+<!-- Part 0031 2023-05-03T10:25:00.000Z-1683109554 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

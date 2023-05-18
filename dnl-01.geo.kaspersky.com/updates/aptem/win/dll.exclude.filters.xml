@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2023-04-25T17:33:00.000Z-1682443980 -->
+	<!-- Version: 2023-05-02T19:04:00.000Z-1683054256 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1545,6 +1545,63 @@
 		</Process>
 	</Image>
 <!-- Part 18: 2023-04-06T16:42:00.000Z-1680799357 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 19: 2023-05-02T19:04:00.000Z-1683054256 -->
+	<Image Id="{955FA5AC-6C37-55CE-D299165A9D45C73E}">
+		<Process CmdLine="c:\windows\system32\wscript.exe //nologo c:\program files\zabbix\check.vbs" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{800DB074-C9E2-3C44-665DB1CA7A960B3D}">
+		<Process CmdLine="*bin\zabbix_sender.exe -z *" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{DF32C44E-99A3-752F-7D0221C678AFFF11}">
+		<Process CmdLine="c:\windows\system32\cscript.exe //nologo c:\windows\ccm\systemtemp\*" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{E1702F7D-FD3E-B7A6-4C9142D7242735FC}">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -windowstyle hidden -file c:\program files\zabbix\check.ps1" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{376540B2-9FE2-DBE9-C43CF192D5035D01}">
+		<Process CmdLine="wscript.exe //b //nologo c:\users\*\bgpss.vbs" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{76563337-5E71-7979-3B72AAD3B32F7940}">
+		<Process Path="c:\windows\system32\hostname.exe" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{D6D8FCCF-56A2-7863-1B6FA503E8768B28}">
+		<Process>
+			<Signature Subject="*Adobe*" />
+		</Process>
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{99C3655B-63AF-D0D1-2C7D27B4C61D314E}" Path="c:\program files (x86)\ibm\client access\emulator\*.dll">
+		<Process Path="C:\Program Files (x86)\IBM\Client Access\Emulator\*" />
+	</Image>
+	<Image Id="{704C51AE-F94A-FF8E-35E6D46005EBEA46}" Path="*BoldonJames*">
+		<VersionInfo FileDescription="BoldonJames*" />
+	</Image>
+	<Image Id="{C0CC4698-6E0B-0DA0-8C3A7402531A2FAF}" Path="*Boldon James*">
+		<VersionInfo FileDescription="BoldonJames*" />
+	</Image>
+	<Image Id="{0C559B49-02C5-3BC8-8E17D2DC691BF01B}" Path="*\classifier*">
+		<VersionInfo FileDescription="BoldonJames*" />
+	</Image>
+	<Image Id="{6B719AFE-2824-4198-C23DFF25FEF72000}">
+		<Process>
+			<Signature Subject="*1C*" />
+		</Process>
+		<Signature Subject="*1C*" />
+	</Image>
+	<Image Id="{C00D2FFC-4A8C-9678-B375AB4362346616}" Path="*usr\bin*">
+		<Process Path="*usr\bin*" />
+		<VersionInfo FileDescription="*OpenSSL*" />
+	</Image>
+<!-- Part 19: 2023-05-02T19:04:00.000Z-1683054256 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
