@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2023-05-02T19:04:00.000Z-1683054256 -->
+	<!-- Version: 2023-05-29T18:56:00.000Z-1685386581 -->
 
 	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
 		<Process Path="*\explorer.exe" />
@@ -1602,6 +1602,35 @@
 		<VersionInfo FileDescription="*OpenSSL*" />
 	</Image>
 <!-- Part 19: 2023-05-02T19:04:00.000Z-1683054256 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 20: 2023-05-29T18:56:00.000Z-1685386581 -->
+	<Image Id="{DA550D8E-9B5B-1534-E65CDD5CC11C2C5D}">
+		<Signature Subject="*Baidu*" />
+	</Image>
+	<Image Id="{807C4B3F-5F6A-F0F3-8173DB418B5801EF}">
+		<Signature Subject="*Sangfor*" />
+	</Image>
+	<Image Id="{89FFDF6B-F965-1B72-014D005664E41583}">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+		<Signature Subject="*Tencent*" />
+	</Image>
+	<Image Id="{12A61A60-BA17-EBFB-421A3FD867A97499}">
+		<Process>
+			<Signature Subject="*Kingsoft*" />
+		</Process>
+		<Signature Subject="*Kingsoft*" />
+	</Image>
+	<Image Id="{8BD15BD2-6371-6C35-9ECFEEF7E0B93BCB}">
+		<Process>
+			<Signature Subject="*Mozilla*" />
+		</Process>
+		<Signature Subject="*Mozilla*" />
+	</Image>
+<!-- Part 20: 2023-05-29T18:56:00.000Z-1685386581 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
