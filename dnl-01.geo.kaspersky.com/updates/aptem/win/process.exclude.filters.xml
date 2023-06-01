@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2023-05-17T14:34:00.000Z-1684334049 -->
+	<!-- 2023-05-31T12:47:00.000Z-1685537255 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -600,6 +600,60 @@
 	<Image Id="{3FBBFF81-0697-3093-04AAFAB08B6E9566}" CmdLine="cmd /c tasklist /FI PID eq * | findstr *" />
 <!-- Part 0027 2023-05-16T18:25:00.000Z-1684261512 -->
 <!-- Part 0027 2023-05-17T14:34:00.000Z-1684334049 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0028 2023-05-30T17:46:00.000Z-1685468780 -->
+	<Image Id="{4C8A91E9-FD08-4D9E-45052A58395FAAB3}" CmdLine="*hardware*" Path="*make.exe" />
+	<Image Id="{11BC0266-144F-2179-9864A9C4A7871E34}" Path="C:\cygwin64\bin\sh.exe" />
+	<Image Id="{B421F78E-487F-266E-D82EF68EA506AC0D}" CmdLine="*ghs*ccv* -cpu=*" />
+	<Image Id="{9F9B4929-A958-0508-A5037BEF917E0476}" CmdLine="*ghs*ease*AppData\Local\Temp\gh_*" />
+	<Image Id="{0D0913A9-E220-1430-AEA16F1DA3732178}" CmdLine="*ghs*ecom*AppData\Local\Temp\gh_*" />
+	<Image Id="{7A773177-AF83-E5B4-4234BCD69526F270}" CmdLine="*LoopbackExempt*" Path="*CheckNetIsolation.exe" >
+		<Signature Subject="Microsoft*" />
+	</Image>
+	<Image Id="{074D66F1-0C4B-4B56-94950BFCBE12535F}" CmdLine="*check --type*" Path="*BaiduPinyin*bdimeupdate.exe" >
+		<Signature Subject="*Baidu*" />
+	</Image>
+	<Image Id="{62487E5E-A9A5-B826-21BBA7D76DEEF2D0}" CmdLine="ExpressConnect.exe -u" >
+		<Signature Subject="*Rivet*" />
+	</Image>
+	<Image Id="{5B6EC5C7-C45F-25AF-7F31BAAEC1156271}" CmdLine="*SpareRendererForSitePerProcess*" Path="*Baidu*DuGuanjiaTray.exe" >
+		<Signature Subject="*Baidu*" />
+	</Image>
+	<Image Id="{808AE0F8-D09E-5169-5EE08A3B4F5BBFD4}" Path="*Baidu*bdagent*bztagent.exe" >
+		<Signature Subject="*Baidu*" />
+	</Image>
+	<Image Id="{2AF01C4D-ACA9-1B32-9900B4FADB1A8FFC}" CmdLine="*type=renderer*" Path="*infoflow\hiwebhelper.exe" >
+		<Signature Subject="*Baidu*" />
+	</Image>
+	<Image Id="{72E4C202-E716-98F2-004CE3C46EE2AA34}" Path="*IME\Baidu*BaiduPinyinCore.exe" >
+		<Signature Subject="*Baidu*" />
+	</Image>
+	<Image Id="{AEBBCBC2-593E-8D9E-F5B7AE42045FE7CB}" CmdLine="*loopback" Path="*Sangfor*ECAgent.exe" >
+		<Signature Subject="*Sangfor*" />
+	</Image>
+	<Image Id="{69DF15E8-460D-A161-7F3DBC4D31BA0BE1}" CmdLine="*from-sp" Path="*Sangfor*ECAgent.exe" >
+		<Signature Subject="*Sangfor*" />
+	</Image>
+	<Image Id="{A5C3B981-775E-2FE5-FCC4A6B0CBEF6418}" CmdLine="*fromGD_*" Path="*SogouInput*SGTool.exe" >
+		<Signature Subject="*Sogou*" />
+	</Image>
+<!-- Part 0028 2023-05-30T17:46:00.000Z-1685468780 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0029 2023-05-31T12:47:00.000Z-1685537255 -->
+	<Image Id="{2C6B2674-D865-7B26-658BA8D35A8DCC4D}" CmdLine="C:\\Program Files\\Adobe\\Adobe After Effects CC 2017\\Support Files\\AfterFX.exe" >
+		<Signature Subject="*Adobe*" />
+	</Image>
+	<Image Id="{D4B17DCE-51DB-697E-55179570E7F3D694}" Path="C:\Program Files (x86)\Adobe\Adobe Creative Cloud\CCLibrary\CCLibrary.exe" >
+		<Signature Subject="*Adobe*" />
+	</Image>
+	<Image Id="{E32EEE62-1055-4350-EAD66225439365E9}" Path="C:\Program Files (x86)\Adobe\Adobe Creative Cloud\CCLibrary\libs\node.exe" >
+		<Signature Subject="*Node.js*" />
+	</Image>
+<!-- Part 0029 2023-05-31T12:47:00.000Z-1685537255 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
