@@ -1,0 +1,130 @@
+<Update
+	Date="19062023 1555"
+	ObjectType="2=KES11;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="2918"
+	CompID="KES11"
+	Shell="bdif;klz;none">
+	<Exclude
+		App="KES 11.0.1.90;KES 11.1.[0,1].[126,15919]"/>
+	<Patches
+		App="KES 21.2.16.*"
+		SrvPath="kes11/kes11_5_1"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_5_1"
+		KSCMode="Off;OnPrem"
+		Item="Lang;Name;DSKM"
+		List="
+			ar|desc_ar.txt|MHnbNvoKCEhNp/03hVyBkfMzj4ofeUW8wnzQ/N9Z/So=;
+			cs|desc_cs.txt|7oDByaZIDlqfBfFTX3lZymzomdkmZq7vA9nILZqq4aM=;
+			de|desc_de.txt|8TEv1GjkTyg8U7CON/pNuq2myIGNIxgm9Tp3M2UaZpI="/>
+	<Patch
+		App="KES 21.2.16.*"
+		SrvPath="kes11/kes11_5_1"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_5_1"
+		Name="desc_en.txt"
+		DSKM="8mtNHfpjlxO4g01nrCKS03j3qjWEvPzPbVaR5fm+TvI="
+		KSCMode="Off;OnPrem"/>
+	<Patches
+		App="KES 21.2.16.*"
+		SrvPath="kes11/kes11_5_1"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_5_1"
+		KSCMode="Off;OnPrem"
+		Item="Lang;Name;DSKM"
+		List="
+			es_MX|desc_es-mx.txt|EWrT/fhErWkdlxgECp6QwEeBkdBOTETo3veEKABpG3g=;
+			es|desc_es.txt|gFKNayudMkD5sIbFlaKVSXTNkQNqKkdrbHxWIPCBH+0=;
+			fr|desc_fr.txt|HWsVhu7wvDunGkj1p4QEEhpnKLMAqeLcxYH333tbijA=;
+			hu|desc_hu.txt|OkhJVALDEsgEzA0k3OjcKNgrKyE3gYH6cLVH/wDTiJU=;
+			it|desc_it.txt|4GEOcK5s+9gSLAR60KvY0CsuYNi1ql1QZYQKi4WdlO8=;
+			ja|desc_ja.txt|wQygh+HzC26I6Z86cIUhWvRqUGO2Okw5gWRGZKZl+iw=;
+			kk|desc_kk.txt|Z53B7vbbWpnHtxNL0ff31B34td51XfWyTZH46g+UYcs=;
+			ko|desc_ko.txt|j0ea6+LzB0+9aIkP05EV92AJjip2nJ7Y0v4nQi1QHEw=;
+			nl|desc_nl.txt|pTjmy60Y14I6ybizGEj3dCowKz/RQMH/757Ojkhcx/8=;
+			pl|desc_pl.txt|a7MLWIDZQNIeNcTkQG5lxzhCyQDfGrJA086KvWD8hU0=;
+			pt_BR|desc_pt-br.txt|ZBwHZeBTJGIdklyPicbk4gNahIUzgnKlnovZAGSo1Ao=;
+			pt|desc_pt.txt|C8sclF6hYuyWHPG6ECKTurbBvveAZHTyZhFuLTSaam0=;
+			ro|desc_ro.txt|HbpxBX8WToiHWs8cWFof1XUf0xjdA5lkmVvuXot+FbU=;
+			ru|desc_ru.txt|finn72AYE09foVzKfA8UkFnD7mXZB7NPDF95+9UrT9E=;
+			tr|desc_tr.txt|i0aBKlyB3ROmY6owKemewFsCeWHpPVPWh2DOLhYU12c=;
+			vi|desc_vi.txt|ZIDmLQ9L+Elw+bdUtH2YYz4iu30iUQPxJb4Vfmw5a58=;
+			zh_Hans|desc_zh-hans.txt|E/ENATblzniLZWb6Iu2a40jn5Hhse2SIE6L5kCD9UJY=;
+			zh_Hant|desc_zh-hant.txt|xF1ZOZrSmJ2cKUI1OADN9NzNXEDWBVQhrac5bJ7Wwwc="/>
+	<Patch
+		App="KES 21.2.16.*"
+		SrvPath="kes11/kes11_5_1"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_5_1"
+		Name="kes11_5_1.msp"
+		DSKM="6HCjZER8pTOzdQ03OZfxIzylgzMBKcHs3FRh8Ep6OJA="
+		KSCMode="Off;OnPrem"/>
+	<Patches
+		App="KES 21.2.16.*"
+		SrvPath="kes11/kes11_5_1"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_5_1"
+		KSCMode="Off;OnPrem"
+		Item="Lang;Name;DSKM"
+		List="
+			ar|ksn_ar.txt|W8jDs2dnQVfAR1ve4grjgRt0yy3mKrhhjbkvJKvGWSw=;
+			cs|ksn_cs.txt|MqqdeRbjt3wFHNY84xcSK8kiCfzqNlBOvJ7+b+pRb3U=;
+			de|ksn_de.txt|qN8fw4toivT+3rZR18zjnuZ2eMvv0IZ2ZIz7jhozq9Y="/>
+	<Patch
+		App="KES 21.2.16.*"
+		SrvPath="kes11/kes11_5_1"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_5_1"
+		Name="ksn_en.txt"
+		DSKM="7PDPzuNTuixZnxhaKlHhrc9t6kawN4yAWhB7b4DsR+M="
+		KSCMode="Off;OnPrem"/>
+	<Patches
+		App="KES 21.2.16.*"
+		SrvPath="kes11/kes11_5_1"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_5_1"
+		KSCMode="Off;OnPrem"
+		Item="Lang;Name;DSKM"
+		List="
+			es_MX|ksn_es-mx.txt|3jnariPFvnVVi0yl13/s4ew+N8QJ6CF23xveD9qgrI0=;
+			es|ksn_es.txt|KbbNtU/Atvc9HxkYohJD/voICw3DaucZ1as1Qcn8g2A=;
+			fr|ksn_fr.txt|divtG+SC1geFPEaOuTCfNWLrUGCePFmwBdILz+lQ/3c=;
+			hu|ksn_hu.txt|WWbZKfVK96x/5sxWAMhglAqWBzACdcDUiwlhTcrdSqI=;
+			it|ksn_it.txt|xXEco1aPHP2nRyr05A7I3I1CJtmsqO+2ASupiRwmk0o=;
+			ja|ksn_ja.txt|f9dfm2QdL3lvYE4Hx9b0VVgNL6shMtbL1TCybzv5sMI=;
+			kk|ksn_kk.txt|y8UoCxmOjn1Yd/tHjQXDx1CD/nVWOLno1JpMSrg4d6s=;
+			ko|ksn_ko.txt|2MjFQuGYP2K7Xd50VerD2feDrQf94wHnwtjc4Dj8VKs=;
+			nl|ksn_nl.txt|x0ZIRrlQhXIsThvDhQaS0PN8BjOm2s4NP54LF9eR8aA=;
+			pl|ksn_pl.txt|KXHTlRtdVr9OBbdoCnm2qjqZTH97kguWOqc2MbbQixE=;
+			pt_BR|ksn_pt-br.txt|f7Zn2fXel9BSA94xYYIYKZ8LTsLWOmM3otalAb827u4=;
+			pt|ksn_pt.txt|lZ2GvQMag7UfTQkOxCNDAB9CGTWyxAQN/vf5nB+UWls=;
+			ro|ksn_ro.txt|Tr3E2VGz+MRFnsRa8upf4GMdtiTBhg9vGrDisUv3iVw=;
+			ru|ksn_ru.txt|ijuX1cdvX6PylPIO+a1YZR0fK6T6R4dX6lGG/4Caoxk=;
+			tr|ksn_tr.txt|ggPI6K2sX3G5+aWK5hp0hyfU/bVApqFtGIJd/+6wGog=;
+			vi|ksn_vi.txt|RMMKGWGiHuuhiv4/NkJQ+/p7TXLrZ93nifeL4tN6JSk=;
+			zh_Hans|ksn_zh-hans.txt|Ud+Sl347DvE6Ln5ukfS3cC7Gz+mF/sryvzvtnbk8bzw=;
+			zh_Hant|ksn_zh-hant.txt|xfofOSQFc7MGyF+bXxRhoQsNc68aMqEpYa7EET+9LNQ="/>
+	<File
+		App="KES 11.[0-4].*.*;KES 21.2.*.*;KES 21.3.10.*;KES 21.4.20.*;KES 21.5.11.*;KES 21.6.7.*;KES 21.7.7.*; KES 21.8.5.*;KES 21.9.6.*"
+		SrvPath="kes11"
+		LocalPath="%DataRoot%/Patches/kes11"
+		Name="wd_params.xml"
+		DSKM="OcdEDzHKWDBHscBfxC/Sm4F3eEhvcWgsVCUB+g+F60c="/>
+	<Patch
+		App="KES 11.[0-4].*.*;KES 21.2.*.*;KES 21.3.10.*;KES 21.4.20.*;KES 21.5.11.*;KES 21.6.7.*;KES 21.7.7.*; KES 21.8.5.*;KES 21.9.6.*"
+		SrvPath="kes11"
+		LocalPath="%DataRoot%/Patches/kes11"
+		Name="wd_rules.xml"
+		DSKM="sAnXtE3gfq9RtR3y37PJABWLzeezesqVHZYu2gSIy+k="/>
+	<File
+		App="KES 11.[0-4].*.*;KES 21.2.*.*;KES 21.3.10.*;KES 21.4.20.*;KES 21.5.11.*;KES 21.6.7.*;KES 21.7.7.*; KES 21.8.5.*;KES 21.9.6.*"
+		LocalPath="%DataRoot%/Patches"
+		Name="wd_regions.xml"
+		DSKM="Rkw4TBfWFK5j/J80LX7+NC6UNRFo5LOv4zWudBuylEU="/>
+	<File
+		CompID="RETR1901_KES11"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="kes11-1901g.xml"
+		DSKM="Pd0v1iGoncCqi8yW/XqEOSN2KO83q+ikmwE5pLY7O/o="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="kes11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGsNAtuJ76BIjAPol8V/pvqssmjtZGKD3/PJ74+SepBCEjvhvb/eF+VcxOfNn/uhWo6RJ8I80MgpCJcgawss4MwBAB4JhgEAAAIAAigFAEtFUzExAwACKAMAQklOAQAACR13GJINCjs6MTBhUWd3MHpEQkNRR0VSclVGYlpCM1VQaVhidTJqV3lUV3Jwd1JUdXBzaTR3RG54RWRzcHM5bXY2eDlzU0ZLdm85S1VqcFIyayswY2JTK2NRTGF4N0tPUiUl</Key>
+</Update>
+;:10K2kCs98KLOsmgx1dsZBxq8cSpBOcdk1r3alBw4mglCUK0Z4y/KSRDTjgNsFgXoMOMpZAMrocB4ZE/VOVUy0QBo%%
