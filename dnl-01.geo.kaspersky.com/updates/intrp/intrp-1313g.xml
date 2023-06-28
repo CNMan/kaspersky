@@ -1,6 +1,6 @@
 <Update
-	Date="26062023 0657"
-	BlstDate="25062023 2207"
+	Date="27062023 0852"
+	BlstDate="26062023 2206"
 	ObjectType="2=INTRP;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -33,107 +33,107 @@
 		CompID="INTRP,RETR1901_INTRP"
 		App="!KAV|KIS|PURE|KES|KASPERSKY|SAAS|KFA|KSOSPC|KSOSFS [11,20-21]"
 		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
+		Date="27062023 0852"/>
 	<Index
 		CompID="INTRP,RETR1901_INTRP"
 		App="KES 11"
+		Target="[0-104857]"
+		SrvPath="mod"
+		Name="mod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KES 11"
+		Target="[104858-262143]"
+		Name="unmod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 20"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 20"
+		Target="262143"
+		Name="unmod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KAV|KIS|PURE|KFA|SAAS 21"
+		Target="[0-131069,131071-262143]"
+		SrvPath="mod"
+		Name="mod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KAV|KIS|PURE|KFA|SAAS 21"
+		Target="131070"
+		Name="unmod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[0-9,13]"
+		Target="[0-131069,131071-262143]"
+		SrvPath="mod"
+		Name="mod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[0-9,13]"
+		Target="131070"
+		Name="unmod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="262143"
+		Name="unmod-intrp-1313g.xml"
+		Date="27062023 0852"/>
+	<Index
+		CompID="INTRP,RETR1901_INTRP"
+		App="KES 21.[0-9,13]"
 		Target="[0-52428]"
 		SrvPath="mod"
 		Name="mod-intrp-1313g.xml"
-		Date="26062023 0657"/>
+		Date="27062023 0852"/>
 	<Index
 		CompID="INTRP,RETR1901_INTRP"
-		App="KES 11"
+		App="KES 21.[0-9,13]"
 		Target="[52429-262143]"
 		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 20"
-		Target="[0-262142]"
-		SrvPath="mod"
-		Name="mod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 20"
-		Target="262143"
-		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KAV|KIS|PURE|KFA|SAAS 21"
-		Target="[0-26214,131071-262143]"
-		SrvPath="mod"
-		Name="mod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KAV|KIS|PURE|KFA|SAAS 21"
-		Target="[26215-131070]"
-		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KSOSPC|KSOSFS|KASPERSKY 21.[0-9,13]"
-		Target="[0-26214,131071-262143]"
-		SrvPath="mod"
-		Name="mod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KSOSPC|KSOSFS|KASPERSKY 21.[0-9,13]"
-		Target="[26215-131070]"
-		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
-		Target="[0-262142]"
-		SrvPath="mod"
-		Name="mod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
-		Target="262143"
-		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KES 21.[0-9,13]"
-		Target="[0-13107]"
-		SrvPath="mod"
-		Name="mod-intrp-1313g.xml"
-		Date="26062023 0657"/>
-	<Index
-		CompID="INTRP,RETR1901_INTRP"
-		App="KES 21.[0-9,13]"
-		Target="[13108-262143]"
-		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
+		Date="27062023 0852"/>
 	<Index
 		CompID="INTRP,RETR1901_INTRP"
 		App="KES 21.14"
 		Target="[0-262142]"
 		SrvPath="mod"
 		Name="mod-intrp-1313g.xml"
-		Date="26062023 0657"/>
+		Date="27062023 0852"/>
 	<Index
 		CompID="INTRP,RETR1901_INTRP"
 		App="KES 21.14"
 		Target="262143"
 		Name="unmod-intrp-1313g.xml"
-		Date="26062023 0657"/>
+		Date="27062023 0852"/>
 	<File
 		CompID="RETR1901_INTRP"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="intrp-1901g.xml"
-		DSKM="rcOVhW2aPrcJMt/GlboXVKc9g54n2Vov61w0EM68ezk="/>
+		DSKM="yyDqTks10/N7Yd7xckKLyf5SPsH5rU/8u58fsXdr0+o="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="intrp-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAAj8cngGmF0fBdd39TA6lU1ZZCW/mmd7qCR3T+i2XUUTEglzEa+BZtJ35e9rqf2qFRJCCEMe2KW3MkomJL/7ug4BAB4JtAEAAAIAAigFAElOVFJQAwACKAQAQkFTRQEAAAmlf6gsDQo7OjEwcUV2VmpIblhxZVA2WkRMZzhrUWRUb3E1RXJqVlo4bU0xc2plSGJsYVEzTlJjamtyNHZCT3oxUDVPYytCZ3pSNzgvckFGQzg3Z0VjdTZWNFh3bk1nYm4lJQ==</Key>
 </Update>
-;:10KGWnu/UDNFIqpNBVM84P+iRKe0KKPBxWUseMCkeW3IQ6ZAGy+6O7Q7W+3wnblJiOesxSQlaycLV8zLLaaWhl8j%%
+;:10K4nW7X25gwifN8e12stjfq+5LZo/Jvv1mxIoS9tbkzp0bE3MDTGFS4RlMjSXKfLOD8gGHOlX8jj3WWjIX4il49%%
