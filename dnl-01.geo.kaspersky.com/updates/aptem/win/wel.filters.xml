@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2023-05-31T12:23:00.000Z-1685535829 -->
+  <!-- Version: 2023-07-04T19:21:00.000Z-1688498518 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -887,16 +887,12 @@
         <Equal OrderNum="16" Value="D:AI(A;;FA;;;SY)(A;;0x1200a9;;;BA)"/>
         <Match OrderNum="18" Value="*\SecurIT\zservice6415.exe"/>
       </Conjunction>
-      <Match OrderNum="18" Value="C:\Program Files\Common Files\SecurIT\zservice15.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files\Adobe\Acrobat DC\Acrobat\acrocef_1\AcroCEF.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files (x86)\Mozilla Firefox\firefox.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\acrocef_1\RdrCEF.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroCEF\RdrCEF.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files\Mozilla Firefox\firefox.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"/>
-      <Match OrderNum="18" Value="C:\Program Files (x86)\Common Files\SecurIT\zservice6415.exe"/>
+      <Match OrderNum="18" Value="*Adobe\Reader*\AcroRd32.exe"/>
+      <Match OrderNum="18" Value="*Adobe\Acrobat*\Acrobat.exe"/>
+      <Match OrderNum="18" Value="*Adobe\Acrobat*CEF.exe"/>
+      <Match OrderNum="18" Value="*Mozilla*\firefox.exe"/>
+      <Match OrderNum="18" Value="*Adobe\Acrobat*\AcroRd32.exe"/>
+      <Match OrderNum="18" Value="*SecurIT\zservice6415.exe"/>
     </Exclusions>
   </Event>
 
@@ -1003,7 +999,27 @@
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Adobe\Acrobat Reader*\RdrCEF.exe"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*CEF.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*Acrobat.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*AcroRd32.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*Acrobat.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*AcroRd32.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*CEF.exe"/>
       </Conjunction>
       <Conjunction>
         <Match OrderNum="7" Value="S-1-5-??"/>
@@ -1077,10 +1093,6 @@
       <Conjunction>
         <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
         <Match OrderNum="15" Value="C:\Windows\Microsoft.NET\Framework*\ngentask.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Common Files\Adobe\ARM*\AdobeARM.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>

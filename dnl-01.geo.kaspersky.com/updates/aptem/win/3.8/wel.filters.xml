@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2022-11-03T15:03:00.000Z-1667487813 -->
+  <!-- Version: 2023-07-04T19:21:00.000Z-1688498518 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -927,7 +927,27 @@
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Adobe\Acrobat Reader*\RdrCEF.exe"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*CEF.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*Acrobat.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*AcroRd32.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*Acrobat.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*AcroRd32.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*CEF.exe"/>
       </Conjunction>
       <Conjunction>
         <Match OrderNum="7" Value="S-1-5-??"/>
