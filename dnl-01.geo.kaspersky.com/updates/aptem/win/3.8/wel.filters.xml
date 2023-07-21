@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2023-07-04T19:21:00.000Z-1688498518 -->
+  <!-- Version: 2023-07-18T15:47:00.000Z-1689695277 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -826,17 +826,10 @@
 
   <Event Name="PrivilegedServiceCalled.Vista" Id="4673" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
     <Exclusions>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\conhost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Skype\Skype.exe"/>
-      </Conjunction>
+      <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\taskhostw.exe"/>
+        <Match OrderNum="15" Value="*System32\taskhostw.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
@@ -844,42 +837,20 @@
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeLoadDriverPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\RuntimeBroker.exe"/>
+        <Match OrderNum="15" Value="*System32\RuntimeBroker.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\CCM\UpdateTrustedSites.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeIncreaseWorkingSetPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\audiodg.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\WUDFHost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\backgroundTaskHost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="11" Value="Security"/>
-        <Equal OrderNum="12" Value="-"/>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\backgroundTaskHost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\taskhostw.exe"/>
+        <Match OrderNum="15" Value="*System32\backgroundTaskHost.exe"/>
       </Conjunction>
       <Match OrderNum="15" Value="*globitel\speechlog retail client\ffmpeg.exe"/>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
-        <Match OrderNum="15" Value="*Google\Chrome\Application\chrome.exe"/>
+        <Match OrderNum="15" Value="*Application\chrome.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeIncreaseBasePriorityPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\svchost.exe"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
@@ -887,55 +858,27 @@
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\svchost.exe"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="11" Value="Security"/>
         <Equal OrderNum="12" Value="-"/>
         <Equal OrderNum="13" Value="SeLoadDriverPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\svchost.exe"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="11" Value="nt local security authority / authentication service"/>
-        <Equal OrderNum="12" Value="lsaregisterlogonprocess()"/>
-        <Equal OrderNum="13" Value="setcbprivilege"/>
-        <Equal OrderNum="15" Value="c:\windows\system32\lsass.exe"/>
+        <Equal OrderNum="11" Value="NT Local Security Authority / Authentication Service"/>
+        <Equal OrderNum="12" Value="LsaRegisterLogonProcess()"/>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*System32\lsass.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\RuntimeBroker.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*AppData\Local\Microsoft\Teams\current\Teams.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Microsoft\Edge\Application\msedge.exe"/>
+        <Match OrderNum="15" Value="*System32\RuntimeBroker.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
         <Match OrderNum="15" Value="*Microsoft\Edge\Application\msedge.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Google\Chrome\Application\chrome.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Plustek\*OpticSlim*\DocuAction.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Adobe\Acrobat*CEF.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Adobe\Acrobat*Acrobat.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Adobe\Acrobat*AcroRd32.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
@@ -950,85 +893,8 @@
         <Match OrderNum="15" Value="*Adobe\Acrobat*CEF.exe"/>
       </Conjunction>
       <Conjunction>
-        <Match OrderNum="7" Value="S-1-5-??"/>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\svchost.exe"/>
-      </Conjunction>
-      <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\lsass.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\SearchIndexer.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*AppData\Local\Programs\Appium\Appium.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*blp\Wintrv\blpwtk2_subprocess.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*blp\Wintrv\bplus.wtk2.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Reuters\Eikon\Z\Bin\EikonBox.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*AppData\Local\Programs\Microsoft VS Code\Code.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*AppData\Local\Programs\Microsoft VS Code\Code.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*blp\Wintrv\webview\ApiVersions*\blpwebview.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*AppData\Local\Microsoft\OneDrive\OneDriveStandaloneUpdater.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Internet Explorer\iexplore.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Microsoft\EdgeWebView\Application\*\msedgewebview2.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\blp\Wintrv\bplus.wtk2.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\gpupdate.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\CCM\UpdateTrustedSites.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\sppsvc.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="C:\Windows\Microsoft.NET\Framework*\ngentask.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Common Files\Adobe\ARM*\AdobeARM.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*Common Files\Adobe\ARM*\AdobeARM.exe"/>
+        <Match OrderNum="15" Value="*System32\lsass.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
@@ -1037,54 +903,6 @@
       <Conjunction>
         <Equal OrderNum="13" Value="SeTcbPrivilege"/>
         <Equal OrderNum="15" Value="C:\Windows\explorer.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\explorer.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\SysWOW64\wbem\WMIC.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\rundll32.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\dllhost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\RuntimeBroker.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\AppHostRegistrationVerifier.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*ExpressConnect\ExpressConnect.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\appidcertstorecheck.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\SearchProtocolHost.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\cleanmgr.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
-        <Match OrderNum="15" Value="*AppData\Local\Postman\*\Postman.exe"/>
       </Conjunction>
     </Exclusions>
   </Event>
@@ -1184,44 +1002,43 @@
       <Conjunction>
         <Equal OrderNum="7" Value="WDAGUtilityAccount"/>
         <Equal OrderNum="10" Value="S-1-5-18"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="Гость"/>
         <Equal OrderNum="10" Value="S-1-5-18"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="cba_anonymous"/>
         <Equal OrderNum="10" Value="S-1-5-18"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="админ"/>
         <Equal OrderNum="10" Value="S-1-5-18"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="DefaultAccount"/>
         <Equal OrderNum="10" Value="S-1-5-18"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="Администратор"/>
         <Equal OrderNum="10" Value="S-1-5-18"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="LAPSAdmin"/>
         <Equal OrderNum="10" Value="S-1-5-18"/>
-        <Equal OrderNum="15" Value="C:\Windows\System32\wbem\WmiPrvSE.exe"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
       </Conjunction>
     </Exclusions>
   </Event>
 
   <Event Name="SecurityLocalGroupMembershipEnumerated.Vista" Id="4799" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
     <Exclusions>
-      <Match OrderNum="15" Value="*system32\vssvc.exe"/>
       <Match OrderNum="15" Value="*AGENT\soyuz.exe"/>
       <Match OrderNum="15" Value="*gent\soyuz.exe"/>
       <Match OrderNum="15" Value="*System32\SrTasks.exe"/>

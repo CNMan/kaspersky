@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2023-05-31T18:25:00.000Z-1685557541 -->
+	<!-- 2023-07-14T20:31:00.000Z-1689366674 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -676,6 +676,43 @@
 <!-- Part 0029 2023-05-31T18:25:00.000Z-1685557541 -->
 <!-- Part 0029 2023-05-31T16:45:00.000Z-1685551549 -->
 <!-- Part 0029 2023-05-31T12:47:00.000Z-1685537255 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0030 2023-07-14T20:31:00.000Z-1689366674 -->
+	<Image Id="{51A42678-116C-461D-B6D062D7E64E9B00}" Path="C:\Program Files\Zabbix*" >
+		<Signature Subject="*Zabbix*" />
+	</Image>
+	<Image Id="{C3CD49BB-E8A7-0A67-71743043A0CEB7F2}" CmdLine="/C  C:\ProgramData\ZabbixScripts\metroman.exe*" />
+	<Image Id="{DA4DB9AF-6BA6-EF5A-0C83E2CE11C27FBC}" CmdLine="/C  C:\ProgramData\ZabbixScripts\CPUpowershell.bat" />
+	<Image Id="{89DE101B-1D52-2E73-FD3ED35D3C6193E4}" CmdLine="/C PowerShell.exe -exec bypass -nologo -NoProfile -File C:\ProgramData\ZabbixScripts*" />
+	<Image Id="{FAD5F021-C958-009B-CF7E81E2779FEAE1}" CmdLine="*where name like &#39;powershell&#39; or name like &#39;powershell#%&#39; get*" />
+	<Image Id="{D03CBFBC-8A65-ABD1-3B698B9A5B1B4DE7}" CmdLine="wmic  cpu get NumberOfLogicalProcessors " />
+	<Image Id="{44CD39FE-4777-1949-87FC7623DA2AE746}" CmdLine="C:\windows\system32\cmd.exe /c wmic *| findstr [0-9]" />
+	<Image Id="{1DF43A00-8680-C0A4-BC3560EE05A9A490}" CmdLine="C:\ProgramData\ZabbixScripts\metroman.exe  * -p *" />
+	<Image Id="{D03CBFBC-8A65-ABD1-3B698B9A5B1B4DE7}" CmdLine="wmic  cpu get NumberOfLogicalProcessors " />
+	<Image Id="{A1042976-881F-0128-A2107E7C4DF72655}" CmdLine="findstr  [0-9]" />
+	<Image Id="{12CF63F4-9786-A602-FB11434979EEC3D5}" CmdLine="*Program Files\McAfee\DLP\Agent*--parent-window=0*" />
+	<Image Id="{6046CCD9-723D-91D3-46A3EEFA782B401F}" CmdLine="C:\Program Files (x86)\NICE Systems\ScreenAgent\SASession.exe -StartedByService" >
+		<VersionInfo ProductName="NICE Perform" FileDescription="SASession Application" />
+	</Image>
+	<Image Id="{DEE360A3-A49A-143E-88C3FCC29B553B33}" Path="C:\Program Files (x86)\NICE Systems\ScreenAgent\ScreenAgentSvc.exe" >
+		<VersionInfo ProductName="NICE Perform" FileDescription="ScreenAgentSvc" />
+	</Image>
+	<Image Id="{88DAEC8D-0AB2-7921-A38DFADC729AA224}" Path="c:\program files (x86)\searchinform*" >
+		<Signature Subject="*Searchinform*" />
+	</Image>
+	<Image Id="{04C3CBFD-8F6A-D110-FDBE3E0BC858F854}" Path="c:\program files\searchinform*" >
+		<Signature Subject="*Searchinform*" />
+	</Image>
+	<Image Id="{A7A36564-2DAF-C161-AFB238C91477C3F9}" CmdLine="*ScreenRecording.Recorder.exe  -displayname*" >
+		<VersionInfo ProductName="*Screen Recorder" FileDescription="*.ScreenRecording.Recorder" />
+	</Image>
+	<Image Id="{0AF57468-5D4D-2C2F-8529C73A1FAF69AA}" Path="c:\program files\screenrecorder*screenrecording.captureclient.exe" >
+		<VersionInfo ProductName="*Screen Recorder" FileDescription="*.screenrecording.captureclient" />
+	</Image>
+	<Image Id="{72128753-55D1-8B58-D25FACA5CC0349B4}" CmdLine="ffmpeg_bin\ffmpeg.exe -hide_banner -i *.mp4" />
+<!-- Part 0030 2023-07-14T20:31:00.000Z-1689366674 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

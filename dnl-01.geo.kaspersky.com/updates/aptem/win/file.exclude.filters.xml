@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2023-05-03T10:25:00.000Z-1683109554 -->
+	<!-- Version: 2023-07-19T17:55:00.000Z-1689789343 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -7398,11 +7398,15 @@
 			<Signature Subject="BMC*Software*" />
 		</Process>
 	</File>
-	<File Id="{7CACD0B4-EFF8-3632-30455417FF2AE210}" FilePath="c:\programdata\microsoft\edgeupdate\log\microsoftedgeupdate.log">
-		<Process CmdLine="*microsoft\edgeupdate\microsoftedgeupdate.exe /ua /installsource scheduler" />
+	<File Id="{7CACD0B4-EFF8-3632-30455417FF2AE211}" FilePath="c:\programdata\microsoft\edgeupdate\log\microsoftedgeupdate.log">
+		<Process Path="*microsoft\edgeupdate\microsoftedgeupdate.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
-	<File Id="{FEBD682E-F5CF-5568-779F2F298712C7C2}" FilePath="*appdata\local\temp\microsoftedgeupdate.log">
-		<Process CmdLine="*microsoft\edgeupdate\microsoftedgeupdate.exe /ua /installsource scheduler" />
+	<File Id="{FEBD682E-F5CF-5568-779F2F298712C7C3}" FilePath="*appdata\local\temp\microsoftedgeupdate.log">
+		<Process Path="*microsoft\edgeupdate\microsoftedgeupdate.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
 	</File>
 	<File Id="{43381A73-5D59-9417-7D42CFB35CE6E335}" FilePath="c:\kronos\interfacedesigner\interfaces\mapped_folders\wim_in\kronos_*.csv">
 		<Process CmdLine="%kl_undef%" />
@@ -9582,6 +9586,51 @@
 		<Process CmdLine="c:\windows\system32\svchost.exe -k gpsvcgroup" />
 	</File>
 <!-- Part 0031 2023-05-03T10:25:00.000Z-1683109554 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0032 2023-07-19T17:55:00.000Z-1689789343 -->
+	<File Id="{81716A21-9153-3BB6-40A46F701E7B87FC}" FilePath="C:\Program Files\Intel\EMA Agent\mesh.db-journal">
+		<Process Path="C:\Program Files\Intel\EMA Agent\EmaAgent.exe">
+			<VersionInfo ProductName="Intel*EMA Agent Service" />
+		</Process>
+	</File>
+	<File Id="{A98C31AF-BC70-DA61-423E953284F86AA7}" FilePath="*lstsv\fsorn.txt">
+		<Process Path="*حافظ التقارير.exe">
+			<VersionInfo ProductName="Listsave" />
+		</Process>
+	</File>
+	<File Id="{5B8B9759-58D1-B5D1-00F8B9E493931BB7}" FilePath="*tmp\cache*.cch">
+		<Process Path="*bin\httpd.exe">
+			<VersionInfo ProductName="Apache HTTP Server" />
+		</Process>
+	</File>
+	<File Id="{196D1013-9994-C444-F9D8844446CDF137}" FilePath="*Manufacturer\Endpoint Agent*">
+		<Process Path="*Manufacturer\Endpoint Agent\edpa.exe">
+			<Signature Subject="*Symantec*" />
+		</Process>
+	</File>
+	<File Id="{F5C273E7-473B-E083-6B1296B25DB30780}" FilePath="*Temp\DLP_*">
+		<Process Path="*Manufacturer\Endpoint Agent\edpa.exe">
+			<Signature Subject="*Symantec*" />
+		</Process>
+	</File>
+	<File Id="{0BFD3B39-CA46-D80B-E29DB3626C33E644}" FilePath="*Temp\Low\DLP_*">
+		<Process Path="*Manufacturer\Endpoint Agent\edpa.exe">
+			<Signature Subject="*Symantec*" />
+		</Process>
+	</File>
+	<File Id="{779E3153-829E-451A-093BBD8A2BBD12B8}" FilePath="*ProgramData\Arellia*">
+		<Process Path="*Agents\Agent\Arellia.Agent.Service.exe">
+			<Signature Subject="*Thycotic*" />
+		</Process>
+	</File>
+	<File Id="{7698F66E-CA08-814B-119AD972C335FEBF}" FilePath="*ProgramData\Thycotic*">
+		<Process Path="*Agents\Agent\Arellia.Agent.Service.exe">
+			<Signature Subject="*Thycotic*" />
+		</Process>
+	</File>
+<!-- Part 0032 2023-07-19T17:55:00.000Z-1689789343 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

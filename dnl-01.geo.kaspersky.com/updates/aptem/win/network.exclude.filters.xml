@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2023-05-30T20:45:00.000Z-1685479512 -->
+  <!-- Version: 2023-07-17T18:35:00.000Z-1689618901 -->
 
 <!-- 
 	Part 0001 START
@@ -4837,6 +4837,26 @@
 	<NetworkConnection Id="{8EE0C656-CA5E-6F75-7F9FE88ED6A76B6F}" RemoteAddress="61.54.94.92" RemotePort="80" Url="%kl_undef%" />
 	<NetworkConnection Id="{C9B2A429-BFC9-B278-4B35CA8B4A618FE0}" RemoteAddress="81.69.130.131" RemotePort="80" Url="%kl_undef%" />
 <!-- Part 0023 2023-05-30T20:45:00.000Z-1685479512 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0024 2023-07-17T18:35:00.000Z-1689618901 -->
+	<NetworkConnection Id="{D11CAEDC-9582-EC1F-DA23E311D5A74CD8}" RemoteAddress="10.20*" RemotePort="5985">
+		<Process CmdLine="*networkservice -p -s winrm">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{9C2A9C94-A21C-0334-7162DD88572AF3FA}" RemoteAddress="10.21*" RemotePort="5985">
+		<Process CmdLine="*networkservice -p -s winrm">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{6A499BD3-1D2B-C76A-074D2782B60DC7D5}" Url="http://*:5985/wsman/subscription*">
+		<Process CmdLine="*networkservice -p -s winrm">
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</NetworkConnection>
+<!-- Part 0024 2023-07-17T18:35:00.000Z-1689618901 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
