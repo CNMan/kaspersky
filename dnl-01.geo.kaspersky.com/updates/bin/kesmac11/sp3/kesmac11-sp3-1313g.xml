@@ -1,28 +1,40 @@
 <Update
-	Date="08062023 0700"
+	Date="31072023 0946"
 	ObjectType="2=KESMAC11;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="46912"
+	MaxDownloadSizeKb="46929"
 	Shell="bdif;klz;none">
-	<Patch
+	<Patches
 		CompID="KESMAC11"
 		App="KESMAC 11.3.0.320"
 		OS="Mac"
-		FixName="a"
+		FixName="b"
 		SrvPath="11.3.0.320"
-		LocalPath="%ProductRoot%/Binaries"
-		Name="libbl.dylib"
-		DSKM="zFyo3eyLIsywiJpPrJbE7Amy3/FaSvKCzfbBHdTUSGs="/>
+		Item="LocalPath;Name;DSKM"
+		List="
+			%ProductRoot%/Binaries|libam_core.dylib|BFrdyPNZ/qXvNA/16YPpyvuNkajyfC6ftFGMB4ZYav0=;
+			%ProductRoot%/Binaries|libam_product_integration.dylib|ZE8hiKHPBi7ltm3df4rWCPrJqYOty3Z2x6xHm4n01qw=;
+			%ProductRoot%/Binaries|libautostart.dylib|7K7EkdQFuM+xwI2dJHbytTthrwYJOnLT+oU6AG1XzCI=;
+			%ProductRoot%/Binaries|libbl.dylib|mvXvGhdeNBpkEyWve/AKZkg6xXiegCZ/iYj1GufBUos=;
+			%ProductRoot%/Binaries|libsystem_interceptors.dylib|+IvqGDw6cgs2iJOPZAKbr83pei5lWOrVplx144FjUwU=;
+			%ProductRoot%/Binaries|libtraffic_processing.dylib|LABavp1dMs6ghqLn+DTUKmyT0hZ+xgtBCJhMa0WyiAQ=;
+			%ProductRoot%/Binaries|patch|wblJClI0b4iwzrU+PtEDC/8s0MP/hW0Fa36mgH9F5zI=;
+			%ProductRoot%/Binaries|UninstallScript|veM1vkOX1+447KFdwrVK4DN3+YhbNBU5KxqFhhBCfA8=;
+			%ProductRoot%/Data|kav_app.tar.gz|Y8MpFFDrDv5I5nTvFoWCNjq3Ge0Jx8vt9WyTBrNI1sE=;
+			%ProductRoot%/Data|kav_agent.tar.gz|UqXDYZhumY1XeYjmXhL9dCVhVyGyZR9tZ47BWNi3t7s=;
+			%ProductRoot%/Data|loc.tar.gz|kJIrnMy8RS0WxiZsrGGQhJWn/lkmc4jE3mGvo7HCL8w=;
+			%ProductRoot%/Data|configpdk.tar.gz|B/tTeUXq23XmCKnr+/znJXsAkhgFHd6aDJPIDDJOZwE=;
+			%ProductRoot%/Data|ne_remover.tar.gz|Cvo1FCEPglziVv+t5DODfq2vxiSkJmu8HSA4il+p+8I="/>
 	<File
 		CompID="RETR1901_KESMAC11"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kesmac11-sp3-1901g.xml"
-		DSKM="aNCCUYU50AT3B8uZJb3Y20X1T7vdHS6wVPhTQtRpAqY="/>
+		DSKM="x3AqPfnX2Xc04vJUdzkwDKdBwJ5iJCRMB5AYCcgPOqA="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kesmac11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFIcNj5kzZjhig3r4CqBVoX5B89m2iiB6W8MfTSkCPcFXwVfhHuO77Lg02UivKaGthr1/xJsxbzCKxLEBg6cJ1wBAB4JuQEAAAIAAigIAEtFU01BQzExAwACKAMAQklOAQAACW997MENCjs6MTBhMlZobld4WHlzZy9oRDRiVSsvZTlmdG0zMkVHQVVUcVg5M21HQVJmVTRVc05Fc1M5a2VyTjJBYUhoWXh5eXZJbzF1WTVpemRxS1R2ZDJ3aG4vMlljeiUl</Key>
 </Update>
-;:104HNUxomGfMhkr/336ppeqyEVU7DTZl98AJtsOF6tHElypnXiKk3Zb5WftHo2pg7nhjBjFiXG6TUcdqxWDXzBaT%%
+;:10KHlmbajlL1URwn2rMO0xU9onIm3Z7srkkl+oU+DA7VTXLIDxVGnWeHpkSfrKEgZK9j1dBTOkSuTUEcYzS8gdtt%%

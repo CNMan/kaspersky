@@ -4,7 +4,7 @@
   <!-- !!! DWORD QWORD values in Value="..." has to be specified as they are presented in regedit when you click "Modify binary data" on such parameters. -->
   <!-- !!! For example, 0x1 dword value is Value="01000000" -->
 
-  <!-- Version: 2023-05-16T15:54:00.000Z-1684252445 -->
+  <!-- Version: 2023-07-21T16:06:00.000Z-1689955605 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -332,7 +332,6 @@
 	<Registry Id="{6D6FD010-EA12-4F85-BC637D71C1A47BA4}" Path="\registry\user\*\software\microsoft\windows\currentversion\internet settings\zonemap" Name="proxybypass" />
 	<Registry Id="{9933B535-9E2C-A691-BEDA546BE641CD72}" Path="\registry\machine\software\wow6432node\microsoft\directdraw\mostrecentapplication" Name="id" />
 	<Registry Id="{E87A4391-5E25-C8D4-4D67B5C7FA9C55C3}" Path="\registry\machine\software\wow6432node\microsoft\directdraw\mostrecentapplication" Name="name" />
-	<Registry Id="{44CCC75A-C362-740C-D9A9581A513A9521}" Path="\registry\user\*\software\microsoft\windows\currentversion\internet settings" Name="proxyserver" />
 	<Registry Id="{3A96EA84-F6D3-888C-E0E0A6CEF3A70636}" Path="\registry\user\*\software\google\chrome*" Name="state" />
 	<Registry Id="{F00C9A99-7E96-BD5C-ECB5E57C3F8CAD0B}" Path="\registry\user\*\software\google\chrome*" Name="statuscodes" />
 	<Registry Id="{22EAFFB9-F0B3-99F3-AFE35EE85939718C}" Path="\registry\user\*\software\google\chrome*" Name="usagestatsinsample" />
@@ -3641,6 +3640,78 @@
 		</Process>
 	</Registry>
 <!-- Part 22: 2023-05-16T15:54:00.000Z-1684252445 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 23: 2023-07-21T16:06:00.000Z-1689955605 -->
+	<Registry Id="{BDFB3C6D-BF3E-0646-0BAF9CBF72F6E9E1}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver" Value="%kl_undef%" />
+	<Registry Id="{3CBEAD15-4483-C128-69B051B9A494C555}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver" Operation="Deleted" />
+	<Registry Id="{69D6B946-CA57-CE05-610E5AE20F9DD16B}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*cisco*">
+			<Signature Subject="cisco*" />
+		</Process>
+	</Registry>
+	<Registry Id="{2664A339-D849-3723-2E3F3E696438EC29}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*mozilla*">
+			<Signature Subject="mozilla*" />
+		</Process>
+	</Registry>
+	<Registry Id="{9E06BA8D-05ED-B4AB-769D5B8CFA9F58A9}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*program files\hp*">
+			<Signature Subject="hp*" />
+		</Process>
+	</Registry>
+	<Registry Id="{C8479BBB-5DC6-0363-922EAB500DC8F7D0}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*program files (x86)\hp*">
+			<Signature Subject="hp*" />
+		</Process>
+	</Registry>
+	<Registry Id="{2182B607-E106-B2C1-F143259ED08A88AE}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*adobe*">
+			<Signature Subject="adobe*" />
+		</Process>
+	</Registry>
+	<Registry Id="{B1E5A344-DF90-FCA1-9AA50CBF2FA6AD11}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*application\chrome.exe">
+			<Signature Subject="Google*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3BB7024F-699A-C720-5F00F59389AA5A6A}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process CmdLine="*svchost*gpsvc*">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{5EB360BD-E8BF-C2AD-ADD96B700FA6B957}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*application\msedge.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{28823FAA-7D18-5A56-1F2C278844F568E6}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*current\teams.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{202DA015-F523-5CA9-3AB5FED1147D1EBF}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*onedrive\onedrivestandaloneupdater.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{97A81240-DBF1-ACFD-030375F28510B66C}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*system32\msfeedssync.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{9BBD1DA0-0796-4777-BBBCF162BB1F50F7}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*office*">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{F2E3DC74-87BB-394E-77286B61CE36BFBC}" Path="\registry\user\*software\microsoft\windows\currentversion\internet settings" Name="proxyserver">
+		<Process Path="*immersivecontrolpanel\systemsettings.exe">
+			<Signature Subject="Microsoft*" />
+		</Process>
+	</Registry>
+<!-- Part 23: 2023-07-21T16:06:00.000Z-1689955605 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
