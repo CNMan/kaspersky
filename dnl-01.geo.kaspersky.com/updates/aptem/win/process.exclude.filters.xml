@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2023-08-01T13:57:00.000Z-1690898255 -->
+	<!-- 2023-08-04T11:56:00.000Z-1691150183 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -527,16 +527,9 @@
 		<Signature Subject="*Microsoft*" />
 	</Image>
 	<Image Id="{CBE16A2C-85D9-6147-0385F6BCE1DB9A12}" CmdLine="*bin/hostx64/x86/cl.exe /md /external*" />
-	<Image Id="{F84FDA65-4A28-C386-0F9190AB92CC253B}" CmdLine="c:/program files/git/mingw64/bin/git.exe  -c gc.auto*c:/program files/git/mingw64/bin\git-askpass.exe*" />
-	<Image Id="{F632FE8F-2006-D51E-C28C5F3D83B55BBC}" CmdLine="c:\program files\git\bin\git.exe ls-remote origin refs/heads/user*" />
-	<Image Id="{D7A531E7-E2A3-E24D-970A3EC1BBC004D3}" CmdLine="c:\program files\git\cmd\git.exe --git-dir*" />
-	<Image Id="{1D878CF5-35E9-D077-C969CC70C7407AA5}" CmdLine="c:\program files\git\cmd\git.exe --no-optional-locks status --serialize*" />
-	<Image Id="{286E5660-22DC-06E1-80CA0919F007B4C4}" CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config  credential*" />
 	<Image Id="{8EC24E88-D853-8AE7-F92DCD8E6900BB2F}" Path="C:\Windows\Temp\DPTF\esif_assist_64.exe" >
 		<Signature Subject="*Intel*" />
 	</Image>
-	<Image Id="{560692F8-7956-3025-F191C004B8613AE8}" CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config --null  --list" />
-	<Image Id="{353B2A76-670A-4357-3149AD34424D8E32}" CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe credential-manager store" />
 	<Image Id="{83BAD400-20D4-E042-86F54CC1C2A415E5}" CmdLine="c:\program files\gvfs\gvfs.hooks.exe post-command*" />
 	<Image Id="{7943A9A7-9131-74EC-1A50CF628CC12BE9}" CmdLine="c:\program files\gvfs\gvfs.hooks.exe pre-command*" />
 	<Image Id="{F0EE0769-BB94-03CF-6CD38699CA687243}" CmdLine="*windows_sandbox\bazelsandbox.exe @*monorepo/component*" />
@@ -730,6 +723,20 @@
 	</Image>
 <!-- Part 0031 2023-08-01T13:57:00.000Z-1690898255 -->
 <!-- Part 0031 2023-07-28T13:30:00.000Z-1690551055 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0031 2023-08-04T11:56:00.000Z-1691150183 -->
+	<Image Id="{C67D6107-1F23-895F-3702CD7995692E31}" Path="*Program*bin\git.exe" >
+		<VersionInfo OrignFileName="*git*" FileDescription="*git*" ProductName="*git*" />
+	</Image>
+	<Image Id="{5065E0A0-446C-5D1B-4830E2B7777BF4F6}" Path="*Program*cmd\git.exe" >
+		<VersionInfo OrignFileName="*git*" FileDescription="*git*" ProductName="*git*" />
+	</Image>
+	<Image Id="{6CBEA118-9657-9CA4-ACEF5B7E5F8554FF}" Path="*Program*git-core\git.exe" >
+		<VersionInfo OrignFileName="*git*" FileDescription="*git*" ProductName="*git*" />
+	</Image>
+<!-- Part 0031 2023-08-04T11:56:00.000Z-1691150183 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
