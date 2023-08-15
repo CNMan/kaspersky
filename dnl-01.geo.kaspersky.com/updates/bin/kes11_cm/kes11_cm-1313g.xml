@@ -1,5 +1,5 @@
 <Update
-	Date="24072023 1604"
+	Date="14082023 1030"
 	ObjectType="2=KES11_CM;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -4409,6 +4409,78 @@
 			KES 11.2.0.*|license.txt|uhX1IWSI7NwflTXpPrz8hjMkrrtgFxVZbsU0PqGUbt0=;
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*|license.txt|uhX1IWSI7NwflTXpPrz8hjMkrrtgFxVZbsU0PqGUbt0="/>
 	<Patches
+		Lang="ru"
+		KSN="1"
+		SrvPath="kes11/kes11_14/aes256/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_14/aes256/ru"
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;PackageID;Name;DSKM"
+		List="
+			KES 11.2.0.*|935BB4DD-E607-4D70-9F7C-0CFA84916964|aes256.cab|Czqr6dbQd/iZpINkf+deZAikLzCDWy7Qb186/HWOb4o=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|8E90D260-F949-45BB-A448-25DBDE0E6539|aes256.cab|Czqr6dbQd/iZpINkf+deZAikLzCDWy7Qb186/HWOb4o=;
+			KES 11.2.0.*|935BB4DD-E607-4D70-9F7C-0CFA84916964|cleaner_v2.cab|UbW2yTebyeie8Ixoln7iQD6/+5AJplDaf2NPPrqIpwc=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|8E90D260-F949-45BB-A448-25DBDE0E6539|cleaner_v2.cab|UbW2yTebyeie8Ixoln7iQD6/+5AJplDaf2NPPrqIpwc=;
+			KES 11.2.0.*|935BB4DD-E607-4D70-9F7C-0CFA84916964|cleanerapi_v2.cab|vAO1yHvgpB8Ji75fWL79AuBIbTEdpCaGeTWPpEDkfhY=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|8E90D260-F949-45BB-A448-25DBDE0E6539|cleanerapi_v2.cab|vAO1yHvgpB8Ji75fWL79AuBIbTEdpCaGeTWPpEDkfhY="/>
+	<Patches
+		Lang="ru"
+		SrvPath="kes11/kes11_14/aes256/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_14/aes256/ru"
+		Name="description.txt"
+		DSKM="aqvL8wLqi+vRVgqTrzUMdynq05nxLfll4UuEcQqR4FQ="
+		KSCMode="Off;OnPrem;B2B"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*"/>
+	<Patches
+		Lang="ru"
+		KSN="1"
+		SrvPath="kes11/kes11_14/aes256/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_14/aes256/ru"
+		Name="kes.cab"
+		DSKM="8WoUQdnDEsj9+9bwtZ3m36J/XPtBqu7qWC1mLcPVXxk="
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|935BB4DD-E607-4D70-9F7C-0CFA84916964;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|8E90D260-F949-45BB-A448-25DBDE0E6539"/>
+	<Patches
+		Lang="ru"
+		KSN="1"
+		SrvPath="kes11/kes11_14/aes256/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_14/aes256/ru"
+		Name="kes_win.kud"
+		DSKM="iMw/AK2snNrSAEXUBKNVTiEnmhopZHiz/W+BhQwiu8Q="
+		KSCMode="Off;OnPrem;B2B"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*"/>
+	<Patches
+		Lang="ru"
+		KSN="1"
+		SrvPath="kes11/kes11_14/aes256/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_14/aes256/ru"
+		Name="kes_win.msi"
+		DSKM="x6RX/AEzJxFWaYNDjDYXIrg+jE4iHKu+dQrVytTV3pE="
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|935BB4DD-E607-4D70-9F7C-0CFA84916964;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|8E90D260-F949-45BB-A448-25DBDE0E6539"/>
+	<Patches
+		Lang="ru"
+		SrvPath="kes11/kes11_14/aes256/ru"
+		LocalPath="%DataRoot%/Patches/kes11/kes11_14/aes256/ru"
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;Name;DSKM"
+		List="
+			KES 11.2.0.*|ksn.txt|ptropOzjlAcZGMTPfGGLLXHCI0XxmL8/CFIYRh8XJAM=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|ksn.txt|ptropOzjlAcZGMTPfGGLLXHCI0XxmL8/CFIYRh8XJAM=;
+			KES 11.2.0.*|license.txt|O6RZnXUwxE4oaAZVlatMaRiGtUlJu0GMzU9IQRlg5XY=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*|license.txt|O6RZnXUwxE4oaAZVlatMaRiGtUlJu0GMzU9IQRlg5XY="/>
+	<Patches
 		Lang="ar"
 		SrvPath="kes11/kes11_8/aes256/ar"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_8/aes256/ar"
@@ -6309,10 +6381,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kes11_cm-1901g.xml"
-		DSKM="u8Rcvl0AN51yFdJpUg5XU/kCe0MpCJvwrYUcFr5LYxk="/>
+		DSKM="Vw33Ao2u706FogAwHtPPa8/YQYhx1y3fO9Oer+0XLng="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kes11_cm-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFMTadbAhtoI7UAT0L/1BnBBW+qnK8thWawYsEiW65VyfdKfWu1hQIqLGC5/VAWOINB27LiJqLCwetn8No319egBAB4JhwEAAAIAAigIAEtFUzExX0NNAwACKAMAQklOAQAACa6ovH8NCjs6MTBxU3VuU2tjelJmclZRU0RLVGlWKzlqaHQ0Sk5KWERaMEdBTlRPVlpwWWlOcUl0bUZqY3dNcnRtYlRBZ2t3VlZ1YUhVMUQwR3FrTVplbGRaQkZMRndPOCUl</Key>
 </Update>
-;:1049Kz82rULgHGwHZq9XVjlWUwtyqDvfgO0CyT/KcuPvzVMAyT51TCo6Q5wWQi1gPy3uKyH0cNd3Xj3mSsM9PzG4%%
+;:10qDq8dvDz7zsI6mCED59deMTA2fCk5+/j7fv6ifmsu6hCdtUjQWoKFoTTeS7kfq2+wLGRIbea5PMP5QJ/FMnvR6%%
