@@ -4,7 +4,7 @@
   <!-- !!! DWORD QWORD values in Value="..." has to be specified as they are presented in regedit when you click "Modify binary data" on such parameters. -->
   <!-- !!! For example, 0x1 dword value is Value="01000000" -->
 
-  <!-- Version: 2023-07-21T16:06:00.000Z-1689955605 -->
+  <!-- Version: 2023-08-15T18:03:00.000Z-1692122610 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 1 -->
@@ -71,9 +71,6 @@
   <Registry Id="{937CFB3B-0331-0357-1207-331BF167C333}" Path="\registry\machine\software\microsoft\windows\currentversion\mdm" Name="clienthealthlastsynctime" />
   <Registry Id="{0AE362A2-7AA8-7ACE-897E-AA8268DE3AAA}" Path="\registry\machine\software\microsoft\windows\currentversion\windowsupdate" Name="last*" />
   <Registry Id="{D7B03F7F-4775-479B-564B-775F35AB0777}" Path="\registry\machine\software\microsoft\windows\windows error reporting\debug" Name="storelocation" />
-  <Registry Id="{2C0584C4-9CCA-9CE0-AB90-CCA48AF05CCC}" Path="\registry\machine\software\microsoft\windows\windows error reporting\termreason*" Name="creationtime" />
-  <Registry Id="{C6AF2E6E-3664-368A-453A-664E249AF666}" Path="\registry\machine\software\microsoft\windows\windows error reporting\termreason*" Name="reason" />
-  <Registry Id="{0AE362A2-7AA8-7ACE-897E-AA8268DE3AAA}" Path="\registry\machine\software\microsoft\windows\windows error reporting\termreason*" Name="terminator" />
   <Registry Id="{937CFB3B-0331-0357-1207-331BF167C333}" Path="\registry\machine\software\wow6432node\google\update" Name="last*" />
   <Registry Id="{1BF473B3-8BB9-8BDF-9A8F-BB9379EF4BBB}" Path="\registry\machine\software\microsoft\ccm\ccmeval" Name="tasktimeoutcycles" />
   <Registry Id="{E8C14080-5886-58AC-675C-886046BC1888}" Path="\registry\machine\software\microsoft\windows nt\currentversion\superfetch\pfap" Name="usertime_*" />
@@ -190,9 +187,6 @@
 	<Registry Id="{4545D5C2-3F02-5E3A-14230C491BEB22F6}" Path="\registry\machine\software\microsoft\windows\windows error reporting\debug" Value="????0000" />
 	<Registry Id="{D0A7EE25-53F4-8926-9ABB2D61F0595BAD}" Path="\registry\machine\software\microsoft\windows\windows error reporting\debug" Value="????000000000000" />
 	<Registry Id="{589F49E4-01CE-0635-70C254B0D9F2A47F}" Path="\registry\machine\software\microsoft\windows\windows error reporting\debug" Value="??00??000000" />
-	<Registry Id="{37F27550-95CC-4256-366E32BFEC447E9C}" Path="\registry\machine\software\microsoft\windows\windows error reporting\termreason*" Value="????0000" />
-	<Registry Id="{1C0F6D0A-DC1D-DB06-7F28AE88FE985C91}" Path="\registry\machine\software\microsoft\windows\windows error reporting\termreason*" Value="????000000000000" />
-	<Registry Id="{D56964FB-8C6D-862A-720850C5FE837D3D}" Path="\registry\machine\software\microsoft\windows\windows error reporting\termreason*" Value="??00??000000" />
 	<Registry Id="{2CB2BA42-CD55-7EE5-0D6DA4C89F96DC27}" Path="\registry\machine\software\microsoft\ccm\ccmeval" Value="????0000" />
 	<Registry Id="{16490A80-E45A-74F6-C7E6B747D87501D8}" Path="\registry\machine\software\microsoft\ccm\ccmeval" Value="????000000000000" />
 	<Registry Id="{490FBEA1-E0BC-3FF0-922C386209CD38DA}" Path="\registry\machine\software\microsoft\ccm\ccmeval" Value="??00??000000" />
@@ -521,7 +515,6 @@
 	<Registry Id="{D7E14439-46F3-4A79-48FEF65C74F5A684}" Path="\registry\machine\software\microsoft\windows\currentversion\appmodel\staterepository\cache\*" Value="%kl_undef%" />
 	<Registry Id="{976F5939-03E2-7864-FEC5C6A1CA7BBA44}" Path="\registry\machine\software\microsoft\windows\currentversion\group policy\serviceinstances\*" Value="%kl_undef%" />
 	<Registry Id="{4C2BDFD5-CEE6-DA6B-A573D1C19633E51C}" Path="\registry\machine\software\microsoft\windows\currentversion\group policy\state\*\gplink-list*" Value="%kl_undef%" />
-	<Registry Id="{828D2CC0-7574-D5C0-9498D6FB2912A2AF}" Path="\registry\machine\software\microsoft\windows\windows error reporting\termreason\*" Value="%kl_undef%" />
 	<Registry Id="{AC2C031E-B863-7976-FBBF1BF7693431EF}" Path="\registry\machine\software\microsoft\windows nt\currentversion\networklist\nla\cache\intranetauth*" Name="failures" Value="ffffffff" />
 	<Registry Id="{F5223CD0-1455-F782-B476E694B37CE129}" Path="\registry\machine\software\microsoft\windows nt\currentversion\networklist\nla\cache\intranetauth*" Name="failures" Value="ffffffff00000000" />
 	<Registry Id="{D81126FA-C1FD-51C7-7348581D215DFCCB}" Path="\registry\machine\software\microsoft\windows nt\currentversion\networklist\nla\cache\intranetauth*" Name="successes" Value="00000000" />
@@ -3368,8 +3361,8 @@
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</Registry>
-	<Registry Id="{1921839F-72C1-392D-AFBB891688B24247}" Path="*windows error reporting\termreason*">
-		<Process CmdLine="*svchost* dcomlaunch*">
+	<Registry Id="{1921839F-72C1-392D-AFBB891688B24248}" Path="*windows error reporting\termreason*">
+		<Process Path="*svchost.exe">
 			<Signature Subject="*Microsoft*" />
 		</Process>
 	</Registry>
@@ -3712,6 +3705,61 @@
 		</Process>
 	</Registry>
 <!-- Part 23: 2023-07-21T16:06:00.000Z-1689955605 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 24: 2023-08-15T18:03:00.000Z-1692122610 -->
+	<Registry Id="{1C98139D-254C-D2B8-A3F9514D71069207}" Path="\registry\a\{*}\events\{*" Name="%kl_undef%">
+		<Process Path="*svchost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{35B53696-9884-2206-36C240D886F394EB}" Path="\registry\a\{*}\workitems\{*" Name="%kl_undef%">
+		<Process Path="*svchost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{30B9A202-F71D-9970-2400A3F622F744B6}" Path="\registry\MACHINE\software\microsoft\windows\currentversion\group policy\datastore\*" Name="%kl_undef%">
+		<Process Path="*svchost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{EA4FBBEC-D7ED-20D6-6E45653388DBC97A}" Path="\registry\MACHINE\software\microsoft\systemcertificates\windows live id token issuer\certificates\2c85006a1a028bcc349df23c474724c055fde8b6" Name="%kl_undef%">
+		<Process Path="*svchost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{34F105AB-58F6-89BC-3C4D34F5F9AA184C}" Path="\registry\MACHINE\software\microsoft\systemcertificates\windows live id token issuer\certificates\b68d8f953e551914324e557e6164d68b9926650c" Name="%kl_undef%">
+		<Process Path="*svchost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{4A5142FE-FAD1-0255-06604DD07A73696F}" Path="\registry\MACHINE\software\microsoft\systemcertificates\windows live id token issuer\certificates\0217922ca1b6f0bd0f1d7ff6e7bdc29b2faaa060" Name="%kl_undef%">
+		<Process Path="*svchost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{EA92984C-C7C3-D72E-4445B75063622898}" Path="\registry\MACHINE\software\microsoft\identitycrl\throttlecache*" Name="throttlestartedtime">
+		<Process Path="*svchost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{D527CE5B-5CFA-467B-29C1AC871BF31EB2}" Path="*localstate\placements*" Name="*ids">
+		<Process Path="*backgroundtaskhost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{3FB88117-6404-6D1A-47EF5E7A54D30E12}" Path="*localstate\placements*" Name="next*">
+		<Process Path="*backgroundtaskhost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+	<Registry Id="{8726754D-AA6C-CBAC-E66A19BC016C6817}" Path="*localstate\placements*" Name="*rendertriggers">
+		<Process Path="*backgroundtaskhost.exe">
+			<Signature Subject="microsoft*" />
+		</Process>
+	</Registry>
+<!-- Part 24: 2023-08-15T18:03:00.000Z-1692122610 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
