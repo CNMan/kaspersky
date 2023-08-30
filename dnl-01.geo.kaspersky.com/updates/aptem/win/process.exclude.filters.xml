@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2023-08-15T18:10:00.000Z-1692123030 -->
+	<!-- 2023-08-24T18:48:00.000Z-1692902892 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -492,7 +492,7 @@
 
 <!-- ############################################################################################################### -->
 <!-- Part 0025 2022-11-29T17:42:00.000Z-1669743724 -->
-	<Image Id="{AAD59A03-D290-6266-520C70051E34CFB1}" Path="c:\program files\splunkuniversalforwarder\bin\splunk-powershell.exe" >
+	<Image Id="{AAD59A03-D290-6266-520C70051E34CFB2}" Path="*splunkuniversalforwarder\bin\splunk*" >
 		<Signature Subject="*splunk*" />
 	</Image>
 	<Image Id="{71E740BF-0DBB-D862-9FF261BBF5694CF4}" CmdLine="c:\program files (x86)\stonevoiceas\lib\unison\unison.exe -batch -confirmbigdel=false -halfduplex -killserver -ignorelocks -prefer=newer -log=false*" />
@@ -781,6 +781,29 @@
 		<Signature Subject="Microsoft*" />
 	</Image>
 <!-- Part 0032 2023-08-15T18:10:00.000Z-1692123030 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0033 2023-08-24T18:48:00.000Z-1692902892 -->
+	<Image Id="{93D0069F-A93C-B132-12965D6D5AFDF30C}" CmdLine="*Imperva\RemoteAgent\get-capping-info.bat ECE_check_system NONE*" />
+	<Image Id="{92583BE6-F7CD-9691-14D020C9EC2D3105}" CmdLine="winmgmt /verifyrepository" />
+	<Image Id="{E8051CC6-A887-2DE2-C628226E968DFB5A}" CmdLine=" -NoProfile -NoLogo -NonInteractive -Sta -ExecutionPolicy Unrestricted -File C:\ProgramData\Nexthink\RemoteActions\Scripts\System\{" />
+	<Image Id="{CD22D259-91CA-90F2-E0C77FCF2D096150}" Path="*program files*imperva*" >
+		<Signature Subject="imperva*" />
+	</Image>
+	<Image Id="{782125E5-907B-091E-A507EC9D1FB487BE}" Path="*program files*seclore*" >
+		<Signature Subject="seclore*" />
+	</Image>
+	<Image Id="{5D3FEF71-A3D0-9030-F7C2BD6282B95210}" Path="*program files*bitvise*" >
+		<Signature Subject="bitvise*" />
+	</Image>
+	<Image Id="{EC4A8982-EBBB-E99F-DE40A29FA09B1D9A}" CmdLine="cscript //NoLogo //T:55 *scripts\collector.vbs" />
+	<Image Id="{B21761EB-0499-6A1D-94FAD42F34C9A05C}" CmdLine="C:\Windows\system32\cmd.exe /c handle.exe /accepteula -s -p * 2&#62; nul" />
+	<Image Id="{85DBBC70-D33D-178B-37BCFDFC1CDC0AB5}" CmdLine="handle.exe  /accepteula -s -p * " />
+	<Image Id="{01E040AD-EFF7-A1C6-D5BB987460C414F8}" Path="*appdata\local\ciscosparklauncher\ciscocollabhost.exe" >
+		<Signature Subject="cisco*" />
+	</Image>
+<!-- Part 0033 2023-08-24T18:48:00.000Z-1692902892 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

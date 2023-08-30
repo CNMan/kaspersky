@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
 
-  <!-- Version: 2023-07-18T15:47:00.000Z-1689695277 -->
+  <!-- Version: 2023-08-28T12:39:00.000Z-1693226368 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -49,280 +49,36 @@
         <Equal OrderNum="27" Value="%%1832"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="s-1-5-90-0-?"/>
-        <Match OrderNum="12" Value="dwm-?"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-90-0-?"/>
+        <Match OrderNum="12" Value="DWM-?"/>
         <Equal OrderNum="15" Value="2"/>
-        <Equal OrderNum="16" Value="advapi  "/>
-        <Match OrderNum="24" Value="*system32\winlogon.exe"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\winlogon.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="s-1-5-90-0-?"/>
-        <Match OrderNum="12" Value="ufmd-?"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-90-0-*"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
         <Equal OrderNum="15" Value="2"/>
-        <Equal OrderNum="16" Value="advapi  "/>
-        <Match OrderNum="24" Value="*system32\winlogon.exe"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\winlogon.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Equal OrderNum="11" Value="s-1-5-20"/>
-        <Equal OrderNum="12" Value="network service"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="11" Value="S-1-5-20"/>
+        <Equal OrderNum="12" Value="NETWORK SERVICE"/>
         <Equal OrderNum="15" Value="5"/>
-        <Equal OrderNum="16" Value="advapi  "/>
-        <Match OrderNum="24" Value="*system32\services.exe"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\services.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Equal OrderNum="11" Value="s-1-5-96-0-0"/>
-        <Equal OrderNum="12" Value="umfd-0"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-96-0-*"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
         <Equal OrderNum="15" Value="2"/>
-        <Equal OrderNum="16" Value="advapi  "/>
-        <Match OrderNum="24" Value="*system32\wininit.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="c??u??"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Match OrderNum="16" Value="????s?? "/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="??m???s????c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?a??a???n"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?m??d???c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?y??i?m"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?r??e????nc"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?e??t???c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?e??t???ilb*"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?u??a???n"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?n??a???f?????v??c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?e??-?s"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?e??p???in"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?a??n???r?d"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?r??v???r?1"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?r??p???a?c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?p??v???s????t"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?t??p???a?c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?-??m???s????c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?e??m???in"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?e??m???o????v"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?m??d???c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Match OrderNum="12" Value="?m??r???c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="kerberos"/>
-        <Equal OrderNum="24" Value="-"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="o?p??v?c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d??o???n1"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="w?n??w???"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d??d???2"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="p?d??e???v?"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d??r???m??2"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="e?m??f???a?c"/>
-        <Equal OrderNum="15" Value="8"/>
-        <Equal OrderNum="16" Value="advapi  "/>
-        <Match OrderNum="18" Value="p?d??m??2"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="l?l??r?i"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="h?r??a???r?i"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="s?l??a??i"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="s?l??a??i"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="w?n??w??0"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d??d???1"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="p?d??e???v1"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d??r???m??3"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="v?e??a???n"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d??e???k?2"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="p?o??e???w????v"/>
-        <Equal OrderNum="15" Value="2"/>
-        <Equal OrderNum="16" Value="advapi  "/>
-        <Match OrderNum="18" Value="p?d??w???p?2"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="w?b??n???r???c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d???c???p?1"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="c?m??c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d???a??1"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="v?e??a???n"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="p?d??e???k?1"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="n?s??s???s????c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="t?n??l???x????w6"/>
-      </Conjunction>
-      <Conjunction>
-        <Match OrderNum="12" Value="x?n??s???r????a?c"/>
-        <Equal OrderNum="15" Value="3"/>
-        <Equal OrderNum="16" Value="ntlmssp "/>
-        <Match OrderNum="18" Value="t?n??l???a????td"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\wininit.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="13" Value="S??C???A????R??P"/>
@@ -345,6 +101,22 @@
         <Equal OrderNum="15" Value="3"/>
         <Equal OrderNum="16" Value="NtLmSsp "/>
         <Match OrderNum="18" Value="W?P?N????T?AP??"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Equal OrderNum="12" Value="solarwinds-svc"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="27" Value="%%1833 "/>
+        <Equal OrderNum="32" Value="0x0"/>
+        <Equal OrderNum="33" Value="%%1842"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Equal OrderNum="12" Value="veeamadmin"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="27" Value="%%1833 "/>
+        <Equal OrderNum="32" Value="0x0"/>
+        <Equal OrderNum="33" Value="%%1842"/>
       </Conjunction>
     </Exclusions>
   </Event>
@@ -379,18 +151,18 @@
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="S-1-5-18"/>
-        <Match OrderNum="12" Value="dwm-?"/>
-        <Match OrderNum="18" Value="*system32\winlogon.exe"/>
+        <Match OrderNum="12" Value="DWM-*"/>
+        <Match OrderNum="18" Value="*System32\winlogon.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="S-1-5-18"/>
-        <Match OrderNum="12" Value="umfd-?"/>
-        <Match OrderNum="18" Value="*system32\winlogon.exe"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
+        <Match OrderNum="18" Value="*System32\winlogon.exe"/>
       </Conjunction>
       <Conjunction>
         <Equal OrderNum="7" Value="S-1-5-18"/>
-        <Equal OrderNum="12" Value="umfd-0"/>
-        <Match OrderNum="18" Value="*system32\wininit.exe"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
+        <Match OrderNum="18" Value="*System32\wininit.exe"/>
       </Conjunction>
       <Conjunction>
         <Match OrderNum="8" Value="V?e??r???r???v"/>
@@ -402,32 +174,12 @@
         <Match OrderNum="12" Value="z?w??d??n"/>
         <Match OrderNum="18" Value="*Veeam\Veeam ONE\Veeam ONE Monitor Server\VeeamDCS.exe"/>
       </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Match OrderNum="8" Value="prd?e??s???i???$"/>
-        <Match OrderNum="18" Value="*jre\bin\java.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
-        <Equal OrderNum="8" Value="-"/>
-        <Match OrderNum="12" Value="s?d??m?n"/>
-        <Match OrderNum="18" Value="*jre\bin\java.exe"/>
-      </Conjunction>
-      <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Match OrderNum="8" Value="prd?e??i???$"/>
-        <Match OrderNum="12" Value="a?a??it"/>
-        <Match OrderNum="18" Value="*jre\bin\java.exe"/>
-      </Conjunction>
-      <Match OrderNum="18" Value="*bin\msexchangehmworker.exe"/>
-      <Match OrderNum="18" Value="*bin\msexchangefrontendtransport.exe"/>
-      <Match OrderNum="18" Value="*power bi report server\pbirs\powerbi\rspowerbi.exe"/>
-      <Match OrderNum="18" Value="*power bi report server\pbirs\powerbi\rsmanagement.exe"/>
-      <Match OrderNum="18" Value="*pbirs\powerbi\rspowerbi.exe"/>
-      <Match OrderNum="18" Value="*pbirs\management\rsmanagement.exe"/>
-      <Match OrderNum="18" Value="*frontend\popimap\microsoft.exchange.imap4.exe"/>
-      <Match OrderNum="18" Value="*veeamlogshipper\veeamlogshipper.exe"/>
-      <Match OrderNum="18" Value="*authentication server\multifactorauthsvc.exe"/>
+      <Match OrderNum="18" Value="*Bin\MSExchangeHMWorker.exe"/>
+      <Match OrderNum="18" Value="*Bin\\MSExchangeFrontendTransport.exe"/>
+      <Match OrderNum="18" Value="*Power BI Report Server\PBIRS*"/>
+      <Match OrderNum="18" Value="*FrontEnd\PopImap\Microsoft.Exchange.Imap4.exe"/>
+      <Match OrderNum="18" Value="*VeeamLogShipper\VeeamLogShipper.exe"/>
+      <Match OrderNum="18" Value="*Authentication Server\MultiFactor*"/>
     </Exclusions>
   </Event>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- Version: 2023-07-19T17:55:00.000Z-1689789343 -->
+	<!-- Version: 2023-08-25T14:33:00.000Z-1692974004 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 -->
@@ -9631,6 +9631,19 @@
 		</Process>
 	</File>
 <!-- Part 0032 2023-07-19T17:55:00.000Z-1689789343 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0033 2023-08-25T14:33:00.000Z-1692974004 -->
+	<File Id="{F5756E88-134A-D550-12E1CAB7A1C81F63}" FilePath="*websense\websense endpoint\kvtemp\*.tmp">
+		<Process CmdLine="*websense endpoint/endpointclassifier.exe*pipe\endpointconfigcomm" />
+	</File>
+	<File Id="{08F74748-FA3A-3EC2-5F1F37CF8B095E31}" FilePath="*cert_override.txt">
+		<Process Path="*dynamsoft\dynamsoft*">
+			<Signature Subject="*dynamsoft*" />
+		</Process>
+	</File>
+<!-- Part 0033 2023-08-25T14:33:00.000Z-1692974004 -->
 <!-- ############################################################################################################### -->
 
 </Filters>

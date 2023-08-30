@@ -3,7 +3,7 @@
 
   <!-- EDR WEL. SOYUZ 3.9- -->
 
-  <!-- Version: 2023-07-18T15:47:00.000Z-1689695277 -->
+  <!-- Version: 2023-08-25T14:54:00.000Z-1692975277 -->
 
   <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
     <Equal OrderNum="15" Value="2"/>
@@ -51,39 +51,39 @@
         <Equal OrderNum="27" Value="%%1832"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="s-1-5-90-0-?"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-90-0-?"/>
         <Match OrderNum="12" Value="dwm-?"/>
         <Equal OrderNum="15" Value="2"/>
         <Equal OrderNum="16" Value="advapi  "/>
         <Match OrderNum="24" Value="*system32\winlogon.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Match OrderNum="11" Value="s-1-5-90-0-?"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-90-0-?"/>
         <Match OrderNum="12" Value="ufmd-?"/>
         <Equal OrderNum="15" Value="2"/>
         <Equal OrderNum="16" Value="advapi  "/>
         <Match OrderNum="24" Value="*system32\winlogon.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Equal OrderNum="11" Value="s-1-5-20"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="11" Value="S-1-5-20"/>
         <Equal OrderNum="12" Value="network service"/>
         <Equal OrderNum="15" Value="5"/>
         <Equal OrderNum="16" Value="advapi  "/>
         <Match OrderNum="24" Value="*system32\services.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-5-18"/>
-        <Equal OrderNum="11" Value="s-1-5-96-0-0"/>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="11" Value="S-1-5-96-0-0"/>
         <Equal OrderNum="12" Value="umfd-0"/>
         <Equal OrderNum="15" Value="2"/>
         <Equal OrderNum="16" Value="advapi  "/>
         <Match OrderNum="24" Value="*system32\wininit.exe"/>
       </Conjunction>
       <Conjunction>
-        <Equal OrderNum="7" Value="s-1-0-0"/>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
         <Match OrderNum="12" Value="c??u??"/>
         <Equal OrderNum="15" Value="3"/>
         <Match OrderNum="16" Value="????s?? "/>
@@ -325,6 +325,22 @@
         <Equal OrderNum="15" Value="3"/>
         <Equal OrderNum="16" Value="ntlmssp "/>
         <Match OrderNum="18" Value="t?n??l???a????td"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Equal OrderNum="12" Value="solarwinds-svc"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="27" Value="%%1833 "/>
+        <Equal OrderNum="32" Value="0x0"/>
+        <Equal OrderNum="33" Value="%%1842"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Equal OrderNum="12" Value="veeamadmin"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="27" Value="%%1833 "/>
+        <Equal OrderNum="32" Value="0x0"/>
+        <Equal OrderNum="33" Value="%%1842"/>
       </Conjunction>
     </Exclusions>
   </Event>
