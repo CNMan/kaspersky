@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-  <!-- Version: 2023-07-17T18:35:00.000Z-1689618901 -->
+  <!-- Version: 2023-09-06T18:44:00.000Z-1694022268 -->
 
 <!-- 
 	Part 0001 START
@@ -4857,6 +4857,31 @@
 		</Process>
 	</NetworkConnection>
 <!-- Part 0024 2023-07-17T18:35:00.000Z-1689618901 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0025 2023-09-06T18:44:00.000Z-1694022268 -->
+	<NetworkConnection Id="{C8A7BFE3-194F-8754-74D529FA2FEE43AF}" RemoteAddress="17??3??1???0" RemotePort="5432">
+		<Process CmdLine="*rphost.exe -range*">
+			<Signature Subject="LLC 1C-Soft" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{BB782423-ACDB-F094-953463EB3C05AE9F}" Url="http://1c*:9102/api/v*">
+		<Process Path="c:\program files\searchinform\siem\1c*">
+			<Signature Subject="*searchinform*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{5E0EB10B-A1A7-7E24-66F92FEE9426C2B4}" RemoteAddress="17??3??6?4" RemotePort="1433">
+		<Process Path="C:\Program Files\SearchInform\SIEM*">
+			<Signature Subject="*Searchinform*" />
+		</Process>
+	</NetworkConnection>
+	<NetworkConnection Id="{68921C60-D18F-5E74-11868EA638440D0A}" RemoteAddress="17??3??4?7" RemotePort="9096">
+		<Process Path="C:\Program Files\SearchInform\SIEM*">
+			<Signature Subject="*Searchinform*" />
+		</Process>
+	</NetworkConnection>
+<!-- Part 0025 2023-09-06T18:44:00.000Z-1694022268 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
