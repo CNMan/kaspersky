@@ -388,4 +388,13 @@
     <File Id="{B5C744D1-544B-7EB5-6E32-E3A95DCC555B}">
       <Process CmdLine="node /usr/bin/npm -dd install" />
     </File>
+	<File Id="{3DEFBE69-1C40-8647-F2900FAF8170948E}" Path="/opt/splunkforwarder/var/spool/splunk/tracker.log">
+		<Process Path="/opt/splunkforwarder/bin/splunkd" CmdLine="splunkd -p *start" />
+	</File>
+	<File Id="{E1EE41C2-599A-8951-E917B177AC75D8E4}" Path="/opt/splunkforwarder/var/spool/splunk/tracker.log">
+		<Process Path="/opt/splunkforwarder/bin/splunkd" CmdLine="splunkd --under-systemd*internal_launch_under_systemd" />
+	</File>
+	<File Id="{9195C455-7A6F-6F2D-C5A835EAA9A22C62}" Path="/var/opt/managesoft/*">
+		<Process Path="/opt/managesoft/libexec/nd*" />
+	</File>
 </Filters>

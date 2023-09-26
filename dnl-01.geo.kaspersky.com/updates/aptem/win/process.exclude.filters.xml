@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2023-09-06T17:47:00.000Z-1694022444 -->
+	<!-- 2023-09-22T20:54:00.000Z-1695416065 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -787,7 +787,7 @@
 <!-- Part 0033 2023-08-24T18:48:00.000Z-1692902892 -->
 	<Image Id="{93D0069F-A93C-B132-12965D6D5AFDF30C}" CmdLine="*Imperva\RemoteAgent\get-capping-info.bat ECE_check_system NONE*" />
 	<Image Id="{92583BE6-F7CD-9691-14D020C9EC2D3105}" CmdLine="winmgmt /verifyrepository" />
-	<Image Id="{E8051CC6-A887-2DE2-C628226E968DFB5A}" CmdLine=" -NoProfile -NoLogo -NonInteractive -Sta -ExecutionPolicy Unrestricted -File C:\ProgramData\Nexthink\RemoteActions\Scripts\System\{" />
+	<Image Id="{E8051CC6-A887-2DE2-C628226E968DFB5A}" CmdLine=" -NoProfile -NoLogo -NonInteractive -Sta -ExecutionPolicy Unrestricted -File C:\ProgramData\Nexthink\RemoteActions\Scripts\System\{*" />
 	<Image Id="{CD22D259-91CA-90F2-E0C77FCF2D096150}" Path="*program files*imperva*" >
 		<Signature Subject="imperva*" />
 	</Image>
@@ -815,6 +815,47 @@
 		<VersionInfo ProductName="Erlang/OTP" FileDescription="Erlang" />
 	</Image>
 <!-- Part 0034 2023-09-06T17:47:00.000Z-1694022444 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0035 2023-09-22T20:54:00.000Z-1695416065 -->
+	<Image Id="{BE28A377-E334-857E-96BD67C583FAEBFD}" Path="*Program Files*ManageSoft*" >
+		<Signature Subject="Flexera*" />
+	</Image>
+	<Image Id="{BD59339E-6D8A-6094-2CA43A2D6345CECC}" Path="*Tableau*" >
+		<Signature Subject="Flexera*" />
+	</Image>
+	<Image Id="{F9BC2A3C-F803-050F-2B46B3B9F831F823}" Path="*Program Files*Flexera*" >
+		<Signature Subject="Flexera*" />
+	</Image>
+	<Image Id="{12844741-36D9-E1A0-64B72AEA73E36C8A}" CmdLine="C:\Windows\system32\cmd.exe /c btool server list*--no-log" />
+	<Image Id="{E4FC4F0A-88A0-92F5-98A1201A0126AEB3}" CmdLine="C:\Windows\system32\cmd.exe /c*SplunkUniversalForwarder\bin\splunk*" />
+	<Image Id="{94998E57-9565-D514-2400F3E838FB2258}" CmdLine="C:\Windows\system32\cmd.exe /c*splunkuniversalforwarder\etc\system\bin*" />
+	<Image Id="{268C106E-EE82-8F52-A0A1C1D07B56B293}" CmdLine="C:\Windows\system32\cmd.exe /c btool web list settings --no-log" />
+	<Image Id="{A48886FD-F535-C618-6286F45A63C3DA95}" Path="C:\Program Files\Common Files\microsoft shared\ink\TabTip.exe" >
+		<Signature Subject="microsoft*" />
+	</Image>
+	<Image Id="{7282F5E2-1402-4F04-CA14A763278AE910}" CmdLine="C:\Windows\system32\cmd.exe /c C:\Windows\TEMP\fstmp\fs_action_*.bat" />
+	<Image Id="{443BC016-4822-AC5E-23D9AEF0502F4F5B}" CmdLine="C:\Windows\system32\cmd.exe /c C:\Windows\Temp\fstmp\fs_action_*.bat fsproc_exec" />
+	<Image Id="{EEDBAD58-A3FD-1179-F7DA2963B41132DB}" CmdLine="C:\Windows\system32\cmd.exe /c dir /-C /W \\?\RabbitMQ\db\rabbit@*" />
+	<Image Id="{BE0105C8-451A-B760-6148DDB24C1CF562}" Path="*datapatrol*" >
+		<Signature Subject="datapatrol*" />
+	</Image>
+	<Image Id="{E500B6A0-1F79-B3B1-3A979366B6D6F688}" Path="*SplunkUniversalForwarder\bin\btool.exe" >
+		<Signature Subject="Splunk*" />
+	</Image>
+	<Image Id="{5431507D-449A-C221-01F584EE37F64163}" CmdLine="C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell.exe -Nologo -Noninteractive -NoProfile -ExecutionPolicy Bypass; Get-Delivery* | ConvertTo-Xml -as string -NoTypeInformation" />
+	<Image Id="{5977507E-B9FC-93DC-AF07F38A498A3908}" Path="c:\windows\system32\fsprocsvc.exe" >
+		<Signature Subject="forescout*" />
+	</Image>
+	<Image Id="{6FC2BC42-CDE5-5D62-6DF3C41BF371701C}" CmdLine="*/powershell.exe -NoLogo -NonInteractive -NoProfile -InputFormat Text -OutputFormat Text -Command Get-Process -Id *Select-Object -ExpandProperty HandleCount" />
+	<Image Id="{EFC35623-1EEA-FC06-6F951333D76A4628}" CmdLine="c:\windows\system32\NetCfgNotifyObjectHost.exe {*} ????" />
+	<Image Id="{BB8986E9-B532-FC19-E4D5BD27B5716808}" CmdLine="cmd.exe /x/d/c C:\Program Files (x86)\Guardium\Guardium Installation Manager/GIM*" />
+	<Image Id="{BB8986E9-B532-FC19-E4D5BD27B5716808}" CmdLine="cmd.exe /x/d/c C:\Program Files (x86)\Guardium\Guardium Installation Manager/GIM*" />
+	<Image Id="{7435E727-D5DF-764E-297CE95DD6FF5833}" CmdLine="cscript  //U //nologo C:\Windows\Temp\fstmp\fs_*" />
+	<Image Id="{B9D466E2-F9EA-A7FC-2A0B5FB5E80FB75E}" CmdLine="eventcreate /T * /L * /SO * /ID *" />
+	<Image Id="{D0455B0F-B6ED-FE3B-2CAD202B5E360AFF}" CmdLine="C:/Program Files/Websense/Websense Endpoint/EndPointClassifier.exe C:/Program Files/Websense/Websense Endpoint*\\.\pipe\EndPointConfigComm" />
+<!-- Part 0035 2023-09-22T20:54:00.000Z-1695416065 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
