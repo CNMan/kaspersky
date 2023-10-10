@@ -1,13 +1,13 @@
 <Update
-	Date="05102023 0644"
-	BlstDate="03102023 2005"
+	Date="09102023 1228"
+	BlstDate="08102023 2148"
 	ObjectType="2=OSSL;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
 	MaxDownloadSizeKb="6547"
 	CompID="OSSL">
 	<File
-		App="KSVLA 5.[0-2]"
+		App="KSVLA 5.[1-2]"
 		OS="Linux"
 		Arch="i386"
 		SysArch="i386"
@@ -19,7 +19,7 @@
 		Name="libcrypto_ssl_1_1.so"
 		DSKM="o5CG8ilRezty6LUHyxJZ217fUN/XLy1Q+8pF4v8WE+s="/>
 	<File
-		App="KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-1].*;KESSL 3.3.0.*;KICSNL 1.3.0.*;KSLS 10.1.*.*;KSLS 11.[0-4].*.*"
+		App="KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-2].*;KESSL 3.3.0.*;KICSNL 1.3.0.*;KSLS 10.1.*.*;KSLS 11.[0-4].*.*"
 		OS="Linux"
 		Arch="i386"
 		SysArch="i386"
@@ -47,7 +47,7 @@
 		LocalPath="%ProductFolder%"
 		Item="App;OS;SrvPath;Name;DSKM"
 		List="
-			KAVSDK 8.[8-9].*.*\;KAVSDK 8.10.[0-1].*\;KESSL 3.3.0.*\;KICSNET 4.1.0\;KICSNL 1.3.0.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSMG 2.0.[0-1].*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KWTS 6.1.0.*|Linux|x64/nix|libcrypto_ssl_1_1.so|uA+OseIWvCyD74dCSj726uZGde4VmJB/IPTx/yxHVKM=;
+			KAVSDK 8.[8-9].*.*\;KAVSDK 8.10.[0-2].*\;KESSL 3.3.0.*\;KICSNET 4.1.0\;KICSNL 1.3.0.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSMG 2.0.[0-1].*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KWTS 6.1.0.*|Linux|x64/nix|libcrypto_ssl_1_1.so|uA+OseIWvCyD74dCSj726uZGde4VmJB/IPTx/yxHVKM=;
 			KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*|Linuxs-104|x64/nix-104|libcrypto_ssl_1_1.so|Hy1o4VbemEuMwVVhppb6gdnIT2FaFJpAyxMxPQYE7bs="/>
 	<File
 		App="KESMAC 10.2.1.*;KESMAC 11.0.[0-1].*;KESMAC 11.1.0.*;KISMAC [19-20];KSKMAC 1.5.0.*;SAASMAC 20"
@@ -58,7 +58,7 @@
 		Name="libcrypto_ssl_1_1.dylib"
 		DSKM="6T/bHFyCGC67Pue5aeAlYSiJiLpDRZZpEk5rgsV/09M="/>
 	<File
-		App="KAR|KARH 3.0.1.*;KAR|KARH 6.[0-4].0.*;KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-1].*;KSE 9.[5-7].*.*;KSMO 1.2.*.*"
+		App="KAR|KARH 3.0.1.*;KAR|KARH 6.[0-4].0.*;KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-2].*;KSE 9.[5-7].*.*;KSMO 1.2.*.*"
 		OS="Win"
 		Arch="x64"
 		Shell="bdif;klz;none"
@@ -88,7 +88,7 @@
 		Name="libcrypto_ssl_1_1.so"
 		DSKM="n3/ZpLcNg5jEo8uSMmpGYSpPuceZypM2+ZTbcsF0KoU="/>
 	<File
-		App="KAR|KARH 3.0.1.*;KAR|KARH 6.[0-4].0.*;KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-2].*;KFA|KSM|KAV|KIS|PURE|KSOSPC|KSOSFS|KSDE|SAAS [19-20];KSC 12.0.[0-1].*;KSC 12.2.0;KSC 14;KSC 15;KSE 9.[5-7].*.*;KSMO 1.2.*.*;KSVLA 5.[0-2];KVRT 20.0;SAFEKIDS 1.0.[3-4].*"
+		App="KAR|KARH 3.0.1.*;KAR|KARH 6.[0-4].0.*;KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-2].*;KFA|KSM|KAV|KIS|PURE|KSOSPC|KSOSFS|KSDE|SAAS [19-20];KSC 12.0.[0-1].*;KSC 12.2.0;KSC 14;KSC 15;KSE 9.[5-7].*.*;KSMO 1.2.*.*;KSVLA 5.[1-2];KVRT 20.0;SAFEKIDS 1.0.[3-4].*"
 		OS="Win"
 		Arch="i386"
 		Shell="bdif;klz;none"
@@ -125,10 +125,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="1.1.1v-ossl-1901g.xml"
-		DSKM="J7v5FyzCBdkw0iQm8lpMaNRInNsOlixLVqI/G5IJNaw="/>
+		DSKM="A+RlUqvT9jyElDOPQU5L1ixNWrrCbZTJ/cbc37YhaD8="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ossl-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGvKfo1Hiut567Od1iQfYpN1jUdzXA7vjq8JPGEE9NSgOmXHk4sZCq4whEqYnAaZYGTunLUQLmPMejcrFGjWH24BAB4JQgEAAAIAAigEAE9TU0wDAAIoBABCQVNFAQAACbDKQ0YNCjs6MTBLRkJweTV2RHlOWEVmc3ZCMi9nY1JFTXVBeDZXS2trOGgzQ2pGaTZhUXlGUW91NERaWGVrSld3MDhaTFlEU3Z1UjdMSnFDVnNrWGR6Q2J2bDR2clNzZiUl</Key>
 </Update>
-;:104PaTgDTeHVPyIG3NRAsi7X2yYO32AXEDqLjO/PgvHJnra3s1lBwgYfM8whNrG4aydrYa8aNOiPUV61DSJEyOVZ%%
+;:10a28XMbwFAXn5dSZTC5v6u/56VYEMU5Gz7uR4kqbuE5k6aUGc2EVkK9wrXwYBspqxf7jyLR7Kt5NrBWuf1S8IoR%%

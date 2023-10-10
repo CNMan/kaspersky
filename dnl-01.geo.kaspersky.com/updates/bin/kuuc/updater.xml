@@ -2469,6 +2469,13 @@
         <component>BLST2;KIP;IDSIR;UPDATER;SUPD;IDR;ICR;ICSCVE</component>
       </element>
       <element>
+        <name>KasperskyIndustrialCyberSecurityforNetworks_3_0_1</name>
+        <version>3.0.1.24</version>
+        <tree>index/u1313g.xml</tree>
+        <component>BLST2;SUPD;KIP;IDSIR;UPDATER;IDR;ICR;ICSCVE</component>
+        <App>kicsnet 3.0.1.24</App>
+      </element>
+      <element>
         <name>KasperskyIndustrialCyberSecurityforNetworks_3_1</name>
         <version>3.1.0.155</version>
         <tree>index/u1313g.xml</tree>
@@ -2543,6 +2550,21 @@
           <tree>index/u1313g.xml</tree>
           <component>RETR1901;BLST2;CDB;IDS;KDB;KSN;Updater;KICS3;EMU;KDSCRL;SUPD;RETR1901_BLST2;RETR1901_CDB;RETR1901_IDS;RETR1901_KDB;RETR1901_KSN;RETR1901_Updater;RETR1901_KICS3;RETR1901_EMU;RETR1901_KDSCRL;RETR1901_SUPD</component>
           <App>KICS 3.1.*.*</App>
+          <Arch>i386</Arch>
+          <OS>win</OS>
+        </updates>
+        <updates>
+          <tree>updaters/updater.xml</tree>
+          <component>RETR1901;SUPD;RETR1901_SUPD</component>
+        </updates>
+      </element>
+      <element>
+        <name>KasperskyIndustrialCyberSecurityforNodes_3_2</name>
+        <version>3.2.0.273</version>
+        <updates>
+          <tree>index/u1313g.xml</tree>
+          <component>RETR1901;BLST2;CDB;IDS;KDB;KSN;Updater;KICS3;EMU;KDSCRL;SCO;SUPD;RETR1901_BLST2;RETR1901_CDB;RETR1901_IDS;RETR1901_KDB;RETR1901_KSN;RETR1901_Updater;RETR1901_KICS3;RETR1901_EMU;RETR1901_KDSCRL;RETR1901_SCO;RETR1901_SUPD</component>
+          <App>KICS 3.2.0.273</App>
           <Arch>i386</Arch>
           <OS>win</OS>
         </updates>
