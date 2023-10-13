@@ -1,5 +1,5 @@
 <Update
-	Date="31072023 0946"
+	Date="12102023 2153"
 	ObjectType="2=KESMAC11;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -9,32 +9,35 @@
 		CompID="KESMAC11"
 		App="KESMAC 11.3.0.320"
 		OS="Mac"
-		FixName="b"
 		SrvPath="11.3.0.320"
-		Item="LocalPath;Name;DSKM"
+		Item="FixName;LocalPath;Name;DSKM"
 		List="
-			%ProductRoot%/Binaries|libam_core.dylib|BFrdyPNZ/qXvNA/16YPpyvuNkajyfC6ftFGMB4ZYav0=;
-			%ProductRoot%/Binaries|libam_product_integration.dylib|ZE8hiKHPBi7ltm3df4rWCPrJqYOty3Z2x6xHm4n01qw=;
-			%ProductRoot%/Binaries|libautostart.dylib|7K7EkdQFuM+xwI2dJHbytTthrwYJOnLT+oU6AG1XzCI=;
-			%ProductRoot%/Binaries|libbl.dylib|mvXvGhdeNBpkEyWve/AKZkg6xXiegCZ/iYj1GufBUos=;
-			%ProductRoot%/Binaries|libsystem_interceptors.dylib|+IvqGDw6cgs2iJOPZAKbr83pei5lWOrVplx144FjUwU=;
-			%ProductRoot%/Binaries|libtraffic_processing.dylib|LABavp1dMs6ghqLn+DTUKmyT0hZ+xgtBCJhMa0WyiAQ=;
-			%ProductRoot%/Binaries|patch|wblJClI0b4iwzrU+PtEDC/8s0MP/hW0Fa36mgH9F5zI=;
-			%ProductRoot%/Binaries|UninstallScript|veM1vkOX1+447KFdwrVK4DN3+YhbNBU5KxqFhhBCfA8=;
-			%ProductRoot%/Data|kav_app.tar.gz|Y8MpFFDrDv5I5nTvFoWCNjq3Ge0Jx8vt9WyTBrNI1sE=;
-			%ProductRoot%/Data|kav_agent.tar.gz|UqXDYZhumY1XeYjmXhL9dCVhVyGyZR9tZ47BWNi3t7s=;
-			%ProductRoot%/Data|loc.tar.gz|kJIrnMy8RS0WxiZsrGGQhJWn/lkmc4jE3mGvo7HCL8w=;
-			%ProductRoot%/Data|configpdk.tar.gz|B/tTeUXq23XmCKnr+/znJXsAkhgFHd6aDJPIDDJOZwE=;
-			%ProductRoot%/Data|ne_remover.tar.gz|Cvo1FCEPglziVv+t5DODfq2vxiSkJmu8HSA4il+p+8I="/>
+			b|%ProductRoot%/Binaries|libam_core.dylib|BFrdyPNZ/qXvNA/16YPpyvuNkajyfC6ftFGMB4ZYav0=;
+			b|%ProductRoot%/Binaries|libam_product_integration.dylib|ZE8hiKHPBi7ltm3df4rWCPrJqYOty3Z2x6xHm4n01qw=;
+			b|%ProductRoot%/Binaries|libautostart.dylib|7K7EkdQFuM+xwI2dJHbytTthrwYJOnLT+oU6AG1XzCI=;
+			b|%ProductRoot%/Data|loc.tar.gz|kJIrnMy8RS0WxiZsrGGQhJWn/lkmc4jE3mGvo7HCL8w=;
+			b|%ProductRoot%/Data|ne_remover.tar.gz|Cvo1FCEPglziVv+t5DODfq2vxiSkJmu8HSA4il+p+8I=;
+			c|%ProductRoot%/Binaries|patch|dLw2rxzOJ/SgKQoV1doJW836y1Q4wFzL00iTliDMm6o=;
+			c|%ProductRoot%/Binaries|UninstallScript|ip4U2NiRB1/6qEGgw9KpIV3/BDbqgkmMbowDu1POkMs=;
+			c|%ProductRoot%/Binaries|libtraffic_processing.dylib|FiJthTGGbQrkwebj8Mn0L5IFg/negskz09TFHIUYHlM=;
+			c|%ProductRoot%/Binaries|libconnector.dylib|mDrgCekhYXgvs6hpuP0Sl82krEIKU+P6v0e+FbL3HpE=;
+			c|%ProductRoot%/Binaries|libconnection_redirector.dylib|f2MP8F2e2Twxwx1flLJU4N2DaXLPuDS3vq0XQ7RhZSo=;
+			c|%ProductRoot%/Binaries|libsystem_interceptors.dylib|fZlA/u8wHQJGKD60rZl5tsRVOsGJ3NMcCxSnup9tgAw=;
+			c|%ProductRoot%/Data|kav_agent.tar.gz|MCvMaST1vtYkh+aNTYOpPoxzNRNnI0fPKWKtJpkvUEk=;
+			c|%ProductRoot%/Data|kav_app.tar.gz|l9Q6XdYlDGbqX9e0YXSJWOSKeFQi2sSefBR3RpeuFds=;
+			c|%ProductRoot%/Binaries|libbl.dylib|OBNEyLd09muhmQ96wiXhU9w7l8IDi4a11BUY1uXgUko=;
+			c|%ProductRoot%/Binaries|libsystem_extension.dylib|niktRTn/oNot59xPCPjbgT+FL4NwxXRoxd4mc/rPyCk=;
+			c|%ProductRoot%/Binaries|libsystem_extension_meta.dylib|7WWTVETtVBj3m0rDOi+y0O45KdlMVHhhxgQ6tkYrSGs=;
+			c|%ProductRoot%/Data|configpdk.tar.gz|4Odp4ayh1wsQEW/VD23bhdB5GLG8G0a8gJu7b35T8tQ="/>
 	<File
 		CompID="RETR1901_KESMAC11"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kesmac11-sp3-1901g.xml"
-		DSKM="x3AqPfnX2Xc04vJUdzkwDKdBwJ5iJCRMB5AYCcgPOqA="/>
+		DSKM="2MfnI3bbpjtzQAkR9zBSbR2gnElQio6r3jaDDEVOAXE="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kesmac11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFIcNj5kzZjhig3r4CqBVoX5B89m2iiB6W8MfTSkCPcFXwVfhHuO77Lg02UivKaGthr1/xJsxbzCKxLEBg6cJ1wBAB4JuQEAAAIAAigIAEtFU01BQzExAwACKAMAQklOAQAACW997MENCjs6MTBhMlZobld4WHlzZy9oRDRiVSsvZTlmdG0zMkVHQVVUcVg5M21HQVJmVTRVc05Fc1M5a2VyTjJBYUhoWXh5eXZJbzF1WTVpemRxS1R2ZDJ3aG4vMlljeiUl</Key>
 </Update>
-;:10KHlmbajlL1URwn2rMO0xU9onIm3Z7srkkl+oU+DA7VTXLIDxVGnWeHpkSfrKEgZK9j1dBTOkSuTUEcYzS8gdtt%%
+;:104KMMcnaEIieJY6RwIsq7OwptdWdTxLpsOcMX7JPaX+NJsRGvlxJKuboKI1wWLqeGCKZ79Iw1WMLCftqqsdyb/z%%
