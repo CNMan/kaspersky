@@ -1,5 +1,5 @@
 <Update
-	Date="23102023 2349"
+	Date="24102023 1950"
 	ObjectType="2=KSVLA;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,26 +8,50 @@
 	<Indexes
 		Item="CompID;SrvPath;Name;Date"
 		List="
-			AH,RETR1901_AH|ah|ah-1313g.xml|23102023 2349;
-			IDS,RETR1901_IDS|ids|ids-1313g.xml|23102023 2349;
-			HIPS2,CDB,RETR1901_HIPS2,RETR1901_CDB|hips|hips-1313g.xml|23102023 2349;
-			KSN,RETR1901_KSN|ksn|ksvla-ksn-1313g.xml|23102023 2349;
-			BB,RETR1901_BB|pdm|pdm-1313g.xml|23102023 2349;
-			SCO,RETR1901_SCO|sco|sco-1313g.xml|23102023 2349;
-			SI,RETR1901_SI|si|si-1313g.xml|23102023 2349;
-			SSA,RETR1901_SSA|ssa|ssa-1313g.xml|23102023 2349;
-			UDS,KSN,RETR1901_UDS,RETR1901_KSN|uds|uds-1313g.xml|23102023 2349;
-			UMIDS,RETR1901_UMIDS|umids|umids-1313g.xml|23102023 2349;
-			SW2,RETR1901_SW2|sw2|sw2-1313g.xml|23102023 2349;
-			Updater,RETR1901_Updater|upd|upd-1313g.xml|23102023 2349;
-			WF,RETR1901_WF|wf|wf-1313g.xml|23102023 2349;
-			WA,RETR1901_WA|wa|wa-1313g.xml|23102023 2349;
-			OSSL,RETR1901_OSSL|ossl|ossl-1313g.xml|23102023 2349;
-			APD,RETR1901_APD|apd|apd-1313g.xml|23102023 2349;
-			CDB2,RETR1901_CDB2|cdb2|cdb2-1313g.xml|23102023 2349;
-			QSCAN,RETR1901_QSCAN|qscan|qscan-1313g.xml|23102023 2349"/>
+			AH,RETR1901_AH|ah|ah-1313g.xml|29062023 1152;
+			IDS,RETR1901_IDS|ids|ids-1313g.xml|29062023 1028;
+			HIPS2,CDB,RETR1901_HIPS2,RETR1901_CDB|hips|hips-1313g.xml|23102023 1127"/>
+	<Index
+		CompID="KSN,RETR1901_KSN"
+		App="!KESLKSVLA|KSVLASVMPRG"
+		SrvPath="ksn"
+		Name="ksvla-ksn-1313g.xml"
+		Date="24102023 1627"/>
 	<Indexes
-		Date="23102023 2349"
+		Item="CompID;SrvPath;Name;Date"
+		List="
+			BB,RETR1901_BB|pdm|pdm-1313g.xml|24102023 0232;
+			SCO,RETR1901_SCO|sco|sco-1313g.xml|24102023 0702;
+			SI,RETR1901_SI|si|si-1313g.xml|17102023 0957;
+			SSA,RETR1901_SSA|ssa|ssa-1313g.xml|03032023 0726"/>
+	<Index
+		CompID="UDS,KSN,RETR1901_UDS,RETR1901_KSN"
+		App="!KESLKSVLA|KSVLASVMPRG"
+		SrvPath="uds"
+		Name="uds-1313g.xml"
+		Date="24102023 0031"/>
+	<Indexes
+		Item="CompID;SrvPath;Name;Date"
+		List="
+			UMIDS,RETR1901_UMIDS|umids|umids-1313g.xml|24102023 1046;
+			SW2,RETR1901_SW2|sw2|sw2-1313g.xml|23102023 0631;
+			Updater,RETR1901_Updater|upd|upd-1313g.xml|24102023 0701;
+			WF,RETR1901_WF|wf|wf-1313g.xml|24102023 1021;
+			WA,RETR1901_WA|wa|wa-1313g.xml|24102023 0704"/>
+	<Index
+		CompID="OSSL,RETR1901_OSSL"
+		App="!KESLKSVLA|KSVLASVMPRG"
+		SrvPath="ossl"
+		Name="ossl-1313g.xml"
+		Date="23102023 0714"/>
+	<Indexes
+		Item="CompID;SrvPath;Name;Date"
+		List="
+			APD,RETR1901_APD|apd|apd-1313g.xml|24102023 0659;
+			CDB2,RETR1901_CDB2|cdb2|cdb2-1313g.xml|24102023 1526;
+			QSCAN,RETR1901_QSCAN|qscan|qscan-1313g.xml|24102023 0704"/>
+	<Indexes
+		Date="24102023 1843"
 		Item="CompID;Arch;SrvPath;Name"
 		List="
 			KSVLAKDB,RETR1901_KSVLAKDB|i386|kdb/lakdb/i386|ksvla-lakdb-i386-1313g.xml;
@@ -37,13 +61,13 @@
 		OS="Win"
 		Item="CompID;SrvPath;Name;Date"
 		List="
-			APU,RETR1901_APU|apu|apu-1313g.xml|23102023 2349;
-			ADBU,RETR1901_ADBU|adbu|adbu-1313g.xml|23102023 2349;
-			ARK,RETR1901_ARK|ark|ark-1313g.xml|23102023 2349;
-			PARCTL,RETR1901_PARCTL|parctl|parctl-1313g.xml|23102023 2349;
-			WMUF,RETR1901_WMUF|wmuf|wmuf-1313g.xml|23102023 2349"/>
+			APU,RETR1901_APU|apu|apu-1313g.xml|24102023 1550;
+			ADBU,RETR1901_ADBU|adbu|adbu-1313g.xml|02032023 1101;
+			ARK,RETR1901_ARK|ark|ark-1313g.xml|12102023 0705;
+			PARCTL,RETR1901_PARCTL|parctl|parctl-1313g.xml|30082023 0804;
+			WMUF,RETR1901_WMUF|wmuf|wmuf-1313g.xml|24102023 1550"/>
 	<Indexes
-		Date="23102023 2349"
+		Date="24102023 1843"
 		Item="CompID;SrvPath;Name"
 		List="
 			KSVLAKDB,KSVLASVM,KSVLASVMKDB,RETR1901_KSVLAKDB,RETR1901_KSVLASVM,RETR1901_KSVLASVMKDB|rms/kdb|ksvla-rms-kdb-1313g.xml;
@@ -53,10 +77,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="ksvla-all-1901g.xml"
-		DSKM="jQXN3Rd/T6W4rC9tmDuLkt+Ky1wYEGU+eqrD2PI6B9Q="/>
+		DSKM="dRariKxuJgvbRRfeNFYQNTPKHJZ4j96tO7m1rwHwwrw="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ksvla-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHsYZDZktL//HukxVNWeew+Ja8hEpY+nLaoKL64eUZtcVkImXEkGD5wxaC2s4/6CnTWTtX3jAKr/vlrwH4xinpsBAB4JAQEAAAIAAigFAEtTVkxBAwACKAQAQkFTRQEAAAmCaEW/DQo7OjEwNENJdDg4KzZMeEowNDh3SHZoSVBaZjlRL0VMVG90S3hsbEZNSUcyTlRQNUIyNlJuVWYvaEM1bnJZdjk4eXNLSTdKNzZzSXdzS2pNUXFCaml0eXpWNE0lJQ==</Key>
 </Update>
-;:104NZPRMKiQ4wfVry1dcWyg15tThkRcgfMhOOxHeYjeN1YN74w9crW/7U+DY1PBNAmatIOb45BmjNytAwTn3aAbv%%
+;:10K9yg3uC5IHfWB1OriLylRyDuf45K5QZhJRscnCU86yBftqp++k2lLWI2TTL7bA5rvVCF2a6GGab9q6CQIh3n74%%
