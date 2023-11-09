@@ -1,6 +1,6 @@
 <Update
-	Date="26102023 0715"
-	BlstDate="25102023 2006"
+	Date="08112023 0739"
+	BlstDate="06112023 2356"
 	ObjectType="2=OSSL;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -19,7 +19,7 @@
 		Name="libcrypto_ssl_1_1.so"
 		DSKM="cbFWAmaQddNWKFG3VsVZkeDHLAbqtIcJXXAQIkZUlP8="/>
 	<File
-		App="KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-2].*;KESSL 3.3.0.*;KICSNL 1.3.0.*;KSLS 10.1.*.*;KSLS 11.[0-4].*.*;KSLS 12.0"
+		App="KAVSDK 8.[8-9].*.*;KAVSDK 8.10.[0-2].*;KESLKSVLA 12;KESSL 3.3.0.*;KICSNL 1.3.0.*;KSLS 10.1.*.*;KSLS 11.[0-4].*.*;KSLS 12.0"
 		OS="Linux"
 		Arch="i386"
 		SysArch="i386"
@@ -47,8 +47,8 @@
 		LocalPath="%ProductFolder%"
 		Item="App;OS;SrvPath;Name;DSKM"
 		List="
-			KAVSDK 8.[8-9].*.*\;KAVSDK 8.10.[0-2].*\;KESSL 3.3.0.*\;KICSNET 4.1.0\;KICSNL 1.3.0.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12.0\;KSMG 2.0.[0-1].*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KWTS 6.1.0.*|Linux|x64/nix|libcrypto_ssl_1_1.so|ZPRcvYZIcJ7kZ3bPILd4pjWcH/f1i5ESgjzTr7SqtxE=;
-			KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12.0|Linuxs-104|x64/nix-104|libcrypto_ssl_1_1.so|X19tyqOTWCnd4uM8P6X/x0LNJx+4LCZZLQi/hNAcn/A="/>
+			KAVSDK 8.[8-9].*.*\;KAVSDK 8.10.[0-2].*\;KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNET 4.1.0\;KICSNL 1.3.0.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12.0\;KSMG 2.0.[0-1].*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KWTS 6.1.0.*|Linux|x64/nix|libcrypto_ssl_1_1.so|ZPRcvYZIcJ7kZ3bPILd4pjWcH/f1i5ESgjzTr7SqtxE=;
+			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12.0|Linuxs-104|x64/nix-104|libcrypto_ssl_1_1.so|X19tyqOTWCnd4uM8P6X/x0LNJx+4LCZZLQi/hNAcn/A="/>
 	<File
 		App="KESMAC 10.2.1.*;KESMAC 11.0.[0-1].*;KESMAC 11.1.0.*;KISMAC [19-20];KSKMAC 1.5.0.*;SAASMAC 20"
 		OS="Mac"
@@ -79,7 +79,7 @@
 			Linux|e2k/nix|libcrypto_ssl_1_1.so|8ZhnoGltcJ4kS4boMa2fMEvAKgXqwm1aUOgy/bfx/a0=;
 			Linuxs-118|e2k/nix-118|libcrypto_ssl_1_1.so|QFi7nlK596y7Um/H9jPfuMPh5tlDTqaZeNRNb0Ip8EE="/>
 	<File
-		App="KSLS 10.1.4.*;KSLS 11.[3-4].0;KSLS 12.0"
+		App="KESLKSVLA 12;KSLS 10.1.4.*;KSLS 11.[3-4].0;KSLS 12.0"
 		OS="Linux"
 		Arch="a64"
 		Shell="bdif;klz;none"
@@ -104,7 +104,7 @@
 		List="
 			KES 11.0.*.*|Win|i386|i386/win|%ProductFolder%|crypto_ssl_1_1.dll|jDxq8r5AssGWivJ/X4xLwQjZ3xHi0HiXjKp/9DIHBS8=;
 			KES 11.[1-4].*.*\;KES 21.[2-9,13-15]|Win|i386|i386/win|%DataFolder%|crypto_ssl_1_1.dll|jDxq8r5AssGWivJ/X4xLwQjZ3xHi0HiXjKp/9DIHBS8=;
-			KSLS 11.[3-4].0\;KSLS 12.0|Linuxs-125|a64|arm64/nix-125|%ProductFolder%|libcrypto_ssl_1_1.so|s9tEMEouO1coSn78gEHuB1z9yuJUbUqHBu91EWgz9yw="/>
+			KESLKSVLA 12\;KSLS 11.[3-4].0\;KSLS 12.0|Linuxs-125|a64|arm64/nix-125|%ProductFolder%|libcrypto_ssl_1_1.so|s9tEMEouO1coSn78gEHuB1z9yuJUbUqHBu91EWgz9yw="/>
 	<File
 		App="KLMS 10;KSMG 2.1.0.*"
 		OS="Linuxs-108"
@@ -125,10 +125,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="1.1.1w-ossl-1901g.xml"
-		DSKM="W7qpdYD1MI0K7oV/nEjW8AmdYx3gSx2d/AIIADeh6WM="/>
+		DSKM="Z7I1SVKIkB0Ln7BEDn8N256J/hqCn1TFH+g2X7v/5ZY="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ossl-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGvKfo1Hiut567Od1iQfYpN1jUdzXA7vjq8JPGEE9NSgOmXHk4sZCq4whEqYnAaZYGTunLUQLmPMejcrFGjWH24BAB4JQgEAAAIAAigEAE9TU0wDAAIoBABCQVNFAQAACbDKQ0YNCjs6MTBLRkJweTV2RHlOWEVmc3ZCMi9nY1JFTXVBeDZXS2trOGgzQ2pGaTZhUXlGUW91NERaWGVrSld3MDhaTFlEU3Z1UjdMSnFDVnNrWGR6Q2J2bDR2clNzZiUl</Key>
 </Update>
-;:10qJAV6lLPYHjYPlLt1E7lcEPG1g3PFn+H1JmIEV2l2cZdnHcQDIV1LRv+ZkF0ayzUqMjXhBVXvCRbIj25xTY/bE%%
+;:10KC9pHhSgAQsh5LEfQYwPm0Uk5/NtizXRcvJvv+qb8UG3sLZUUY89GLUYbz+w6lNG9L+5AvhrYwTy2YGx3ANITL%%
