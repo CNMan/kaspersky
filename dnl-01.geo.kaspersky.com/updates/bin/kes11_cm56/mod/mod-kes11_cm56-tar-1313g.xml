@@ -1,5 +1,5 @@
 <Update
-	Date="13112023 0321"
+	Date="15112023 0324"
 	ObjectType="2=KES11_CM56;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -5903,65 +5903,77 @@
 			KES 11.2.0.*|license.txt|6L0xKEELQs92cV3xEpzIc6RcHVYPR8O/kFkQNa5a+0Q=;
 			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.13.5.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*|license.txt|6L0xKEELQs92cV3xEpzIc6RcHVYPR8O/kFkQNa5a+0Q="/>
 	<Patches
-		App="KES 21.13.5.*;KES 21.14.5.*"
 		Lang="ru"
-		PackageID="A7E40AFA-1762-4142-8841-C08412DB46EC"
 		KSN="1"
 		SrvPath="../kes11/kes11_15/aes56/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_15/aes56/ru"
 		KSCMode="Off;OnPrem;B2B"
-		Item="Name;DSKM"
+		Item="App;PackageID;Name;DSKM"
 		List="
-			aes56.cab|1/y7pn5q9Zm1TUS32m0hclelp5OREEDmWPMzZQnvsk4=;
-			cleaner_v2.cab|cBUbGRZAo2z3R9BFr7ZxGe4LJqQh1DEris9kqB6eSKs=;
-			cleanerapi_v2.cab|HoZoxifxzAlfhEtmSuDTLblUYVy5KWHtdrvOSZ8LcwU="/>
-	<Patch
-		App="KES 21.13.5.*;KES 21.14.5.*"
+			KES 11.2.0.*|42B234ED-5FD5-4502-957A-3D845EAF7F24|aes56.cab|1/y7pn5q9Zm1TUS32m0hclelp5OREEDmWPMzZQnvsk4=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*\;KES 21.13.5.*\;KES 21.14.5.*|A7E40AFA-1762-4142-8841-C08412DB46EC|aes56.cab|1/y7pn5q9Zm1TUS32m0hclelp5OREEDmWPMzZQnvsk4=;
+			KES 11.2.0.*|42B234ED-5FD5-4502-957A-3D845EAF7F24|cleaner_v2.cab|cBUbGRZAo2z3R9BFr7ZxGe4LJqQh1DEris9kqB6eSKs=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*\;KES 21.13.5.*\;KES 21.14.5.*|A7E40AFA-1762-4142-8841-C08412DB46EC|cleaner_v2.cab|cBUbGRZAo2z3R9BFr7ZxGe4LJqQh1DEris9kqB6eSKs=;
+			KES 11.2.0.*|42B234ED-5FD5-4502-957A-3D845EAF7F24|cleanerapi_v2.cab|HoZoxifxzAlfhEtmSuDTLblUYVy5KWHtdrvOSZ8LcwU=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*\;KES 21.13.5.*\;KES 21.14.5.*|A7E40AFA-1762-4142-8841-C08412DB46EC|cleanerapi_v2.cab|HoZoxifxzAlfhEtmSuDTLblUYVy5KWHtdrvOSZ8LcwU="/>
+	<Patches
 		Lang="ru"
 		SrvPath="../kes11/kes11_15/aes56/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_15/aes56/ru"
 		Name="description.txt"
 		DSKM="Rz+0YWQlcr/5k32pL/f52njsNgEzbGxXrM+Y8kVpP6E="
-		KSCMode="Off;OnPrem;B2B"/>
-	<Patch
-		App="KES 21.13.5.*;KES 21.14.5.*"
+		KSCMode="Off;OnPrem;B2B"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*\;KES 21.13.5.*\;KES 21.14.5.*"/>
+	<Patches
 		Lang="ru"
-		PackageID="A7E40AFA-1762-4142-8841-C08412DB46EC"
 		KSN="1"
 		SrvPath="../kes11/kes11_15/aes56/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_15/aes56/ru"
 		Name="kes.cab"
 		DSKM="zhFM3fL007uJDmtQdv5q2zZU0tHl2h7PdcQU5ZhU9Sg="
-		KSCMode="Off;OnPrem;B2B"/>
-	<Patch
-		App="KES 21.13.5.*;KES 21.14.5.*"
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|42B234ED-5FD5-4502-957A-3D845EAF7F24;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*\;KES 21.13.5.*\;KES 21.14.5.*|A7E40AFA-1762-4142-8841-C08412DB46EC"/>
+	<Patches
 		Lang="ru"
 		KSN="1"
 		SrvPath="../kes11/kes11_15/aes56/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_15/aes56/ru"
 		Name="kes_win.kud"
 		DSKM="BQpNcUf10wX2jECfvB2JGhevqaY6yjSNeXV/mST4DMo="
-		KSCMode="Off;OnPrem;B2B"/>
-	<Patch
-		App="KES 21.13.5.*;KES 21.14.5.*"
+		KSCMode="Off;OnPrem;B2B"
+		Item="App"
+		List="
+			KES 11.2.0.*;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*\;KES 21.13.5.*\;KES 21.14.5.*"/>
+	<Patches
 		Lang="ru"
-		PackageID="A7E40AFA-1762-4142-8841-C08412DB46EC"
 		KSN="1"
 		SrvPath="../kes11/kes11_15/aes56/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_15/aes56/ru"
 		Name="kes_win.msi"
 		DSKM="mE3Nw9hBokaxZVRKBWjEeEqtR1z2BuFGqC+kNwYrnFI="
-		KSCMode="Off;OnPrem;B2B"/>
+		KSCMode="Off;OnPrem;B2B"
+		Item="App;PackageID"
+		List="
+			KES 11.2.0.*|42B234ED-5FD5-4502-957A-3D845EAF7F24;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*\;KES 21.13.5.*\;KES 21.14.5.*|A7E40AFA-1762-4142-8841-C08412DB46EC"/>
 	<Patches
-		App="KES 21.13.5.*;KES 21.14.5.*"
 		Lang="ru"
 		SrvPath="../kes11/kes11_15/aes56/ru"
 		LocalPath="%DataRoot%/Patches/kes11/kes11_15/aes56/ru"
 		KSCMode="Off;OnPrem;B2B"
-		Item="Name;DSKM"
+		Item="App;Name;DSKM"
 		List="
-			ksn.txt|ptropOzjlAcZGMTPfGGLLXHCI0XxmL8/CFIYRh8XJAM=;
-			license.txt|gsw4I5vFqRV6wcpe5/pI+6uxCU/e65qQ2dh/S4UAanI="/>
+			KES 11.2.0.*|ksn.txt|ptropOzjlAcZGMTPfGGLLXHCI0XxmL8/CFIYRh8XJAM=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.13.5.*\;KES 21.14.5.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*|ksn.txt|ptropOzjlAcZGMTPfGGLLXHCI0XxmL8/CFIYRh8XJAM=;
+			KES 11.2.0.*|license.txt|gsw4I5vFqRV6wcpe5/pI+6uxCU/e65qQ2dh/S4UAanI=;
+			KES 11.3.0.*\;KES 11.4.0.*\;KES 21.13.5.*\;KES 21.14.5.*\;KES 21.2.16.*\;KES 21.3.10.*\;KES 21.4.20.*\;KES 21.5.11.*\;KES 21.6.7.*\;KES 21.7.7.*\;KES 21.8.5.*\;KES 21.9.6.*|license.txt|gsw4I5vFqRV6wcpe5/pI+6uxCU/e65qQ2dh/S4UAanI="/>
 	<Patches
 		Lang="ar"
 		SrvPath="../kes11/kes11_8/aes56/ar"
@@ -7863,10 +7875,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-kes11_cm56-tar-1901g.xml"
-		DSKM="pg8Qdb1uX43VgwF9Hss1YBFEwSmcziU4mKGOap0/RYg="/>
+		DSKM="g0jo8SoMmB9CTp/7XDKBkidoADk+6JKxNhfseo84Nnc="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-kes11_cm56-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAApzoqLgaRkay2tmr5VGJCGib19Lo2svDVl8EivSw/d3IfwszpZ5b2S0ULDg97C9nUpzBzWFWCNo0rmZ5x+AmakBAB4JiAEAAAIAAigKAEtFUzExX0NNNTYDAAIoAwBCSU4BAAAJLemjSw0KOzoxMGEwRE9Kb0lQWkpYWHlkcGkrOG5Rbmd1VWZRaHQveERkM1FMQ3Z6eUpjUXA2N21uNFZaNkZCSGtTaksvdFNIYWhQUHE5NWZ0ODZvekVsUVZKUXJvdXpzJSU=</Key>
 </Update>
-;:10aBAeNsp+ScDCZHumETtfb6UyCaHoZKvcTksOXGKW66vabEIuxaqe6DTtobCV85PQjyMBP74HG8icWzFhCVNIiU%%
+;:10KKhVPlIouAxD5QaRJuvDNNwJ100RHotRNPl3fBHxALGxa4L+ToWyGlLn725BpgorPHh9Pbdq2rr0HJw0GFc6Vl%%
