@@ -177,4 +177,7 @@
       </userGeoRegionToProcess>
     </replace_value>
   </service_settings_patch>
+  <task_settings_patch task_name="File_Monitoring">
+    <replace_value path="QueuesSizes.DelayedEventsQueue" value_type="tDWORD">30000</replace_value>
+  </task_settings_patch>
 </root>
