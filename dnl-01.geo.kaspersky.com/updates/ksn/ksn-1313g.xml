@@ -1,6 +1,6 @@
 <Update
-	Date="12122023 2200"
-	BlstDate="12122023 2004"
+	Date="13122023 2200"
+	BlstDate="13122023 2005"
 	ObjectType="2=KSN;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -8,7 +8,7 @@
 	CompID="KSN"
 	LocalPath="%DataFolder%">
 	<Exclude
-		App="KES 10.[2-3].*.*;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 11.2;KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAFEKIDS 1.0.[3-4]"/>
+		App="KES 10.[2-3].*.*;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 11.2;KES 21.2;KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAFEKIDS 1.0.[3-4]"/>
 	<Files
 		App="KSMG 1.1.[0-2].*"
 		OS="Linux"
@@ -264,7 +264,7 @@
 			KAR\\|KARH 3.0.1.*|ksn_config_ar.xms|Y0ZgrOlMqGnE0bDNdk3zBJA8FQPFvOr22m+ogo4Sy1Q=;
 			KPMWIN 9.0.2.*|ksn_config_kpm_9.2.xms|QHSV27WLjGbB9ohBNRpL8NTcKQlu9jj3ElPlInyW3Ic=;
 			KPMWIN 10.[0-1].0.*|ksn_config_kpm_10.0.xms|Gg1tjAhlwENHDiyP8KqRyJbKX6C4AcLRtZS1XUc0iaE=;
-			KPMWIN 10.[2-3].0.*\;KPMWIN 23.[0-2].*.*|ksn_config_kpm_10.2.xms|Nb8tBIfz/5LBfN2ADJp+18xinuG6lB/qhHxymOwEuO0=;
+			KPMWIN 10.[2-3].0.*\;KPMWIN 23.[0-2].*.*\;KPMWIN 24.0|ksn_config_kpm_10.2.xms|Nb8tBIfz/5LBfN2ADJp+18xinuG6lB/qhHxymOwEuO0=;
 			KAVSDK 8.10.[0-2].*\;KAVSDK 8.9.[2-4].*|ksn_config_kavsdkl3.xms|mdqLnzgO8VQHTVIUIwM+D8dwp54PJ/tYxQlwC+0/qB8=;
 			KSMG 2.0.[0-1].*|ksn_config_ksmg2_0.xms|3xFxM74j/YhIvzx0MREM6Z6VWleFC+9LUgystbx5fPc=;
 			KISMAC 21.[0-1].0.*|ksn_kismac21.xms|3VkbhrzdUaCWMgLY8168/qB6T+/I/9/XeixN/MVLyGE=;
@@ -361,19 +361,20 @@
 			KASPERSKY 21.16.*.*|ksn_kaspersky21_16.xms|8w/9NcW7GzpL3vX64FIMXzW3sjxsPhPPvl4VbsNJW8E=;
 			KSOSPC\\|KSOSFS 21.16.*.*|ksn_ksos21_16.xms|teYzJ2zB04QX1ZQFI50VJCL/48xp/3Q277kVXN+eqAU=;
 			KSDE 21.16.*.*|ksn_ksde21_16.xms|KntoB2UB7aeRX+DpR1+YWEy65ucJwH9tQ5XJ5JppVVs=;
-			KES 21.16.*.*|ksn_kes21_16.xms|l7nuKTJg3BkZupg/K16J33JM/acUwuX61M6Q62YpxH8="/>
+			KES 21.16.*.*|ksn_kes21_16.xms|l7nuKTJg3BkZupg/K16J33JM/acUwuX61M6Q62YpxH8=;
+			KESMAC 12.1|ksn_kesmac12_1.xms|BuP7ZNICd0LxjWUxy6ydPFcLyaAmAglc0SbtsyBvU9Y="/>
 	<File
 		CompID="HASHES_SHA256"
 		Name="ksn-1313g.sha2rg"
-		DSKM="bFXqJUBS+2VHPkr5gTrFazZ5PzlqAmvKmMcPrfn5JHg="/>
+		DSKM="tB+wsgI1LEQjNl1ahlSFUFbs1Le1TnmNeWH5/t61BRg="/>
 	<File
 		CompID="RETR1901_KSN"
 		Shell="xdif;klz;none"
 		Name="ksn-1901g.xml"
-		DSKM="HfYLwU7jcja92kumtuIDAni6ZK/yBLB4Fb9xApZJeic="/>
+		DSKM="PyWiMn9yzmcvYvpQdbT4VZI3appAFB70sz5IDICj4Q0="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ksn-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHv7UWjxCazxN4NUDun9LwJXO+WMVd4AXSfZ25dzr238KZqJAFQJcOACAnxmp7Kca7f8VU/pQfCHWzGEACm3MjoBAB4JpgAAAAIAAigDAEtTTgMAAigEAEJBU0UBAAAJTsvPSg0KOzoxMDRQdGRSWUZrdlBEbXlNYVpIa3pJcXBmTnB0WWJLYTZNZWhQVGdOVkVNa3hwWktuRDVldXV4ZU9BK0Z1ejJRSGo2enRVcDdJRmlMOTFPWTBXOUNQZGFKJSU=</Key>
 </Update>
-;:10aJzUoiFSJzPyAYq70/OEAX2gMk3F4qwBONHkscQSRX6P7WhWzmPWFDQH5m2ymSjE+gRGgRCQ3RCzdXdMZyn03e%%
+;:104VMPeNdfFWNi6CBoYMyL0w3qViylMzNoWDKC9nOlF/GZ5JzTOE5Xdf++epEz/LOH+NOB4+VK2HCQyQ0WJBEOrR%%
