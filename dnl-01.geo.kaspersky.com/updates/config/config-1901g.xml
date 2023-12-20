@@ -1,6 +1,6 @@
 <Update
-	Date="14122023 0823"
-	BlstDate="13122023 2005"
+	Date="19122023 1222"
+	BlstDate="19122023 0806"
 	ObjectType="2=CONFIG;3=BASE"	
 	Format="3.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -13,7 +13,8 @@
 		Item="App;Name;DSKM2"
 		List="
 			KAVSDK 8.10.0.*|cfg_kavsdk_win_8_10_0.xml|KWf/nlYA98CvLKfWB2KPN12F5qrVCTA6PybNS9DSM3E=;
-			KAVSDK 8.10.1.*|cfg_kavsdk_win_8_10_1.xml|ML+Nia60Gfvv82jOxvy4o3RcjU5/rxl3O2cnQbypZyA="/>
+			KAVSDK 8.10.1.*|cfg_kavsdk_win_8_10_1.xml|ML+Nia60Gfvv82jOxvy4o3RcjU5/rxl3O2cnQbypZyA=;
+			KAVSDK 8.10.2.*|cfg_kavsdk_win_8_10_2.xml|xAFxtQZ8FKAzA85vCGc5FKBuWYNSJft40t6A6v2RuQk="/>
 	<Files
 		Item="App;SrvPath;Name;DSKM2"
 		List="
@@ -21,524 +22,530 @@
 			AVSL 22|avsl|cfg_avslite_22_0_1.xml|vfde7wLa/OBVy1+0xlcR/CWib0y5adRNENMgY+HxC0s=;
 			KSC 14.2\;KSC 15.0|ksc|cfg_ksc.xml|QMJRGD9Re4bFBpb3DOX8t/o3LJ0IWL0izlfMv0dgnnw=;
 			KICSNET 4.0.1.*\;KICSNET 4.1|kicsnet|cfg_kicsnet.xml|LIKk5f8mvfjpQYDed09cpuh1ZHGIQ2GM7q6LLTq0Sr8="/>
-	<File
-		App="KAVSDK 8.10.1.*"
+	<Files
 		OS="Linux"
 		SrvPath="kavsdk/nix"
-		Name="cfg_kavsdk_nix_8_10_1.xml"
-		DSKM2="2uKnEHVTmwOlaIy1kCVVc2+NgbgcCjhOBp3vzsvLna8="/>
+		Item="App;Name;DSKM2"
+		List="
+			KAVSDK 8.10.1.*|cfg_kavsdk_nix_8_10_1.xml|2uKnEHVTmwOlaIy1kCVVc2+NgbgcCjhOBp3vzsvLna8=;
+			KAVSDK 8.10.2.*|cfg_kavsdk_nix_8_10_2.xml|Q9FvuGXVSA+iYu+P5ho+544d1cS7bInfBYLtDvVrKa0="/>
+	<File
+		App="KSMG 2.1.*.*"
+		SrvPath="ksmg"
+		Name="cfg_ksmg_2.1.0.xml"
+		DSKM2="jwLyY3EL4ajR3BtqKNKLH3UY8yx4QghMk4mVqI0OOCE="/>
 	<File
 		CompID="HASHES_SHA256"
 		Name="config-1313g.sha2rg"
-		DSKM2="3FByG35D3M6M3y9U4Bqytl2fLb9btbNK3+sZXPgM79Y="/>
+		DSKM2="m1P1tDaNd5TFjEuiSnhovUuwOoI4hnasNUA8mZNEKKg="/>
 	<Index
 		App="!KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS|KSDE|KASPERSKY|KES|SAFEKIDS|KPMWIN|KAR|KARH|KAVMAC|KESMAC|KSKMAC [1,6,10-12,19-21,23,24];KSDE 19"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[0-4].*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[0-4].*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.5.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.5.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KASPERSKY 21.6.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KASPERSKY 21.6.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS 21.6.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS 21.6.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.7.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.7.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.8.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.8.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.9.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.9.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.13.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.13.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.14.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.14.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.15.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.15.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.16.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSOSPC|KSOSFS|KASPERSKY 21.16.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.[0-4].*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.[0-4].*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.5.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.5.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.6.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.6.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.7.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.7.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.8.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.8.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.9.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.9.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.13.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.13.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.14.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.14.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.15.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.15.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.16.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 21.16.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 20"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSDE 20"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.3"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.3"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.4"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.4"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.5"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.5"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.6"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.6"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.7"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.7"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.8"
 		Target="[0-262142]"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.8"
 		Target="262143"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.9"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.9"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.13"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.13"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.14"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.14"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.15"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.15"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.16"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KES 21.16"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS 20.*.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS 20.*.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS 19.*.*.*"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAV|KFA|KIS|KSM|PURE|KSOSPC|KSOSFS|SAAS 19.*.*.*"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="SAFEKIDS [1,23]"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="SAFEKIDS [1,23]"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 10.1"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 10.1"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 10.[2-3]"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 10.[2-3]"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 23"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 23"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 24"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KPMWIN 24"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAR|KARH 6"
-		Target="[0-131071]"
+		Target="[0-26214]"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAR|KARH 6"
-		Target="[131072-262143]"
+		Target="[26215-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAVMAC [23-24]"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KAVMAC [23-24]"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KESMAC 11"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KESMAC 11"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KESMAC 12"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KESMAC 12"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSKMAC 1"
 		Target="0"
 		SrvPath="mod"
 		Name="mod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Index
 		App="KSKMAC 1"
 		Target="[1-262143]"
 		Name="unmod-config-1901g.xml"
-		Date="14122023 0823"/>
+		Date="19122023 1222"/>
 	<Key2
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="config-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAIJAERFcrnsIMcU2TTYMPgfyuJ7jyBM71dBq7T505rekT3831X+lB/sjBKM4juLm/5Dsv7ewVFYKyTsPEcBJfhcBAB4JogEAAAIAAigGAENPTkZJRwMAAigEAEJBU0UBAAAJquhcgQ0KOiEyODQwMUdXc2luSWREb3ozVDdFRW9Xc2tVUWpBK0ovaTdlMDZNbHVDeWl5REQ5S0JQNG9jUXEyY0kvT3dnNHMxQll5a1RBeVVxZGVtQXdmbXJ5TGY3QU1YbS8vNCUl</Key2>
 </Update>
-:!28401GWATJVqNAsWrlsGRd2BN9qVBRyhJ2su/ADWssSAzlR/GKXZ5KX3xnb44zJeeoDAI9Pab9wiIrTY5X8xnUctHO35%%
-=!AQAA2gsAVULRPQAA0‚Ö+¸tŽ ‚Ä1‚À0‚¼10
+:!28401GmNJ0cujZXoYLMBi7o9N8wPgfxymwNnvuYMyehuCQqKxauyd+ZQY0R4XxRMCxqjUJ/6/+TC2O8IlbFR35JL92K9%%
+=!AQAA2QsAVSYLyAAA0‚Õ+¸tŽ ‚Ã1‚¿0‚»10
 *…0B+¸tŽ 200.0
-*… ß&L2ážGÒöÝõã¬Ô>œWkD–ô– 8| ‚”0‚:0‚ç  „hž6¯OW°v­“o°$Ý0
+*… o‰üÁâ÷löjÓ@8¨[Çi¼Þ2Bcd¢äïÄq ‚”0‚:0‚ç  „hž6¯OW°v­“o°$Ý0
 *…0G10	URU10UMoscow10U
 Kaspersky Lab10U3520p10200903110145Z480120110145Z0J10	URU10UMoscow10U
 Kaspersky Lab10U	3520p1_KL0h0!*…0	*…*…C @Ã¤µ@‡ò‘ÃY6º˜I®…_AyØ´¿x£•O{b\CgF@:õ&¡04Nlæà‡éæ£E†7ñ·æ£O’©_—´/P£¡0ž0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0Uÿ0Uÿ0ÿ0#+¸tŽÿ0+¸tŽ0
@@ -549,13 +556,12 @@
 ±³‡/x\ƒ>åðµ6-„wG6,­ÓcÁ«I¦¢J`ŸkA¹—]ý4ìïU£©0¦0+U#$0"€ Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0)U" {¢³^ƒ6Õ®(ICÜÑãÿßP…übZìÅgßeIÔ0Uÿ€0U%ÿ0
 +0$+¸tŽÿ0+¸tŽ0
 *…A =ÿ‘¥kqðÃŠ2å§4ó¢É3v\~ÃÝGç’Hî
-ÞxÖßÈ}ŠQT_”"”\îha‡·J’í O7Äð1‚Ë0‚Ç " {¢³^ƒ6Õ®(ICÜÑãÿßP…übZìÅgßeIÔ0
+ÞxÖßÈ}ŠQT_”"”\îha‡·J’í O7Äð1‚Ê0‚Æ " {¢³^ƒ6Õ®(ICÜÑãÿßP…übZìÅgßeIÔ0
 *…0
-*…@?é°ÌùÖ¼2¢²Ó¬kQSÅ=Å!û:‡°¢2 \Š!è ä
-3ŽJjí÷øø‘FY,1xœ*K1Öç“¡‚B0‚>
-+‚71‚.0‚*	*†H†÷ ‚0‚10
-*…0j*†H†÷	 [Y0W*0.0
-*… ÅÔºÁH‰Ó7½R¨í«$ù$:xÓ626ì3W·2û20231214082342.8570861Z ‚Z0‚0‚É  jŒnO³€ÄhÄÔ_U‹0
+*…@a0­å×-òdfÖßâœS£yê`w”€ó$/$¨ºy ˜eXæðèGT	_šÙ•Å3Þ»¨(¾á¸  ¡‚A0‚=
++‚71‚-0‚)	*†H†÷ ‚0‚10
+*…0i*†H†÷	 ZX0V*0.0
+*… [ý–OÉ9Áe·¸K_yd6\Kº{ëQÄwŽø¶Æóë‚20231219122313.089783Z ‚Z0‚0‚É  jŒnO³€ÄhÄÔ_U‹0
 *…0T10	URU10UMoscow10U
 Kaspersky Lab10U3520p1_KL_Timestamp0231107102946Z240106102946Z0O10	URU10UMoscow10U
 Kaspersky Lab10Utype=Timestamp0h0!*…0	*…*…C @†ÁÀûha­K	²YÅGø7{©;N)‘'¾‚n{r¬…á>T&Ò›ù²Rv©†ÅY6£gt!?üaÐñ´¼£r0p0+U#$0"€ ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0)U" &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0U%ÿ0
@@ -569,6 +575,6 @@ JÀ¬X5­Œ"Âà¼˜–ØHnQ2„¿e0‚60‚ã G¢~YFC®¼ÆADm\™ò0
 €{”×£”0‘0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0Uÿ0Uÿ0ÿ0U%ÿ0
 +0
 *…A (^·ÇíâÔãi!rO…@aÇn^è æ²•ï«„Èôî*Õƒ1÷8J-=§ OÃ{BzÍIª;ð¤™¨õJ1‚80‚4 " &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0
-*… °0	*†H†÷	1*†H†÷	0	*†H†÷	1231214082342Z0/	*†H†÷	1" <$Gï·,åÙ°)*É@ÙðâOS78ÁÄxŸìô†0C*†H†÷	/1402000.0
+*… °0	*†H†÷	1*†H†÷	0	*†H†÷	1231219122313Z0/	*†H†÷	1" Þ×[·o‘ƒÈ]Ô&8y]›¥Ô‘;T„DÈ˜o0C*†H†÷	/1402000.0
 *… ªâ{ÿÒ€Â™¼Œ,ùï®i•-fß›Þ5°Á¡·q&{0
-*…@×Gì¿Ù S˜ãv«Î¿|Ú;ÆÄ²ÃÎ‘¸b»ÌŠ ±´rÀgç\¸JX2€?å¦í~ü1[Más°#ÙF%%
+*…@$HSz(ž7£Å(šÁ[v’K‚—ÔêWˆOÚSoÒ.å“m.É>Köô²P–êÓ'Rõd‚S‚N%%
