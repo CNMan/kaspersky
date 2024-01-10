@@ -1,6 +1,6 @@
 <Update
-	Date="08012024 2200"
-	BlstDate="08012024 0805"
+	Date="09012024 2200"
+	BlstDate="09012024 2005"
 	ObjectType="2=KSN;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -41,8 +41,8 @@
 			KIS\\|KAV\\|PURE\\|KSOSFS\\|KSOSPC 15.0.[0-1].*|ksn_helper5.xms|MeBdea/TP8AATAlSmmZx2wCygw3W/7xs32egn4FH1Mk=;
 			KAV\\|KIS\\|PURE\\|KSOSPC\\|KSOSFS 15.0.2.*|ksn_helper5_2.xms|MeaB0MbCURhi321XuIvUqZm86tVVjzezccJLHS9YFHI=;
 			KIS\\|KAV\\|PURE\\|KSOSFS\\|KSOSPC 16.0.0.*|ksn_helper6.xms|fmP5ID+zlamv76wwqQ/egn19wqBuqmyVQ8p2vzjDSZc=;
-			KSE 9.[0-4].*.*\;KSH 9.[0-2].*.*|kh_kse9.xms|eXBSWDgGeDTt1GQVe7knqpWiUNswaAljQAwRMEJALGg=;
-			KSE 9.[0-3].*.*\;KSH 9.[0-2].*.*|kc_kse9.xms|ElM+3A0vaMVdfO0N543dCP99wQykdISASMeJlUnVxzU="/>
+			KSH 9.[0-2].*.*|kh_kse9.xms|eXBSWDgGeDTt1GQVe7knqpWiUNswaAljQAwRMEJALGg=;
+			KSH 9.[0-2].*.*|kc_kse9.xms|ElM+3A0vaMVdfO0N543dCP99wQykdISASMeJlUnVxzU="/>
 	<Files
 		App="KSH 9.3.*.*"
 		SrvPath="gdpr"
@@ -85,7 +85,7 @@
 			KAVSDK 8.9.1.*|kc_kavsdkl3_3.xms|KLK2mC7YmB0eHgtxD8PUDxI0jrS2nJY1sT9GB8Upl80=;
 			KAVSDK 8.9.1.*|kh_kavsdkl3_3.xms|2Cg5ItlrLllsUylQs4RJtinNQTYlBqspY4yL960cqK8=;
 			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*|klsrl.xml|u8pg6qAFMD33RZsRqmXFKhkg7XigkwUNaG33b+37VKI=;
-			ESS [2-3].[0-3].*.*\;KES 10.[2-3].*.*\;KES 11.[0-4].*.*\;KES 21\;KESMAC 10.2.*.*\;KESMAC 11.[1-3]\;KESMAC 11.0.[0-1].*\;KESMAC 12\;KESSL 3\;KICS 2.[0,5,6].*.*\;KICS 3.[0-2].0.*\;KSC *.*.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12\;KSMG 2.1.0.*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KSVLASVMPRG 6.0.*.*\;LENA 3.12.*.*\;LENA 3.9.*.*\;SOYUZ 3.[7-16].*.*\;WSEE [10-11].*.*.*|kpsn_certs.pem|41/MH3g2KAjLjLI509sgczLfVCdyi3ZlVJ059nHIhq4=;
+			ESS [2-3].[0-3].*.*\;KES 10.[2-3].*.*\;KES 11.[0-4].*.*\;KES 21\;KESMAC 10.2.*.*\;KESMAC 11.[1-3]\;KESMAC 11.0.[0-1].*\;KESMAC 12\;KESSL 3\;KICS 2.[0,5,6].*.*\;KICS 3.[0-2].0.*\;KSC *.*.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12\;KSMG 2.1.0.*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KSVLASVMPRG 6.0.*.*\;LENA 3.12.*.*\;LENA 3.9.*.*\;NGFW 1.0.0.*\;SOYUZ 3.[7-16].*.*\;WSEE [10-11].*.*.*|kpsn_certs.pem|41/MH3g2KAjLjLI509sgczLfVCdyi3ZlVJ059nHIhq4=;
 			KSC 10.*.*.*|kc_sc.xms|JpIPxLwYe+/3EFWfjc8wt3CAHnn2HrzJs4/W1/eJaqY=;
 			KSC 10.[2-4]|ksn_helper.xms|Jly8Iz8dD1VL8wXi6FrkF7wd83HiavWggV56JOgmsl0=;
 			KES 10.[2-3].*.*|kc_kes10sp1.xms|DjF9IGCvZUy9ZhH97FXglJ5PlhKBQ/GFD/EqyCEkh5s=;
@@ -100,10 +100,6 @@
 			KISMAC 15.*.*.*|kh_kismac.xms|L+nIp1o/5LaR442VZnudOhflKPVGz7OlgnDaky4Ra+s=;
 			KISMAC 18.0.[0-1].*|kc_kismac18.xms|+ZN5p1VKGSdn8P946lXRMUahJ3e92RXV5s0ZbabAX2o=;
 			KISMAC 18.0.[0-1].*|kh_kismac18.xms|SNoBQmzZ2ecPptowFoL7ewLufgL5hAaS7tCcImaylPc=;
-			SAFEKIDS 1.0.3.*|kh_kids_w_1.0.3.xms|mvb5LuGOkh193MimrNfSfPs5zD/2UR8UwjQ3C/ysDbo=;
-			SAFEKIDS 1.0.3.*|kc_kids_w_1.0.3.xms|EnEpIEVyFRKtQda5WPIZNw0ofjmM7X/v9etODWRsteo=;
-			SAFEKIDS 1.0.4.*|kh_kids_w_1.0.4.xms|tyvI6HHLb3B7/fMjw/8iUgjAERx0fCxsgzXMapmIo6o=;
-			SAFEKIDS 1.0.4.*|kc_kids_w_1.0.4.xms|Oc8p7Tk+Od4YoT+mWzpizu3KUdjAjNNu8AuvpTo6c94=;
 			SAFEKIDS 1.0.5.*|kc_kids_w_1.0.5.xms|bqWJDffO/xs7gNHRbXYUR1xPY0Zdn71Hc+Z5eC+VqV0=;
 			SAFEKIDS 1.0.5.*|kh_kids_w_1.0.5.xms|Z7fL9P7ol2L+wl49u9iZq836svUplhY60j8qPSS5O/E=;
 			SAFEKIDS 1.0.5.*\;SAFEKIDS 23.0|ksn_config_kids_w_1.0.5.xms|oNXc4LlpqgDLj77C2zvcY7OD+Xd9qIKt+zNL4i4sXzk=;
@@ -366,15 +362,15 @@
 	<File
 		CompID="HASHES_SHA256"
 		Name="ksn-1313g.sha2rg"
-		DSKM="tB+wsgI1LEQjNl1ahlSFUFbs1Le1TnmNeWH5/t61BRg="/>
+		DSKM="5kxrCyt+GKk3SJqjpy6v3oZVPB1eLACB6nn2LIvp0qk="/>
 	<File
 		CompID="RETR1901_KSN"
 		Shell="xdif;klz;none"
 		Name="ksn-1901g.xml"
-		DSKM="lROE1mF0hBncb6KbYHwUwBdWp57iU4qmqpFPDLXH7hs="/>
+		DSKM="hQngdBwEQhm2+O8BHNQ4GjM2CiaqvqsGynFdQdYutrs="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="ksn-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHv7UWjxCazxN4NUDun9LwJXO+WMVd4AXSfZ25dzr238KZqJAFQJcOACAnxmp7Kca7f8VU/pQfCHWzGEACm3MjoBAB4JpgAAAAIAAigDAEtTTgMAAigEAEJBU0UBAAAJTsvPSg0KOzoxMDRQdGRSWUZrdlBEbXlNYVpIa3pJcXBmTnB0WWJLYTZNZWhQVGdOVkVNa3hwWktuRDVldXV4ZU9BK0Z1ejJRSGo2enRVcDdJRmlMOTFPWTBXOUNQZGFKJSU=</Key>
 </Update>
-;:104CkYcJCUYOXKY+70fJqzhJf4Rmi7dgaBIZAvV7940wDK6rVu7CfCxljtIL/rNin/bTT4Uut2iRih8EwE8shzAy%%
+;:104J+g7JGBarM4oakOvR9Ni6s8Jmwcvq3tpVfdqdLHsEvEG+Hgf6aklSBnePh+TuLTiU4zywB43r+um5ErHSRrK4%%
