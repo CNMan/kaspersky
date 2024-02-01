@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
 
-	<!-- 2023-09-22T20:54:00.000Z-1695416065 -->
+	<!-- 2024-01-30T20:14:00.000Z-1706645699 -->
 
 <!-- ############################################################################################################### -->
 <!-- Part 0001 Start 2021-10-12T13:22:00.000Z-1634044928 -->
@@ -856,6 +856,31 @@
 	<Image Id="{B9D466E2-F9EA-A7FC-2A0B5FB5E80FB75E}" CmdLine="eventcreate /T * /L * /SO * /ID *" />
 	<Image Id="{D0455B0F-B6ED-FE3B-2CAD202B5E360AFF}" CmdLine="C:/Program Files/Websense/Websense Endpoint/EndPointClassifier.exe C:/Program Files/Websense/Websense Endpoint*\\.\pipe\EndPointConfigComm" />
 <!-- Part 0035 2023-09-22T20:54:00.000Z-1695416065 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0036 2024-01-30T20:14:00.000Z-1706645699 -->
+	<Image Id="{511CD9A6-84BB-4192-58504B67B908E0BB}" Path="*zabbix*metroman.exe" >
+		<Signature Subject="* * *" />
+	</Image>
+	<Image Id="{09B74479-CECB-439D-C160E8770299C167}" CmdLine="/c  &#9;c:\programdata\zabbixscripts\metroman.exe *" />
+	<Image Id="{77A4D8B1-3F92-BCBB-AB51AA7799F47470}" CmdLine="/c  &#9;&#9;c:\programdata\zabbixscripts\metroman.exe *" />
+	<Image Id="{A2A409AC-948D-ACAB-D51E054B8F8B77FF}" CmdLine="/C  powershell.exe -exec bypass -nologo -noprofile -File C:\ProgramData\ZabbixScripts\Utilization\*" />
+	<Image Id="{6F3F11B2-E383-9671-B597A8D9E6C7165B}" CmdLine="powershell.exe -exec bypass -nologo -noprofile -File C:\ProgramData\ZabbixScripts\Utilization\*" />
+	<Image Id="{53D71F52-4D20-7DD2-26A43A363893FF1C}" CmdLine="/c  c:\programdata\zabbixscripts\metroman.exe *" />
+	<Image Id="{B4B48C03-41AA-F1A8-2A11B6A88AE9C6D3}" CmdLine="/c  &#9;powershell.exe -exec bypass -nologo -noprofile -file c:\programdata\zabbixscripts\utilization\*" />
+	<Image Id="{2EB5A140-45FF-56FA-29CA3D16874E3B55}" CmdLine="/c  &#9;&#9;powershell.exe -exec bypass -nologo -noprofile -file c:\programdata\zabbixscripts\utilization\*" />
+	<Image Id="{686A24C0-0459-1059-3DD11B78493339A2}" CmdLine="/c  &#9;&#9;powershell.exe -exec bypass -nologo -noprofile -file c:\programdata\zabbixscripts\inventory\*" />
+	<Image Id="{6DA56187-39F7-7CCC-A0D435647E938981}" CmdLine="/c  &#9;powershell.exe -exec bypass -nologo -noprofile -file c:\programdata\zabbixscripts\inventory\*" />
+	<Image Id="{6DA56187-39F7-7CCC-A0D435647E938981}" CmdLine="/c  &#9;powershell.exe -exec bypass -nologo -noprofile -file c:\programdata\zabbixscripts\inventory\*" />
+	<Image Id="{71C9C5D7-9DBD-076C-0510EDB803000551}" CmdLine="powershell.exe  -exec bypass -nologo -noprofile -file c:\programdata\zabbixscripts\inventory\*" />
+	<Image Id="{FB1C4F7E-DFC3-B711-E50D92CC8C654543}" CmdLine="/c  &#9; &#9;powershell.exe -exec bypass -nologo -noprofile -file c:\programdata\zabbixscripts\inventory\*" />
+	<Image Id="{649C8F30-105D-63EB-7B3DCA26C7C895A2}" CmdLine="/c  &#9;&#9;qprocess outlook.exe&#62;nul 2&#62;nul &#38;&#38; echo 1" />
+	<Image Id="{C3B6853A-BB1C-3A56-FE9010BA809900ED}" CmdLine="/c  &#9;&#9;qprocess excel.exe&#62;nul 2&#62;nul &#38;&#38; echo 1" />
+	<Image Id="{33DAC094-5143-D945-CDE5E296CB15270E}" Path="C:\Program Files\Zabbix*zabbix_agent*" >
+		<Signature Subject="*Zabbix*" />
+	</Image>
+<!-- Part 0036 2024-01-30T20:14:00.000Z-1706645699 -->
 <!-- ############################################################################################################### -->
 
 </Filters>
