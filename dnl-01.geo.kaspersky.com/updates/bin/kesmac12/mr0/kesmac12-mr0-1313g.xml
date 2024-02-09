@@ -1,28 +1,34 @@
 <Update
-	Date="30052023 1231"
+	Date="08022024 0708"
 	ObjectType="2=KESMAC12;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="10"
+	MaxDownloadSizeKb="44700"
 	CompID="KESMAC12"
 	Shell="bdif;klz;none">
-	<Patch
-		App="!KESMAC 12.*.*.*"
-		Lang="LangNone"
+	<Patches
+		App="KESMAC 12.0.0.325"
+		OS="Mac"
 		FixName="a"
-		SrvPath="dummy"
-		LocalPath="%ProductFolder%"
-		Name="dummy.txt"
-		DSKM="/dVk1hcoLeSkjIl2RpM3J0YwR1nYDv+5kQpzbMZMnNU="/>
+		SrvPath="12.0.0.325"
+		Item="LocalPath;Name;DSKM"
+		List="
+			%ProductRoot%/Binaries|libsystem_interceptors.dylib|vs4AMzhrgXEN5FxAusft5PLgaKERCzlUil2tIQkSqt4=;
+			%ProductRoot%/Binaries|libbl.dylib|j24dgf0bPHY0LzW6iCUmvZxLjQGevuqqBXfJT1Pr+oI=;
+			%ProductRoot%/Binaries|libcomponent_status.dylib|DhMVncw+uMJL3afQRrRihRCjci89G4rTTIVDzuaBkgs=;
+			%ProductRoot%/Binaries|libcomponent_status_meta.dylib|3+/k5IaZB0ldX5ruPZzHXB5JHCT302QWTQmIZtsW3DM=;
+			%ProductRoot%/Binaries|libmodel_risks.dylib|K1TnOX8VnuVZfGricgHZeGdVXkss1oFAcotFbytTmM0=;
+			%ProductRoot%/Binaries|patch|ieDdW3gA2XeDwFFrR66PeciWa9sBk3+rIXjPRcXC0D4=;
+			%ProductRoot%/Data|kav_app.tar.gz|12BIKQb9dyqL1AGTT+4qAWYpRDUecJwnT9PZNhYtSEU="/>
 	<File
 		CompID="RETR1901_KESMAC12"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="kesmac12-mr0-1901g.xml"
-		DSKM="XnIQrwv0h13Nq8IcwxSkFMhikCCqnfbFi8YdCGsX3s0="/>
+		DSKM="CD17aaUD5y1mVAiQUHenZQlcRhuZPjBQQBaAW1i3omA="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="kesmac12-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFJJs89E4MwHhPRXWxGbGWOfenjDACFfSqe9d5OaGU7zapiKPtseZm9RYUTagFIr8yb1l99eRMJDcfIsMq0bsKsBAB4JPwIAAAIAAigIAEtFU01BQzEyAwACKAQAQkFTRQEAAAkCpA1mDQo7OjEwS0FIbmVxQzNQc1lGTUdZWkptbmJhSzlpRU56c09SS0ludFlOOGlKMFlIN1MwZ2dlNlN4d2R1Si9NcVNjVU8rWURxamdPU1NKTXNINWFublFzakl2cUwlJQ==</Key>
 </Update>
-;:104C9+ZbWR66YKftq9UNf7uo42kwUIVnO+iIhCW5VUHXFMGkJ1FaVCUyspW1Lb2JseugKgBgC5dQY/fi8Ps9w7HF%%
+;:1040L8gapW81bLIU43q3sLr60uQb3F48oDkE21x1HeP0lSMuTs5CXNHLkMT+gZ9wPljRUEFk7Izv6Nz2HCSPQNT9%%
