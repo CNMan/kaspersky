@@ -1,6 +1,6 @@
 <Update
-	Date="14022024 2256"
-	BlstDate="14022024 0805"
+	Date="15022024 1158"
+	BlstDate="14022024 2005"
 	ObjectType="2=QSCAN;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -26,16 +26,16 @@
 			KAVMAC [22-25]\;KESMAC 11.[0-3].*.*\;KESMAC 12.[0-1]\;KISMAC [19-21].[0-1].*.*\;SAASMAC [20-21].[0-1].*.*|Mac|x64|x64/mac|qscan.esm|02cEnoZh+N0N9UPwRsFulLceGH0AVpbfqBAQc/3R9u8=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]\;KSVLA 5.[1-2].*.*|Linux|i386|i386/nix|qscan.esm|Qkh2eO5INSjioCGXHoeM7T9WRxxbdZCFngA2fCedEOk=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]\;KSVLA 5.[1-2].*.*|Linux|i386|i386/nix|libqscan.so|dIr5QIy00jyyhxV/iwpwfR4iaePd37+srEchC/QR1o8=;
-			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]\;KSVLA 5.[1-2].*.*|Linux|x64|x64/nix|qscan.esm|Qkh2eO5INSjioCGXHoeM7T9WRxxbdZCFngA2fCedEOk=;
-			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]\;KSVLA 5.[1-2].*.*|Linux|x64|x64/nix|libqscan.so|eewlqWDvNKzMn+F1KrIpk91WirDCW0mAld0xTtkzhWc=;
+			KASPLINUX 24.*.*.*\;KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]\;KSVLA 5.[1-2].*.*\;KVRTLINUX 24.*.*.*|Linux|x64|x64/nix|qscan.esm|Qkh2eO5INSjioCGXHoeM7T9WRxxbdZCFngA2fCedEOk=;
+			KASPLINUX 24.*.*.*\;KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]\;KSVLA 5.[1-2].*.*\;KVRTLINUX 24.*.*.*|Linux|x64|x64/nix|libqscan.so|eewlqWDvNKzMn+F1KrIpk91WirDCW0mAld0xTtkzhWc=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]|Linuxs-104|x64|x64/nix-104|qscan.esm|Qkh2eO5INSjioCGXHoeM7T9WRxxbdZCFngA2fCedEOk=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [10-12]|Linuxs-104|x64|x64/nix-104|libqscan.so|JlMZNm3JWC56cp6VvHx7xgPc5nLEqZhVQNW3FsNQo2k="/>
 	<Files
 		Shell="bdif;klz;none"
 		Item="App;OS;Arch;SrvPath;Name;DSKM"
 		List="
-			KSLS 10\;KSLS 11.[3-4]\;KSLS 12|Linux|a64|arm64/nix|qscan.esm|Qkh2eO5INSjioCGXHoeM7T9WRxxbdZCFngA2fCedEOk=;
-			KSLS 10\;KSLS 11.[3-4]\;KSLS 12|Linux|a64|arm64/nix|libqscan.so|MJ+FN/gdEHQKO2SjHAQKL5uSG0yAvmg0A9SBuMP5Pzw=;
+			KSLS 10\;KSLS 11.[3-4]\;KSLS 12\;KVRTLINUX 24.*.*.*|Linux|a64|arm64/nix|qscan.esm|Qkh2eO5INSjioCGXHoeM7T9WRxxbdZCFngA2fCedEOk=;
+			KSLS 10\;KSLS 11.[3-4]\;KSLS 12\;KVRTLINUX 24.*.*.*|Linux|a64|arm64/nix|libqscan.so|MJ+FN/gdEHQKO2SjHAQKL5uSG0yAvmg0A9SBuMP5Pzw=;
 			KAVMAC [22-25]\;KESMAC 11.[2-3]\;KESMAC 12.[0-1]\;SAASMAC\\|KISMAC 21.1.*.*|Mac|a64|arm64/mac|qscan.kdl|6KHX67lb9aIuso6rn2fElEG4W/RznJt854bHwPzPttU=;
 			KAVMAC [22-25]\;KESMAC 11.[2-3]\;KESMAC 12.[0-1]\;SAASMAC\\|KISMAC 21.1.*.*|Mac|a64|arm64/mac|qscan.esm|02cEnoZh+N0N9UPwRsFulLceGH0AVpbfqBAQc/3R9u8=;
 			KSLS 11.[3-4]\;KSLS 12|Linuxs-125|a64|arm64/nix-125|qscan.esm|Qkh2eO5INSjioCGXHoeM7T9WRxxbdZCFngA2fCedEOk=;
@@ -80,10 +80,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-qscan-1901g.xml"
-		DSKM="AQ/UFdYDFa/VXAWAew0yeFWFy6klZzEwI4bFY+qYjO0="/>
+		DSKM="B25ukVEDA0CKBxP5t8yElFBXZSoaw1M8ijRV39JLJrg="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-qscan-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFmAgiiLK2JHmjOqIW3u47sDZ6R6SYSa9cmYtFiUx7kAY4OIldypidsRjNu5WfWFg2mFx3gRAJg8OF/v1g5tV+gBAB4JpwAAAAIAAigFAFFTQ0FOAwACKAQAQkFTRQEAAAn1e+wWDQo7OjEwYVZNUC82bGVNTGFIK0ozWkZlWGIzTU9kVlhLMnVMUE9CQXUzeXIzRXlkeGdwS1BnajRZeHMxZVA1Lzk4OUNlelpranEvWTd0L2pvbit1VXpDWUFSenElJQ==</Key>
 </Update>
-;:1049nPjOYQxDj6ZhjogaeXOReRqgK1aS5JYnq/ZQ+SxPnZ2OZ1JhayzQ5GHdM1pjI5snvmWAUyVwWVG2CF0yKPKE%%
+;:10K6zbTQ4NgLhpqeA3ykqL0pFWX/ei9lll4owZvIXTHOx/1rmUIs6HSJdoh0WQ/gLujCnNA7XfBQcrpU8wVDHGKz%%

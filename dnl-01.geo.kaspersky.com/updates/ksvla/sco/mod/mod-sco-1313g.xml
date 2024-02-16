@@ -1,6 +1,6 @@
 <Update
-	Date="14022024 2256"
-	BlstDate="14022024 0805"
+	Date="15022024 0847"
+	BlstDate="14022024 2005"
 	ObjectType="2=SCO;3=BASE"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -19,8 +19,8 @@
 			KAVMAC [22-25]\;KESMAC 11.[0-3].*.*\;KESMAC 12.[0-1]\;KISMAC [19-21].[0-1].*.*\;SAASMAC [20-21].[0-1].*.*|Mac|x64|x64/mac|sco.esm|TZKvkSjZrN2olKN417sCuYnCJhLnV+7wg6VdUS9L7Js=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]\;KSVLA 5.2.*.*|Linux|i386|i386/nix|libsco.so|Bs9+ox86OLsBJurOAapk84Z8DAOZrGRsOL0tFf/gMKc=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]\;KSVLA 5.2.*.*|Linux|i386|i386/nix|sco.esm|swxFEF4aefb/0NZFXUfWzo2Amb+2Oh/6jDeL4DVXGeY=;
-			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]\;KSVLA 5.2.*.*|Linux|x64|x64/nix|libsco.so|7BeFAIYsClbgfPWuZ0BDHEa4Po4IpAIMPS4cV0FpTxo=;
-			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]\;KSVLA 5.2.*.*|Linux|x64|x64/nix|sco.esm|swxFEF4aefb/0NZFXUfWzo2Amb+2Oh/6jDeL4DVXGeY=;
+			KASPLINUX 24.*.*.*\;KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]\;KSVLA 5.2.*.*\;KVRTLINUX 24.*.*.*|Linux|x64|x64/nix|libsco.so|7BeFAIYsClbgfPWuZ0BDHEa4Po4IpAIMPS4cV0FpTxo=;
+			KASPLINUX 24.*.*.*\;KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]\;KSVLA 5.2.*.*\;KVRTLINUX 24.*.*.*|Linux|x64|x64/nix|sco.esm|swxFEF4aefb/0NZFXUfWzo2Amb+2Oh/6jDeL4DVXGeY=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]|Linuxs-104|x64|x64/nix-104|libsco.so|TLLpds1DImasFnlXdgfgUz78un2H3IZydIlD8Q6w9oI=;
 			KESLKSVLA 12\;KESSL 3.3.0.*\;KICSNL 1.3.0.*\;KSLS [11-12]|Linuxs-104|x64|x64/nix-104|sco.esm|swxFEF4aefb/0NZFXUfWzo2Amb+2Oh/6jDeL4DVXGeY="/>
 	<Files
@@ -30,8 +30,8 @@
 		List="
 			KAVMAC [22-25]\;KESMAC 11.[2-3]\;KESMAC 12.[0-1]\;SAASMAC\\|KISMAC 21.1.*.*|Mac|arm64/mac|libsco.dylib|31OPAm6+fhN8u20coA1VtwPXe/M+T8f56CLlQMTpSJM=;
 			KAVMAC [22-25]\;KESMAC 11.[2-3]\;KESMAC 12.[0-1]\;SAASMAC\\|KISMAC 21.1.*.*|Mac|arm64/mac|sco.esm|TZKvkSjZrN2olKN417sCuYnCJhLnV+7wg6VdUS9L7Js=;
-			KSLS 11.[3-4]\;KSLS 12|Linux|arm64/nix|libsco.so|Lzfuy/rHVh4DDQsrAIWLKoIF0JV3bUdM2sGS7RU1cVc=;
-			KSLS 11.[3-4]\;KSLS 12|Linux|arm64/nix|sco.esm|swxFEF4aefb/0NZFXUfWzo2Amb+2Oh/6jDeL4DVXGeY=;
+			KSLS 11.[3-4]\;KSLS 12\;KVRTLINUX 24.*.*.*|Linux|arm64/nix|libsco.so|Lzfuy/rHVh4DDQsrAIWLKoIF0JV3bUdM2sGS7RU1cVc=;
+			KSLS 11.[3-4]\;KSLS 12\;KVRTLINUX 24.*.*.*|Linux|arm64/nix|sco.esm|swxFEF4aefb/0NZFXUfWzo2Amb+2Oh/6jDeL4DVXGeY=;
 			KSLS 11.[3-4]\;KSLS 12|Linuxs-125|arm64/nix-125|libsco.so|QTHq1b2zx/8E7Kj34rjYZ6jGH2bGb9OucPFmhOvspnw=;
 			KSLS 11.[3-4]\;KSLS 12|Linuxs-125|arm64/nix-125|sco.esm|swxFEF4aefb/0NZFXUfWzo2Amb+2Oh/6jDeL4DVXGeY="/>
 	<File
@@ -55,10 +55,10 @@
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-sco-1901g.xml"
-		DSKM="mprQ9Yua7qQUCrO8/zN7tsvgXJxitiY1L83nWp36cr0="/>
+		DSKM="UJQcSDtngurhJ9hMVCe8y7HcK8+qKjNP9olMs7ftk3o="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-sco-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAD/hRTbTzrq8yku8u3k6OfVPhChIVU4erUMQIGHhyInXL864+Gv4lAsGdy5SwB4q82mx7MHuyHWSrJcei2lrH94BAB4JvAAAAAIAAigDAFNDTwMAAigEAEJBU0UBAAAJq3jBQA0KOzoxMEs0ak1PaGg4MHBJQ1g1MW1aYnBreW0wdzl4RFkvT0RBalY4Z2hCbkY3UWlndHBTZGM0T3RvRTVoaTd3ZDRqL0QwU0RITVI5b0xlMmxBRnlXR01ML3dQJSU=</Key>
 </Update>
-;:10aS1c2cu46FOHVkpGvRVVd25HhTdrs+2ttjGMuP9kADIgXGM7F9obPbk/5SI3qLNZSbfA+vjo9oFqCl9xgmo3m4%%
+;:1042OpIJsmTTnaZeRY3gqt1EVx7Z8gf6SMC345Gpf1dPg+IbHtZyx/Q3UQi7KNgrGKmA8T0Ddvxdq6F/jJ7lGOWt%%
