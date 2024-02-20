@@ -46,4 +46,19 @@
       </ipWhiteList>
     </replace_value>
   </service_settings_patch>
+  <service_settings_patch service_key="0x2282371F">
+    <replace_value path="tracesLocations">
+      <item>HKEY_LOCAL_MACHINE\SOFTWARE\KasperskyLab\UnspecifiedSafeKidsProduct\environment\TraceRootDISABLED</item>
+    </replace_value>
+  </service_settings_patch>
+  <service_settings_patch service_key="0x77AB0E83">
+    <replace_value path="tracesLocations">
+      <item>HKEY_LOCAL_MACHINE\SOFTWARE\KasperskyLab\UnspecifiedKPMProduct\environment\TraceRootDISABLED</item>
+    </replace_value>
+  </service_settings_patch>
+  <service_settings_patch service_key="0x8ACC686C">
+    <replace_value path="tracesLocations">
+      <item>HKEY_LOCAL_MACHINE\SOFTWARE\KasperskyLab\UnspecifiedKSDEProduct\environment\TraceRootDISABLED</item>
+    </replace_value>
+  </service_settings_patch>
 </root>
