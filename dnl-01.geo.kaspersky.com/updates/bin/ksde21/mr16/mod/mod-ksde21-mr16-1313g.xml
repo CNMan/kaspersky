@@ -1,29 +1,30 @@
 <Update
-	Date="29112023 0909"
+	Date="15022024 1504"
 	ObjectType="2=KSDE21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
-	MaxDownloadSizeKb="10"
+	MaxDownloadSizeKb="3720"
 	Shell="bdif;klz;none">
-	<Patch
-		CompID="KSDE21"
-		App="!KSDE 21.*.*.*"
-		Lang="LangNone"
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.16.6.467"
+		ApplyPeriod="0"
 		FixName="a"
-		Patch="none"
-		SrvPath="../dummy_g"
+		SrvPath="../21.16.6.467_ksde_a"
 		LocalPath="%ProductFolder%"
-		Name="dummy_g.txt"
-		DSKM="Mfv52b+oa12sapKdk3OSIAvOVHDaAsfKHVBNm/xt0Mg="/>
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|ucp_agent.dll|/ZcGhUtyQQrVGO48UVnx9Rt9cL4GsDDT2047sKpJWrw=;
+			restart_none|ver_info.json|13cWpsALxJ/fO2CEkqhPmHupVkGZOFqQCLllkgCeY7k="/>
 	<File
 		CompID="RETR1901_KSDE21NTR"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-ksde21-mr16-1901g.xml"
-		DSKM="xgzn1seISaQG5TLhWSlQW2JPV7OtIL810Z/Q1N7R/LQ="/>
+		DSKM="oCQozMLiUL1nT9iepWOXtJMw8kM4DAsibj20jxse8wo="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
 </Update>
-;:10aEoWt4BSQQ2w8k2nKshjUnbidowR9k/TNzy6QVW90Qq8XP03PYkRkIm5sydjKg91VVp8thaTB81kfkjroym3Yf%%
+;:10K9eb+UQA3+t/FL+fdat8ui7IgsEogeYUm/88SpnPyWyD6t59DJ5+VrchaqYXuoX1QC4A6rATDQ7zV5vNS8ObFq%%
