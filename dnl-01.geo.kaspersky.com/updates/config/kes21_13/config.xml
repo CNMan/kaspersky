@@ -1,4 +1,5 @@
 ﻿<root>
+  <feature_flag name="DnsClient.Config.BackgroundDnsBlockingCheckTimeoutSec" value="14400" />
   <service_settings_patch service_key="0xeb5102dc">
     <replace_value path="configSettings_initialized">1</replace_value>
     <replace_value path="configSettings">
