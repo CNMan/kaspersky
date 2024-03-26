@@ -1,5 +1,5 @@
 <Update
-	Date="15042023 1256"
+	Date="12032024 1325"
 	ObjectType="2=KSDE21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -83,7 +83,6 @@
 		List="
 			app_control.dll|PxU9bT0HotWB7MgQ1BvsuCTm9HUuPSYd8KuQu8a9vHg=;
 			avpmain.dll|X2v7YPIljPydMtQlzGHYW08XxUcWuytEBIoha7gPtxg=;
-			instrumental_services.dll|+R8n2u5Uqwffm604A1KWHST9coH3w9MUtj682BJlW+A=;
 			kasperskylab.ui.core.dll|TAZlX8TL0dOXSyPmIEyaZFRsOH/HKGwBf287RGqwvY0=;
 			kasperskylab.ui.core.visuals.dll|1rpKiSxjt9oHCXDbcfufnCgLKugHKS5jYtyKiVX9mDo=;
 			ksn_facade.dll|Uslgs5pa9gBzjDYwRR7bWg5iIOugKKwojbuAoiVdiQ0=;
@@ -275,7 +274,6 @@
 		Item="Name;DSKM"
 		List="
 			product_metainfo.dll|7plNZnSdqKaxg9h0PQDyURIFJkTCRYkyNSl/+q7hcnk=;
-			ksde50mr3.msp|C57AWTLJkWIiKbHsn5EH4Mbjii3E3j967fS3GQ3I0j8=;
 			ksdeinst.dll|LE4bj8RI+g1LIxubBjgHLMCBqS+mtQ5YDawn2coxg/o="/>
 	<Patches
 		CompID="KSDE21NTR"
@@ -296,22 +294,25 @@
 		CompID="KSDE21NTR"
 		App="KSDE 21.3.10.391"
 		ApplyPeriod="0"
-		FixName="j"
-		SrvPath="21.3.10.391_ksde_j"
 		LocalPath="%ProductFolder%"
-		Item="ApplyAction;Name;DSKM"
+		Item="ApplyAction;FixName;SrvPath;Name;DSKM"
 		List="
-			restart_none|ver_info.json|Z+Vp8WnI3BHNUsPkPfjemkYfaK7qgUlOtuccoQ9EDks=;
-			restart_service|bl_ksde.dll|1i2KY1YD5xSmbg+yT4KnSQvhVcXNeJyidAOmuUxrGsU="/>
+			restart_service|j|21.3.10.391_ksde_j|bl_ksde.dll|1i2KY1YD5xSmbg+yT4KnSQvhVcXNeJyidAOmuUxrGsU=;
+			restart_service|k|21.3.10.391_ksde_k|api-ms-win-core-xstate-l2-1-0.cat|MFqw524kRcIHwKQxuaAyJadkS6o7a+LLYSs5gu5G+Pk=;
+			restart_service|k|21.3.10.391_ksde_k|app_core_legacy.dll|KMqf4wmYygEAagDcjIJvqoZZGYZVZ8zcWza315lbEVk=;
+			restart_service|k|21.3.10.391_ksde_k|instrumental_services.dll|rblB3o3punhBLh7C62A3Ay6t5x2yW3yVnCuTAecYG+8=;
+			restart_service|k|21.3.10.391_ksde_k|System.Windows.Interactivity.cat|jjv2BAJMA8+JnAKVPqHlYFbQN79qyeCm1QDKFq/XwjQ=;
+			restart_none|k|21.3.10.391_ksde_k|ver_info.json|5ZlkwpefRIdKS/WhaBfYCZlnsp48a0qo1pM8bgFDB5M=;
+			restart_service|k|21.3.10.391_ksde_k|ksde50mr3.msp|rtDPHwdigfIUKxQALQBFb5Fqs4PIgx3e37Iwm6ECOSg="/>
 	<File
 		CompID="RETR1901_KSDE21NTR"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="unmod-ksde21-mr3-1901g.xml"
-		DSKM="lxsVmJymCYuGF1RuA+JWORzPIMpvwZ6W2jymUkJ6nbE="/>
+		DSKM="yN4Ccy+yctS+40VVys0RaEEXj7xdBT6SG2npJMZ/bjo="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="unmod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
 </Update>
-;:10qGmOCDKItUchN8SS8hxqrYk3ntYZtXliWMIIxGlMV+aKIf615WRRGo3Rqz0OxKMWg6oTVG8oRUAoxjg3/TqR10%%
+;:10aPYfa+ovnIUpA9AIUPzpHZm7eMQkcQifvcYkkXnwUBihovjSTtObPJbVQrvEDMQgce+VWH2vChdl1mpX2f9FfM%%

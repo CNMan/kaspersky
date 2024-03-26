@@ -1,5 +1,5 @@
 <Update
-	Date="15042023 1256"
+	Date="12032024 1325"
 	ObjectType="2=KSDE21;3=BIN"	
 	Format="2.0"
 	DiffsPath="@ServerPath@/diffs"
@@ -42,9 +42,7 @@
 			activation.lt|er5w3MKuap4SOia+pXbAF0HjrUMxnsiB9lpiBKF6dz0=;
 			alerts.lt|q50z3cdVMn5VGHSzwEvyI59c2Nidjm61Mqkw6S3f5rs=;
 			avpui.ini|LGI08SKEZDGtjLJvgLnWhLtOYqDJ6qVS/Dq3N1IY46o=;
-			paywall.lt|FYCS2i3Ktkdp4fwHf9osyuxevIem82s5cWs76gKwFwQ=;
 			settings.lt|evutYyvawjjk7GujA4URO7JS1qNVLkKwQqnlivCqVVI=;
-			tariffs.lt|Hkm+okHtyyFSRfUTgOkK+acZ0d0JNErdByv+MY4Sccs=;
 			toasts.lt|sm0Sl/KCkbdzJ1t0iYlnzchA+iRNNckW9DLHV/C/3wM=;
 			tutorial.lt|VmDSuGRFDdFUIqYCPtexzQRde4IIpt+gQwPYG6OrOa0=;
 			ucp.lt|si7lh2xODiCHiQekvPAhl4EvNHLLhGlFzFBDdeQogao="/>
@@ -302,17 +300,143 @@
 			restart_service|k|../21.3.10.391_ksde_k|app_core_legacy.dll|KMqf4wmYygEAagDcjIJvqoZZGYZVZ8zcWza315lbEVk=;
 			restart_service|k|../21.3.10.391_ksde_k|instrumental_services.dll|rblB3o3punhBLh7C62A3Ay6t5x2yW3yVnCuTAecYG+8=;
 			restart_service|k|../21.3.10.391_ksde_k|System.Windows.Interactivity.cat|jjv2BAJMA8+JnAKVPqHlYFbQN79qyeCm1QDKFq/XwjQ=;
-			restart_none|k|../21.3.10.391_ksde_k|ver_info.json|5ZlkwpefRIdKS/WhaBfYCZlnsp48a0qo1pM8bgFDB5M=;
-			restart_service|k|../21.3.10.391_ksde_k|ksde50mr3.msp|rtDPHwdigfIUKxQALQBFb5Fqs4PIgx3e37Iwm6ECOSg="/>
+			restart_none|l|../21.3.10.391_ksde_l|ver_info.json|Bof352nVpBPsg2WgY4AEx+Mu99gYu3m9KzDE0EKm76c=;
+			restart_service|l|../21.3.10.391_ksde_l|ksde50mr3.msp|v3j2SudZUNYkTiopyXX077I+9UeGvBhyunpLZzATvSg="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="l"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			ar|../21.3.10.391_ksde_l/skin/resources/ar/locs|%ProductFolder%\\\\skin\\\\resources\\\\ar\\\\locs|paywall.lt|duyTMCY0RP6BIjpnzarg+zIR5s3EWFpSPqu8SxhoWh0=;
+			ar|../21.3.10.391_ksde_l/skin/resources/ar/locs|%ProductFolder%\\\\skin\\\\resources\\\\ar\\\\locs|tariffs.lt|I/lw2YldPO2uhikagUzdjONOrR63KPYaC1LKA8s3D6E=;
+			bg|../21.3.10.391_ksde_l/skin/resources/bg/locs|%ProductFolder%\\\\skin\\\\resources\\\\bg\\\\locs|paywall.lt|/D7lul+/SOSig7gmfi39B7DV7vGMglP34zw38FH5SBY=;
+			bg|../21.3.10.391_ksde_l/skin/resources/bg/locs|%ProductFolder%\\\\skin\\\\resources\\\\bg\\\\locs|tariffs.lt|kVXXLJpF6Y8CFiQmFiJwrApf2Bu19+oWE/Y5HYR/40c=;
+			cs|../21.3.10.391_ksde_l/skin/resources/cs/locs|%ProductFolder%\\\\skin\\\\resources\\\\cs\\\\locs|paywall.lt|wWvpmDP35TxK1v2zcKsuQJZrVAg0qL4YgbfOfyZU8ts=;
+			cs|../21.3.10.391_ksde_l/skin/resources/cs/locs|%ProductFolder%\\\\skin\\\\resources\\\\cs\\\\locs|tariffs.lt|E5IKbIfW5VPt3Ck04+it6zqcd1CXbfc0d5tnzwhwT1E=;
+			da|../21.3.10.391_ksde_l/skin/resources/da/locs|%ProductFolder%\\\\skin\\\\resources\\\\da\\\\locs|paywall.lt|XeHxgIkfKvpky0DLFAmvcI9KzOL12t7MXAu0mFqfaA8=;
+			da|../21.3.10.391_ksde_l/skin/resources/da/locs|%ProductFolder%\\\\skin\\\\resources\\\\da\\\\locs|tariffs.lt|xnDlg3XmW7QT1g1XjxeM5aNgRoIeS8Ny4KUnplWXfc8=;
+			de|../21.3.10.391_ksde_l/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|paywall.lt|QoCLUOkNrKarGS1rqqTVERWGUOIQwZRGIORRYdbBiyE=;
+			de|../21.3.10.391_ksde_l/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|tariffs.lt|kOIUGAqaekqwKJtLiRfmxKB1rTnoL+59+9IQ91YwY/g=;
+			el|../21.3.10.391_ksde_l/skin/resources/el/locs|%ProductFolder%\\\\skin\\\\resources\\\\el\\\\locs|paywall.lt|CfC3j8pzoTo3N9YjOkj07Lmo+cw4AiSyDUNhYgwLB78=;
+			el|../21.3.10.391_ksde_l/skin/resources/el/locs|%ProductFolder%\\\\skin\\\\resources\\\\el\\\\locs|tariffs.lt|JXOiDYEk4R6gU4eWol0YHZJyT3wZhhqMt2i6Pe0uIPc=;
+			en|../21.3.10.391_ksde_l/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|paywall.lt|9aY5raDF7c0YC866fN6HqYPwN/rWw8ZY+yMh0YVZDqA=;
+			en|../21.3.10.391_ksde_l/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|tariffs.lt|OOJWcxsaaMRuxmda1HS0OzqGnr2dzjRTWFLczKWk+s0=;
+			es-ES|../21.3.10.391_ksde_l/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|paywall.lt|Kws7yOfGIMe2SYFhQij9jrKifbbLrDkhaxv9CgcxlRM=;
+			es-ES|../21.3.10.391_ksde_l/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|tariffs.lt|TFswml7RAzosnQCKaSyKY+OU1tPH1OQfK7IEqVzqQDw=;
+			es-MX|../21.3.10.391_ksde_l/skin/resources/es-MX/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-MX\\\\locs|paywall.lt|B3NwkIEM9RAq5Mecndsz2b/NHJlHPzOlu84GjXhki/A=;
+			es-MX|../21.3.10.391_ksde_l/skin/resources/es-MX/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-MX\\\\locs|tariffs.lt|ak1slBCBopIJzWv2Z4JFkqaWxQXsSh+cNngvYOgsStE=;
+			es-US|../21.3.10.391_ksde_l/skin/resources/es-US/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-US\\\\locs|paywall.lt|B3NwkIEM9RAq5Mecndsz2b/NHJlHPzOlu84GjXhki/A=;
+			es-US|../21.3.10.391_ksde_l/skin/resources/es-US/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-US\\\\locs|tariffs.lt|ak1slBCBopIJzWv2Z4JFkqaWxQXsSh+cNngvYOgsStE=;
+			et|../21.3.10.391_ksde_l/skin/resources/et/locs|%ProductFolder%\\\\skin\\\\resources\\\\et\\\\locs|paywall.lt|TEAv1BB1+sGAsGQ9CP0aJ5FY1mBwIuNx0OdaNKjPTYs=;
+			et|../21.3.10.391_ksde_l/skin/resources/et/locs|%ProductFolder%\\\\skin\\\\resources\\\\et\\\\locs|tariffs.lt|cFPA7UXr5bMVnRf0+4EAX0VDffQfOBBstLUu2lEq1o8=;
+			fi|../21.3.10.391_ksde_l/skin/resources/fi/locs|%ProductFolder%\\\\skin\\\\resources\\\\fi\\\\locs|paywall.lt|BtEl1gy3XquravnPEGHEEUOJDVUFBvoMNPMbOSr7ofQ=;
+			fi|../21.3.10.391_ksde_l/skin/resources/fi/locs|%ProductFolder%\\\\skin\\\\resources\\\\fi\\\\locs|tariffs.lt|QO452okWyYBW98C+KVTxd+F/e95cqjUEISWG5BVF6n0=;
+			fr|../21.3.10.391_ksde_l/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|paywall.lt|e1pBW4fP4vA6jdtsrL7EOSZOn9qfC0Hk9cTrYsGBiuc=;
+			fr|../21.3.10.391_ksde_l/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|tariffs.lt|SC1TzdnlrOfPDKFSjcWu2JnD6vJBOcq3Gp3/gzXIHNs=;
+			hu|../21.3.10.391_ksde_l/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|paywall.lt|VWAfi8XSvV0s3+ykXcxHePD9uC/si1L1CeAW7oNLZTI=;
+			hu|../21.3.10.391_ksde_l/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|tariffs.lt|jYyrt0TF1gvXvcWRO9nk15kcfQVFg7LaCpv8jaxBp38=;
+			id|../21.3.10.391_ksde_l/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|paywall.lt|fqkcCNhlYdbgiry5Bau3klHfqpEIIluI7zqz18OTnFI=;
+			id|../21.3.10.391_ksde_l/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|tariffs.lt|8E1fFt4cKmkkkzOz3JUaEA53II0pNcUX2DAYhPQ3OzA=;
+			it|../21.3.10.391_ksde_l/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|paywall.lt|3OG1SMrvRbbTeOovitRxzGo22ENMjFQXn8uy75WxSFs=;
+			it|../21.3.10.391_ksde_l/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|tariffs.lt|UX50qG6VjerfrUEbX/RYgXDXD+3PNfFUeit4TiFfhrU=;
+			ja|../21.3.10.391_ksde_l/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|paywall.lt|ag2GB5U/TegnYYwT4frMfWGRGshZJPYmxnbdJHn4iL8=;
+			ja|../21.3.10.391_ksde_l/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|tariffs.lt|9eJmIIclqqbxsP0pzFP5wtW1p10Vy1/LrjkJ9n42PD0=;
+			ko|../21.3.10.391_ksde_l/skin/resources/ko/locs|%ProductFolder%\\\\skin\\\\resources\\\\ko\\\\locs|paywall.lt|g6ykcLHMISTHofENH0u0bluy/kAosNsHj3G9LXDeYsU=;
+			ko|../21.3.10.391_ksde_l/skin/resources/ko/locs|%ProductFolder%\\\\skin\\\\resources\\\\ko\\\\locs|tariffs.lt|8SochpfRloVIaOypTJbRgRu8q/GOEI5v2AT/UqrYMuU=;
+			lt|../21.3.10.391_ksde_l/skin/resources/lt/locs|%ProductFolder%\\\\skin\\\\resources\\\\lt\\\\locs|paywall.lt|L94HldBvkjNprVuGOSxDz4olcnIfdrAskbwyowT3fmY=;
+			lt|../21.3.10.391_ksde_l/skin/resources/lt/locs|%ProductFolder%\\\\skin\\\\resources\\\\lt\\\\locs|tariffs.lt|MctrClsbonenD2uH/7m1CoZ5BSzXIzqzphENGle2XuE=;
+			lv|../21.3.10.391_ksde_l/skin/resources/lv/locs|%ProductFolder%\\\\skin\\\\resources\\\\lv\\\\locs|paywall.lt|eguUwLL2TTBRC+ZntqcreW/IaLmfYW4lf3SGhgwaVrU=;
+			lv|../21.3.10.391_ksde_l/skin/resources/lv/locs|%ProductFolder%\\\\skin\\\\resources\\\\lv\\\\locs|tariffs.lt|izodj7KwJtGR6r8yWkf8Dh9PFKlbWMkUXatm5iie8t0=;
+			nb|../21.3.10.391_ksde_l/skin/resources/nb/locs|%ProductFolder%\\\\skin\\\\resources\\\\nb\\\\locs|paywall.lt|rlvgh6UCwLWpeSdCRPnF5M6bt6soT1E0bsEcoNoYjdQ=;
+			nb|../21.3.10.391_ksde_l/skin/resources/nb/locs|%ProductFolder%\\\\skin\\\\resources\\\\nb\\\\locs|tariffs.lt|p4Y4JJPkyhjMOruNNs+nlynbQ/TlsWlf/JkdeOoVP9o="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="l"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/MoreFeatures|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\MoreFeatures|vk.svg|HpHaafxCeaj6vfkUYJ9pZtvakXessR3+DqPAyFvKepg=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/MoreFeatures|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\MoreFeatures|vpn.svg|8u0Ax3pmwpTBUCdKlPPz0aeaq6om3oItDK7gsrNw1ew=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/MoreFeatures|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\MoreFeatures|webcam.svg|brPnb6hH2omokBi4kZVDtMmlYV9EVxf63nR/GBhgTAo=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/MultiDevice|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\MultiDevice|multidevice.svg|CRlomm3tOrriWSR7kyBLVzI4afho7Y/qbqrfp0GicFg=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|bulletcheckmedium_bulletmark.svg|hvKwHT/7MpHkh7q3TDQvsxbXwJbPR7krJVypAGtwK8Q=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|bulletchecksmall_bulletmark.svg|oXLVm7uWcgbElSO+J2TKlbOvHABApYRnp8Fc0JP/zHo=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|bulletcirclemedium_bulletmark.svg|5Gbsz14shsaQtVtjaJW2js602z71wS7Efnsaqkp5u1o=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|bulletcirclesmall_bulletmark.svg|jsW/kIpijTzzZKN22EkXQusRwVhOpkbwoKtbmdig1oo=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|checkbox_icon.svg|J8F511ECOLRTyLlun0tLri+6+ZON1YDuAuC5LJKN1JE=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|checkbox_iconpartial.svg|GqlxEGvSnjp65fxoW0R6QBXKXxwkpVvQa6Qvyy0JfBU=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|combobox_icon.svg|XkjrdhMKfELWjJ8WJTwWwAzmHQi9WWhmPUQ/iqh0fLs=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|datepicker_icon.svg|lfkJsjP3MyxJAwQVO1Czb68nGorZe2HEisGuD60TxQI=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|donebutton.svg|njF2jvBSMAW6QLDGBCsgjQPDl0EUqwYv2GwUjHjX8K8=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|menuitemsingle_checkboxmarkicon.svg|Z0X+4hEaeRc4voZNGhUxbrUTbPGmNYyHe6sav+90ep0=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|menuitemsingle_radiobuttonmarkicon.svg|4RRTAbM+N0x10Qx9pofJIgVrT8Qh3Wf5Y844CLjHXAA=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|menuitemsingle_submenuicon.svg|F+PMTXFhBxuIjutkGf6OygNdUDSgM+wiLcNSrCb9xL4=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|promobullettutorial.svg|krQ1REe2ZSugFzV437laBLaHflKtKqluS2Sy/zCUA1o=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|promotionipprotection.svg|/Ev6Vu0xq8xqdb8IDgJNHuiV8+YB4r0kxDLCpU1Q6MI=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|radiobutton_icon.svg|uUBPLTZ5PrhQL0p5AjUoeKpJ7krLib77eMMsG/90BF4=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|slidersmall_thumbicon.svg|VtmDsI3bD7kvH5KEBPelR+tX+4fQfYTnrp3E06OyIuU=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|spinnerbig_icon.svg|4jGIkzmRtWpPiwfjJ27k+ffr1jsF3ginmP/BHJyXQro=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|spinnersmall_icon.svg|3aYYRdHoftjfPzA+PTT88fbvEKRhYqV85sSKWhaAmIc=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|spinnerxsmall_icon.svg|UZVBpIeyXsSx/KKo5CJ4GXvaHn9oO9JUOufv766crDw=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|storybackbutton.svg|BjWbmu1z5Z3WgCbdgCAoWvFvbhYckNdkYUJ7bZCzri0=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|storyforwardbutton.svg|TVf+RMrMN9kfX2qozeAj4MlMksYccl3YWjgnzLjQBBg=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/images/scale-100/Svg|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\Svg|tempcheck.svg|M2QhZKZor0AJflUlThOs+gBPKLqsylQ8/NTd357RFWQ=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/locs|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\locs|paywall.lt|9aY5raDF7c0YC866fN6HqYPwN/rWw8ZY+yMh0YVZDqA=;
+			../21.3.10.391_ksde_l/skin/resources/neutral/locs|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\locs|tariffs.lt|OOJWcxsaaMRuxmda1HS0OzqGnr2dzjRTWFLczKWk+s0="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.3.10.391"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="l"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|../21.3.10.391_ksde_l/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|paywall.lt|g5n1MlBYTB9QnX0npaIbSWyhhe85fbpxRNQa0WfDF0w=;
+			nl|../21.3.10.391_ksde_l/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|tariffs.lt|6O2En+eweAeFObeEHVHTiNbDQyNXWq2f9dkrt+5ljlo=;
+			pl|../21.3.10.391_ksde_l/skin/resources/pl/locs|%ProductFolder%\\\\skin\\\\resources\\\\pl\\\\locs|paywall.lt|6vrtJGIc4mw24FrupnFQN4dy2P4hBsicP/KpViTZvKQ=;
+			pl|../21.3.10.391_ksde_l/skin/resources/pl/locs|%ProductFolder%\\\\skin\\\\resources\\\\pl\\\\locs|tariffs.lt|kJtkthNRdV0KvKiEB5tNzfj5cmLtLjb8yyImJUTgP4U=;
+			pt-BR|../21.3.10.391_ksde_l/skin/resources/pt-BR/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-BR\\\\locs|paywall.lt|eEBNygMJ5spMWENCFWkSsqoERYL6Kh0bAO/95qxVjYA=;
+			pt-BR|../21.3.10.391_ksde_l/skin/resources/pt-BR/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-BR\\\\locs|tariffs.lt|ib+xROiNoPZjsyYEiJEqYnEhhsRUB4AXcXRfe9EkPd8=;
+			pt-PT|../21.3.10.391_ksde_l/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|paywall.lt|XxB4U4UFXPKQWWVqtwBT0h58w+Wwl3/jzsoldLUFu0g=;
+			pt-PT|../21.3.10.391_ksde_l/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|tariffs.lt|ytvDyMZPiWKJsMUtt9/vBt+S8XGAR/Dotq6sfH2gHlc=;
+			pt-ZA|../21.3.10.391_ksde_l/skin/resources/pt-ZA/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-ZA\\\\locs|paywall.lt|XxB4U4UFXPKQWWVqtwBT0h58w+Wwl3/jzsoldLUFu0g=;
+			pt-ZA|../21.3.10.391_ksde_l/skin/resources/pt-ZA/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-ZA\\\\locs|tariffs.lt|ytvDyMZPiWKJsMUtt9/vBt+S8XGAR/Dotq6sfH2gHlc=;
+			ro|../21.3.10.391_ksde_l/skin/resources/ro/locs|%ProductFolder%\\\\skin\\\\resources\\\\ro\\\\locs|paywall.lt|/NSKKbWLNUInkA//ZsMGKW4j3hV24cSNJxjj0MrhTwQ=;
+			ro|../21.3.10.391_ksde_l/skin/resources/ro/locs|%ProductFolder%\\\\skin\\\\resources\\\\ro\\\\locs|tariffs.lt|Sqfyn3d2eI5m7sngRtom75yj38Ha4ynGVRRqSS+j76I=;
+			ru|../21.3.10.391_ksde_l/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|paywall.lt|ARX0Xz3p1LvtaETy6s38b18DHAZBDwAMn32XRB1IQZ0=;
+			ru|../21.3.10.391_ksde_l/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|tariffs.lt|nSO4sqGQqBQ04zzVW4L0+2fD72GCPaZ6G8eXANU6tDc=;
+			sl|../21.3.10.391_ksde_l/skin/resources/sl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sl\\\\locs|paywall.lt|QCHMwHgMEBDC496TqKqWZeDXo9IQv7lBjvjuD+RpImA=;
+			sl|../21.3.10.391_ksde_l/skin/resources/sl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sl\\\\locs|tariffs.lt|Kvh1356Cs4ylZ2Am+GXdWU4kH+oucXC411sPfdvws20=;
+			sr-Cyrl|../21.3.10.391_ksde_l/skin/resources/sr-Cyrl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Cyrl\\\\locs|paywall.lt|A/1CbGXqMcj1/heHxLz2kOG5JVe9W8iukG61+4JSKj0=;
+			sr-Cyrl|../21.3.10.391_ksde_l/skin/resources/sr-Cyrl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Cyrl\\\\locs|tariffs.lt|da1VrJiLVfGCkc9q0P+b7gG164WVbIZ4Ig/2wlsYnE8=;
+			sr-Latn|../21.3.10.391_ksde_l/skin/resources/sr-Latn/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Latn\\\\locs|paywall.lt|h+LytAo0DgKL7U1HoewvxfH23jiFTD01dGnuN88FHjk=;
+			sr-Latn|../21.3.10.391_ksde_l/skin/resources/sr-Latn/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Latn\\\\locs|tariffs.lt|dFwtH2yI3hldwaQGnxKZHuHOnt2j/Kidpgh0NDM774w=;
+			sv|../21.3.10.391_ksde_l/skin/resources/sv/locs|%ProductFolder%\\\\skin\\\\resources\\\\sv\\\\locs|paywall.lt|xFrX0pc2n7Cta9SNDYPv1dxhvctJK5U8vzvNmbPMy0g=;
+			sv|../21.3.10.391_ksde_l/skin/resources/sv/locs|%ProductFolder%\\\\skin\\\\resources\\\\sv\\\\locs|tariffs.lt|AWG9SwnWRpnqXSXOQo6mOm02mKQUPhiB2+a5UyvBLc4=;
+			th|../21.3.10.391_ksde_l/skin/resources/th/locs|%ProductFolder%\\\\skin\\\\resources\\\\th\\\\locs|paywall.lt|+wK5PMf1cWxO5QAOsIpw51ETyNGHzksDMkLkJW+ZsRQ=;
+			th|../21.3.10.391_ksde_l/skin/resources/th/locs|%ProductFolder%\\\\skin\\\\resources\\\\th\\\\locs|tariffs.lt|8W7fHR6KbgO5+S1SeM16y9krpqgnwLSt0LKKEmpBQPU=;
+			tr|../21.3.10.391_ksde_l/skin/resources/tr/locs|%ProductFolder%\\\\skin\\\\resources\\\\tr\\\\locs|paywall.lt|mktMhk/DbzO/smizgPLeHeV6VM5h8X42qY8mCu7WOVk=;
+			tr|../21.3.10.391_ksde_l/skin/resources/tr/locs|%ProductFolder%\\\\skin\\\\resources\\\\tr\\\\locs|tariffs.lt|17W0EtPuwYndYRauc3S5M11QExNGpyLph2hQsXEUeus=;
+			uk|../21.3.10.391_ksde_l/skin/resources/uk/locs|%ProductFolder%\\\\skin\\\\resources\\\\uk\\\\locs|paywall.lt|zlUmxBDuqNU/Klicydl0Y64nvObggVSo02Zu30FpuXU=;
+			uk|../21.3.10.391_ksde_l/skin/resources/uk/locs|%ProductFolder%\\\\skin\\\\resources\\\\uk\\\\locs|tariffs.lt|jfhZI9mS+MaZVrFQ9kiUrezzCs5bXUJsQkhUGxOqtVY=;
+			vi|../21.3.10.391_ksde_l/skin/resources/vi/locs|%ProductFolder%\\\\skin\\\\resources\\\\vi\\\\locs|paywall.lt|LD57aLVGte3whHDDibj2qbQIiX4DFcZedkfEiNv036c=;
+			vi|../21.3.10.391_ksde_l/skin/resources/vi/locs|%ProductFolder%\\\\skin\\\\resources\\\\vi\\\\locs|tariffs.lt|mOO9Y4ahiKDSYzmrpWl7jAq4TZYbLFEztaxerSCa3dw=;
+			zh-Hant|../21.3.10.391_ksde_l/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|paywall.lt|f4tnW0jegGY6o5v+tTT7olCTeY3m4oZgsJNISAyez38=;
+			zh-Hant|../21.3.10.391_ksde_l/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|tariffs.lt|Yc3UxRrGRBxmq0VyO1BEzgOOTfGkQUykpqQoxh5F7xk="/>
 	<File
 		CompID="RETR1901_KSDE21NTR"
 		Shell="xdif;klz;none"
 		LocalPath="%DataFolder%"
 		Name="mod-ksde21-mr3-1901g.xml"
-		DSKM="x3G65Y1hhO8hqLeoaULtHiPCRZfbK8GoG6yILvnDBi8="/>
+		DSKM="kCnPVqrorP2jM4eztIbwYC3pu5AMjOPbCJGcDYPXRGc="/>
 	<Key
 		CompID="NULL"
 		LocalPath="%DSKM%"
 		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
 </Update>
-;:10qLGpVtU3yx27dYiBge+Wfuax/qDp/8oAm6NoQqW1kI6aMi6zR18EJ5RUq8p7Wq9+Bio3ZuOr1ocj/kRQArilgF%%
+;:10KPuLLHrN+pd+yaIl6H7rsz2fzheFxjN0rX2tJdfe6zHwH5wA5DNiS/Cv44Cq28ynnT/RybUPllh0eyrYXDIyqJ%%
