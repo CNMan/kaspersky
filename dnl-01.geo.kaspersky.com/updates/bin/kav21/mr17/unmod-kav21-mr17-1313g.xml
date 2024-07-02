@@ -1,0 +1,73 @@
+<Update
+	Date="26062024 0741"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="8680"
+	Shell="bdif;klz;none">
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.17.7.539"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.17.7.539_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="SC/C44QfYYJ483EKK6Zfb+kZfY157VaOfNJ6wUKW2Tk="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.17.7.539"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.17.7.539_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="nyx1n47STdh63OdqF3afcmlaIR+IeSDKrNSoOh7N+Ck="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="a"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.17.7.539|restart_os|21.17.7.539_k4w_a|kl.kis.ui.dll|AqsVZ77WDtDHM5Kgsixr7+aYwUFbLD1kTdfC6Vb+km0=;
+			KASPERSKY 21.17.7.539|restart_os|21.17.7.539_k4w_a|traffic_processing.dll|JxpMhuRCGqeKFgcCiOW/F5zDm8Npw7mkUwt7nyZOD80=;
+			KSOSPC\\|KSOSFS 21.17.7.539|restart_none|21.17.7.539_ksos_a|ver_info.json|SC/C44QfYYJ483EKK6Zfb+kZfY157VaOfNJ6wUKW2Tk="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.17.7.539"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.17.7.539_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="nyx1n47STdh63OdqF3afcmlaIR+IeSDKrNSoOh7N+Ck="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.17.7.539"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="21.17.7.539_ksos_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			kl.kis.ui.dll|AqsVZ77WDtDHM5Kgsixr7+aYwUFbLD1kTdfC6Vb+km0=;
+			traffic_processing.dll|JxpMhuRCGqeKFgcCiOW/F5zDm8Npw7mkUwt7nyZOD80="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-kav21-mr17-1901g.xml"
+		DSKM="QKhCldUaTK2WPmSOx4BKbbXa7Z6Eh3W4lm0+cw6uP94="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:10aKCM88DEQqRdGsT0V7PQw40sfNVB17SAKRGclHqV1T5y0IxQRPcyexPF273SJmPDTqEa/H6ZVyYhJSOukxMus1%%
