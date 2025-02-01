@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+
+	<!-- Update 15.06.2020 -->
+	<!-- Version: 2020-08-17T14:19:00.000Z-1597673981 -->
+	<Image Id="{b2773925-21f6-4cb1-83a2-d3e76396663b}" Path="*\mscoreei.dll">
+		<Process Path="*\powershell.exe" />
+	</Image>
+	<Image Id="{9e93da07-3013-4bc8-8c9c-667e69e53ca8}" Path="*\mscorwks.dll">
+		<Process Path="*\powershell.exe" />
+	</Image>
+	<Image Id="{29261461-de15-4859-a716-1399e0c2000a}" Path="*\clrjit.dll">
+		<Process Path="*\powershell.exe" />
+	</Image>
+	<Image Id="{5b61f3ea-9efb-4986-b01d-ece5fdadaa89}" Path="*\clr.dll">
+		<Process Path="*\powershell.exe" />
+	</Image>
+	<Image Id="{2d9b6627-7b6d-4283-bec4-b18cbd7d8464}" Path="*\mscorlib.dll">
+		<Process Path="*\powershell.exe" />
+	</Image>
+	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
+		<Process Path="*\explorer.exe" />
+	</Image>
+	<Image Id="{3E16D8CF-BB50-49F7-8DD9-B706931E6F50}" Path="*\system.management.automation.ni.dll">
+		<Process Path="*\powershell.exe"  />
+	</Image>
+	<Image Id="{8098BC1E-B696-41FF-8C3A-6E7CBB2C0545}" Path="*\system.management.automation.dll">
+		<Process Path="*\powershell.exe"  />
+	</Image>
+	<Image Id="{A581421A-4C1D-6A6A-BFBF64C9029FD75A}" Path="*\assembly\nativeimages_v*\system.*\*\system.*.ni.dll">
+		<Process Path="*\powershell.exe"  />
+	</Image>
+  <Image Id="{61f547ef-e4a5-453c-b502-0c3093ae27ac}" Path="*system.configuration.install.ni.dll">
+    <Process Path="*\program files\microsoft monitoring agent\agent\monitoringhost.exe"  />
+  </Image>
+  <Image Id="{6dc33b95-4d09-4900-afcc-8633ec5631fc}" Path="*system.core.ni.dll">
+    <Process Path="*\program files\microsoft monitoring agent\agent\monitoringhost.exe"  />
+  </Image>
+  <Image Id="{531c4dbf-89a2-4e54-bcd1-596163d7eea7}" Path="*system.transactions.ni.dll">
+    <Process Path="*\program files\microsoft monitoring agent\agent\monitoringhost.exe"  />
+  </Image>
+  <Image Id="{6b99443d-72a6-4f34-beef-0c70cef0464a}" Path="*system.management.automation.ni.dll">
+    <Process Path="*\program files\microsoft monitoring agent\agent\monitoringhost.exe"  />
+  </Image>
+	<Image Id="{C2AC7E30-128F-7E7A-32B8EF7090720194}" Path="*\assembly\nativeimages_v*\microsoft.*\*\microsoft.*.ni.dll" />
+	<Image Id="{3BA43055-97B2-CC74-0CE3B6EAC1FC3093}" Path="*\kavkis\*\kasperskylab.*.ni.dll" />
+	<Image Id="{3BA43055-97B2-CC74-0CE3B6EAC1FC3093}" Path="*\kavkis\*\autotest.*.ni.dll" />
+	<Image Id="{E5E5D85A-F7B6-F49A-4DDD601CAB0B8582}" Path="*\corporate\endpoint\*\autotest.*.ni.dll" />
+	<Image Id="{610F4F41-D386-B658-990EB04D20E69BD6}" Path="*\program files\windowsapps\microsoft.*.dll" />
+	<Image Id="{9D3F405A-6C6A-459C-B5E2-B2D394E0B413}" >
+		<Signature Subject="*Microsoft*"  />
+		<Exclusions>
+			<Image Id="{9D3F405A-6C6A-459C-B5E2-B2D394E0B414}" Path="*\ieproxy.dll" />
+			<Image Id="{9D3F405A-6C6A-459C-B5E2-B2D394E0B415}" Path="*\system.management.automation.dll" />
+		</Exclusions>
+	</Image>
+	<Image Id="{D9EA2C99-9515-4A6E-B94C-3049015676FB}" >
+		<Signature Subject="*Kaspersky*"  />
+	</Image>
+
+	<!-- Test rules -->
+	<Image Id="{610F4F41-D386-B658-990EB04D20E62222}" Path="*\ModuleLoading\*.dll" />
+
+</Filters>

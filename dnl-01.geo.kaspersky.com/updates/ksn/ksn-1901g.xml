@@ -1,0 +1,436 @@
+<Update
+	Date="31012025 2200"
+	BlstDate="31012025 1338"
+	ObjectType="2=KSN;3=BASE"	
+	Format="3.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="18"
+	CompID="KSN"
+	LocalPath="%DataFolder%">
+	<Exclude
+		App="KES 10.[2-3].*.*;KES 11.[2,4];KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 21.2;KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAFEKIDS 1.0.[3-4]"/>
+	<Files
+		App="KSMG 1.1.[0-2].*"
+		OS="Linux"
+		Arch="i386"
+		Item="Name;DSKM2"
+		List="
+			kc_ksmg.xms|aqW5bTvBi0GSk0vBa1ytC+duljG8sJ7SZIDSzhfKm8E=;
+			kh_ksmg.xms|Vie+CG5MxH+NjXNr8Y9j1gtMs9oHsu7HlR+k5TDPrPg="/>
+	<Files
+		Item="App;Name;DSKM2"
+		List="
+			!KSC\\|KSDE|wnstat2.xms|6Qf363SNUoJUadfAizML/YFxuLfop7u74G579l/liN8=;
+			!KSC\\|KES\\|KAV\\|KIS\\|KFA\\|PURE\\|KSOSPC\\|KSOSFS\\|KSDE\\|SAAS\\|KSM\\|KSLS\\|KISMAC\\|SAASMAC\\|KWTS\\|KAVSDK\\|ESS\\|KASPERSKY\\|KAR\\|KARH\\|KSVLASVMPRG\\|KESSN\\|KICSN [3,6,8,11-*]\;ESS 3.0\;KAV\\|KIS\\|KFA\\|PURE\\|KSOSPC\\|KSOSFS\\|KSDE\\|SAAS\\|KSM\\|KISMAC\\|SAASMAC [14-19]\;KAVSDK 8.[5-9].[0-1].*\;KES 11.0.*\;KSVLASVMPRG 6.0.*.*|ksncliwin32keys.dat|ixe9iltiYKNaDYrG3sMZeD644JblFsvAnqtKeIKWJUY=;
+			KIS\\|KAV 14|ksn_client4.xms|3rVfnosXKl/2PeYsLvy6Iu3pCgbM1VvOEiofMiiziv8=;
+			KIS\\|KAV 14|ksn_helper4.xms|JU0FOFyhBxlOLTtAIuXegtrREMJZbSM3/uFgYVHFaak=;
+			KIS\\|KAV 14.0.5.*|ksn_helper4_geek.xms|Xd1cfZ/m3sSyTLvLuVrA6tzytIM3QeMJnlhKTAGC8Js=;
+			KIS\\|KAV\\|PURE 15.0.[0-2].*|ksn_client5.xms|0rJNw2PYNS7KtBP9f/qQmurVzFm9ea60g1+aF86Gc4g=;
+			KFA\\|KIS\\|KAV\\|PURE 16.0.[0-1].*|ksn_client6.xms|/c0RNUWTYDwFYTJk/gsTZZDUAiwEzA9+Iq0/enldmcM=;
+			KSV 6.[0-1].*.*|kc_ksv6.xms|W8Uwf1p8qm5XY9D0cQOITCRhTlBk9BWe9xh3LpEJTtI=;
+			KSV 6.[0-1].*.*|kh_ksv6.xms|LS1AioumUWJ3F38ybPc7YHNduYGbkMSJlPEX785QNyw="/>
+	<File
+		App="KSOSFS|KSOSPC 15.0.[0-2].*"
+		SrvPath="ksos"
+		Name="ksn_client5.xms"
+		DSKM2="oft73CH/v0I9dSZTeE7zcocWouEzqeRcyF5rfrEaUIM="/>
+	<Files
+		Item="App;Name;DSKM2"
+		List="
+			KSOSFS\\|KSOSPC 16|ksn_client6_ksos.xms|nUMoCo51uyRVA/Okgp7rlq7/LfxFkz2VbjUlLL+wL1Q=;
+			KIS\\|KAV\\|PURE\\|KSOSFS\\|KSOSPC 15.0.[0-1].*|ksn_helper5.xms|jm0ADjdhP3wfMxpyuNy65LDJvOH3qTAF5pHKWwiLuXY=;
+			KAV\\|KIS\\|PURE\\|KSOSPC\\|KSOSFS 15.0.2.*|ksn_helper5_2.xms|kqE0LJl60RCTXMj1GOj69iR5QPh+axy1DtZh4+E1Sys=;
+			KIS\\|KAV\\|PURE\\|KSOSFS\\|KSOSPC 16.0.0.*|ksn_helper6.xms|mZpU6k2qrFGCtnetpYGl0JeS5DvO7jeMH6eW6wiOF0A=;
+			KSH 9.[0-2].*.*|kh_kse9.xms|VXbhay0dIDq6lfDRqPlPEmXl0M9sjJiDXIDMNlAE22s=;
+			KSH 9.[0-2].*.*|kc_kse9.xms|rI9MI1YpZ+G6EytJ6cqMK3mzFxXkIZvxUlbxWfhOV+w="/>
+	<Files
+		App="KSH 9.3.*.*"
+		SrvPath="gdpr"
+		Item="Name;DSKM2"
+		List="
+			kh_kse9.xms|zkOWi9tgV7jVyQunyx+KbFC9J3ZXnbrI6C/yCkZredE=;
+			kc_kse9.xms|1TxnkCRXhCdy/YtkcWzsDrtBHDmFjSPI2c/zJ6ikFLk="/>
+	<File
+		App="KSE 9.4.*.*"
+		Name="kc_kse94.xms"
+		DSKM2="wpbuEZj8OzFjiBCDy7f0AvbpmARSrkZewfUoLS8h+0k="/>
+	<Files
+		App="KSE 9.5.[*-10000].*"
+		ApplyAction="restart_service"
+		Item="Name;DSKM2"
+		List="
+			kc_kse95.xms|qXUA+4PmDphcYkkNS1fnkgkZ3x8fDIjONBJYPRfx1yo=;
+			kh_kse95.xms|IzU0ftS5mS7t+2IjzW762LoaQMMZHoSPkRH8s6asVFY="/>
+	<Files
+		Item="App;Name;DSKM2"
+		List="
+			KSE 9.5.[10000-*].*|kc_kse951.xms|FdZuv0x2Lj0hC0qbMFi3dPh2hJJ2hmQLm4o3cCTf6eg=;
+			KSE 9.5.[10000-*].*|kh_kse951.xms|yxFACM/9wP4/M/Bu01uRpiBRAB+BzXMgOqZSl6+g3p0=;
+			KSH 9.4.*.*|kc_ksh94.xms|vauwJyuEUx3EJ1/Q6K99QmggG0a4WUh6rhk53I1BVKg=;
+			KSH 9.4.*.*|kh_ksh94.xms|vtVQ98v48e5B286jn6BEqht36zMWSsbia0VWuLgflhA=;
+			KSM 15.0.0.*|kh_kfp_e_2.5.xms|pqVnOrJ6F+6N7aiLsfiWZB/1Xd34RZolNjIXnUCVAd0=;
+			KSM 15.0.0.*|kc_kfp_e_2.5.xms|DqA319h/UwOmT+l8O/DCZZ2jje1wiq5h++2dxCzXaXw=;
+			KSM 15.0.1.*|kh_kfpe3.0.xms|WSP4DW4S5wuL1RHTWAWWz4VtGS6gKS4rI24tuYy7tWo=;
+			KSM 15.0.1.*|kc_kfpe3.0.xms|boOOlzfmX5wKFH8ORq+FLOYO1GsWleBnw8bLeWkj6/4=;
+			KSM 15.0.2.*|kh_kfpe3.5.xms|gRAiBNKtf8eAmXz43jQUfLyvitTXMIG9p0ye1khE3tI=;
+			KSM 15.0.2.*|kc_kfpe3.5.xms|qIlMdNv8qxiPFWP4uPlItxBthADzptte3X+2OITe4kw=;
+			KSM 16.0.0.*|kh_kfpe4.0.xms|UnkJUwp+ARd/xiAvhObq6VVMC12Z50jgbwECJPpuz4M=;
+			KSM 16.0.0.*|kc_kfpe4.0.xms|s315hsusads2o8yqxMjX+b7+yTYIC2ZRoBXFx/9k0D0=;
+			KAVSDK 8.[3-7].*.*\;KAVSDKLITE 8.0.2.*|kc_kavsdkl3.xms|f7WmITinLlBm+HRPeZeKUhx+5lbUaLd5KkG+O3ILrP0=;
+			KAVSDK 8.[3-7].*.*\;KAVSDKLITE 8.0.2.*|kh_kavsdkl3.xms|d5HM3A5+hxdOxZ5EkkOdHPKLe+dJstWi8MuMEgmYsR0=;
+			KAVSDK 8.8.*.*|kc_kavsdkl3_1.xms|ipVv0eaJA7P9pmf7zbsfcmCJ3KrtB+telV+EgLIiayg=;
+			KAVSDK 8.8.*.*|kh_kavsdkl3_1.xms|6gAWEbyAyQP8I0mV2fW8Z3WIDO6l2Yf1bseb6aBE+nc=;
+			KAVSDK 8.9.0.*|kc_kavsdkl3_2.xms|EwOfm48tlcUcWTbZhn3WtCWJ8GgD4QtmQ8HteTYjl68=;
+			KAVSDK 8.9.0.*|kh_kavsdkl3_2.xms|FSrVhISsE8rHwQ0TcZEJIr/DZIzFojmKUk67tbKAzVc=;
+			KAVSDK 8.9.1.*|kc_kavsdkl3_3.xms|+54GFHugFUhhNdqS2vFk0XuCOSIJQFZJY7XTT0Fgoww=;
+			KAVSDK 8.9.1.*|kh_kavsdkl3_3.xms|uSUkBjn0cTmM/4MIp4Zgtjn+ZzW1x2CAC3Ge0VJZhgs=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*|klsrl.xml|6D5jepnfBxdaAoYGQcxjCQRawSTdOmYBxfHO6qzzHFQ=;
+			ESS [2-3].[0-3].*.*\;ESS 3.4\;KAVSDK 8.10.2.*\;KES 10.[2-3].*.*\;KES 11.[0-4].*.*\;KES 21\;KESMAC 11.[1-3]\;KESMAC 11.0.[0-1].*\;KESMAC 12\;KESSL 3\;KESSN 21\;KFL 2\;KICS 2.[0,5,6].*.*\;KICS 3.[0-2].0.*\;KICS 4\;KICSN 21\;KICSNL 1\;KSC *.*.*\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12\;KSMG 2.1\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KSVLASVMPRG 6\;LENA 3.12.*.*\;LENA 3.9.*.*\;NGFW 1.0.0.*\;SOYUZ 3.[7-16].*.*\;SOYUZ 4\;WSEE [10-11].*.*.*|kpsn_certs.pem|lMHhK5VKG1mpTdIbA4fx/MCx5cOl3d1bnkfOvpBpups=;
+			KSC 10.*.*.*|kc_sc.xms|irBzLtMzDmvruFCw0d/9nQrqI7q0nMgZCrfdCfmSoHM=;
+			KSC 10.[2-4]|ksn_helper.xms|bd57hvtJ40yjs0bWZsB/wMlhahQu+usoIgKs603EduY=;
+			KES 10.[2-3].*.*|kc_kes10sp1.xms|BG5lMUF+ktyy0HQcVpwWNgqaDd+CXFoYlhYkrGLUJ84=;
+			KES 10.2.*.*|kh_kes10sp1.xms|zPMdGtmt5APgdQH9pizCc575MbxJ3nRGm9i+0xl5aag=;
+			KES 10.3.*.*|kh_kes10sp2.xms|cZ25jjscwkN8132MHBE31Trhz29RdPU8jyyDi5yqxZE=;
+			CIP 1.0.0.*|kc_cip.xms|MUCpbsf8l/mc1ago/ukvKJ/eqUHhxTXFmf/k3oQjkqU=;
+			CIP 1.0.0.*|kh_cip.xms|qIZct7xfyT7DRVW6I16eJmotOY7i0dBGTCrEOOTYFs0=;
+			KVRT 15.*.*.*\;KVRTFB 15.*.*.*|kh_kvrt.xms|vXU2qpQr/fEYeiABf0i0fVZ24HaIpmAn/4nucFUFkIA=;
+			KVRT 15.*.*.*\;KVRTFB 15.*.*.*|kc_kvrt.xms|CxekygUESpN5HUNYEQWZXDgMVJT2mLRWd1hicvNIVTE=;
+			KFA\\|KIS\\|KAV\\|PURE\\|KSOSPC\\|KSOSFS 16.0.1.*|ksn_helper6_1.xms|9aeenDFH7NWZOC461jcrNBYU+1rWQ/yYHNCEnPArtKQ=;
+			KISMAC 15.*.*.*|kc_kismac.xms|2TDQj/Db796jRGEF1x3F9WtO7vXwX491l8qMQ7aZgtU=;
+			KISMAC 15.*.*.*|kh_kismac.xms|Q7pGhg5GXZrhoGOnXaCGs/VM+XR8hT7oorRD/Bna6tU=;
+			KISMAC 18.0.[0-1].*|kc_kismac18.xms|aiY3cq7IdVskAg7dEpzV/cHywouftV7FecRFOirzNhs=;
+			KISMAC 18.0.[0-1].*|kh_kismac18.xms|TNQLLoQNqmunNs6wmitST+m9XfJp2/dvc5mHXpdsA3Q=;
+			SAFEKIDS 1.0.5.*|kc_kids_w_1.0.5.xms|rxKcU6KhTfEjQXEEaft76S+ZiSSRZLsIHzrclR7Ab2A=;
+			SAFEKIDS 1.0.5.*|kh_kids_w_1.0.5.xms|pgcIGq9A7ZY/zF1uof0ZLTwOiOO6+XAXye0rNh8iiyk=;
+			SAFEKIDS 1.0.5.*\;SAFEKIDS 23.0|ksn_config_kids_w_1.0.5.xms|ZvsclVvTrusmz8nQ730kw4hZ2bupAfwJltc4R/Bff58=;
+			KES 11.0.*.*|kc_kes11.xms|hHdLG+u5BQCLw19E8X1NBqXNFX6LMfcyzKPoySdaa9w=;
+			KES 11.0.*.*|kh_kes11.xms|oB3nOvHzqFxjuAVyAmLnZ8yFUB9XNdyuM8cjlZJVKWk=;
+			KES 11.[1-2]|ksn_config_kes11_1.xms|v8EA6CiXtygrZ1kYLCrpcV+Yha1hadEiaZQmyknvbSo=;
+			KES 11.[3-4].*.*|ksn_config_kes11_3.xms|kxJqIxBHBiINgGB+8TvTf+mrp9f+8oJm9SJ2JRcS8Qs=;
+			KLMS 8.0.[2-3].*|ksn_client_klms.xms|xIjwYD1bRZI8Yosf9X6ShaVG8kOzcM2aItK4uAOD2sM=;
+			KLMS 8.0.[2-3].*|ksn_helper_klms.xms|vorYJS5E9nQ+/+JWGdJrpjYnoyZJlswM4F0C40itdlM=;
+			KASSDK 6.*.*.*|kc_kassdk6.xms|FZum0Ihrk+MIAFMGpDg66YbUf4oujElVG+120rtpwI4=;
+			KASSDK 6.*.*.*|kh_kassdk6.xms|d3plzLytA3SDxMFBEKO0FxRx/hgdDfYT+eW7MAu8HJw=;
+			WSEE 10.0.*.*|kc_wsee10.xms|xA5G5iHqyq1ftJW8HUbn1UJiJTp3sAoEDfcpwuJRkFA=;
+			WSEE 10.0.*.*|kh_wsee10.xms|5K19oEATknY6sYR2v5FRvYPg8HnIzJ+b/LF1p7I4hAI=;
+			WSEE 10.1.*.*|kc_ksws11.xms|zXIHiD6Q8oTY3Wyxkh5QeHsfIoMCq1nUsEZKowInhmY=;
+			WSEE 10.1.*.*|kh_ksws11.xms|xzpZVW8fB8fr+Z8ZM5qoAls8CoJy6VUAkhyRn3m5slA=;
+			WSEE 11.0.*.*|kc_ksws110.xms|ag6BhHYJ9WInoEu14Ab8MioY2o5ugyhsdLMNxAdxEfc=;
+			WSEE 11.0.*.*|kh_ksws110.xms|pck2mJGNns0Ls3PHDht+hyzleibgIyF5ZPQC1g0XA04=;
+			KVSMAC\\|KASMAC 15.*.*.*|kc_kvsmac.xms|oTK54RVDpTNwfiraHt6L7BTgBMErrN/MEzzKCbbkr04=;
+			KVSMAC\\|KASMAC 15.*.*.*|kh_kvsmac.xms|pArT9kcyTFi6w5GkkAQFSv60vOuVQgQuL8C/cmwVldA=;
+			KES 10.2.*.*|kh_kes10sp1mr2.xms|uOW2dFS2in294T7azPA7gdc9CC4RsMoNytSYlSs2I48=;
+			ESS 2.1.*.*|kc_ess21.xms|KytrXvmh/d85KiOcf2gKZrUhZz0VZhiCRyT8bB9efnM=;
+			ESS 2.1.*.*|kh_ess21.xms|NEoQ7NuRz7wN7CWwxZ+2RdcR0++qeqsT1dbXpMkVLGg=;
+			KFA\\|KIS\\|KAV\\|PURE 16.0.1.*|kc_kfa.xms|SoRZ58oyLiYhHI9MDvD0g5/3OIhM2tedjL62qNenKWk=;
+			KFA\\|KIS\\|KAV\\|PURE 16.0.1.*|kh_kfa.xms|UC8/TOpNaBt44rhgK+qKDXOBBTIoHfV+jNhCDJvIIAg=;
+			KSM 16.0.1.*|kc_kfpe5.0.xms|tz9IhFRtlvay6HqZ0ZPHnv/nlraTvB5lT7OH3WwJvn0=;
+			KSM 16.0.1.*|kh_kfpe5.0.xms|AF7SKOQgLJ9A4rQJPvokaPCrLuxIq04fo1+GuNGOfeI=;
+			KISMAC 16.*.*.*|kc_kismac16.xms|L4zL5pB39JkAnpGajuHRibHLhQ8FgBwnJfq4SNEyxO0=;
+			KISMAC 16.*.*.*|kh_kismac16.xms|83EA6XaMrRIzNiWh9maICBbVU7F1nJXhsWsbTzGmO0I=;
+			KFA\\|KIS\\|KAV\\|PURE 17.0.*.*|kc_kis17.xms|TmqwWSZnOkmvm3Ne1i3vLdPit0u+2n/49JFMlqGCIKg=;
+			KFA\\|KIS\\|KAV\\|PURE 17.0.*.*|kc_kfa17.xms|IZzbUW4vSiE7vIP+4j5CuEGwW4d6LC2vtOOobUX99z0=;
+			KFA\\|KIS\\|KAV\\|PURE 17.0.*.*|kh_kfa17.xms|9wh0CkOPLkW2fgNvS/pt7UMen9tEisTeIbZsEHmuPns=;
+			KFA\\|KIS\\|KAV\\|PURE 18.0.0.*|kc_kis18.xms|nhndqY/oC9SaJyNu1XcjAX6Tfw00S9eADF+w1d8RyKk=;
+			KFA\\|KIS\\|KAV\\|PURE 18.0.0.*|kc_kfa18.xms|laVMNrPd5TdQy8Gyj9dyw6JAv5xmLRWCaN7v21t4YXI=;
+			KFA\\|KIS\\|KAV\\|PURE 18.0.0.*|kh_kfa18.xms|/+xFiL3bPkPI67eVTp3U47VHsvNUPX7xsfNG05iknpA=;
+			KFA\\|KIS\\|KAV\\|PURE\\|KSOSPC\\|KSOSFS 17.0.*.*|kh_kis17.xms|8ipeNKs4ICE65B65ugye6wHGkb237Bvg0rzIhMZTrzk=;
+			KFA\\|KIS\\|KAV\\|PURE\\|KSOSPC\\|KSOSFS 18.0.0.*|kh_kis18.xms|exRsKvZ0g67+Tl2dw+uzIprY+Km1f6Fed4qKmidLteg=;
+			KSOSPC\\|KSOSFS 17|kc_kis17_ksos.xms|tqhvHiTK+D8zaieg4rrJaGsL4BJ/7C0deXAYdesCWjo=;
+			KSOSPC\\|KSOSFS 18.0.0.*|kc_kis18_ksos.xms|R1wGxhvVWCzNkpKMuLZLy9k77/VrWIr7UlvmEUMTCc0=;
+			KSM 17.0.*.*|kc_kfpe6.0.xms|vxXVqbMwJgtQApzRqDKUYK1AvruyoxhhaKlBsevnbS4=;
+			KSM 17.0.*.*|kh_kfpe6.0.xms|XxgePsezVTxrX/YPjGjeSyeNkiFDdhwax+tUFa2ysvM=;
+			KSM 18.0.0.*|kc_kfpe6.0_1.xms|7HoQR3kDRdovIU8PSOM+FSom28FMTAcE0qYI9Pwujg0=;
+			KSM 18.0.0.*|kh_kfpe6.0_1.xms|bPGQt+bTjISEpAG4mE3rV+gPuUgqYVvP/A/qNSKbuWE=;
+			KSDE 17.0.*.*|kc_ksde17.xms|qmeLT5oSMAoJAgbNHlw2irmlSqxarRLVj8B9elEL3Sk=;
+			KSDE 17.0.*.*|kh_ksde17.xms|XjnuWRwHi+AYJNfk84/tUHBR0Zv/HbxI7lEzbYQZ9Xs=;
+			KSDE 18.0.0.*|kc_ksde18.xms|QjOWiVQW2RlX6bk+ny077uJiIp/RhZPUKuPKkt+WRxE=;
+			KSDE 18.0.0.*|kh_ksde18.xms|RXFGaZTQoh7vtGnK9/PpTKIwSbLMVE9Rm4H1OdsP8Ng=;
+			SAAS 18.0.0.*|kc_saas18.xms|1QsJK4Qe7pHfSLF8Joq9B+yemEkDKSqIB70t8qElSo8=;
+			SAAS 18.0.0.*|kh_saas18.xms|U0lq8ETRci2POMSUghil5SIGJEcpOYoTGq56OVL2k5w=;
+			KICS 2.0.0.*|kh_kics2.xms|ks53ZxhrS0xGSKZDNbcY/f9rSVxlV/Udyb5qaMLoybI=;
+			KICS 2.0.0.*|kc_kics2.xms|rvYXLnNXbFVADfGiwkFcvyK3/PjVkj0shZfwN+aLfOg=;
+			KSLS 10.0.*.*|kc_ksls.xms|SmlxlGHpaJiJmn0S8p2kPZrgz0e/12eQ2CB0uupLsZs=;
+			KSLS 10.0.*.*|kh_ksls.xms|yclKrn/O3YVhKaSjJQPEPtWK5j6IBlqzx2FwA0yorsU=;
+			KSECMAC 1.0.0.*|kc_ksecmac.xms|YtM9SZNafbOkK8FDFGbJ53QdeVKzwZmXHOpDoIMUw9M=;
+			KSECMAC 1.0.0.*|kh_ksecmac.xms|5643KgWZxxGemLZ9TY4gBSCb1c8PCBGzTHR1tVP6UZY=;
+			KSLS 10.1.0.*|kc_ksls10sp1.xms|Vl7lKjtWWEAut7nUgNx664xJE84RE3bRVlnY7/xyV9s=;
+			KSLS 10.1.0.*|kh_ksls10sp1.xms|virvWnlhhekRmPJnRwlsNFbbM7TV2hneNKJ9kjrznYo=;
+			KSLS 10.1.[1-2].*|kc_ksls10sp1mr1.xms|6U0Viy8pLRgKW/A0StGOBaHiInkXClXPZcQo8sWaImY=;
+			KSLS 10.1.[1-2].*|kh_ksls10sp1mr1.xms|bOQ/xKMuxwgefOrt3DBttCypTfWa6TSoMNLqi6uJTJE=;
+			KSLS 10.1.4.*|kc_ksls10sp1mr4.xms|lqjj/hqNM0TotO5p2MjmAjlHeWUtLPHmpE4kGAh9hpw=;
+			KSLS 10.1.4.*|kh_ksls10sp1mr4.xms|M/bx86B00KbpNbw4bodS/LV9bxeDM00sUWJnkRikIRg=;
+			KAR 3.0.1.*|ksn_client_ar31.xms|ZwTuhwUAh806Y8aUgkTHywl5jLexGB29QiRAvKs24v4=;
+			KAR 3.0.1.*|ksn_helper_ar31.xms|Q22A0TFXX0H8LqhZGGZ4j0IrmCALfbuN5+VUqcjOn9U=;
+			KSPROXY 6.0.0.*|kc_ksproxy6.xms|C0SEQN4XKY9c8bXuZpuKeFGDQXVV8vpNyGh4Q/DZR4Q=;
+			KSPROXY 6.0.0.*|kh_ksproxy6.xms|eo+vdXaGMO0shTBi9l4Ji03D9JQYzFh22jEJk/OeIgY=;
+			KSV 5.0.*.*|kc_ksv5.xms|L/l+DGPYerE/LzEZQVJYj8BSSsi2FuI8drhMvMboBms=;
+			KSV 5.0.*.*|kh_ksv5.xms|vFB0t+0Q3HxWu+Qcd+vy8fm+wjOzQi6qsk2PncTeh1s=;
+			AVSL [15,18].*.*.*|kc_avslite.xms|zIGlQlo27LrvI0KijoIrRkotnlKVGEFPtfUNmVNAm1g=;
+			AVSL [15,18].*.*.*|kh_avslite.xms|OfEvDhykluojDkbm+SU7oNsTXfPRIh9LC9ITUkjEWXg=;
+			KRT 18.0.*.*|kc_krt.xms|pIxpliMm6T+LLyI2MKbgOtbWtjol4wU40yulShxSA1c=;
+			KRT 18.0.*.*|kh_krt.xms|bhoUQpqZ+751OL9StzDtJk7g2swcWQrO8RJe+OIZXmk=;
+			KSC 10.5|ksn_helper_sc.xms|PHIUHT8bROKeieBTB05u755x3LxrnRg4agj99bpOSfI=;
+			KSM 19|kc_kfpe19.xms|NS0jRaX9QSLZoo4Y8JHiwrYFHV6rSDeQWnVpEBqyKFs=;
+			KSM 19|kh_kfpe19.xms|jrR49lcaSLzAecdcAlsOS7aNxlYjhAx9qucfWWIVq4w=;
+			KSOSPC\\|KSOSFS 19|kc_kis19_ksos.xms|XkJjE+8WimggZcdFbcBrYHiE6/zC/q2tiVZnLGiJpn4=;
+			KFA\\|KIS\\|KAV\\|PURE 19|kh_kfa19.xms|rLnlo8JR6NQGoASn8stEg9/bv6z/TFRt6+UE1vqCXCw=;
+			KFA\\|KIS\\|KAV\\|PURE 19|kc_kfa19.xms|xxIT8CgmdvFvtmALc9fnfHoF+QQ3kB06Mzsfw5+3+4Y=;
+			KFA\\|KIS\\|KAV\\|PURE 19|kc_kis19.xms|FHIV+JlGCnu107T4YsgYolMwU0dNKnnV3ARnGQIIh+0=;
+			KFA\\|KIS\\|KAV\\|PURE\\|KSOSPC\\|KSOSFS 19|kh_kis19.xms|Fdu59GAKuLgPeL6aKIk8KOaxHyuBtKHrPfqRumX/Qb8=;
+			KSDE 19|kc_ksde19.xms|RXX2+aaQis+CkTc5ewM14aTzsnZTgWrrAykszEy6UAo=;
+			KSDE 19|kh_ksde19.xms|X8VUjbfFiYoeUxa7GEbh5ndwyVNzxQUlAkvnJGwzAm8=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 19|kc_saas19.xms|vMrOmG+Zy2Z/3IjB6xpg2HrnY+tP+clXIyD21CsitkQ=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 19|kh_saas19.xms|XI2LU0OyxDWiENg1ktgZYABpZT+TrPljKskCLA9SJT0=;
+			KSECMAC 2.0.0.*|kc_ksecmac2.xms|FlFIvvKAvxxHsz4hXowHqGjFRx1CJS0Be34LNcxyemc=;
+			KSECMAC 2.0.0.*|kh_ksecmac2.xms|gE1UkUgL91jps2OfUiZl92SZZgt9bMikAtbtPaEEC58=;
+			KISMAC 18.0.2.*|kc_kismac18mr2.xms|RllV6Z9oNsikKVzg7eMKCF3BEkMvygS0mtOwiyW9m1I=;
+			KISMAC 18.0.2.*|kh_kismac18mr2.xms|CciPWlZfK9qG9C0Hk3IIJTRFNLSpkrZKb0oQMrbZLUg=;
+			KISMAC 18.0.2.*|kc_saasmac18mr2.xms|403GujUy/mQxiMW5jN4xtV9KidXH4crhUaWx8d5eYoM=;
+			KISMAC 18.0.2.*|kh_saasmac18mr2.xms|yLng3l4BDo4UYnfGlOSwqFerawm64OvT9bKNfrof9jU=;
+			KISMAC 19|kh_kismac19.xms|nn/F1kx6RfcbUxApiVAqnCnTGpVBRYSY3vn1r1SPQMU=;
+			KISMAC 19|kc_kismac19.xms|Dc1+iU039UZEy5SKJ1KX8of7RekrO2noZK4PLiy/Zmc=;
+			KPMWIN 9.0.2.*|kh_kpm_9.2_w.xms|aFsJ4velY4UNg5PA6et9gYjQAjA2JvtUrQU2eaF7SPo=;
+			KPMWIN 9.0.2.*|kc_kpm_9.2_w.xms|GNsfPDmZIs01NdhBiEVn9SEym3jEca5W+dJ4a39o/BM=;
+			KICS 2.[5-6].*.*|kc_kics25.xms|amqKqZwngcrKZzE/q0vAcBPy+p+V/mzAdotqoQyssLw=;
+			KICS 2.[5-6].*.*|kh_kics25.xms|wWjSNlS0pUVq5jMS+Cj+ZSCupfFW7zgwEjvM4b9E2JY=;
+			ESS 2.[2-3].*.*|kh_ess22.xms|rIdGra/6YJsoWM6iS26m2JcEOYoC4MTKL2S1bkoa6Pw=;
+			ESS 2.[2-3].*.*|kc_ess22.xms|LeRL+hccBwTaZw9HtPTNeKYAW3BqH4F5h6hBGMiPNG0=;
+			ESS 3.0.*.*|kh_ess3.xms|fvkKVrcAjWNgE/MiIJLY4R4RhIPe//bX9QORy/R777g=;
+			ESS 3.0.*.*|kc_ess3.xms|8DcGmzU/nPWJvY5BU5OzJkvg2/APdJBiHI7O6uzMo1c=;
+			KSC 11|ksn_config_ksc11.xms|Z+tLkmOyBGZ33ddTsxiQii9Gh6EAXEg9mnTr5mY0MhU=;
+			KSC 12.0.[0-1].*\;KSC 12.2.0|ksn_config_ksc12.xms|7833DIAomJRGF61tJa8EAo98135/L9N5UVFz7HQyteQ=;
+			KWTS 6.1.0.*|ksn_config_kwts6_1.xms|EMm9C8p73P8fWyeWUTo9GjHvpqOlPY/GZEaaKQpdqNE=;
+			KUU 3.2.*\;KUU 4.0|kc_kuu.xms|jpNP9gRiws1C9eFmi5dXW3+1C9AF8PxUhSDvvNgKd/g=;
+			KUU 3.2.*\;KUU 4.0|kh_kuu.xms|4kx8jq1ib+LdLk4ZSctvgIljIeW7gWrcDs0/4wR/2Tw=;
+			KSMO 1.2.*.*|kc_ksmo1210.xms|hx+t/bFZtuUttWw+mPtsqErLwCp9iEtNQvJ/XI4ZPvc=;
+			KSMO 1.2.*.*|kh_ksmo1210.xms|hJnkIfB5D7HToZAPJd+cTI5KiBFmAjrPN0kpqu34GYM=;
+			KESMAC 11.0.[0-1].*|kc_kesmac11.xms|awMypdG2qTwK98WMa2W9+ykNCetRERUXXY3wiMnLDZk=;
+			KESMAC 11.0.[0-1].*|kh_kesmac11.xms|K46wVXxJnQTKcJZLITiNtZlpGprk1B0CCIdyfMJE+js=;
+			KSE 9.6.*.*|kc_kse961.xms|UXruixfYcM1hvBHrQhWX0ZQkm61XUCZAYv0VYWTmsn4=;
+			KSE 9.6.*.*|kh_kse961.xms|D0NM9BOWyf7Qti3kzncjxxqx7sSQoOMNMpHw5i5CwcM=;
+			KFA\\|KIS\\|KAV\\|PURE 19|ksn_kis19.xms|MeVxy4YTn67O7xGT9QWpY8ud5sVUEJ5rxHVwlc9fQUs=;
+			KSDE 19|ksn_ksde19.xms|vz207wBOW52ebcLIKBUPHcX18dr3pch0qRtoUlxARlo=;
+			KFA\\|KIS\\|KAV\\|PURE 19|ksn_kfa19.xms|ZnXXseh0ldkD+N4Ably+MlK40OvzQNPbeINh+bWE+/I=;
+			KSOSPC\\|KSOSFS 19|ksn_ksos19.xms|W7YyyQkJNihginwagrX2jCDQE+9/xQ8l/8GlJg/ZkxY=;
+			KSM 19|ksn_kfpe19.xms|VJvBEWoNTCO8lEq9ai5tgLT5M6r9loj43XOIlNlNHr0=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 19|ksn_saas19.xms|008hgGIRyr3BM06xBKipPrpiwpFETuZ4O6CCCqZ7mws=;
+			KFA\\|KIS\\|KAV\\|PURE 20|ksn_kfa20.xms|XV21o7HB+XHvvHY1fnHFsFKtIUVU5qOV87UdDam4Yik=;
+			KFA\\|KIS\\|KAV\\|PURE 20|ksn_kis20.xms|m2564+8xVXHTphrwWk6+n917xpcGmGZAsRxELR6PJGg=;
+			KSDE 20|ksn_ksde20.xms|STIi18YsjDHsKZSVlSCZ00SDM0G0OlQ0+0EVsNL2Ocg=;
+			KSOSPC\\|KSOSFS 20|ksn_ksos20.xms|eN8+IKtrcnCvpOq1pTqKzndlmTPGdVMZOqT/bd1lq6o=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 20|ksn_saas20.xms|00aW2M9sUpaI6dvsp5UbAli+exs3B6VyND9/hBfvS4g=;
+			KISMAC 20.0.0.*|ksn_kismac20.xms|d7v/LNKUO5oPynmiPgLohwIHc2SP6I2nLmJ+Do9EVak=;
+			SAASMAC 20.0.0.*|ksn_saasmac20.xms|2GSfZ2Pdto41Wd0ym2aoFNTVSwTZFTz6LS8xsaLsruc=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 21.0.*.*|ksn_saas21.xms|vU9vD1t42Q6aJPRqS/kIxppDPDBWvdssYKzkRwuXo1g=;
+			KFA\\|KIS\\|KAV\\|PURE 21.0.*.*|ksn_kfa21.xms|VS7yU0H9AoEN7vtYr9FVL1UWLhwefb85pqYxzzl06Zc=;
+			KFA\\|KIS\\|KAV\\|PURE 21.0.*.*|ksn_kis21.xms|EFHS6vWZOKqG+ljhS4yblODj/vk3RyVpydWVaEwRgVY=;
+			KSDE 21.0.*.*|ksn_ksde21.xms|SRYKT9VtK3IQABzVtGq1GQmtJ1gloiVZ1Tf/mB7l2s4=;
+			KSOSPC\\|KSOSFS 21.0.*.*|ksn_ksos21.xms|qtFZP+c/zxJcddV+2agEqkK/zjbQ1Mh3qPvQ0iqSqks=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 21.1.*.*|ksn_saas21_1.xms|lHa9SWuK04fIaX2gJk1l2b1/vrzQWFuTtTD/OdtBacs=;
+			KFA\\|KIS\\|KAV\\|PURE 21.1.*.*|ksn_kfa21_1.xms|RC+AzefkNWmDts79A3oTVcKLUSHWiSceQIQr2nWqsuU=;
+			KFA\\|KIS\\|KAV\\|PURE 21.1.*.*|ksn_kis21_1.xms|rF6CJvuYSGpUTCev+Ec2PpXXXkWe7HrvbGCNmvOFI4Q=;
+			KSDE 21.1.*.*|ksn_ksde21_1.xms|or4eCHz66QobZVJbn7ZSLwzGPzUm0oxqkcYG43EDSkM=;
+			KSOSPC\\|KSOSFS 21.1.*.*|ksn_ksos21_1.xms|qpw1hZ4BWnyKiK2oC9k4mSzjP+rbYai1Waa0J58ra2c=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 21.2.*.*|ksn_saas21_2.xms|2sE9yA4qst0SZcRcG2+5bk/ywppi2T0rN8/V2SM+ruE=;
+			KFA\\|KIS\\|KAV\\|PURE 21.2.*.*|ksn_kfa21_2.xms|MxiE9I7vlT+9d4+Wq/zzsaUf0MVl9NxHiovxjm+WLfA=;
+			KFA\\|KIS\\|KAV\\|PURE 21.2.*.*|ksn_kis21_2.xms|2FgBQ8fH5i2N82232TxhWcj0j3OhsrMp4Qa0B0pE21g=;
+			KSDE 21.2.*.*|ksn_ksde21_2.xms|yaUj3ZgMC3LhyocX3vtZYisAKqkSMFF0le18W+G17QM=;
+			KSOSPC\\|KSOSFS 21.2.*.*|ksn_ksos21_2.xms|kR4F5jbvRlj4eQ1Gekm3fwkBe6ZEP7xCME54PgrT5/I=;
+			SAAS\\|KFA\\|KIS\\|KAV\\|PURE 21.3.*.*|ksn_saas21_3.xms|JzXO1uw9/h7E7a+zoJBBYzDl2bra2lRrGo++J3hfaRg=;
+			KFA\\|KIS\\|KAV\\|PURE 21.3.*.*|ksn_kfa21_3.xms|+7dEQ1pYwE/KdUOySrDI3mf62JDavPW6Qd0tB3EOk0I=;
+			KFA\\|KIS\\|KAV\\|PURE 21.3.*.*|ksn_kis21_3.xms|ckl+n2Ta6XoGhqfUbjkbK4ly/3JHeSJj8fUcE9O+tLQ=;
+			KSDE 21.3.*.*|ksn_ksde21_3.xms|A76MT7LP/aYeBkU7NtBIRG1Ky7sZanF5R0WxUC7rta0=;
+			KSOSPC\\|KSOSFS 21.3.*.*|ksn_ksos21_3.xms|W6+J8hIMGAoLtE++UI2EPU/yIkS2SX1LJiU9l+f90Ws=;
+			KSKMAC 1.5.0.*|ksn_kids_mac_mr5.xms|onUX3Gy/qMNdmfKVnifq1kw/s/CNt1hArb0MjimLHW4=;
+			KSLS 11.[0-4].0.*|ksn_ksls11.xms|4o18MzBkkjThpm0lctzZCxarJBRa/5WnMMHbhl5+iJw=;
+			KESLKSVLA 12\;KSLS 12.[0-2]|ksn_ksls12.xms|cp2l+DEaxQ9H1F+WfPaX+vD6gmUvd+dzQfOF874RFPU=;
+			SOYUZ 3.7.*.*|kh_soyuz3.xms|QNG/Ov2w+WS8VVyI5W8WTffwjdcOjqV+74042optmsw=;
+			SOYUZ 3.7.*.*|kc_soyuz3.xms|k9nDZe96Um1wo6FBH0aNqj9IdyVakMQXpY2iWg2/3Rk=;
+			SOYUZ 3.8.*.*|kc_soyuz38.xms|B5v89qQYbwKQktMnrRznAeWL8cJfmPOho/gJkGfLImE=;
+			SOYUZ 3.8.*.*|kh_soyuz38.xms|18MDIh6QuLKJcbq2oGpf/eYs2toE2CJWlMbVSwPTgn8=;
+			KAR\\|KARH 3.0.1.*|ksn_config_ar.xms|2G50OWTAlgN5mYKdLdPAAZg5tZgdyYAAiag81Sh/Z9I=;
+			KPMWIN 9.0.2.*|ksn_config_kpm_9.2.xms|EW8Ghj+k0LwwHxBvvFz8rKHJb7qnCwolrJznlFAvpQk=;
+			KPMWIN 10.[0-1].0.*|ksn_config_kpm_10.0.xms|MKgN8mqjeVb68bPC1AatGVtJVAitGoVp1PmiJR1jPWk=;
+			KPMWIN [23-24].[0-2].*.*\;KPMWIN 10.[2-3].0.*\;KPMWIN 24.3\;KPMWIN 25.0.*.*|ksn_config_kpm_10.2.xms|S9WO/GUPqFzokmW18KXU8gYUaA0pAu3GoY/0nCi1FEo=;
+			KAVSDK 8.10.[0-2].*\;KAVSDK 8.9.[2-4].*|ksn_config_kavsdkl3.xms|GL6xUll/cXTbaVcMC8GL5zu5x/nFHNXjHlj5cSWuigM=;
+			KSMG 2.0.[0-1].*|ksn_config_ksmg2_0.xms|zahQxoJ903IfhicqLZr+53+nlmZa7zumS78iv8kWLwk=;
+			KISMAC 21.[0-1].0.*|ksn_kismac21.xms|F2mUW3Ghk6yYA0voSt0An2J2PuxlldfQ0nzkFG32yRU=;
+			SAASMAC 21.[0-1].0.*|ksn_saasmac21.xms|qOcbcEbjSw+PjBGgo4etmfIiL28c7umYOoscP/iSdVA=;
+			KPMMAC 9.5.0.*|ksn_kpm_mac_9.4.xms|mphjCCbSd51pMGdNzBBn74pERFeCUYtN2E76Q/A69HA=;
+			KSE 9.6.*.*|ksn_kse961.xms|tVNhQG3l2ZHt5H9CTgnJNjEu32QSKLVp8YX1cWZVKIU=;
+			SOYUZ 3.[9-12].*.*|kc_soyuz39.xms|GIvOkUbgvSrxQz5BMc58UfpVMgV0QKfrL/QRvsfE2Co=;
+			SOYUZ 3.[9-12].*.*|kh_soyuz39.xms|ux1ELGQMXYNnJEh+GUN1hF4j8YG8Vr83JCmeJ2Yzp94=;
+			SOYUZ 3.[13-14]|ksn_soyuz.xms|vaXnmz+I+nzUkpV7re4AlWlq1GHVx6sBWfX+zvH86Rs=;
+			KICS 3.0.0\;SOYUZ 3.[9-16].*.*\;SOYUZ 4.0\;WSEE 11.0.*.*|kcsf.xms|fcDThvHesiUNTSlqM9Eg9tKlqjWYbGa4ERLSlf+GbUQ=;
+			KVRT 20.*.*.*|ksn_kvrt20.xms|KlKAlQh7B5FkMJslPnbftds2Pvklcxbdk1WG+0ZgjnE=;
+			KSKMAC 1.6.0.*|ksn_kids_mac_mr6.xms|LUQn3bdbSNXBAozHHmykpp0lYrkW5KXWV0Wj8omPrmg=;
+			KSKMAC 1.[8-9]\;KSKMAC 1.7.[0-1].*|ksn_kids_mac_mr7.xms|qpRmUiK23BINdU50oRr7Cu1SWJFNgQomvSYrzHymZJc=;
+			KSE 9.7.*.*|ksn_kse97.xms|rOAIzikeJ0eQSB1UX91jvton0T7d038DHtRTn87pj+c=;
+			KES 21.2.*.*|ksn_kes21_2.xms|V9DVM/VunerYTg5LocLFm3zXE9R4uQ+4jxs2isOWqZU=;
+			KES 21.3.*.*|ksn_kes21_3.xms|51fCIJUKOuhnX+gXx3Nq0B8uVpqtoRwZOCemjcMMv0U=;
+			KESMAC 11.1.*|ksn_kesmac11_1.xms|m12SILYniL01Oo+vF/W1FCOhTTUQHw3yP1lbO6wZ2T8=;
+			KESMAC 11.2.*|ksn_kesmac11_2.xms|VLb8KEiHC52VmH70muoUnMA6wsNWfNyJDOafd3fRt1M=;
+			KSC 13.[0-2].*.*|ksn_config_ksc13.xms|epD3Y8NvO03rLSe90Vo7aV9xRRMtB83HFOSmxggomzo=;
+			KSC 14\;KSC 15|ksn_config_ksc14.xms|m+E83wJq3+BXJDm0XWvc+PBWe8KT07HHju8BT0+UAb4=;
+			KICS 3.0.0.*|kc_kics3.xms|DE707perMALKtUPc3gCzDPGwZeWILpShUZYFjtdkfzE=;
+			KICS 3.0.0.*|kh_kics3.xms|91tFKXtVJkuWeKTUbNDSlg/pFHG77ZnXvUs4nKP90qA=;
+			KPMMAC 9.6.[0-2].*\;KPMMAC 9.7.[0-1].*|ksn_kpm_mac_9.6.xms|ScoTZttrby6vfwnDBaPVF0b5jOxNKQEUEOgVq/rVg6s=;
+			KICS 3.0.0.*|ksn_kics3.xms|bt590IJ6NC6hQgONzeNTXihezN9IANInAGxr84hLuu4=;
+			KASPERSKY 21.4.*.*|ksn_saas21_4.xms|Ko/8P5n0lGJe93PSD9YHKRG//BTr6QWizRdN1p9QEks=;
+			KASPERSKY 21.4.*.*|ksn_kfa21_4.xms|FuVn0YTJj6ujZUDZTZh5BwKFIo56d+B86Jm6f5XYw9k=;
+			KASPERSKY 21.4.*.*|ksn_kis21_4.xms|rfXbEHJqvEQ1W4UXrYstfPzDQdvlLVJWhblbTrRhM8g=;
+			KSDE 21.4.*.*|ksn_ksde21_4.xms|nbeczOqyhNQaIxbxLXsIHWPwAFK9uomRF+Ree+ek3Js=;
+			KSOSPC\\|KSOSFS 21.4.*.*|ksn_ksos21_4.xms|CYD+OS6l1qcxA+GRSLSEEr2koxHyfqSN3pcpUZA606w=;
+			KES 21.4.*.*|ksn_kes21_4.xms|QfadkAlSk0zP7bkE1407wiWSPSFM5js2eyVrxcd6FO4=;
+			ESS 3.1|ksn_ess31.xms|sMCRhcDdrchEKhKsWAFp812IROpIbBXqaPeBfQHUcBo=;
+			ESS 3.2|ksn_ess32.xms|feyzb6IWfIgqE2p5Yf8u7QiXxKJeeoWZgE+U1oq2zAc=;
+			KAVMAC 22|ksn_kavmac22.xms|BgXH9L7pzCwsv0IAiaf0AyK5A3s29b5qgww3YbGQ1gA=;
+			KUU 4.1|ksn_kuu.xms|Z7O3Dy0xm//X5TAWP0D8d6o53AcVXdwqjuxx9txOBDY=;
+			KSDE 21.5.*.*|ksn_ksde21_5.xms|CaV9iwfa9i1+T0ZS6lHmo9puwRpVtWLXVOuAqIF7V3E=;
+			KSOSPC\\|KSOSFS 21.5.*.*|ksn_ksos21_5.xms|4dq2pj3IPYimsam6KcSpa+pIQYIyU9HOQm0MrlQ27T8=;
+			KES 21.5.*.*|ksn_kes21_5.xms|XEU2IKlrhz+vHhPjCyqE2ZH95yl5eu/aE+gAnCnIJbE=;
+			KASPERSKY 21.5.*.*|ksn_kaspersky21_5.xms|crdbn90YFeGYad06wXL/4BydLHYxo2SD3nCV00+FkDo=;
+			KSDE 21.6.*.*|ksn_ksde21_6.xms|U+cNoAk674rMY205dHU8JviRNVZP3IXbaZp6v9qZpOM=;
+			KSOSPC\\|KSOSFS 21.6.*.*|ksn_ksos21_6.xms|zNCtYyz4eQO9tg8hpiqB5HmsjK62afTdk2BdN3nOArI=;
+			KES 21.6.*.*|ksn_kes21_6.xms|+Rk6uPhKRP5OCr1JKrJ5PwBxgmeTOF+Mvz6Jn1wHoGs=;
+			KASPERSKY 21.6.*.*|ksn_kaspersky21_6.xms|qP2BSVO6UusHIK/KA0sO5bOcMGULQ8soD49qSJhTpl0=;
+			KSWG 1.0.0.*|ksn_config_kswg1_0.xms|moqS1cGtNa7c/Ckcfd2bKecWEwKvl4EO1vXfa2Lncmw=;
+			KAR\\|KARH 6.0.0.*|ksn_config_ar60.xms|AQV+uK0419r5XbVu/jrE+hjbg3ipTGei/oqZ8qUGmrw=;
+			KAR\\|KARH 6.1.0.*|ksn_config_ar61.xms|JFeBhkklYsRDpPe/jYxRG5N1Rlk3L9TWHLjWPAu/zig=;
+			KSDE 21.7.*.*|ksn_ksde21_7.xms|kQjLQqSDqeVezRC0yNQuqBSczif55IrHHZg2hlddL+s=;
+			KSOSPC\\|KSOSFS 21.7.*.*|ksn_ksos21_7.xms|XgQNCrs8Wo4eHgD7XDDJtc6WdU0ws/AJKPhxO8RECqg=;
+			KES 21.7.*.*|ksn_kes21_7.xms|FP4r7kf9+B0oQPRB6HqbI9+HEaX7B1JpZR5I2oIBxNg=;
+			KASPERSKY 21.7.*.*|ksn_kaspersky21_7.xms|c6zQt5MTGQPeO2XojNYBhdUIMQbFvtxqmggr1w/x6IA=;
+			KICSNL 1.3.0.*|ksn_kicsnl1.xms|9nPv+G5j6kX9UcVG0hUhcOdpiBsLK5LCn0ySR6jXWEQ=;
+			KICSNL 1.5.0.*|ksn_kicsnl_1_5.xms|XT6Pycdxhn/of7tgleaR37UN0MSDwVqxmMg2pAxRonQ=;
+			KICS 3.1.*.*|ksn_kics31.xms|r7wa4oWgfxZQuv87ae81AO2263lwl5IfILHOX1gPDUk=;
+			AVSL 22.*.*.*|ksn_avslite22.xms|25xC2ZWd1kl7vAihQXmNaS9X45SVEPF48YpIOKnjxbs=;
+			KASPERSKY 21.8.*.*|ksn_kaspersky21_8.xms|DE6koWpRDhM6tldUqT3FcH8m/ccdLlxHtfB22LP9btE=;
+			KSOSPC\\|KSOSFS 21.8.*.*|ksn_ksos21_8.xms|kjCmRGgWNNIE9jAYA1N4u3dlW9VhLI2IRZ8rx6ObxPw=;
+			KSDE 21.8.*.*|ksn_ksde21_8.xms|IWZ81Zpb6gynWGHQPYOZCiYfa+yWtWoefW+90VqP1rI=;
+			KES 21.8.*.*|ksn_kes21_8.xms|Jarf9jq2EFYMoGKwki2Vy8N/qEOAaaBfBlBZhHS3I6I=;
+			KAVMAC 23|ksn_kavmac23.xms|EzxaVTJDQ0DCqQ18b3uOr2oUNZsr9UjzRJDMwsUMO4o=;
+			KESMAC 11.3.*|ksn_kesmac11_3.xms|S/OcoPf+tnF7ivYiVKF245EPGT9Im3Jdcw2Buhr6q0w=;
+			KPMMAC 10.[0-1].[0-1].*\;KPMMAC 10.[2-5].0.*\;KPMMAC 10.3.[1-2].*|ksn_kpm_mac_10.0.xms|0AOsiB9M0EaGPAL4Wn6p1VYPLAKdDefh0HWEE0ZgZ2w=;
+			KASPERSKY 21.9.*.*|ksn_kaspersky21_9.xms|hAa14aCwiVzGyYr+RLJOddbqvhLmXYhyfecu6TUOBHQ=;
+			KSOSPC\\|KSOSFS 21.9.*.*|ksn_ksos21_9.xms|NpTiiYI0z+Ot8hc61rzt53h6ACMCvZT+ZRbrDdCMs+k=;
+			KSDE 21.9.*.*|ksn_ksde21_9.xms|wTYQkYrAVlotIvI9Y9AviLBeTq66yQ2ojLHd1ys8deE=;
+			KES 21.9.*.*|ksn_kes21_9.xms|PpGwZQCujJ+pj4bPWbgYPbrsl6ZEEnPFLKkqf4V3AMk=;
+			KAR\\|KARH 6.2.0.*|ksn_config_ar62.xms|QRYwb2hhjaVuToBFF65/epIS1J5LNzffzkNLx2uSFAM=;
+			KLMS 10.0|ksn_config_klms10.xms|c8MGluXaHgakUwYmwf9WbjM7JKIh4AUhf2Chz0BlLBM=;
+			KASPERSKY 21.13.*.*|ksn_kaspersky21_13.xms|ZoIUs8RB82Kxo1xv1Ziuk/wFflWsEyny1kzUpptybXQ=;
+			KSOSPC\\|KSOSFS 21.13.*.*|ksn_ksos21_13.xms|Osqo6vZbN8NCRZjG969VMrsGipd0o/jd9rmmQqfW2SE=;
+			KSDE 21.13.*.*|ksn_ksde21_13.xms|CjaDuusTm9oGipSRStzhDdTwaAxKuN3fnHLBsl77fCo=;
+			KES 21.13.*.*|ksn_kes21_13.xms|Y6Ju/7vGed6bp0wTqAvVGs/E3HneOhOO8LZzN2iU174=;
+			KAR\\|KARH 6.4.0.*|ksn_config_ar64.xms|u6C90mp+5Vd3VzIcTDFxtN9/ACtCS4fggUKzvOw4GCc=;
+			KAR\\|KARH 6.3.0.*|ksn_config_ar63.xms|cdTLCdz5eTlpz/EjgIjEiUjFesgX8XR0pfUMblFTMPY=;
+			KICS 3.2.*.*|ksn_kics32.xms|XNnlOxD4ZZsKCRqlD9efrI+afMYXWND/Ar4jvuV1bQ8=;
+			SOYUZ 3.15|ksn_soyuz315.xms|ETHoA4MZhqaUtfTFA5qexABqOEkiMJDQ5EHvhy2IraA=;
+			SOYUZ 3.16|ksn_soyuz316.xms|B6tsbT9jeTfoOQeBsvy8Y6MPbx+Kl969JZ4+xMgMuZ8=;
+			KAVMAC 24|ksn_kavmac24.xms|HWOF/ftcfJrR/WtRUGka88x+zCHI28C8YIMXU+U6Djg=;
+			KAVMAC 25|ksn_kavmac25.xms|k34GbRdSTDKC/Y7Z4pVtbYSju7IL2XIiOmz4q7dgQS0=;
+			KASPERSKY 21.14.*.*|ksn_kaspersky21_14.xms|BCJAOGonmP8McWCEQnrkdz14xGis5PXcFiTqrTLK1WI=;
+			KSOSPC\\|KSOSFS 21.14.*.*|ksn_ksos21_14.xms|F34mfVBt/S/XvvH5P2FlEkHnHwuxHE0esVDUlU/W8xk=;
+			KSDE 21.14.*.*|ksn_ksde21_14.xms|nxvOt2sRr23kHWxJvdWRAoTAdiGdgc47h9J19HOXay8=;
+			KESSL 3.3.0.*|ksn_kessl3.xms|TYZuI4CTkqIbkBMvJO89xZE88MIiSG1xQTCqQHkv0ro=;
+			KES 21.14.*.*|ksn_kes21_14.xms|u19St2zDGtai8VbJHy30M9zzkiX61Wy2V3n6lWFMD9c=;
+			KESMAC 12.0|ksn_kesmac12_0.xms|z0fgt9o9ieJqESBcIfQpWbbBcMfsKJJ9DI3hbtQEfJM=;
+			KASPERSKY 21.15.*.*|ksn_kaspersky21_15.xms|1i6UK8M+yqkwCg31LmUy/tFbbJ5Nuvp1GVIUG3oK2WI=;
+			KSOSPC\\|KSOSFS 21.15.*.*|ksn_ksos21_15.xms|BCs6WPQUFFaS9/mIhqlvEiL0ok2j56f+sXQWXJuyCRU=;
+			KSDE 21.15.*.*|ksn_ksde21_15.xms|ueGxhnCIvFsoc0GrvQ9TVgFD6sriwOgLlij/+3OM1JA=;
+			KES 21.15.*.*|ksn_kes21_15.xms|oUEnm8ZbygSJ4jr9Ocos1+2kxLnS3aNtLn+csM5PHCk=;
+			NGFW 1.0.0.*|ksn_ngfw_1_0.xms|z7YZhNSvY/+iLHzofZkOFCg4nUah4epb0aHNqc3N/88=;
+			ESS 3.3|ksn_ess33.xms|OQUaC4ptTicQ1Qy3+mvGnnH1Z9Y49hKyK2z1ZTmtcCA=;
+			KSMG 2.1.[0-1].*|ksn_config_ksmg2_1.xms|K/WQM0duyj+bGHlxsPpQSA+GqnSpkEnMRuiZT/WAvPE=;
+			KAR\\|KARH 6.5.0.*|ksn_config_ar65.xms|YKzY5GSc1GnupBHbMvh4VsGzYRfD83pL4ZbOVG/jvQ0=;
+			KRT 24.*.*.*|ksn_krt24.xms|hLuR4apjv0z67d1hwnLEjbj761ZIUyneyXAJDGUGf0g=;
+			KSVLASVMPRG 6.0.*.*|kc_las6_0.xms|O3QqWxzkN8ewRzVL5XeKyUHyABHD4OrkI78kKkmIz4s=;
+			KSVLASVMPRG 6.0.*.*|kh_las6_0.xms|nfbgMbXKywxjwd2p5cnn7EHOw5brJkCEV0ssel3g11A=;
+			KASPERSKY 21.16.*.*|ksn_kaspersky21_16.xms|VYubufNxH7asgcJ3h412dzkIUXorKkbBRsIkmW7wrys=;
+			KSOSPC\\|KSOSFS 21.16.*.*|ksn_ksos21_16.xms|LVdjX8ixsylGu84tHJDdgFjHb1RcRfOyzhxDtNyrMvk=;
+			KSDE 21.16.*.*|ksn_ksde21_16.xms|8c657GcWnbCnBBFu4deHzg6TGb25WCDbEvHIkrojoec=;
+			KES 21.16.*.*|ksn_kes21_16.xms|yiCr8eVsQDlp/kZN0tJ8UjsJmwscnmYELKUormzBi+Q=;
+			KESMAC 12.1|ksn_kesmac12_1.xms|Kl74g/ck4/xQHW3YWb8r5kSwecRzkgXZ97TdN7MteZ8=;
+			KICS 4.0|ksn_kics4.xms|wiBHM9lXxPxziyCMBdFdRU+srtilKLCRjNwdW33Z5YU=;
+			KAR\\|KARH 6.6.0.*|ksn_config_ar66.xms|4PUl6vBbxeMqzR4oVg8xonvd0FL8zeBbxs/GIyLe/fU=;
+			KASPLINUX 24.*.*.*|ksn_kasp_linux24.xms|tlnGmxjjQqCqn81gwJtZhWfmA6UnqNTAPJJoD72x4DE=;
+			KVRTLINUX 24.*.*.*|ksn_kvrtl24.xms|iUmzebqgz/l0tf8SDO0lq2F7pmpgLYQ/mxtiTIPAkRM=;
+			KASPERSKY 21.17.*.*|ksn_kaspersky21_17.xms|fKp5xVljscVR65ca/SUXzlVJu4MjGiHPT5bY3Ce7E60=;
+			KSOSPC\\|KSOSFS 21.17.*.*|ksn_ksos21_17.xms|2EnYNTxPA+fd3IIQLE/eFjprtsLeTI8egPAmvNl9QdQ=;
+			KSDE 21.17.*.*|ksn_ksde21_17.xms|dZx6SVsfR0j0ScmsiufB+87qwr9Syqpw/jwlfnaT184=;
+			KES 21.17.*.*|ksn_kes21_17.xms|6JkFSjeyNKD/I587q4sqTepn6As7ic5TV0TZalsww54=;
+			KASPERSKY 21.18.*.*|ksn_kaspersky21_18.xms|A5aRp96x7hyV4Ys6rDmB4P/Qc2XheIg/Tg0kn5jG+Po=;
+			KSOSPC\\|KSOSFS 21.18.*.*|ksn_ksos21_18.xms|4k5Fl9rfKdmlJFp9bwgYX/htaMjy4+pRsNrpKQdOuoE=;
+			KSDE 21.18.*.*|ksn_ksde21_18.xms|3zx4jIwzy2ypOeVCa5XeYUyKxMQzZ39lQatKKeDD+PE=;
+			KES 21.18.*.*|ksn_kes21_18.xms|fqW1LNKEr2e+1FZkvcFPl5BhKAPtBtaw9T5CVNpqOY8=;
+			SOYUZ 4.0|ksn_soyuz4.xms|rCSbL0iQADarsqbC3uKXssUTV1aMyT5qNIsAIlDejo8=;
+			KSVLASVMPRG 6.1.*.*|ksn_las6_1.xms|bRXzz8zSWiCdxMYj9hMsxV18D56BtX9VkmcPH12ejRA=;
+			KASPERSKY 21.19.*.*|ksn_kaspersky21_19.xms|wOlCG3wC7jL+Z3mM/Oqc3LOBMp/eSDGpce50xp0svvY=;
+			KSOSPC\\|KSOSFS 21.19.*.*|ksn_ksos21_19.xms|a1fHaBl9TFEmehqy9p48776CBl7JJCF4tz7DmN+xQXg=;
+			KSDE 21.19.*.*|ksn_ksde21_19.xms|0l/XS6mimGpgWtHwJLLeK3uR1h2C636E0wLI//eNj+8=;
+			KES 21.19.*.*|ksn_kes21_19.xms|NhMAQ2q1YhM6NZ5T/0OnkBxAUigzbf2oPzoeIS8SeIc=;
+			KICSN 21.19.*.*|ksn_kicsn21_19.xms|jsfXBzkNFiP6kcipgMb480tL/qI+J7ecmSswNesU04E=;
+			KESSN 21.19.*.*|ksn_kessn21_19.xms|IrGeOJ2l/yI5Ff7PxALlNKoGASv1y97nnQo+2LpiKHQ=;
+			ESS 3.4|ksn_ess34.xms|gvFOx7/TSK+EZAs6mK80dtHcNfM51XgIwu64iYGba/Y=;
+			KFL 2.0.0.*|ksn_kfl.xms|iQDGp+Wcgj7rhtkDd4dYJ0+G6frmTPfiPZ0qQG4p8+Y=;
+			KSVLASVMPRG 6.2.*.*|ksn_las6_2.xms|5Lc+drofXmbEP8QH8RgQhPgRmr44rtx3wxc4m7hxtwY=;
+			KASPERSKY 21.20.*.*|ksn_kaspersky21_20.xms|jceZaGAXIkgYdoGYRF8T8HwOVVs4qUPi9wKpVILBiUM=;
+			KSOSPC\\|KSOSFS 21.20.*.*|ksn_ksos21_20.xms|o0xDPBEDhEV++ZPPOk0aYHPLIBoq3YmsUxGZN0523Z0=;
+			KSDE 21.20.*.*|ksn_ksde21_20.xms|G711pSIKt24xRvQuJbFSNlq2YN6OKap+ofMQszo8R34=;
+			KES 21.20.*.*|ksn_kes21_20.xms|wNRYUkHIvf495Z+YpVotGyKasZzz1Jf2ce5iFydaNU0=;
+			KICSN 21.20.*.*|ksn_kicsn21_20.xms|nWQZMOBwTcBZMWOhB3+GRA2HnBoqwYmTGmmAJhUKQwU=;
+			KESSN 21.20.*.*|ksn_kessn21_20.xms|JAa9mEyWsRwLwAvXh+Dj2tm/gVBxe/RwAtbjC8L8bP8=;
+			KAVMAC 26|ksn_kavmac26.xms|UxCpdxDxmCAE+R9xxmUhXmuMvW5WyCuqosSC2L4u11Q=;
+			KASPERSKY 21.21.*.*|ksn_kaspersky21_21.xms|lh8LHzRCODRDmGf+BdqpJ6xlnkBeoXFkV/qTwwSduTQ=;
+			KSOSPC\\|KSOSFS 21.21.*.*|ksn_ksos21_21.xms|+L3lYP9bDv74IoJ2xltz8ZtsS87DhKf0Hc3B/kgXQi0=;
+			KSDE 21.21.*.*|ksn_ksde21_21.xms|7RlLTx0ERXK/ixsr4nQvoWYWa5cMrHb0JcusuHGr9Sc=;
+			KES 21.21.*.*|ksn_kes21_21.xms|HvTVGuPOKslimLHLKm/PsJ3cc2RRRlmKSHHmUBcT2KY=;
+			KICSN 21.21.*.*|ksn_kicsn21_21.xms|dC6w1GXTwp8D/iBMl6HBpMNrEbfF41AcW8ZkydQ9IBY=;
+			KESSN 21.21.*.*|ksn_kessn21_21.xms|FqS4gdv9nYwzb0ey6M8MIYbik2BsBp9LLA8la+Wv230="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="ksn-1313g.sha2rg"
+		DSKM2="UnKFN3w7IWSQ49a1hpp36InI056koyfoSuD3BBj5S04="/>
+	<Key2
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="ksn-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAOmnvPssIak1m5DAPqkpltMUjiHLygtufNhkQgzZ44IzqvRqXtvT9C+8fTcNpDqPNL4cuKzxSOGon538dDDyKLsBAB4JpgAAAAIAAigDAEtTTgMAAigEAEJBU0UBAAAJnhH/pQ0KOiEyODQwMUdXL2JiQWpnaTdkdHRFOHJkaE1mZUptRDd1a2dDeDNvQ2VtcWt2Tnk0NU1KaU05ODkyUlM5Qk5nNUZTYVI5RE9Zb2VwZHVKVmdFWW9HRVRBajVYemlnNCUl</Key2>
+</Update>
+:!28401G0xD6RyLk79HyeD+lntLjyHK1PvwIesZk4IyVjLSe4ZY4ZKLgRFxd/W24y77Vw5V8nq63unQboV2RcYDiDpzpE1%%
+=!AQAA1QsAlKwtxgAA0‚Ñ+¸tŽ ‚¿1‚»0‚·10
+*…0B+¸tŽ 200.0
+*… w:© `ûÀ=ì~Ë¹i4L§?âÛ.X¿ ‚‘0‚:0‚ç  „hž6¯OW°v­“o°$Ý0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110145Z480120110145Z0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0h0!*…0	*…*…C @Ã¤µ@‡ò‘ÃY6º˜I®…_AyØ´¿x£•O{b\CgF@:õ&¡04Nlæà‡éæ£E†7ñ·æ£O’©_—´/P£¡0ž0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0Uÿ0Uÿ0ÿ0#+¸tŽÿ0+¸tŽ0
+*…A ßq*,;\™Öì¬A:Oèó¼æMöí°æ#qùW¢0*¥~€ó? BöÚ§7NžhI½¹ÅÈ>é ‚No0‚O0‚ü P/ÈPSJŠ¼A‰Ãš‚u0
+*…0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0240212125125Z250507125125Z0U10	URU10UMoscow10U
+Kaspersky Lab10Ucompid=KSN_type=BASE0h0!*…0	*…*…C @çŒ]µ÷ûñ‡^½=)½ÀÚÀÁ‹Ê5ýyøua%”ÙNx;ÎÄö€³Âr9Ãh.
+Ëž6j$ÛÄáŠ$yÊ~)Ÿß£©0¦0+U#$0"€ Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0)U" 2gdŽ£HTª0dZ¢½¶Kz†¹H´7Ô·Š¡0Uÿ€0U%ÿ0
++0$+¸tŽÿ0+¸tŽ0
+*…A ¬c®7è·ƒ™DœÙÝ@üä;~½§[|Ù;ôèm*÷ä2¨w<ÒH#;ã˜B”,›¤Þj²Ø(•íZÃÜp÷m 1‚É0‚Å " 2gdŽ£HTª0dZ¢½¶Kz†¹H´7Ô·Š¡0
+*…0
+*…@aÎ“Á-wl”©y¯ßý:/£÷]4XLf¨™ 0ü›ÁˆâbÅäÐ¨X…÷ªä4±Ô£›Åjè0ˆéKDR¡‚@0‚<
++‚71‚,0‚(	*†H†÷ ‚0‚10
+*…0h*†H†÷	 YW0U*0.0
+*… Gûå·:é³ L»4É³ÓJ¦Å×OüŠ~§<í²2ñ"O	20250131220023.12055Z ‚Z0‚0‚É  ‘
+Æ‚ó¬M£†ÓÌ_Â0
+*…0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0250110115903Z260525115903Z0O10	URU10UMoscow10U
+Kaspersky Lab10Utype=Timestamp0h0!*…0	*…*…C @†ÁÀûha­K	²YÅGø7{©;N)‘'¾‚n{r¬…á>T&Ò›ù²Rv©†ÅY6£gt!?üaÐñ´¼£r0p0+U#$0"€ ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0)U" &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0U%ÿ0
++0
+*…A 
+3E`Ä’Ac³U OáÕBŒO—ö—~ze<×D}UeÖ	â {Ë*²Úö]³ØW†n§B‰ëÁ'Ëðèhº ßC0‚60‚ã G¢~YFC®¼ÆADm\™ò0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110221Z480120110221Z0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0h0!*…0	*…*…C @«k„8Ï P8qFÙAÏÛëòÙ†Ð4ªLyx•žcÜ)åGð,ˆçV:TZ.B§žºŒì«FÖGð
+€{”×£”0‘0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0Uÿ0Uÿ0ÿ0U%ÿ0
++0
+*…A (^·ÇíâÔãi!rO…@aÇn^è æ²•ï«„Èôî*Õƒ1÷8J-=§ OÃ{BzÍIª;ð¤™¨õJ1‚80‚4 " &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0
+*… °0	*†H†÷	1*†H†÷	0	*†H†÷	1250131220023Z0/	*†H†÷	1" ÏùðA	|ß$èê}`â›âÞnK©I&bíÔAº¬ÊÔú0C*†H†÷	/1402000.0
+*… WºÒã©e¢LîN@æÅˆ0ºÒ½vEt'ñ5Ñ1`Â0
+*…@°<S°“`b×IWaD
+ÐÀÃÁÙšÐ¶Q
+6·$í“§3­Ô_““üð¬sÙ›+êAéÁ¢ZÖpXW%%
