@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+
+	<!-- Version: 2024-08-20T17:31:00.000Z-1724175074 -->
+
+	<Image Id="{4EBA15D1-DB2A-42F4-82C2-820B5D550685}" Path="*\ieproxy.dll">
+		<Process Path="*\explorer.exe" />
+	</Image>
+	<Image Id="{2E16D8CF-BB50-49F7-8DD9-B706931E6F50}" Path="*\system.management.automation.ni.dll">
+		<Process Path="*\powershell.exe"  />
+	</Image>
+	<Image Id="{2098BC1E-B696-41FF-8C3A-6E7CBB2C0545}" Path="*\system.management.automation.dll">
+		<Process Path="*\powershell.exe"  />
+	</Image>
+
+	<Image Id="{4B0E9926-7D0B-FD2D-E219CE1F44A7A123}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\aitagent.exe" />
+	</Image>
+	<Image Id="{4CBD38DC-9AF7-2BE4-5E0DDCEFE1CC894B}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\avp.exe" />
+	</Image>
+	<Image Id="{3BAB4038-9A3B-C2EA-4DDF2BFB7265B227}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\backgroundtaskhost.exe" />
+	</Image>
+	<Image Id="{95A24A19-654C-F258-8006A9378A9BEF04}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\chrome.exe" />
+	</Image>
+	<Image Id="{7E89D79E-07E5-E99B-E852A7E3ACF8E934}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\compattelrunner.exe" />
+	</Image>
+	<Image Id="{358A6B8E-BDE3-CB05-06D318587F5B7FA6}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\conhost.exe" />
+	</Image>
+	<Image Id="{7DF32E71-02A5-8392-087DDC48E3DB3A70}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\csc.exe" />
+	</Image>
+	<Image Id="{DBFC4378-243E-9046-36E292CBFB63AD70}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\cvtres.exe" />
+	</Image>
+	<Image Id="{88CB68E8-521D-1CB9-DACF12C9559CF6B5}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\diagtrackrunner.exe" />
+	</Image>
+	<Image Id="{6325157E-5968-2698-4C945387D3ECC98B}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\dllhost.exe" />
+	</Image>
+	<Image Id="{6FD230B6-9343-275A-7CDAFDBB320AF318}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\googleupdate.exe" />
+	</Image>
+	<Image Id="{FDD8919B-26C8-5E0B-9164606FA3E35889}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\ksnproxy.exe" />
+	</Image>
+	<Image Id="{41B40CFB-4ED4-8509-10A58A9EC3C34A6A}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\localbridge.exe" />
+	</Image>
+	<Image Id="{5AF1C913-D48B-F844-A16E1127A3962A9A}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\monitoringhost.exe" />
+	</Image>
+	<Image Id="{5E3C3049-DB95-0D40-EC3C3A190FDB80BE}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\ngen.exe" />
+	</Image>
+	<Image Id="{4791AFAD-5303-7B48-3A5EB96C04879E11}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\policyhost.exe" />
+	</Image>
+	<Image Id="{DEBFDE5F-2174-DF6C-CF9192676A1A4306}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\runtimebroker.exe" />
+	</Image>
+	<Image Id="{E9F32098-39F2-29D4-613DDC188C2C0FED}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\searchfilterhost.exe" />
+	</Image>
+	<Image Id="{C03D4173-123D-735E-CEBC9C371AC84D59}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\searchprotocolhost.exe" />
+	</Image>
+	<Image Id="{5820A3BC-F97F-ABE6-72BA0F2E11029480}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\splunk-*" />
+	</Image>
+	<Image Id="{76A222F5-C6C0-B3B5-E58D5F9CEBCCC0EC}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\sppsvc.exe" />
+	</Image>
+	<Image Id="{764A9F00-6648-6CAD-EDB81D5AE667ADBA}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\svchost.exe" />
+	</Image>
+	<Image Id="{4169FD94-2EBB-01D5-F14E66D7BCB0EC6C}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\teams.exe" />
+	</Image>
+	<Image Id="{CFCA0E97-B636-0B08-01618C5CBC5DE4DC}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\tiworker.exe" />
+	</Image>
+	<Image Id="{93617C9A-CEE0-2D33-1057413787E6A399}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\up2date.exe" />
+	</Image>
+	<Image Id="{17381F82-D351-F9AE-23D760AF46CB7C8F}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\updatetrustedsites.exe" />
+	</Image>
+	<Image Id="{E629FBA5-BA21-2340-6A24D22220A630A2}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\vapm.exe" />
+	</Image>
+	<Image Id="{2BC90A06-BC7E-2400-5481680F5139F2D9}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\vssvc.exe" />
+	</Image>
+	<Image Id="{38CA08B2-21C6-BEF8-285CD8D0D65D0BA1}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\wermgr.exe" />
+	</Image>
+	<Image Id="{A129CCF3-38CB-16D6-C917AB6B45A82094}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\wmiapsrv.exe" />
+	</Image>
+	<Image Id="{501A758E-8A46-BBDE-A76096FBA20ADE93}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\wmiprvse.exe" />
+	</Image>
+	<Image Id="{0E7ECBBF-6364-04CD-4D8200046B118C05}" Path="c:\windows\system32\crypt32.dll" >
+		<Process Path="*\wsqmcons.exe" />
+	</Image>
+	<Image Id="{35089B34-AD94-8BF4-AE6E2BE0A5418E70}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\taskhostw.exe" />
+	</Image>
+	<Image Id="{B530DD5C-2825-358C-1A27920ADA9EBDC1}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\ccmexec.exe" />
+	</Image>
+	<Image Id="{FF341F0F-5B76-696C-5EC66FAE6ABED8F7}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\msfeedssync.exe" />
+	</Image>
+	<Image Id="{BCB12E09-697B-1405-D817295F2D5D1236}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\explorer.exe" />
+	</Image>
+	<Image Id="{3FA4971A-F4EC-FF5A-50BE736152435ED7}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\msiexec.exe" />
+	</Image>
+	<Image Id="{BF75806B-64FD-D4F6-4D630CD1D06BF02C}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\schtasks.exe" />
+	</Image>
+	<Image Id="{4715F021-FA5E-D6D7-A37A2B246DFDC77D}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\updatenotificationmgr.exe" />
+	</Image>
+	<Image Id="{EC854FBC-8D0B-260D-A0658586DE33C1AA}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\wmiprvse.exe" />
+	</Image>
+	<Image Id="{B18EC87C-ED6D-6DAE-135768F852735A6D}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\wermgr.exe" />
+	</Image>
+	<Image Id="{57E94BCE-14AC-3F2D-B934821FDE970451}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\ngen.exe" />
+	</Image>
+	<Image Id="{9B1F4631-8A3B-EE60-851BC3AFCAFECB06}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\srtasks.exe" />
+	</Image>
+	<Image Id="{343C2C38-5E54-59CD-E621B156962DEA43}" Path="c:\windows\system32\taskschd.dll" >
+		<Process Path="*\usocoreworker.exe" />
+	</Image>
+	<Image Id="{1FF8E59D-FF50-A2D2-30B502339297D26E}" Path="c:\windows\system32\taskschd.dll" >
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Image>
+	<Image Id="{B7F86656-5608-FB80-226B59660EA6FCE2}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\ccmexec.exe" />
+	</Image>
+	<Image Id="{926FD03F-5C67-82A4-7AE9F0932F7F6A61}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\dllhost.exe" />
+	</Image>
+	<Image Id="{48B90576-3989-11A3-8369E1BE10701B95}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\healthservice.exe" />
+	</Image>
+	<Image Id="{5ECF8669-6339-43A3-417089DE90E0B0A2}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\lync.exe" />
+	</Image>
+	<Image Id="{7B3C1321-07D6-2BBC-5AD9FF614CE4E044}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\monitoringhost.exe" />
+	</Image>
+	<Image Id="{3EA88B7C-C977-FC44-B6791BE1939EDE69}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\outlook.exe" />
+	</Image>
+	<Image Id="{60E47715-0819-5F6C-2D2D85980B37C881}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\searchprotocolhost.exe" />
+	</Image>
+	<Image Id="{7E6585B9-F593-A615-908E4D712F746989}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\sppextcomobj.exe" />
+	</Image>
+	<Image Id="{625D1278-1378-1F73-0D0998280866E7BB}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\svchost.exe" />
+	</Image>
+	<Image Id="{674B514B-7157-0084-CD4671B1DAD35619}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\taskhostw.exe" />
+	</Image>
+	<Image Id="{D036A577-EAAE-3DA1-C120B1FB15E28288}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\ucmapi.exe" />
+	</Image>
+	<Image Id="{31A4D755-94E2-6E2B-65D48368303FB404}" Path="c:\windows\system32\adsldp.dll" >
+		<Process Path="*\wmiprvse.exe" />
+	</Image>
+	<Image Id="{00B99932-7828-999D-661243E75A2ECFC3}" Path="c:\windows\system32\vaultcli.dll" >
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Image>
+	<Image Id="{5CFF9797-775A-B9A9-761414A3ED5E9D83}" Path="c:\windows\system32\vaultcli.dll" >
+		<Process Path="*\backgroundtaskhost.exe" />
+	</Image>
+	<Image Id="{04A72B3B-F727-4368-7473890E469564B5}" Path="c:\windows\system32\vaultcli.dll" >
+		<Process Path="*\taskhostw.exe" />
+	</Image>
+	<Image Id="{16065113-3A40-D3E1-77FA4E80722B640E}" Path="c:\windows\system32\vaultcli.dll" >
+		<Process Path="*\settingsynchost.exe" />
+	</Image>
+	<Image Id="{ADA06EBE-70E8-63A1-D7082BACFE40AADE}" Path="c:\windows\system32\vaultcli.dll" >
+		<Process Path="*\searchui.exe" />
+	</Image>
+	<Image Id="{15BFD12E-D9D0-140E-77A1D96A87F2F0AE}" Path="c:\windows\system32\vaultcli.dll" >
+		<Process Path="*\runtimebroker.exe" />
+	</Image>
+	<Image Id="{7BAFABF7-7F09-E2E2-357E924E4172FC60}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\git.exe" />
+	</Image>
+	<Image Id="{739A334A-8171-D4A0-2999CA8DDED577CA}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\teams.exe" />
+	</Image>
+	<Image Id="{08839362-8200-5160-403D064779BBE72F}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\chrome.exe" />
+	</Image>
+	<Image Id="{E28F2236-B9FB-F158-8D96CB87331036FC}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\wmiprvse.exe" />
+	</Image>
+	<Image Id="{6BD23CFD-0012-C44D-B4CDE22DF271A979}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\updatetrustedsites.exe" />
+	</Image>
+	<Image Id="{BBD4CB55-22BD-3421-0643F394D752B6AD}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\searchprotocolhost.exe" />
+	</Image>
+	<Image Id="{06AB1713-91F3-1A1E-4B18BEFECAA52330}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\backgroundtaskhost.exe" />
+	</Image>
+	<Image Id="{AB56D37B-DAE8-21B2-A9EEB5D29BAF6721}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\localbridge.exe" />
+	</Image>
+	<Image Id="{C3879C0C-5ACC-69D2-80CE9CD84C89A8C9}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\sh.exe" />
+	</Image>
+	<Image Id="{EBA46F8E-62CB-6E30-39C08AE6FC926CF7}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\runtimebroker.exe" />
+	</Image>
+	<Image Id="{E8C13150-69BA-7CF6-0EA23F270B0D64C0}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\git-credential-manager.exe" />
+	</Image>
+	<Image Id="{653BD496-C7CF-0109-9D2F38C1FDD2D32F}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\wmic.exe" />
+	</Image>
+	<Image Id="{C2242D19-9EA7-80BA-67BE1AECBE3B7955}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\logonui.exe" />
+	</Image>
+	<Image Id="{38B99CA5-1C9D-05E2-48BC6C89BF38A657}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\monitoringhost.exe" />
+	</Image>
+	<Image Id="{1B95F223-8FA0-860A-8572B25D35852CAA}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\mscorsvw.exe" />
+	</Image>
+	<Image Id="{A1AFB77D-7270-16B1-167D8741C6674D13}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\audiodg.exe" />
+	</Image>
+	<Image Id="{B869961D-58E5-DE05-A9B4CFFD476E9D68}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\searchfilterhost.exe" />
+	</Image>
+	<Image Id="{CE6BE96C-0211-8D9E-64D8818014B553E8}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\cscript.exe" />
+	</Image>
+	<Image Id="{1F0285F4-F72A-9EA1-52A6F2C3AAF3690B}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\gfxdownloadwrapper.exe" />
+	</Image>
+	<Image Id="{0DBCE7E3-12B1-8760-64A19FB58F6571C8}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\taskhostw.exe" />
+	</Image>
+	<Image Id="{E565817C-4EF1-9A69-44037077F483B7A6}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\powershell.exe" />
+	</Image>
+	<Image Id="{A22A5F3E-FF35-B153-B0492A5CFF1CB183}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\smartscreen.exe" />
+	</Image>
+	<Image Id="{EE752942-CF23-9B97-E26C02E509551818}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\msiexec.exe" />
+	</Image>
+	<Image Id="{5D3DA766-0FD7-CBC3-965B9A20A6715C51}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\cvtres.exe" />
+	</Image>
+	<Image Id="{BD74E4C1-1F48-14EF-813910F68DA337C8}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\node.exe" />
+	</Image>
+	<Image Id="{8C631633-6B6B-639D-68FA87C9F2A12CFD}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\vbc.exe" />
+	</Image>
+	<Image Id="{F100DE0D-3820-0A38-AA114AE31E33D2F3}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\msfeedssync.exe" />
+	</Image>
+	<Image Id="{EA05173B-49F2-FAB6-6FD4E54350963630}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\paket.exe" />
+	</Image>
+	<Image Id="{A57547AF-C8F2-9370-F0D598A99AB4D9FC}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\policyhost.exe" />
+	</Image>
+	<Image Id="{B8A71992-0C0D-3BB4-7E0F5D5E21480494}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\winword.exe" />
+	</Image>
+	<Image Id="{79FA0C76-6262-FE13-E36460AAB625A79C}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\microsoftedgecp.exe" />
+	</Image>
+	<Image Id="{69F68436-E0CA-79BF-ACA4B108924E603B}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\code.exe" />
+	</Image>
+	<Image Id="{563AD734-AFB9-FFDC-54A8D5D7DF6610B2}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\addinutil.exe" />
+	</Image>
+	<Image Id="{CDF3AB66-B6C5-5CCA-E5C34BC71F29B86D}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\python.exe" />
+	</Image>
+	<Image Id="{8E9D2B04-6886-D638-813D86F15AACEC38}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\browser.exe" />
+	</Image>
+	<Image Id="{5466F2B3-D65A-D410-C8B92D512AD04A4F}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\wmiapsrv.exe" />
+	</Image>
+	<Image Id="{2006A8DE-C372-3ABA-05A2DA2B0D2E2C77}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\scriptedsandbox64.exe" />
+	</Image>
+	<Image Id="{5DEB272B-0A0F-43FE-C4AAB6F09343F43E}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\excel.exe" />
+	</Image>
+	<Image Id="{8C025363-709C-A62C-426C7F84EF96B5AB}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\rdpclip.exe" />
+	</Image>
+	<Image Id="{BBFFB7B5-55F7-2B76-91F7361219DDFB69}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\w3wp.exe" />
+	</Image>
+	<Image Id="{C072CFE4-A4E4-60FF-2DF0E6848C3B10E5}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\setup.exe" />
+	</Image>
+	<Image Id="{E1254382-6F44-C928-7A81C36EE2038BC8}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\firefox.exe" />
+	</Image>
+	<Image Id="{79700E45-5A49-CA63-23DB6116141C1361}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\compattelrunner.exe" />
+	</Image>
+	<Image Id="{C57F46EB-EA57-818D-8D47A0A961496384}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\consent.exe" />
+	</Image>
+	<Image Id="{25A69DD4-45D9-7C63-3317E97D142551AA}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\ccmeval.exe" />
+	</Image>
+	<Image Id="{D68F47C6-7FA2-304B-E15AAFF6C9C6E0D7}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\outlook.exe" />
+	</Image>
+	<Image Id="{1B1BBB2A-4EC4-0DBD-EAA23F576467AC32}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\csc.exe" />
+	</Image>
+	<Image Id="{9F13C71B-8EDE-72D6-81CA0B3B4533076C}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\opera_autoupdate.exe" />
+	</Image>
+	<Image Id="{A1F25118-3522-D640-C260D4CFB4DC9EE7}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\msoia.exe" />
+	</Image>
+	<Image Id="{59C02819-F995-D7B0-C6693626124658B2}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\vbcscompiler.exe" />
+	</Image>
+	<Image Id="{545FFE8F-1E5F-D4AF-09158918C5C79256}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\winlogon.exe" />
+	</Image>
+	<Image Id="{9919F431-D2A6-8446-BB04C07BFC9D4A0B}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\uname.exe" />
+	</Image>
+	<Image Id="{60EC675C-FC62-79FC-81D5089089988285}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\ssh.exe" />
+	</Image>
+	<Image Id="{0923D693-B86E-F7DE-0A5B6381BFECDC67}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\lockapp.exe" />
+	</Image>
+	<Image Id="{DE62D6CE-3491-C1C6-E705749A640936F0}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\software_reporter_tool.exe" />
+	</Image>
+	<Image Id="{12230FAD-7609-3111-796EEAEBB4B4F28E}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\backgrounddownload.exe" />
+	</Image>
+	<Image Id="{4D035D38-0FCA-3C29-FE056E26E322063C}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*\opera.exe" />
+	</Image>
+	<Image Id="{1869DF0A-A7AF-E6D3-6D681212E11C65C1}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Image>
+	<Image Id="{A6DA1635-0A9C-BA10-DA27443206058258}" Path="refemit_inmemorymanifestmodule" >
+		<Process Path="*\powershell.exe" />
+	</Image>
+	<Image Id="{A12752A6-C5FF-B91C-DA1BD9EB73103C17}" Path="*\applications\workers\collector\bin\*\delivery.common.*.dll" />
+	<Image Id="{942EF8C1-C034-473C-7B9DB917DADCB9AB}" Path="*\applications\workers\collector\bin\*\delivery.db.*.dll" />
+	<Image Id="{5D361140-F664-49CE-01297E6E324D4625}" Path="*\applications\workers\collector\bin\*\delivery.db.repositories.dll" />
+	<Image Id="{B7FDE301-7527-CA89-0AE015F7BC4D727A}" Path="*\applications\workers\collector\bin\*\delivery.worker.collector.exe" />
+	<Image Id="{993420D0-E902-BBAD-2BD2AE174AA223EF}" Path="*\applications\workers\collector\bin\*\microsoftext.dll" />
+	<Image Id="{90A74F08-9B5C-5A6A-FD136613C822FB53}" Path="*\applications\workers\collector\bin\*\nlog.extensions.logging.dll" />
+	<Image Id="{3CD304E1-00E3-B852-8C54C48A8E6AF134}" Path="*\applications\workers\collector\bin\*\nlog.targets.elasticsearch.dll" />
+	<Image Id="{440710DA-526F-90C1-0FED23522D4CCD67}" Path="*\applications\workers\collector\bin\*\systemext.dll" />
+	<Image Id="{33542FF0-1C97-E1B0-3AFA472B9006BDB0}" Path="*\assembly\*\daxstudio.common.dll" />
+	<Image Id="{50B80160-3282-CDBC-3D42DBD94E4C6BAF}" Path="*\assembly\*\daxstudio.dll" />
+	<Image Id="{29541546-CC99-206D-B81E10EC3B4F76C7}" Path="*\assembly\nativeimages_v*\accessibility\????????????????????????????????\accessibility.ni.dll" />
+	<Image Id="{AD3EB53E-6C5D-2D05-ED358F3B4A8C6E99}" Path="*\assembly\nativeimages_v*\custommarshalers\????????????????????????????????\custommarshalers.ni.dll" />
+	<Image Id="{DFD2ACF2-48B9-3E66-416D4BC01748BF03}" Path="*\assembly\nativeimages_v*\envdte\????????????????????????????????\envdte.ni.dll" />
+	<Image Id="{40431F72-E044-CECE-DD46B6B2DFD24208}" Path="*\assembly\nativeimages_v*\msbuild\????????????????????????????????\msbuild.ni.exe" />
+	<Image Id="{FE4E5BD9-AE5E-309C-AD5D82C55A4416E3}" Path="*\assembly\nativeimages_v*\mscorlib\????????????????????????????????\mscorlib.ni.dll" />
+	<Image Id="{FF0FEFB8-E677-F911-71FC8E14D264460F}" Path="*\assembly\nativeimages_v*\netstandard\????????????????????????????????\netstandard.ni.dll" />
+	<Image Id="{EA155C41-820F-6DEC-D9D6F5E696B35779}" Path="*\assembly\nativeimages_v*\newtonsoft.json\????????????????????????????????\newtonsoft.json.ni.dll" />
+	<Image Id="{8966F784-D28E-D02B-6CA2CF36EF977F6D}" Path="*\assembly\nativeimages_v*\presentatio*\????????????????????????????????\presentationframework*.ni.dll" />
+	<Image Id="{73C6F9A0-C748-28F9-8F94B855F42A4C28}" Path="*\assembly\nativeimages_v*\presentationcore\????????????????????????????????\presentationcore.ni.dll" />
+	<Image Id="{0D7331F8-B3D1-070C-32A2FA5A8B9A59BF}" Path="*\assembly\nativeimages_v*\smdiagnostics\????????????????????????????????\smdiagnostics.ni.dll" />
+	<Image Id="{C52DD4EE-8319-C095-B440C7717898546E}" Path="*\assembly\nativeimages_v*\stdole\????????????????????????????????\stdole.ni.dll" />
+	<Image Id="{BACC0357-99D7-7A76-FB37B3E1EC64FC2A}" Path="*\assembly\nativeimages_v*\system.ente*\????????????????????????????????\system.enterpriseservices.wrapper.dll" />
+	<Image Id="{E0519652-FB16-C2F9-250E8D12CFC1267D}" Path="*\assembly\nativeimages_v*\system\????????????????????????????????\system.ni.dll" />
+	<Image Id="{E3B70F5C-89AB-4F21-06D4621722342712}" Path="*\assembly\nativeimages_v*\uiautomationprovider\????????????????????????????????\uiautomationprovider.ni.dll" />
+	<Image Id="{582396E0-4DFF-C869-9C16F3C03E156DCD}" Path="*\assembly\nativeimages_v*\uiautomationtypes\????????????????????????????????\uiautomationtypes.ni.dll" />
+	<Image Id="{858560CA-2866-C2FD-40C7A7BC28441529}" Path="*\assembly\nativeimages_v*\windows.app*\????????????????????????????????\windows.applicationmodel.ni.dll" />
+	<Image Id="{BC6377FF-E909-1EBA-07FC9460637045DC}" Path="*\assembly\nativeimages_v*\windows.foundation\????????????????????????????????\windows.foundation.ni.dll" />
+	<Image Id="{CD62C331-6F3B-C379-BDBCB67AC5B898E2}" Path="*\assembly\nativeimages_v*\windows.storage\????????????????????????????????\windows.storage.ni.dll" />
+	<Image Id="{6EA16BF7-B3AC-C94F-B5DF158B5FDF0C17}" Path="*\assembly\nativeimages_v*\windows.system\????????????????????????????????\windows.system.ni.dll" />
+	<Image Id="{C9DB4A6F-CE0E-1610-18396A196CA6BBA2}" Path="*\assembly\nativeimages_v*\windows.ui\????????????????????????????????\windows.ui.ni.dll" />
+	<Image Id="{D4F874FD-8553-DA37-5A2FD45E4C66DE5F}" Path="*\assembly\nativeimages_v*\windowsbase\????????????????????????????????\windowsbase.ni.dll" />
+	<Image Id="{57D88073-5284-C048-EB0692563C21E141}" Path="*\assembly\nativeimages_v*\windowsform*\????????????????????????????????\windowsformsintegration.ni.dll" />
+	<Image Id="{7498B3F9-0C31-D1CE-72AC825B22A51E14}" Path="*\bin\*\databases\delivery.db.monorepobuilds.dll" />
+	<Image Id="{92267C59-195B-0A09-1DE99FDF7E40BB1E}" Path="*\cisco\cisco anyconnect secure mobility client\acciscocrypto.dll" />
+	<Image Id="{33378129-742B-7393-0CEE1E984C196DD0}" Path="*\common files\crypto pro\appcompat\cpadvai.dll" />
+	<Image Id="{EFA4D886-43CE-F1C0-E23F892946F0DDE9}" Path="*\common files\crypto pro\appcompat\cpmsi.dll" />
+	<Image Id="{E7BF59DC-83B7-5DCA-48C850E7E91C9809}" Path="*\common files\crypto pro\appcompat\cpschan.dll" />
+	<Image Id="{A164406A-50DB-845F-FC85BAAB5443AB89}" Path="*\common files\crypto pro\appcompat\cpsecur.dll" />
+	<Image Id="{24FAD364-37B8-676B-44858CC5211A443C}" Path="*\common files\crypto pro\appcompat\cpwinet.dll" />
+	<Image Id="{4E718C3B-4D19-1397-F3853226324702EB}" Path="*\common files\crypto pro\appcompat\detoured.dll" />
+	<Image Id="{61DFC42A-00CB-1752-0735A282FC2957D7}" Path="*\common files\crypto pro\shared\pkivalidator.dll" />
+	<Image Id="{B10D9DDB-48D4-0554-DD429668749C6BB2}" Path="*\common\core\bin\*\delivery.common.core.dll" />
+	<Image Id="{C87896E3-A1A8-8243-C6667ED9B4BA3AD7}" Path="*\common\serialization\bin\*\delivery.common.serialization.dll" />
+	<Image Id="{D3B1C7E0-6E26-D464-E02E6BD9DDC6523F}" Path="*\common\vcs\bin\*\delivery.common.vcs.dll" />
+	<Image Id="{2EDE67AF-7B53-DEF7-98FBE6E5F493BA9F}" Path="*\crypto pro\csp\cpcsp.dll" />
+	<Image Id="{BD8B7215-DF86-9797-74CA4380F8D09699}" Path="*\crypto pro\csp\cpcspi.dll" />
+	<Image Id="{B5116357-BA55-9D77-53C00C819CBD368A}" Path="*\crypto pro\csp\cpsuprt.dll" />
+	<Image Id="{F238AE1F-241B-533A-3BE9C1A4D16FE9B5}" Path="*\crypto pro\csp\cpui.dll" />
+	<Image Id="{92C54A81-D59E-6942-4928EAA13F6DBAF6}" Path="*\dax studio\bin\daxstudio.common.dll" />
+	<Image Id="{E11462A4-26FE-FCCF-3492756ED650DB64}" Path="*\dax studio\bin\daxstudio.dll" />
+	<Image Id="{532EC627-2A46-46DC-2420675BFB049182}" Path="*\delltpad\apoint.dll" />
+	<Image Id="{C06061F9-341A-6784-1CB66C7C54D4A8EA}" Path="*\extensions\microsoftext.teamfoundationext\bin\*\microsoftext.teamfoundationext.dll" />
+	<Image Id="{CABF2CE2-85D2-E4F8-BA69F1056CCBDF20}" Path="*\extensions\microsoftext\bin\*\microsoftext.dll" />
+	<Image Id="{DA0B61BB-1DBB-3558-60CBE7B0A4842DFA}" Path="*\extensions\microsoftext\bin\*\nlog.extensions.logging.dll" />
+	<Image Id="{735EF24B-C235-7F29-114D378885F18881}" Path="*\extensions\systemext.dataext\bin\*\systemext.dataext.dll" />
+	<Image Id="{21962198-0203-2911-099C0F942D962675}" Path="*\lib\net???\serviceutilities.dll" />
+	<Image Id="{9B8829AE-F551-E3A6-63EB5E871D47777F}" Path="*\microsoft visual studio\2017\professional\common7\ide\commonextensions\microsoft\managedlanguages\vbcsharp\languageservices\microsoft.codeanalysis.dll" />
+	<Image Id="{89721D31-A96A-1E5C-331A46CFED9C4EAB}" Path="*\microsoft visual studio\2017\professional\common7\ide\commonextensions\microsoft\managedlanguages\vbcsharp\languageservices\microsoft.codeanalysis.workspaces.dll" />
+	<Image Id="{96AD68FD-33A3-21F3-E75A8DA35D398B5F}" Path="*\safenet\authentication\sac\x64\etokenhid.dll" />
+	<Image Id="{2629A645-2499-6576-652D4D71534E7E58}" Path="*\safenet\authentication\sac\x64\etvtokenengine.dll" />
+	<Image Id="{890DC4EF-4DF6-F075-9D3489E1247AAAC4}" Path="*\safenet\authentication\sac\x64\saclog.dll" />
+
+	<Image Id="{A581421A-4C1D-6A6A-BFBF64C9029FD75A}" Path="*\assembly\nativeimages_v*\system.*\*\system.*.ni.dll" />
+	<Image Id="{C2AC7E30-128F-7E7A-32B8EF7090720194}" Path="*\assembly\nativeimages_v*\microsoft.*\*\microsoft.*.ni.dll" />
+	<Image Id="{3BA43055-97B2-CC74-0CE3B6EAC1FC3093}" Path="*\kavkis\*\kasperskylab.*.ni.dll" />
+	<Image Id="{3BA43055-97B2-CC74-0CE3B6EAC1FC3093}" Path="*\kavkis\*\autotest.*.ni.dll" />
+	<Image Id="{E5E5D85A-F7B6-F49A-4DDD601CAB0B8582}" Path="*\corporate\endpoint\*\autotest.*.ni.dll" />
+	<Image Id="{610F4F41-D386-B658-990EB04D20E69BD6}" Path="*\program files\windowsapps\microsoft.*.dll" />
+	<Image Id="{9D3F405A-6C6A-459C-B5E2-B2D394E0B413}" >
+		<Signature Subject="*Microsoft*"  />
+		<Exclusions>
+			<Image Id="{1D20F0E3-F31D-6850-B1E8-D8A3A7CE2DD4}" Path="*\cryptbase.dll" />
+			<Image Id="{1FD0ABC3-B717-5B4B-3BED-F93D6EB9D919}" Path="*\crypt32.dll" />
+			<Image Id="{15EDA88C-593E-5886-E820-B298619B89E4}" Path="*\wshom.ocx" />
+			<Image Id="{1713DF10-0748-DA3C-D191-0EDEEFB0C8A5}" Path="*\taskschd.dll" />
+			<Image Id="{186EBB6E-271E-7CEA-27F4-1F6D179B0803}" Path="*\scrobj.dll" />
+			<Image Id="{11E1F15B-E584-0863-F8B6-41C7AA410374}" Path="*\adsldp.dll" />
+			<Image Id="{10309EB3-3140-0FA5-23B8-06F5CAD0F29A}" Path="*\gdi32.dll" />
+			<Image Id="{148DE002-6004-C083-A501-1520C6EC252D}" Path="*\vaultcli.dll" />
+			<Image Id="{1203713D-53D6-F58C-4EE0-04D9C569622B}" Path="*\system.management.automation.ni.dll" />
+			<Image Id="{1627AD02-E166-6BB7-3AE9-CDD8E7C08D66}" Path="*\system.management.automation.dll" />
+		</Exclusions>
+	</Image>
+
+	<Image Id="{D9EA2C99-9515-4A6E-B94C-3049015676FB}" >
+		<Signature Subject="*Kaspersky*"  />
+	</Image>
+
+	<Image Id="{9EA2C99D-A515-5A6E-C94C-049015676FB3}" >
+		<Signature Subject="too midori trading"  />
+	</Image>
+
+<!-- ############################################################################################################### -->
+<!-- Part 0002 START 2020-11-30T11:03:00.000Z-1606734237 -->
+	<Image Id="{B7DD0514-27FC-EFA9-83E699D7EB75CED9}" Path="*Git\mingw64\*\zlib1.dll" >
+		<Process Path="*Git\mingw64\*\git.exe" >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+	<Image Id="{AF657A0F-1335-CCE0-CCA3A5059260B849}" Path="*Git\mingw64\*\libi*.dll" >
+		<Process Path="*Git\mingw64\*\git.exe" >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+	<Image Id="{2BCCF73B-F450-3BF4-616CCDE44A5C0C5C}" Path="*Git\mingw64\*\libpcre*.dll" >
+		<Process Path="*Git\mingw64\*\git.exe" >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+	<Image Id="{95D021D3-E37A-5947-F308A974F9F66962}" Path="*Git\mingw64\*\conemuhk64.dll" >
+		<Process Path="*Git\mingw64\*\git.exe" >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+	<Image Id="{5A51E698-DE0A-7AE0-18AFBE0F7FD4F9FD}" Path="*Git\mingw64\*\libssp-?.dll" >
+		<Process Path="*Git\mingw64\*\git.exe" >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+	<Image Id="{960294D6-0501-7551-5C1134010BE97D6B}" Path="*git\mingw64\libexec\git-core\github.authentication.exe" >
+		<Process Path="*mingw*\git-credential-manager.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{6732A8C9-7CAF-04A1-4FAE90904D467A29}" Path="*git\mingw64\libexec\git-core\bitbucket.authentication.dll" >
+		<Process Path="*mingw*\git-credential-manager.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{A954E460-A9EA-34B7-12AA3F84035765D5}" Path="*git\usr\bin\msys-*.dll" >
+		<Process Path="*git\*\sh.exe" />
+	</Image>
+	<Image Id="{6BF39352-9A37-338E-0762682EA4652591}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process >
+			<Signature Subject="*SPLUNK*" />
+		</Process>
+	</Image>
+	<Image Id="{EC4D66A3-F6B4-9E73-1FFEE7188DE13EC0}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="*microsoft monitoring agent\agent\momperfsnapshothelper.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{E6653DEE-89BC-D85D-E703BC1EBF6AAB3A}" Path="c:\windows\system32\gdi32.dll" >
+		<Process >
+			<Signature Subject="*SPLUNK*" />
+		</Process>
+	</Image>
+	<Image Id="{D1A216A1-431F-F9D2-5A2071FCD7795223}" Path="c:\windows\system32\gdi32.dll" >
+		<Process Path="*microsoft monitoring agent\agent\monitoringhost.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{A31923F9-8F2F-A766-EEB99D501A7E9F5E}" Path="refemit_inmemorymanifestmodule" >
+		<Process >
+			<Signature Subject="*SPLUNK*" />
+		</Process>
+	</Image>
+	<Image Id="{F2E645DC-5ABB-2479-4E273EB445DABCFC}" Path="*system32\atiuxp64.dll" >
+		<Process Path="*system32\dwm.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{E017D444-B144-D255-97B9C6F2C5BB0619}" Path="*system32\atidxx64.dll" >
+		<Process Path="*system32\dwm.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{4897F864-09CA-3624-C05A9DE0B5E6543E}" Path="*system32\aticfx64.dll" >
+		<Process Path="*system32\dwm.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{D41F8CB1-168B-5089-EB3CC538E4AAEC72}" Path="*syswow64\taskschd.dll" >
+		<Process Path="*ccmsetup\cache\ccmsetup.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+<!-- Part 0002 END2020-11-30T11:03:00.000Z-1606734237 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0003 START 2020-12-16T17:12:00.000Z-1608138732 -->
+	<Image Id="{4D033E75-6ECE-4900-2EFE-1A7B519084B2}" >
+		<Signature Subject="*Google*"  />
+		<Process >
+			<Signature Subject="*Google*" />
+		</Process>
+	</Image>
+
+	<Image Id="{19EC186C-8EFD-5DE2-763FAB533580B7C6}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*Git*mingw*\git.exe" >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+	<Image Id="{1AD3F72D-AA7B-3A98-895621CF2DC1D086}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="*Git*mingw*\git.exe" >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+	<Image Id="{AD845DB4-7D13-8E97-BF6789082D78987C}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*microsoft.net\framework\v*\ngen.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{536DD8BE-18F2-D575-F486CB1663661B0E}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*microsoft.net\framework64\v*\ngen.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{99308113-2637-7BE8-D75C5536900BE495}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*microsoft\teams\current\teams.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{025A3193-A5DB-50B0-FFB1963CA6022F10}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="*microsoft.net\framework\v*\ngen.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{207459B6-BF63-DE6E-241E0089C58C0792}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="*microsoft.net\framework64\v*\ngen.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{2B57689B-3FED-ADD0-F857F42002D4874F}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="*microsoft\teams\current\teams.exe" >
+			<Signature Subject="*microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{2BBB5A3C-BFC0-9B59-A57F9A44CC7A390A}" Path="C:\Windows\System32\cryptbase.dll" >
+		<Process Path="*postgre*\bin\postgres.exe" />
+	</Image>
+	<Image Id="{25466DF6-B206-34A6-0B5C23E4C0C5FB95}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*postgre*\bin\postgres.exe" />
+	</Image>
+	<Image Id="{CFEB9DA6-3CB5-BA6E-100E55B8D86AE703}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="*postgre*\bin\postgres.exe" />
+	</Image>
+	<Image Id="{B41C36C2-1502-54AC-608280ED300E1A01}" Path="*postgre*\bin\lib*" >
+		<Process Path="*postgre*\bin\postgres.exe" />
+	</Image>
+	<Image Id="{E39279E1-B416-50AE-1B0524CC1D0C45A7}" Path="*postgre*\bin\icu*" >
+		<Process Path="*postgre*\bin\postgres.exe" />
+	</Image>
+	<Image Id="{C981BD27-81AF-5F8B-4935BDD3A83CF511}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*\google\chrome\application\chrome.exe" >
+			<Signature Subject="*Google*" />
+		</Process>
+	</Image>
+	<Image Id="{7D0C69FF-FB04-8736-69EC265414FB213D}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*\microsoft\edge\application\msedge.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{CCCD9D16-57A5-FB73-90804D2EBD8E783C}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="*\yandex\yandexbrowser\application\browser.exe" >
+			<Signature Subject="*Yandex*" />
+		</Process>
+	</Image>
+	<Image Id="{D66C1D65-EDD4-41C2-F1B8D95B65592510}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\conhost.exe" />
+	</Image>
+	<Image Id="{C34E07B9-DFC8-56B4-0C4C3908D75E4FB5}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\wbem\wmiprvse.exe" />
+	</Image>
+	<Image Id="{1C674190-AC74-BE19-4A28BE425CF32F88}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\svchost.exe" />
+	</Image>
+	<Image Id="{C7BEC63A-2FDC-D813-AC2EF4AC2FE487B7}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\backgroundtaskhost.exe" />
+	</Image>
+	<Image Id="{B4D9FD6A-F42D-F4E9-AD285A466C3CEE84}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\searchprotocolhost.exe" />
+	</Image>
+	<Image Id="{E2402B7A-D8A1-8581-E53D70213B8FCD7C}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\searchfilterhost.exe" />
+	</Image>
+	<Image Id="{7EC1B7B3-989E-1469-E5C98953C0E4829B}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\taskhostw.exe" />
+	</Image>
+	<Image Id="{1F77C4C7-FE43-C919-0559518A9FBD702D}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\ccm\updatetrustedsites.exe" />
+	</Image>
+	<Image Id="{41A1374D-9D99-9FAA-D9D8D60EEFDCA922}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\wbem\wmiapsrv.exe" />
+	</Image>
+	<Image Id="{96AE9494-99AB-B730-EA18E9DB731E8407}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\runtimebroker.exe" />
+	</Image>
+	<Image Id="{54AE9774-4923-1BA3-FC4B179C78E0E2C1}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="c:\windows\system32\taskhostw.exe" />
+	</Image>
+	<Image Id="{572AB1F4-1E6A-B13A-DC2E88E2BAF40928}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="c:\windows\system32\nslookup.exe" />
+	</Image>
+	<Image Id="{6BFE728D-5850-0322-7AE9D74245BB395B}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="c:\windows\system32\netsh.exe" />
+	</Image>
+	<Image Id="{22D0ED30-63F0-4826-8DCF9ACBDBA7A090}" Path="C:\Windows\System32\crypt32.dll" >
+		<Process Path="*google\update\googleupdate.exe" />
+	</Image>
+	<Image Id="{5A33C2D8-F7B6-8CD4-05162E84F8D4F3B6}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\nslookup.exe" />
+	</Image>
+	<Image Id="{AC1CE2AD-B88E-1709-C277E53A036A8F6C}" Path="C:\Windows\System32\gdi32.dll" >
+		<Process Path="c:\windows\system32\netsh.exe" />
+	</Image>
+	<Image Id="{A0187E18-ED8B-BCED-A13BDAD71A3AD2DC}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe //nologo c:\program files\microsoft monitoring agent\agent\health service state\monitoring host temporary files*\logendtoendevent.js" />
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{93553089-0E14-2B57-140B8717B1BC8C1E}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe /nologo discoverwindowsosproperties.vbs 0 {*" />
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{F3600EBE-C1A1-A103-FFA9EEDC7A52563B}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe /nologo foldercheck.vbs" />
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{BF73F95B-F0AC-7464-8C1EDFB2436CAB14}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe /nologo scompercentagecputimecounter.vbs*" />
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{68343FF3-73DA-FB1E-D18C280B89AD211A}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe /nologo tcdtransportservicerunning.vbs" />
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{AABB6EC0-C9E4-1D70-51A9E2A302FF27C1}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe /nologo tcmpublisherrunning.vbs" />
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{CA726EBF-26CA-C97E-96215FFE56DCD1EE}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe /nologo microsoft.windows.server.netwokadapter.bandwidthused.moduletype.vbs*" />
+		<Signature Subject="?*" />
+	</Image>
+	<Image Id="{D2FE386B-6ED9-AC76-244AD4C8C7C74B96}" >
+		<Process CmdLine="c:\windows\system32\cscript.exe /nologo microsoft.windows.server.operatingsystem.percentmemoryused.vbs*" />
+		<Signature Subject="?*" />
+	</Image>
+<!-- Part 0003 END 2020-12-16T17:12:00.000Z-1608138732 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0004 Start 2021-03-30T23:54:00.000Z-1617148466 -->
+	<Image Id="{B306D95E-BEA4-A233-60098D2CC5DFAEB0}" >
+		<Signature Subject="*Adobe*" />
+	</Image>
+	<Image Id="{E9959E01-AC2D-2A24-78100E4E7BFE7E70}" >
+		<Signature Subject="*Google*" />
+	</Image>
+	<Image Id="{1519BDEC-A3A0-0EE6-79C0F247D680AA3F}" >
+		<Signature Subject="*VMware*" />
+	</Image>
+	<Image Id="{7DB9E53F-7D6B-2475-85DA23673D96F34A}" >
+		<Signature Subject="*ThinPrint*" />
+	</Image>
+	<Image Id="{EDF1B19D-A198-A136-E65972331AB0FFC5}" Path="*~1*.exe" />
+	<Image Id="{354D3584-1C57-06F1-8F348B9849D8C682}" Path="*~2*.exe" />
+	<Image Id="{30EA7F9D-F15D-F993-A667FC7F961E09CE}" Path="*~3*.exe" />
+	<Image Id="{C878303B-6FA4-1DA5-35297079F2E2B1AF}" Path="*~4*.exe" />
+	<Image Id="{98C0196B-378A-C662-1D6E4544E38BA835}" Path="*\assembly\gac_64\mscorlib\*\sorttbls.nlp" />
+	<Image Id="{DA225DF1-BF98-9383-5B470B6C23150FDB}" Path="*\assembly\gac_64\mscorlib\*\sortkey.nlp" />
+	<Image Id="{29E5E5C6-E65F-B40E-BEBB9C3C88BF47CA}" Path="*\System32\spool\drivers\*\d_pscript5.dll" >
+		<VersionInfo FileDescription="PostScript Printer Driver" ProductName="Microsoft*" OrignFileName="PSCRIPT5.DLL" />
+	</Image>
+<!-- Part 0004 End 2021-03-30T23:54:00.000Z-1617148466 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0005 Start 2021-06-28T18:56:00.000Z-1624906601 -->
+	<Image Id="{C59C07EB-B04B-1D34-601945D7FF15B077}" >
+		<Signature Subject="*boldon james*" />
+	</Image>
+	<Image Id="{AF65DD54-2140-462C-6EF205D1A61CB61D}" >
+		<Signature Subject="*cisco*" />
+	</Image>
+	<Image Id="{14058B96-2DC1-368D-AC651A2816E0C204}" >
+		<Signature Subject="*conexant*" />
+	</Image>
+	<Image Id="{C2B5783D-DA3B-2274-911EEE507903721A}" >
+		<Signature Subject="*entrust datacard*" />
+	</Image>
+	<Image Id="{6FEE658E-B021-4041-618AC5BE3656B327}" >
+		<Signature Subject="*forcepoint*" />
+	</Image>
+	<Image Id="{EB969E12-C531-458E-5F2CD3E9CB53A719}" >
+		<Signature Subject="*fortemedia*" />
+	</Image>
+	<Image Id="{C0B73870-0B77-462E-6C622DC1EFC7BB99}" >
+		<Signature Subject="*genesys telecommunications*" />
+	</Image>
+	<Image Id="{8E981DF8-F8C9-D8B3-C31C413A79D5ADE7}" >
+		<Signature Subject="*hewlett-packard*" />
+	</Image>
+	<Image Id="{670135F4-E306-B262-815FCE957474751C}" >
+		<Signature Subject="*hp inc*" />
+	</Image>
+	<Image Id="{F152D283-9752-7526-E216AAD2EEF84F5A}" >
+		<Signature Subject="*intel*" />
+	</Image>
+	<Image Id="{B5CA53E9-00F0-1750-6B3314D6AA87DCFD}" >
+		<Signature Subject="*lenel systems*" />
+	</Image>
+	<Image Id="{1B69D45F-4D8B-608F-6CD538A16AE9B4B7}" >
+		<Signature Subject="*lenovo*" />
+	</Image>
+	<Image Id="{7ADBE5CE-C091-6B84-068A52B1C7460D2D}" >
+		<Signature Subject="*nvidia*" />
+	</Image>
+	<Image Id="{5FC4510F-E142-DC89-CFB2C557051BEB3C}" >
+		<Signature Subject="*open text*" />
+	</Image>
+	<Image Id="{C3FA2259-38EF-CE9C-AAE7583754FBEC3F}" >
+		<Signature Subject="*opswat*" />
+	</Image>
+	<Image Id="{1AB8433F-4423-69BF-0B61B5A0C0A5DA34}" >
+		<Signature Subject="*palo alto*" />
+	</Image>
+	<Image Id="{4BC24FE2-BB30-81C1-E93DFE59DE2077FA}" >
+		<Signature Subject="*sas institute*" />
+	</Image>
+	<Image Id="{72B9D4F6-E2B6-E561-999097643F3590B9}" >
+		<Signature Subject="*seclore technology*" />
+	</Image>
+	<Image Id="{C5EFD526-026B-0A99-C47A4544DDB27425}" >
+		<Signature Subject="*solarwinds*" />
+	</Image>
+	<Image Id="{3DF9579D-D31B-3BAD-77C0670B593DB7A7}" >
+		<Signature Subject="*sound research*" />
+	</Image>
+	<Image Id="{708DD95F-03B2-F108-41A18920B1F36A58}" >
+		<Signature Subject="*splunk*" />
+	</Image>
+	<Image Id="{53F37F1A-8B41-1EEF-CF032F5CA664CC81}" >
+		<Signature Subject="*synaptics*" />
+	</Image>
+	<Image Id="{CF30056B-1D5A-68DC-B90D9097EB2C7A20}" >
+		<Signature Subject="*tableau*" />
+	</Image>
+	<Image Id="{DDD9EB00-8633-56B2-D6B9F431616075AD}" >
+		<Signature Subject="*veeam software*" />
+	</Image>
+	<Image Id="{75713D8A-069C-E20B-ED16CFBCE6B378E1}" >
+		<Signature Subject="*veritas*" />
+	</Image>
+	<Image Id="{DB3F4827-8C4B-2D41-0CE19422973717CB}" >
+		<Signature Subject="win.rar gmbh" />
+	</Image>
+	<Image Id="{569EA042-653E-914A-AE31AC9818BF7554}" >
+		<Signature Subject="sap se" />
+	</Image>
+	<Image Id="{05DAA4F9-48DE-156B-EC39BDDDD240C4FA}" Path="*\sa3\*" >
+		<Process Path="*\smartaudio3.exe" />
+	</Image>
+	<Image Id="{1D3FCBB1-81A6-8EAD-132C1A683D908EB8}" Path="*websense\websense endpoint\filtersdk\kwad.dll" >
+		<VersionInfo FileDescription="FTP File Reporter" ProductName="KeyView" />
+		<Process Path="*Websense\Websense Endpoint\FilterSDK\kvoop.exe" >
+			<VersionInfo FileDescription="KeyView*" />
+		</Process>
+	</Image>
+	<Image Id="{14C2E809-E920-BBB7-4E0F8165ACAA0BA5}" Path="*bin\lib*" >
+		<VersionInfo FileDescription="OpenSSL library" ProductName="The OpenSSL Toolkit" />
+		<Process Path="*bin\postgres.exe" >
+			<VersionInfo FileDescription="PostgreSQL Server" />
+		</Process>
+	</Image>
+	<Image Id="{36BE96CC-F0B6-51BC-23489C69F2C395AA}" Path="*bin\icu*" >
+		<VersionInfo FileDescription="OpenSSL library" ProductName="The OpenSSL Toolkit" />
+		<Process Path="*bin\postgres.exe" >
+			<VersionInfo FileDescription="PostgreSQL Server" />
+		</Process>
+	</Image>
+	<Image Id="{29D0118D-79BE-3B66-5876E5881CED0F9D}" Path="C:\Windows\System32\hpzjcd01.dll" >
+		<VersionInfo FileDescription="HP Network Printer Installation SDK" ProductName="HP Network Printer Installation SDK" />
+		<Process Path="C:\Windows\System32\spoolsv.exe" />
+	</Image>
+	<Image Id="{7F3102ED-5376-44D2-07BE9DBD19378EF1}" Path="*enterprise vault\evindexing\bin\*" >
+		<Process Path="*enterprise vault\evindexing\bin\*" />
+	</Image>
+	<Image Id="{1BE095B4-638B-BCEE-8EC72AFA6FD08750}" Path="c:\windows\temp\????????-????-????-????-????????????\*" >
+		<VersionInfo ProductName="microsoft*" FileDescription="dism*" />
+		<Process Path="C:\Windows\Temp\????????-????-????-????-????????????\DismHost.exe" />
+	</Image>
+<!-- Part 0005 End 2021-06-28T18:56:00.000Z-1624906601 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0006 Start 2021-07-12T13:21:00.000Z-1626096104 -->
+	<Image Id="{282DF179-806B-F231-11EFA5AA0921A58E}" >
+		<Signature Subject="*imprivata*" />
+	</Image>
+	<Image Id="{E341B41E-D7E3-B1D4-35B6A7BF872FEACD}" >
+		<Signature Subject="*netskope*" />
+	</Image>
+	<Image Id="{F2B3377C-F926-EFDE-DAA187737F628090}" >
+		<Signature Subject="*websense*" />
+	</Image>
+	<Image Id="{AF65DD54-2140-462C-6EF205D1A61CB61D}" >
+		<Signature Subject="*cisco*" />
+	</Image>
+	<Image Id="{6FEE658E-B021-4041-618AC5BE3656B327}" >
+		<Signature Subject="*forcepoint*" />
+	</Image>
+	<Image Id="{224D44DE-AE3D-B8AA-3A46F59558A1103E}" >
+		<Process Path="*esif_assist*" >
+			<Signature Subject="*Intel*" />
+		</Process>
+	</Image>
+	<Image Id="{3D8B6A0C-0B94-2475-A1EDD9FD83A74909}" Path="*imprivata\onesign agent\*" >
+		<Process >
+			<Signature Subject="?*" />
+		</Process>
+	</Image>
+<!-- Part 0004 End 2021-07-12T13:21:00.000Z-1626096104 -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0005 Start 2021-09-21T19:29:00.000Z-1632252572 -->
+	<Image Id="{32961638-1AF9-F49A-8FE5A4203C4FAC44}" Path="c:\windows\system32\lmab*" >
+		<VersionInfo FileDescription="printer communication system" ProductName="printer communication system" />
+		<Process >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{CA9D1631-E93E-E8C8-D5519A33ADE51249}" Path="*panasonic*\port controller\mfp*" >
+		<VersionInfo ProductName="mfpproc*" />
+		<Process >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{356EE799-CC86-8F03-633F5F6AEC554753}" Path="*panasonic*\port controller\mfp*" >
+		<VersionInfo ProductName="mfpseq*" />
+		<Process >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{2BEAD00D-0588-8ECC-2ED34BFEA31AF7A3}" Path="c:\windows\system32\e_t*" >
+		<VersionInfo FileDescription="ecbtegb*" ProductName="epson cbt engine" />
+		<Process >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+<!-- Part 0005 End 2021-09-21T19:29:00.000Z-1632252572 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0006 Start 2021-10-13T13:14:00.000Z-1634130854  -->
+	<Image Id="{7CC546F9-5FEC-904E-CC145D8FB7860098}" Path="c:\windows\system32\gdi32.dll" >
+		<Process Path="c:\program files\common files\microsoft shared\office*\fltldr.exe" />
+	</Image>
+	<Image Id="{E5EFA4E2-BD3A-81F0-930A959B60F6D6E4}" Path="c:\windows\system32\gdi32.dll" >
+		<Process Path="C:\WINDOWS\system32\wermgr.exe" />
+	</Image>
+	<Image Id="{58EF383A-3F34-09E2-B1C1D1EB903278CB}" >
+		<Signature Subject="*Microsoft*" />
+		<Process >
+			<Signature Subject="*Seclore Technology*" />
+		</Process>
+	</Image>
+<!-- Part 0006 End 2021-10-13T13:14:00.000Z-1634130854 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0007 2021-12-24T13:10:00.000Z-1640351459 -->
+	<Image Id="{BEB3361B-4421-1419-097BDCC3408FC660}" Path="*landesk\ldclient*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{B3E757B2-13F1-E825-997CABE4D7735567}" Path="*searchinformagent\sifiltersvc*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{9547C38D-9DBE-8572-80647D063F844787}" Path="*citrix\icaservice*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{5CFA7D70-2EFD-558D-1CD3CF20228086AA}" Path="*citrix\system32*" >
+		<Process Path="*LANDesk\LDClient\SelfElectController.exe" />
+	</Image>
+	<Image Id="{271FFE3D-6B03-55E2-EEF6FB56770F19F4}" Path="c:\windows\ltcjobs\jobs\ltc\bin\snpa_res.dll" >
+		<Process Path="*LtcJobs\Jobs\Ltc\Bin*" />
+	</Image>
+	<Image Id="{7E692CCD-CD81-4A70-2A8E93DD04A31180}" >
+		<Signature Subject="SecurIT*" />
+	</Image>
+<!-- Part 0007 2021-12-24T13:10:00.000Z-1640351459 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0008 2021-12-29T12:27:00.000Z-1640780846 -->
+	<Image Id="{8FE84CAE-D799-E966-2285497E2FAB7C34}" >
+		<Process CmdLine="C:\WINDOWS\SYSTEM32\cmd.exe /c C:\WINDOWS\LtcJobs\Task\runonce-MainScript.BAT*" />
+	</Image>
+	<Image Id="{58F44F19-8A0B-D9B0-B756A16750F959F3}" >
+		<Process CmdLine="c:\windows\ltcjobs\task\runonce-mainscript.bat\..\*" />
+	</Image>
+	<Image Id="{E34D1DF9-A80B-E0EA-544BF8256890C907}" >
+		<Process Path="*\64DriverLoad.exe" >
+			<Signature Subject="*Epson*" />
+		</Process>
+	</Image>
+	<Image Id="{48FA70FD-2F2E-2432-46C5ABB15C059E9A}" >
+		<Process CmdLine="c:\program files (x86)\initplusmonitor\initplusmonitor\isolatedvivotekplayerserverapp.exe /command-pipe-name vivotekplayercommandpipe*" />
+	</Image>
+	<Image Id="{3B770C09-223D-0EA1-56FCD4ECBD21FEB3}" >
+		<Process CmdLine="C:\Program Files (x86)\Zecurion\Endpoint\ffcertutils\certutil.exe  -A -n Zecurion Zgate Web*" />
+	</Image>
+	<Image Id="{5B6E2718-BD0C-BCC7-3D95700DA2E80E1B}" >
+		<Process CmdLine="c:\th\td15\rc\exe\curl.exe  -0 --trace-ascii test.txt -x post -h*" />
+	</Image>
+	<Image Id="{D0480406-FE9A-DC6E-74F4A8525628716E}" >
+		<Process CmdLine="c:\windows\ccm\updatetrustedsites.exe false  s-1-5-21-*" />
+	</Image>
+	<Image Id="{6E671391-7E42-AA52-D1427B980C3191A7}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\csc.exe /noconfig /fullpaths @c:\windows\temp*" />
+	</Image>
+	<Image Id="{9718D50D-E26C-778D-0B7B326FC4F0FEBD}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\ngen.exe uninstall c:\windows\assembly\nativeimages_v*" />
+	</Image>
+	<Image Id="{560BFEF4-F248-57DC-12AD1EFFBE82969E}" >
+		<Process CmdLine="c:\windows\system32\wudfhost.exe -hostguid:{*" />
+	</Image>
+	<Image Id="{66D3B8A3-4346-A685-3E2AA6C87A4FC088}" >
+		<Process CmdLine="logonui.exe /flags:0x0 /state0:0x???????? /state1:0x????????" />
+	</Image>
+	<Image Id="{387067D8-EC38-5342-88C51DDD942A9B0D}" >
+		<Process CmdLine="c:\cntc\stc.exe  - - 0 - c:\atd\atd\ast*" />
+	</Image>
+	<Image Id="{72825E47-E8DB-66DD-7ADDC5B0529D5A3F}" >
+		<Process CmdLine="*citrix*" >
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Image>
+	<Image Id="{09952F88-7C0C-5EA3-46DA326D8F084BB2}" >
+		<Process CmdLine="*zecurion\endpoint\zlu_agent64.exe -pid:*" >
+			<Signature Subject="*SecurIT*" />
+		</Process>
+	</Image>
+	<Image Id="{34F2D1BB-A7FA-18B3-1D0A24584BA805D9}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\cvtres.exe /nologo /readonly /machine:*" />
+	</Image>
+	<Image Id="{407600C4-DC3C-F963-C01D025AAD3AE60A}" >
+		<Process CmdLine="c:\windows\microsoft.net\framework*\mscorsvw.exe -startupevent ??? -interruptevent ? -ngenprocess*" />
+	</Image>
+	<Image Id="{EFC3BCFB-D260-A700-32CA1B54F1EC0CF7}" >
+		<Process CmdLine="c:\windows\system32\audiodg.exe 0x??? 0x???" />
+	</Image>
+	<Image Id="{463B9486-6344-133E-F3CD27BA43DD72D3}" >
+		<Process CmdLine="c:\windows\system32\audiodg.exe 0x???" />
+	</Image>
+	<Image Id="{390E6DC7-2FA7-D343-322CF598EC64AB6A}" >
+		<Process CmdLine="c:\windows\system32\cmd.exe /c c:\cntc\stc.bat 0 c:\atd\atd\ast*" />
+	</Image>
+	<Image Id="{3F01C647-D94D-0643-05B811E1588BDDED}" >
+		<Process CmdLine="c:\windows\system32\cmd.exe /c c:\cntc\stc.bat 0 wrevis*" />
+	</Image>
+	<Image Id="{1942FE38-AA0F-DE2F-2A0EC0A2BAF4E7E0}" >
+		<Process Path="c:\program files (x86)\landesk\ldclient\selfelectcontroller.exe" >
+			<VersionInfo ProductName="%kl_undef%" FileDescription="%kl_undef%" />
+		</Process>
+	</Image>
+	<Image Id="{8AB8D7D9-D904-0C1A-289CB63AF5512676}" >
+		<Signature Subject="*CRYPTO-PRO*" />
+	</Image>
+	<Image Id="{F683640B-0EB3-2DD2-F1DD748CBCDA1C2B}" Path="*LANDesk\LDClient\rollinglog.dll" >
+		<VersionInfo FileDescription="RollingLog Dynamic Link Library" OrignFileName="RollingLog.dll" ProductName="LANDESK*" />
+	</Image>
+	<Image Id="{A0FD1694-BECE-9DF8-86528F31D5ED6AE7}" Path="C:\Windows\System32\spool\*" >
+		<Signature Subject="*Xerox*" />
+	</Image>
+	<Image Id="{BBAE8154-8A92-AE9B-356D9864902E0E93}" Path="*searchinformagent\sifiltersvc*" >
+		<Signature Subject="*Searchinform*" />
+	</Image>
+	<Image Id="{005E8DD7-8FB5-7EAF-C910BE552F549151}" Path="C:\Windows\Sys*" >
+		<Signature Subject="*InfoWatch*" />
+	</Image>
+	<Image Id="{DB8E2412-2DA2-9B34-D23A648EDFA48B75}" Path="C:\Windows\System32\SRSLabs\*" >
+		<VersionInfo ProductName="SRS Universal*" FileDescription="SRS APO*" />
+	</Image>
+	<Image Id="{61F1F67A-E26E-FAF4-590521B4CC46C92D}" Path="*LANDesk\LDClient\*" >
+		<Process Path="*LANDesk\LDClient\*" />
+	</Image>
+<!-- Part 0008 2021-12-29T12:27:00.000Z-1640780846 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0009 2022-01-11T19:14:00.000Z-1641928492 -->
+	<Image Id="{8F7DD77C-2974-9DF3-C1D341F36A28150A}" >
+		<Signature Subject="*Trend Micro*" />
+	</Image>
+	<Image Id="{E96BFA9E-AAB9-0276-93EB5122C34103B1}" >
+		<Signature Subject="*ShenZhen LeagSoft*" />
+	</Image>
+	<Image Id="{06C42153-B8FB-310F-9EE220E981E9AE29}" >
+		<Signature Subject="*beijing qihu*" />
+	</Image>
+	<Image Id="{C7203472-13A6-632D-1363B4400A1A5B24}" >
+		<Signature Subject="*beijing vrv*" />
+	</Image>
+	<Image Id="{D307CEBE-4F9E-42EC-E9EF72D324790095}" >
+		<Signature Subject="*carbon black*" />
+	</Image>
+	<Image Id="{0FD0CC62-3320-929D-D1FE05976C60D970}" >
+		<Signature Subject="*Qihoo 360*" />
+	</Image>
+	<Image Id="{47DD01D2-34BA-AFAD-A897009B6C35BD38}" >
+		<Signature Subject="*Beijing Sogou*" />
+	</Image>
+	<Image Id="{9086FC0A-FFB4-E7EF-E7D3CEF06ED49BCF}" >
+		<Signature Subject="*Trend Micro*" />
+		<Process Path="c:\windows\syswow64\cryptbase.dll" />
+	</Image>
+	<Image Id="{F88589CB-B312-E343-C3B684578B3C3ED6}" >
+		<Signature Subject="*LANDesk*" />
+		<Process Path="c:\windows\syswow64\cryptbase.dll" />
+	</Image>
+	<Image Id="{CF7C50EB-A854-A23B-3D6D6A61E8BC07A4}" >
+		<Signature Subject="*Trend Micro*" />
+		<Process Path="c:\windows\system32\cryptbase.dll" />
+	</Image>
+	<Image Id="{2050592B-0A1F-66DC-3D42F2469C12F880}" >
+		<Signature Subject="*LANDesk*" />
+		<Process Path="c:\windows\system32\cryptbase.dll" />
+	</Image>
+	<Image Id="{C2332C12-2715-87AE-72054A376366B6BA}" >
+		<Signature Subject="*sangfor technologies*" />
+		<Process >
+			<Signature Subject="*sangfor technologies*" />
+		</Process>
+	</Image>
+	<Image Id="{20AFD060-5FCB-C475-6D481EA2A6957BC2}" Path="*sangfor\*" >
+		<Process >
+			<Signature Subject="*sangfor*" />
+		</Process>
+	</Image>
+	<Image Id="{79FEFF28-2178-6E36-4D5D66C2442CEBED}" Path="c:\windows\system32\cryptbase.dll" >
+		<Process Path="c:\windows\system32\net1.exe" />
+	</Image>
+	<Image Id="{9517EBA5-D1F2-9089-93C8B4EF9FD6610A}" Path="c:\program files (x86)\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{9BDD36A3-0E3A-1D2F-2CC1B64C2884762E}" Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{F43D4718-9DDF-244E-BA5544815F6E8BFB}" Path="c:\program files (x86)\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{56C1A4A5-40AA-7363-75A70D103E0BE146}" Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+		<Process Path="c:\program files (x86)\toshiba\smart data encryption\*" >
+			<VersionInfo FileDescription="*smart data encryption*" />
+		</Process>
+	</Image>
+	<Image Id="{7F4714AF-8FE9-9E9B-E4EE934814F0CAE5}" Path="*landesk\shared files\*" >
+		<Process >
+			<Signature Subject="*LANDesk*" />
+		</Process>
+	</Image>
+	<Image Id="{E1A47F9A-9454-F1A4-CECB21776E45D2F6}" Path="landesk\ldclient\*" >
+		<Process >
+			<Signature Subject="*LANDesk*" />
+		</Process>
+	</Image>
+	<Image Id="{090562D3-E33F-3F65-A47BC118BF7CA34F}" Path="C:\Program Files (x86)\Hitachi\*" >
+		<Process CmdLine="?*C:\Program Files (x86)\Hitachi\*" />
+	</Image>
+	<Image Id="{88108E3F-16EA-D615-0BE4793B2B45C5BA}" Path="C:\Program Files\Hitachi\*" >
+		<Process CmdLine="?*C:\Program Files\Hitachi\*" />
+	</Image>
+	<Image Id="{39839517-0C31-441D-EAF3C3FD04DB2ADC}" Path="c:\program files (x86)\trend micro\*" >
+		<Process CmdLine="?*c:\program files (x86)\trend micro\*" />
+	</Image>
+	<Image Id="{DDD556CA-22EB-1AB2-07FF22478AB3A11E}" Path="c:\program files\trend micro\*" >
+		<Process CmdLine="?*c:\program files\trend micro\*" />
+	</Image>
+	<Image Id="{8C5B8FEF-D441-E70C-15CFAD67AC53974C}" >
+		<Signature Subject="*Hitachi*" />
+		<Process >
+			<Signature Subject="*Hitachi*" />
+		</Process>
+	</Image>
+	<Image Id="{2365EE79-A392-CB91-36FDB6C38D737FFB}" Path="*Hitachi\*" >
+		<Process >
+			<Signature Subject="*Hitachi*" />
+		</Process>
+	</Image>
+	<Image Id="{D7FB48EA-D67E-2202-4BA37FFBAB1CAD90}" Path="*Dell*" >
+		<VersionInfo FileDescription="*Dell*" />
+		<Process >
+			<Signature Subject="*Dell*" />
+		</Process>
+	</Image>
+	<Image Id="{77497FF0-FBB1-7515-024117ACA324FD42}" >
+		<Signature Subject="*Dell*" />
+		<Process >
+			<Signature Subject="*Dell*" />
+		</Process>
+	</Image>
+	<Image Id="{81F63F2B-807E-9081-20DFBA3C60958DC7}" >
+		<Signature Subject="*F5 Networks*" />
+		<Process >
+			<Signature Subject="*F5 Networks*" />
+		</Process>
+	</Image>
+	<Image Id="{B2A36867-0836-F7DC-9D5DEDC4D1CA7966}" >
+		<Signature Subject="*Shanghai 2345 Mobile Technology*" />
+		<Process >
+			<Signature Subject="*Shanghai 2345 Mobile Technology*" />
+		</Process>
+	</Image>
+	<Image Id="{8E24A251-121D-B51C-68738F06474EAB94}" Path="C:\Program Files\Autodesk\*" >
+		<Signature Subject="*Autodesk*" />
+	</Image>
+	<Image Id="{E1D89418-30A1-3C70-A30C2F3B22BBF52B}" Path="c:\program files\quality\*" >
+		<Signature Subject="*Advanced Micro Devices*" />
+	</Image>
+	<Image Id="{3714A2A6-5A86-9067-651DF677D8AD2C8A}" Path="c:\windows\system32\driverstore\filerepository\*\amd*.dll" >
+		<Signature Subject="*Advanced Micro Devices*" />
+	</Image>
+	<Image Id="{9E658FEC-A53B-74B2-4F09035D1C0128D5}" Path="c:\windows\system32\driverstore\filerepository\*\ati*.dll" >
+		<Signature Subject="*Advanced Micro Devices*" />
+	</Image>
+	<Image Id="{68C6901B-9AD3-44F3-F5AFD9D705722C30}" Path="C:\Program Files\Autodesk\AutoCAD*" >
+		<VersionInfo FileDescription="*AutoCAD*" />
+		<Process Path="C:\Program Files\Autodesk\AutoCAD*\acad.exe" >
+			<VersionInfo FileDescription="*AutoCAD*" />
+		</Process>
+	</Image>
+	<Image Id="{E2BC86FF-C2BC-5813-877B1ED5D5ACBB37}" >
+		<Signature Subject="*Autodesk*" />
+		<Process >
+			<Signature Subject="*Autodesk*" />
+		</Process>
+	</Image>
+	<Image Id="{08B63E4F-0B07-2F69-E0063ACB09272DE0}" >
+		<Signature Subject="*LIDE TECHNOLOGY*" />
+		<Process >
+			<Signature Subject="*LIDE TECHNOLOGY*" />
+		</Process>
+	</Image>
+	<Image Id="{D9DB3564-9C5B-819D-AA94306E327CECDA}" >
+		<Signature Subject="*NetEase Youdao*" />
+		<Process >
+			<Signature Subject="*NetEase Youdao*" />
+		</Process>
+	</Image>
+	<Image Id="{A17A2A3B-2F70-3EDE-3B0F332819F07882}" Path="c:\windows\syswow64\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qawoption.exe" />
+	</Image>
+	<Image Id="{49CCB0B7-EC2E-0822-0AB8ADAAB5D09F28}" Path="c:\windows\system32\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qawoption.exe" />
+	</Image>
+	<Image Id="{D026BE04-0254-CE97-32CF1E91FAFDF044}" Path="c:\windows\syswow64\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qndd.exe" />
+	</Image>
+	<Image Id="{51E5E5BF-AAB9-BF2E-48EBF374A30401E4}" Path="c:\windows\system32\wbemcomn.dll" >
+		<Process Path="c:\windows\$$$qnd.tmp\bin\qndd.exe" />
+	</Image>
+<!-- Part 0009 2022-01-11T19:14:00.000Z-1641928492 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0010 2022-06-10T15:48:00.000Z-1654876096 -->
+	<Image Id="{0E26F0F6-7650-2CB6-1B522AD1FC199CF5}">
+		<Process CmdLine="c:\windows\sysnative\windowspowershell\v1.0\powershell.exe -noprofile -noninteractive try {&#10;    [console]::inputencoding = [console]::outputencoding = [text.utf8encoding]::utf8&#10;&#9;*rez&#10;&#10;}&#10;checkpasswordlen -len 8&#10;&#9;} catch [system.exception] {}" />
+	</Image>
+	<Image Id="{582F04CC-4F08-5B45-96CA8C1725C8DB98}">
+		<Process CmdLine="C:\Windows\Microsoft.NET\Framework\v4.?.?????\csc.exe /noconfig /fullpaths @C:\Users\*\AppData\Local\Temp\????????\????????.cmdline" />
+	</Image>
+<!-- Part 0010 2022-06-10T15:48:00.000Z-1654876096 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0011 2022-08-16T13:53:00.000Z-1660658016 -->
+	<Image Id="{4874E241-5F81-4F82-6C0A1F789221A002}">
+		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}&#34;" />
+	</Image>
+	<Image Id="{61BA5C13-EE11-D20C-645B13DB2D861958}">
+		<Process CmdLine="*hklm:\software\microsoft\windows\currentversion\capabilityaccessmanager\consentstore\location*geowatcher.position.location&#10;&#9;&#9;}&#10;&#9;&#10;&#9;} catch [system.exception] {}" />
+	</Image>
+<!-- Part 0011 2022-08-16T13:53:00.000Z-1660658016 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0012 2022-08-24T14:38:00.000Z-1661351901 -->
+	<Image Id="{1585084F-5EA8-9A9F-94C7A5C6F7331B11}">
+		<Process CmdLine="..\..\third_party\llvm-build\Release+Asserts\bin\clang-cl.exe /c ..*" />
+	</Image>
+<!-- Part 0012 2022-08-24T14:38:00.000Z-1661351901 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0013 2022-08-26T18:09:00.000Z-1661537345 -->
+	<Image Id="{69EAD741-F712-7E9C-09A0631770F91FE9}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  get-wmiobject -class win32_*" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</Image>
+	<Image Id="{79EAD741-F712-7E9C-09A0631770F91FE7}">
+		<Process CmdLine="c:/windows/system32/windowspowershell/v1.0/powershell.exe  [system.net.dns]::gethostname()" >
+			<Hash MD5="7353f60b1739074eb17c5f4dddefe239" />
+		</Process>
+	</Image>
+	<Image Id="{11ED458D-776D-DF0F-D573AFD35B5AA6D0}">
+		<Process CmdLine="powershell (get-counter -counter \\hyper-v dynamic memory vm(dockerdesktopvm)\average pressure\, \\hyper-v dynamic memory vm(dockerdesktopvm)\physical memory\, \\hyper-v hypervisor virtual processor(dockerdesktopvm:*)\% guest run time\).countersamples.cookedvalue" />
+	</Image>
+	<Image Id="{E744EFEA-E0A9-87FB-63C65ADDC6D525D5}" Path="C:\Program Files\DeviceLock Agent*">
+		<Signature Subject="*DeviceLock*" />
+	</Image>
+	<Image Id="{14A96564-75BA-6A80-03D45EDC0AB787D4}" Path="C:\Program Files\DeviceLock Agent\FreeImage_x64.dll">
+		<VersionInfo ProductName="FreeImage" OrignFileName="FreeImage.dll" />
+	</Image>
+	<Image Id="{A3F9AC03-A32A-6FFE-3BE21C3A52819BB9}" Path="C:\Program Files\DeviceLock Agent\FreeImage.dll">
+		<VersionInfo ProductName="FreeImage" OrignFileName="FreeImage.dll" />
+	</Image>
+<!-- Part 0013 2022-08-26T18:09:00.000Z-1661537345 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0014 2022-09-21T19:24:00.000Z-1663788256 -->
+	<Image Id="{87DA7CD0-A296-BD3F-D2713E35CFD59B5E}" Path="C:\Windows\assembly\NativeImages_v*System*.ni.dll">
+		<Process CmdLine="c:\windows\system32\wbem\wmiprvse.exe -embedding" />
+	</Image>
+	<Image Id="{BC6346E0-6154-39AA-75538F6FD9423B4B}" Path="c:\windows\apppatch\apppatch64\ummon.dll">
+		<Process CmdLine="c:\windows\system32\svchost.exe -k *" />
+	</Image>
+	<Image Id="{E8133D1C-1629-86E9-6ACE9BDF1600D41D}" Path="*Plustek\*OpticSlim*">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</Image>
+	<Image Id="{9B53861E-588A-AA0F-F0B47302E4841F00}" Path="*common files\impacct\*">
+		<Process Path="*Plustek\*OpticSlim*\docuaction.exe" />
+	</Image>
+	<Image Id="{DE411D1D-4EF4-29D0-5917FB06F457C80C}">
+		<Process Path="*Nexthink*">
+			<Signature Subject="*NEXThink*" />
+		</Process>
+	</Image>
+<!-- Part 0014 2022-09-21T19:24:00.000Z-1663788256 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0015 2022-09-22T14:39:00.000Z-1663857542 -->
+	<Image Id="{8AB881A7-DBD2-3A13-3280C4A42ACF6000}" Path="c:\windows\syswow64\gdi32.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{71731B9C-0E2F-18DF-6D8848510D2D5DAD}" Path="c:\windows\syswow64\crypt32.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{F60FFA5D-8006-0400-9A1DFB048CB43A52}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{95ECBDA3-9B2A-57BE-41D8A651333548D8}" Path="*robot js add-on\uipath*">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{AC2E6D1E-7E01-A07A-7C5D4D14A12BCC40}" Path="refemit_inmemorymanifestmodule">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{93D46E32-447B-C149-FB5DC6479FBA1C4F}" Path="c:\windows\assembly\nativeimages_v*.ni.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{E4460F6B-8A9F-5140-F4421D4DF6F3B865}" Path="c:\windows\microsoft.net\assembly\*\system.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{BD0D9E8E-5A37-4CCC-D6AAFB6F340311A4}" Path="*uipathpackages*\uipath.uiautomation.activities.dll">
+		<Process Path="*robot js add-on\uipath.robotjs.userhost.exe" />
+	</Image>
+	<Image Id="{4D357BB4-1F78-03A8-AC79224569A4A0F7}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{CB8177D1-3924-3F61-7E4DAB7989D0E90A}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{23B93AAD-6762-1B47-19B3994B6CAA15FD}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{A439CFDB-774C-383F-2C2C8E32F0DB8A3B}" Path="c:\windows\system32\scrobj.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{12D099D4-AEBE-D2DE-379B2C481F084847}" Path="c:\windows\syswow64\crypt32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{82B21A58-7EDD-938F-126585157F80CFC1}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{B01A6EAD-ADEF-F0FF-C1C2C6FD0B4AF6DD}" Path="c:\windows\syswow64\gdi32.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{118D06B3-601C-9DCC-7C765CA1C110806E}" Path="c:\windows\syswow64\scrobj.dll">
+		<Process CmdLine="wscript.exe  wait.vbs" />
+	</Image>
+	<Image Id="{4078FBFA-0B8F-C7F3-5DF1449851A5C0E5}">
+		<Process CmdLine="..\..\third_party\llvm-build\release+asserts\bin\clang-cl.exe /c gen*" />
+	</Image>
+<!-- Part 0015 2022-09-22T14:39:00.000Z-1663857542 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0016 2022-09-27T13:32:00.000Z-1664285565 -->
+	<Image Id="{EFB1C007-6570-8AE5-277393556C153D0C}" Path="C:\Windows\System32\cryptbase.dll">
+		<Process Path="C:\Windows\System32\dwm.exe" CmdLine="dwm.exe" />
+	</Image>
+	<Image Id="{740876D1-A7E5-712B-247E79D8E82D7ECB}" Path="*Pulse Secure*">
+		<Signature Subject="*Pulse Secure*" />
+	</Image>
+	<Image Id="{B1F0C317-E9D3-1891-164DE57D4821C81A}">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+		<Signature Subject="*Thales*" />
+	</Image>
+	<Image Id="{05C51CE0-63EA-14D4-FC1EA3EDF0B54C72}" Path="c:\windows\system32\mspwdcredprov.dll">
+		<Process>
+			<Signature Subject="?*" />
+		</Process>
+		<VersionInfo FileDescription="MsPwdCredProv" OrignFileName="MsPwdCredProv.dll" ProductName="*Identity Manager*" />
+	</Image>
+	<Image Id="{466E694F-B83C-FDDD-7244A3B47DE7AC4A}" Path="C:\Windows\System32\cryptbase.dll">
+		<Process Path="c:\windows\ccm\scnotification.exe" />
+	</Image>
+<!-- Part 0016 2022-09-27T13:32:00.000Z-1664285565 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0017 2022-11-09T13:28:00.000Z-1668000536 -->
+	<Image Id="{16EFACF7-4A9C-9A5A-388B587780CC3ECA}">
+		<Signature Subject="Speckled Jay LLC" />
+		<VersionInfo FileDescription="%kl_undef%" ProductName="%kl_undef%" />
+	</Image>
+<!-- Part 0017 2022-11-09T13:28:00.000Z-1668000536 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 0017 2022-11-29T17:41:00.000Z-1669743683 -->
+	<Image Id="{B3E1B2DA-F844-8AAF-4D115883F9F303A3}" Path="c:\windows\system32\ole32.dll">
+		<Process Path="c:\program files\splunkuniversalforwarder\bin\splunk-*">
+			<Signature Subject="*splunk*" />
+		</Process>
+	</Image>
+	<Image Id="{AC0CC97B-D198-EF50-C0A896895D8AF560}">
+		<Process Path="*SolarWinds\*">
+			<Signature Subject="*Solarwinds*" />
+		</Process>
+		<Signature Subject="*reactive extensions*" />
+	</Image>
+	<Image Id="{DBAFF0DF-CBDE-C28C-90651004C83619FF}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="*veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{B654895F-7CFA-E2F8-9E0E264C957D4785}" Path="*oracle*bin\ora*">
+		<Process Path="*veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{7A4D5BB9-C8EA-6015-EB40EDE5A3459CC8}" Path="*service*service.ni.dll">
+		<Process Path="*veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{8762FA17-E1BB-CBD0-4FD43331CFB8C325}" Path="*service*service.xmlserializers.ni.dll">
+		<Process Path="*veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{E88FB852-B513-6037-0EBAD08A07890EE9}" Path="refemit_inmemorymanifestmodule">
+		<Process Path="*veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{577EE788-8431-3C34-04BE33FF8ECA899D}" Path="c:\windows\system32\cryptbase.dll">
+		<Process Path="*veeam\*">
+			<Signature Subject="*Veeam*" />
+		</Process>
+	</Image>
+	<Image Id="{DE7773FE-F9E1-AB8B-7855A507F35FF2B4}" Path="c:\windows\system32\cryptbase.dll">
+		<Process Path="C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\*Tools\Binn\bcp.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{9F05E59A-ABD7-CD38-29B13E17AD1C643C}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\windows\system32\manage-bde.exe -status *" />
+	</Image>
+	<Image Id="{77F583CA-8BC6-579F-88E83F67A750C028}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\windows\system32\manage-bde.exe -status *" />
+	</Image>
+	<Image Id="{9D67E559-A6A5-FB4E-C20E9B1F4B91A414}" Path="c:\program files\avecto\privilege guard client\pghook.dll">
+		<Process CmdLine="c:\windows\system32\cmd.exe /s /c c:\windows\system32\manage-bde.exe -status *" />
+	</Image>
+	<Image Id="{C1EC86B3-45BB-4518-4274B5F87D40CB1C}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	</Image>
+	<Image Id="{FA43C537-BD48-A644-71C08CCEE89F1365}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	</Image>
+	<Image Id="{E053F047-D430-DAFB-629F311090E9C966}" Path="c:\program files\avecto\privilege guard client\pghook.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status " />
+	</Image>
+	<Image Id="{FE617BED-A529-318D-557C976BE2676BC3}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status" />
+	</Image>
+	<Image Id="{256C85CA-E19C-2682-3140A2EF714F2FEB}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status" />
+	</Image>
+	<Image Id="{5CB543F2-B441-4848-58D77C87D63BEF1A}" Path="c:\program files\avecto\privilege guard client\pghook.dll">
+		<Process CmdLine="c:\windows\system32\manage-bde.exe  -status" />
+	</Image>
+	<Image Id="{D749BA64-97B2-C217-042A435D14D8FD79}" Path="c:\windows\system32\gdi32.dll">
+		<Process CmdLine="c:\windows\temp\????????-????-*dismhost.exe {*">
+			<VersionInfo OrignFileName="DismHost.exe" ProductName="Microsoft® Windows® Operating System" FileDescription="Dism Host Servicing Process" />
+		</Process>
+	</Image>
+	<Image Id="{0ACB4067-22E5-D111-152DD301AB8DB1E9}" Path="c:\windows\system32\crypt32.dll">
+		<Process CmdLine="c:\windows\temp\????????-????-*dismhost.exe {*">
+			<VersionInfo OrignFileName="DismHost.exe" ProductName="Microsoft® Windows® Operating System" FileDescription="Dism Host Servicing Process" />
+		</Process>
+	</Image>
+	<Image Id="{09DE515D-379E-8745-4FD7C18FC7154C20}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe&#34; /md /external*" />
+	</Image>
+	<Image Id="{A8072FA5-E304-CB73-B07630955C1D3394}" Path="*windows_sandbox\x64\detoursservices.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe&#34; /md /external*" />
+	</Image>
+	<Image Id="{FBE42931-23A2-81CF-36031CE805A5D8F6}" Path="c:\windows\system32\cryptbase.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe /md /external*" />
+	</Image>
+	<Image Id="{C50EB185-4F72-5832-8FEDB12C25205FD4}" Path="*windows_sandbox\x64\detoursservices.dll">
+		<Process CmdLine="*bin/hostx64/x86/cl.exe /md /external*" />
+	</Image>
+	<Image Id="{F7AFDADF-4235-459B-A400205885C4671E}" Path="c:\windows\system32\cryptbase.dll">
+		<Process Path="*bin\hostx64\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{4050C9F2-885C-5504-AB74B0C1A7591BEF}" Path="*windows_sandbox\x64\detoursservices.dll">
+		<Process Path="*bin\hostx64\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{7ECAC067-D319-2A03-1EE55A8F9B167021}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process Path="*hostx86\x86\vctip.exe">
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+	<Image Id="{55E5308A-F395-D836-AC5A05797C97B90F}" Path="*conemu\conemuhk64.dll">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config  credential*" />
+	</Image>
+	<Image Id="{832BD39C-0320-C162-969E99A3E380C752}" Path="c:\windows\syswow64\cryptbase.dll">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe config  credential*" />
+	</Image>
+	<Image Id="{6F11D893-4EAF-3B24-9AB1D8F7B31DF5C6}" Path="*conemu\conemuhk64.dll">
+		<Process CmdLine="c:\program files\git\mingw64\libexec\git-core\git.exe credential-manager store" />
+	</Image>
+	<Image Id="{85145CD9-70F3-1907-A5C17BEDF462666B}" Path="*windows_sandbox\x64\buildxlnatives.dll">
+		<Process CmdLine="*windows_sandbox\bazelsandbox.exe @*monorepo/component*" />
+	</Image>
+<!-- Part 0017 2022-11-29T17:41:00.000Z-1669743683 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 18: 2023-04-06T16:42:00.000Z-1680799357 -->
+	<Image Id="{4A6A14A2-17BD-36C7-92F99E66603C0372}">
+		<Signature Subject="*Solar Security*" />
+	</Image>
+	<Image Id="{5D8EA677-73B3-DC68-15284FA3AB837134}">
+		<Signature Subject="Citrix*" />
+	</Image>
+	<Image Id="{F7AFDADF-4235-459B-A400205885C4671E}" Path="*\windows\*">
+		<Signature Subject="*Microsoft*" />
+		<Process>
+			<Signature Subject="*Citrix*" />
+		</Process>
+	</Image>
+<!-- Part 18: 2023-04-06T16:42:00.000Z-1680799357 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 19: 2023-05-02T19:04:00.000Z-1683054256 -->
+	<Image Id="{955FA5AC-6C37-55CE-D299165A9D45C73E}">
+		<Process CmdLine="c:\windows\system32\wscript.exe //nologo c:\program files\zabbix\check.vbs" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{800DB074-C9E2-3C44-665DB1CA7A960B3D}">
+		<Process CmdLine="*bin\zabbix_sender.exe -z *" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{DF32C44E-99A3-752F-7D0221C678AFFF11}">
+		<Process CmdLine="c:\windows\system32\cscript.exe //nologo c:\windows\ccm\systemtemp\*" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{E1702F7D-FD3E-B7A6-4C9142D7242735FC}">
+		<Process CmdLine="c:\windows\system32\windowspowershell\v1.0\powershell.exe -windowstyle hidden -file c:\program files\zabbix\check.ps1" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{376540B2-9FE2-DBE9-C43CF192D5035D01}">
+		<Process CmdLine="wscript.exe //b //nologo c:\users\*\bgpss.vbs" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{76563337-5E71-7979-3B72AAD3B32F7940}">
+		<Process Path="c:\windows\system32\hostname.exe" />
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{D6D8FCCF-56A2-7863-1B6FA503E8768B28}">
+		<Process>
+			<Signature Subject="*Adobe*" />
+		</Process>
+		<Signature Subject="*Microsoft*" />
+	</Image>
+	<Image Id="{99C3655B-63AF-D0D1-2C7D27B4C61D314E}" Path="c:\program files (x86)\ibm\client access\emulator\*.dll">
+		<Process Path="C:\Program Files (x86)\IBM\Client Access\Emulator\*" />
+	</Image>
+	<Image Id="{704C51AE-F94A-FF8E-35E6D46005EBEA46}" Path="*BoldonJames*">
+		<VersionInfo FileDescription="BoldonJames*" />
+	</Image>
+	<Image Id="{C0CC4698-6E0B-0DA0-8C3A7402531A2FAF}" Path="*Boldon James*">
+		<VersionInfo FileDescription="BoldonJames*" />
+	</Image>
+	<Image Id="{0C559B49-02C5-3BC8-8E17D2DC691BF01B}" Path="*\classifier*">
+		<VersionInfo FileDescription="BoldonJames*" />
+	</Image>
+	<Image Id="{6B719AFE-2824-4198-C23DFF25FEF72000}">
+		<Process>
+			<Signature Subject="*1C*" />
+		</Process>
+		<Signature Subject="*1C*" />
+	</Image>
+	<Image Id="{C00D2FFC-4A8C-9678-B375AB4362346616}" Path="*usr\bin*">
+		<Process Path="*usr\bin*" />
+		<VersionInfo FileDescription="*OpenSSL*" />
+	</Image>
+<!-- Part 19: 2023-05-02T19:04:00.000Z-1683054256 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 20: 2023-05-29T18:56:00.000Z-1685386581 -->
+	<Image Id="{DA550D8E-9B5B-1534-E65CDD5CC11C2C5D}">
+		<Signature Subject="*Baidu*" />
+	</Image>
+	<Image Id="{807C4B3F-5F6A-F0F3-8173DB418B5801EF}">
+		<Signature Subject="*Sangfor*" />
+	</Image>
+	<Image Id="{89FFDF6B-F965-1B72-014D005664E41583}">
+		<Process>
+			<Signature Subject="*Tencent*" />
+		</Process>
+		<Signature Subject="*Tencent*" />
+	</Image>
+	<Image Id="{12A61A60-BA17-EBFB-421A3FD867A97499}">
+		<Process>
+			<Signature Subject="*Kingsoft*" />
+		</Process>
+		<Signature Subject="*Kingsoft*" />
+	</Image>
+	<Image Id="{8BD15BD2-6371-6C35-9ECFEEF7E0B93BCB}">
+		<Process>
+			<Signature Subject="*Mozilla*" />
+		</Process>
+		<Signature Subject="*Mozilla*" />
+	</Image>
+<!-- Part 20: 2023-05-29T18:56:00.000Z-1685386581 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 21: 2023-05-31T12:35:00.000Z-1685536511 -->
+	<Image Id="{7CD15BE3-7372-7C36-AFDFEEF7E0B93CDC}" Path="*js\node_modules*">
+		<Process>
+			<Signature Subject="*Node.js*" />
+		</Process>
+	</Image>
+<!-- Part 21: 2023-05-31T12:35:00.000Z-1685536511 -->
+<!-- ############################################################################################################### -->
+
+<!-- ############################################################################################################### -->
+<!-- Part 22: 2023-08-25T14:31:00.000Z-1692973907 -->
+	<Image Id="{7CD15BE3-7372-7C36-AFDFEEF7E0B93CDC}" Path="*orant\bin*">
+		<Process Path="*orant\bin\rwrbe*" />
+	</Image>
+<!-- Part 22: 2023-08-25T14:31:00.000Z-1692973907 -->
+<!-- ############################################################################################################### -->
+
+</Filters>
