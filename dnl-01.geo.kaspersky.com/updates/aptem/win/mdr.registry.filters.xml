@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+
+  <!-- Version: 2020-05-08T21:28:00.000Z-1588973331 -->
+
+<!-- SOC filters -->
+<!-- Updated 08.06.2020 -->
+
+	<!-- RegSetValue - persistence registry keys -->
+	
+  <!-- AppInit dlls -->
+  <Registry Id="{A35D1EF1-F19A-4BFB-8143-D87253D3C1B7}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINDOWS\" Name="APPINIT_DLLS" />
+
+
+  
+
+  <!-- *Session Manager* -->
+  <!--	AppCert dll  http://www.hexacorn.com/blog/2013/01/19/beyond-good-ol-run-key-part-3/	-->
+  <Registry Id="{EFB66CB2-CD5C-436C-82AD-39BA5BDC6D2A}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER\APPCERTDLLS\" />
+  <Registry Id="{1E511702-9BD2-4B41-8138-ECD633E672E3}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\SESSION MANAGER\APPCERTDLLS\" />
+  <!--	https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc963230(v=technet.10)-->
+  <Registry Id="{C7394351-B452-44A7-99D1-5BAC04C491B8}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER" Name="BOOTEXECUTE" />
+  <Registry Id="{F8923CA7-2C8C-4F29-8A99-84660EE7E703}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SESSION MANAGER" Name="BOOTEXECUTE" />	
+	<!--https://msdn.microsoft.com/en-us/library/windows/desktop/dd392286(v=vs.85).aspx	-->
+  <Registry Id="{92E90468-AFA2-493C-A739-A8B07979C695}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER" Name="SETUPEXECUTE" />
+  <Registry Id="{1EDE7FBB-F220-4040-BF88-D6AE23E01852}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SESSION MANAGER" Name="SETUPEXECUTE" />
+  <Registry Id="{D64781C3-8C0C-44C8-9136-57F5D5FC69A2}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER" Name="EXECUTE" />
+  <Registry Id="{7038917A-6FCE-4514-A8F3-71ABDA772DC8}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SESSION MANAGER" Name="EXECUTE" />
+  <Registry Id="{8F9C514B-A19C-4A3B-88DB-E836B7909814}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER" Name="s0initialcommand" />
+  <Registry Id="{0F79D5AB-3F52-4454-A13D-28D5D22F0E51}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SESSION MANAGER" Name="s0initialcommand" />
+  <Registry Id="{18624BF2-E13E-4893-83A5-61C44A826F44}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER\SUBSYSTEMS" Name="windows" />  <Registry Id="{FBB73E31-4344-450C-AB27-15439295CDFA}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SESSION MANAGER\SUBSYSTEMS" Name="windows" />
+	<!--Known DLLs - https://blogs.msdn.microsoft.com/larryosterman/2004/07/19/what-are-known-dlls-anyway/	-->
+  <Registry Id="{6B934DE7-A2BB-4BBE-A22A-A47AFC498538}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\SESSION MANAGER\KNOWNDLLS" />  
+	
+	
+	<!--Known DLLs - 
+		Shim Database
+		https://attack.mitre.org/wiki/Technique/T1138
+		http://www.blackhat.com/docs/asia-14/materials/Erickson/WP-Asia-14-Erickson-Persist-It-Using-And-Abusing-Microsofts-Fix-It-Patches.pdf
+		https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html
+		https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Persistence/Application_Shimming.md
+		https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/blob/master/attack_matrix/windows/persistence/appcompat_shim_databases.md
+		https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/blob/master/attack_matrix/windows/sysmon_configs/T1138_appcompat.xml
+	-->
+    <Registry Id="{E0A4B872-9963-4679-A858-177B87944A67}" Path="REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\APPCOMPATFLAGS\INSTALLEDSDB\*" Name="databasepath" />
+	
+	
+	<!--Environment variables, that can be used for persistence	-->
+  <Registry Id="{01023BCC-E742-4454-A066-F26529E3A532}" Path="\REGISTRY\USER\ENVIRONMENT" Name="comspec" />
+  <Registry Id="{ED4E2567-F6CA-437B-A422-09C98FCBFEFB}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER\ENVIRONMENT" Name="comspec" />
+  <Registry Id="{A380145C-2FC1-413A-A3D8-38FA06DA7815}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SESSION MANAGER\ENVIRONMENT" Name="comspec" />
+	<!--https://msdn.microsoft.com/en-us/library/ee471451(v=vs.100).aspx	-->
+  <Registry Id="{93E0185A-4AAB-4F89-AD93-170F769FBDAA}" Path="\REGISTRY\USER\ENVIRONMENT" Name="cor_profiler_path" />
+  <Registry Id="{E205BE5D-1C70-470A-AC74-0EEBB11F4E98}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SESSION MANAGER\ENVIRONMENT" Name="cor_profiler_path" />
+  <Registry Id="{61CFB420-AD40-4D54-A76E-7E6D9359255C}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SESSION MANAGER\ENVIRONMENT" Name="cor_profiler_path" />
+	<!--User Logon Scripts
+	http://www.hexacorn.com/blog/2014/11/14/beyond-good-ol-run-key-part-18/ 
+		https://3gstudent.github.io/3gstudent.github.io/Use-Logon-Scripts-to-maintain-persistence/	-->
+  <Registry Id="{F8371D76-CC48-4F78-8E96-F0608841B8EB}" Path="\REGISTRY\USER\ENVIRONMENT" Name="userinitmprlogonscript" />	
+	
+	<!-- https://docs.microsoft.com/en-us/dotnet/api/system.appdomainmanager?view=netframework-4.8#remarks	-->	
+  <Registry Id="{7BC9BD1D-E33A-450D-B74E-247902FA90F3}" Path="*\ENVIRONMENT" Name="appdomain_manager_asm" />		
+	
+	
+  <!-- LSASS Packages -->
+  <Registry Id="{811AA9BF-76A0-40C4-BDF0-F4C78C4492AF}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\LSA\" Name="AUTHENTICATION PACKAGES" />
+  <Registry Id="{7BAAEC71-F800-41FB-974E-D57A24760134}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\LSA\" Name="AUTHENTICATION PACKAGES" />
+  <Registry Id="{A981E0B8-1528-4787-9848-1AEF6B03A499}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\LSA\" Name="SECURITY PACKAGES" />
+  <Registry Id="{81C81517-8CFF-4962-820D-FEC43D0C9EC3}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\LSA\" Name="SECURITY PACKAGES" />
+  <Registry Id="{F5B83615-4CE6-432F-A1EE-659ACDE85C71}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\LSA\OSCONFIG\" Name="SECURITY PACKAGES" />
+  <Registry Id="{BB5F0D11-A25A-4ECA-80CC-55DBBE75F5BF}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\LSA\OSCONFIG\" Name="SECURITY PACKAGES" />
+  <Registry Id="{75319A76-45BE-4F1F-8608-C2601856D35D}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\LSA\" Name="NOTIFICATION PACKAGES" />
+  <Registry Id="{8B3C5E4C-EB97-478E-8B0A-469A4B86C4F4}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\LSA\" Name="NOTIFICATION PACKAGES" />
+  <Registry Id="{EC90B833-03C9-47C8-BEE6-31364C32BCEA}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\LSAEXTENSIONCONFIG\LSASRV" Name="extensions" />
+  <Registry Id="{8A880151-DC88-42FB-ACB7-6B026FCBB7ED}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\LSAEXTENSIONCONFIG\LSASRV" Name="extensions" />
+  <Registry Id="{6FD67E69-5343-4562-802D-11BE38F5BE6D}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\LSAEXTENSIONCONFIG\SSPICLI" Name="checksignaturedll" />
+  <Registry Id="{A93D2F8B-5C31-47A3-962F-0CD39E147E34}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\LSAEXTENSIONCONFIG\SSPICLI" Name="checksignaturedll" />
+  
+  <Registry Id="{0F2B5AD2-EC11-45DD-A1C0-A9A7799F13D7}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\securityproviders" Name="securityproviders" />
+  <Registry Id="{E35AFFEF-8D5D-45C6-A8F0-51693BD5D047}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\securityproviders" Name="securityproviders" />
+    
+  <Registry Id="{04E4C98A-0B5D-4514-BA7E-BDD2C3F9A5A7}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\LSAEXTENSIONCONFIG\interfaces\??????????" Name="extensions" />
+  <Registry Id="{FC5546F9-16F4-4D8B-9480-98201CD49A8C}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\LSAEXTENSIONCONFIG\interfaces\??????????" Name="extensions" />  
+ 	<!-- http://www.hexacorn.com/blog/2016/09/29/beyond-good-ol-run-key-part-47/ - Authentication packages in Win10	-->	 
+  <Registry Id="{6B509F4B-81A8-4974-AB49-03C12F42DD2F}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\IDENTITYSTORE\PROVIDERS\*"  Name="applugindllpath"  />
+  <Registry Id="{0322E4CD-C1FF-4FFA-AD2C-464C0B431843}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\IDENTITYSTORE\PROVIDERS\*"  Name="dllpath"  /> 
+  
+  
+	<!-- WOW boot	-->	  
+	<!-- https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc976171(v=technet.10)	-->	   
+  <Registry Id="{8AF37C24-F1AB-430C-8AD4-808FF1E5905A}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\wow" Name="cmdline" />
+  <Registry Id="{BBF8DB30-1BBB-4BBF-A428-8C14D0AF27C2}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\wow" Name="cmdline" />    
+  <Registry Id="{67DA3E6C-05B0-42FC-BF21-9DDD59FC6BF9}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\wow" Name="wowcmdline" />
+  <Registry Id="{EFE3A136-44A6-4166-8C18-47CE16AEEDBE}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\wow" Name="wowcmdline" />   
+  <Registry Id="{5840731C-B09D-4320-821A-2E605F4F7419}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\mprservices\*" Name="dllname" />
+  <Registry Id="{BAD2B2F7-E382-4F77-914C-24D91A54FDFB}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\mprservices\*" Name="dllname" />   
+  <Registry Id="{F8F7AEF5-79B3-450C-8B5F-7ABC7DD06C21}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\bootverificationprogram" Name="imagepath" />
+  <Registry Id="{95C82E16-7B2B-4E45-ACD8-47EA144DB750}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\bootverificationprogram" Name="imagepath" />    
+  <Registry Id="{463F2650-AA5E-497C-802C-472939DB9A38}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL" Name="servicecontrolmanagerextension" />
+  <Registry Id="{C720F166-2E28-4BE1-AF29-C2C3C4271C6E}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL" Name="servicecontrolmanagerextension" />  
+  
+  <!-- https://docs.microsoft.com/en-us/windows-hardware/drivers/storage/filter-installation	-->	   
+  <Registry Id="{C1E70630-B48F-40C6-8A07-43ED25410564}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\crashcontrol\*" Name="dumpfilters" />
+  <Registry Id="{7FA38743-B348-4850-A09D-F11208C54550}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\crashcontrol\*" Name="dumpfilters" />   
+
+  <!-- LightweightCallHandlers	-->	  
+  <!-- https://steemit.com/wikileaks/@rebelskum/wikileaks-vault-7-part-iii-grasshopper-and-more-research-challenges	-->	    
+  <Registry Id="{F6672C47-7E4A-4A55-BCFB-324EA5AA6637}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\network\lightweightcallhandlers\netman\startup\*" Name="dllname" />
+  <Registry Id="{54148085-5B12-4FF2-8AF2-BBCC3F962CF9}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\network\lightweightcallhandlers\netman\startup\*" Name="dllname" />  
+  <Registry Id="{1EC06861-8A57-4EA3-AC93-687FA8E502CE}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\network\lightweightcallhandlers\netman\startup\*" Name="exename" />
+  <Registry Id="{317833B8-F662-41F6-A2A4-0308130A51AE}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\network\lightweightcallhandlers\netman\startup\*" Name="exename" /> 
+  <Registry Id="{E2FB4745-9115-4C50-98BF-619B60C7F722}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\network\lightweightcallhandlers\pnidui\startup\*" Name="dllname" />
+  <Registry Id="{185E5D8A-232B-441D-8674-7C9FE5488A74}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\network\lightweightcallhandlers\pnidui\startup\*" Name="dllname" /> 
+  <Registry Id="{E88C017E-4433-4ACD-986F-455E9FEDCD57}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\network\lightweightcallhandlers\pnidui\startup\*" Name="exename" />
+  <Registry Id="{1CB2100F-556A-4EBD-AA15-39A84023AD9A}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\network\lightweightcallhandlers\pnidui\startup\*" Name="exename" /> 
+  <Registry Id="{45D2B85E-014E-43A6-8EC1-AD0C89FD8F2F}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\network\lightweightcallhandlers\pnidui\onprivatenetworkavailable\*" Name="dllname" />
+  <Registry Id="{0141159C-AE45-445D-BF6E-E4FBA71BB731}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\network\lightweightcallhandlers\pnidui\onprivatenetworkavailable\*" Name="dllname" /> 
+  <Registry Id="{98B4E025-1BE2-49F8-893B-7EF4703F40D5}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\network\lightweightcallhandlers\pnidui\onprivatenetworkavailable\*" Name="exename" />
+  <Registry Id="{A8955F0C-C119-42B9-A937-5313FCB0A964}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\network\lightweightcallhandlers\pnidui\onprivatenetworkavailable\*" Name="exename" /> 
+  
+    
+  
+  
+  <!--
+	Windows DNS Server Level Plugin DLL
+	https://medium.com/@esnesenon/feature-not-bug-dnsadmin-to-dc-compromise-in-one-line-a0f779b8dc83
+	-->
+  <Registry Id="{946D1306-410A-4B14-9FC7-2CD2541AF084}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\DNS\PARAMETERS\" Name="SERVERLEVELPLUGINDLL" />
+  <Registry Id="{3743225C-8C77-4AD7-978F-BA94E7E8A95A}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\DNS\PARAMETERS\" Name="SERVERLEVELPLUGINDLL" />
+
+  <!--
+	Windows DHCP Server Callout DLL
+	https://blog.3or.de/mimilib-dhcp-server-callout-dll-injection.html
+	http://blog.gentilkiwi.com/programmation/dhcp-windows-callout 
+	-->
+  <Registry Id="{23FA2446-3CC1-4138-9698-9C5B817DC46A}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\DHCPSERVER\PARAMETERS" Name="CALLOUTDLLS" />
+  <Registry Id="{9A77FD33-EBF2-4A9B-A6ED-BA66957BBAA8}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\DHCPSERVER\PARAMETERS" Name="CALLOUTDLLS" />
+
+ 
+  <!--
+	Netsh helper DLL
+	https://attack.mitre.org/wiki/Technique/T1131
+	-->
+  <Registry Id="{1BE13F02-0DAB-41BB-BBF2-CC8A761A89BF}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\NETSH" />
+
+ <!--
+	Hijacking debuggers
+	http://www.hexacorn.com/blog/2013/09/19/beyond-good-ol-run-key-part-4/
+	-->
+  <!-- TODO Script Debugger, Registering itself as a Script Debugger, Hijacking Process Debug Manager-->
+    <!-- Standalone-->
+  <Registry Id="{0FE5DF09-C872-4DEE-8B62-A31EADA572C4}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\AEDEBUG\" Name="DEBUGGER" />
+    <!-- .NET -->
+  <Registry Id="{80BAAA8D-15F8-471B-BF18-9850A3AFB6D6}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\.NETFRAMEWORK\" Name="DBGMANAGEDDEBUGGER" />
+    <!-- Script -->
+  <Registry Id="{2E526F26-AE3B-49E3-94E8-7D92ACA0A484}" Path="*\SOFTWARE\CLASSES\????????????CLSID\{834128A2-51F4-11D0-8F20-00805F2CD064}\LocalServer32" />
+  <Registry Id="{E1383F56-140E-4F3F-8E4A-2BA11A4F56AA}" Path="*\????????????CLSID\{834128A2-51F4-11D0-8F20-00805F2CD064}\LocalServer32" />  
+    <!-- Hijacking Process Debug Manager -->
+  <Registry Id="{AF0D35AD-7EAE-43D7-83E2-32084294D6B7}" Path="*\SOFTWARE\CLASSES\????????????CLSID\{78A51822-51F4-11D0-8F20-00805F2CD064}\InprocServer32" />
+  <Registry Id="{4BA82A6F-D351-40DD-9C13-DEDAB683A78C}" Path="*\????????????CLSID\{78A51822-51F4-11D0-8F20-00805F2CD064}\InprocServer32" />  
+  
+    
+  <!-- Run/Load -->
+  <Registry Id="{014D156F-BAF2-45F7-9951-16489EB53AE4}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINDOWS" Name="LOAD" />
+  <Registry Id="{C653CD39-BF87-4043-8CC0-2647D8133E6D}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINDOWS" Name="LOAD" />
+  <Registry Id="{2C75005C-110E-4FA0-A2D2-3362D2279054}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINDOWS" Name="RUN" />
+  <Registry Id="{6E8A6E78-B9B4-4695-AA84-A98DD97FB473}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINDOWS" Name="RUN" />
+  <Registry Id="{BEC773D1-98CC-4242-B3CC-098B3356DD69}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINDOWS" Name="ICONSERVICELIB" />
+  <Registry Id="{2CABDD6F-B5E7-43B4-A4F8-C4FC9F1E5363}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINDOWS" Name="ICONSERVICELIB" /> 
+  
+  
+ <!-- Winlogon -->
+  <Registry Id="{6169D68B-A519-4223-9415-5CFD9812BC52}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="USERINIT" />
+  <Registry Id="{95EBE686-27FD-41E2-934A-EB6F22598EAD}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="USERINIT" />
+  <Registry Id="{D8039CF8-4317-4738-A271-DA66EBB71784}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SHELL" />
+  <Registry Id="{700B505C-9654-438B-8FE6-9715FF5F4CB5}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SHELL" />
+  <Registry Id="{62C2454B-1700-49D5-B40C-258B2A5108B9}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="shellinfrastructure" />
+  <Registry Id="{D509EB40-3B09-47EC-8CDB-BF7A3F6CE607}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="shellinfrastructure" />
+  <Registry Id="{44EECCB3-1502-45F7-80AB-0CC893A0D8AD}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="TASKMAN" />
+  <Registry Id="{69E029C0-9F91-412D-8F77-E7FC8FDBDB7F}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="TASKMAN" />
+  <Registry Id="{97788ED7-F100-43BB-BFD8-804FF37E946E}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="APPSETUP" />
+  <Registry Id="{3581C303-6212-4B52-A439-DA8EE6E5647E}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="APPSETUP" />
+  <Registry Id="{6CBB1353-4E04-4D9D-BC95-70DB9E7610FF}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="GINADLL" />
+  <Registry Id="{6802CFDA-B6FA-48F4-99DB-B4A42361FA5D}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="GINADLL" />
+  <Registry Id="{B91D783E-6FA3-4F6F-A06E-9AA7C0DDF5FC}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="UIHOST" />
+  <Registry Id="{620B8B2B-8AE2-4B1E-98C6-84693B3350FB}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="UIHOST" />
+  <Registry Id="{0B46775B-3393-4736-AE8F-30BBE2EE45EC}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="VMAPPLET" />
+  <Registry Id="{A2249764-EC23-41DF-AAAD-08F2A10AE09D}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="VMAPPLET" />
+  <Registry Id="{EF717C01-F72C-4F45-83CA-4767E3E4BEA9}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SYSTEM" />
+  <Registry Id="{3F89C201-8421-44F2-B486-F96B32898E5F}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SYSTEM" />
+  <Registry Id="{D9BF1E1C-20EE-4AFB-A748-DE08A4370E5B}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="ICONSERVICELIB" />
+  <Registry Id="{73554305-2046-4EEF-A60A-74F47A991A9B}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="ICONSERVICELIB" />
+  <Registry Id="{CF4643F3-0F18-4529-84D3-7F90C56927F4}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="LSASTART" />
+  <Registry Id="{5EDCB685-C071-4AAB-B1B5-4EE820F38955}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="LSASTART" />
+  <Registry Id="{54DAC28C-F229-4337-9E97-4FAFE2B1D0CB}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SAVEDUMPSTART" />
+  <Registry Id="{6A2EB569-31BC-47D3-AB1E-A1D3EADB932E}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SAVEDUMPSTART" />
+  <Registry Id="{C627F2E9-429C-4B1D-85FE-5EA276ED6AD2}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SERVICECONTROLLERSTART" />
+  <Registry Id="{C919999C-6722-4FAC-B889-C60ED3CCB1C1}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON" Name="SERVICECONTROLLERSTART" />
+  <Registry Id="{38BF806B-FADF-48F1-9301-77130B628A51}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON\ALTERNATESHELLS\AVAILABLESHELLS" />
+  <Registry Id="{F8D7FFCE-D529-4789-B9C2-366CE7EA1B18}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON\ALTERNATESHELLS\AVAILABLESHELLS" />
+   <!-- Group Policy Client-Side Extensions (CSEs)-->
+  <Registry Id="{62622B27-409D-4CB9-B5A0-1F086D2CFA82}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON\gpextensions\*"  Name="dllname"/>
+  <Registry Id="{07E2E5E5-2B56-4DCF-93E7-31E0A532412F}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON\gpextensions\*" Name="dllname" />
+    <!-- https://attack.mitre.org/wiki/Technique/T1004, https://github.com/veramine/Detections/wiki/Winlogon-Helper-DLL--> 
+  <Registry Id="{375458B3-C1FC-4503-862E-60B73785A242}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON\notify\*"  Name="dllname"/>
+  <Registry Id="{AB2F4655-255E-4255-8976-0B5D94338656}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WINLOGON\notify\*" Name="dllname" />  
+  
+  
+  
+ <!-- Run, RunOnce, RunServices, RunServicesOnce -->
+ <!-- http://www.dewassoc.com/support/useful/registry/reg_run_keys.htm -->
+  <Registry Id="{8BE85BF9-897A-46E8-B10C-1780A51622A3}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUN" />
+  <Registry Id="{31D01D84-3B5A-40C8-85BE-702417DA2F1F}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUN" />
+  <Registry Id="{137DF083-1954-4B5F-B6B7-FD9136D7B3EC}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE" />
+  <Registry Id="{0B301AFD-F28D-4609-95B1-BD1A5F922652}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE" />
+  <Registry Id="{A727F742-4F39-4518-812B-41E5B9824487}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCEEX" />
+  <Registry Id="{D2AC7490-472C-40E8-85DF-6E51A0919D65}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCEEX" />
+  <Registry Id="{AF21EDEB-52EA-4EC6-9B2E-BB6A24124F7A}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNSERVICES" />
+  <Registry Id="{0BBCDAE0-4E5A-4799-B70E-11EE7A357282}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNSERVICES" />
+  <Registry Id="{1E511B03-04AF-401B-AC4F-41F6ACFD704F}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNSERVICESONCE" />
+  <Registry Id="{5E20866F-9394-4274-9DC8-BA840D24E5C8}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNSERVICESONCE" />
+  <Registry Id="{9057A6E2-40CC-4948-B53C-330B2099E977}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE\setup" />
+  <Registry Id="{A7FE6C8A-FB56-471E-AEB4-D45165020A2D}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE\setup" />
+  <Registry Id="{7320063B-FE32-4DA4-A9C3-7E7859EAAAD5}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\TERMINAL SERVER\INSTALL\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN" />
+  <Registry Id="{0ACD354B-2C45-4FE9-897C-21F9A58FC550}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\TERMINAL SERVER\INSTALL\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN" />
+  <Registry Id="{8F3B2B04-5878-45E6-8815-EE5E4E55B992}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\TERMINAL SERVER\INSTALL\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE" />
+  <Registry Id="{A9E597BD-3B51-4D66-96AE-D64A7705DC28}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\TERMINAL SERVER\INSTALL\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE" />
+  <Registry Id="{CD4CAF89-D767-4FDB-AD7E-40981BB7C1D1}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\TERMINAL SERVER\INSTALL\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCEEX" />
+  <Registry Id="{FDD51095-1D5B-44A6-9CF6-882FDDEE6FA5}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\TERMINAL SERVER\INSTALL\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCEEX" />
+  
+   
+  <!--
+	Boot 
+	https://technet.microsoft.com/en-us/library/cc939871.aspx
+	-->
+  <Registry Id="{8207E6F4-9E10-4CAD-9423-C9277BBD679A}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\WOW\BOOT" />
+
+   <!--
+	SafeBoot AlternateShell
+	http://windata.ru/windows-xp/faq-xp/parametr-zagruzki-dlya-zapuska-inoj-sistemnoj-obolochki/
+	https://technet.microsoft.com/en-us/library/cc976124.aspx
+	-->
+  <Registry Id="{E26A983C-64D5-45D5-B1ED-2EE5752223C6}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\SAFEBOOT\" Name="ALTERNATESHELL" />
+  <Registry Id="{DD245F7B-6957-4D28-8511-BDECCFE34686}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\SAFEBOOT\" Name="ALTERNATESHELL" />
+
+  
+    <!-- ASEPs intended to be controlled through Group Policy
+	Logon/Logoff, Startup/Shutdown scripts
+	http://www.hexacorn.com/blog/2016/05/30/beyond-good-ol-run-key-part-39/
+	-->
+  <Registry Id="{4097A761-8B0A-4D26-B9BD-07E948FAEFE7}" Path="\REGISTRY\USER\*\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM\SCRIPTS\LOGON\*" Name="script" />
+  <Registry Id="{687A26DE-E8C2-413B-BA0D-15FAE33B19DB}" Path="\REGISTRY\USER\*\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM\SCRIPTS\LOGOFF\*" Name="script" />
+  <Registry Id="{7751857C-06EF-4C47-A5C5-7366AFF54FF1}" Path="\REGISTRY\MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM\SCRIPTS\STARTUP\*" Name="script" />
+  <Registry Id="{E1AC7782-33D1-485A-97CC-7FE65649C38C}" Path="\REGISTRY\MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM\SCRIPTS\SHUTDOWN\*" Name="script" />
+  <Registry Id="{320F9CF7-A52A-4E02-95AD-0B1E2D9B4483}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\GROUP POLICY\state\*scripts\logon\*" Name="script" />
+  <Registry Id="{DF1201AC-3561-4AD7-931C-07CF5C556E3A}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\GROUP POLICY\state\*scripts\logoff\*" Name="script" />
+  <Registry Id="{07579E47-2724-4061-90D6-09B48306D8FE}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\GROUP POLICY\state\*scripts\startup\*" Name="script" />
+  <Registry Id="{C43A4EEB-84B3-421A-843F-1E1670D2C0AA}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\GROUP POLICY\state\*scripts\shutdown\*" Name="script" />
+  <Registry Id="{2D4406B4-EB45-4FFC-BB68-080D3DA5F31C}" Path="\REGISTRY\USER\*\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM\SCRIPTS\LOGON\*" Name="script" />
+  <Registry Id="{7629DAE6-042E-4390-A0BA-8202447816D3}" Path="\REGISTRY\MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM\SCRIPTS\STARTUP\*" Name="script" />
+  <!--Run these programs at user logon (User Configuration\Administrative Templates\System\Logon/Logoff) -->
+  <Registry Id="{0503AF36-866F-41AE-853B-FFADAD9376F5}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\policies\explorer\run" />
+  <Registry Id="{B7E92BAB-360E-4423-B20D-794CAC9BFB63}" Path="\REGISTRY\USER\*\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\CURRENTVERSION\policies\explorer\run" />
+  <!--Custom user interface (User Configuration\Administrative Templates\System) -->  
+  <Registry Id="{248DE495-6A71-45DE-9DB7-783666852FE3}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\policies\system" Name="shell" />
+  <Registry Id="{F8D149BE-AA1C-4EA2-B309-D2EAE2806EBF}" Path="\REGISTRY\USER\*\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\CURRENTVERSION\policies\system" Name="shell" />
+  
+    <!--
+	Active Setup
+		https://www.symantec.com/connect/blogs/active-setup
+		https://helgeklein.com/blog/2010/04/active-setup-explained/
+		https://github.com/3gstudent/Office-Persistence/blob/master/OfficePersistence.ps1
+		https://3gstudent.github.io/3gstudent.github.io/Use-Office-to-maintain-persistence/
+	-->
+  <Registry Id="{BB1C1EB9-1A67-4C9A-A400-F34E0D65BCE3}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\ACTIVE SETUP\INSTALLED COMPONENTS\*" Name="stubpath" />
+
+  <!--
+	Office Test Persistence
+	https://researchcenter.paloaltonetworks.com/2016/07/unit42-technical-walkthrough-office-test-persistence-method-used-in-recent-sofacy-attacks/
+	http://www.hexacorn.com/blog/2014/04/16/beyond-good-ol-run-key-part-10/
+	-->
+  <Registry Id="{62B5209E-CB87-4092-92AE-05390F83A5EE}" Path="\REGISTRY\MACHINE\*SOFTWARE\MICROSOFT\OFFICE TEST\SPECIAL\PERF*" />
+  <Registry Id="{08E7FE33-DC1A-4C49-974F-A1296138B1FF}" Path="\REGISTRY\USER\*\*SOFTWARE\MICROSOFT\OFFICE TEST\SPECIAL\PERF*" />
+    
+	<!--https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/	-->
+  <Registry Id="{c02e2833-004e-4d03-9840-6f3124725092}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\??.?\EXCEL\OPTIONS\" Name="open" />
+  <Registry Id="{7213514a-925a-460f-a39b-79b5e6be5a6b}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\??.?\EXCEL\OPTIONS\" Name="open" />
+  <Registry Id="{05cc49a2-0c99-46cb-9177-cba854d8915e}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\??.?\POWERPOINT\ADDINS\*" Name="path" />  <Registry Id="{8db78e7e-dd3c-4acb-904a-094ce5a64a42}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\??.?\POWERPOINT\ADDINS\*" Name="path" />
+  
+  <!--	Office keys from Autoruns (https://www.microsoftpressstore.com/articles/article.aspx?p=2762082&seqNum=2)-->
+  <Registry Id="{aeb3857d-3614-4db0-b023-8a4d470d49ba}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\ACCESS\ADDINS\*" Name="filename" />
+  <Registry Id="{66514711-2baf-4391-a82b-eaf8dc8afe70}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\ACCESS\ADDINS\*"  Name="filename"/>
+  <Registry Id="{32d4e534-ff4e-41bf-961b-213b4fc685bd}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\EXCEL\ADDINS\*" Name="filename" />
+  <Registry Id="{e746786e-5543-455f-8a25-cf259e60aca4}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\EXCEL\ADDINS\*" Name="filename" />
+  <Registry Id="{d100fc84-bb3a-4c4a-a3af-181b87b6112e}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\OUTLOOK\ADDINS\*" Name="filename" />
+  <Registry Id="{f7070ce6-76e8-4601-bf53-34491b0d296a}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\OUTLOOK\ADDINS\*" Name="filename" />
+  <Registry Id="{95add2aa-8f56-4af0-bfa4-6deb013378c1}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\POWERPOINT\ADDINS\*" Name="filename" />
+  <Registry Id="{caf462e4-79fd-47d7-9622-875e15ee5f9e}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\POWERPOINT\ADDINS\*" Name="filename" />
+  <Registry Id="{48c82d3e-5a85-4a3e-8417-c33295c476af}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\WORD\ADDINS\*" Name="filename" />
+  <Registry Id="{364b2c76-37d4-46d4-a976-d5e070db4c1d}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\WORD\ADDINS\*" Name="filename" />
+  <Registry Id="{bfd8fd71-6316-474a-a555-afe773e8680a}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\ONENOTE\ADDINS\*" Name="filename" />
+  <Registry Id="{38f0d0dc-71fd-4754-abe2-ecee957533f6}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\ONENOTE\ADDINS\*" Name="filename" />
+  <Registry Id="{c4127b44-8aa5-4bc2-af51-9975809c3802}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\VISIO\ADDINS\*" Name="filename" />
+  <Registry Id="{21179ef6-d9b3-4d0a-9b67-d9956c45195d}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\VISIO\ADDINS\*" Name="filename" />
+  <Registry Id="{3c4e472e-4211-4f7c-96c8-06d841b35548}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\OFFICE\INFOPATH\ADDINS\*" Name="filename" />
+  <Registry Id="{48a0a751-3721-4ec8-a819-0ac07da61a18}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\OFFICE\INFOPATH\ADDINS\*" Name="filename" />
+  
+   <!--
+  Spooler Port Monitors
+		https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/blob/master/attack_matrix/windows/persistence/local_port_monitor.md
+		https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/blob/master/attack_matrix/windows/sysmon_configs/T1013_localport_monitor.xml
+		https://attack.mitre.org/wiki/Technique/T1013
+		https://github.com/veramine/Detections/wiki/Local-Port-Monitor
+  	-->
+  <Registry Id="{2fdb92b4-3bd8-42b9-90f0-d4be78854b6a}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\PRINT\MONITORS\*" Name="driver" />
+  <Registry Id="{40713826-6673-486f-b938-aa2ca8556dd4}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\PRINT\MONITORS\*" Name="driver" />  <Registry Id="{a9be98c4-c8c2-41a8-b45f-865e959bf793}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\PRINT\PROVIDERS\*" Name="driver" />
+  <Registry Id="{16119d76-baaa-4c43-a3c8-b301e84c8c3e}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\PRINT\PROVIDERS\*" Name="driver" />  
+  <!--
+  Winsock and Network Porviders
+		https://www.microsoftpressstore.com/articles/article.aspx?p=2762082&seqNum=2
+  -->
+  <Registry Id="{299671d7-351f-4d18-b5c7-ccddcb495069}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\WINSOCK2\PARAMETERS\NAMESPACE_CATALOG5\CATALOG_ENTRIES*\" />
+  <Registry Id="{034dca23-f1d5-41c3-a2d5-a562c9309421}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\WINSOCK2\PARAMETERS\NAMESPACE_CATALOG5\CATALOG_ENTRIES*\" />
+  <Registry Id="{2946eab6-0793-4ed1-a158-b12567b8d2d3}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\WINSOCK2\PARAMETERS\PROTOCOL_CATALOG5\CATALOG_ENTRIES*\" />
+  <Registry Id="{acfa3590-33ce-414f-a0fd-865df2f874e3}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\WINSOCK2\PARAMETERS\PROTOCOL_CATALOG5\CATALOG_ENTRIES*\" />
+  <Registry Id="{E325BECE-0D03-4ED2-B506-A96789528447}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\services\*\NETWORKPROVIDER" Name="providerpath" />
+  <Registry Id="{CE04592E-9A30-42D9-980E-D236F9C8AF5C}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\services\*\NETWORKPROVIDER" Name="providerpath" />
+  <!--
+  Winsock and Network Porviders
+		https://www.mwrinfosecurity.com/our-thinking/observations-on-the-eastnets-breach-operation-notes/
+		GREaT APT Report EasternRoppels set of activity linked to Platinum - Early Warning
+		#TODO - descripe registry key in Confluence knowledge base
+  -->
+  <Registry Id="{6459a905-784f-4f41-bd63-4a6ddc3eb8f9}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\TCPIP\PARAMETERS\WINSOCK"  Name="helperdllname" />
+  <Registry Id="{c9d67220-dc91-4bc3-a7fe-2fdd7cb4f8b4}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\TCPIP\PARAMETERS\WINSOCK" Name="helperdllname" />
+
+
+  <!--
+  #TODO
+		Component Object Model Hijacking
+		https://attack.mitre.org/wiki/Technique/T1122
+		https://www.gdatasoftware.com/blog/2014/10/23941-com-object-hijacking-the-discreet-way-of-persistence
+		https://www.endgame.com/blog/technical-blog/how-hunt-detecting-persistence-evasion-com
+  -->
+  <Registry Id="{857eac63-5b1e-40d5-9e21-781bb5a0363d}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\INPROCSERVER32\" />
+  <Registry Id="{e2288494-5af8-4436-9cfc-b7457873f4f5}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\INPROCSERVER32\" />
+  <Registry Id="{59ad5d4a-fb2d-46e8-983f-6ace63ceecc6}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\LOCALSERVER32\" />
+  <Registry Id="{f7c92f7f-c6d6-45cc-b090-641de1b8822c}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\LOCALSERVER32\" />
+  <!--
+		Shell 'verbs' settings
+		http://www.hexacorn.com/blog/2018/05/28/beyond-good-ol-run-key-part-78-2/
+		HKCR\Folder\shell\(default)=test
+		HKCR\Folder\shell\test\command @=?notepad.exe?
+		And from now on, anytime you open any folder in Windows Explorer the notepad.exe will launch. And for the twist ?  note that we are introducing 
+		a new ?verb? called ?test? for Shell and not modifying the ?open? command
+		*/
+		//Default verb
+		//File extensions handlers 
+-->
+  <Registry Id="{94d5cf44-4ff3-44cb-b189-1fea77e9de5a}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\*\SHELL\" />
+  <Registry Id="{da1f8a0f-325e-4da4-8dfe-e7f1105dbf19}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\*\SHELL\" />
+  <!--
+		//Standard verbs: shell\open, shell\install, shell\runas, shell\runasuser
+		//"$hklm\software\wow6432node\classes\exefile"
+-->
+  <Registry Id="{4142D415-AF91-417D-978E-012F0386A0C1}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\*\SHELL\*\command" />
+  <Registry Id="{B7D0ACCE-B825-4522-A53D-E0841620F648}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\*\SHELL\*\command" />
+  <!--
+	//https://msdn.microsoft.com/en-us/library/windows/desktop/hh127429(v=vs.85).aspx/
+	//http://www.robvanderwoude.com/ddecommandline.php
+-->
+  <Registry Id="{3B8C00CD-7F0D-4BD8-B9F7-B40FBB90345D}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\*\SHELL\open\ddeexec\" />
+  <Registry Id="{9D95BF05-BFE6-4D65-A2FF-E13E0B611688}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\*\SHELL\open\ddeexec\" />
+  <Registry Id="{3B8C00CD-7F0D-4BD8-B9F7-B40FBB90345D}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\*\SHELL\open\ddeexec\application" />
+  <Registry Id="{9D95BF05-BFE6-4D65-A2FF-E13E0B611688}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\*\SHELL\open\ddeexec\application"  />
+  <!--
+  <Registry Id="{9A74FF1C-E3CB-4ED5-A88F-3BBC53B153DE}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\*\SHELL\install\command\"/>
+  <Registry Id="{79BE6D1D-54CF-4E3C-AED3-D770F7BEAB2A}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\*\SHELL\install\command\" />
+  <Registry Id="{5B70F985-96B2-4CF3-96FF-8FE094EDAC80}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\*\SHELL\runas\command"/>
+  <Registry Id="{F9E6FC93-1B85-4D62-938D-0B5DE1210FC3}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\*\SHELL\runas\command" />
+  <Registry Id="{A1720C66-B3B9-450B-840A-16F2DDBA2BFE}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\*\SHELL\runasuser\command"/>
+  <Registry Id="{85211D72-A54C-47C7-8F47-1EEBE9AA4B03}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\*\SHELL\runasuser\command" />
+  -->
+
+  <!--
+		CLSIDs 'verbs'
+		https://twitter.com/browninfosecguy/status/1000900555542179840
+		http://www.hexacorn.com/blog/2018/05/28/beyond-good-ol-run-key-part-78-2/
+-->
+  <!--		Default verb-->
+  <Registry Id="{b9acaf4a-71c0-4c6d-b1f0-d2777fee04c3}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\shell" />
+  <Registry Id="{0d6d7bf8-a60a-474c-bf8a-932a2f3e15b9}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\shell" />
+  <Registry Id="{697f8f7f-abbb-42cd-bbe1-7b2a86edf130}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLSID\{????????-????-????-????-????????????}\shell" />
+  <Registry Id="{0f603971-37b0-45cd-9809-c1c0e7415b8e}" Path="\REGISTRY\USER\*\SOFTWARE\*CLSID\{????????-????-????-????-????????????}\shell" />
+  <!--	Verb command-->
+  <Registry Id="{b1f5e210-1697-4be0-99a4-90e0f6c54b45}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\shell\*\command" />
+  <Registry Id="{1e1f2fb6-6d1a-4421-ab52-1c5a9adf9369}" Path="\REGISTRY\USER\*\SOFTWARE\*CLASSES\CLSID\{????????-????-????-????-????????????}\shell\*\command" />
+  <Registry Id="{56da6083-ef16-455c-ac21-3ca07de1b950}" Path="\REGISTRY\MACHINE\SOFTWARE\*CLSID\{????????-????-????-????-????????????}\shell\*\command" />
+  <Registry Id="{df6d6eb0-8fe0-40b7-80da-f1328e75fbe5}" Path="\REGISTRY\USER\*\SOFTWARE\*CLSID\{????????-????-????-????-????????????}\shell\*\command" />
+  <!--	Active Desktop Settings -->
+  <Registry Id="{47012b7a-fc3d-4054-9687-51542ce06ed9}" Path="\REGISTRY\USER\*\SOFTWARE\*microsoft\internet explorer\desktop\components\*" Name="source" />
+  <!--	Internet Explorer-->
+  <Registry Id="{a5bdc744-c1bb-4481-bfc8-e96c71c454f2}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\INTERNET EXPLORER\MENUEXT\" />
+  <Registry Id="{81ed4546-ccb0-479e-9d39-963fb8b6f885}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\INTERNET EXPLORER\MENUEXT\" />
+  <!--	Image File Execution Options - debugger-->
+  <Registry Id="{f2418ee2-5db5-43a5-aa44-44546869f8d5}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\IMAGE FILE EXECUTION OPTIONS*" Name="Debugger" />
+ 
+  <!--	Image File Execution Options - verifierdlls (Double Agent)
+		https://blogs.msdn.microsoft.com/reiley/2012/08/17/a-debugging-approach-to-application-verifier/
+		https://cybellum.com/doubleagentzero-day-code-injection-and-persistence-technique/
+	https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84Application-Verifier(DoubleAgent%E5%88%A9%E7%94%A8%E4%BB%8B%E7%BB%8D)/
+		--> 
+  <Registry Id="{064a40f2-b150-4186-98fe-88e20ede9ebb}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\IMAGE FILE EXECUTION OPTIONS*" Name="verifierdlls" />  
+
+   <!--	Persistence via Monitoring Silent Process
+		https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/
+		https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/registry-entries-for-silent-process-exit#span-idreportingmodespanspan-idreportingmodespanspan-idreportingmodespanreporting-mode
+		https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/enable-silent-process-exit-monitoring
+		*/
+		-->  
+  <Registry Id="{0fc9e1c9-dd39-4313-8e74-0fb67063c7d4}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\silentprocessexit*" Name="monitorprocess" />    
+     <!--	Time provider
+		https://github.com/scottlundgren/w32time
+		-->  
+  <Registry Id="{683858cc-547e-4f7e-8071-9dd5a6bf1492}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\W32TIME\TIMEPROVIDERS\*"  Name="dllname" />
+  <Registry Id="{2adc37c0-eaed-464d-b414-945a86478ae4}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\W32TIME\TIMEPROVIDERS\*"  Name="dllname" />
+  
+      <!--	
+	  Share Provider
+		https://blogs.windows.com/buildingapps/2017/04/06/new-share-experience-windows-10-creators-update/
+		https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.datatransfer.shareprovider
+		Silent.vaber.!SR.Time (42199882)
+		-->  
+  <Registry Id="{59d02980-f404-478e-9fe9-891b26bbc1b7}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\LANMANSERVER\SHAREPROVIDERS\" />
+  <Registry Id="{39d3e4f9-a143-4063-8c08-fe7156be9edf}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\LANMANSERVER\SHAREPROVIDERS\" />
+  
+  
+  
+  
+  <Registry Id="{f2418ee2-5db5-43a5-aa44-44546869f8d5}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\IMAGE FILE EXECUTION OPTIONS*" Name="GlobalFlag" />
+  <Registry Id="{f2418ee2-5db5-43a5-aa44-44546869f8d5}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\IMAGE FILE EXECUTION OPTIONS*" Name="verifierdlls" />
+ <!--	
+		Trust Providers
+		https://specterops.io/assets/resources/SpecterOps_Subverting_Trust_in_Windows.pdf
+		--> 
+  <Registry Id="{268ac69d-5ee8-49cc-bd90-4b717aaa7e2c}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\OID\ENCODINGTYPE 0\CRYPTSIPDLLGETSIGNEDDATAMSG\{????????-????-????-????-????????????}\" />
+  <Registry Id="{11aff929-2604-46d9-93f2-6e135fdd2768}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\OID\ENCODINGTYPE 0\CRYPTSIPDLLGETSIGNEDDATAMSG\{????????-????-????-????-????????????}\" />
+  <Registry Id="{4b543d9a-7f5b-4aac-b84a-f083726ca56e}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\OID\ENCODINGTYPE 0\CRYPTSIPDLLVERIFYINDIRECTDATA\{????????-????-????-????-????????????}\" />
+  <Registry Id="{eac3b485-de35-4073-8475-69e8d7e56fc8}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\OID\ENCODINGTYPE 0\CRYPTSIPDLLVERIFYINDIRECTDATA\{????????-????-????-????-????????????}\" />
+  <Registry Id="{9df8d8ca-0ba4-4f09-a85b-4bd7faf98133}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\PROVIDERS\TRUST\FINALPOLICY\{????????-????-????-????-????????????}\" />
+  <Registry Id="{e5ca916c-6813-4290-a737-ba2f89a47864}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\PROVIDERS\TRUST\FINALPOLICY\{????????-????-????-????-????????????}\" />
+
+
+ <!--	
+		Persistence. Triggered when anything works with certificates
+		https://twitter.com/PsiDragon/status/978367732793135105?s=09
+		--> 
+  <Registry Id="{74f0ad14-ebdd-46ad-a84d-c21a491d5390}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\OID\ENCODINGTYPE 0\CERTDLLOPENSTOREPROV\*" Name="dll" />
+  <Registry Id="{f47ffed0-ad00-47af-b100-752b0c99860d}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\CRYPTOGRAPHY\OID\ENCODINGTYPE 0\CERTDLLOPENSTOREPROV\*" Name="dll" />
+
+ <!--	
+		Screen Saver persistence
+		https://attack.mitre.org/wiki/Technique/T1180
+		--> 
+  <Registry Id="{09d80ece-33dd-44f8-951c-7de618ad8c4a}" Path="\REGISTRY\USER\*\CONTROL PANEL\DESKTOP\"  Name="scrnsave.exe" />
+  <Registry Id="{77baafdf-fc59-4951-83f0-adacee48220b}" Path="\REGISTRY\USER\*\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\CONTROL PANEL\DESKTOP\"  Name="scrnsave.exe" />
+
+ <!--	
+		Services
+		https://attack.mitre.org/wiki/Technique/T1031
+		--> 
+  <Registry Id="{45e42a56-4460-42a2-a8be-07c57f3446f8}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\*" Name="imagepath" />
+  <Registry Id="{8ea0d3b2-29fb-4f12-87a9-6b63cbc2aab6}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\*" Name="imagepath"/>
+   <Registry Id="{5025e279-3f3d-44d5-8b13-415795551999}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\*" Name="failurecommand" />
+  <Registry Id="{d04c14fa-89db-49a0-807d-30b22be0597a}" Path="\REGISTRY\USER\*\SYSTEM\CURRENTCONTROLSET\SERVICES\*" Name="failurecommand" />
+  <Registry Id="{5025e279-3f3d-44d5-8b13-415795551999}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\*parameters" Name="servicedll" />
+  <Registry Id="{2305b7c5-e4c0-45cb-adce-5540d99037e3}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\*parameters" Name="servicedll" />
+  <Registry Id="{949d3dae-f131-43ef-b9a9-02d7c64c3866}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\*parameters" Name="servicemanifest" />
+  <Registry Id="{2305b7c5-e4c0-45cb-adce-5540d99037e3}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\*parameters" Name="servicemanifest" />  
+  <Registry Id="{da2db312-b66c-47bf-be03-0f240a10fe9c}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\VXD\*"  Name="staticvxd"  />
+  <Registry Id="{bcb871ad-add4-4a23-a1ce-617965539113}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\VXD\*"  Name="staticvxd"  />
+
+
+   <!--		Sysprep	--> 
+  <Registry Id="{e3894509-8a7d-493d-a7e0-ecffb79d7f8e}" Path="\REGISTRY\MACHINE\SYSTEM\SETUP\" Name="cmdline" />
+  
+     <!--AMSI	--> 
+  <Registry Id="{11b5445d-5261-4155-ac89-4a795cf6aa08}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\AMSI\PROVIDERS\" />
+  <Registry Id="{10c87aad-8313-41b2-a139-7c281c64db1b}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\AMSI\UACPROVIDERS\" />
+  
+       <!--Command Processor	--> 
+  <Registry Id="{76f482f7-528c-41a4-9828-a203cbe7ee99}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\COMMAND PROCESSOR\" />
+  <Registry Id="{ee74fe48-2dba-45a2-9928-ce967bd56972}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\COMMAND PROCESSOR\" />
+  
+   <!--MISC. #TODO Add to confluence
+		https://wikileaks.org/ciav7p1/cms/page_51478543.html - Grasshopper Persistence Techniques	-->  
+   <Registry Id="{e47a28bb-5aee-46fa-a696-6e6e9a4ec366}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\BITS\" Name="igdsearcherdll" />
+  <Registry Id="{001d0d39-5a5b-4a59-a4aa-6803e0d47050}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\DRIVERSEARCHING\PLUGIN\" Name="wusearchlibrary" /> 
+  
+     <!-- Codecs (https://www.microsoftpressstore.com/articles/article.aspx?p=2762082&seqNum=2)	-->  
+  <Registry Id="{0444aba8-7b14-4ceb-aee3-4806f400837b}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\DRIVERS\" />
+  <Registry Id="{e5b4a983-4b98-4aa6-83ee-65f395fb912b}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\DRIVERS32\" />  
+  
+  <!--Font Drivers	-->  
+   <Registry Id="{85f38a54-bf30-4ff6-9b62-72f5a6cf8ecf}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\FONT DRIVERS\" /> 
+  
+   <!--RPC Extensions - http://redplait.blogspot.ru/2011/04/rpc-extensions.html-->  
+   <Registry Id="{cb6293b3-6635-43ac-8beb-a12bf6ff3dd8}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\RPC\EXTENSIONS\" />
+  <Registry Id="{44227db4-cd91-4328-a1d3-f0e93ffd2cbd}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\RPC\EXTENSIONS\" />
+  <Registry Id="{f361dcea-4010-43f9-afa1-5c9cbd4d10fa}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\RPC\EXTENSIONS\" />
+  
+  
+   <!--
+		https://www.fireeye.com/blog/threat-research/2013/02/its-a-kind-of-magic-1.html
+		https://forum.sysinternals.com/autoruns-missing-dlls-loaded-with-langbaraddin-key_topic25190.html
+	-->
+  <Registry Id="{63fea846-a05a-4cbf-b4ab-8c008be49a5f}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\CTF\LANGBARADDIN\" />
+  <Registry Id="{7f942988-6081-4093-a818-bf5e120dc14c}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\CTF\LANGBARADDIN\" /> 
+  
+  
+     <!--
+		http://redplait.blogspot.ru/2015/02/lsasrvdlllsaploadlsadbextensiondll.html
+		//https://twitter.com/real_redp/status/564888232392130560
+	-->  
+  <Registry Id="{f5c99774-e922-4305-849b-a49708779cb2}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\NTDS\" Name="lsadbextpt" />
+  <Registry Id="{eec75429-cc29-4bdf-b305-b7aa0e83b8c7}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\NTDS\" Name="lsadbextpt" /> 
+  
+  
+  	<!--
+		Remote Access Service or DNS cache persistence
+		https://wikileaks.org/vault7/document/Athena-v1_0-UserGuide/Athena-v1_0-UserGuide.pdf
+	-->  
+  <Registry Id="{12520b4e-7e72-4cca-8e1e-8899ec7ac8f7}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\REMOTEACCESS\ROUTERMANAGERS\IP*\" Name="dllpath" />
+  <Registry Id="{bb731279-277c-452f-ab52-62ab13333404}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\REMOTEACCESS\ROUTERMANAGERS\IP*\" Name="dllpath" />
+  <Registry Id="{fe82bf7a-2204-4473-bdd5-39e57a76d74f}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\REMOTEACCESS\ACCOUNTING\PROVIDERS\" Name="path" />
+  <Registry Id="{cf5f85a0-98c1-4773-be06-6be72a1e29e5}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\REMOTEACCESS\ACCOUNTING\PROVIDERS\" Name="path" />
+  <Registry Id="{fe6a3f97-4ffd-4f5b-8b03-1a62fe3cea35}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\REMOTEACCESS\AUTHENTICATION\PROVIDERS\" Name="path" />
+  <Registry Id="{2d2fa590-edda-4530-8372-63ec4a5b2691}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\REMOTEACCESS\AUTHENTICATION\PROVIDERS\" Name="path" />
+  <Registry Id="{25c64cf8-bc6a-4ac1-a64f-caa92d422211}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\REMOTEACCESS\ROUTERMANAGERS\DEMANDDIALMANAGER\" Name="dllpath" />
+  <Registry Id="{f06e1e5a-deed-438e-abe3-8da1cea1f07f}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\REMOTEACCESS\ROUTERMANAGERS\DEMANDDIALMANAGER\" Name="dllpath" />
+  <Registry Id="{7ae00e1d-f933-4ed4-bbb8-b22a84db0f33}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\DNSCACHE\PARAMETERS\" Name="extension" />
+  <Registry Id="{da9c1592-9ee4-4c6d-87cb-0d8aa3608bf3}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\DNSCACHE\PARAMETERS\" Name="extension" />
+  
+  
+    <!--
+		Rasman. File pathes
+	--> 
+  <Registry Id="{b3d188e1-9c64-44ba-9937-d265e8079bf8}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\RASMAN\*" Name="dllname" />
+  <Registry Id="{9c01a6be-cb6b-4b22-a0d2-e24aa5c865f7}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\RASMAN\*" Name="dllname" />
+  <Registry Id="{84181c9c-c3d7-45a2-80ee-166a2cd648cd}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\RASMAN\PPP\*" Name="path" />
+  <Registry Id="{aacfc7be-d16f-4f5b-9923-d917aa819d75}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\RASMAN\PPP\*" Name="path" />
+  <Registry Id="{26065082-402b-47d1-9d22-d8c65f860bb4}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\RASMAN\PPP\*" Name="path" />
+  <Registry Id="{9e38fe63-80e5-42d3-9a48-72fb61f70576}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\RASMAN\PPP\*" Name="path" />
+  <Registry Id="{5c5c2dfd-68ce-4b8f-833a-1231f047bbf5}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\RASMAN\PPP\*" Name="configuipath" />
+  <Registry Id="{e6dcf047-7f7a-479f-aaf9-f04957423fe3}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\RASMAN\PPP\*" Name="configuipath" />
+  <Registry Id="{bf697dea-b442-4d40-8213-e8dfedf05591}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\RASMAN\PPP\*" Name="identitypath" />
+  <Registry Id="{ddd4b4d4-8517-40c2-813f-0942dec06c2b}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\RASMAN\PPP\*" Name="identitypath" />
+  <Registry Id="{7e6ee92a-1ee4-4339-95b7-17b6425eb06a}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\RASMAN\PPP\*" Name="interactiveuipath" />
+  <Registry Id="{5d3659b0-9e81-4247-aee3-8a4d56f6027c}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\RASMAN\PPP\*" Name="interactiveuipath" />
+  
+      <!--
+		http://seclists.org/fulldisclosure/2014/May/211
+	--> 
+  <Registry Id="{8a2b7e1d-6556-4d35-b35f-96981d034257}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\ROUTER\CURRENTVERSION\UICONFIGDLLS" />
+  <Registry Id="{c8acd46b-0301-4f9d-9558-d1209b3dcc56}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\ROUTER\CURRENTVERSION\ROUTERMANAGERS\IP*" Name="dllpath" />
+  <Registry Id="{ecabf0ec-2f86-4211-95d1-d7f18c475203}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\ROUTER\CURRENTVERSION\ROUTERMANAGERS\IP*" Name="configdll" /> 
+  
+  
+    <!--
+		https://twitter.com/subTee/status/946395915895521282
+	-->   
+  <Registry Id="{a955e2d4-75f9-4789-8771-439c6dfd06a1}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\WINDOWS ERROR REPORTING\RUNTIMEEXCEPTIONHELPERMODULES\" />  
+  
+  
+  
+    <!--
+		Firefox extensions
+		Open Regedit and add keys 
+			HKEY_LOCAL_MACHINE\Software\Mozilla\Firefox\Extensions or
+			HKEY_LOCAL_MACHINE\Software\Wow6432Node\Mozilla\Firefox\Extensions or
+			HKEY_LOCAL_MACHINE\Software\Mozilla\Firefox\Extensions 
+		For the current user, add to the following registry key:
+			HKEY_CURRENT_USER\Software\Mozilla\Firefox\Extensions
+		Create a new string value Registry entry with its name equal to the add-on ID, for example, borderify@example.com, and a value equal to the location where the extracted add-on is stored, for example, c:/webext/borderify@example.com.xpi.
+		Restart Firefox. The add-on is detected, but the user may be presented with an interstitial or need to enable the add-on in Add-on manager before it can be used. See Firefox settings.
+	-->  
+  <Registry Id="{17de6191-2183-4884-ab04-6d3846dc778e}" Path="\REGISTRY\MACHINE\SOFTWARE\*MOZILLA\FIREFOX\EXTENSIONS\" /> 
+  <Registry Id="{6c274127-2249-48a8-bdf6-aec963e2bce6}" Path="\REGISTRY\USER\*\SOFTWARE\*MOZILLA\FIREFOX\EXTENSIONS\" />
+  
+  
+    <!--
+		http://www.hexacorn.com/blog/2012/07/23/beyond-good-ol-run-key/
+	-->   
+  <Registry Id="{bcd62d53-7071-4f7f-9c5e-78024a3671af}" Path="\REGISTRY\USER\*\SOFTWARE\MIRABILIS\ICQ\AGENT\APPS\*" />
+  
+  
+    <!--
+		http://www.hexacorn.com/blog/2013/01/19/beyond-good-ol-run-key-part-3/
+	--> 
+  <Registry Id="{ddfff00d-4dcd-4b0a-89bf-752bd1c147cc}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\APP PATHS\" />
+  <Registry Id="{6443cf5a-8280-4ec8-9cb0-0df8a28ecbd5}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\APP PATHS\" />
+  
+    <!--
+		http://www.hexacorn.com/blog/2015/01/13/beyond-good-ol-run-key-part-24/
+	--> 
+  <Registry Id="{be87b39f-1a9d-453a-b8f0-f76c4c349cd8}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\WINSOCK2\PARAMETERS" Name="autodialdll" />
+  <Registry Id="{bd709ca6-bcea-4202-b6d0-234146a10d60}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\WINSOCK2\PARAMETERS" Name="autodialdll" />
+  
+    <!--
+		http://www.hexacorn.com/blog/2017/01/16/beyond-good-ol-run-key-part-54/
+	--> 
+  <Registry Id="{d6417897-f141-4659-8e81-0dbdbf30615c}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\CONTROL PANEL\LEGACY CPL MAP\*" Name="shellexecute" />
+  
+  
+    <!--
+		https://www.contextis.com/en/blog/applocker-bypass-via-registry-key-manipulation
+		https://pentestlab.blog/2017/05/24/applocker-bypass-control-panel/
+	--> 
+  <Registry Id="{d6417897-f141-4659-8e81-0dbdbf30615c}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\CONTROL PANEL\cpls"  />
+  
+  <!-- 
+  Terminal Server persistence 
+  http://www.hexacorn.com/blog/2016/07/28/beyond-good-ol-run-key-part-43/
+  -->
+  <Registry Id="{4690A33B-A98B-4A2A-B2E6-5D6EDBCDEDFA}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\TERMINAL SERVER\WDS\RDPWD" Name="STARTUPPROGRAMS" />
+  <Registry Id="{04C58BF5-B51E-4E5E-9F14-3C13A5B7089A}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\TERMINAL SERVER\WDS\RDPWD" Name="STARTUPPROGRAMS" />
+  <Registry Id="{A58C4012-50E9-469A-A602-AC8D2A70498E}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\TERMINAL SERVER\WINSTATIONS\RDP-TCP" Name="INITIALPROGRAM" />
+  <Registry Id="{25A52C49-B097-4B0F-A0D2-E4A556E1670E}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\TERMINAL SERVER\WINSTATIONS\RDP-TCP" Name="INITIALPROGRAM" />
+  <Registry Id="{BF965F0C-2790-4770-9682-BA6D112F5774}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\TERMINAL SERVER\ADDINS\TESTDVCPLUGIN" Name="PATH" />
+  <Registry Id="{B1F1C882-A0BA-4B5F-9DCA-124071F81994}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\TERMINAL SERVER\ADDINS\TESTDVCPLUGIN" Name="PATH" />
+  
+  
+  <!-- 
+  Terminal Server persistence 
+  http://www.hexacorn.com/blog/2016/08/19/beyond-good-ol-run-key-part-44/
+  -->
+  <Registry Id="{94fb632f-2a1d-42f0-a23e-ee6cf002c00a}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\TERMINAL SERVER CLIENT\"  Name="clxdllpath" />
+  
+  <!-- 
+  Terminal Server persistence 
+  http://www.hexacorn.com/blog/2016/09/24/beyond-good-ol-run-key-part-46/
+  -->
+  <Registry Id="{a19f5c68-26b6-4bd6-b107-961a8bda50a0}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\POSTBOOTREMINDERS\*" Name="shellexecute" />
+  
+  
+
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/03/26/beyond-good-ol-run-key-part-74/
+	-->
+  <Registry Id="{072944d3-aa72-4204-b80b-924e348b1cff}" Path="\REGISTRY\MACHINE\SOFTWARE\VMWARE, INC.\VMWARE TOOLS\USERMODE\" Name="adaptershimpath" />
+  <Registry Id="{21c52f62-a4c4-4646-8a23-9ebe6eeb3298}" Path="\REGISTRY\MACHINE\SOFTWARE\VMWARE, INC.\VMWARE TOOLS\USERMODE\" Name="shimpath" />
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/03/26/beyond-good-ol-run-key-part-74/
+	-->
+  <Registry Id="{cb51a50a-759d-4582-96c9-f6bd6bf3db47}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\TERMINAL SERVER CLIENT\DEFAULT\ADDINS\*" Name="name" />
+  <Registry Id="{a8c06980-c81e-406e-9a6a-ba58781b3acb}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\TERMINAL SERVER CLIENT\DEFAULT\ADDINS\*" Name="name" />
+  <Registry Id="{493a4f21-2d5c-469e-a1e6-0384c74a0663}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\TERMINAL SERVER CLIENT\CONNECTION\ADDINS\*" Name="name" />
+  <Registry Id="{8049d4ab-ffb8-457e-9585-004d3165c182}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\TERMINAL SERVER CLIENT\CONNECTION\ADDINS\*" Name="name" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/04/22/beyond-good-ol-run-key-part-76/
+	-->
+  <Registry Id="{eae6cdc8-b8ea-4473-a9fd-d0d30de3d062}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\HTMLHELP AUTHOR\" Name="name" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/07/06/beyond-good-ol-run-key-part-80/
+		http://ashish.vashisht.net/2008/01/configuring-keyboard-multimedia-keys.html
+	-->
+  <Registry Id="{618f386b-6ed0-4a2d-a414-1580a74b60c2}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\APPKEY\*" Name="shellexecute" />
+  <Registry Id="{4e41883d-99a7-4c51-883d-2af10af46718}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\APPKEY\*" Name="shellexecute" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/09/02/beyond-good-ol-run-key-part-86/
+		PreCleanupString � a path to the program that will be executed prior to clean-up
+		CleanupString � a path to the program that will be executed after the clean-up
+	-->
+  <Registry Id="{7f174830-67b2-4c86-8f4e-63ca9aaa0a83}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\VOLUMECACHES\*" Name="precleanupstring" />
+  <Registry Id="{8e933635-7960-4bab-a91d-e2d54a633517}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\VOLUMECACHES\*" Name="cleanupstring" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/09/04/beyond-good-ol-run-key-part-87/
+	-->
+  <Registry Id="{58c53e9a-3306-468c-8b31-01cba82e183c}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\IMAGE FILE EXECUTION OPTIONS\*" Name="delegatedntdll" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/09/08/beyond-good-ol-run-key-part-88/
+		https://github.com/pauldotknopf/WindowsSDK7-Samples/tree/master/winbase/windowserrorreporting/RuntimeExceptionModule
+	-->
+  <Registry Id="{2928361f-8a42-451e-b8d5-7b4f03eabffb}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\WINDOWS ERROR REPORTING\RUNTIMEEXCEPTIONHELPERMODULES\" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/10/07/beyond-good-ol-run-key-part-89/
+	-->
+  <Registry Id="{96f974eb-4fd0-48ee-a731-f0efac57ebaf}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS NT\CURRENTVERSION\IMAGE FILE EXECUTION OPTIONS\*" Name="wwainject" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/10/09/beyond-good-ol-run-key-part-90/
+	-->
+  <Registry Id="{75460cb4-ebe7-4421-9382-440a1884c05d}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\WSMAN\NITSINJECTOR\"  Name="nitsinjector" />
+  
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/10/10/beyond-good-ol-run-key-part-91/
+	-->
+  <Registry Id="{35c39087-0732-4c94-b3ec-33b525eea5ac}" Path="\REGISTRY\MACHINE\SOFTWARE\*CALLBACKDLLSMICROSOFT\PUSHROUTER\TEST\" Name="testdllpath2" />
+  
+  <!--
+		http://www.hexacorn.com/blog/2018/10/12/beyond-good-ol-run-key-part-93/
+	-->
+  <Registry Id="{5eab67d2-f8d5-466d-87de-0e1ee5810488}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\CONTROL\MUI\CALLBACKDLLS\*" Name="dllpath" />
+  <Registry Id="{60e407fc-181e-44b6-8e23-d20ff3704a1d}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\MUI\CALLBACKDLLS\*" Name="dllpath" />
+
+  <!--
+		http://www.hexacorn.com/blog/2018/05/01/wab-exe-as-a-lolbin/
+	-->
+  <Registry Id="{6ed8fc58-4ec9-497b-b769-c54a0a503143}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WAB\" Name="dllpath" />
+  
+  
+    <!--
+		CAPI Driver
+		https://www.symantec.com/security-center/writeup-print/2004-120420-2142-99
+		https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/troj_web.smus2
+		GREaT Report DarkPulsar - the missed link between FuzzBunch and DanderSpritz
+	-->
+  <Registry Id="{780a50db-a5c5-420d-a505-c562d07d48c3}" Path="\REGISTRY\MACHINE\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\TELEPHONY\PROVIDERS\*" Name="providerfilename" />
+  <Registry Id="{67ebb9c7-823c-454b-a184-5235d5b3a145}" Path="\REGISTRY\USER\*\SOFTWARE\*MICROSOFT\WINDOWS\CURRENTVERSION\TELEPHONY\PROVIDERS\*" Name="providerfilename" />
+  
+  
+    <!--
+		http://www.hexacorn.com/blog/2019/07/11/beyond-good-ol-run-key-part-108-2/
+	-->
+  <Registry Id="{e41b4e83-45a6-400b-afc4-bd5a01b0c038}" Path="\REGISTRY\MACHINE\SOFTWARE\MICROSOFT\WOW64\X86\" />
+  
+  
+    <!--
+     https://twitter.com/sbousseaden/status/1174307998086369280
+     https://forums.juniper.net/t5/Threat-Research/New-Gootkit-Banking-Trojan-variant-pushes-the-limits-on-evasive/ba-p/319055
+	-->
+  <Registry Id="{22a89cf5-089d-44ad-9968-3997d8b3c14c}" Path="\REGISTRY\USER\*\SOFTWARE\ieak\grouppolicy\pendinggpos" Name="path"  />
+  
+  
+    <!--
+     https://twitter.com/sbousseaden/status/1174307998086369280
+     https://forums.juniper.net/t5/Threat-Research/New-Gootkit-Banking-Trojan-variant-pushes-the-limits-on-evasive/ba-p/319055
+	-->
+  <Registry Id="{3fda7ace-f78b-45df-beb5-51138b2cf4b4}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\CONTROL\print\environments\*\print processors\*" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+
+  
+  
+  
+</Filters>
