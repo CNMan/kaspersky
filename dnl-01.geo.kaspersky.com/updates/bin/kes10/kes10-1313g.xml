@@ -1,0 +1,23 @@
+<Update
+	Date="21062021 0710"
+	ObjectType="2=KES10;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="13"
+	CompID="KES10"
+	Shell="bdif;klz;none">
+	<Exclude
+		App="KES 10.2.[2,4,6].*;KES 10.3.0.6294"/>
+	<Files
+		Target="[0-262143]"
+		LocalPath="%DataRoot%/Patches"
+		Item="App;Name;DSKM"
+		List="
+			KES 10.2.[2-6].*|wd_params.xml|11SfjrV9XNeAauZ/TLYToWzBsHYIAlW05dqLgXogzVY=;
+			KES 10.2.[5-6].*|wd_regions.xml|Rkw4TBfWFK5j/J80LX7+NC6UNRFo5LOv4zWudBuylEU="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="kes10-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADAoJgBvY/U7p3YYgp8LQEuAyhWrUHDod4m50UBJzYOeRwrcjW4jByPYIAqcOlCua+UEwc27aDbPYnUqleg80OEBAB4J+AAAAAIAAigFAEtFUzEwAwACKAMAQklOAQAACfCHlYMNCjs6MTA0TDhvYUdBWjdnaXMxcHZDTHRNbExYSU04SXhGbStzSk0xdjFoS3ZpbDllRTFxcmVmWm1iK3FmM0NORWtOOG9vTm83NldyK0lHUlNrUy9oaWN4MTJOViUl</Key>
+</Update>
+;:10q0DKD4CRgp8/YZh3zZPPtVhfNtegJXW/7cjUeXR5kIJdqnd055sfOlSskXP46xZOgRuE5F8nWUmradXeCyl/yW%%
