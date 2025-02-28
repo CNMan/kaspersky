@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+	<File Id="{BFE0AC51-5660-2DDD-CF6B-AF2C762E873E}">
+        <Process Path="/usr/bin/pulseaudio" />
+	</File>
+	<File Id="{128DDC4C-F090-A465-F3C3-3894FFE31168}" Path="*.local/share/gvfs-metadata/*">
+        <Process Path="/usr/lib/gvfs/gvfsd-metadata" />
+	</File>
+	<File Id="{4E5A02FF-F752-1A20-357A-47089494DDD8}">
+        <Process Path="/usr/sbin/thermald" />
+    </File>
+	<File Id="{C05B3D21-A6DE-6627-7F64-1710DADDD062}">
+        <Process Path="/usr/bin/appstreamcli" />
+    </File>
+	<File Id="{0EB4D807-31AA-3C64-C56F-3E848FCBC63A}">
+        <Process Path="/usr/bin/dpkg" />
+    </File>
+	<File Id="{246602FD-F463-8176-3B01-8BA50CDF28FD}">
+        <ParentProcess Path="/usr/bin/dpkg" />
+    </File>
+	<File Id="{F87BFE85-0B34-CF38-3100-BC4887B64A3F}">
+        <Process Path="/usr/bin/apt" />
+    </File>
+	<File Id="{DACAA83D-5A6A-89F8-D710-11D5ACEF9A6A}" Path="/proc/*">
+        <Process Path="/lib/systemd/systemd*" />
+    </File>
+	<File Id="{29B5980E-5F76-3326-EB30-3C0F43B9FE2A}">
+        <Process Path="/usr/sbin/cupsd" />
+    </File>
+	<File Id="{E396C8B3-9491-9041-ADD4-6C5BDEF9C0FA}" Path="/var/cache/man/*">
+        <Process Path="*/bin/mandb" />
+    </File>
+	<File Id="{7E7A2647-A184-5025-5925-B200D08AB81C}">
+        <Process Path="/usr/bin/apt-config" />
+    </File>
+	<File Id="{CA86DBCB-BC23-31B3-BBB3-A3FA61AE95D0}">
+        <Process Path="/usr/lib/dconf/dconf-service" />
+    </File>
+	<File Id="{6D276D1A-06FE-54AE-A7AB-AE8D7DF55977}" Path="/var/*/NetworkManager*">
+        <Process Path="/usr/sbin/NetworkManager" />
+    </File>
+	<File Id="{CCAFC9BB-7ADD-957D-9997-F8C63A32EB39}">
+        <Process Path="/usr/lib/apt/methods/gpgv" />
+    </File>
+	<File Id="{4BB602FB-D301-5F39-6DE6-9F002116B538}" Path="/tmp/fileutl.message*">
+        <Process Path="*/bin/python*" />
+    </File>
+	<File Id="{1173B0F8-4F7C-8EA1-C686-925D88D75E4C}">
+        <Process CmdLine="*/lib/systemd/system-generators/*" />
+    </File>
+	<File Id="{FA9CDF4F-038F-8965-ABDA-69DF64963F24}" Path="/var/tmp/*">
+        <Process Path="/bin/mkdir" />
+    </File>
+	<File Id="{0A407831-458A-BAB0-71EF-BB388CFD3583}" Path="/var/tmp/mkinitramfs*" />
+  <File Id="{E6652E10-25CD-9B50-B881-88B1D1A80E0B}">
+    <Process CmdLine="rm -rf /var/tmp/mkinitramfs*" />
+  </File>
+	<File Id="{631D6C02-6D92-D2C9-BA13-04566512ABBC}" Path="/var/lib/elasticsearch/nodes/*/indices*">
+        <Process Path="/usr/share/elasticsearch*" />
+    </File>
+	<File Id="{4E754F7E-024B-3EC6-F95F-43D9D67DFCC8}" Path="/var/cache/netdata*">
+        <Process CmdLine="/usr/libexec/netdata/plugins.d/tc-qos-helper.sh" />
+    </File>
+	<File Id="{F8DD2B25-73AD-1F22-861F-442ABB330EFB}" Path="/var/*/samba*">
+        <Process Path="/usr/sbin/winbindd" />
+    </File>
+	<File Id="{06200521-0AD7-7605-FA12-43EEBB442431}" Path="/var/*/samba*">
+        <Process Path="/usr/sbin/smbd" />
+    </File>
+	<File Id="{1BCD69D7-C7F8-5651-A4CE-23F3D850A544}" Path="/var/*/samba*">
+        <Process Path="/usr/sbin/nmbd" />
+    </File>
+	<File Id="{E7D67B73-F2CE-C9A4-9F73-A115F55CC501}" Path="*base/*">
+        <Process Path="*/bin/postgres" />
+    </File>
+	<File Id="{52C155A9-BB36-BDCD-A7A8-C0DA36530E14}" Path="*global/*">
+        <Process Path="*/bin/postgres" />
+    </File>
+	<File Id="{FBD543F4-A6F4-C856-FF4F-B260DAC59D1B}">
+        <Process Path="/usr/lib/postfix/sbin/cleanup" />
+    </File>
+    <File Id="{C5819896-21FC-6774-411D-96B7F8850B21}" Path="*/opt/kaspersky/klnagent/*">
+        <Process Path="/opt/kaspersky/klnagent64/sbin/klnagent*" />
+    </File>
+    <File Id="{1699A6FF-2DAD-2EBF-C663-E76CD6729DF9}" Path="*/opt/kaspersky/epagent/*">
+        <Process Path="/opt/kaspersky/klnagent64/sbin/klnagent" />
+    </File>
+    <File Id="{09451863-B33E-A099-F307-D450B4E4552D}" Path="/tmp/*.lck">
+        <Process Path="/opt/kaspersky/klnagent64/sbin/klnagent" />
+    </File>
+    <File Id="{3043CF6B-5871-0FE2-C2E5-AA1C8EF1F286}" Path="/tmp/*.lock">
+        <Process Path="/opt/kaspersky/klnagent64/sbin/klnagent" />
+    </File>
+    <File Id="{B0B652A5-0022-93C2-BB3A-FC62A32443A9}" Path="/var/log/kaspersky/*">
+        <Process Path="/opt/kaspersky/klnagent64/sbin/klnagent" />
+    </File>
+    <File Id="{EC12BF94-E2EB-6393-ED04-2FA7DD70E55A}" Path="/dev/null" />
+    <File Id="{23E5F849-DB74-DA34-2841-2D86CB05B775}" Path="/opt/kaspersky/epagent/sbin/lena">
+        <Process CmdLine="/sbin/init splash" />
+    </File>
+    <File Id="{C95FDF83-67A6-F080-E231-3B0323503292}">
+        <Process CmdLine="*/bin/python*bin/pip install -U --force-reinstall --extra-index-url=*" />
+    </File>
+    <File Id="{F23368E8-FCC7-7A2C-D767-8DA963EF97D2}">
+        <Process CmdLine="*/bin/python*bin/pip3 install -U --force-reinstall --extra-index-url=*" />
+    </File>
+    <File Id="{ABB816E1-298F-5CF1-FDC9-30843ED2BD6A}">
+        <Process Path="*/opt/kaspersky/kics/libexec/kics" />
+    </File>
+    <File Id="{55D0B930-FB19-4E43-CEFA-F3B873F59212}" Path="/sys/fs/*">
+        <Process Path="*/opt/kaspersky/kics/libexec/kics" />
+    </File>
+    <File Id="{AF8A0101-1EF5-F923-FB56-D1EAB352000A}" Path="/sys/fs/*">
+        <Process Path="*/lib/systemd/systemd" />
+        <ParentProcess Path="*/lib/systemd/systemd" />
+    </File>
+    <File Id="{49AD180D-C72A-5878-3D23-1CE4E60D02C0}" Path="/var/opt/kaspersky/epagent/*">
+        <Process Path="/opt/kaspersky/epagent/sbin/lena" />
+    </File>
+    <File Id="{115D43E6-7055-97EF-A99C-353E87486575}" Path="/dev/tty" FileOperationType="2" />
+    <File Id="{128FE0AA-C8BD-0ECF-D7CD-28704352158C}" Path="*/.cache/pip/*">
+        <Process Path="*/bin/python*" />
+    </File>
+    <File Id="{A640226F-DF8E-2FF9-BE25-303FE7FA9D11}" Path="*/.cache/pip/*">
+        <Process Path="/usr/libexec/platform-python*" />
+    </File>
+    <File Id="{8F3E6E22-268B-6EBF-F719-30B34D6D2955}">
+        <Process CmdLine="*/bin/python*/.ansible/tmp/ansible-tmp-*/AnsiballZ_pip.py" />
+    </File>
+    <File Id="{22237ADB-2095-D3AE-6F13-8B45B0E7DFA2}">
+        <Process CmdLine="*/bin/python*/.ansible/tmp/ansible-tmp-*/AnsiballZ_apt.py" />
+    </File>
+    <File Id="{E790C312-EDC9-2B59-B7E8-FB3A45CBD67A}" Path="/var/log/*">
+        <Process Path="*/sbin/sshd" />
+    </File>
+    <File Id="{783F683F-F4AA-5B6D-7E36-564369AFACAD}" Path="/dev/pts/*" />
+    <File Id="{5558B069-8575-0285-FA1D-5BBB5FCC9C50}" Path="/proc/self/*">
+        <Process Path="*/lib/systemd/systemd" CmdLine="(systemd)" />
+    </File>
+    <File Id="{0D20F95A-0ECA-93C1-C4D8-2F8343E44609}" Path="/sys/fs/*">
+        <Process Path="*/lib/systemd/systemd" CmdLine="(systemd)" />
+    </File>
+    <File Id="{48EB0C0D-4903-D55F-D24D-C9B7DFB0B0FB}" Path="/home/*/.cache/*">
+        <Process Path="*/opt/google/chrome/chrome" />
+    </File>
+    <File Id="{DF8ABACE-57EA-71B7-30A8-232B194050A2}" Path="/home/*/.config/google-chrome/*">
+        <Process Path="*/opt/google/chrome/chrome" />
+    </File>
+    <File Id="{27B3E18F-9C9D-E917-D8CB-55955109B10E}" Path="*/oom_score_adj" />
+    <File Id="{FDD388DA-02EE-673E-DCC6-B13E749FF344}" Path="global/*">
+        <ParentProcess Path="*bin/postgres*" />
+    </File>
+    <File Id="{F5F4D255-B837-F096-A38E-D1B68BEEF2F7}" Path="/tmp/etoken.lock/*">
+        <Process Path="/opt/google/chrome/chrome" />
+    </File>
+    <File Id="{69171D20-5920-FE6F-2809-75715A1BC9D6}" Path="/dev/shm/*">
+        <Process Path="*/chrome" />
+    </File>
+    <File Id="{63C35D5C-E2F6-86DD-A5C6-ECD83B9FA55E}" Path="/var/opt/kaspersky/*">
+        <Process CmdLine="/bin/sh /var/opt/kaspersky/klnagent*" />
+    </File>
+    <File Id="{231D9CF5-C75E-70D0-8036-28751E6E38B7}" Path="base/*">
+        <Process CmdLine="*opt/kaspersky/kics/libexec/wdserver" />
+    </File>
+    <File Id="{8A0D062C-243E-6252-E1E0-4316047C299E}" Path="base/*">
+        <ParentProcess Path="*bin/postgres*" />
+    </File>
+    <File Id="{A037125B-8F75-5042-65F4-6E8B111EDF57}" Path="*/tmp.*" />
+    <File Id="{EBF7B784-0664-6554-62BC-8EDB8A8850A8}" Path="/tmp/sh-thd.*" />
+    <File Id="{05147561-C50E-82BF-F0A3-7E92A5097F18}" Path="/tmp/klsc*" />
+    <File Id="{507BF35A-9A89-ED53-E5F3-D8541DE15881}" Path="/var/backups/*" />
+    <File Id="{0211B3A4-7FBA-ECDE-3377-C956A9DF0284}" Path="/var/run/*" />
+    <File Id="{75425D4E-43D7-811D-BB9D-5BDB46DE1682}" Path="/run/*" />
+    <File Id="{11AD7F98-0653-B0A8-3255-CF3CAB48C00F}" Path="/var/cache/*" />    
+    <File Id="{F07DB04F-42FD-58CB-CB6F-D4407263031A}">
+        <Process Path="/usr/sbin/irqbalance" />
+    </File>
+    <File Id="{1FC10575-6905-8AB9-6874-8ABF3381F6CA}" Path="/var/opt/kaspersky/klnagent/ss_*.lck" />
+    <File Id="{9C20543E-E17C-8BEE-53B0-C5D6E411D220}" Path="/var/opt/kaspersky/klnagent/*/ss*.lck" />
+    <File Id="{D9E2C224-82B7-A1AF-2143-2F0C7717B86B}" Path="/var/opt/kaspersky/klnagent/*/.lock" />
+    <File Id="{6E773C51-0708-E5BB-2A3B-A5BE9AC54CBB}" FileOperationType="6">
+        <Process Path="*/systemd" />
+    </File>
+    <File Id="{B7AAFA76-C22F-E2B9-70CB-A746208B5F0F}" FileOperationType="6">
+        <ParentProcess Path="*/systemd" />
+    </File>
+    <File Id="{843A2A5A-1E10-D8E1-54DD-A3A408676E3C}" FileOperationType="6">
+        <Process Path="*kaspersky/epagent*" />
+    </File>
+    <File Id="{B593CE66-B32A-9935-776B-3C4D907069F5}" FileOperationType="6">
+        <Process Path="*apt/methods/http*" />
+    </File>
+    <File Id="{359990A1-C880-C1DC-C0BB-9279AA808BEF}" FileOperationType="6">
+        <Process CmdLine="*/usr/lib/apt/*" />
+    </File>
+    <File Id="{20DAE362-7A9F-6AEF-53C0-3FEC5CD94CEC}" FileOperationType="6">
+        <Process CmdLine="*bin/unattended-upgrade*" />
+    </File>
+    <File Id="{B357CB89-A2DE-D360-542E-89CD4891A3DE}" FileOperationType="6">
+        <Process Path="/usr/sbin/cron" />
+    </File>
+    <File Id="{6B4DB2D5-60D7-D9E7-9D6A-41FFF74F59FC}" FileOperationType="6">
+        <Process Path="/var/opt/kaspersky/kics" />
+    </File>
+    <File Id="{2E613AE5-DA16-39CD-FA1A-20757E71A573}" FileOperationType="6">
+        <Process Path="/bin/ls" />
+    </File>
+    <File Id="{3DF91D56-43FB-38C4-A5FB-290EFAE4BBFE}">
+      <Process CmdLine="*/x2gocleansessions*" />
+    </File>
+    <File Id="{0496E093-80A3-0468-2F37-DDCA6369923D}">
+      <Process CmdLine="*/x2go/x2go*" />
+    </File>
+    <File Id="{881940FA-B62F-7D50-F464-A6C746ADCB8A}">
+      <Process Path="/usr/sbin/rsyslogd" />
+    </File>
+    <File Id="{F6BD89A2-EF38-8C9C-31AC-B2ECB0AD2C6C}">
+      <Process Path="*/postgres" />
+    </File>
+    <File Id="{7C0731ED-D739-9191-C071-DD3D8A1A0154}" Path="*/.cache/mozilla/firefox/*" />
+    <File Id="{A952403F-EE8B-6D4A-7044-E197A5E6575A}" Path="*/.mozilla/firefox/*">
+      <Process Path="*/firefox*" />
+    </File>
+    <File Id="{C9798CF1-1B52-CAF4-7D34-71B02031ECD8}" Path="/dev/shm/*">
+      <Process Path="*/teams" />
+    </File>
+    <File Id="{EC831253-F4BC-FFB8-CE7E-040DE51A9BD1}" Path="*/.config/Microsoft/*">
+      <Process Path="*/teams" />
+    </File>
+    <File Id="{E441F5FF-A580-A7E0-3DC3-122ADFD9DBDB}" Path="*/snap/chromium/*">
+      <Process Path="*/chrome" />
+    </File>
+    <File Id="{AD24155C-75A7-497E-1F22-4BE2AD44EBC7}" Path="*/snap/chromium/*">
+      <ParentProcess Path="*/chrome" />
+    </File>
+    <File Id="{E0D43E34-D5F5-0CAA-A925-48DC88B0FF46}">
+      <Process CmdLine="performance_sw_epagent.pl" />
+    </File>
+    <File Id="{9CC49F7E-8118-2CAA-A928-E5388B541E93}">
+      <ParentProcess CmdLine="performance_sw_epagent.pl" />
+    </File>
+    <File Id="{58968BC1-A182-C8D4-8C32-D236B15F9327}">
+      <Process CmdLine="*/x2go*" />
+    </File>
+    <File Id="{099E2044-9C7D-F66A-3267-21EC70D1E133}">
+      <ParentProcess CmdLine="*/x2go*" />
+    </File>
+    <File Id="{4B8C7DFF-787A-4F7D-6C6A-F170ACE33080}" Path="*kaspersky/ksmg/postgresql/pg_stat_tmp*">
+      <Process Path="*kaspersky/ksmg/bin/*" />
+    </File>
+    <File Id="{1F87DD83-7CFF-86E0-23B4-BE52C9AC203F}">
+      <Process CmdLine="*sbin/ksmtuned*" />
+    </File>
+    <File Id="{545A4FE8-0FBB-0023-962D-91F1B45F042A}">
+      <Process Path="*/update-notifier" />
+    </File>
+    <File Id="{3EA21BF2-D585-32D7-912D-2C0BE08A6848}" Path="/home/*/.cache/*" />
+    <File Id="{2211A782-01BF-F2AD-D913-E47028E2088F}">
+      <Process CmdLine="*git checkout*" />
+    </File>
+    <File Id="{E208EA0A-BC54-6B5F-4E6D-8EC9D5B5B7E7}">
+      <Process CmdLine="*git pull*" />
+    </File>
+    <File Id="{B86F4463-65B0-E1C0-7965-1C702B42C4BF}">
+      <Process CmdLine="*git clone*" />
+    </File>
+    <File Id="{246BFD39-784A-9E81-2416-89040641B640}">
+      <ParentProcess Path="*/sssd*" />
+    </File>
+    <File Id="{CFECF1C5-FB07-8234-2C9F-6E42E0D16773}">
+      <Process Path="*/sssd*" />
+    </File>
+    <File Id="{B61ABDC3-542A-6CD5-C1DB-E5CD68C32B77}">
+      <Process Path="*/go/bin/go" />
+    </File>
+    <File Id="{ACFAB918-148B-A13E-98F5-61F3A1F153DE}" Path="/dev/fuse" />
+    <File Id="{6C977FEC-D608-A2CC-A31C-CF9962F6F0B7}" Path="*/eka_lock_Updater" />
+    <File Id="{634FD428-F74E-66BE-23CE-8B836EDEEC01}" Path="/var/log/kaspersky/*">
+      <Process Path="*/opt/kaspersky/*" />
+    </File>
+    <File Id="{10876414-AAFC-BAB1-ED42-48918BFED7D0}">
+      <Process Path="*/postgresql/initdb" />
+    </File>
+    <File Id="{4FB0C526-2337-3766-1C5F-2AC4568866DD}">
+      <Process Path="*/ksmg/libexec/licenser" />
+    </File>
+    <File Id="{05C5BFF6-9315-BE84-0287-4B10CD5D7997}">
+      <Process CmdLine="*hunts-event-processor.jar*" />
+    </File>
+    <File Id="{FDC02223-0036-1F6D-F33E-E13B3EE04B7A}">
+      <Process CmdLine="*/x2gopath*" />
+    </File>
+    <File Id="{243A942B-A315-DF8D-5647-1F5033BB83F5}">
+      <Process CmdLine="*/java * kafka.Kafka *" />
+    </File>
+    <File Id="{73C27EA3-47D0-AAFA-9ED8-8EFD92822786}">
+      <Process Path="*/java" CmdLine="* kafka.Kafka *" />
+    </File>
+    <File Id="{878D31D5-4490-5609-4D74-5D3E24118D6E}" Path="/var/lib/docker/*">
+      <Process Path="*/bin/dockerd" />
+    </File>
+    <File Id="{1D05691B-EAF5-D0DC-0E23-863BDE5F8E11}" Path="(null)" />
+    <File Id="{5B069836-C206-8887-C81F-A5606DC87812}">
+      <Process Path="*/bin/cmake" />
+    </File>
+    <File Id="{BDA78193-4FB4-DC06-BCEE-38E63FCC4DB7}">
+      <Process Path="*/bin/qemu-system*" />
+    </File>
+    <File Id="{1E6C2E71-2889-2B55-D850-416AEB1A6BD9}">
+      <Process CmdLine="*/usr/bin/yum*" />
+    </File>
+    <File Id="{E1F17E36-0D0C-C569-89AC-69EE2EF849F1}">
+      <Process CmdLine="*bin/airflow scheduler*" />
+    </File>
+    <File Id="{AD7D4A0D-B0D0-2543-F19F-1196651F88DE}">
+      <Process CmdLine="*bin/airflow webserver*" />
+    </File>
+    <File Id="{9D4D1B37-2B1F-7FEB-F07A-F74B2B46ED41}">
+      <ParentProcess Path="*bin/nk-gen-c" />
+    </File>
+    <File Id="{452A9893-4EB0-A09A-60D2-01D368B17CC8}">
+      <Process Path="*bin/nk-gen-c" />
+    </File>
+    <File Id="{73D5CD66-27C2-163B-9CD7-81B0D7AFCC5B}">
+      <ParentProcess CmdLine="*VBoxCreateUSBNode.sh*" />
+    </File>
+    <File Id="{8B66BBCC-97A8-D93B-0678-813187F93659}">
+      <Process CmdLine="*VBoxCreateUSBNode.sh*" />
+    </File>
+    <File Id="{ED7610AA-4155-91C9-2CD8-44D2324F8ECF}" Path="*/x2go*" />
+    <File Id="{96F0403F-9961-4128-3BFC-57A5863FA218}">
+      <Process CmdLine="*bin/go build *" />
+    </File>
+    <File Id="{0534CA1A-9CA4-15E1-1257-6E44F09A4067}">
+      <ParentProcess CmdLine="*bin/go build *" />
+    </File>
+    <File Id="{6C30AAB4-93E7-227E-BF30-2A2BB3F2AB53}">
+      <Process CmdLine="node /usr/bin/npm i" />
+    </File>
+    <File Id="{077B5785-DA2E-DE82-0D1A-6A6E209FA159}">
+      <Process CmdLine="*chrome --password-store*" />
+    </File>
+    <File Id="{356E5DA5-7189-1F6D-0499-90E437F67550}">
+      <Process CmdLine="*/update-motd*" />
+    </File>
+    <File Id="{A63DFB4C-30FA-E073-A5F4-0DF196232B9C}">
+      <ParentProcess CmdLine="*/update-motd*" />
+    </File>
+    <File Id="{E562CE47-D5C7-A6BB-00A5-A0812BE20756}" Path="/proc/self/loginuid">
+      <Process Path="*/cron" />
+    </File>
+    <File Id="{A5D935C5-671A-1AC4-4FB8-D57FAA0E76F7}">
+      <Process Path="*/python" CmdLine="* compileall *" />
+    </File>
+    <File Id="{7E56E593-F4AD-2A47-9154-E41513D3782A}">
+      <Process Path="*/kaspersky/ksmg/libexec/updater" />
+    </File>
+    <File Id="{9088BC1F-A363-EB1D-12AF-B11ABB0D6CD8}">
+      <Process CmdLine="readlink -f /usr/bin/.." />
+    </File>
+    <File Id="{385A5B1E-889D-C3E3-6844-A3EF367358F9}">
+      <Process Path="/usr/bin/sleep" />
+    </File>
+    <File Id="{49A35780-D16F-620E-C4E9-C5B59D307158}">
+      <Process Path="*/bin/dockerd" />
+    </File>
+    <File Id="{74C18E14-B5B5-5271-24BA-4349D7538743}" Path="*/global-messages-db.sqlite-journal">
+      <Process Path="*/thunderbird" />
+    </File>
+    <File Id="{569277C1-5CD7-AB1E-A06F-D57F04C5F37C}" Path="/proc/*/clear_refs">
+      <Process Path="*/chrome" />
+    </File>
+    <File Id="{195A5E16-7896-3AB1-59C2-1985213D4E54}">
+      <ParentProcess CmdLine="*/hypervkvpd -n" />
+    </File>
+    <File Id="{290437C9-804F-1DEA-E9D4-6B7D23AF9A9A}">
+      <Process CmdLine="*/hypervkvpd -n" />
+    </File>
+    <File Id="{B31C41DD-BAC1-A4B3-7C02-E55FECAD71C1}" Path="/var/lib/prometheus/*">
+      <Process Path="*/prometheus" />
+    </File>
+    <File Id="{46FFFA80-6FA6-3322-75EE-67A18EAF0DF1}">
+      <Process Path="*/perl" CmdLine="pvestatd" />
+    </File>
+    <File Id="{A2A93CFF-B4B6-19EE-8217-6CBE9133655B}">
+      <ParentProcess Path="*/perl" CmdLine="pvestatd" />
+    </File>
+    <File Id="{B5C744D1-544B-7EB5-6E32-E3A95DCC555B}">
+      <Process CmdLine="node /usr/bin/npm -dd install" />
+    </File>
+</Filters>
