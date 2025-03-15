@@ -1,0 +1,133 @@
+<Update
+	Date="21062021 0731"
+	ObjectType="2=KES10_CM;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="21921"
+	CompID="KES10_CM"
+	Shell="bdif;klz;none">
+	<Exclude
+		App="KES 10.2.[2,4,6].*;KES 10.3.0.6294"/>
+	<Patches
+		App="KES 10.3.0.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr3"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr3"
+		Item="Lang;Name;DSKM"
+		List="
+			ar|desc_ar.txt|Sn69PWvOd2BKvfv/19wA5ttHoiTbd0/WbNLwCr4jMWY=;
+			cs|desc_cs.txt|4TRuGoB3FVXIsjBNPb/ZDOjOnvWrG1FKJb22vmm1NQA=;
+			de|desc_de.txt|JVFvhlU9+tsr0fjw+7caSjb1V8tc1kCVeaDV2kqR6z4="/>
+	<Patch
+		App="KES 10.3.0.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr3"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr3"
+		Name="desc_en.txt"
+		DSKM="L0qp+Ub7mn8CsXU3ncg6FAmdRQABhvEuaA3tGYxUSt8="/>
+	<Patches
+		App="KES 10.3.0.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr3"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr3"
+		Item="Lang;Name;DSKM"
+		List="
+			es\;es_MX|desc_es_es-mx.txt|Xl0bWsq0DdbC3zpk0RWt1NOmJn/Eei+yTO4F9ezNSxY=;
+			fr|desc_fr.txt|Zu8OiE6GWTFe1wlgk9yzD5eKxFTOBjM/qdfoWHhg3Kg=;
+			hu|desc_hu.txt|QoiuoqfWuK0VnkRIvT1//cSvFSIm23jBlPN91R+GAGY=;
+			it|desc_it.txt|YZoWZLLJsZ1OxlO9qmMHRm4we6DtQ10tF5HLK90a9k4=;
+			ja|desc_ja.txt|583UztD+jJWYgSqTgeRMQIo/uo19tDuiUSOaRl1joCw=;
+			kk|desc_kk.txt|/WcGnHET40ysxVZHC3J22MwiOI4N6HSuCwelewwChSE=;
+			ko|desc_ko.txt|Ug7/BjZXIPuu88HY8O1eLO2Imn/X1gaiu0cjiMDbQ+c=;
+			nl|desc_nl.txt|gcUt+n1Pd9mecUr0l0VtnuyqJ+hV1nlV8Yfw5uiyCFM=;
+			pl|desc_pl.txt|rXb/pcHZadettbmjl17YqwrZ2sl1+xXUBQ7EznK3zIo=;
+			pt_BR|desc_pt-br.txt|3wPblUtdqnoZJHQkcWL+TyupiZuJXiEX5K3kYchqBvg=;
+			pt|desc_pt.txt|fVZ9LSUk5bWujP96hVzw5Wt5uIJBNcVDsQvsqAHVsbc=;
+			ro|desc_ro.txt|Vg3lhcMl8r7pxB0oLAmG1r2yk0cwEsfpnzCpaQubFnk=;
+			ru|desc_ru.txt|Uol8B0/cLAYjXAawaJjQmJMpYMO9Pn04JB3lc53xiLM=;
+			tr|desc_tr.txt|koY0F1CfcIgAppc0oxnu6o/xiXuvMLYlxStF4GP+E/Q=;
+			vi|desc_vi.txt|2g1XpXDkH5DTMuNdnwo7a/Rf8Og6l8XO5anmyfqnEk8=;
+			zh_Hans|desc_zh-hans.txt|GLtFnUvy/XpFlot+PJ9bovNRD19dCdoVRUgbqh5CBzw=;
+			zh_Hant|desc_zh-hant.txt|efhlEb97CTI1249Wcbb3MK6ZrIplysYioqylSeMmTXg="/>
+	<Patch
+		App="KES 10.3.0.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr3"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr3"
+		Name="kes10sp2mr3.msp"
+		DSKM="qjaZsiAcO02MiwzwePSnmyb0zknHWgeVEnZjw1los1M="/>
+	<Patches
+		App="KES 10.3.3.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr4"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr4"
+		Item="Lang;Name;DSKM"
+		List="
+			ar|desc_ar.txt|qqv1qoQnSl1u94ZZBK7EWP0tBZKiInwb+Y1qOXZOnU0=;
+			cs|desc_cs.txt|9iltDkwk6RpmEteYNkIQwltGp1k+ATG654A+NhQOPrw=;
+			de|desc_de.txt|YoajGYpa8/k0ZMtBEz5E3XNed3kx6V+5xPY4aIur5TM="/>
+	<Patch
+		App="KES 10.3.3.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr4"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr4"
+		Name="desc_en.txt"
+		DSKM="EaamrK3s/2XbfKxJaKblHPlBOGcEWp/p7O3ODzHf8J8="/>
+	<Patches
+		App="KES 10.3.3.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr4"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr4"
+		Item="Lang;Name;DSKM"
+		List="
+			es_MX|desc_es-mx.txt|eAYwlos4KRypxkb9WxoB2hfN955UBfqdzBeGJm7INnE=;
+			es\;es_MX|desc_es.txt|XRNDHR5XMpbciroNWpEqTy8ESp3m8rtGKtJfv7icUR0=;
+			fr|desc_fr.txt|ExbY/WGwi8ajeD3wcvtZ3UBSNkYiXVkwE/lwngv5ed4=;
+			hu|desc_hu.txt|vLDaAAKT9kad0x6Us7Hdsh7UjBXGVjq5BnQjwQvQons=;
+			it|desc_it.txt|HugU1HoeBxiu+5q14wb4ETX5ETf9JEBtF4/pJvpRb4g=;
+			ja|desc_ja.txt|PdPXkOpMtgQ+39Z5pnjl4fK4tKhZ280Wmqi/RMpqZGE=;
+			kk|desc_kk.txt|r6WOjcEpIOH+XLP6S+e5eTP9VSonHPSCudlm8p2sv9E=;
+			ko|desc_ko.txt|yEY102OI36aIMzWyx8GyZjqJAK/SuA9JGhwgo/gBZiE=;
+			nl|desc_nl.txt|7JZS0wang74nDFtOn0wrC3am5vVCj6q3bRI2G34SAT8=;
+			pl|desc_pl.txt|4N3gwCXjBg6jzWTu9qtyWCMCPwSQjgP/pO+VVeoccZU=;
+			pt_BR|desc_pt-br.txt|h3INz4vXVn6RPT6Jz+hwmjffkgYIhvxzz3lvw+gAprM=;
+			pt|desc_pt.txt|nsEU8GPpcsiFmYOxQPvrfM0oC2EhKk6PON4RqHcfPsM=;
+			ro|desc_ro.txt|7qy+bD/ApXN+8Z4m5jQEuckbk1UDgk3TXcVNfwoKC34=;
+			ru|desc_ru.txt|cTAa3ITAWcmkV7aLN+zRb8tO/KOWMrzhqF5yE+BsrqU=;
+			tr|desc_tr.txt|BqjUtnXrkehGRshKibExxB3gJtx0kkzehVDkDmOMFvQ=;
+			vi|desc_vi.txt|CByIx6z0ZZgGA6e3TL0vgG2ykOaN6NwUfz8qH+uiwfA=;
+			zh_Hans|desc_zh-hans.txt|nrp8eURwYUEBEWFNbvkD/VYpKenXGK2Hj0JO3mU1pRQ=;
+			zh_Hant|desc_zh-hant.txt|AAJR4uvV200IiRcsIwjmm+wB+qPujgHLItwFhrpucyk="/>
+	<Patch
+		App="KES 10.3.3.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2/kes10sp2mr4"
+		LocalPath="%DataRoot%/Patches/kes10sp2/kes10sp2mr4"
+		Name="kes10sp2mr4_aes256.msp"
+		DSKM="5nW8uYbWlKyhDO4DoDndpAfR2gvjf4HPwwlKWqaM4J8="/>
+	<File
+		App="KES 10.3.*.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2"
+		LocalPath="%DataRoot%/Patches/kes10sp2"
+		Name="wd_params.xml"
+		DSKM="OcdEDzHKWDBHscBfxC/Sm4F3eEhvcWgsVCUB+g+F60c="/>
+	<Patch
+		App="KES 10.3.*.*"
+		Target="[0-262143]"
+		SrvPath="kes10sp2"
+		LocalPath="%DataRoot%/Patches/kes10sp2"
+		Name="wd_rules.xml"
+		DSKM="PtPBlwDVnmw+P3UAlPmqCUTaSAwZ8lc0dfHNFUAG6NQ="/>
+	<File
+		App="KES 10.3.*.*"
+		Target="[0-262143]"
+		LocalPath="%DataRoot%/Patches"
+		Name="wd_regions.xml"
+		DSKM="Rkw4TBfWFK5j/J80LX7+NC6UNRFo5LOv4zWudBuylEU="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="kes10_cm-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGNvh9TOnlm+MpWa9eCB/oMYl3NCyWjLaf5R8PRXS5oQBBvwtPgFng3y74k8PBJTb71fYqTTL7UUk1zk2gBvvaMBAB4JPgEAAAIAAigIAEtFUzEwX0NNAwACKAMAQklOAQAACbC99hINCjs6MTBLSDVlM083cGJ0ZCt4OURhNFUyRmVkdzJtUUMvWDR5VGpOeFVUUmlWWnYvS2FKaFJLbGZaNlVidVBlYzNHbmY2VitoY0VDWnZ1MXhVcndMWkZUWm1jVyUl</Key>
+</Update>
+;:10qS8SjP4k+NXYf44GniDiMHlcNNKVxwhTJ0rC0kh2Fltb21O1AuT6TeIVSmPpmAT9wK2m7uCnbgXwDdXdHZf+iH%%

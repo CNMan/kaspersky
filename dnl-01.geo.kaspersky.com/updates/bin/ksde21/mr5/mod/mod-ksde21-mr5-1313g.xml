@@ -1,0 +1,135 @@
+<Update
+	Date="16012023 1323"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="11867"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="a"
+		SrvPath="../21.5.11.384_ksde_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			kasperskylab.ui.platform.toasts.dll|N3SM+22Qm0Zmg4ovNPt/M6ZkXOOmYElkt5s/wfvIajM=;
+			kldw.exe|mp/NSX6MwUhcKOtUjEeCpWmqw//NtTE6FoiY4JOO+OE=;
+			ucp_agent.dll|znP8UXfMS4FshV3K7AjlXr+rMnUffBJGhNIvcOxV+NM=;
+			ushata.dll|k1iGZJ1Ylj5mibYWGZn5zkGMOmf2LWDiDBcvWuPNlkM=;
+			ksdeuimain.dll|4XCsejKg5NcDXvaxmzfzNfTHelLzre6+1muhee8UI3Q="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			de|../21.5.11.384_ksde_a/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|settings.lt|wwrBpiQAd3shOPeHz/Uvx1KL5HAgPE9UOGCdzbk5JE8=;
+			en|../21.5.11.384_ksde_a/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|settings.lt|pnjetQ/n3lNUlcr3YZyyuhVU1OvaXLCue5PTnOzWo4E=;
+			es-ES|../21.5.11.384_ksde_a/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|eula.lt|qTzeqWtpo4f/DRTHsC9R8v3x3Q5Flo0UAhzK5svtqgk=;
+			es-ES|../21.5.11.384_ksde_a/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|mainwindow.lt|CWz4+cy0xXb91klX/k92kuUImKFKJf0UuyTVgIIq0lc=;
+			es-ES|../21.5.11.384_ksde_a/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|settings.lt|xdHfp7D4K8JkVsQFaezNOA3dFcIU38OjsX0mQviG4ZU=;
+			es-ES|../21.5.11.384_ksde_a/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|welcomepage.lt|MrPY94D1E8CYbjXdOKdC1lQEeqmSQqyMk2og3Cjm1MQ=;
+			es-US|../21.5.11.384_ksde_a/skin/resources/es-US/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-US\\\\locs|settings.lt|RVQCx+fCEMC7OO+Ms6opUDMwxLTFzy27Q3RmdXvvks8=;
+			fr|../21.5.11.384_ksde_a/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|settings.lt|/KtLhRLP8GprOFqgHrPp+od6tkPnqXzC6l29Bf/VCes=;
+			fr|../21.5.11.384_ksde_a/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|welcomepage.lt|wmiIDCdIJd7vbwJ2dMJTrtfBi6DTkB2ehUiBEN0Px8A=;
+			it|../21.5.11.384_ksde_a/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|eula.lt|D7CxU5MVHvoFd5F1QSnfh2ZlP677eVhK9x9ADvncHHA=;
+			it|../21.5.11.384_ksde_a/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|settings.lt|g3IgR/Dkg+NdpI3o9qbE9J1r54tDU5Y1OeG0JesAZtE=;
+			it|../21.5.11.384_ksde_a/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|welcomepage.lt|JuzsN4Qnchyng1utUGFjZJlpceDbGiarGKnaFBz7ty0="/>
+	<Patch
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.5.11.384_ksde_a/skin/resources/neutral/locs"
+		LocalPath="%ProductFolder%\skin\resources\neutral\locs"
+		Name="settings.lt"
+		DSKM="pnjetQ/n3lNUlcr3YZyyuhVU1OvaXLCue5PTnOzWo4E="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|../21.5.11.384_ksde_a/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|eula.lt|Lq6N79uvWI6W7k/gcdQzOQVL3VaMHkipgg1ClQ2gkUI=;
+			nl|../21.5.11.384_ksde_a/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|settings.lt|v7Nsh8b97cSF+7WwFu3cgc4djPwYGxJ99Lb+r1k05jc=;
+			nl|../21.5.11.384_ksde_a/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|welcomepage.lt|A1Ov8lWMwCFWjURfS5qIy0WmMyimecK3LjrmRn04Kf8=;
+			pt-PT|../21.5.11.384_ksde_a/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|eula.lt|E4yDTSk5TxiOELbBkrjz8RtDsZQ2yB2E3BB2KHecEkk=;
+			pt-PT|../21.5.11.384_ksde_a/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|settings.lt|Em4NcvF7pgrHMdUfL/Nb0Lz+HAYjP09A920JLKZ3QBY=;
+			pt-PT|../21.5.11.384_ksde_a/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|welcomepage.lt|Wud4FVkxqqpP443cdjje8pf06XcslplrSZ0XsQVF5zE=;
+			ru|../21.5.11.384_ksde_a/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|settings.lt|0kq/lGU6qmGLco2ptIgLlYJI0NHtFiT1wKWFii92gy0="/>
+	<Patch
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="b"
+		SrvPath="../21.5.11.384_ksde_b"
+		LocalPath="%ProductFolder%"
+		Name="kasperskylab.ui.core.visuals.dll"
+		DSKM="l5qu1UmfRyeRWJeLFNnXv8Q/FkDxQ2cqUPhaR3yZUvc="/>
+	<Patch
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		Lang="es-ES"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="../21.5.11.384_ksde_b/skin/resources/es-ES/locs"
+		LocalPath="%ProductFolder%\skin\resources\es-ES\locs"
+		Name="alerts.lt"
+		DSKM="fB/hxwP9RwCXvEYFPx5dYAt5chnlLVauxaey3Dh8v0g="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		FixName="c"
+		SrvPath="../21.5.11.384_ksde_c"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			product_metainfo.dll|wbBI0A6LBJFYY+wuzmgZrty7c9cmpdm4ZtwDCyLYMmc=;
+			bl_ksde.dll|yEHIIuHQs9BszMSLfkzehW5H60Ctb0nII6FI9ezj2oQ="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="c"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			es-ES|../21.5.11.384_ksde_c/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|datetime.lt|jcxVEFL+vfOADLXqQrv8XW/zPNgqh/2mJAQR7OEpMKM=;
+			ja|../21.5.11.384_ksde_c/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|support.lt|Vzcj04cKP5N4yFczo2mfUgIstHGgfivg+OYs17RD4so=;
+			nl|../21.5.11.384_ksde_c/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|mainwindow.lt|qK/rEpKzjdYYP0REnmXY87fU2qa+HCmIm4xDU4ZXTDI="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.5.11.384"
+		ApplyPeriod="0"
+		FixName="d"
+		SrvPath="../21.5.11.384_ksde_d"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|kasperskylab.ui.core.dll|UX15Pnu5aPM/iJlrPpGLbw5GZK468dByPltiGp9yZG8=;
+			restart_none|ver_info.json|LXHWr4thLlWSzIg7JLtm0bx6BiPOHl7/2EhcdEknTTo=;
+			restart_service|kasperskylab.ksde.ui.dll|1AbQqdb09D3mXx+VVBRThs8BbxRFCC8vacuAO+0c6uk="/>
+	<File
+		CompID="RETR1901_KSDE21,RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-ksde21-mr5-1901g.xml"
+		DSKM="K250fnhM6hCzIiSqYKrmAlPZnZ+bc+PERB3qtHP6Zok="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
+</Update>
+;:10KUh1FyYzG9YiGxeqLf/HAMhdEHi27gBHCubvS5CDJxyvYbvBrbyhsAmzj59tLdrxUwVCyy//3LYwWlXNBh6s3v%%
