@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+
+
+
+	<Registry Id="{1af9668d-64ec-4431-9f24-ab93654e5824}" Path="\REGISTRY\MACHINE\SYSTEM\CONTROLSET???\SERVICES\*" >
+		<Process Path="*\windows\system32\services.exe" />
+	</Registry>
+	<Registry Id="{2ba19f5f-152a-4497-89e9-c6647abfe1ac}" Path="\REGISTRY\MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\*" >
+		<Process Path="*\windows\system32\services.exe" />
+	</Registry>
+	<Registry Id="{43377436-1763-4d7a-9e06-908b5cdb6d05}" Path="\REGISTRY\MACHINE\SOFTWARE\*microsoft\windows nt\currentversion\ports" >
+		<Process Path="*\windows\system32\spoolsv.exe" />
+	</Registry>
+  <Registry Id="{424ed0f6-8774-42dc-9577-d6d0355d6b0a}" Path="\REGISTRY\MACHINE\sam\sam\domains\account\users\*" >
+    <Process Path="*\windows\system32\lsass.exe" />
+  </Registry>
+
+</Filters>
+
+
