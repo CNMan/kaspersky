@@ -1,0 +1,59 @@
+<Update
+	Date="02032021 1003"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="8786"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.2.16.590"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-100/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\common|sprite_flag_big.png|lp6cF631SilU4IfVTpSLYRVPRtBz58XO6TbFofpOlO8=;
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-100/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-100\\\\common|sprite_flag_small.png|ADI++FUfCmGlzL+NGljf1qai27WQkEjOxSIgtnxvjok=;
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-125/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-125\\\\common|sprite_flag_big.png|nfxkv14U+TVDAAXE9XxxA6++TzkYBUVq40pnmuSwzCs=;
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-125/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-125\\\\common|sprite_flag_small.png|H0KDkDhC5sLUcYNS9autdr1Pj0YDq7X2zjUhKchBWEY=;
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-150/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-150\\\\common|sprite_flag_big.png|YGdV3LGaoSqn9SGuNHXOwzY3za7+Dht2uACX3ZshY8Y=;
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-150/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-150\\\\common|sprite_flag_small.png|G7r2kCH6Ssibj8XN0Oijh1f9glpc34mBw0nnQbo1QHk=;
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-200/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-200\\\\common|sprite_flag_big.png|DwlobKPT2TcsSily6Sl3w7cQWTVBxuYTIJIWWZghFxQ=;
+			../21.2.16.590_ksde_a/skin/resources/neutral/images/scale-200/common|%ProductFolder%\\\\skin\\\\resources\\\\neutral\\\\images\\\\scale-200\\\\common|sprite_flag_small.png|pKfqzBDjGpD5tQ200agcu1NctJkCzjtKVv3voLhnVBA="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.2.16.590"
+		Lang="ro"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.2.16.590_ksde_a/skin/resources/ro/locs"
+		LocalPath="%ProductFolder%\skin\resources\ro\locs"
+		Item="Name;DSKM"
+		List="
+			ipmnews.lt|ii3qB9PMfbIAwAubLb82QixejGEn3KKs5R9LRPhCHl0=;
+			ucp.lt|wCjJ+NFPynq0wA6MUeg9c9tMZA868SQ7sRgvEOY3rbE="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.2.16.590"
+		ApplyPeriod="0"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			restart_service|b|../21.2.16.590_ksde_b|product_metainfo.dll|5fy9DhKAfJA7T7VhJ29ok8rNf+RxI+OAg3O6dc+OfsY=;
+			restart_service|b|../21.2.16.590_ksde_b|kasperskylab.ksde.ui.dll|H2B4ViG9Vqn2OGuMJsMk9SnLZJ18N1+HxzNQl86PxYo=;
+			restart_service|c|../21.2.16.590_ksde_c|avpmain.dll|B3KIfNGStqBwgNCCqt7K7d8TYMt6WfT9V4QH/9RO9QU=;
+			restart_none|c|../21.2.16.590_ksde_c|ver_info.json|WTtCOeM50bxAArydD30hD+VMzGlSyOTpInstZNawOJI="/>
+	<File
+		CompID="RETR1901_KSDE21,RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-ksde21-mr2-1901g.xml"
+		DSKM="n6ouY0hvAfqTGikRiplfWd0eOMubj0bJjJpibopipGE="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwS0orYkVsTk04Q0V4c01LampSZlArQTRnUU5xTjluK2ZLSXljWW11dkVHaWszZTlSUTRPOEJWRC9aZkdtOW9YemN4ODI2cUN6czRQTlJ3NEZnVHVGMzUlJQ==</Key>
+</Update>
+;:10qGai/YP2QizI+zQ7TeF8Bca8pMpo3/x7EhIWuKWgjHcbHUht39ru3B8UWUs0hjuqsVh6SbXroqKPs7/P1N9cgJ%%
