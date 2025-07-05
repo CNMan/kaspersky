@@ -1,0 +1,11 @@
+<root>
+    <product_type id="kis">
+        <product_version version="[21.13.0.0,21.17.0.0)">
+            <user_percent value="100">
+                <feature_flag name="HttpClient.UsePplInProduction" value="0.5" />
+                <feature_flag name="HttpClient.DeprecatedFactoriesUsePplInProduction" value="0.5" />
+                <feature_flag name="HttpClient.EnableHttp2ForPplInProduction" value="True" />
+            </user_percent>
+        </product_version>
+    </product_type>
+</root>
