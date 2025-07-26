@@ -1,0 +1,77 @@
+<Update
+	Date="20052025 0737"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="13798"
+	Shell="bdif;klz;none">
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.21.7.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.21.7.384_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="cJqPP8ChS7/LyxTXQDmPQER2WMHmaAAWrIGK6BcSZgg="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.21.7.384"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.21.7.384_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="mP8jearadxg+PoDKM0+UAYSjlNKL2i8NJbObfxIPqts="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="a"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.21.7.384|restart_os|../21.21.7.384_k4w_a|avzkrnl.dll|/7GHe/VKLeV576YrvznaYPB8J7rgmWDtS0l+CFYoltU=;
+			KASPERSKY 21.21.7.384|restart_os|../21.21.7.384_k4w_a|bl.dll|TevVtHOWpB52PbfOTqYmndMJwD2zdVUZmXSkFRwGhog=;
+			KASPERSKY 21.21.7.384|restart_os|../21.21.7.384_k4w_a|kl.ui.framework.dll|4bQsTJIB9Wfqgji9ouzx3p4jELYD9J2vs14MFacBoVs=;
+			KASPERSKY 21.21.7.384|restart_os|../21.21.7.384_k4w_a|troubleshoot.dll|vEPwDRYs7T1W96UPwHKI/qRqnhyhRDYO8Ks6rBYG4MU=;
+			KSOSPC\\|KSOSFS 21.21.7.384|restart_none|../21.21.7.384_ksos_a|ver_info.json|cJqPP8ChS7/LyxTXQDmPQER2WMHmaAAWrIGK6BcSZgg="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.21.7.384"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.21.7.384_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="mP8jearadxg+PoDKM0+UAYSjlNKL2i8NJbObfxIPqts="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.21.7.384"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.21.7.384_ksos_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			avzkrnl.dll|/7GHe/VKLeV576YrvznaYPB8J7rgmWDtS0l+CFYoltU=;
+			bl.dll|TevVtHOWpB52PbfOTqYmndMJwD2zdVUZmXSkFRwGhog=;
+			kl.ui.framework.dll|4bQsTJIB9Wfqgji9ouzx3p4jELYD9J2vs14MFacBoVs=;
+			troubleshoot.dll|vEPwDRYs7T1W96UPwHKI/qRqnhyhRDYO8Ks6rBYG4MU="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-kav21-mr21-1901g.xml"
+		DSKM="eQviZ5R2QwLHFX5tgSn4RCRYScrMzFvuDAC81SmeMcg="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:10KAkjlc/UkE1yCjIs5KnA2venBk6/UmjmlxRz/tpBIbA/5wQYkMNBSxO6XFXMWy3t1jOmXOulaYSsVzhVznNmVN%%
