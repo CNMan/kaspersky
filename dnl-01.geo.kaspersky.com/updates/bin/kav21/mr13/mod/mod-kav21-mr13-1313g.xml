@@ -1,0 +1,196 @@
+<Update
+	Date="22052023 1221"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="12698"
+	Shell="bdif;klz;none">
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.13.5.506"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="SIp1aq38N7fsvi+Tl5BXI2sHEd6vWIc0nhBT5v8CKuk="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.13.5.506"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="WvF9UXtyvDnJlT/fk5dn/OIQUgaPTgZiRjWxS/Or48g="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.13.5.506"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.13.5.506_k4w_a/drv32"
+		LocalPath="%WINDIR%\System32\drivers\Kaspersky4Win-21-13"
+		Item="OS;Name;DSKM"
+		List="
+			Win-8,81,2012,2012R2,1000,2016,2019|kneps.sys|OOpA++fNxSc2xOmOewMfmDYR8gg0Yap38Fb21tjvnIM=;
+			Win-Vista,7,2008|kneps.dll|Oh8KDkIIkbUY2+0wz5iUCycM7vOXXJayJ56q8JTxmAQ="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.13.5.506"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_k4w_a/drv32/p"
+		LocalPath="%ProductFolder%\knepsx86"
+		Item="Name;DSKM"
+		List="
+			kneps.inf|WHUk+/GyfOUvGwGPRW+jWT4njYWQTP9sNruBslOmqKk=;
+			kneps.sys|OOpA++fNxSc2xOmOewMfmDYR8gg0Yap38Fb21tjvnIM=;
+			kneps_sha1.inf|PBZKiRGOwnP1iqhyWuWODB4JXcm2JY5jKV6CEjyCml8="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.13.5.506"
+		ApplyPeriod="168"
+		FixName="a"
+		Item="OS;SysArch;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			Win-Vista,7,2008|i386|restart_none|../21.13.5.506_k4w_a/drv32/p|%ProductFolder%\\\\knepsx86|kneps_sha1_reg.inf|rUjkZMb0unMxSBfmO2nEbC5Af10pCThpV/zgbkBaYlg=;
+			Win-8,81,2012,2012R2,1000,2016,2019|x64|restart_os|../21.13.5.506_k4w_a/drv64|%WINDIR%\\\\System32\\\\drivers\\\\Kaspersky4Win-21-13|kneps.sys|5nf2UL1gme1ebPaYoOIov+Gfp0pgtQdNtDZtyJMRLa0=;
+			Win-Vista,7,2008|x64|restart_os|../21.13.5.506_k4w_a/drv64|%WINDIR%\\\\System32\\\\drivers\\\\Kaspersky4Win-21-13|kneps.dll|FZq7+8Hs/UbQ537iDgT4uaxCdq6Sta8Th2G5GTIudP8="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.13.5.506"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_k4w_a/drv64/p"
+		LocalPath="%ProductFolder%\knepsx64"
+		Item="Name;DSKM"
+		List="
+			kneps.inf|WHUk+/GyfOUvGwGPRW+jWT4njYWQTP9sNruBslOmqKk=;
+			kneps.sys|5nf2UL1gme1ebPaYoOIov+Gfp0pgtQdNtDZtyJMRLa0=;
+			kneps_sha1.inf|PBZKiRGOwnP1iqhyWuWODB4JXcm2JY5jKV6CEjyCml8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.13.5.506"
+		OS="Win-Vista,7,2008"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_k4w_a/drv64/p"
+		LocalPath="%ProductFolder%\knepsx64"
+		Name="kneps_sha1_reg.inf"
+		DSKM="rUjkZMb0unMxSBfmO2nEbC5Af10pCThpV/zgbkBaYlg="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="a"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.13.5.506|restart_os|../21.13.5.506_k4w_a|bl.dll|CmHnMr2izrC6h48rLIPmf9ZvAZwh73BBVXJOxZJpQ+c=;
+			KSOSPC\\|KSOSFS 21.13.5.506|restart_none|../21.13.5.506_ksos_a|ver_info.json|SIp1aq38N7fsvi+Tl5BXI2sHEd6vWIc0nhBT5v8CKuk="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.13.5.506"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="WvF9UXtyvDnJlT/fk5dn/OIQUgaPTgZiRjWxS/Or48g="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.13.5.506"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.13.5.506_ksos_a/drv32"
+		LocalPath="%WINDIR%\System32\drivers\KSOS-21-13"
+		Item="OS;Name;DSKM"
+		List="
+			Win-8,81,2012,2012R2,1000,2016,2019|kneps.sys|OOpA++fNxSc2xOmOewMfmDYR8gg0Yap38Fb21tjvnIM=;
+			Win-Vista,7,2008|kneps.dll|Oh8KDkIIkbUY2+0wz5iUCycM7vOXXJayJ56q8JTxmAQ="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.13.5.506"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_ksos_a/drv32/p"
+		LocalPath="%ProductFolder%\knepsx86"
+		Item="Name;DSKM"
+		List="
+			kneps.inf|W3nLzCdqwlkhZhP6uRMI8S/jbqgPR6XyNuzWM7t8pK8=;
+			kneps.sys|OOpA++fNxSc2xOmOewMfmDYR8gg0Yap38Fb21tjvnIM=;
+			kneps_sha1.inf|VxbYkaKsP9F+D8PiwhShSaQmbehAInOmnCjEl5mtunQ="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.13.5.506"
+		ApplyPeriod="168"
+		FixName="a"
+		Item="OS;SysArch;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			Win-Vista,7,2008|i386|restart_none|../21.13.5.506_ksos_a/drv32/p|%ProductFolder%\\\\knepsx86|kneps_sha1_reg.inf|sbe2UxsN8kHCyVFkufjMrPfv8OvdK6qfnW1uBlVR0SM=;
+			Win-8,81,2012,2012R2,1000,2016,2019|x64|restart_os|../21.13.5.506_ksos_a/drv64|%WINDIR%\\\\System32\\\\drivers\\\\KSOS-21-13|kneps.sys|5nf2UL1gme1ebPaYoOIov+Gfp0pgtQdNtDZtyJMRLa0=;
+			Win-Vista,7,2008|x64|restart_os|../21.13.5.506_ksos_a/drv64|%WINDIR%\\\\System32\\\\drivers\\\\KSOS-21-13|kneps.dll|FZq7+8Hs/UbQ537iDgT4uaxCdq6Sta8Th2G5GTIudP8="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.13.5.506"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_ksos_a/drv64/p"
+		LocalPath="%ProductFolder%\knepsx64"
+		Item="Name;DSKM"
+		List="
+			kneps.inf|W3nLzCdqwlkhZhP6uRMI8S/jbqgPR6XyNuzWM7t8pK8=;
+			kneps.sys|5nf2UL1gme1ebPaYoOIov+Gfp0pgtQdNtDZtyJMRLa0=;
+			kneps_sha1.inf|VxbYkaKsP9F+D8PiwhShSaQmbehAInOmnCjEl5mtunQ="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.13.5.506"
+		OS="Win-Vista,7,2008"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.13.5.506_ksos_a/drv64/p"
+		LocalPath="%ProductFolder%\knepsx64"
+		Name="kneps_sha1_reg.inf"
+		DSKM="sbe2UxsN8kHCyVFkufjMrPfv8OvdK6qfnW1uBlVR0SM="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.13.5.506"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.13.5.506_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="bl.dll"
+		DSKM="CmHnMr2izrC6h48rLIPmf9ZvAZwh73BBVXJOxZJpQ+c="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-kav21-mr13-1901g.xml"
+		DSKM="pzFQVtAvEo4qT7dlR7p4mgtvJpZ7iQybE9t4rk1XXWQ="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:10K2TWZA2t34yOV5vO9jvaOxaEPJyg62FPktaVLDFdUh4qojhSzgeFp2S5SQcn5g2txR5CnlSqU47mrUNm6lGYJJ%%
