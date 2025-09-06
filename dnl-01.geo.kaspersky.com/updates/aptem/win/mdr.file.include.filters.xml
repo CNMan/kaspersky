@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+
+
+
+	<!-- Blacklists (interesting) -->
+
+<!-- Group 1 -->
+
+	<!-- Interesting files -->
+	<File Id="{09a0c310-fc2c-4cd7-8a89-7e17d80f3687}" FilePath="*\System32\drivers\etc\hosts" >
+	</File>
+
+	<!-- Persistence -->
+	<!-- https://3gstudent.github.io/3gstudent.github.io/Use-Office-to-maintain-persistence/ -->
+	<!-- https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/ -->	
+	<File Id="{f30938c3-3ed4-4b40-9e8a-f13ae8e28892}" FilePath="*\microsoft\word\startup\*" >
+	</File>
+	<!-- shim database (“C:\Windows\AppPatch\Custom” and “C:\Windows\AppPatch\Custom\Custom64”) -->	
+	<File Id="{c5eb06e8-63bc-417e-8de5-b6227301e96c}" FilePath="*Windows\apppatch\custom*" >
+	</File>
+	<!-- !!!!!!! ||	$gen(`ApsFileModificationInfo(@head '$startup\\');`, APS_FILE_INFO)) -->	
+		
+
+	<File Id="{e4838e2f-aebb-4975-804f-02d65633f282}" FilePath="*\programs\startup\*" >
+	</File>
+	<!-- Powershell profile (http://www.hexacorn.com/blog/2014/08/27/beyond-good-ol-run-key-part-16/) -->	
+	<File Id="{ef1ee4f9-ebcf-4d54-9d1a-63ce8252d241}" FilePath="*\windowspowershell\v1.0\profile.ps1" >
+	</File>
+	<!-- Powershell profile (http://www.hexacorn.com/blog/2014/08/27/beyond-good-ol-run-key-part-16/) -->	
+	<File Id="{27dae2ff-9629-4c72-83ef-6b15846eb51a}" FilePath="*\windowspowershell\v1.0\microsoft.powershell_profile.ps1" >
+	</File>
+	<!-- Powershell profile (http://www.hexacorn.com/blog/2014/08/27/beyond-good-ol-run-key-part-16/) -->	
+	<File Id="{044551b6-7b35-40b3-a763-cc7599c9d0d8}" FilePath="*\windowspowershell\profile.ps1" >
+	</File>
+	<!-- Powershell profile (http://www.hexacorn.com/blog/2014/08/27/beyond-good-ol-run-key-part-16/) -->	
+	<File Id="{f70dc81a-bf27-4d45-bf3a-965ba968129c}" FilePath="*\windowspowershell\profile.ps1" >
+	</File>
+	<!-- Powershell profile (http://www.hexacorn.com/blog/2014/08/27/beyond-good-ol-run-key-part-16/) -->	
+	<File Id="{63f10f58-44ed-447f-b7c5-479ec881003c}" FilePath="*\windowspowershell\microsoft.powershell_profile.ps1" >
+	</File>
+	
+
+
+	<!-- DotLocal (.local) DLL redirection -->
+	<File Id="{0fb0b1aa-019a-4322-9c62-6e329c37bbb1}" FilePath="*.local" >
+	</File>
+
+	<!-- Hack tools artifacts -->
+		<!-- Mimikatz Kerberos tickets export -->
+	<File Id="{02d6eff9-127a-42f1-99c7-dfb7e419d185}" FilePath="*.kirbi" >
+	</File>
+		<!-- WCE Kerberos ticket export -->
+	<File Id="{205b0878-949f-4078-b076-06374fb42ca7}" FilePath="*\wce_ccache" >
+	</File>
+		<!-- WCE Kerberos ticket export -->
+	<File Id="{156a8428-7a15-4f31-b744-e11129ff4499}" FilePath="*\wce_krbtkts" >
+	</File>
+		<!-- lsass memory dumps, e.g. lsass.exe_171116_031503.dmp -->
+	<File Id="{34af70f0-738d-4874-8735-a6e890568843}" FilePath="*\lsass*.dmp" >
+	</File>
+		<!-- Memory dumps, created by SQLDumper tool, e.g. SQLDmpr0001.mdmp -->
+	<File Id="{11a98d29-0db1-40dc-8e46-3577aca5c854}" FilePath="*\sqldmpr*.mdmp" >
+	</File>
+		<!-- fgdump export file, e.g. 127.0.0.1.pwdump -->
+	<File Id="{db0a5c54-d24a-4aab-9a10-10a6bec6ebbb}" FilePath="*.pwdump" >
+	</File>
+		<!-- cachedump export file, e.g. 172.16.205.151.cachedump -->
+	<File Id="{845522c5-c0bf-4424-86b6-06766ed4dca5}" FilePath="*.cachedump" >
+	</File>
+		<!-- fgdump log file, e.g. 2017-11-07-09-11-06.fgdump-log -->
+	<File Id="{71f35bad-27da-4acd-97e8-68318426c2ab}" FilePath="*.fgdump-log" >
+	</File>
+		<!-- pwdump6 create test.pwd in ADMIN$ (Windows) -->
+	<File Id="{b853e8e2-8495-4cf7-acb0-1e2e6c760358}" FilePath="*\test.pwd" >
+	</File>
+		<!-- PWDumpX export file, e.g. 172.16.205.151-PWHashes.txt -->
+	<File Id="{960329fe-cdbf-4710-a9b3-c8b0e22dfa87}" FilePath="*pwhashes.txt" >
+	</File>
+		<!-- PWDumpX export file, e.g. 172.16.205.151-PWHashes.txt -->
+	<File Id="{76459a89-2bce-41f9-b17c-25d02999489a}" FilePath="*pwhashes.txt.obfuscated" >
+	</File>
+		<!-- samex tool export file -->
+	<File Id="{0577a5e4-14b0-43f8-8dd4-afa3952eb489}" FilePath="*\sam.out" >
+	</File>
+		<!-- samex tool export file -->
+	<File Id="{bba174fb-d1a7-46e9-8d49-925981d22e10}" FilePath="*\system.out" >
+	</File>
+		<!-- samex tool export file -->
+	<File Id="{72206393-bc16-42ec-89c4-63e45a1f3b62}" FilePath="*\ntds.out" >
+	</File>
+		<!-- Quarks PWDump export - https://jpcertcc.github.io/ToolAnalysisResultSheet/details/QuarksPWDump.htm-->
+	<File Id="{c1e4f65f-c8d6-4d61-aa79-59359484f4d7}" FilePath="*appdata\\temp\\sam-*.dmp" >
+	</File>
+		<!-- Kerberos Tickets export - TGT_[User Name]@[Domain].ccache -->
+	<File Id="{30971449-69e8-4d19-a9c4-4caa0a9d3676}" FilePath="*\tgt*.ccache" >
+	</File>
+		<!-- Find-GPOPasswords.ps1 report file -->
+	<File Id="{2e26713e-0a70-44bf-8173-44afcf2d3283}" FilePath="*\temp\logs\gppdatareport-*csv" >
+	</File>
+
+
+
+<!-- Group 2 -->
+
+
+	<!-- Monitored file extensions -->
+	<File Id="{86cffdfe-5d3f-44c5-bf32-adb3513316c0}" FilePath="*.chm" >
+	</File>
+	<File Id="{95fb4246-025f-4740-9a80-b0fb5657f7f3}" FilePath="*.com" >
+	</File>
+	<File Id="{a15c2491-c473-4f77-a34a-01e34c0df0e2}" FilePath="*.cpl" >
+	</File>
+	<File Id="{e86652ff-8c63-4de3-a80b-1b1768f26e25}" FilePath="*.dll" >
+	</File>
+	<File Id="{eedb7f1e-1160-442a-9d34-314697a2f6d1}" FilePath="*.exe" >
+	</File>
+	<File Id="{f2d9fc51-5557-4cfb-bc6a-3bf2b1016bde}" FilePath="*.library-ms" >
+	</File>
+	<File Id="{d09c5f50-3fda-46a7-95ab-face800c83ac}" FilePath="*.bat" >
+	</File>
+	<File Id="{d4b6d820-c9f0-43a6-92ec-98a62af33e5b}" FilePath="*.cmd" >
+	</File>
+	<File Id="{4c4b06a9-ba18-48da-866d-6c7ae9470c40}" FilePath="*.hta" >
+	</File>
+	<File Id="{81610ce2-dfab-4220-8a47-3f9088a017bb}" FilePath="*.js" >
+	</File>
+	<File Id="{406d3e6e-a076-42b9-83a6-0605d76add2a}" FilePath="*.jse" >
+	</File>
+	<File Id="{5af01138-6c3b-4fda-9a49-e3e00217cf83}" FilePath="*.lnk" >
+	</File>
+	<File Id="{3b366a3f-f297-4734-9ba0-83d074768903}" FilePath="*.msh" >
+	</File>
+	<File Id="{8055835b-f58f-4aa7-81a3-957759294feb}" FilePath="*.msh1" >
+	</File>
+	<File Id="{1237b037-7e04-4de3-baf9-8c7c22929284}" FilePath="*.msh1xml" >
+	</File>
+	<File Id="{1cd9003a-254c-4411-b3dc-dea6aa62d6f0}" FilePath="*.msh2" >
+	</File>
+	<File Id="{912bc12e-b2ed-4bbd-bdfc-c1c91fd2b986}" FilePath="*.msh2xml" >
+	</File>
+	<File Id="{8972d55d-31ae-47f8-9505-3c617c72097f}" FilePath="*.mshxml" >
+	</File>
+	<File Id="{d5efa750-30b3-46b1-b1ae-3d0734a39149}" FilePath="*.pif" >
+	</File>
+	<File Id="{3ac97797-95a5-48ac-8430-708038cb9013}" FilePath="*.pl" >
+	</File>
+	<File Id="{6ca8d6df-bb20-4f2c-88c3-fcfb45ea764a}" FilePath="*.ps1" >
+	</File>
+	<File Id="{e72d292c-9c3f-4a27-b686-128d4730569a}" FilePath="*.ps2" >
+	</File>
+	<File Id="{5a534760-f5f1-4999-83db-3846b3ec5d2d}" FilePath="*.psc1" >
+	</File>
+	<File Id="{c169764e-c05d-4407-bbb7-958990462b30}" FilePath="*.psd1" >
+	</File>
+	<File Id="{1d151418-b178-4d4b-b986-0f3fd87e8786}" FilePath="*.psm1" >
+	</File>
+	<File Id="{35443609-1c88-4549-b96a-7c14c72ca340}" FilePath="*.py" >
+	</File>
+	<File Id="{71b50de1-3ee3-469a-992d-bbf915f43c71}" FilePath="*.pyc" >
+	</File>
+	<File Id="{7d5788d8-1156-4e1a-90f0-50c9667dcdd0}" FilePath="*.pyd" >
+	</File>
+	<File Id="{f12fa649-15ce-43a6-919c-90481245c8f0}" FilePath="*.pyo" >
+	</File>
+	<File Id="{c789fe93-d59d-4534-87a5-28fc6c29f11d}" FilePath="*.pyw" >
+	</File>
+	<File Id="{f7700b41-bed2-4bf4-8eb7-93645aebfde5}" FilePath="*.scr" >
+	</File>
+	<File Id="{d06b814e-7c3b-4089-aeae-04c932d33108}" FilePath="*.sct" >
+	</File>
+	<File Id="{c0da64fa-50ce-4b0a-bd82-4cbc7c93f788}" FilePath="*.sh" >
+	</File>
+	<File Id="{3c4242ca-ace5-4059-838a-329b0322de1f}" FilePath="*.sys" >
+	</File>
+	<File Id="{b439553f-f292-463b-bdd6-b1d114a2331c}" FilePath="*.vb" >
+	</File>
+	<File Id="{6c6137e8-7488-4a0b-b6be-3de5b009a237}" FilePath="*.vbe" >
+	</File>
+	<File Id="{b4bb38ef-014c-45f8-9d01-08dd4db7db77}" FilePath="*.vbs" >
+	</File>
+	<File Id="{0bfba16d-eb73-41b2-aa39-e4ab8063eb1f}" FilePath="*.ws" >
+	</File>
+	<File Id="{fdc7b520-86af-4181-90cf-cb9a9470b7f7}" FilePath="*.wsc" >
+	</File>
+	<File Id="{9f57debd-e38c-45b7-b838-58aa6169d945}" FilePath="*.wsf" >
+	</File>
+	<File Id="{85107b36-a8d4-4c1b-8185-8ab1f990a294}" FilePath="*.wsh" >
+	</File>
+	<File Id="{b924803e-b530-4be9-b45d-1af8c47ad79e}" FilePath="*.xsl" >
+	</File>
+
+
+	<!-- Archives (MITRE ID: T1002, T1022)	 -->
+	<File Id="{aa07b356-aae4-4e64-ab7b-94df6d2a3bfd}" FilePath="*.7z" >
+	</File>
+	<File Id="{7672f36b-657e-457c-871e-a9cd061f5926}" Header="377ABCAF271C*" >
+	</File>
+	
+	<File Id="{6f4201d3-1d5b-4294-8456-78a5a3a8f9fb}" FilePath="*.rar" >
+	</File>
+	<File Id="{e8f80848-0042-45bb-a4be-11e29b0d6ec9}" Header="526172211A07*" >
+	</File>
+	
+	<File Id="{93ca546c-5e0d-4dbd-8499-12929367d8cd}" FilePath="*.zip" >
+	</File>
+	<File Id="{0c921820-dcc1-401b-a821-00d2d0496389}" Header="504B0304*" >
+	</File>
+	
+	<File Id="{d1a855fd-00df-473c-b6c0-027f4b4dd9e8}" FilePath="*.cab" >
+	</File>
+	<File Id="{daa092e4-61bd-4f82-98e1-72e7f29f37b0}" Header="4D534346*" >
+	</File>
+	
+	<!-- Headers	 -->
+	<File Id="{efda2606-510d-4ea3-a528-50b846f86c01}" Header="4D5A*" >
+	</File>
+	<File Id="{d1f08a24-4558-47ca-9f57-d6a54a305dbb}" Header="5A4D*" >
+	</File>
+	
+	
+
+
+</Filters>
