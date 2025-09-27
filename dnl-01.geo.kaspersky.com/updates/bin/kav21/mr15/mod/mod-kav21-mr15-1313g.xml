@@ -1,0 +1,108 @@
+<Update
+	Date="01072024 0659"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="13294"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.15.8.493|restart_os|a|../21.15.8.493_k4w_a|avpuimain.dll|CJ0erOY+WVBIxlwLARK9JIGe9i9W71ts5oqXa/70UNo=;
+			KASPERSKY 21.15.8.493|restart_os|a|../21.15.8.493_k4w_a|traffic_processing.dll|887AkYTDN9Fl0KgvrRBQ2qGJn6iyFCYmseuzhAei1LQ=;
+			KASPERSKY 21.15.8.493|restart_os|a|../21.15.8.493_k4w_a|avpmain.dll|JYwQTt/9j9iVfA9GoevH56yOdA8eIx3gLGsH9VKgtcw=;
+			KSOSPC\\|KSOSFS 21.15.8.493|restart_os|a|../21.15.8.493_ksos_a|avpuimain.dll|CJ0erOY+WVBIxlwLARK9JIGe9i9W71ts5oqXa/70UNo=;
+			KSOSPC\\|KSOSFS 21.15.8.493|restart_os|a|../21.15.8.493_ksos_a|traffic_processing.dll|887AkYTDN9Fl0KgvrRBQ2qGJn6iyFCYmseuzhAei1LQ=;
+			KSOSPC\\|KSOSFS 21.15.8.493|restart_os|a|../21.15.8.493_ksos_a|avpmain.dll|JYwQTt/9j9iVfA9GoevH56yOdA8eIx3gLGsH9VKgtcw=;
+			KASPERSKY 21.15.8.493|restart_none|b|../21.15.8.493_k4w_b|ver_info.json|//wZ3H6IEhhiVRXltss1xaVy2QZE43cIco6T3snqdFM="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.15.8.493"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="../21.15.8.493_k4w_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="vZrykRVoEnrKm1sqg6yUIhZRFcgh1sAeJGF1x3WddQw="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.15.8.493"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.15.8.493_k4w_b|%ProductFolder%|bl.dll|9Ijo4GIwR/zyC+v60YIPUpFoyLU7Vl6GZA1Gpdc7Cj8=;
+			../21.15.8.493_k4w_b|%ProductFolder%|kasperskylab.kis.bl.dll|kZ736JKTDt0kogDy+P5273tkQJewvgPlXKr/zbIzemQ=;
+			../21.15.8.493_k4w_b|%ProductFolder%|kasperskylab.kis.ui.dll|aQOXhJTNDmaOgEgn73rfLkwv2xykN+kWVIWOR/FKhW4=;
+			../21.15.8.493_k4w_b|%ProductFolder%|kasperskylab.kis.ui.shell.dll|157st1WApHA2JC/1v1a46FWOvWfkrC+gKPgX0guVfC8=;
+			../21.15.8.493_k4w_b/kru|%ProductFolder%\\\\Restore Utility|kasperskylab.kis.ui.shell.dll|0DBKbGPzT/+3u7R8Jm4bVcGxb6pLiANww8tAGsuPS60=;
+			../21.15.8.493_k4w_b|%ProductFolder%|kasperskylab.kis.ui.visuals.dll|Guy51n3m4nLMYuX9gm3UlOghh47ycsbh0CoJI5l1nRI=;
+			../21.15.8.493_k4w_b/kru|%ProductFolder%\\\\Restore Utility|kasperskylab.kis.ui.visuals.dll|aAwOB74KzWIugrO8aTwzn97Mmk/Xu7WCbt4pjZHofV0=;
+			../21.15.8.493_k4w_b|%ProductFolder%|kasperskylab.platform.ui.shell.dll|FAYVHala774eLt0R67qcmZJS+0oMD4GZKDMLs5zweCY="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.15.8.493"
+		ApplyPeriod="168"
+		FixName="b"
+		Item="Lang;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			en-US-xuol\;pt-BR-xuol|restart_service|../21.15.8.493_k4w_b/xuol/ipm/default/template|%DataFolder%\\\\ipm\\\\default\\\\template|upgradeprotectionpage.html|G9mO4hH75GA8JLGxthWmvW5WK/ifZHEC+UjsSF0lRPs=;
+			en-us-xuol|restart_none|../21.15.8.493_k4w_b/patch/skin/resources/en-us-xuol|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\en-us-xuol|resources.zip|W/gPp0LVV0BVwqFlM/J0K7//xt4ZM0TuWAjOSQysMCo=;
+			en-us-xuol|restart_none|../21.15.8.493_k4w_b/skin/resources/en-us-xuol/xml|%ProductFolder%\\\\skin\\\\resources\\\\en-us-xuol\\\\xml|rebranding.xml|mT6DpQ15ALmwMVd82uAWxC7ZJH/D5YoVNGvtSNmC91c=;
+			pt-br-xuol|restart_none|../21.15.8.493_k4w_b/patch/skin/resources/pt-br-xuol|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\pt-br-xuol|resources.zip|BI+2vpwqY20FUOchFP7zrW4+61C62A100ASvE9FdDmE=;
+			pt-br-xuol|restart_none|../21.15.8.493_k4w_b/skin/resources/pt-br-xuol/xml|%ProductFolder%\\\\skin\\\\resources\\\\pt-br-xuol\\\\xml|rebranding.xml|V1uLMerRyzinT2wXH9YUtXro6D4WlQ7NWOaBTLag9as="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.15.8.493"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="../21.15.8.493_ksos_b"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="//wZ3H6IEhhiVRXltss1xaVy2QZE43cIco6T3snqdFM="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.15.8.493"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="../21.15.8.493_ksos_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="vZrykRVoEnrKm1sqg6yUIhZRFcgh1sAeJGF1x3WddQw="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.15.8.493"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.15.8.493_ksos_b|%ProductFolder%|bl.dll|9Ijo4GIwR/zyC+v60YIPUpFoyLU7Vl6GZA1Gpdc7Cj8=;
+			../21.15.8.493_ksos_b|%ProductFolder%|kasperskylab.kis.bl.dll|kZ736JKTDt0kogDy+P5273tkQJewvgPlXKr/zbIzemQ=;
+			../21.15.8.493_ksos_b|%ProductFolder%|kasperskylab.kis.ui.dll|aQOXhJTNDmaOgEgn73rfLkwv2xykN+kWVIWOR/FKhW4=;
+			../21.15.8.493_ksos_b|%ProductFolder%|kasperskylab.kis.ui.shell.dll|157st1WApHA2JC/1v1a46FWOvWfkrC+gKPgX0guVfC8=;
+			../21.15.8.493_ksos_b/kru|%ProductFolder%\\\\Restore Utility|kasperskylab.kis.ui.shell.dll|0DBKbGPzT/+3u7R8Jm4bVcGxb6pLiANww8tAGsuPS60=;
+			../21.15.8.493_ksos_b|%ProductFolder%|kasperskylab.kis.ui.visuals.dll|Guy51n3m4nLMYuX9gm3UlOghh47ycsbh0CoJI5l1nRI=;
+			../21.15.8.493_ksos_b/kru|%ProductFolder%\\\\Restore Utility|kasperskylab.kis.ui.visuals.dll|aAwOB74KzWIugrO8aTwzn97Mmk/Xu7WCbt4pjZHofV0=;
+			../21.15.8.493_ksos_b|%ProductFolder%|kasperskylab.platform.ui.shell.dll|FAYVHala774eLt0R67qcmZJS+0oMD4GZKDMLs5zweCY="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-kav21-mr15-1901g.xml"
+		DSKM="dfvk9WfvCld+89sX9gGWt+7MuQWhj7A7B+zCIXt4dDE="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:104RNEFHimOwhydmQOS9SjmsWNFHkDMD9XQqcsjXdvTjL4H1VxXrWcAEdRwQL0AAC0zXHofK8qZWIdaox4KrCbtz%%

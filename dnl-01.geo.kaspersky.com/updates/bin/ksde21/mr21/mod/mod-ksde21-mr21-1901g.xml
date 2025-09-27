@@ -1,0 +1,305 @@
+<Update
+	Date="19052025 1658"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="3.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="7320"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.21.7.384"
+		ApplyPeriod="0"
+		FixName="a"
+		SrvPath="../21.21.7.384_ksde_a"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM2"
+		List="
+			restart_service|kl.ui.framework.dll|BGVJOIA0HgS/O1KEk9fY6S31AHPHNixWqffUjGkHIZM=;
+			restart_service|troubleshoot.dll|uT8tr0Ct71iC14YAbuSbgZppMSAKsWNbyBd8WNZSBpw=;
+			restart_none|ver_info.json|1d0hgQdVyMwgOEwp4GxNk45YWu+0+Kiy7QLKMCehtRY=;
+			restart_service|bl_ksde.dll|pWNp0czk66dlvZT/aFV4NwyNTz045nBBJYukbLLxUys=;
+			restart_service|kl.ksde.nativeinterop.dll|1VN0iPZC+WgNugT/pIa0BwutuqkKvihW3/d+GEGYAdU=;
+			restart_service|kl.ksde.ui.dll|Tn9RARc/EK1laY5iAHcjaWdoaLVZ2+FSpn8ww4ukSkE=;
+			restart_service|kl.ui.core.dll|laH+rpU1ehgHZmjRQNZIqw/iWWmRxsU2OClO3ZGObzI=;
+			restart_service|product_metainfo.dll|T4dL9oU6/AW/yz6xzsYBXY/F7dP4jVBxcPnSEsRwJLM=;
+			restart_service|ucp_agent.dll|u3tIecCzss8NbRwAYtwZU6MHMJpZcnGG4qR0DcMRCxs="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.21.7.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			ar-AE|../21.21.7.384_ksde_a/doc/ar-AE|%ProductFolder%\\\\Doc\\\\KSDE\\\\ar-AE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			bg-BG|../21.21.7.384_ksde_a/doc/bg-BG|%ProductFolder%\\\\Doc\\\\KSDE\\\\bg-BG|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			cs-CZ|../21.21.7.384_ksde_a/doc/cs-CZ|%ProductFolder%\\\\Doc\\\\KSDE\\\\cs-CZ|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			da-DK|../21.21.7.384_ksde_a/doc/da-DK|%ProductFolder%\\\\Doc\\\\KSDE\\\\da-DK|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			de-CH|../21.21.7.384_ksde_a/doc/de-CH|%ProductFolder%\\\\Doc\\\\KSDE\\\\de-CH|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			de-DE|../21.21.7.384_ksde_a/doc/de-DE|%ProductFolder%\\\\Doc\\\\KSDE\\\\de-DE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			de-LU|../21.21.7.384_ksde_a/doc/de-LU|%ProductFolder%\\\\Doc\\\\KSDE\\\\de-LU|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			el-GR|../21.21.7.384_ksde_a/doc/el-GR|%ProductFolder%\\\\Doc\\\\KSDE\\\\el-GR|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-AE|../21.21.7.384_ksde_a/doc/en-AE|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-AE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-AU|../21.21.7.384_ksde_a/doc/en-AU|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-AU|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-CA|../21.21.7.384_ksde_a/doc/en-CA|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-CA|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-EE|../21.21.7.384_ksde_a/doc/en-EE|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-EE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-GB|../21.21.7.384_ksde_a/doc/en-GB|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-GB|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-HK|../21.21.7.384_ksde_a/doc/en-HK|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-HK|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-ID|../21.21.7.384_ksde_a/doc/en-ID|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-ID|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-IL|../21.21.7.384_ksde_a/doc/en-IL|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-IL|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-LT|../21.21.7.384_ksde_a/doc/en-LT|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-LT|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-LV|../21.21.7.384_ksde_a/doc/en-LV|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-LV|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-MY|../21.21.7.384_ksde_a/doc/en-MY|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-MY|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-TH|../21.21.7.384_ksde_a/doc/en-TH|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-TH|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-TW|../21.21.7.384_ksde_a/doc/en-TW|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-TW|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-US-xnotgdpr|../21.21.7.384_ksde_a/doc/en-US-xnotgdpr|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-US-xnotgdpr|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-US|../21.21.7.384_ksde_a/doc/en-US|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-US|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en-ZA|../21.21.7.384_ksde_a/doc/en-ZA|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-ZA|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			en|../21.21.7.384_ksde_a/doc/en|%ProductFolder%\\\\Doc\\\\KSDE\\\\en|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			es-ES|../21.21.7.384_ksde_a/doc/es-ES|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-ES|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			es-MX|../21.21.7.384_ksde_a/doc/es-MX|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-MX|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			es-US-xnotgdpr|../21.21.7.384_ksde_a/doc/es-US-xnotgdpr|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-US-xnotgdpr|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			es-US|../21.21.7.384_ksde_a/doc/es-US|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-US|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			et-EE|../21.21.7.384_ksde_a/doc/et-EE|%ProductFolder%\\\\Doc\\\\KSDE\\\\et-EE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			fi-FI|../21.21.7.384_ksde_a/doc/fi-FI|%ProductFolder%\\\\Doc\\\\KSDE\\\\fi-FI|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			fr-BE|../21.21.7.384_ksde_a/doc/fr-BE|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-BE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			fr-CA|../21.21.7.384_ksde_a/doc/fr-CA|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-CA|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			fr-CH|../21.21.7.384_ksde_a/doc/fr-CH|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-CH|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			fr-FR|../21.21.7.384_ksde_a/doc/fr-FR|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-FR|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			fr-ZA|../21.21.7.384_ksde_a/doc/fr-ZA|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-ZA|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			hu-HU|../21.21.7.384_ksde_a/doc/hu-HU|%ProductFolder%\\\\Doc\\\\KSDE\\\\hu-HU|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			id-ID|../21.21.7.384_ksde_a/doc/id-ID|%ProductFolder%\\\\Doc\\\\KSDE\\\\id-ID|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			it-CH|../21.21.7.384_ksde_a/doc/it-CH|%ProductFolder%\\\\Doc\\\\KSDE\\\\it-CH|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			it-IT|../21.21.7.384_ksde_a/doc/it-IT|%ProductFolder%\\\\Doc\\\\KSDE\\\\it-IT|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			ja-JP|../21.21.7.384_ksde_a/doc/ja-JP|%ProductFolder%\\\\Doc\\\\KSDE\\\\ja-JP|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			ko-KR|../21.21.7.384_ksde_a/doc/ko-KR|%ProductFolder%\\\\Doc\\\\KSDE\\\\ko-KR|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			lt-LT|../21.21.7.384_ksde_a/doc/lt-LT|%ProductFolder%\\\\Doc\\\\KSDE\\\\lt-LT|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			lv-LV|../21.21.7.384_ksde_a/doc/lv-LV|%ProductFolder%\\\\Doc\\\\KSDE\\\\lv-LV|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			nb-NO|../21.21.7.384_ksde_a/doc/nb-NO|%ProductFolder%\\\\Doc\\\\KSDE\\\\nb-NO|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			nl-NL|../21.21.7.384_ksde_a/doc/nl-NL|%ProductFolder%\\\\Doc\\\\KSDE\\\\nl-NL|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			pl-PL|../21.21.7.384_ksde_a/doc/pl-PL|%ProductFolder%\\\\Doc\\\\KSDE\\\\pl-PL|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			pt-BR|../21.21.7.384_ksde_a/doc/pt-BR|%ProductFolder%\\\\Doc\\\\KSDE\\\\pt-BR|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			pt-PT|../21.21.7.384_ksde_a/doc/pt-PT|%ProductFolder%\\\\Doc\\\\KSDE\\\\pt-PT|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			pt-ZA|../21.21.7.384_ksde_a/doc/pt-ZA|%ProductFolder%\\\\Doc\\\\KSDE\\\\pt-ZA|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			ro-RO|../21.21.7.384_ksde_a/doc/ro-RO|%ProductFolder%\\\\Doc\\\\KSDE\\\\ro-RO|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			ru-EE-|../21.21.7.384_ksde_a/doc/ru-EE|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-EE|eula_kaspersky_secure_connection_for_windows_5_0_mr15_eula.txt|EpiG22aRrbbWocYVx8/bk1uXip1LVFiYC/PioYm9ZaE=;
+			ru-EE|../21.21.7.384_ksde_a/doc/ru-EE|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-EE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|IFfVdrWcDUvpCjr9cjjtbYQIQfj/RpRU94fybFLUlVM=;
+			ru-LT-|../21.21.7.384_ksde_a/doc/ru-LT|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-LT|eula_kaspersky_secure_connection_for_windows_5_0_mr15_eula.txt|EpiG22aRrbbWocYVx8/bk1uXip1LVFiYC/PioYm9ZaE=;
+			ru-LT|../21.21.7.384_ksde_a/doc/ru-LT|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-LT|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|IFfVdrWcDUvpCjr9cjjtbYQIQfj/RpRU94fybFLUlVM=;
+			ru-LV-|../21.21.7.384_ksde_a/doc/ru-LV|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-LV|eula_kaspersky_secure_connection_for_windows_5_0_mr15_eula.txt|EpiG22aRrbbWocYVx8/bk1uXip1LVFiYC/PioYm9ZaE=;
+			ru-LV|../21.21.7.384_ksde_a/doc/ru-LV|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-LV|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|IFfVdrWcDUvpCjr9cjjtbYQIQfj/RpRU94fybFLUlVM=;
+			ru-RU-|../21.21.7.384_ksde_a/doc/ru-RU|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-RU|eula_kaspersky_secure_connection_for_windows_5_0_mr15_eula.txt|EpiG22aRrbbWocYVx8/bk1uXip1LVFiYC/PioYm9ZaE=;
+			ru-RU|../21.21.7.384_ksde_a/doc/ru-RU|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-RU|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|IFfVdrWcDUvpCjr9cjjtbYQIQfj/RpRU94fybFLUlVM=;
+			ru-UA-|../21.21.7.384_ksde_a/doc/ru-UA|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-UA|eula_kaspersky_secure_connection_for_windows_5_0_mr15_eula.txt|EpiG22aRrbbWocYVx8/bk1uXip1LVFiYC/PioYm9ZaE=;
+			ru-UA|../21.21.7.384_ksde_a/doc/ru-UA|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-UA|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|IFfVdrWcDUvpCjr9cjjtbYQIQfj/RpRU94fybFLUlVM=;
+			ru-UN-|../21.21.7.384_ksde_a/doc/ru-UN|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-UN|eula_kaspersky_secure_connection_for_windows_5_0_mr15_eula.txt|EpiG22aRrbbWocYVx8/bk1uXip1LVFiYC/PioYm9ZaE=;
+			ru-UN|../21.21.7.384_ksde_a/doc/ru-UN|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-UN|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|IFfVdrWcDUvpCjr9cjjtbYQIQfj/RpRU94fybFLUlVM=;
+			sr-Cyrl-RS|../21.21.7.384_ksde_a/doc/sr-Cyrl-RS|%ProductFolder%\\\\Doc\\\\KSDE\\\\sr-Cyrl-RS|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			sr-Latn-RS|../21.21.7.384_ksde_a/doc/sr-Latn-RS|%ProductFolder%\\\\Doc\\\\KSDE\\\\sr-Latn-RS|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			sv-SE|../21.21.7.384_ksde_a/doc/sv-SE|%ProductFolder%\\\\Doc\\\\KSDE\\\\sv-SE|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			th-TH|../21.21.7.384_ksde_a/doc/th-TH|%ProductFolder%\\\\Doc\\\\KSDE\\\\th-TH|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			tr-TR|../21.21.7.384_ksde_a/doc/tr-TR|%ProductFolder%\\\\Doc\\\\KSDE\\\\tr-TR|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			uk-UA|../21.21.7.384_ksde_a/doc/uk-UA|%ProductFolder%\\\\Doc\\\\KSDE\\\\uk-UA|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			vi-VN|../21.21.7.384_ksde_a/doc/vi-VN|%ProductFolder%\\\\Doc\\\\KSDE\\\\vi-VN|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			zh-Hant-HK|../21.21.7.384_ksde_a/doc/zh-Hant-HK|%ProductFolder%\\\\Doc\\\\KSDE\\\\zh-Hant-HK|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			zh-Hant-TW|../21.21.7.384_ksde_a/doc/zh-Hant-TW|%ProductFolder%\\\\Doc\\\\KSDE\\\\zh-Hant-TW|vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|ll7wYNd1H395AtBEgJx0yhyj0bYIWx1jQ2SL/CvXs18=;
+			ar-AE|../21.21.7.384_ksde_a/doc/ar-AE|%ProductFolder%\\\\Doc\\\\KSDE\\\\ar-AE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			bg-BG|../21.21.7.384_ksde_a/doc/bg-BG|%ProductFolder%\\\\Doc\\\\KSDE\\\\bg-BG|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			cs-CZ|../21.21.7.384_ksde_a/doc/cs-CZ|%ProductFolder%\\\\Doc\\\\KSDE\\\\cs-CZ|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			da-DK|../21.21.7.384_ksde_a/doc/da-DK|%ProductFolder%\\\\Doc\\\\KSDE\\\\da-DK|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			de-CH|../21.21.7.384_ksde_a/doc/de-CH|%ProductFolder%\\\\Doc\\\\KSDE\\\\de-CH|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			de-DE|../21.21.7.384_ksde_a/doc/de-DE|%ProductFolder%\\\\Doc\\\\KSDE\\\\de-DE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			de-LU|../21.21.7.384_ksde_a/doc/de-LU|%ProductFolder%\\\\Doc\\\\KSDE\\\\de-LU|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			el-GR|../21.21.7.384_ksde_a/doc/el-GR|%ProductFolder%\\\\Doc\\\\KSDE\\\\el-GR|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-AE|../21.21.7.384_ksde_a/doc/en-AE|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-AE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-AU|../21.21.7.384_ksde_a/doc/en-AU|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-AU|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-CA|../21.21.7.384_ksde_a/doc/en-CA|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-CA|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-EE|../21.21.7.384_ksde_a/doc/en-EE|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-EE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-GB|../21.21.7.384_ksde_a/doc/en-GB|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-GB|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-HK|../21.21.7.384_ksde_a/doc/en-HK|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-HK|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-ID|../21.21.7.384_ksde_a/doc/en-ID|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-ID|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-IL|../21.21.7.384_ksde_a/doc/en-IL|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-IL|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-LT|../21.21.7.384_ksde_a/doc/en-LT|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-LT|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-LV|../21.21.7.384_ksde_a/doc/en-LV|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-LV|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-MY|../21.21.7.384_ksde_a/doc/en-MY|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-MY|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-TH|../21.21.7.384_ksde_a/doc/en-TH|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-TH|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-TW|../21.21.7.384_ksde_a/doc/en-TW|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-TW|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-US-xnotgdpr|../21.21.7.384_ksde_a/doc/en-US-xnotgdpr|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-US-xnotgdpr|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-US|../21.21.7.384_ksde_a/doc/en-US|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-US|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en-ZA|../21.21.7.384_ksde_a/doc/en-ZA|%ProductFolder%\\\\Doc\\\\KSDE\\\\en-ZA|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			en|../21.21.7.384_ksde_a/doc/en|%ProductFolder%\\\\Doc\\\\KSDE\\\\en|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			es-ES|../21.21.7.384_ksde_a/doc/es-ES|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-ES|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			es-MX|../21.21.7.384_ksde_a/doc/es-MX|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-MX|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			es-US-xnotgdpr|../21.21.7.384_ksde_a/doc/es-US-xnotgdpr|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-US-xnotgdpr|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			es-US|../21.21.7.384_ksde_a/doc/es-US|%ProductFolder%\\\\Doc\\\\KSDE\\\\es-US|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			et-EE|../21.21.7.384_ksde_a/doc/et-EE|%ProductFolder%\\\\Doc\\\\KSDE\\\\et-EE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			fi-FI|../21.21.7.384_ksde_a/doc/fi-FI|%ProductFolder%\\\\Doc\\\\KSDE\\\\fi-FI|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			fr-BE|../21.21.7.384_ksde_a/doc/fr-BE|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-BE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			fr-CA|../21.21.7.384_ksde_a/doc/fr-CA|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-CA|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			fr-CH|../21.21.7.384_ksde_a/doc/fr-CH|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-CH|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			fr-FR|../21.21.7.384_ksde_a/doc/fr-FR|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-FR|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			fr-ZA|../21.21.7.384_ksde_a/doc/fr-ZA|%ProductFolder%\\\\Doc\\\\KSDE\\\\fr-ZA|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			hu-HU|../21.21.7.384_ksde_a/doc/hu-HU|%ProductFolder%\\\\Doc\\\\KSDE\\\\hu-HU|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			id-ID|../21.21.7.384_ksde_a/doc/id-ID|%ProductFolder%\\\\Doc\\\\KSDE\\\\id-ID|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			it-CH|../21.21.7.384_ksde_a/doc/it-CH|%ProductFolder%\\\\Doc\\\\KSDE\\\\it-CH|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			it-IT|../21.21.7.384_ksde_a/doc/it-IT|%ProductFolder%\\\\Doc\\\\KSDE\\\\it-IT|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			ja-JP|../21.21.7.384_ksde_a/doc/ja-JP|%ProductFolder%\\\\Doc\\\\KSDE\\\\ja-JP|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			ko-KR|../21.21.7.384_ksde_a/doc/ko-KR|%ProductFolder%\\\\Doc\\\\KSDE\\\\ko-KR|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			lt-LT|../21.21.7.384_ksde_a/doc/lt-LT|%ProductFolder%\\\\Doc\\\\KSDE\\\\lt-LT|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			lv-LV|../21.21.7.384_ksde_a/doc/lv-LV|%ProductFolder%\\\\Doc\\\\KSDE\\\\lv-LV|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			nb-NO|../21.21.7.384_ksde_a/doc/nb-NO|%ProductFolder%\\\\Doc\\\\KSDE\\\\nb-NO|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			nl-NL|../21.21.7.384_ksde_a/doc/nl-NL|%ProductFolder%\\\\Doc\\\\KSDE\\\\nl-NL|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			pl-PL|../21.21.7.384_ksde_a/doc/pl-PL|%ProductFolder%\\\\Doc\\\\KSDE\\\\pl-PL|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			pt-BR|../21.21.7.384_ksde_a/doc/pt-BR|%ProductFolder%\\\\Doc\\\\KSDE\\\\pt-BR|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			pt-PT|../21.21.7.384_ksde_a/doc/pt-PT|%ProductFolder%\\\\Doc\\\\KSDE\\\\pt-PT|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			pt-ZA|../21.21.7.384_ksde_a/doc/pt-ZA|%ProductFolder%\\\\Doc\\\\KSDE\\\\pt-ZA|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			ro-RO|../21.21.7.384_ksde_a/doc/ro-RO|%ProductFolder%\\\\Doc\\\\KSDE\\\\ro-RO|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			ru-EE|../21.21.7.384_ksde_a/doc/ru-EE|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-EE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|pFn8ilX4/fxHCde8cttizbNpmfuNVvuQndajyYQl7i4=;
+			ru-LT|../21.21.7.384_ksde_a/doc/ru-LT|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-LT|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|pFn8ilX4/fxHCde8cttizbNpmfuNVvuQndajyYQl7i4=;
+			ru-LV|../21.21.7.384_ksde_a/doc/ru-LV|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-LV|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|pFn8ilX4/fxHCde8cttizbNpmfuNVvuQndajyYQl7i4=;
+			ru-RU|../21.21.7.384_ksde_a/doc/ru-RU|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-RU|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|pFn8ilX4/fxHCde8cttizbNpmfuNVvuQndajyYQl7i4=;
+			ru-UA|../21.21.7.384_ksde_a/doc/ru-UA|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-UA|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|pFn8ilX4/fxHCde8cttizbNpmfuNVvuQndajyYQl7i4=;
+			ru-UN|../21.21.7.384_ksde_a/doc/ru-UN|%ProductFolder%\\\\Doc\\\\KSDE\\\\ru-UN|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|pFn8ilX4/fxHCde8cttizbNpmfuNVvuQndajyYQl7i4=;
+			sr-Cyrl-RS|../21.21.7.384_ksde_a/doc/sr-Cyrl-RS|%ProductFolder%\\\\Doc\\\\KSDE\\\\sr-Cyrl-RS|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			sr-Latn-RS|../21.21.7.384_ksde_a/doc/sr-Latn-RS|%ProductFolder%\\\\Doc\\\\KSDE\\\\sr-Latn-RS|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			sv-SE|../21.21.7.384_ksde_a/doc/sv-SE|%ProductFolder%\\\\Doc\\\\KSDE\\\\sv-SE|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			th-TH|../21.21.7.384_ksde_a/doc/th-TH|%ProductFolder%\\\\Doc\\\\KSDE\\\\th-TH|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			tr-TR|../21.21.7.384_ksde_a/doc/tr-TR|%ProductFolder%\\\\Doc\\\\KSDE\\\\tr-TR|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			uk-UA|../21.21.7.384_ksde_a/doc/uk-UA|%ProductFolder%\\\\Doc\\\\KSDE\\\\uk-UA|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			vi-VN|../21.21.7.384_ksde_a/doc/vi-VN|%ProductFolder%\\\\Doc\\\\KSDE\\\\vi-VN|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			zh-Hant-HK|../21.21.7.384_ksde_a/doc/zh-Hant-HK|%ProductFolder%\\\\Doc\\\\KSDE\\\\zh-Hant-HK|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			zh-Hant-TW|../21.21.7.384_ksde_a/doc/zh-Hant-TW|%ProductFolder%\\\\Doc\\\\KSDE\\\\zh-Hant-TW|gdpr_vpn_statement_sdwanru_2021_mr21__sdwanruvpnstatement.txt|aoJddCWWJNca9L8ZYSWqyr7HjwgsiIRdsCdUXhj4U1U=;
+			ar|../21.21.7.384_ksde_a/skin/resources/ar/locs|%ProductFolder%\\\\skin\\\\resources\\\\ar\\\\locs|common.lt|w8V55Dys3vWn+PIqRCozq4N8nNZtPkuXBYDwr36gvqA=;
+			ar|../21.21.7.384_ksde_a/skin/resources/ar/locs|%ProductFolder%\\\\skin\\\\resources\\\\ar\\\\locs|welcomepage.lt|+7aP/6XuZqNemjixHK2D1AEY0fhFigWv+7UyYNlWOpU=;
+			bg|../21.21.7.384_ksde_a/skin/resources/bg/locs|%ProductFolder%\\\\skin\\\\resources\\\\bg\\\\locs|common.lt|2I427UEIezYmZPxAWmG7pNwEaaYdQazv1YC7mm4BJ3o=;
+			bg|../21.21.7.384_ksde_a/skin/resources/bg/locs|%ProductFolder%\\\\skin\\\\resources\\\\bg\\\\locs|welcomepage.lt|JFfYenFMA+GZceWd2dfBEgHn+hDLT6ihSBhAjKdUP08=;
+			cs|../21.21.7.384_ksde_a/skin/resources/cs/locs|%ProductFolder%\\\\skin\\\\resources\\\\cs\\\\locs|common.lt|HH+RDe8z1nqiQkuer6HSV4CcTdB3cdpbSFg6lzYBeWM=;
+			cs|../21.21.7.384_ksde_a/skin/resources/cs/locs|%ProductFolder%\\\\skin\\\\resources\\\\cs\\\\locs|welcomepage.lt|A5lfBLoDUyNV1m1aie8Ti5DMOrYMNKI36cgpBGwy7fU=;
+			da|../21.21.7.384_ksde_a/skin/resources/da/locs|%ProductFolder%\\\\skin\\\\resources\\\\da\\\\locs|common.lt|8Ma2AtD7L6f4InOyfjBVAKzl+SV8ghjihdnl0QCcy+c=;
+			da|../21.21.7.384_ksde_a/skin/resources/da/locs|%ProductFolder%\\\\skin\\\\resources\\\\da\\\\locs|welcomepage.lt|GkYegikRPCIqraY4ki5kD2+nD17szufErb68ckrZlUY=;
+			de|../21.21.7.384_ksde_a/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|common.lt|ZPVpmV+e5C4ao3Frwy0Yicrqu9pXvZo4FvDOKYI9cpU=;
+			de|../21.21.7.384_ksde_a/skin/resources/de/locs|%ProductFolder%\\\\skin\\\\resources\\\\de\\\\locs|welcomepage.lt|qeuLY+KKfkXbISph/wruHyMTJJpfun57AZ2hvnBmh6c=;
+			el|../21.21.7.384_ksde_a/skin/resources/el/locs|%ProductFolder%\\\\skin\\\\resources\\\\el\\\\locs|common.lt|AUj6LQFDr8hIDnOgcgrGbktwWSummqbIcA/tVpIQLJg=;
+			el|../21.21.7.384_ksde_a/skin/resources/el/locs|%ProductFolder%\\\\skin\\\\resources\\\\el\\\\locs|welcomepage.lt|lTH2qICkeQSqqgTXqUvcDM6tyvo6SEQaDniLvFdDk58=;
+			en|../21.21.7.384_ksde_a/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|common.lt|VF0i96IO06E4mGuVTjMvZhK51brgFi5SaymYuVQdF7E=;
+			en|../21.21.7.384_ksde_a/skin/resources/en/locs|%ProductFolder%\\\\skin\\\\resources\\\\en\\\\locs|welcomepage.lt|VTZO12IbEdAi0w1KWeF2+8S2JbzEpQnqJC+dKHF4gWM=;
+			es-ES|../21.21.7.384_ksde_a/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|common.lt|6ZOPD/x64GNwDHDF06buOsd873SHzFPfJ1cuYSJP6UA=;
+			es-ES|../21.21.7.384_ksde_a/skin/resources/es-ES/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-ES\\\\locs|welcomepage.lt|YFZ4BSl9ljb5U+nCnVgY2etHQAe2xiu1CvmgtqGrjfo=;
+			es-MX|../21.21.7.384_ksde_a/skin/resources/es-MX/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-MX\\\\locs|common.lt|wg7QZbNCcvKj/VTRcynDNWLTz4YIym6pUBrH8x6Iwrg=;
+			es-MX|../21.21.7.384_ksde_a/skin/resources/es-MX/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-MX\\\\locs|welcomepage.lt|5Uu7PLY7e33II7BvOPE9CMfvm0ICQTZxr3RjlkRzy5I=;
+			es-US|../21.21.7.384_ksde_a/skin/resources/es-US/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-US\\\\locs|common.lt|wg7QZbNCcvKj/VTRcynDNWLTz4YIym6pUBrH8x6Iwrg=;
+			es-US|../21.21.7.384_ksde_a/skin/resources/es-US/locs|%ProductFolder%\\\\skin\\\\resources\\\\es-US\\\\locs|welcomepage.lt|5Uu7PLY7e33II7BvOPE9CMfvm0ICQTZxr3RjlkRzy5I=;
+			et|../21.21.7.384_ksde_a/skin/resources/et/locs|%ProductFolder%\\\\skin\\\\resources\\\\et\\\\locs|common.lt|z/cLenroWEG7wJhVhSA0fOojzpzwHg4vvg3pFE+2w2Y=;
+			et|../21.21.7.384_ksde_a/skin/resources/et/locs|%ProductFolder%\\\\skin\\\\resources\\\\et\\\\locs|welcomepage.lt|icYAG1pYc/FxG86+rG3W48M8/qyT2FTVvvjlfQz67GQ=;
+			fi|../21.21.7.384_ksde_a/skin/resources/fi/locs|%ProductFolder%\\\\skin\\\\resources\\\\fi\\\\locs|common.lt|vucVs3XYkYKGvrQRRC0X4plnvSudlipOArBLCYlHYec=;
+			fi|../21.21.7.384_ksde_a/skin/resources/fi/locs|%ProductFolder%\\\\skin\\\\resources\\\\fi\\\\locs|welcomepage.lt|Sl34v2FbOkcZjLmM9rKf36u43zurKwp5PnO+m9D/9nM=;
+			fr|../21.21.7.384_ksde_a/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|common.lt|jnKgAc8pLMFsqq0R2LPgyBhhUxyYQpoUcLM7CouBROM=;
+			fr|../21.21.7.384_ksde_a/skin/resources/fr/locs|%ProductFolder%\\\\skin\\\\resources\\\\fr\\\\locs|welcomepage.lt|ZhsNkS47HLdwv05g+AibrKed7rkZiYRD3bMzTdD4Sao=;
+			hu|../21.21.7.384_ksde_a/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|common.lt|H5uqGwtDWJw+TamshrZyavevQAU+thk0X86buVRXuEY=;
+			hu|../21.21.7.384_ksde_a/skin/resources/hu/locs|%ProductFolder%\\\\skin\\\\resources\\\\hu\\\\locs|welcomepage.lt|xxq/H6e/odDAR/AeiRk5SiqmxOtT/BN4e9om+ABUgNo=;
+			id|../21.21.7.384_ksde_a/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|common.lt|NIYYgNe89ab2ZC6lCQFhUVo7udoaFb2Q5M+pStX+GbY=;
+			id|../21.21.7.384_ksde_a/skin/resources/id/locs|%ProductFolder%\\\\skin\\\\resources\\\\id\\\\locs|welcomepage.lt|7iVbVY0byeSRq+7ygl8Ddt/xJLXFNeoaNwzHHUcXAxA=;
+			it|../21.21.7.384_ksde_a/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|common.lt|Gzmi7byHNo8fy/nVw8hwRTGvvrp/mHg1F6qPSLrsWak=;
+			it|../21.21.7.384_ksde_a/skin/resources/it/locs|%ProductFolder%\\\\skin\\\\resources\\\\it\\\\locs|welcomepage.lt|V2gG9YUo1CNdFKKFbGG+NsZ1dsiYsmt9rraqBLwpDB8=;
+			ja|../21.21.7.384_ksde_a/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|common.lt|RuT5jlR9Z6NGgvjA7yi+e1SGzXq14VwMsmA8YsvGrew=;
+			ja|../21.21.7.384_ksde_a/skin/resources/ja/locs|%ProductFolder%\\\\skin\\\\resources\\\\ja\\\\locs|welcomepage.lt|ptgD4/zlRjhUQp61oKWnnKi2GEy6hJpQMTtFTJHN+AY=;
+			ko|../21.21.7.384_ksde_a/skin/resources/ko/locs|%ProductFolder%\\\\skin\\\\resources\\\\ko\\\\locs|common.lt|pLhD/uyCOdgczW0KXcy/G3yKCmvZpXm9khQbVFRCGlU=;
+			ko|../21.21.7.384_ksde_a/skin/resources/ko/locs|%ProductFolder%\\\\skin\\\\resources\\\\ko\\\\locs|welcomepage.lt|vuuiriJR02mkoEW5hJjr0NeQ3ei2ixWWPxvaN1wv/rM=;
+			lt|../21.21.7.384_ksde_a/skin/resources/lt/locs|%ProductFolder%\\\\skin\\\\resources\\\\lt\\\\locs|common.lt|4f80Lr2wPQim8fhY1dJc5xVVziD4S9jZhd5bh8yir9Y=;
+			lt|../21.21.7.384_ksde_a/skin/resources/lt/locs|%ProductFolder%\\\\skin\\\\resources\\\\lt\\\\locs|welcomepage.lt|FueF7ueudt5NqqDiBq3/YxGpUD4PxZYORpuigLp9PuQ=;
+			lv|../21.21.7.384_ksde_a/skin/resources/lv/locs|%ProductFolder%\\\\skin\\\\resources\\\\lv\\\\locs|common.lt|+oPwOCF4pPVGYwB+NNpOFRlSGRm/CoUp1cKghFnGL7M=;
+			lv|../21.21.7.384_ksde_a/skin/resources/lv/locs|%ProductFolder%\\\\skin\\\\resources\\\\lv\\\\locs|welcomepage.lt|UL4JIMC+5tLVhl/t6uM+aMGn9tu6FLesj0/ftFCKyaM=;
+			nb|../21.21.7.384_ksde_a/skin/resources/nb/locs|%ProductFolder%\\\\skin\\\\resources\\\\nb\\\\locs|common.lt|3mLvgJXJN7xew0jsmeZNT1jIgPMVLSY84xf+Iody3Ag=;
+			nb|../21.21.7.384_ksde_a/skin/resources/nb/locs|%ProductFolder%\\\\skin\\\\resources\\\\nb\\\\locs|welcomepage.lt|z5VD2wbWOtddqcHaf0uz9x91F/dVgR0IKHp24+b5+go="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.21.7.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.21.7.384_ksde_a/skin/resources/neutral/locs"
+		LocalPath="%ProductFolder%\skin\resources\neutral\locs"
+		Item="Name;DSKM2"
+		List="
+			common.lt|VF0i96IO06E4mGuVTjMvZhK51brgFi5SaymYuVQdF7E=;
+			templateurl.lt|tSX3gvs5uzXXI6GfneSlnnbQZDjRW3XT4RndgJZOatQ=;
+			welcomepage.lt|VTZO12IbEdAi0w1KWeF2+8S2JbzEpQnqJC+dKHF4gWM="/>
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.21.7.384"
+		ApplyPeriod="0"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			nl|../21.21.7.384_ksde_a/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|common.lt|imoswyeRD2Tzt8r1QzDZS8DLoKVCg19kzs/LVHfKg7g=;
+			nl|../21.21.7.384_ksde_a/skin/resources/nl/locs|%ProductFolder%\\\\skin\\\\resources\\\\nl\\\\locs|welcomepage.lt|A1svD0XqqjwiKzF6/irJ2xckBLXUbVmEO6TkPshZ1b4=;
+			pl|../21.21.7.384_ksde_a/skin/resources/pl/locs|%ProductFolder%\\\\skin\\\\resources\\\\pl\\\\locs|common.lt|yFwO9dDJJIVmnz5pTo+Xd0ypENYYozvF1hf+zZEBq8s=;
+			pl|../21.21.7.384_ksde_a/skin/resources/pl/locs|%ProductFolder%\\\\skin\\\\resources\\\\pl\\\\locs|welcomepage.lt|LUUuOkVkzpfDUCCQLBQHWwkg+TUsRkX9hT3OZadjhQQ=;
+			pt-BR|../21.21.7.384_ksde_a/skin/resources/pt-BR/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-BR\\\\locs|common.lt|AHtTKBbRZgk6OgUN5DHk5uvXrbEsQKAqCjT0ZhRpmb0=;
+			pt-BR|../21.21.7.384_ksde_a/skin/resources/pt-BR/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-BR\\\\locs|welcomepage.lt|gwSPb1NmPf8BaiGFFiQyVjlkVEZYE/bwgCXITaDnKH4=;
+			pt-PT|../21.21.7.384_ksde_a/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|common.lt|s47P36uf2XSXBn2C+o1y9KVQhm69WfwJVVcDarNgvBs=;
+			pt-PT|../21.21.7.384_ksde_a/skin/resources/pt-PT/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-PT\\\\locs|welcomepage.lt|LAcG9aZ6GP1pyMDNySgcmSOepmK29ZNp1Kj0jyFwW2o=;
+			pt-ZA|../21.21.7.384_ksde_a/skin/resources/pt-ZA/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-ZA\\\\locs|common.lt|s47P36uf2XSXBn2C+o1y9KVQhm69WfwJVVcDarNgvBs=;
+			pt-ZA|../21.21.7.384_ksde_a/skin/resources/pt-ZA/locs|%ProductFolder%\\\\skin\\\\resources\\\\pt-ZA\\\\locs|welcomepage.lt|LAcG9aZ6GP1pyMDNySgcmSOepmK29ZNp1Kj0jyFwW2o=;
+			ro|../21.21.7.384_ksde_a/skin/resources/ro/locs|%ProductFolder%\\\\skin\\\\resources\\\\ro\\\\locs|common.lt|fq/Y1hkSeUZglbdwxSdg/tFAbfvuyhacxNSN7wL9F+U=;
+			ro|../21.21.7.384_ksde_a/skin/resources/ro/locs|%ProductFolder%\\\\skin\\\\resources\\\\ro\\\\locs|welcomepage.lt|/6DYuIOHVco7K1MlmIGaN//5rAVKEwPsIv9KbK83sJc=;
+			ru|../21.21.7.384_ksde_a/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|common.lt|PxUQT8OhXTvXD3p/x90E2K33DehaBslf0Tk0vYqtgDY=;
+			ru|../21.21.7.384_ksde_a/skin/resources/ru/locs|%ProductFolder%\\\\skin\\\\resources\\\\ru\\\\locs|welcomepage.lt|6lu4dk48W3HsuhaaiLvlllOsuUtTSr/wylM9ttetMlw=;
+			sr-Cyrl|../21.21.7.384_ksde_a/skin/resources/sr-Cyrl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Cyrl\\\\locs|common.lt|F/QK0RU5ZUFFJg++vSql7yhYw99w+srGgnNZMv0tckM=;
+			sr-Cyrl|../21.21.7.384_ksde_a/skin/resources/sr-Cyrl/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Cyrl\\\\locs|welcomepage.lt|3ZLqBSrRKRaYKhiRpjWJrz3hEbM0kiy8Sf/rDP4ls6M=;
+			sr-Latn|../21.21.7.384_ksde_a/skin/resources/sr-Latn/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Latn\\\\locs|common.lt|1z9Odq+2HA/NDd85VktiC7kabJ3NhflncVe2C0+ZOQs=;
+			sr-Latn|../21.21.7.384_ksde_a/skin/resources/sr-Latn/locs|%ProductFolder%\\\\skin\\\\resources\\\\sr-Latn\\\\locs|welcomepage.lt|GU+Ed2v1bx23pxIHC95XWSddhgpxV9s3QA0jsvhs7Sc=;
+			sv|../21.21.7.384_ksde_a/skin/resources/sv/locs|%ProductFolder%\\\\skin\\\\resources\\\\sv\\\\locs|common.lt|RxYonkVlQEBU3YA9pL/p48Rnl1H08nEpwLcR1pt0S2Q=;
+			sv|../21.21.7.384_ksde_a/skin/resources/sv/locs|%ProductFolder%\\\\skin\\\\resources\\\\sv\\\\locs|welcomepage.lt|s6j08oVx3B667+WxLi5N9E5ricpO26/pY9nKS6VJhqE=;
+			th|../21.21.7.384_ksde_a/skin/resources/th/locs|%ProductFolder%\\\\skin\\\\resources\\\\th\\\\locs|common.lt|ytitCQvjblfn/crPfRh4yz5XTPUlKfElf833p5h+Dsw=;
+			th|../21.21.7.384_ksde_a/skin/resources/th/locs|%ProductFolder%\\\\skin\\\\resources\\\\th\\\\locs|welcomepage.lt|Lw2LPfA+ARL7bVnfde/D5kkmueWmW5SDbYEKEs9FHes=;
+			tr|../21.21.7.384_ksde_a/skin/resources/tr/locs|%ProductFolder%\\\\skin\\\\resources\\\\tr\\\\locs|common.lt|Aln0R7XsEhclt7RFVofnaxA6L/gAs0hLeoASiFT3Y/Y=;
+			tr|../21.21.7.384_ksde_a/skin/resources/tr/locs|%ProductFolder%\\\\skin\\\\resources\\\\tr\\\\locs|welcomepage.lt|HfspEjMKUHGH7lXGGceTk5tb2WNzhrtV9GljkxPw0K8=;
+			uk|../21.21.7.384_ksde_a/skin/resources/uk/locs|%ProductFolder%\\\\skin\\\\resources\\\\uk\\\\locs|common.lt|oJQi1ZpAqeKsYxrrPS8QHZ/VkRNxeZGsxFJontuJlYA=;
+			uk|../21.21.7.384_ksde_a/skin/resources/uk/locs|%ProductFolder%\\\\skin\\\\resources\\\\uk\\\\locs|welcomepage.lt|vLRsesQi0ORWFOhkg2iENJ59qrv+kAQweR3HYBVexvg=;
+			vi|../21.21.7.384_ksde_a/skin/resources/vi/locs|%ProductFolder%\\\\skin\\\\resources\\\\vi\\\\locs|common.lt|i8YLJKlhJtI4rM/ZfsBYjTzQ0sO5o68GGim29Hg4ouA=;
+			vi|../21.21.7.384_ksde_a/skin/resources/vi/locs|%ProductFolder%\\\\skin\\\\resources\\\\vi\\\\locs|welcomepage.lt|BevxADLj00ejmvgfNJUgioP47c6NBSCMx84C/ig/EGI=;
+			zh-Hant|../21.21.7.384_ksde_a/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|common.lt|+XxAPeC7Mx2pgTKgmkhH8xob2xmz+Sn1tQvSCsoFVCI=;
+			zh-Hant|../21.21.7.384_ksde_a/skin/resources/zh-Hant/locs|%ProductFolder%\\\\skin\\\\resources\\\\zh-Hant\\\\locs|welcomepage.lt|z5nbscp+W7O1pP2ic1V2Urn1mUgfam0V3IYiug21zW0="/>
+	<Key2
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-ksde21-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAOeETA0laP2talx/S13Y6GRopzaFfwG1rK9uCkl+pAcCyB8iBdlGzBm4NZNY9yzJWjyyVXQua4jgavtyO64aECoBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAltYp9XDQo6ITI4NDAxR1drUnRUM1pqRkZGSkFRTHdTelhmcitrOXNZMnpxemJhellzMTdXQUpDWXJPdmhlamxhYUVHTUtuVmJGRXF2Njd3Sy96aFQrTXk1SFFUMklnNzRYdTQxJSU=</Key2>
+</Update>
+:!28401GmwA1+LCjrRIjF7EfQdY8c7nWkI8JRfUwjv4eAnZzdoFaLBbjhvFd09MDYPHPcpfZupNY1mZ0OSk3pAJrKuPk44%%
+=!AQAA2QsAz9PpUQAA0Ç’+Å∏té†Ç√1Çø0Çª10
+*Ö0B+Å∏té†200.0
+*Ö GñhóÍÚ«Z[18Ãr±A÷â#˘D)∏a8¿£†Çì0Ç:0ÇÁ† Ñhû6ØOW∞v≠ìo∞$›0
+*Ö0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110145Z480120110145Z0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0h0!*Ö0	*Ö*ÖC @√§µ@áÚë√Y6∫òIÆÖ_Ayÿ¥øx£ïO{b\CgF@:ı&°04NlÊ‡áÈÊ£EÜ7Ò∑Ê£Oí©_ó¥/P£Å°0Åû0+U#$0"Ä  Êü°?ÄæŒÇF„◊[ÆÄ≈‘Üqª∆◊õ˙ˆ’Z0)U" ŸákéæÇåﬁû‰Œ®ù€ÿ<‡(ÆIêLå˘A•l0Uˇ0Uˇ0ˇ0#+Å∏téˇ0+Å∏té0
+*ÖA ﬂq*,;\ô÷Ï¨A:OËÛºÊMˆÌ∞Ê#q˘W¢0*•~ÄÛ? Bˆ⁄ß7NûhIΩπ≈»>È ÇNo0ÇQ0Ç˛†Vl¯‰UΩäö1ı≠õˇ.0
+*Ö0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0250423113246Z260717113246Z0W10	URU10UMoscow10U
+Kaspersky Lab10Ucompid=KSDE21_type=BIN0h0!*Ö0	*Ö*ÖC @ ˝„9€ﬁä8f/<ˆg{ßÁÏèvoºØ§3¸Å©ÊY|“R1ãWúGí∏â—®…∆y?ªÙÿ£Å©0Å¶0+U#$0"Ä ŸákéæÇåﬁû‰Œ®ù€ÿ<‡(ÆIêLå˘A•l0)U" Åæ'àx™µvµR¬ÍπçÍ‘SSÈN©¯†§Á :nÀ÷0UˇÄ0U%ˇ0
++0$+Å∏téˇ0+Å∏té0
+*ÖA πÔfG79Eıæ^x]Cä Ë§e%ìÇÆ1«ƒùÙ)∂≤
+ªwˆ¥-awg3&uô‘a…ÆãJüë6Å(‹<pÈ1ÇÀ0Ç«†" Åæ'àx™µvµR¬ÍπçÍ‘SSÈN©¯†§Á :nÀ÷0
+*Ö0
+*Ö@&ƒ@<«ö6X∂ûÒ…†≠Ÿ#ìÎ:âÒvYˆüwZ≥€·àÖÿUÁM¿ﬂBËaw™¯µ}˙≠õömiu;!ªˇ·°ÇB0Ç>
++Ç71Ç.0Ç*	*ÜHÜ˜†Ç0Ç10
+*Ö0j*ÜHÜ˜	†[Y0W*0.0
+*Ö w/8˚´z÷@eöÕﬁê–‘8ÀÊ 
+¢ˇ“Ëñe@œˆ120250519165853.0151669Z†ÇZ0Ç0Ç…† ë
+∆ÇÛ¨M£Üê”Ã_¬ê0
+*Ö0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0250110115903Z260525115903Z0O10	URU10UMoscow10U
+Kaspersky Lab10Utype=Timestamp0h0!*Ö0	*Ö*ÖC @Ü¡¿˚ha≠Kè	≤Y≈G¯7{©;N)ë'æÇn{r¨èÖ·>T&“õ˘≤Rv©ÜÅ≈Y6£gt!?¸a–Ò¥º£r0p0+U#$0"Ä ;*%uñ”Æ”ï] ÌÏN∂ôp<B±∏¥ê=Ëta/†÷0)U" ç&«€ƒ*ñ8z¢ı◊M©f9ê∆s±~¶iÕ”,0U%ˇ0
++0
+*ÖA 
+3E`ƒíAc≥U O·’BåOóˆó~ze<◊D}Ue÷	‚ {À*≤⁄ˆ]≥ÿWÜnßBâÎ¡'çÀËh∫ ﬂC0Ç60Ç„†G¢~YFCÆº∆ADm\ôÚ0
+*Ö0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110221Z480120110221Z0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0h0!*Ö0	*Ö*ÖC @´kÑê8œ P8qFŸùAœ€ÎÚŸÜ–4™Lyxïûc‹)ÂG,àÁV:TZ.Bßû∫åÏ´F÷G
+Ä{î◊£Åî0Åë0+U#$0"Ä  Êü°?ÄæŒÇF„◊[ÆÄ≈‘Üqª∆◊õ˙ˆ’Z0)U" ;*%uñ”Æ”ï] ÌÏN∂ôp<B±∏¥ê=Ëta/†÷0Uˇ0Uˇ0ˇ0U%ˇ0
++0
+*ÖA (^∑«Ì‚‘„i!rOÖ@a«n^Ë†Ê≤ïÔ´Ñ»ÙÓ*’É1˜8J-=ß†O√{BzÕI™;§ô®ıJ1Ç80Ç4†" ç&«€ƒ*ñ8z¢ı◊M©f9ê∆s±~¶iÕ”,0
+*Ö†Å∞0	*ÜHÜ˜	1*ÜHÜ˜	0	*ÜHÜ˜	1250519165853Z0/	*ÜHÜ˜	1" r)5ÏC»ÍIy≠Q°y F-oÂâÎﬁ/FΩ.Vå›˙ÖC0C*ÜHÜ˜	/1402000.0
+*Ö W∫“„©e¢LÓN@Ê≈àù0∫“ΩvEt'Ò5—1`¬0
+*Ö@îÎß0˜à·u	ÙÚm∆_@•¨ëÑπÇY‡€\nÛ['2G˚6K]zÆD§Ω‹ªŒÓkÏN©0Ñﬁ)ô¿ö%%

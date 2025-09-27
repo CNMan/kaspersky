@@ -1,0 +1,371 @@
+<Update
+	Date="25052023 0826"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="3.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="13195"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM2"
+		List="
+			../21.8.5.452_k4w_a|%ProductFolder%|avpuimain.dll|7TlwLv3H0ZVsrhMuwR02JAqev3NpumCg7hJse9hgM9A=;
+			../21.8.5.452_k4w_a|%ProductFolder%|kasperskylab.kis.ui.balloons.dll|wqcueoTiebdCsyClKUlGVyv58NcTYkF2Mg4EBuNYdzU=;
+			../21.8.5.452_k4w_a|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|+5iwz9T2GBamMj4YrgX0S7mYy+pafcYvd87ACqXpfbY=;
+			../21.8.5.452_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|2FugXdlIZvLgIPxXdPY97TcApdVjWRKrro25nIRtCe4=;
+			../21.8.5.452_k4w_a|%ProductFolder%|kasperskylab.platform.ui.dll|a97Ktow6ZbldpN0g6pU/FjAYoqXFUXZxlbDDoWlfy9k=;
+			../21.8.5.452_k4w_a|%ProductFolder%|kasperskylab.platform.ui.shell.dll|Zhdp+XnvAL+zDntbT6RFzJGOpI20WdgZATP+XjvSg3w=;
+			../21.8.5.452_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.restoretool.exe|Deyj7Eeis4ZyOehiIRlnRm7CGxNq8e+totEg1qlnJ8o=;
+			../21.8.5.452_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|C3Uc1JkGzAZ0akRMU2rLc++3N9Tfjd3uaMn6ttX78D0=;
+			../21.8.5.452_k4w_a|%ProductFolder%|kasperskylab.ui.platform.services.dll|kLwj3zS7WrHza48x3c7jJwC/KjM4N20YOtLdi2mmprk=;
+			../21.8.5.452_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|07v9mHvgL8mYmZniW63ze7YcFsAk0lXh0TIhsFxCtz8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.8.5.452_k4w_a/x64"
+		LocalPath="%ProductFolder%\x64"
+		Name="product_metainfo.dll"
+		DSKM2="c+KhNGI96gvBDKTIevXLuZ9Co1Gakm3i/MSWl6tk6Bc="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.8.5.452_k4w_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM2"
+		List="
+			traffic_processing.dll|9gz8kF3IrKrkyFDXEJUR9ZNBKh6jodYn0hIzzTGd9WA=;
+			microsoft.dwayneneed.dll|cdSzKritHwqu1uvinUPfL0WfGYcHu4kzMiiTJt1uq3Q=;
+			avpmain.dll|Bd2AArDv/xsbXHS6VYeUjtSth7EeCUztESYyZgzDt4c=;
+			kasperskylab.ui.core.visuals.dll|2Yqp/lps5OKpTnrR9ll23TOiVz8U/aWmdyXfr7dGnOw=;
+			product_metainfo.dll|6onyu8ZJNW+5HSXggbaNUhpQ3kRxGIa12rpBM7tUn8c="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_k4w_a/drv32/p"
+		LocalPath="%ProductFolder%\klmoufltx86"
+		Item="Name;DSKM2"
+		List="
+			klmouflt.inf|Lz/Gg16Vt20iE6oqIzuk85inqbKVkKiPydAraZvyAeg=;
+			klmouflt.sys|a2x3VZmcchG8MMgLqexhc0mwVjXUJMo5om7wHSYWDQw=;
+			klmouflt_sha1.inf|+PtzsbnP4hYeC84JsUPqciy0sMX09HElTzkmfOl9S+I=;
+			klmouflt_sha1.sys|90IxMSRTcePZFu42kvu7EmiD5EQikscETq5i9bslfX8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		OS="Win-Vista,7,2008"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_k4w_a/drv32/p"
+		LocalPath="%ProductFolder%\klmoufltx86"
+		Name="klmouflt_sha1_reg.inf"
+		DSKM2="oHwIL6rQ09OzIIwZrj7tV+3nXOsI0nSGifJUiYHVvIA="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_k4w_a/drv64/p"
+		LocalPath="%ProductFolder%\klmoufltx64"
+		Item="Name;DSKM2"
+		List="
+			klmouflt.inf|Lz/Gg16Vt20iE6oqIzuk85inqbKVkKiPydAraZvyAeg=;
+			klmouflt.sys|n3UzCPAqZths/4Zw8OQge1ycaXaAZK9qpDCPGtYn+F0=;
+			klmouflt_sha1.inf|+PtzsbnP4hYeC84JsUPqciy0sMX09HElTzkmfOl9S+I=;
+			klmouflt_sha1.sys|JgSQiWeBU0U6moDjOF0asJiZV3VEPxjoDeW1OWH4hLQ="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		OS="Win-Vista,7,2008"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_k4w_a/drv64/p"
+		LocalPath="%ProductFolder%\klmoufltx64"
+		Name="klmouflt_sha1_reg.inf"
+		DSKM2="oHwIL6rQ09OzIIwZrj7tV+3nXOsI0nSGifJUiYHVvIA="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM2"
+		List="
+			../21.8.5.452_k4w_a/patch|%ProductFolder%\\\\patch|configuration_kav.esm.patch|4JqNICWSDpRyTUup9G1bp+nvfr/gawJw57xuk6eSzNs=;
+			../21.8.5.452_k4w_a/patch|%ProductFolder%\\\\patch|configuration_kfa.esm.patch|xT9zCLXv2QUrk+tJEZbFewOXSbkVIwlr88xIoWP0N34=;
+			../21.8.5.452_k4w_a/patch|%ProductFolder%\\\\patch|configuration_kis.esm.patch|DqS8mGEs3EUb76UrrrJl2oS9i+6iF3YNIaepTFuRfno=;
+			../21.8.5.452_k4w_a/patch|%ProductFolder%\\\\patch|configuration_saas.esm.patch|pewLl+UxGCffN8YHUtLLTonzx45VWMFSMeRrnJvpilI=;
+			../21.8.5.452_k4w_a|%ProductFolder%|k4w21mr8.msp|0H77Tetf/AXcA6r4Whf0sltY90jNUSyO/QBRaCvSPy4="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		Lang="es-es"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_k4w_a/patch/skin/resources/es-es"
+		LocalPath="%ProductFolder%\patch\skin\resources\es-es"
+		Name="resources.zip"
+		DSKM2="dfFthN/1NxJ6vbWIHpvYjwFrlqE7NmR2X8NQUMwofZ0="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM2"
+		List="
+			../21.8.5.452_ksos_a|%ProductFolder%|avpuimain.dll|7TlwLv3H0ZVsrhMuwR02JAqev3NpumCg7hJse9hgM9A=;
+			../21.8.5.452_ksos_a|%ProductFolder%|kasperskylab.kis.ui.balloons.dll|wqcueoTiebdCsyClKUlGVyv58NcTYkF2Mg4EBuNYdzU=;
+			../21.8.5.452_ksos_a|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|+5iwz9T2GBamMj4YrgX0S7mYy+pafcYvd87ACqXpfbY=;
+			../21.8.5.452_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|2FugXdlIZvLgIPxXdPY97TcApdVjWRKrro25nIRtCe4=;
+			../21.8.5.452_ksos_a|%ProductFolder%|kasperskylab.platform.ui.dll|a97Ktow6ZbldpN0g6pU/FjAYoqXFUXZxlbDDoWlfy9k=;
+			../21.8.5.452_ksos_a|%ProductFolder%|kasperskylab.platform.ui.shell.dll|Zhdp+XnvAL+zDntbT6RFzJGOpI20WdgZATP+XjvSg3w=;
+			../21.8.5.452_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.restoretool.exe|Deyj7Eeis4ZyOehiIRlnRm7CGxNq8e+totEg1qlnJ8o=;
+			../21.8.5.452_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|C3Uc1JkGzAZ0akRMU2rLc++3N9Tfjd3uaMn6ttX78D0=;
+			../21.8.5.452_ksos_a|%ProductFolder%|kasperskylab.ui.platform.services.dll|kLwj3zS7WrHza48x3c7jJwC/KjM4N20YOtLdi2mmprk=;
+			../21.8.5.452_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|07v9mHvgL8mYmZniW63ze7YcFsAk0lXh0TIhsFxCtz8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.8.5.452"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.8.5.452_ksos_a/x64"
+		LocalPath="%ProductFolder%\x64"
+		Name="product_metainfo.dll"
+		DSKM2="c+KhNGI96gvBDKTIevXLuZ9Co1Gakm3i/MSWl6tk6Bc="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="../21.8.5.452_ksos_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM2"
+		List="
+			traffic_processing.dll|9gz8kF3IrKrkyFDXEJUR9ZNBKh6jodYn0hIzzTGd9WA=;
+			microsoft.dwayneneed.dll|cdSzKritHwqu1uvinUPfL0WfGYcHu4kzMiiTJt1uq3Q=;
+			avpmain.dll|Bd2AArDv/xsbXHS6VYeUjtSth7EeCUztESYyZgzDt4c=;
+			kasperskylab.ui.core.visuals.dll|2Yqp/lps5OKpTnrR9ll23TOiVz8U/aWmdyXfr7dGnOw=;
+			product_metainfo.dll|6onyu8ZJNW+5HSXggbaNUhpQ3kRxGIa12rpBM7tUn8c="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC 21.8.5.452"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_ksos_a/drv32/p"
+		LocalPath="%ProductFolder%\klmoufltx86"
+		Item="Name;DSKM2"
+		List="
+			klmouflt.inf|JgJRnInH8HAtddOrgGmq2GhFluZSUJAC2ywWmlbHSG4=;
+			klmouflt.sys|a2x3VZmcchG8MMgLqexhc0mwVjXUJMo5om7wHSYWDQw=;
+			klmouflt_sha1.inf|ikOPTnoO0/8lMo9VMVS0ODYYHEQOn/hgfSpFlY6flZc=;
+			klmouflt_sha1.sys|90IxMSRTcePZFu42kvu7EmiD5EQikscETq5i9bslfX8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC 21.8.5.452"
+		OS="Win-Vista,7,2008"
+		SysArch="i386"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_ksos_a/drv32/p"
+		LocalPath="%ProductFolder%\klmoufltx86"
+		Name="klmouflt_sha1_reg.inf"
+		DSKM2="slWslYBqyAuvK7Bp7LCk9sUOZ33N9k0Or5shy7g//Gk="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC 21.8.5.452"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_ksos_a/drv64/p"
+		LocalPath="%ProductFolder%\klmoufltx64"
+		Item="Name;DSKM2"
+		List="
+			klmouflt.inf|JgJRnInH8HAtddOrgGmq2GhFluZSUJAC2ywWmlbHSG4=;
+			klmouflt.sys|n3UzCPAqZths/4Zw8OQge1ycaXaAZK9qpDCPGtYn+F0=;
+			klmouflt_sha1.inf|ikOPTnoO0/8lMo9VMVS0ODYYHEQOn/hgfSpFlY6flZc=;
+			klmouflt_sha1.sys|JgSQiWeBU0U6moDjOF0asJiZV3VEPxjoDeW1OWH4hLQ="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC 21.8.5.452"
+		OS="Win-Vista,7,2008"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="../21.8.5.452_ksos_a/drv64/p"
+		LocalPath="%ProductFolder%\klmoufltx64"
+		Name="klmouflt_sha1_reg.inf"
+		DSKM2="slWslYBqyAuvK7Bp7LCk9sUOZ33N9k0Or5shy7g//Gk="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM2"
+		List="
+			../21.8.5.452_ksos_a/patch|%ProductFolder%\\\\patch|configuration_ksosfs.esm.patch|ajKk9GjiGl22efxmgEtSlyxalT7guQldWgEsjcFxhPM=;
+			../21.8.5.452_ksos_a/patch|%ProductFolder%\\\\patch|configuration_ksospc.esm.patch|VL8Qk4AvZch0DdKdqlj0mmE7pX+gTG4JwfsJvsdCBNs=;
+			../21.8.5.452_ksos_a|%ProductFolder%|ksos80mr8.msp|p5udqvcgJvggW0AHfsJAbKyWBiG/7StLyL8Gaz/I/2w="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		Item="App;Lang;FixName;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			KSOSPC\\|KSOSFS 21.8.5.452|es-es|a|../21.8.5.452_ksos_a/patch/skin/resources/es-es|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\es-es|resources.zip|CtnnI+/YYtXHxs3UYuawh1RgCf5RASDDnlze/8rMgIU=;
+			KASPERSKY 21.8.5.452|da|b|../21.8.5.452_k4w_b/kru/skin/resources/da/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\da\\\\ksos\\\\locs|backup.lt|LjjGDm+nRooSMJTNFc/c5Tmgz6q1126sTFpNkeBa7v4=;
+			KASPERSKY 21.8.5.452|da|b|../21.8.5.452_k4w_b/kru/skin/resources/da/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\da\\\\ksos\\\\locs|common.lt|qQbui6qM52D6x4QB532sRLmYEa5CUiaBHrvUF18SC78=;
+			KASPERSKY 21.8.5.452|da|b|../21.8.5.452_k4w_b/patch/skin/resources/da|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\da|resources.zip|3X/ZOKE4DM46XVOV8ZUYTBdex6evSU+xlxn3romMpG4="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		SrvPath="../21.8.5.452_k4w_c"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM2="cQ8kR4Zm9Kh8XCq8Fjl4XiTyvE7E9yNGYaDDeexjz04="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		SrvPath="../21.8.5.452_k4w_c"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM2="/Etdk0uDQYtMt4G6qNKN8YtSNh4gptj/T83+ul5DQ+c="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="c"
+		Item="SrvPath;LocalPath;Name;DSKM2"
+		List="
+			../21.8.5.452_k4w_c|%ProductFolder%|bl.dll|FCxDWDj0FQFhuL1Ei1EvMYhWWLKbiovk2I+RbJf8jzo=;
+			../21.8.5.452_k4w_c|%ProductFolder%|kasperskylab.kis.bl.dll|biKzSWcNu0rP4UDsljxEMe+L/kRMrJToCw6OO7blwAs=;
+			../21.8.5.452_k4w_c|%ProductFolder%|kasperskylab.kis.ui.dll|JkybF+pjEfwzX33xL1/qmGDPV1Jn60k3/wML3CMm97Q=;
+			../21.8.5.452_k4w_c|%ProductFolder%|kasperskylab.kis.ui.shell.dll|yr+KcfZyPZY1weHZ4jLFwbHpr3J6u1dw+2kWEG+6+Mk=;
+			../21.8.5.452_k4w_c/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|4uTV4jk50HTydk5OwRa8zTc2+0BxaP9ReDCOgfRQL8o=;
+			../21.8.5.452_k4w_c/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|95LUDOn5R7gldvOSk3g5LaubAA4u9xvEK6lvqjW86+8=;
+			../21.8.5.452_k4w_c|%ProductFolder%|kasperskylab.ui.core.dll|DVsLvPuuxS5oC8tBWbPL3DyLzC7lCcwOFXjUMYTK2hs="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.8.5.452"
+		Lang="nb"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		Item="SrvPath;LocalPath;Name;DSKM2"
+		List="
+			../21.8.5.452_k4w_c/kru/skin/resources/nb/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\nb\\\\ksos\\\\locs|backup.lt|Dt109J3V2B9ze+24vw0JBja9MG64ZxsxxOZXRSXoqq4=;
+			../21.8.5.452_k4w_c/kru/skin/resources/nb/ksos/locs|%ProductFolder%\\\\Kaspersky Restore Utility\\\\skin\\\\resources\\\\nb\\\\ksos\\\\locs|common.lt|ZEf8rDANaZiSYy7SscN5ucxOTy9K4pNL/bFvO+UvMN0=;
+			../21.8.5.452_k4w_c/patch/skin/resources/nb|%ProductFolder%\\\\patch\\\\skin\\\\resources\\\\nb|resources.zip|Cr8fyETeu0Q5O6ppmW+AhfkBdR36+4UgCr9Cl6ZMPZo="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		SrvPath="../21.8.5.452_ksos_c"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM2="cQ8kR4Zm9Kh8XCq8Fjl4XiTyvE7E9yNGYaDDeexjz04="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.8.5.452"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		SrvPath="../21.8.5.452_ksos_c"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM2="/Etdk0uDQYtMt4G6qNKN8YtSNh4gptj/T83+ul5DQ+c="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.8.5.452"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="c"
+		Item="SrvPath;LocalPath;Name;DSKM2"
+		List="
+			../21.8.5.452_ksos_c|%ProductFolder%|bl.dll|FCxDWDj0FQFhuL1Ei1EvMYhWWLKbiovk2I+RbJf8jzo=;
+			../21.8.5.452_ksos_c|%ProductFolder%|kasperskylab.kis.bl.dll|biKzSWcNu0rP4UDsljxEMe+L/kRMrJToCw6OO7blwAs=;
+			../21.8.5.452_ksos_c|%ProductFolder%|kasperskylab.kis.ui.dll|JkybF+pjEfwzX33xL1/qmGDPV1Jn60k3/wML3CMm97Q=;
+			../21.8.5.452_ksos_c|%ProductFolder%|kasperskylab.kis.ui.shell.dll|yr+KcfZyPZY1weHZ4jLFwbHpr3J6u1dw+2kWEG+6+Mk=;
+			../21.8.5.452_ksos_c/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|4uTV4jk50HTydk5OwRa8zTc2+0BxaP9ReDCOgfRQL8o=;
+			../21.8.5.452_ksos_c/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|95LUDOn5R7gldvOSk3g5LaubAA4u9xvEK6lvqjW86+8=;
+			../21.8.5.452_ksos_c|%ProductFolder%|kasperskylab.ui.core.dll|DVsLvPuuxS5oC8tBWbPL3DyLzC7lCcwOFXjUMYTK2hs="/>
+	<Key2
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-kav21-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAALFcXq/ZWhpg7pAsRMQM7ahdA9VPrVHSWOJB3UyuQ8gjTsAQvskH9e+nto2DYminTqA1fx3ewQW62LDNTKMZASYBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACamo6pkNCjohMjg0MDFHR3A0dlYySkpGczhraUpEaTRYTm8rQTluTlZybE5JU0kwYTNTdm9MQ01PejA0S2ZRWE5Sa3o1WlNVcisrMmxCa1dhUWkrRWxEMEVGYjJRV0MzUGRzOEElJQ==</Key2>
+</Update>
+:!28401G0aieNoC7cqBjw0fOBQ74/zWEAoDwSszvFiyd+Wx8dGKi1B9t9Sb3xt6uDnPx3cuOutemajD/Sd6EpEQZQbZmGE%%
+=!AQAA6AsAa7khvAAA0‚ä+¸tŽ ‚Ò1‚Î0‚Ê10
+*…0B+¸tŽ 200.0
+*… Ê{KLœá“e»´s‰o|Ë gÊz˜)ÑØ'OÀ Z: ‚£0‚:0‚ç  „hž6¯OW°v­“o°$Ý0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110145Z480120110145Z0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0h0!*…0	*…*…C @Ã¤µ@‡ò‘ÃY6º˜I®…_AyØ´¿x£•O{b\CgF@:õ&¡04Nlæà‡éæ£E†7ñ·æ£O’©_—´/P£¡0ž0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0Uÿ0Uÿ0ÿ0#+¸tŽÿ0+¸tŽ0
+*…A ßq*,;\™Öì¬A:Oèó¼æMöí°æ#qùW¢0*¥~€ó? BöÚ§7NžhI½¹ÅÈ>é ‚No0‚a0‚ xQÞ™GB3˜ç9ÇR‰}ý0
+*…0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0220528090052Z230821090052Z0V10	URU10UMoscow10U
+Kaspersky Lab10Ucompid=KAV21_type=BIN0h0!*…0	*…*…C @â–œ_½Ã]ÄÂöQŸ¬°ÎùyC9å@ÔÂ²¢Yÿíy¨A]`Ö¹Wðï× ö­´¾„[é“m})L’J¦£º0·0+U#$0"€ Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0)U" Õ÷òÖ#ñÀ³ XjÍ.aÛ•Õúÿ.¼BeYÍªY’§D—0Uÿ€0Uÿ0 0U%ÿ0
++0$+¸tŽÿ0+¸tŽ0
+*…A s)—Å6¶àÅª¿$Œ>ZDwÙž„K€ÛÂ	ÄjÐ'Žƒ ³¢KÃ×Ã‰ô	&=•aŸïsûú,‡t6œs¨áä1‚Ê0‚Æ " Õ÷òÖ#ñÀ³ XjÍ.aÛ•Õúÿ.¼BeYÍªY’§D—0
+*…0
+*…@°ÙÒó›oŠ¯t£DwnºØ,Ž&NÌN”_N½¤	¥dÕ-•¥Ö¡dç®ð‚©"®Ï°ØÁ>%U$ö‘û+ó¡‚A0‚=
++‚71‚-0‚)	*†H†÷ ‚0‚10
+*…0i*†H†÷	 ZX0V*0.0
+*… lØŒX,Ö–Ó­i‚SKqŒÊ~Ê›Ž<–Óh‚DØZ„p20230525082657.4867447Z ‚Z0‚0‚É  ýÓY5€@r™t?œ4k0
+*…0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0230502080301Z230701080301Z0O10	URU10UMoscow10U
+Kaspersky Lab10Utype=Timestamp0h0!*…0	*…*…C @†ÁÀûha­K	²YÅGø7{©;N)‘'¾‚n{r¬…á>T&Ò›ù²Rv©†ÅY6£gt!?üaÐñ´¼£r0p0+U#$0"€ ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0)U" &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0U%ÿ0
++0
+*…A =Ê¡Z`£
+1¬ú§‘ZÓU¿a¦Ïluª.öŒèåº3¥(Ø2±îïñ®Ív!¿ÌæP•,=¶á±åvÌ»µR0‚60‚ã G¢~YFC®¼ÆADm\™ò0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110221Z480120110221Z0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0h0!*…0	*…*…C @«k„8Ï P8qFÙAÏÛëòÙ†Ð4ªLyx•žcÜ)åGð,ˆçV:TZ.B§žºŒì«FÖGð
+€{”×£”0‘0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0Uÿ0Uÿ0ÿ0U%ÿ0
++0
+*…A (^·ÇíâÔãi!rO…@aÇn^è æ²•ï«„Èôî*Õƒ1÷8J-=§ OÃ{BzÍIª;ð¤™¨õJ1‚80‚4 " &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0
+*… °0	*†H†÷	1*†H†÷	0	*†H†÷	1230525082657Z0/	*†H†÷	1" æß­‘Kþ1æ	í°N{Rbç…@’ÉçW 0C*†H†÷	/1402000.0
+*… *¡²~ERNÆÁoùügi@d³;íícnÍ Ø_š…m0
+*…@:‡,žÌ1cõ;[Y*TdFS .þÿñ§¨C0¿Ùõmßí:¬ôÑ´IBWÊš‹ZwþÊó
+F'%%
