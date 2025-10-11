@@ -1,0 +1,13 @@
+<root>
+  <service_settings_patch service_key="0xE750E572">
+    <replace_value path="tcpControlSettings.overallIncompleteSendSizeLimit">33554432</replace_value>
+  </service_settings_patch>
+  <service_settings_patch service_key="0x34726967">
+    <replace_value path="flags">
+      <item unique_id="0x2d1a6c80">
+        <featureId>kavkis.bl.KpmExtensionInstallPromo</featureId>
+        <value>0</value>
+      </item>
+    </replace_value>
+  </service_settings_patch>
+</root>
