@@ -1,0 +1,37 @@
+<Update
+	Date="16012023 1314"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="11907"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.8.5.452"
+		ApplyPeriod="0"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			restart_service|a|21.8.5.452_ksde_a|microsoft.dwayneneed.dll|HcIMfz+2uFJIeZD5Zv4cmgOMd5mxH5QDBJtpMix28co=;
+			restart_service|a|21.8.5.452_ksde_a|avpmain.dll|9yceZAW6Q4cyBcyyUDEvcy1mpBUa4/hRtw2KMIo4aPM=;
+			restart_service|a|21.8.5.452_ksde_a|kasperskylab.ui.core.dll|5FYWl6kHWPgp+dLqbg2p8Q7bPpbRLXU9xq+w9yj7A9k=;
+			restart_service|a|21.8.5.452_ksde_a|kasperskylab.ui.core.visuals.dll|/66tpd5XlIT06kvC5awzFMzafGMMhg/VlG4Iv9o4exg=;
+			restart_service|a|21.8.5.452_ksde_a|product_metainfo.dll|bxFRskjpeFdPn9W+Xmkxx205NKyr+ztJW3H7rfR4Doo=;
+			restart_service|a|21.8.5.452_ksde_a|bl_ksde.dll|GR2owx5+rM/rGoW35bJY0Upax7wyg7OOkmXFLRGrlCM=;
+			restart_service|a|21.8.5.452_ksde_a|kasperskylab.ksde.ui.dll|Jbw/REj3jMkeANCUkjd+e0e0taCjW8KPnr64zD6BCW8=;
+			restart_service|a|21.8.5.452_ksde_a|ksde50mr8.msp|TcsUF/etBVs+GoYVqHzuoQFS7C+isNjtnAi1FmRNixA=;
+			restart_service|a|21.8.5.452_ksde_a|ksdeuimain.dll|juee7DiCKprKW8naxgIUN1nVGrYH1ez3tuHtLxYBFoo=;
+			restart_none|b|21.8.5.452_ksde_b|ver_info.json|yDtr2R9l2tzv2iHsXcrcv8juu6QT+4BkmonTOMREku0=;
+			restart_service|b|21.8.5.452_ksde_b|product_info.dll|zs6FGnTRzMV8plU1qsmnAPOo3pHpy1wlztCDVRGgd/4="/>
+	<File
+		CompID="RETR1901_KSDE21,RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-ksde21-mr8-1901g.xml"
+		DSKM="Vs//mLjm510ClQbyV22bzhsT8kf7RZH0U7828r5nRHs="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
+</Update>
+;:10KRD5wCGmzf1NYbO6Td9YUfhtrilAx3shJQwIqPjsw2IP33h/H8wlXLWyRZU858CeGQPyjcJBAsGRkBiyR448nw%%

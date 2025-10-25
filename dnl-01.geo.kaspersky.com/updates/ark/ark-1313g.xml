@@ -1,0 +1,467 @@
+<Update
+	Date="23102025 0732"
+	BlstDate="22102025 2038"
+	ObjectType="2=ARK;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="139"
+	CompID="ARK"
+	Arch="i386"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAVMAC 22.0.0;KES 10.[2-3].*.*;KES 11.[2,4];KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 21.2;KESMAC 11.2.0;SAASMAC 21.[0-1].0"/>
+	<File
+		App="KASPERSKY|KSOSPC|KSOSFS 21.[4-9,13-24];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [14-21].[0-3].*.*;KAVSDK 8.[5-9].*.*;KAVSDK 8.10.[0-3].*;KES [10-11].[0-4].*.*;KES 21.[2-9,13-24];KESSN 21;KICSN 21;KSVLA 5.[1-2].*.*;KVRT [15,20].0"
+		OS="Win"
+		Shell="bdif;klzu;none"
+		SrvPath="i386/win"
+		Name="mark.kdc"
+		DSKM="s287qYYDjddeHjY5gCEBWuJntxP5EE+ZTRoMtZcfg5s="/>
+	<File
+		App="KESMAC 11.[0-2].*.*;KISMAC|SAASMAC [20-21].[0-1].*.*"
+		OS="Mac"
+		Arch="x64"
+		Shell="bdif;klzu;none"
+		SrvPath="x64/mac"
+		Name="mark.kdc"
+		DSKM="B65zDXm176IIsTeiGaxvJvXpAQvjaNyuSJH3Nj91VXM="/>
+	<File
+		App="KASPERSKY|KSOSPC|KSOSFS 21.[4-9,13-24];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [14-21].[0-3].*.*;KAVSDK 8.[5-9].*.*;KAVSDK 8.10.[0-3].*;KES [10-11].[0-4].*.*;KES 21.[2-9,13-24];KESSN 21;KICSN 21;KSVLA 5.[1-2].*.*;KVRT [15,20].0"
+		OS="Win"
+		SrvPath="i386/win"
+		Name="mark.mft"
+		DSKM="BcNUSnFIvhCVFtER1P821OG4A41MAyCK93+kjqqruS0="/>
+	<Files
+		App="KESMAC 11.[0-2].*.*;KISMAC|SAASMAC [20-21].[0-1].*.*"
+		OS="Mac"
+		Arch="x64"
+		SrvPath="x64/mac"
+		Item="Name;DSKM"
+		List="
+			mark.mft|JWNv5MRb6EesQi/hH+J7xOcu557aqdmV2jTBABMtnz4=;
+			mark.signed.tar.gz|Tt3BSvcmLGPliy3p7h5jz5UiJMSX0FKQ7RFDw88+u3w="/>
+	<File
+		App="KESMAC 11.[0-2].*.*;KISMAC|SAASMAC [20-21].[0-1].*.*"
+		OS="Mac"
+		Arch="x64"
+		Shell="bdif;klz;none"
+		SrvPath="x64/mac"
+		Name="mark.kdl"
+		DSKM="hwgjMcxCNElqoX+ZSYQBLT4vPtK2S+WUlXba+t2hUqg="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="ark-1313g.sha2rg"
+		DSKM="Bivn2/vD9u/9duQpwtZS+uHUjvle2JVdVbm78NBu3AE="/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="!KAV|KIS|KES|PURE|KSOSPC|KSOSFS|KASPERSKY|KICSN|KESSN [10,11,14-21];KSOSPC|KSOSFS [15,17-20];KSOSPC|KSOSFS 21.[0-3];PURE 15"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 18"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 18"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS 14"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS 14"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS 15"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS 15"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 16"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 16"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 17"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 17"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 19"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 19"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 20"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 20"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 21.[0-3]"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KAV|KIS|PURE 21.[0-3]"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[4-9]"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[4-9]"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.13"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.13"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.15"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.15"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.16"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.16"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.17"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.17"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.18"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.18"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.19"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.19"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.20"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.20"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.21"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.21"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.22"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.22"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.23"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.23"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.24"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.24"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KICSN 21.23"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KICSN 21.24"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KICSN 21.24"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KICSN 21.[19-22]"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KICSN 21.[19-22]"
+		Target="[157286-262143]"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KESSN 21.23"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KESSN 21.24"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KESSN 21.24"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KESSN 21.[19-22]"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KESSN 21.[19-22]"
+		Target="[157286-262143]"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 10"
+		Target="[0-28835,133692-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 10"
+		Target="[28836-133691,262143]"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 11"
+		Target="[0-28835,133692-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 11"
+		Target="[28836-133691,262143]"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 21.[3-22]"
+		Target="[0-28835,133692-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 21.[3-22]"
+		Target="[28836-133691,262143]"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 21.23"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 21.24"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<Index
+		CompID="ARK,RETR1901_ARK"
+		App="KES 21.24"
+		Target="262143"
+		Name="unmod-ark-1313g.xml"
+		Date="23102025 0557"/>
+	<File
+		CompID="RETR1901_ARK"
+		Arch=""
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="ark-1901g.xml"
+		DSKM="PuXmjMQ7sjb54Ek9AH7Tg55zd3JBf4nJux1bFYvxrNI="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="ark-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHiPcTkpPuE4GXy6HvIGa+vgTUJOYPLeyjGRwWqZwKp/WjvSVpkTfdU3VfNOunf6xE2NT9ONRMQ6yWrm0nPE9wMBAB4JkgAAAAIAAigDAEFSSwMAAigEAEJBU0UBAAAJX+UMcQ0KOzoxMGE2ZkVETGlNTDQrRHRuQUxSUGtaZU5lWUpQcFJ3bDBReHVqaDhGWHBXdzE3Mk1ObjhEWk1FNFgvR3Q0M0xKQ3JqcFZMYklnejRJTHZtMTR6RWo1RkZrJSU=</Key>
+</Update>
+;:10qTjWKHzxMwSSy1cGim9ZdOb2i+v6LUwFHmzDKTXboV0q5OWZXVzrY+U1cpoilL0iludxRaYYvWWt7j8sGyVlVo%%
