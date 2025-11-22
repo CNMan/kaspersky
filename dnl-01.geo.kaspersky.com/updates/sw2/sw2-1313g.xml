@@ -1,0 +1,1250 @@
+<Update
+	Date="21112025 2108"
+	BlstDate="21112025 1451"
+	ObjectType="2=SW2;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="3558"
+	CompID="SW2"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAR|KARH 3.0.1;KAR|KARH 6.[0-3];KES 10.[2-3].*.*;KES 11.[2,4];KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 21.2;KESMAC 11.2.0"/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="sw2-1313g.sha2rg"
+		DSKM="8uAjct3z7DZsn80dRgOASabMBVq8YYi4qEbhQfxQSjA="/>
+	<File
+		App="KAR|KARH 3.0.1;KAR|KARH 6.[0-6].0.*;KASPERSKY|KSOSPC|KSOSFS 21.[4-9,13-24];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [14-21].[0-3].*.*;KAVSDK 8.[5-9].*.*;KAVSDK 8.10.[0-3].*;KES [10-11].[0-4].*.*;KES 21.[2-9,13-24];KESSN 21;KICSN 21;KSVLA 5.[1-2].*.*"
+		OS="Win"
+		SrvPath="i386/win"
+		LocalPath="%BaseFolder%\Stat"
+		Name="sw2.stt">NzA3MTsyMDI1MTEyMTIxMDgNCg==</File>
+	<File
+		App="KESLKSVLA 12;KESSL 3;KICSNL 1.[3,5].0.*;KICSNL 2;KICSNLO 2;KSLS 11;KSLS 12"
+		OS="Linux;Linuxs-135;Linuxs-136"
+		Arch="i386"
+		SrvPath="i386/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="sw2.stt">MTAxMDsyMDI1MTEyMTIxMDgNCg==</File>
+	<File
+		App="KESSL 3;KICSNL 1.3.0.*;KSLS 11"
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="sw2.stt">MTAxMDsyMDI1MTEyMTIxMDgNCg==</File>
+	<File
+		App="KSLS 11.[3-4].0;KSLS 12"
+		OS="Linux*"
+		Arch="a64"
+		SysArch="a64"
+		SrvPath="arm64/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="sw2.stt">MTAwNjsyMDI1MTEyMTIxMDgNCg==</File>
+	<File
+		App="KAVMAC 26;KESMAC 11.[2-3];KESMAC 12"
+		OS="Mac"
+		Arch="x64"
+		SrvPath="x64/mac"
+		LocalPath="%BaseFolder%\Stat"
+		Name="sw2.stt">ODQ4OzIwMjUxMTIxMjEwOA0K</File>
+	<File
+		App="KAVMAC 26;KESMAC 11.[2-3];KESMAC 12"
+		OS="Mac"
+		Arch="a64"
+		SrvPath="arm64/mac"
+		LocalPath="%BaseFolder%\Stat"
+		Name="sw2.stt">ODQ4OzIwMjUxMTIxMjEwOA0K</File>
+	<File
+		CompID="SW264L"
+		App="KESLKSVLA 12;KESSL 3;KFL 2;KICSNL [1-2];KICSNLO 2;KSLS 12"
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64l/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="sw2.stt">MTAxMDsyMDI1MTEyMTIxMDgNCg==</File>
+	<Files
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm00.kdc|Cu/mX3plgtpFux3jh+1W0q92hRa5hNCZEGpuqyP/3Z4=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm01.kdc|CloYm4vfBuwVxX3EwY7J9leqbq6LBhe8cK5P+PIQN7E=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm02.kdc|ORKu2+6Pz6z0Urq4nKuXNn9FBdXINfgwmlE1g4tBSnU=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm03.kdc|HkbPMcvrj09vuBOO+/8i2umSmKw8sPfz+M3dR7gxIaE=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm04.kdc|FT6RRDIBSeuJuQ0onbpEzn5HOwoeGPM9aug/258960I=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm05.kdc|PAxxaSnSAj9e5xAsHartk8DkTZe9aqI2E4Rdxedah1M=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm06.kdc|QaR7wq0zf+URLx9y7v2yyviYSOkKzxduBzthLXnosPY=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm07.kdc|AGe8dvp98tPzrhEqrd8Kc0irkzda4WLgTF2htDRp01I=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm08.kdc|pVG2w82jlEcM9VML+FGDWTJdc1Yssr1GKJ4JP7urER8=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm09.kdc|aAMLrf/+GLKo3KnAof2df/fOjOlRvHKSs8x0FXqOT1A=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm10.kdc|8s6ZwvjohvApM5kY2M4XAFMX7VixUmSp1wI8unQN0Fs=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm11.kdc|mIY+1zzaM70QEJnAwnf/TAsREQuezN8eYI025LmWQSA=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm12.kdc|6MNMure6xf/RSKBPn45qzLW1DOdge6EphlMvT3CEQNQ=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm13.kdc|ollRX+v4Iid9nluFAV0q112vpsobcHINNZPCBBnMDWY=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm14.kdc|Lt9uSk+sydRUG2hvJorYOD4VjxAzF8mxeS+r8e3B2AM=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm15.kdc|9+ezaSQmeqHD09bqk6KmMxAm12fdpE4IyBKm2994TjY=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm16.kdc|Rk23ab0SiqMVYkRsmDXe8hfQ6cjq5cA/SfdE0w0mI6g=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm17.kdc|mCTI/MmGSu4qrOxVw1HVLwelKrTI7BhLEHg5sYabVps=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm18.kdc|9h1o69XtOeRRy5uRcLfDJvyqpm7Ba71OoT2UQhSCMiM=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm19.kdc|do60SN97KacdVt2xNIJ5keyAsbPfT08Z0k9PfQH7a1g=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdm20.kdc|YEw5A6TVjOG9lpfIOAaC9t6oKsUM1SDReOUkKVXPlhk=;
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386|i386/win|pdmsafe.kdc|KVEIMNvvwd2M/6O2ENpW8ds9/zRB3OXuD2lQlSEE3Ug=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm00.kdc|Xv5NvJg+rg8dO2Kekh/gbkijf9AhUu9Q/FNvk2gNdvA=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm01.kdc|UTw5hmWSCSTJPZ1yAllfQHVvuixJ1dVJ7zVJCmmQqRw=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm02.kdc|Jl//ypk3xrg1kPYIGGps4s3kdC4zXEo1ETLrif15adE=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm03.kdc|T0gIaI790scP9VvzuwrX4gs/69wDgYyQHHZjc5WKodM=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm04.kdc|qz9cKEQnupnxvpMqe6rKpXoKUnFAuDDOH5hhWueqei4=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm05.kdc|CVhZwtyr8v34Hk7VYcwabHImrSajBMjD5sH+t0M0pRE=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm06.kdc|UJyIZEGrEa+TKJtIDyPrbKMI63YoQrC7TJL4mIm7AMo=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm07.kdc|An2tQBNHcLiLJSXyb0t3yUIo/OR52EUQ+8YpsHeCD44=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm08.kdc|jB7rxD2clcKVkgvEqPdPTLOJg9FN35bSpDfCwnqwlX4=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm09.kdc|f8TUgF4MGtaNOLNA1qSZmFKpYXpVV4w4JueB1Vrmo/s=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm10.kdc|n7CDbMbJ9dQFGUMp61el/6HITj5ILYj8U2ZtSCr5m/c=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm11.kdc|YiGZ4ClJoBcECjmCzv8piMi8gKiZbSoYX3FULQiXaOU=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm12.kdc|c+4jGHSpvcIj++/FCk8fkaxdkymNym47INdmktg0MUE=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm13.kdc|CjspWCC0ETnCQQz8MAdhNrdbUTA6k62+/Ocfiqu9T3A=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm14.kdc|HabeRyRQ3ZpUmDv412FucqgR0dBB61mYzWP8+jCfOFA=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm15.kdc|n2s7h2nSsZMywHW3x9WsEfwFmX0PWw6BdOALrvR2q9Q=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm16.kdc|K2KKBJ2SukoJOei6RjBjUGw0av+BsriKwWhCcNwrs3I=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm17.kdc|/0tBYQjuVU7Per73ZEpAmmPN9aOP9s27fQoBgL0qcRg=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm18.kdc|Ouo+QKzvqRRH6efqsOiTyRfMzi04/PBpjwn9fW63Zn4=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm19.kdc|DP0aCZT+d8zmnEgexGWRetq96MgKBgp+MpDleaZo73c=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdm20.kdc|uJcEqrm0TI/db+Ex2uil3aOjETSP9g0fa8bLQVXKfAE=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386|i386/nix|pdmsafe.kdc|C66OGKQHNs4TouW6+FDfJ1jUUTeuByVHYl9vf/z1mZ0=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm00.kdc|lJdK7GL07WZBzWqeGG/AfgTveM/pCY4PW09cdQNlSVU=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm01.kdc|T7Wli9hbLDMZLEeVYi6djhTpoiAUGCyq7fLFO85HCK8=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm02.kdc|SSECbfvRaMQTYU803n9LXehEPEBE6sLjQW3mYD9LvQc=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm03.kdc|YTwJhIwu/BuTMAj26ZVnBNBPTWFfBBzJ5LnB/nBer9w=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm04.kdc|UgThsfv8p1goM6/d8/EFRkSdKNixHsxjw9ZaRH+6p6g=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm05.kdc|SErWbOxGMABnrqzDQWWOVnj24KbCFKFvIBfW43lZQIg=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm06.kdc|VqJ9ulkJW82zW86vsASjbnqSomqLapJ7sL9lEQXjUNM=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm07.kdc|RM0UcB0f5UhrazECXhdesOCdcjzp9eWN1jUEj0pinwM=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm08.kdc|Cp8Q5OAcF8UBPpC0rGRe+d5wn26tHG5cyH+Iw9tMsRQ=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm09.kdc|19Y/kO13HWayHYVLnJRUzSJrUkZQwwstaSwZknD0YRM=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm10.kdc|Ug4YbgTGEB52kl7Q2YkvHQSZDmRHzo9MJXC0leMfTCE=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm11.kdc|UfwIpykohlis76zNCDEwOAX9kM3ywQhosi4RPrVKTBU=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm12.kdc|8hGVF1MGEqxS1Vvp8b/212mE5o9bSxVsCj/cuLNar8M=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm13.kdc|/axdyjWdbrn/S5C7YbNMpFFQRpk09ZcAfpAqXv2zQBY=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm14.kdc|cg4UWrBAXexfUFVDJF8h6UMzUs7QPEvWQlcpV5qCxio=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm15.kdc|lDRJ3gysUWPtYWpEWItPlk4vt7e/7UJXv+RGMlLDPEM=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm16.kdc|VCX958Y93tOeFbqxlNJwqPDHeVYRRxeLlqsFPInso/s=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm17.kdc|v+MSGg8cXlAjC6kWPslelcuFEbjTIKjK7a8aRcyXIKk=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm18.kdc|TTpksa4ckwB2JlUuGJEC7KN136mkVkUwtpOMkLHMASU=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm19.kdc|V/rbGAqNW55CpgT+Xx2kkV0ZeeXNmy0mCVQRiJnT3Ew=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdm20.kdc|yyyPZLAY9K6t1leeydYzCcq5sxGn3p9YCfJuj5E3DqM=;
+			KESSL 3\;KICSNL 1.3.0.*\;KSLS 11|Linux*|x64|x64/nix|pdmsafe.kdc|Lvt3NaOjqeeG+yFiqGK3GP47+vyVl3gBq8+GdDu8gKo="/>
+	<Files
+		App="KSLS 11.[3-4].0.*;KSLS 12"
+		OS="Linux*"
+		Arch="a64"
+		SysArch="a64"
+		SrvPath="arm64/nix"
+		Item="Name;DSKM"
+		List="
+			pdm00.kdc|WFMa8Pc9U9xwsaR9OxC29lH8BOfoVfMnNl0ZnvE+32k=;
+			pdm01.kdc|GhnIz1McAhnnTohRwEIFj1/0WmW4o1/JHor+Ny3tCpA=;
+			pdm02.kdc|0Yv7D4PLgdS7T6tUsaY5R04fVEEqn3kyNIVctT83qDs=;
+			pdm03.kdc|Ms8ScReOMYsY8DusTwRKTiqScbUKqoD/+0KvFXSYLds=;
+			pdm04.kdc|KpkJx9Ok8oLATxvVr2pRQ2qlPpKBWyFGhzBIOjpCcF8=;
+			pdm05.kdc|67fD1GVLsC2v/KTmAkUr3Q2RCAK/sRstJrUC1rlGGeA=;
+			pdm06.kdc|J63KBUZbCQ2TTLiTjC9HsdaMeK0gR1eFmT7cRrJ4pQc=;
+			pdm07.kdc|49gutR87cUKb07BiOymTst7RzsgomilGgP3b72ZtEjY=;
+			pdm08.kdc|tjEWAB1CsM4Lhsiq8cpXoK4WAXRhpq7em3RxY0vM+jI=;
+			pdm09.kdc|05yZwZzBvtfAQS92261ihvPJQgg/IY4l/Pd6etQWmSM=;
+			pdm10.kdc|nHHljZvKbdtCpfGPRKX+/v0V2+Ka4tbb5cdi5IYavvc=;
+			pdm11.kdc|liUyU2tACvkGQHiwcS6X6MwbcMs877P2jpGh6n1rzAg=;
+			pdm12.kdc|cYDGt0yokabttn6NxfTr3lxFXkBxWTRnie7D/2iidxM=;
+			pdm13.kdc|kTSOPcTiRvGJM05Mvq65LfRDc8rTlY28nyEnQeICqO8=;
+			pdm14.kdc|+Z8kEY1B7KmAVIZb983ji5qDeb66FiEXutDgu/YqSps=;
+			pdm15.kdc|JeX5BiucMNIqu7s0vxjuuhvZOG+IcTfUs9iq422I254=;
+			pdm16.kdc|ZcLrHxkiZzg1BpmYmqbJocYoq6T7AHs/pY7WPByERpY=;
+			pdm17.kdc|1kKfZjwuCduLtt46ERtK5fcCSqBanxdo/+Egjpqbeuk=;
+			pdm18.kdc|iNcG1O3IGCjFqh6EwSONOD3BKNVInkdmrIuVEJLJ9Bs=;
+			pdm19.kdc|5lWULedqlZczAJRTz5y16gModIwyt4EduiFcrLdgIEc=;
+			pdm20.kdc|m0fkyLj1OOjunb+n/BaDWENKOGkoMHD64OfI0WAgG9E=;
+			pdmsafe.kdc|6Ezxph8yq7Rohx1zbakDVAgVoPQQlFnyBcWZoLmLFrc="/>
+	<Files
+		App="KAVMAC 26;KESMAC 11.[2-3];KESMAC 12"
+		OS="Mac"
+		Item="Arch;SrvPath;Name;DSKM"
+		List="
+			x64|x64/mac|pdm00.kdc|BRWNkiw9/4yuWb/vT4UbNj/1aLcRqupQI/VR9zxKyQY=;
+			x64|x64/mac|pdm01.kdc|PSjluPt8u4JmGDAfUh2yYvKJ+DO6SinYYcT8Eo0MFnE=;
+			x64|x64/mac|pdm02.kdc|sjPscFn0VoljkxQkgzwtADJIDBIg7pKAztBV8wgAoJI=;
+			x64|x64/mac|pdm03.kdc|icuCjr1/Fu7U5Y+Jk4/p3bvahj5BD2uuKRCgGZC48Ng=;
+			x64|x64/mac|pdm04.kdc|xdWqA2gZSAVROG72FPAoSlO///LeDi7Xp7sH3gOToCw=;
+			x64|x64/mac|pdm05.kdc|GnPniaXN4rYz+7uFrZNojtvVkGNfeBjxLHPH7gM+dIg=;
+			x64|x64/mac|pdm06.kdc|s5HIXO5kwQ9u1HNVtpxXaC49xVrocmuOSscKoa4rA5I=;
+			x64|x64/mac|pdm07.kdc|yQ2uWjMxu56CWoETeKngF3K4vXRomRHfS1QotNY1wvc=;
+			x64|x64/mac|pdm08.kdc|Kq+FFHurebEt0mbtptTjcxTsNVaeDUIpHxp5IbZXjQM=;
+			x64|x64/mac|pdm09.kdc|ZZgExfUl+EeBPTlGDCdh1+Qx66xhByUetNBH8zl+XJI=;
+			x64|x64/mac|pdm10.kdc|iNOyMfEXq5JDxutMJlAnheQyK2oqJ9cqxHw5+s/EhZY=;
+			x64|x64/mac|pdm11.kdc|JiZNIAt6q1M9aOfKkOO3App84sQBM2O/yzywWKIOAec=;
+			x64|x64/mac|pdm12.kdc|yLJagK2d4qMB6xYK4dip0mdlIqsvBFNI7StwpCbM3PY=;
+			x64|x64/mac|pdm13.kdc|Hwh3uw2rOQoGbgrZSSASCGTiC//Lqzx5d21Jf/CnR9s=;
+			x64|x64/mac|pdm14.kdc|3Vswlru9Rd31NVnREHAN7UHNyz2Lbp5DqSjRuI3flj0=;
+			x64|x64/mac|pdm15.kdc|IpXEpIoYepysb9J0qUR8Ehr1CWjt/2R6xyvg8mS3uqY=;
+			x64|x64/mac|pdm16.kdc|VAMMK2Sxl3g/a1OdGBr0OX7BdP3gf75NQjG9J+97acM=;
+			x64|x64/mac|pdm17.kdc|C3PFCnjtVOYjXf+NzdeuLk76rlgVNJFTDOGdM2iM2TI=;
+			x64|x64/mac|pdm18.kdc|H8bH527uRwK/UeByHfZ13V/C+Wd6IuO+mREVqb53fAk=;
+			x64|x64/mac|pdm19.kdc|AQiaFuRWQ9MZwrveXJBT46HHR29sRyY5C+6bvEB2H9E=;
+			x64|x64/mac|pdm20.kdc|aLeJytXJ3pIr1TO+wFe0gdT5mZlYVLd+Jd2sx40lmYI=;
+			x64|x64/mac|pdmsafe.kdc|dVRHJAJw557YWH94ceMToXRH7IcNFpR2OoK6NgadPBs=;
+			a64|arm64/mac|pdm00.kdc|g4suT3tGhh4+jB8YU9Cu3hJd9kcP9CiXP4pvpdGk4sM=;
+			a64|arm64/mac|pdm01.kdc|zLyUZfyVRhkeNOz2YAPMfX/U1B+R3h/xfil69xK7ma0=;
+			a64|arm64/mac|pdm02.kdc|qq1n2t51CUTiFSdtOpRZWn932khHFLWDCeTtEbXjvsU=;
+			a64|arm64/mac|pdm03.kdc|sAXtdE6qHRMPxtQA+TXQB2zNrRKiRLB70Gk9NHOwrI4=;
+			a64|arm64/mac|pdm04.kdc|lUZuk6cm2gbz8cU0xZKMsOqtTZSb+RGSCitcZ2bds/A=;
+			a64|arm64/mac|pdm05.kdc|IF3vhDi0MbHVKYoVqfG57UTkxF5XbJdcAcWlqRu0Tb4=;
+			a64|arm64/mac|pdm06.kdc|FeoSCeFe+5PI2DOt6QdddEiHZn7D2EXDzE4pOgIcESg=;
+			a64|arm64/mac|pdm07.kdc|ubuIIdystAVAcpGYU6wbHAAOTYshjYAtfSYJTrFiB1s=;
+			a64|arm64/mac|pdm08.kdc|J4DVs+ZVJhJlLmc2MzrXLjf87eyNp+ZlQcfGm2wPF6c=;
+			a64|arm64/mac|pdm09.kdc|6/IMolgcgTscmsEfGLbA+dM2vwEJoxtLqWGCtQfwbOg=;
+			a64|arm64/mac|pdm10.kdc|TvHDyPOcIxLM5rt6RGCnMQ6fJxl5WkMCVIM1Akm4jcs=;
+			a64|arm64/mac|pdm11.kdc|73mhLu7gRJYl4QG6MlKrwgLzEY9ilAxiziL3QRI5r+0=;
+			a64|arm64/mac|pdm12.kdc|E0gK7KVtyt9LagyfEUDa1gXq7Yf2XwsFbPvCMPT3ePc=;
+			a64|arm64/mac|pdm13.kdc|yz9HtSpJ9PTFE9qG56UY0U4m0XUdnsA8waYSu3wb5hI=;
+			a64|arm64/mac|pdm14.kdc|+0vaO9k918uRbIagDrDZdoVo+8wGNod9DZKQg1Z9wRk=;
+			a64|arm64/mac|pdm15.kdc|EMLsnKeLKXCc9JFpAEUAo3dw7RWlNw8Wnx/LwlgEDEQ=;
+			a64|arm64/mac|pdm16.kdc|euuyj8rKvepSHvj1DOFxAgetUaTDR5ALgqJln0U2NJ4=;
+			a64|arm64/mac|pdm17.kdc|SzIKxuUUzJk4AuMGRJ2zUYV6KjWwudr8GBNgDvi/B9E=;
+			a64|arm64/mac|pdm18.kdc|/gMLs2WoGiWn9e0uuUdSJ673aafECz7cfEJ1SDv56qQ=;
+			a64|arm64/mac|pdm19.kdc|QIOn4/EehjK/ltSBWRNlWi8/1xK7CVsgZF0hWsdaKPQ=;
+			a64|arm64/mac|pdm20.kdc|8mLMXo7MYcTOHRJJTyZrdy7DRnbHng5oUB7z/y3gCBM=;
+			a64|arm64/mac|pdmsafe.kdc|jRMth0F5ui1LtjAGVv+Tzd0BSzoZbanIMzDAxAMJeIo="/>
+	<Files
+		CompID="SW264L"
+		App="KESLKSVLA 12;KESSL 3;KFL 2;KICSNL [1-2];KICSNLO 2;KSLS 12"
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64l/nix"
+		Item="Name;DSKM"
+		List="
+			pdm00.kdc|kyDJuLCvZKDPoKOgbZhTwPRztkHrbXdRevibv807Rz0=;
+			pdm01.kdc|UOPZC1DueV8ZZotTzDYXRVzuH1EYqyYrYQ2zPKU85B8=;
+			pdm02.kdc|9kTFfJpeBEwJfFEfV+FRLvS4qZ5ROwKR5hgQD24DiyY=;
+			pdm03.kdc|3efGWQnK6DuetCMoxB0kG6CnWXGyD6xMCYRmaaXThsI=;
+			pdm04.kdc|NuzPIQ7WWsGHldPZL4syl11Eld6OY6ondPXLGrsxtiA=;
+			pdm05.kdc|i+jxNAmuVvOPbWJB1YjGl9J4RyW6kF/V1FwVEaAiHfE=;
+			pdm06.kdc|74bVgU85Zm7BnSaOpHwcQPMwsds4V/YOEEHXFBVW6Uo=;
+			pdm07.kdc|h24t1YA0VFcpnXaEUlY1plaOe2Mfb9Qpk0iXjjHXA7M=;
+			pdm08.kdc|HG1/QyqUJOnYF4PEz6x2jVY9eZjvNqjqPFf4zQ4RLTk=;
+			pdm09.kdc|1w0Ke+CO7wW/xWoshS6dbs9gvgxJiTl6CNX/pcwcf4U=;
+			pdm10.kdc|ebEP6317gyqAde2wqUFJQrBdwNbV9LwkxqKsFg/lRq8=;
+			pdm11.kdc|llCfk2jsiGlM2zP9/AZprDn41Cnmzm80203EcHaYLKs=;
+			pdm12.kdc|lWr+IgZ6OhlNygnrWnra00a08NXS9ucliRLbMPBRuVA=;
+			pdm13.kdc|UaXnEJvHKPEVmAAZisBm7H0qUxcdIrmdLcB+4QfiP4k=;
+			pdm14.kdc|kvOmlsW6VvjU/Z+3k05x8+gdWggCIYbBJlQWsX0G6UI=;
+			pdm15.kdc|zzNXReoqwDyGp6lsTXx9GjqggmG/OtUlIuo4+kQ0Bj4=;
+			pdm16.kdc|1fJCbucmzmrg2Pm6hA94Z/HmXpi7d66TNMWOl/hz0k0=;
+			pdm17.kdc|iLPIOR9O0ABktsS96fNMIjwbA2faHJCHy6onofMyeVs=;
+			pdm18.kdc|3lPLaV386d0t7doP5MvISiGxr/ih7im2ewD0AQ8zwUQ=;
+			pdm19.kdc|Ly9YW4RKoxWDF8hv0cJgwFnRVNe68GuYHCib+GtERaQ=;
+			pdm20.kdc|rSr8FfjkhyeNAgfQtnPNHpdTD/oexcDxjMe0+rJJAmI=;
+			pdmsafe.kdc|GbY8r1zn1tw7TTIWyLklwnMhpoaIE+P75fRgiIMg8tY="/>
+	<Files
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KES\\|KICSN 21.[23-24]|Win|i386|i386/win|sgm01.kdc|BIOIKNTo4MG3ATCLDu8JCzGYzUZI7dmcCd2LxIJJe+A=;
+			KES\\|KICSN 21.[23-24]|Win|i386|i386/win|sgm02.kdc|3cuvKHU2QTck0+RmzGogDuO9A07ssot4bz63qCaDs0s=;
+			KESMAC 12.2.1\;KESMAC 12.3|Mac|x64|x64/mac|sgm01.kdc|ZmM4ZNpknBRvaSy0OB5Wdc931L7aHkdX9Ia5c+37DjI=;
+			KESMAC 12.2.1\;KESMAC 12.3|Mac|a64|arm64/mac|sgm01.kdc|ZmM4ZNpknBRvaSy0OB5Wdc931L7aHkdX9Ia5c+37DjI="/>
+	<Files
+		Shell="bdif;klz;none"
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KES\\|KICSN 21.[23-24]|Win|i386|i386/win|sgm.mft|lvFr796ogvZxl7ZC7aLhm4giCfZIuz2b5gIkTJjFy4w=;
+			KESMAC 12.2.1\;KESMAC 12.3|Mac|a64|arm64/mac|sgm.mft|sNsweYrP7/JSQ89ZfMl8v8KPBPvxOkK2VMScVqOoUI0=;
+			KESMAC 12.2.1\;KESMAC 12.3|Mac|x64|x64/mac|sgm.mft|sNsweYrP7/JSQ89ZfMl8v8KPBPvxOkK2VMScVqOoUI0="/>
+	<Files
+		Arch="i386"
+		Item="App;OS;SrvPath;Name;DSKM"
+		List="
+			KAR\\|KARH 3.0.1\;KAR\\|KARH 6.[0-6].0.*\;KASPERSKY\\|KSOSPC\\|KSOSFS 21.[4-9,13-24]\;KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-3].*\;KES [10-11].[0-4].*.*\;KES 21.[2-9,13-24]\;KESSN 21\;KICSN 21\;KSVLA 5.[1-2].*.*|Win|i386/win|sw2.mft|zyhOgJeCv7odcJt4b5QDDpRXcVSG5VDoIxKeW70aQrE=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KICSNLO 2\;KSLS 11\;KSLS 12|Linux\;Linuxs-135\;Linuxs-136|i386/nix|sw2.mft|TDtkLYgPmDihcUs8txG2Cj5Zzsgi81MRpPWL04tsh1w="/>
+	<File
+		App="KAVMAC 26;KESMAC 11.[2-3];KESMAC 12"
+		OS="Mac"
+		Arch="x64"
+		Shell="bdif;klz;none"
+		SrvPath="x64/mac"
+		Name="sw2.mft"
+		DSKM="OFko4FkAw/EBxyRdV9NlQD5EUPm5f9ek7chiMyuDfYM="/>
+	<File
+		App="KESSL 3;KICSNL 1.3.0.*;KSLS 11"
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64/nix"
+		Name="sw2.mft"
+		DSKM="6UsrdN/jNMILDoRi4vmXfamA+3eSVbftuWpHFryHV5E="/>
+	<File
+		App="KSLS 11.[3-4].0;KSLS 12"
+		OS="Linux*"
+		Arch="a64"
+		SysArch="a64"
+		SrvPath="arm64/nix"
+		Name="sw2.mft"
+		DSKM="7hZtTpEsppLmPU9WuiVr8V5rrpjzzj6UFxvRFUOabZA="/>
+	<File
+		App="KAVMAC 26;KESMAC 11.[2-3];KESMAC 12"
+		OS="Mac"
+		Arch="a64"
+		Shell="bdif;klz;none"
+		SrvPath="arm64/mac"
+		Name="sw2.mft"
+		DSKM="qu8MXteu1GNEJcYqpBjSmK8Al3TRPJnWMr2iCsDMSac="/>
+	<File
+		CompID="SW264L"
+		App="KESLKSVLA 12;KESSL 3;KFL 2;KICSNL [1-2];KICSNLO 2;KSLS 12"
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64l/nix"
+		Name="sw2.mft"
+		DSKM="Up5gb1V5ycaQhGncz+1rRQWrAty1NNJYn1W6Svt4UCo="/>
+	<Files
+		App="KAV|KIS|PURE|KSOSPC [15-18];KES [10-11,21];KESSN 21;KICSN 21"
+		OS="Win"
+		Shell="bdif;klz;none"
+		SrvPath="i386/win"
+		Item="Name;DSKM"
+		List="
+			binstat.dat|zHV2Hu8626eRJhMlAaxUohqjvYyp4RhMjBs9/yyKKcY=;
+			binstat2.dat|0T+rpid0qjFvfe4bRYGpvcdRXRXmt0C4SoguJJ6x5Jc="/>
+	<File
+		App="KES 10.2.[5-*].*"
+		OS="Win"
+		Arch="i386"
+		Shell="bdif;klz;none"
+		SrvPath="i386/win"
+		Name="klaaptbase.dll"
+		DSKM="0lgAbtznAX3YUitZCMX7LyLzgwXYdAoneWyKvjKthsg="/>
+	<File
+		App="KES 10.2.[5-*].*"
+		OS="Win"
+		Arch="i386"
+		SrvPath="i386/win"
+		Name="klaaptbase.esm"
+		DSKM="qMsVKyAZ7K+b7BY7cUrsD8G+wwiURSH0hxccCgla3wI="/>
+	<File
+		App="KES 11.[1-4].*.*;KES 21"
+		OS="Win"
+		Arch="i386"
+		SrvPath="i386/win/localizations/en"
+		LocalPath="%BaseFolder%\en"
+		Name="heuristics_loc.xms"
+		DSKM="+oiyC4Lxa9NzWLByP2rMx461TVivjS9/Pewx8lG+ZiQ="/>
+	<Files
+		OS="Win"
+		Arch="i386"
+		Item="App;Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KES 11.[1-4].*.*\;KES 21|ar|i386/win/localizations/ar|%BaseFolder%\\\\ar|heuristics_loc.xms|eVqeq0FCsE1k/+mNDa2Bt8/UNINpDEWYeBBcnn6wLmw=;
+			KES 11.[1-4].*.*\;KES 21|cs|i386/win/localizations/cs|%BaseFolder%\\\\cs|heuristics_loc.xms|aMNuQBf5AZyjDPc89bosnfFzss1eS0BvWmyun+77cVc=;
+			KES 11.[1-4].*.*\;KES 21|de|i386/win/localizations/de|%BaseFolder%\\\\de|heuristics_loc.xms|m+w8OcOKM9VbxSgcJz0NqFv8VaLjLKOq4GRIaMK4Uaw=;
+			KES 11.[1-4].*.*\;KES 21|es|i386/win/localizations/es|%BaseFolder%\\\\es|heuristics_loc.xms|fQAoJ5cCgYmEe/DraHhTOYhvZX8HCj9v95+Zsvq7+oQ=;
+			KES 11.[1-4].*.*\;KES 21|es-mx|i386/win/localizations/es-mx|%BaseFolder%\\\\es-mx|heuristics_loc.xms|NveiV0YSu4NnzktKbMkLghNP9HSd92iaiPWswWvaEFk=;
+			KES 11.[1-4].*.*\;KES 21|fr|i386/win/localizations/fr|%BaseFolder%\\\\fr|heuristics_loc.xms|eSTRb3qvJyfdbEMWchv4EFZvD8WnmdTz76FevTTZZ2I=;
+			KES 11.[1-4].*.*\;KES 21|hu|i386/win/localizations/hu|%BaseFolder%\\\\hu|heuristics_loc.xms|paQB7vJdQnlhElS/JZhpZH+05NeR2LOstOFQs7Tk8Qk=;
+			KES 11.[1-4].*.*\;KES 21|it|i386/win/localizations/it|%BaseFolder%\\\\it|heuristics_loc.xms|t5vRbFzOyrJIV4NRb27V4v2gi2+u4g3JbahsI+fjJig=;
+			KES 11.[1-4].*.*\;KES 21|ja|i386/win/localizations/ja|%BaseFolder%\\\\ja|heuristics_loc.xms|nIZVQMFO1+9skfiyvlqy8QQpEBMSlOr5ihay020rK3Q=;
+			KES 11.[1-4].*.*\;KES 21|kk|i386/win/localizations/kk|%BaseFolder%\\\\kk|heuristics_loc.xms|tB+WqZhfvRCwFqtPBMcyqz9bRVKZ/CgpZXJpHdDoZ0I=;
+			KES 11.[1-4].*.*\;KES 21|ko|i386/win/localizations/ko|%BaseFolder%\\\\ko|heuristics_loc.xms|7NeRPbKmgbUzooRspecvS6WONJQLadf2qEYq/qSF22g=;
+			KES 11.[1-4].*.*\;KES 21|nl|i386/win/localizations/nl|%BaseFolder%\\\\nl|heuristics_loc.xms|tnX7rbGGT4xYnbpuF5sJ6UbBis4PzKxtwBxr66Nkzkg=;
+			KES 11.[1-4].*.*\;KES 21|pl|i386/win/localizations/pl|%BaseFolder%\\\\pl|heuristics_loc.xms|WPr5etFmSUQgsDKn7njjEebQx5C5xUCxxFs3mRE7ZMA=;
+			KES 11.[1-4].*.*\;KES 21|pt|i386/win/localizations/pt|%BaseFolder%\\\\pt|heuristics_loc.xms|i7zV+cNXh6TC4jUHRm6N9YjvJsrDseOR1aLpvk/kL78=;
+			KES 11.[1-4].*.*\;KES 21|pt-br|i386/win/localizations/pt-br|%BaseFolder%\\\\pt-br|heuristics_loc.xms|BMQQqGE/FhTuwrUk8qo2HPsOlqaxStmfR2OB8OGrmxQ=;
+			KES 11.[1-4].*.*\;KES 21|ro|i386/win/localizations/ro|%BaseFolder%\\\\ro|heuristics_loc.xms|Msjn/IdUvbUx/kCdkMJAiW5npsm5apthXSAjacaMPqU=;
+			KES 11.[1-4].*.*\;KES 21|ru|i386/win/localizations/ru|%BaseFolder%\\\\ru|heuristics_loc.xms|PC65MuBdN3bmFBOniTggh5sT+oQitxBJ8P0K7OSlioA=;
+			KES 11.[1-4].*.*\;KES 21|tr|i386/win/localizations/tr|%BaseFolder%\\\\tr|heuristics_loc.xms|SN2nKf20lsYu5MnKZ4wo1CUA28BogrI+t7hc3hIv6DM=;
+			KES 11.[1-4].*.*\;KES 21|vi|i386/win/localizations/vi|%BaseFolder%\\\\vi|heuristics_loc.xms|88ZzD1CCcUqEZxbkSh2TN0D9HxFMjdhsYEsFjath39E=;
+			KES 11.[1-4].*.*\;KES 21|zh-hans|i386/win/localizations/zh-hans|%BaseFolder%\\\\zh-hans|heuristics_loc.xms|YS3MKrpV1CUx8Pim9UD/xPrAxz13wxXvGbopqwl5A0s=;
+			KES 11.[1-4].*.*\;KES 21|zh-hant|i386/win/localizations/zh-hant|%BaseFolder%\\\\zh-hant|heuristics_loc.xms|VmmfT2A4nyUQKK2qtfPqp096+uuL7CzYqnxewUsoA5w=;
+			KES 11.1.1.*\;KES 11.4.*.*\;KES 21|vi-cast|i386/win/localizations/vi-cast|%BaseFolder%\\\\vi-cast|heuristics_loc.xms|88ZzD1CCcUqEZxbkSh2TN0D9HxFMjdhsYEsFjath39E=;
+			KES 11.[3-4].*.*\;KES 21|da|i386/win/localizations/da|%BaseFolder%\\\\da|heuristics_loc.xms|nUZNEPag5uEzaiqeFJMn/OPPi9pPLojgBpmLvFSuZHE="/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="!KAV|KAR|KIS|KES|KFA|PURE|KSOSPC|KSOSFS|SAAS|KSLS|KESMAC|KASPERSKY|KESSL|KICSN|KESSN|KAVMAC|KICSNL|KICSNLO|KFL [1-3,6,10,11,12,14-21,26];KFA [16-18];KICSNL 1;KSLS 10;KSOSPC|KSOSFS [15,17-18];PURE 15;SAAS 18"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSNL|KICSNLO 2"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSNL|KICSNLO 2"
+		Target="[157286-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS 14"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS 14"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS 15"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS 15"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS|PURE 16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS|PURE 16"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS|PURE 17"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS|PURE 17"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS|PURE 18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KIS|PURE 18"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KFA|KIS|PURE|KSOSPC|KSOSFS|SAAS 19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KFA|KIS|PURE|KSOSPC|KSOSFS|SAAS 19"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KFA|KIS|PURE|KSOSPC|KSOSFS|SAAS 20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KFA|KIS|PURE|KSOSPC|KSOSFS|SAAS 20"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KFA|KIS|PURE|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[0-5].*.*"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAV|KFA|KIS|PURE|KSOSPC|KSOSFS|SAAS|KASPERSKY 21.[0-5].*.*"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[6-8]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[6-8]"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.9"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.9"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.13"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.13"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.15"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.15"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.16"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.17"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.17"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.18"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.19"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.20"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.21"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.22"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.23"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSOSPC|KSOSFS|KASPERSKY 21.24"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 10"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 10"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 11.[0-4].*.*"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 11.[0-4].*.*"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.[0-3].*.*"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.[0-3].*.*"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.[4-9]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.[4-9]"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.13"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.13"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.14"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.14"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.15"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.15"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.16"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.17"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.17"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.18"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.19"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.20"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.21"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.22"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.23"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KES 21.24"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAR 3"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAR 3"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAR 6"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAR 6"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 11.[0-3]"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 11.[0-3]"
+		Target="[157286-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 11.4"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 11.4"
+		Target="[157286-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.[0-1]"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.[0-1]"
+		Target="[157286-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.2"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.2"
+		Target="[157286-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.3"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.3"
+		Target="[157286-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.4"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KSLS 12.4"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSL 3"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSL 3"
+		Target="[157286-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 11"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 11"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.0"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.0"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.1"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.1"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.2"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.2"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.3"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESMAC 12.3"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAVMAC 26"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KAVMAC 26"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.19"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.20"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.21"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.22"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.23"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KICSN 21.24"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.19"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.20"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.21"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.22"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.23"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KESSN 21.24"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KFL 2"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<Index
+		CompID="SW2,SW264L,RETR1901_SW2,RETR1901_SW264L"
+		App="KFL 2"
+		Target="[1-262143]"
+		Name="unmod-sw2-1313g.xml"
+		Date="21112025 2108"/>
+	<File
+		CompID="RETR1901_SW2,RETR1901_SW264L"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="sw2-1901g.xml"
+		DSKM="z5Gmx+iZU9ihlZl4vwsB00JBxtfmh+NYmcvRErLP2hY="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="sw2-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADfhm0sIWbB1leh0jnwRpz3uIo6CsoZ9GOrgKmoxHMc5bLmw2wvQRvZCrBEdUYOs7X/aPjoZotIHrg1o8p3XhWsBAB4JrwAAAAIAAigDAFNXMgMAAigEAEJBU0UBAAAJZv7UxA0KOzoxMEszWVptZml0L01OMDJHS2tVZUpxbDlsemFLZlhBOHlSeUNEdEhhbzRoNXB6Slp4bDhtMGp0YVZjOXJxdEovNllDRXYyZTExQng1Uys3Zlh6MFlPQkdHJSU=</Key>
+</Update>
+;:104RfPg47xwhf7KwHw5oFPhaa8yzcb7RIFy5PPtYqs178KmBu1yGtxOohf5jkb8v0klQNONRPCSLCPGQ6qeXAFms%%
