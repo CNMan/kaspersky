@@ -1,0 +1,110 @@
+<Update
+	Date="02102025 1144"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="13872"
+	Shell="bdif;klz;none">
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.22.7.466"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="21.22.7.466_k4w_a/x64"
+		LocalPath="%ProductFolder%\x64"
+		Name="product_metainfo.dll"
+		DSKM="bwh51gnOn2nPP/6yFl8HTftnpwFrj2MbI1qcSY+sJiY="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.22.7.466"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="21.22.7.466_k4w_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			system_interceptors.dll|uJejpQzscsooOp6CIaEX3SlzOyXzaA/Z0c4lcBbT5wk=;
+			traffic_processing.dll|WNkEtD5l3iYhugCCDbI/ONdwbjQJCbgx0WkyYLK1NBE=;
+			weak_settings.dll|czwRBHN36KreYBVygDQhuIpxOTwucrYCm2aUlbV6N8k=;
+			product_metainfo.dll|7tN9OMGqF0gTA0lte/vopDA4v3OFlxkqYGgmKSKSGVM="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.22.7.466"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="21.22.7.466_ksos_a/x64"
+		LocalPath="%ProductFolder%\x64"
+		Name="product_metainfo.dll"
+		DSKM="bwh51gnOn2nPP/6yFl8HTftnpwFrj2MbI1qcSY+sJiY="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			KSOSPC\\|KSOSFS 21.22.7.466|restart_os|a|21.22.7.466_ksos_a|system_interceptors.dll|uJejpQzscsooOp6CIaEX3SlzOyXzaA/Z0c4lcBbT5wk=;
+			KSOSPC\\|KSOSFS 21.22.7.466|restart_os|a|21.22.7.466_ksos_a|traffic_processing.dll|WNkEtD5l3iYhugCCDbI/ONdwbjQJCbgx0WkyYLK1NBE=;
+			KSOSPC\\|KSOSFS 21.22.7.466|restart_os|a|21.22.7.466_ksos_a|weak_settings.dll|czwRBHN36KreYBVygDQhuIpxOTwucrYCm2aUlbV6N8k=;
+			KSOSPC\\|KSOSFS 21.22.7.466|restart_os|a|21.22.7.466_ksos_a|product_metainfo.dll|7tN9OMGqF0gTA0lte/vopDA4v3OFlxkqYGgmKSKSGVM=;
+			KASPERSKY 21.22.7.466|restart_none|b|21.22.7.466_k4w_b|ver_info.json|VkZM8qgUon971FBkC6I3acDNjNUMUzn5wtpxLJTqDD8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.22.7.466"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="21.22.7.466_k4w_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="bcrfjxDoq0oh/msD/m43uYjoU1VAUwjsw1EXnA0irqE="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="b"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.22.7.466|restart_os|21.22.7.466_k4w_b|bl.dll|DtNCtHny5mxBG54mI8/mFuJ4eWhwrVlZ+1jEuqQ/dUw=;
+			KASPERSKY 21.22.7.466|restart_os|21.22.7.466_k4w_b|kl.ui.core.browser.win10.dll|a/h09WnwoUVJzVy9Xd2UCSOKX7rN1Io9WF3fbN4cg0o=;
+			KSOSPC\\|KSOSFS 21.22.7.466|restart_none|21.22.7.466_ksos_b|ver_info.json|VkZM8qgUon971FBkC6I3acDNjNUMUzn5wtpxLJTqDD8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.22.7.466"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="21.22.7.466_ksos_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="bcrfjxDoq0oh/msD/m43uYjoU1VAUwjsw1EXnA0irqE="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.22.7.466"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="21.22.7.466_ksos_b"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			bl.dll|DtNCtHny5mxBG54mI8/mFuJ4eWhwrVlZ+1jEuqQ/dUw=;
+			kl.ui.core.browser.win10.dll|a/h09WnwoUVJzVy9Xd2UCSOKX7rN1Io9WF3fbN4cg0o="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-kav21-mr22-1901g.xml"
+		DSKM="tcuxBQYAnr1oUNh28RRzxOwpsruS0aBAwzOSZAiWqBE="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:104N7iFxqXR5Evsxz3Jna1ec5iVT0gvOb7y70MF9BVEVkIrLmU5PG54GXoL7GhsN2EmVHB9KX2VfSuwizFfBMV4h%%
