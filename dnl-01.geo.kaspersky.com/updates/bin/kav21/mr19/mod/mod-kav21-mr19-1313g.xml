@@ -1,0 +1,80 @@
+<Update
+	Date="15112024 2216"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="13671"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.19.7.527|restart_service|a|../21.19.7.527_k4w_a|bl.dll|HuvhcnzB3CcMckmxLLKvki/9+WeM6K0ZySFKDkRrnYU=;
+			KASPERSKY 21.19.7.527|restart_os|a|../21.19.7.527_k4w_a|ucp_agent.dll|k8r3TYPHqMDSxiiui+VQozX9XIl2GTnZ7QgRtxPmVvw=;
+			KSOSPC\\|KSOSFS 21.19.7.527|restart_service|a|../21.19.7.527_ksos_a|bl.dll|HuvhcnzB3CcMckmxLLKvki/9+WeM6K0ZySFKDkRrnYU=;
+			KSOSPC\\|KSOSFS 21.19.7.527|restart_os|a|../21.19.7.527_ksos_a|ucp_agent.dll|k8r3TYPHqMDSxiiui+VQozX9XIl2GTnZ7QgRtxPmVvw=;
+			KASPERSKY 21.19.7.527|restart_none|b|../21.19.7.527_k4w_b|ver_info.json|6uvMlxW9NuJi5V1ZfIbrPH4110GJO47OKiEJLTRYimk="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.19.7.527"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="../21.19.7.527_k4w_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="A3mC2CGz/9quoUJ+jMuxq1KPtskVhlX7B79C4vMR/PQ="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="b"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.19.7.527|restart_os|../21.19.7.527_k4w_b|avpuimain.dll|AbUJpXG/AU63oh68b2t8mCaeaerc2iyIYNCzqJolHeY=;
+			KASPERSKY 21.19.7.527|restart_os|../21.19.7.527_k4w_b|bi_facade.dll|RU53i4OaiHWCJ0PQ8I3dwYdF8ANgeYZWKIPyzpsLkzc=;
+			KASPERSKY 21.19.7.527|restart_os|../21.19.7.527_k4w_b|kpm_integration.dll|Oqjw8iELCYf5JcpTdRLIHJeL/XYd3TTuG+ZpidkAork=;
+			KASPERSKY 21.19.7.527|restart_os|../21.19.7.527_k4w_b|system.directoryservices.accountmanagement.dll|+EKeA7qWJ1VhfpeI6sbBhrwP858vyrgaIl5YIIMKLwE=;
+			KASPERSKY 21.19.7.527|restart_os|../21.19.7.527_k4w_b|traffic_processing.dll|Hfg9ilCOy889fV7oW0DkMn4Z3vVnXKKzzC21DmKVxKc=;
+			KSOSPC\\|KSOSFS 21.19.7.527|restart_none|../21.19.7.527_ksos_b|ver_info.json|6uvMlxW9NuJi5V1ZfIbrPH4110GJO47OKiEJLTRYimk="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.19.7.527"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="../21.19.7.527_ksos_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="A3mC2CGz/9quoUJ+jMuxq1KPtskVhlX7B79C4vMR/PQ="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.19.7.527"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="../21.19.7.527_ksos_b"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			avpuimain.dll|AbUJpXG/AU63oh68b2t8mCaeaerc2iyIYNCzqJolHeY=;
+			bi_facade.dll|RU53i4OaiHWCJ0PQ8I3dwYdF8ANgeYZWKIPyzpsLkzc=;
+			kpm_integration.dll|Oqjw8iELCYf5JcpTdRLIHJeL/XYd3TTuG+ZpidkAork=;
+			system.directoryservices.accountmanagement.dll|+EKeA7qWJ1VhfpeI6sbBhrwP858vyrgaIl5YIIMKLwE=;
+			traffic_processing.dll|Hfg9ilCOy889fV7oW0DkMn4Z3vVnXKKzzC21DmKVxKc="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-kav21-mr19-1901g.xml"
+		DSKM="ZPOBrkGPBlGPVOSunWS49gKnJ7fXDQCgQrCdZDwkuBI="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:104FV1ZSmIgbjAWQWiCSfxghu3EG9Zdsoz7mqr+oJHqyE5dqBQ+6xhTsSqYrvGh1tfqB4st1aFDzujj2bfQxJOLI%%

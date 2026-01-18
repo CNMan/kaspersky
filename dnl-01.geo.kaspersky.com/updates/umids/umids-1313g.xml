@@ -1,0 +1,162 @@
+<Update
+	Date="18122025 0657"
+	BlstDate="16122025 2038"
+	ObjectType="2=UMIDS;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="2500"
+	CompID="UMIDS">
+	<Exclude
+		App="KES 21.2"/>
+	<File
+		OS="Win"
+		Arch="i386"
+		SrvPath="i386/win"
+		LocalPath="%BaseFolder%\Stat"
+		Name="umids.stt">Mzg3OzIwMjUxMjE4MDY1Nw0K</File>
+	<File
+		OS="Linux"
+		Arch="i386"
+		SrvPath="i386/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="umids.stt">Mzg3OzIwMjUxMjE4MDY1Nw0K</File>
+	<File
+		OS="Win"
+		Arch="x64"
+		SrvPath="x64/win"
+		LocalPath="%BaseFolder%\Stat"
+		Name="umids.stt">Mzg3OzIwMjUxMjE4MDY1Nw0K</File>
+	<File
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="umids.stt">Mzg3OzIwMjUxMjE4MDY1Nw0K</File>
+	<File
+		App="KSLS 11.[3-4];KSLS 12"
+		OS="Linux*"
+		Arch="a64"
+		SrvPath="arm64/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="umids.stt">MzgzOzIwMjUxMjE4MDY1Nw0K</File>
+	<File
+		CompID="UMIDS64L"
+		App="KESLKSVLA 12;KESSL 3;KICSNL [1-2];KICSNLO 2;KSLS 12"
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64l/nix"
+		LocalPath="%BaseFolder%\Stat"
+		Name="umids.stt">Mzg3OzIwMjUxMjE4MDY1Nw0K</File>
+	<Files
+		Shell="bdif;klzu;none"
+		Item="OS;Arch;SrvPath;Name;DSKM"
+		List="
+			Win|i386|i386/win|umids.kdc|C0eg3oO6YTutoVZpki9oU7f8/eKHqljkGZ1be3ZNuWU=;
+			Linux|i386|i386/nix|umids.kdc|QaCUxyluMT2itUxY2edDGdmTDbxtOBBaYL9FC72/6ko=;
+			Win|x64|x64/win|umids.kdc|y7T/decYdJL5hqgdtpXz3RKBXXgO+uDg5OmZw/g7zdo=;
+			Linux*|x64|x64/nix|umids.kdc|XQZaILuQWo2PM1ESiGsFicEAYK1R7apjbvYlG6HUHkM="/>
+	<File
+		App="KSLS 11.[3-4];KSLS 12"
+		OS="Linux*"
+		Arch="a64"
+		Shell="bdif;klzu;none"
+		SrvPath="arm64/nix"
+		Name="umids.kdc"
+		DSKM="1EZm4y7molEdCVXq5b00ssqUosQMyd35PV0/i0NjFVM="/>
+	<Files
+		Item="OS;Arch;SrvPath;Name;DSKM"
+		List="
+			Win|i386|i386/win|umids.mft|NCRpOchz9MyV5EWnPzT5WqoVf+9HdwhgJqgbWB7DBFM=;
+			Linux|i386|i386/nix|umids.mft|60TqFPk5PgTfNn8pl15QoFU8eMy7d3UTyUUNg4euOno=;
+			Win|x64|x64/win|umids.mft|gfCAqKim7zfWl4wPaBYACTUQIxb6PGOCvy35VOmClug=;
+			Linux*|x64|x64/nix|umids.mft|3uox1WIQJg2vdCXAx8f5MC5Rj3z9O3r4jowV08nFZ68="/>
+	<File
+		App="KSLS 11.[3-4];KSLS 12"
+		OS="Linux*"
+		Arch="a64"
+		SrvPath="arm64/nix"
+		Name="umids.mft"
+		DSKM="EpwQmvefkeByoStN4M8N5uOK8r3+KS/udicf0+yGPew="/>
+	<Files
+		CompID="UMIDS64L"
+		App="KESLKSVLA 12;KESSL 3;KICSNL [1-2];KICSNLO 2;KSLS 12"
+		OS="Linux*"
+		Arch="x64"
+		SrvPath="x64l/nix"
+		Item="Name;DSKM"
+		List="
+			umids.mft|j4v69/dONMPI7Mks7HK9qVEg0B2iwWhFDjjNzXV5FSs=;
+			umids.kdc|KtqtKht9jDyIOFJ3HUpGCgxSc7hlWTzpYciisnIQx5k="/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KAV|KIS|PURE 20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KAV|KIS|PURE 20"
+		Target="[1-262143]"
+		Name="unmod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KAV|KIS|PURE|KASPERSKY 21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KAV|KIS|PURE|KASPERSKY 21"
+		Target="[1-262143]"
+		Name="unmod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KSLS 11"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KSLS 11"
+		Target="[1-262143]"
+		Name="unmod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KSLS 12"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="KSLS 12"
+		Target="[1-262143]"
+		Name="unmod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<Index
+		CompID="UMIDS,UMIDS64L,RETR1901_UMIDS,RETR1901_UMIDS64L"
+		App="!KAV|KIS|PURE|KASPERSKY|KSLS [11-12,20-21]"
+		Name="unmod-umids-1313g.xml"
+		Date="17122025 0657"/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="umids-1313g.sha2rg"
+		DSKM="wSrCN5vyAYzSm7otPleJFUsZuftEnbGMbsGAUa1TZYU="/>
+	<File
+		CompID="RETR1901_UMIDS,RETR1901_UMIDS64L"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="umids-1901g.xml"
+		DSKM="xXroKtlfP65pce4oTOmDoxrWEv1JsBrvfrKJxE/SS8k="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="umids-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGkMcbTPrL1IwWgjSLBwlh8XwLMycFC2+lfHKdZyEc6XcEWfjkb/i2bjH8kP0OnE6SqQHUuxH9DAerCw/ttXBXQBAB4JqgEAAAIAAigFAFVNSURTAwACKAQAQkFTRQEAAAlbzi+ADQo7OjEwS1Y2dGY2WUJQaEczMmdNNmZHODVGRXAvVEJjSEc4SU93MzZZRzRBMGVSS2VtdlFoVUc3ZlpGMVBtM0dwMDQrWm1wWlQwR3lNc1ppUG56WGFSQllhTTglJQ==</Key>
+</Update>
+;:104NqlSdrHHMVaFTzDIwim0VH4Bd7Pmw97+ik+qZAWIG1r0laCRscw2RWkmHin0OhL1lKv15HQoct6YKCoN3CjN/%%
