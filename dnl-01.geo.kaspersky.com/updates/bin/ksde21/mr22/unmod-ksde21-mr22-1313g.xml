@@ -1,0 +1,30 @@
+<Update
+	Date="02102025 1446"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="7418"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.22.7.466"
+		ApplyPeriod="0"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			restart_service|a|21.22.7.466_ksde_a|product_metainfo.dll|7tN9OMGqF0gTA0lte/vopDA4v3OFlxkqYGgmKSKSGVM=;
+			restart_service|b|21.22.7.466_ksde_b|kl.ui.core.browser.win10.dll|a/h09WnwoUVJzVy9Xd2UCSOKX7rN1Io9WF3fbN4cg0o=;
+			restart_none|b|21.22.7.466_ksde_b|ver_info.json|VkZM8qgUon971FBkC6I3acDNjNUMUzn5wtpxLJTqDD8=;
+			restart_service|b|21.22.7.466_ksde_b|bl_ksde.dll|5hNMiT4gjOXIHdXJ0HiKFs34LVlfGPpxCpq9yHIf/Eo="/>
+	<File
+		CompID="RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-ksde21-mr22-1901g.xml"
+		DSKM="htM7xu9GQ+E5b22Aezn+bWS1yooUPUUTx/6VGKr78uY="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
+</Update>
+;:104KVcolyD+GNtRRKCKcAktfbyXPLFYnhmz1niDwc8dv3arwgz1NlzO2BjWXPkszMS1h2odCb8e4zLrZylUv8PGL%%

@@ -1,0 +1,731 @@
+<Update
+	Date="24102016 1237"
+	ObjectType="2=KAV15;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	CompID="KAV15">
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		FixName="b"
+		Item="OS;SysArch;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			Win-XP|i386|restart_os|15.0.1.415_b/drv32/501|%WINDIR%/System32/drivers|klflt.sys|cOHe1KARaqvP87YrTbIKKNZlKw/TtJXvF4sgkCjl4rY=;
+			Win-XP|i386|restart_none|15.0.1.415_b/drv32/501/p|%ProductFolder%/klifx86|klflt.sys|cOHe1KARaqvP87YrTbIKKNZlKw/TtJXvF4sgkCjl4rY=;
+			Win-Vista,7|i386|restart_os|15.0.1.415_b/drv32/600|%WINDIR%/System32/drivers|klflt.sys|Q/qhGnBRqmCBea00R5PRQ81EnrA+gDGKDSXFamkgwHI=;
+			Win-Vista,7|i386|restart_none|15.0.1.415_b/drv32/600/p|%ProductFolder%/klifx86|klflt.sys|Q/qhGnBRqmCBea00R5PRQ81EnrA+gDGKDSXFamkgwHI=;
+			Win-8,81|i386|restart_os|15.0.1.415_b/drv32/602|%WINDIR%/System32/drivers|klflt.sys|J7J7Rf4Ubdv7e3wEoP4gjmMNbJXsD8NrVwm11tvF4xQ=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_b/drv32/602/p|%ProductFolder%/klifx86/602|klflt.sys|J7J7Rf4Ubdv7e3wEoP4gjmMNbJXsD8NrVwm11tvF4xQ=;
+			Win-XPx64|x64|restart_os|15.0.1.415_b/drv64/501|%WINDIR%/System32/drivers|klflt.sys|3aCLjExCU5LqvQZOB6HzzblEgZ8ovuzvzFU9I1RvaHc=;
+			Win-XPx64|x64|restart_none|15.0.1.415_b/drv64/501/p|%ProductFolder%/klifx64|klflt.sys|3aCLjExCU5LqvQZOB6HzzblEgZ8ovuzvzFU9I1RvaHc=;
+			Win-Vista,7|x64|restart_os|15.0.1.415_b/drv64/600|%WINDIR%/System32/drivers|klflt.sys|qF6RITY/ZC2UHwfjxb2nZ+jGSEc1OYUFHwFOWg4w8U8=;
+			Win-Vista,7|x64|restart_none|15.0.1.415_b/drv64/600/p|%ProductFolder%/klifx64|klflt.sys|qF6RITY/ZC2UHwfjxb2nZ+jGSEc1OYUFHwFOWg4w8U8=;
+			Win-8,81|x64|restart_os|15.0.1.415_b/drv64/602|%WINDIR%/System32/drivers|klflt.sys|YTAN/zdCBoJcV6JPOyvmqT9jbpBXvgq/tmNA3EZxudc=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_b/drv64/602/p|%ProductFolder%/klifx64/602|klflt.sys|YTAN/zdCBoJcV6JPOyvmqT9jbpBXvgq/tmNA3EZxudc="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		Item="SysArch;SrvPath;LocalPath;Name;DSKM"
+		List="
+			i386|15.0.1.415_b/drv32/p|%ProductFolder%/klpdx86|klpd.cat|EI2d60iCRwLjfst1FwkE7psKmV/TpMxzeN5Z/MVqjo0=;
+			x64|15.0.1.415_b/drv64/p|%ProductFolder%/klpdx64|klpd.cat|Ay6Qy/wx6wzrWkjhK42reu/KQNlap30X2ADDOfHZ/P8="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		FixName="b"
+		Item="OS;SysArch;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			Win-8,81|i386|restart_os|15.0.1.415_b/drv32|%WINDIR%/System32/drivers|klwfp.sys|Fky7Xj/UJReVQSfhOhZD/pwUGjC0MxhHe6m8u5C6u2Q=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_b/drv32/p|%ProductFolder%/klwfpx86|klwfp.cat|hsmIwaBhJPVCN6gz6ZPwOmnLG8bD3jUuyxRya/Gf1LE=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_b/drv32/p|%ProductFolder%/klwfpx86|klwfp.inf|8TkgAXJHaY6FmHF+4t96fHfAPZSp2x7tSb0nsyW2v0Y=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_b/drv32/p|%ProductFolder%/klwfpx86|klwfp.sys|Fky7Xj/UJReVQSfhOhZD/pwUGjC0MxhHe6m8u5C6u2Q=;
+			Win-8,81|x64|restart_os|15.0.1.415_b/drv64|%WINDIR%/System32/drivers|klwfp.sys|jGgMMgwwB/AHevqoPHT9bW4Wv1ynPA3kgPqHDSCA59Q=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_b/drv64/p|%ProductFolder%/klwfpx64|klwfp.cat|fgxvnNvhng33KHqp7MqPcJ/STMxO2xHydomDz/Eg4js=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_b/drv64/p|%ProductFolder%/klwfpx64|klwfp.inf|8TkgAXJHaY6FmHF+4t96fHfAPZSp2x7tSb0nsyW2v0Y=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_b/drv64/p|%ProductFolder%/klwfpx64|klwfp.sys|jGgMMgwwB/AHevqoPHT9bW4Wv1ynPA3kgPqHDSCA59Q=;
+			Win-7,8,81|i386|restart_os|15.0.1.415_b/drv32|%WINDIR%/System32/drivers|klwtp.sys|ETrlS58BRP5e1ja9+t8vxH5Oma693DXHu/T3pNqdcOI=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_b/drv32/p|%ProductFolder%/klwtpx86|klwtp.cat|8W5MHlGhIuU2UvR1X73r/FBeM6GQhelQtv/LntCWcyA=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_b/drv32/p|%ProductFolder%/klwtpx86|klwtp.inf|xcHnVd6HplS5JOb/s82cKo6k8ANAu5rbJp0KRSsAbGc=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_b/drv32/p|%ProductFolder%/klwtpx86|klwtp.sys|ETrlS58BRP5e1ja9+t8vxH5Oma693DXHu/T3pNqdcOI=;
+			Win-7,8,81|x64|restart_os|15.0.1.415_b/drv64|%WINDIR%/System32/drivers|klwtp.sys|WNXH6VbdiBTFlufnhJjxLEIc7oa1QKb5IFaI/mBQ5Ec=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_b/drv64/p|%ProductFolder%/klwtpx64|klwtp.cat|GxLvNIk7FUMIbTnW8KGaQXmTCJHgIGRLqkVVr5QMi48=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_b/drv64/p|%ProductFolder%/klwtpx64|klwtp.inf|xcHnVd6HplS5JOb/s82cKo6k8ANAu5rbJp0KRSsAbGc=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_b/drv64/p|%ProductFolder%/klwtpx64|klwtp.sys|WNXH6VbdiBTFlufnhJjxLEIc7oa1QKb5IFaI/mBQ5Ec="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			configuration.esm|sCAHzz0Jaxjvuf9qpRoQxc86Kti4jteLXVkrZYTv8AQ=;
+			ffcert.exe|UT9yEf4dEOZxvu1MxULyGqCAjG3EC6ek77yCkOWf1So=;
+			fssync.dll|jc0iwtxvfnzAWk+wTw8uINasGRhXxBABnB07yBu7eEo="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="fssync.dll"
+		DSKM="I+yiF3/3fF2frpOvK/SUK2g3sUMFzEXkO6tBg0LMAQw="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		FixName="b"
+		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			restart_none|15.0.1.415_b/kru|%ProductFolder%/Kaspersky Restore Utility|fssync.dll|jc0iwtxvfnzAWk+wTw8uINasGRhXxBABnB07yBu7eEo=;
+			restart_os|15.0.1.415_b|%ProductFolder%|kasperskylab.kis.ui.balloons.dll|NwiiGsFWermM86WoBZksJPWwucYs98rB3lYVPc564xo=;
+			restart_os|15.0.1.415_b|%ProductFolder%|kasperskylab.kis.ui.loader.dll|qMvODypgB7ILCvmzem1qH5SjlyD6KgWtLl7427x43Hc=;
+			restart_os|15.0.1.415_b|%ProductFolder%|lic.ppl|QxOY8RDJiXeRlu1AvBr0UO5k0PcjBH0j884oimahDx0=;
+			restart_os|15.0.1.415_b|%ProductFolder%|licensing_meta.dll|gIOGyUhX7c66jmWvJQUbnJlz/KJxjCYc5YxgVV6CllQ=;
+			restart_os|15.0.1.415_b|%ProductFolder%|oas.ppl|pEPnv9eCP2VhWteyDNFdbEhBCcgE46uF0F1cMGELEAU=;
+			restart_os|15.0.1.415_b|%ProductFolder%|ods.ppl|XPECn8gsA3LeV/Og4g2jniBDfYJtphHklYTCbOOMtK0=;
+			restart_os|15.0.1.415_b|%ProductFolder%|office_antivirus.dll|oFSK/a+WCaPG1C8aJPnnUVVM1hPVGPZdPjYqyKIioUs="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="office_antivirus.dll"
+		DSKM="W3aqOEUiUBPXHzU3xmLSGXNfRQMfPa7dT3wU/U9gvbw="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Name="params.ppl"
+		DSKM="PnNaUMojxoBOJ4P1zMlY7vfkN5Ep/P/bpdODBwJdI0Q="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="params.ppl"
+		DSKM="VofTr88DrMiMxrv538cxyVm4MvNYuUkOQ4YKHmFCb90="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/kru"
+		LocalPath="%ProductFolder%/Kaspersky Restore Utility"
+		Name="params.ppl"
+		DSKM="PnNaUMojxoBOJ4P1zMlY7vfkN5Ep/P/bpdODBwJdI0Q="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		CustomAction="execute cmd=&apos;-kl:uninstall&apos; wait=300;execute cmd=&apos;-kl:install&apos; wait=300"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Name="plugin-nm-server.exe"
+		DSKM="R0yc02lAWhk6OJDqDi/900JrqfyOcdFkn308bI97cw8="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Name="plugins_facade.dll"
+		DSKM="PanbJmOYFvGbeU4ROZtckMPDrJraTyXVl1i2VQrSGkg="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="product_metainfo.dll"
+		DSKM="2ZkKCYA8QMtY7mKFYwCSphm777XacC4xzuSl+98fivQ="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Name="shellex.dll"
+		DSKM="BBhbaRKAPjBKYnRl2djDZyoUbUjR9mpUX8MzZMqepbU="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="shellex.dll"
+		DSKM="ganIT/jYNDUHMlvqgOtfDwFRlFd0Wb8AjxYU20T8RJ0="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			system_interceptors.dll|G53ShlDKiGpogg9dWyMRpn7d2IVR4MmY4NOq5vEKsXc=;
+			threats_disinfection.dll|ukdGcC7NHjQ7sVDLdIPVv3IRwdoOqRAAorC7QrC6NLw=;
+			tsf_plugin.dll|gcEIgCgyuzrRrEqehHLOZK/ToyYjj5vkIcxa250nAws="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="tsf_plugin.dll"
+		DSKM="3A2tr3E8WdscsTN1bHB2FOjxYGPLJotenfrrQp5kgxs="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/ieext"
+		LocalPath="%ProductFolder%/IEExt"
+		Name="ie_plugin.dll"
+		DSKM="TE+l0IQefeg048Cw0iPS5OfYWuepNPGz8U2QXh+EbHM="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b/x64/ieext"
+		LocalPath="%ProductFolder%/x64/IEExt"
+		Name="ie_plugin.dll"
+		DSKM="uF8tvVZyD/E7W66hgbIWONH4e1LtvJtgYUQXfw0Ucyg="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		FixName="b"
+		Item="ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			restart_os|15.0.1.415_b/ffext/cb|%ProductFolder%/FFExt/content_blocker@kaspersky.com|install.rdf|sCkBt4RxIXlKqu8dVbTG8LCIAHc2Wy7bCmXEgZ5coPo=;
+			restart_os|15.0.1.415_b/ffext/cb|%ProductFolder%/FFExt/content_blocker@kaspersky.com|npcontentblocker.dll|TNJHqp/wKr95ZpZlCkHTuvm9PHAQnDF/IuE3O202zgY=;
+			restart_os|15.0.1.415_b/ffext/ob|%ProductFolder%/FFExt/online_banking@kaspersky.com|install.rdf|PgHomgkUvRYFzgpDSodleQfkf3j/58ScL6SdtAY9Jl4=;
+			restart_os|15.0.1.415_b/ffext/ob|%ProductFolder%/FFExt/online_banking@kaspersky.com|nponlinebanking.dll|WmxiZAJimuy/acyMVfJ6mQl8d/+1oha4KLqDCt8//zg=;
+			restart_os|15.0.1.415_b/ffext/vk|%ProductFolder%/FFExt/virtual_keyboard@kaspersky.com|install.rdf|myIDgullCGIefnzzP9tLqzu70Yy8raaPTuScBLgF1u4=;
+			restart_os|15.0.1.415_b/ffext/vk|%ProductFolder%/FFExt/virtual_keyboard@kaspersky.com|npvkplugin.dll|EMvipAddvZkf1ZVZVg46qnMJh26mDHNq+jCcDQ9oWT8=;
+			restart_none|15.0.1.415_b/ipm/default|%DataFolder%/ipm/default|metacslnven-bby.xml|Rs5XI8OzHt4BblChXuPE9ttLLzFMQ8yxwVSeaFLrW3s=;
+			restart_none|15.0.1.415_b/ipm/default/js|%DataFolder%/ipm/default/js|lib.js|VF02vAtEQlYvirY0W9VWdjJT/9zopmEk4ZWXvrM3e+g="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			da|15.0.1.415_b/ipm/default/loc/da|%DataFolder%/ipm/default/loc/da|loc.js|KnUuGIB82fUQI3HGLS08aLp5LMS604fjVopAMNdGCxw=;
+			da|15.0.1.415_b/ipm/default/loc/da|%DataFolder%/ipm/default/loc/da|locale.js|lkJZJ8wm0R4TaJiRPk97Bkdf9S3ZrA4ymBzkSgf6lcM=;
+			de|15.0.1.415_b/ipm/default/loc/de|%DataFolder%/ipm/default/loc/de|loc.js|M7lDRlGiOlPS9dSBRU9UroMCoPAiHoXTTneCAZcqgjg=;
+			de|15.0.1.415_b/ipm/default/loc/de|%DataFolder%/ipm/default/loc/de|locale.js|aN9B6Ed6O7kLiZ0gGlAq88995VOopKs6tr2UG/89lAY=;
+			en|15.0.1.415_b/ipm/default/loc/en|%DataFolder%/ipm/default/loc/en|loc.js|5+GMa0+J47YUj3S6QL69YdjBZUUDbn7XAXsr1VGCVLQ=;
+			en|15.0.1.415_b/ipm/default/loc/en|%DataFolder%/ipm/default/loc/en|locale.js|XnOkOtfeDrFEQMXefARlMb58WbOii7bvdRykxzI1ayM=;
+			es|15.0.1.415_b/ipm/default/loc/es|%DataFolder%/ipm/default/loc/es|loc.js|5BubcZRL1zfl/oEPCX27VDUzo2NDoQ5v0aOWSxKmuzg=;
+			es|15.0.1.415_b/ipm/default/loc/es|%DataFolder%/ipm/default/loc/es|locale.js|zUGWUVE3NsoWyJ9l4Hvs1foPGiy3+g1p6dzawG/1R7c=;
+			es-MX|15.0.1.415_b/ipm/default/loc/es-mx|%DataFolder%/ipm/default/loc/es-MX|loc.js|66d8Qq2l7p0KRyOL6WnNWMYOxUhaFQQJJ+TeYI6x4js=;
+			es-MX|15.0.1.415_b/ipm/default/loc/es-mx|%DataFolder%/ipm/default/loc/es-MX|locale.js|Xc7eooRaiqJolxRnkA2nVAEN8Vm13CHDtn7ZzEaXOYA=;
+			fi|15.0.1.415_b/ipm/default/loc/fi|%DataFolder%/ipm/default/loc/fi|loc.js|2d8nkVFxfltdXjO5mudL/CcdsDDn5Hhu7jFmRqAENVw=;
+			fi|15.0.1.415_b/ipm/default/loc/fi|%DataFolder%/ipm/default/loc/fi|locale.js|3qturUEX/k21CpROJ1ysNzujzI6LTNuW/k5LIzeltVw=;
+			fr|15.0.1.415_b/ipm/default/loc/fr|%DataFolder%/ipm/default/loc/fr|locale.js|BnOih0WorSeToaNpey52z5Xay+j66pwHpqUrimJ8zms=;
+			hu|15.0.1.415_b/ipm/default/loc/hu|%DataFolder%/ipm/default/loc/hu|loc.js|+gy1w9Nru4gw8LUuJWcTV1T1htvlX8J/IkkBtuRqqf0=;
+			hu|15.0.1.415_b/ipm/default/loc/hu|%DataFolder%/ipm/default/loc/hu|locale.js|CvHXnJVorhv37Vrz5zgRpW0hI83wSP4PD2hq5+FwSgs=;
+			it|15.0.1.415_b/ipm/default/loc/it|%DataFolder%/ipm/default/loc/it|loc.js|lLMWQ3G24621RL5GJZSi5g6YmuaFsQwDx0TAzrbPdOs=;
+			it|15.0.1.415_b/ipm/default/loc/it|%DataFolder%/ipm/default/loc/it|locale.js|Ymu9OWmv082Ux1AGOqlkWeMIPjLS9q3Wpx2w9B1MAhg=;
+			ja|15.0.1.415_b/ipm/default/loc/ja|%DataFolder%/ipm/default/loc/ja|loc.js|vvtEdLjnd4wXxG2cL9xxV4Du5Hfod+tbZ/Swy2oRRp0=;
+			ja|15.0.1.415_b/ipm/default/loc/ja|%DataFolder%/ipm/default/loc/ja|locale.js|eoxrL2Dk29zgLiyY1F75Ote9WhCfRdfQucoan3xmdAY=;
+			nb|15.0.1.415_b/ipm/default/loc/nb|%DataFolder%/ipm/default/loc/nb|loc.js|bLM4yQ0rqwhVxhXMP35dMpYG6NuPFWtD4Uf8/Wwx0bc=;
+			nb|15.0.1.415_b/ipm/default/loc/nb|%DataFolder%/ipm/default/loc/nb|locale.js|kUpsYg2QfcZbyU6Cl0K8NNOB03SLp1XQKh7ILJ/jiCw="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="15.0.1.415_b/ipm/default/loc/neutral"
+		LocalPath="%DataFolder%/ipm/default/loc/neutral"
+		Item="Name;DSKM"
+		List="
+			loc.js|5+GMa0+J47YUj3S6QL69YdjBZUUDbn7XAXsr1VGCVLQ=;
+			locale.js|XnOkOtfeDrFEQMXefARlMb58WbOii7bvdRykxzI1ayM="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|15.0.1.415_b/ipm/default/loc/nl|%DataFolder%/ipm/default/loc/nl|loc.js|rhSPFzGLWBd4YF88U2Y1wNgDfSQgOJQ1kFPaCu5/nf4=;
+			nl|15.0.1.415_b/ipm/default/loc/nl|%DataFolder%/ipm/default/loc/nl|locale.js|mvgs24T8RV6H46Uf5ST7GbjKocDMf7gyOwYkOJiR80k=;
+			pl|15.0.1.415_b/ipm/default/loc/pl|%DataFolder%/ipm/default/loc/pl|loc.js|9c9+Pw/QF9MNguIXx87CsYwYMFk1GD3+y2tCIlhlyx8=;
+			pl|15.0.1.415_b/ipm/default/loc/pl|%DataFolder%/ipm/default/loc/pl|locale.js|91CPr47uUjn8SSOpcvFM8wovPjaSbCFoAZ2MKdUnGwo=;
+			pt|15.0.1.415_b/ipm/default/loc/pt|%DataFolder%/ipm/default/loc/pt|loc.js|lYhgkDOmrqvG9YQi+lLtbHZmkawg0ie2t23d8/N3G2A=;
+			pt|15.0.1.415_b/ipm/default/loc/pt|%DataFolder%/ipm/default/loc/pt|locale.js|3MprIn9+Uvplz4zAP9XBRkoQrZbQKHdh+HotlONWtkU=;
+			pt-BR|15.0.1.415_b/ipm/default/loc/pt-br|%DataFolder%/ipm/default/loc/pt-BR|loc.js|xKnkD88LS7M1C8vcYA365SUFsaowFueQof7xjGj0T6o=;
+			pt-BR|15.0.1.415_b/ipm/default/loc/pt-br|%DataFolder%/ipm/default/loc/pt-BR|locale.js|+rg+z5AbZEf/4+w4uJ4otzGeS6SBVcOwRVE7d/bBJYo=;
+			ru|15.0.1.415_b/ipm/default/loc/ru|%DataFolder%/ipm/default/loc/ru|loc.js|WQadoFvCfi/ugAK/K8fdh56ePXL96apliOecMUx/byU=;
+			ru|15.0.1.415_b/ipm/default/loc/ru|%DataFolder%/ipm/default/loc/ru|locale.js|pXhD2owY4SM7JtH7HgwZq13eV3RQ5DPPQtE5wUloVb0=;
+			sv|15.0.1.415_b/ipm/default/loc/sv|%DataFolder%/ipm/default/loc/sv|loc.js|I9Zbog0NmKuX945YUX97HBcPn3d7G3tC+rrrHh943vw=;
+			sv|15.0.1.415_b/ipm/default/loc/sv|%DataFolder%/ipm/default/loc/sv|locale.js|pL5PgDBCVkH/rODqha2BX/9ghNbSpXrt/5femDrifC4=;
+			tr|15.0.1.415_b/ipm/default/loc/tr|%DataFolder%/ipm/default/loc/tr|loc.js|7tb3Rrg0EkyvfP8jG3PwJwPUDUfqc/7l0EW7yb6LJ1I=;
+			tr|15.0.1.415_b/ipm/default/loc/tr|%DataFolder%/ipm/default/loc/tr|locale.js|DOLdyX6axHJNtgb1yyUkr+m/a4b/bOnVE11hnfdly3M=;
+			uk|15.0.1.415_b/ipm/default/loc/uk|%DataFolder%/ipm/default/loc/uk|loc.js|QWA28pC82+BZ4Nzxjj5idWhHfJgQQgfVO4snyFLX6Rw=;
+			uk|15.0.1.415_b/ipm/default/loc/uk|%DataFolder%/ipm/default/loc/uk|locale.js|Xv8DtYrFfIo24aC+Hv/RJ6SIrqn0M7Z/bW6xqEP1XCw=;
+			zh-Hans|15.0.1.415_b/ipm/default/loc/zh-hans|%DataFolder%/ipm/default/loc/zh-Hans|loc.js|E+K6ZbUtWbdpIsdXl4LTh0rtkQN3ErhXKL//ANDUhWM=;
+			zh-Hans|15.0.1.415_b/ipm/default/loc/zh-hans|%DataFolder%/ipm/default/loc/zh-Hans|locale.js|VNNjtwsq1LTVYQriMd4NrC2R+ssJ3whw1czduTJS5r4=;
+			zh-Hant|15.0.1.415_b/ipm/default/loc/zh-hant|%DataFolder%/ipm/default/loc/zh-Hant|loc.js|dBwxq78u/FeP0ULceQohCXpHOFMobrxVpesZl+k+kII=;
+			zh-Hant|15.0.1.415_b/ipm/default/loc/zh-hant|%DataFolder%/ipm/default/loc/zh-Hant|locale.js|LAmEC4cXdz5f/Yd2ry2/RFk34NXk8+5AwNOIznKb0CI=;
+			da|15.0.1.415_b/skin/resources/da/locs|%ProductFolder%/skin/resources/da/locs|balloons.lt|AaKdGdY5qvotrkQyGC9q4i8JlSWoRdF9YRkd2cxGVTk=;
+			de|15.0.1.415_b/skin/resources/de/locs|%ProductFolder%/skin/resources/de/locs|balloons.lt|dtKJgqBy+gqKYL2hLiexGSMI9QEl0LkWHn2OStVDF+0=;
+			en|15.0.1.415_b/skin/resources/en/locs|%ProductFolder%/skin/resources/en/locs|balloons.lt|lyChUg2CIKWfxcDH6I9OyCeTe97MQ9kKDxhECupnjck=;
+			es|15.0.1.415_b/skin/resources/es/locs|%ProductFolder%/skin/resources/es/locs|balloons.lt|gtQXmEXnUT4ek3CeenSTSbbySaN4P7olflWO+eCm/UI=;
+			es-MX|15.0.1.415_b/skin/resources/es-mx/locs|%ProductFolder%/skin/resources/es-MX/locs|balloons.lt|BzF4JOMw05ZVtKLonyLy8rw+ioHyrXtVwkoDT+5c46o=;
+			fi|15.0.1.415_b/skin/resources/fi/locs|%ProductFolder%/skin/resources/fi/locs|balloons.lt|QANv8lsaAxmWx4DwWUx6cYP1OOBg7wDeaqMIIxEKm3w=;
+			fr|15.0.1.415_b/skin/resources/fr/locs|%ProductFolder%/skin/resources/fr/locs|balloons.lt|ZXDe52J2DzVF3PhtYcaShXdF/tR1wYuvOFn9jLWJ/EE=;
+			it|15.0.1.415_b/skin/resources/it/locs|%ProductFolder%/skin/resources/it/locs|balloons.lt|b+O7ywKZ0/VdoP0sY5n+JigL0+M5LVHikNvzsTbyS+8=;
+			ja|15.0.1.415_b/skin/resources/ja/locs|%ProductFolder%/skin/resources/ja/locs|balloons.lt|TDnSOJV/h5rkclW6gEJQOq1NigSeMGZuq3cpeWNyioI=;
+			nb|15.0.1.415_b/skin/resources/nb/locs|%ProductFolder%/skin/resources/nb/locs|balloons.lt|+qD7/mswt6sDsGdLzUIWHNhVAUc5INX82ZhNCGfDDHM="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="15.0.1.415_b/skin/resources/neutral/locs"
+		LocalPath="%ProductFolder%/skin/resources/neutral/locs"
+		Name="balloons.lt"
+		DSKM="lyChUg2CIKWfxcDH6I9OyCeTe97MQ9kKDxhECupnjck="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|15.0.1.415_b/skin/resources/nl/locs|%ProductFolder%/skin/resources/nl/locs|balloons.lt|HjcSwcmrZ+sHBOM0OJ0ohhO8IBSOzXMVgTmWU+7hcGw=;
+			pl|15.0.1.415_b/skin/resources/pl/locs|%ProductFolder%/skin/resources/pl/locs|balloons.lt|cZuxO0KJZvb9wi98AHyMHZBnkOCofjlGtgX9LnFEqlQ=;
+			pt|15.0.1.415_b/skin/resources/pt/locs|%ProductFolder%/skin/resources/pt/locs|balloons.lt|FR3TR/BMf0xkZWBU5I1DqBCgSnh3i8qwyoeecicE234=;
+			pt-BR|15.0.1.415_b/skin/resources/pt-br/locs|%ProductFolder%/skin/resources/pt-BR/locs|balloons.lt|uwXBEP9+svXxeRaLHb9c/YTkhmh3jyhbB/zkZ2lZQzI=;
+			ru|15.0.1.415_b/skin/resources/ru/locs|%ProductFolder%/skin/resources/ru/locs|balloons.lt|oF10dJZj/PUpEfdn++vNpJH9zLpTYUImvspPM8i+24M=;
+			sv|15.0.1.415_b/skin/resources/sv/locs|%ProductFolder%/skin/resources/sv/locs|balloons.lt|TGmJZlzu1EhOrXNPGW4/TuB+YQzKdW7zvBQ4eTL3SQM=;
+			tr|15.0.1.415_b/skin/resources/tr/locs|%ProductFolder%/skin/resources/tr/locs|balloons.lt|NJG1aHC6vPYE6fhjHcFu68pEWNic0bArey4DsyWa6+o=;
+			zh-Hans|15.0.1.415_b/skin/resources/zh-hans/locs|%ProductFolder%/skin/resources/zh-Hans/locs|balloons.lt|vZIK8zkoyWv5gr9P0jih7gbR2qCYZzqaJ7gvco+8tgY=;
+			zh-Hant|15.0.1.415_b/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|balloons.lt|C0zxApGqzSwJJfPSoYJHJSKfOlEzq8g3cbtUOtkKnEc=;
+			da|15.0.1.415_b/skin/resources/da/locs|%ProductFolder%/skin/resources/da/locs|common.lt|jKc5qDmpKKGHu95IWPIljtFsW0tOCzFxLexRMXcWlqc=;
+			da|15.0.1.415_b/kru/skin/resources/da/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/da/locs|common.lt|jKc5qDmpKKGHu95IWPIljtFsW0tOCzFxLexRMXcWlqc=;
+			de|15.0.1.415_b/skin/resources/de/locs|%ProductFolder%/skin/resources/de/locs|common.lt|Pory3mlOSeaDZKmNj+MtUGZ1heZ3rjV4WVZFGG0BtWM=;
+			de|15.0.1.415_b/kru/skin/resources/de/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/de/locs|common.lt|Pory3mlOSeaDZKmNj+MtUGZ1heZ3rjV4WVZFGG0BtWM=;
+			en|15.0.1.415_b/skin/resources/en/locs|%ProductFolder%/skin/resources/en/locs|common.lt|JWonCDm1F80R5KDucfOKmhI+x0mfpAhFpAuD2Q7/pa8=;
+			en|15.0.1.415_b/kru/skin/resources/en/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/en/locs|common.lt|JWonCDm1F80R5KDucfOKmhI+x0mfpAhFpAuD2Q7/pa8=;
+			es|15.0.1.415_b/skin/resources/es/locs|%ProductFolder%/skin/resources/es/locs|common.lt|aUPaj20jJJL6BXvfG7jyUH/O5Ml5Mbos139HaeyyaiI=;
+			es|15.0.1.415_b/kru/skin/resources/es/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/es/locs|common.lt|aUPaj20jJJL6BXvfG7jyUH/O5Ml5Mbos139HaeyyaiI=;
+			es-MX|15.0.1.415_b/skin/resources/es-mx/locs|%ProductFolder%/skin/resources/es-MX/locs|common.lt|w/LfcH9cIMyFEwgqd/PkvGci7Kuf82+hMUSTvMOk/hc=;
+			es-MX|15.0.1.415_b/kru/skin/resources/es-mx/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/es-MX/locs|common.lt|w/LfcH9cIMyFEwgqd/PkvGci7Kuf82+hMUSTvMOk/hc=;
+			fi|15.0.1.415_b/skin/resources/fi/locs|%ProductFolder%/skin/resources/fi/locs|common.lt|Yi3qMe5NAHHk252GnnKfAxgujByBr0AaNSho3Jw6RcA=;
+			fi|15.0.1.415_b/kru/skin/resources/fi/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/fi/locs|common.lt|Yi3qMe5NAHHk252GnnKfAxgujByBr0AaNSho3Jw6RcA=;
+			hu|15.0.1.415_b/skin/resources/hu/locs|%ProductFolder%/skin/resources/hu/locs|common.lt|32EneUKQ2wugOBghmMMuG8PQvJvUF/YOQkNYsH10p0g=;
+			hu|15.0.1.415_b/kru/skin/resources/hu/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/hu/locs|common.lt|32EneUKQ2wugOBghmMMuG8PQvJvUF/YOQkNYsH10p0g=;
+			it|15.0.1.415_b/skin/resources/it/locs|%ProductFolder%/skin/resources/it/locs|common.lt|CHGB4y3pzv6qvEDCmndSgAQJCbI85x3scby10r0obz0=;
+			it|15.0.1.415_b/kru/skin/resources/it/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/it/locs|common.lt|CHGB4y3pzv6qvEDCmndSgAQJCbI85x3scby10r0obz0=;
+			ja|15.0.1.415_b/skin/resources/ja/locs|%ProductFolder%/skin/resources/ja/locs|common.lt|zLlB2BsfU25CHExIDqhlgJUPJuX5FFuId47uXhIto6U=;
+			ja|15.0.1.415_b/kru/skin/resources/ja/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/ja/locs|common.lt|zLlB2BsfU25CHExIDqhlgJUPJuX5FFuId47uXhIto6U=;
+			nb|15.0.1.415_b/skin/resources/nb/locs|%ProductFolder%/skin/resources/nb/locs|common.lt|0Jf6724UCToRjycHLWLNi+MB0l1Vyx4/u4foOMi6DhU=;
+			nb|15.0.1.415_b/kru/skin/resources/nb/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/nb/locs|common.lt|0Jf6724UCToRjycHLWLNi+MB0l1Vyx4/u4foOMi6DhU="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			15.0.1.415_b/skin/resources/neutral/locs|%ProductFolder%/skin/resources/neutral/locs|common.lt|JWonCDm1F80R5KDucfOKmhI+x0mfpAhFpAuD2Q7/pa8=;
+			15.0.1.415_b/kru/skin/resources/neutral/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/neutral/locs|common.lt|JWonCDm1F80R5KDucfOKmhI+x0mfpAhFpAuD2Q7/pa8="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|15.0.1.415_b/skin/resources/nl/locs|%ProductFolder%/skin/resources/nl/locs|common.lt|0NJY5AvKIQI4QReyhr7ds0L4f0nhrWn5P97BkX7iJng=;
+			nl|15.0.1.415_b/kru/skin/resources/nl/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/nl/locs|common.lt|0NJY5AvKIQI4QReyhr7ds0L4f0nhrWn5P97BkX7iJng=;
+			pl|15.0.1.415_b/skin/resources/pl/locs|%ProductFolder%/skin/resources/pl/locs|common.lt|A9Y9mjOpATuN4Mog+qq9gQSb9trWqT/D6cwC/IPg3Io=;
+			pl|15.0.1.415_b/kru/skin/resources/pl/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/pl/locs|common.lt|A9Y9mjOpATuN4Mog+qq9gQSb9trWqT/D6cwC/IPg3Io=;
+			pt|15.0.1.415_b/skin/resources/pt/locs|%ProductFolder%/skin/resources/pt/locs|common.lt|do/wUBe1uswrA6mnSGtEfq2i03mzXsoPtDG+gft3TDg=;
+			pt|15.0.1.415_b/kru/skin/resources/pt/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/pt/locs|common.lt|do/wUBe1uswrA6mnSGtEfq2i03mzXsoPtDG+gft3TDg=;
+			pt-BR|15.0.1.415_b/skin/resources/pt-br/locs|%ProductFolder%/skin/resources/pt-BR/locs|common.lt|VljGmTP0XszcMP7GBI/EVACQ1sO2GzNzWLrC+iel6/s=;
+			pt-BR|15.0.1.415_b/kru/skin/resources/pt-br/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/pt-BR/locs|common.lt|VljGmTP0XszcMP7GBI/EVACQ1sO2GzNzWLrC+iel6/s=;
+			ru|15.0.1.415_b/skin/resources/ru/locs|%ProductFolder%/skin/resources/ru/locs|common.lt|JaUf+mL/00421bODgzHBnx7J/1pa8s3v6KU+OdX6xRU=;
+			ru|15.0.1.415_b/kru/skin/resources/ru/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/ru/locs|common.lt|JaUf+mL/00421bODgzHBnx7J/1pa8s3v6KU+OdX6xRU=;
+			sv|15.0.1.415_b/skin/resources/sv/locs|%ProductFolder%/skin/resources/sv/locs|common.lt|SQFUaddRANSL2E6F47GGb98fURiy2HoyU8q3wBDG9OM=;
+			sv|15.0.1.415_b/kru/skin/resources/sv/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/sv/locs|common.lt|SQFUaddRANSL2E6F47GGb98fURiy2HoyU8q3wBDG9OM=;
+			tr|15.0.1.415_b/skin/resources/tr/locs|%ProductFolder%/skin/resources/tr/locs|common.lt|BIPz4WUJe3IINKijfnF25yVgvgleBJ8rOZDHbpfdSjw=;
+			tr|15.0.1.415_b/kru/skin/resources/tr/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/tr/locs|common.lt|BIPz4WUJe3IINKijfnF25yVgvgleBJ8rOZDHbpfdSjw=;
+			uk|15.0.1.415_b/skin/resources/uk/locs|%ProductFolder%/skin/resources/uk/locs|common.lt|1FsRHeHPIy8iwzNxrJqBBrws/POSS4s5dr4CyJ8xwz0=;
+			uk|15.0.1.415_b/kru/skin/resources/uk/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/uk/locs|common.lt|1FsRHeHPIy8iwzNxrJqBBrws/POSS4s5dr4CyJ8xwz0=;
+			zh-Hans|15.0.1.415_b/skin/resources/zh-hans/locs|%ProductFolder%/skin/resources/zh-Hans/locs|common.lt|0cs8Bd+MmFzD9ockNz6VyipcI2NlU6sQvQ0WW35wwC4=;
+			zh-Hans|15.0.1.415_b/kru/skin/resources/zh-hans/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/zh-Hans/locs|common.lt|0cs8Bd+MmFzD9ockNz6VyipcI2NlU6sQvQ0WW35wwC4=;
+			zh-Hant|15.0.1.415_b/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|common.lt|AHVv3+ITvgRGt0nVKyE/+3dz0n4Y7nsFoBvll9Q2Auk=;
+			zh-Hant|15.0.1.415_b/kru/skin/resources/zh-hant/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/zh-Hant/locs|common.lt|AHVv3+ITvgRGt0nVKyE/+3dz0n4Y7nsFoBvll9Q2Auk="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Name="patch_b_kis2015mr1.msp"
+		DSKM="45mHUgZkiWSmCfPhJehXLjh7n4HFC7gugstMR0AuXoU="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		CustomAction="execute cmd=&apos;-p &quot;patch_b_kis2015mr1.msp&quot;&apos; wait=300"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="b"
+		SrvPath="15.0.1.415_b"
+		LocalPath="%ProductFolder%"
+		Name="patch_b.execute"
+		DSKM="RYh1wa0HSBctoybIb3gSldhZLr05p9u848TD2E2TajU="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		FixName="c"
+		Item="OS;SysArch;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			Win-XP|i386|restart_os|15.0.1.415_c/drv32/501|%WINDIR%/System32/drivers|klif.sys|q+jUg5/Ov/RthRlKh6gNpfLYysRKzbCZdYqcUQOhkB4=;
+			Win-XP|i386|restart_none|15.0.1.415_c/drv32/501/p|%ProductFolder%/klifx86|klif.cat|aLVlySFDaRG+tT4iR2fHN9y4UC6dzO4TPrd7Om9AP/4=;
+			Win-XP|i386|restart_none|15.0.1.415_c/drv32/501/p|%ProductFolder%/klifx86|klif.inf|HJrsAMh6Seb9WwpzFvB3uY18s99I+rlvm0yFP/Zgb5M=;
+			Win-XP|i386|restart_none|15.0.1.415_c/drv32/501/p|%ProductFolder%/klifx86|klif.sys|q+jUg5/Ov/RthRlKh6gNpfLYysRKzbCZdYqcUQOhkB4=;
+			Win-Vista,7|i386|restart_os|15.0.1.415_c/drv32/600|%WINDIR%/System32/drivers|klif.sys|cCf3+H/RZY0BxAC2ZykhktoZ8ZvwNxlZDo9qIZHjj7I=;
+			Win-Vista,7,8,81|i386|restart_none|15.0.1.415_c/drv32/600/p|%ProductFolder%/klifx86|klif.cat|9C2rry4+x4xx5wFJyY5EeOMM+Csuu8PyBiC+MXVKerc=;
+			Win-Vista,7,8,81|i386|restart_none|15.0.1.415_c/drv32/600/p|%ProductFolder%/klifx86|klif.inf|HJrsAMh6Seb9WwpzFvB3uY18s99I+rlvm0yFP/Zgb5M=;
+			Win-Vista,7,8,81|i386|restart_none|15.0.1.415_c/drv32/600/p|%ProductFolder%/klifx86|klif.sys|cCf3+H/RZY0BxAC2ZykhktoZ8ZvwNxlZDo9qIZHjj7I=;
+			Win-8,81|i386|restart_os|15.0.1.415_c/drv32/602|%WINDIR%/System32/drivers|klif.sys|GqZy38FJGybE9B7GoTEodjYOumXVc8+DvS47t2DTfrY=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_c/drv32/602/p|%ProductFolder%/klifx86/602|klif.cat|3Tw7kjS38UemPlZifB1nhFbgouP2O2YUsr25ebTVoUk=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_c/drv32/602/p|%ProductFolder%/klifx86/602|klif.inf|HJrsAMh6Seb9WwpzFvB3uY18s99I+rlvm0yFP/Zgb5M=;
+			Win-7,8,81|i386|restart_none|15.0.1.415_c/drv32/602/p|%ProductFolder%/klifx86/602|klif.sys|GqZy38FJGybE9B7GoTEodjYOumXVc8+DvS47t2DTfrY=;
+			Win-XPx64|x64|restart_os|15.0.1.415_c/drv64/501|%WINDIR%/System32/drivers|klif.sys|CvIBUebDOgg8pTsHmMufNSoZtkM/mr0AeBhBOWp9IHo=;
+			Win-XPx64|x64|restart_none|15.0.1.415_c/drv64/501/p|%ProductFolder%/klifx64|klif.cat|T5J2CwSpv0y2gQPzsJwJtUtSJD1oOxUUNJMkSVJTzPw=;
+			Win-XPx64|x64|restart_none|15.0.1.415_c/drv64/501/p|%ProductFolder%/klifx64|klif.inf|HJrsAMh6Seb9WwpzFvB3uY18s99I+rlvm0yFP/Zgb5M=;
+			Win-XPx64|x64|restart_none|15.0.1.415_c/drv64/501/p|%ProductFolder%/klifx64|klif.sys|CvIBUebDOgg8pTsHmMufNSoZtkM/mr0AeBhBOWp9IHo=;
+			Win-Vista,7|x64|restart_os|15.0.1.415_c/drv64/600|%WINDIR%/System32/drivers|klif.sys|yUEJsSENptzHnRInWOtZ+XzZlQu+m83YuMQf53YjyTI=;
+			Win-Vista,7,8,81|x64|restart_none|15.0.1.415_c/drv64/600/p|%ProductFolder%/klifx64|klif.cat|cCww86vdKl1+Ej+nxs55uWZVR8Ga4ol2jzExE8z2t4Q=;
+			Win-Vista,7,8,81|x64|restart_none|15.0.1.415_c/drv64/600/p|%ProductFolder%/klifx64|klif.inf|HJrsAMh6Seb9WwpzFvB3uY18s99I+rlvm0yFP/Zgb5M=;
+			Win-Vista,7,8,81|x64|restart_none|15.0.1.415_c/drv64/600/p|%ProductFolder%/klifx64|klif.sys|yUEJsSENptzHnRInWOtZ+XzZlQu+m83YuMQf53YjyTI=;
+			Win-8,81|x64|restart_os|15.0.1.415_c/drv64/602|%WINDIR%/System32/drivers|klif.sys|Lg1abbqMicu4I3rWQxmEoRuVGZEwzmAdLOKdRsqJi18=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_c/drv64/602/p|%ProductFolder%/klifx64/602|klif.cat|yr+6K0Gen8zWb1+qgUx4MkB3ZmyWPj2n3C79D3HrIZA=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_c/drv64/602/p|%ProductFolder%/klifx64/602|klif.inf|HJrsAMh6Seb9WwpzFvB3uY18s99I+rlvm0yFP/Zgb5M=;
+			Win-7,8,81|x64|restart_none|15.0.1.415_c/drv64/602/p|%ProductFolder%/klifx64/602|klif.sys|Lg1abbqMicu4I3rWQxmEoRuVGZEwzmAdLOKdRsqJi18="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="c"
+		SrvPath="15.0.1.415_c"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			am_facade.dll|x1MoUP9soLYhaPmM7NIsV3hKUKqlsYW6KNhaboOVa98=;
+			avs_eka.dll|/sHBy8Moqt9/3CNvT6y1wMchizZ9Hr1hOghV3CdUhwA=;
+			hips.ppl|ORK1Y6f6l4bSF5dUP9wKg5QmYPA+4Kd0hmX58DSvfog=;
+			licensing_product_facade.dll|G6P4iBwIcao+KeY4w3tnysObt5TGpUJseu3kkwAZR2I=;
+			tm.ppl|lJIglo4qN3KwgMcVd4ZEW837cjYWs7j1ttkfLT24L9c=;
+			wifi_protection.dll|lnozGwbEw/Xpf7ICEUWb/t3GmlVXmTcaRPn4TydH3J8=;
+			patch_c_kis2015mr1.msp|IOmlleekpglXVW8an5jKgJZj7K/sgfYCAMHeWYoh2p8="/>
+	<Patch
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		CustomAction="execute cmd=&apos;-p &quot;patch_c_kis2015mr1.msp&quot;&apos; wait=300"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="c"
+		SrvPath="15.0.1.415_c"
+		LocalPath="%ProductFolder%"
+		Name="patch_c.execute"
+		DSKM="vBv5dLDJRuSkt1lnX6Dtw1OKsheS7NFTXQ0b3kCRAdk="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			ro|15.0.1.415_c/ipm/default/loc/ro|%DataFolder%/ipm/default/loc/ro|loc.js|GWEy9gpjmM9KIBWXwavoMr0+airN7QByIpkwc2gSKYA=;
+			fr|15.0.1.415_c/kru/skin/resources/fr/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/fr/locs|common.lt|YLqkjCxBi0K8mlTZUfdCtOi/22+33MI9dNRP5fAKn5w=;
+			ro|15.0.1.415_c/kru/skin/resources/ro/locs|%ProductFolder%/Kaspersky Restore Utility/skin/resources/ro/locs|common.lt|L6IdrMGqyfpvF5goMiFQBLTzlnEYYjV31KCytZMOr08=;
+			ro|15.0.1.415_c/skin/loc/ro|%ProductFolder%/skin/loc/ro|main.loc|0y2HVnuBoYcTvAg3NNuPJMQamPENzA/2H82m6kW/wfY=;
+			zh-Hant|15.0.1.415_c/skin/loc/zh-hant|%ProductFolder%/skin/loc/zh-Hant|main.loc|MQb8SWtdIc57HncIFUlU4OQ/rv+IC56+ckuTJ4EgMak=;
+			ar|15.0.1.415_c/skin/resources/ar/locs|%ProductFolder%/skin/resources/ar/locs|kpmintegration.lt|P9hLwJYBXdTakABhlPjCuBVgD4Ot75ADL2Zc1Hg1xXw=;
+			ar|15.0.1.415_c/skin/resources/ar/locs|%ProductFolder%/skin/resources/ar/locs|migrationwizard.lt|mj/1ZWAkP9lkPFVnieC7n8zWcZ1MzURffe2hkS8NBkg=;
+			bg|15.0.1.415_c/skin/resources/bg/locs|%ProductFolder%/skin/resources/bg/locs|kpmintegration.lt|GCJUT6pSo2ymDH1TfzFNcklJx7Nj42g+nU6x3BBGWt8=;
+			bg|15.0.1.415_c/skin/resources/bg/locs|%ProductFolder%/skin/resources/bg/locs|migrationwizard.lt|zjAbnvJTEsQnfLixeOlhVxMSaYHJEkBP7seuJB1Es78=;
+			da|15.0.1.415_c/skin/resources/da/locs|%ProductFolder%/skin/resources/da/locs|kpmintegration.lt|kkMDYvry9pFUlD9CZI/6/YGf0PtLE2oXJPXnXUUV69Y=;
+			da|15.0.1.415_c/skin/resources/da/locs|%ProductFolder%/skin/resources/da/locs|migrationwizard.lt|2JJe7dzCUfFKqXTK/+nfNacMJ6u83wlOSjIXCOL43SY=;
+			de|15.0.1.415_c/skin/resources/de/locs|%ProductFolder%/skin/resources/de/locs|kpmintegration.lt|qQm7k+4NX0lVoxicBSz+dc9CRrCXZPsCdFqKz4UFS90=;
+			de|15.0.1.415_c/skin/resources/de/locs|%ProductFolder%/skin/resources/de/locs|migrationwizard.lt|n1NX+3rFCfhcvZpWUrAoH/za8GLRDXWzgyJ0d/55wIQ=;
+			el|15.0.1.415_c/skin/resources/el/locs|%ProductFolder%/skin/resources/el/locs|kpmintegration.lt|PJoHwFuu4LJiR/JzNjOC/flkjRGshBm5XzTdoA2QT1c=;
+			el|15.0.1.415_c/skin/resources/el/locs|%ProductFolder%/skin/resources/el/locs|migrationwizard.lt|ZzsTa/KbxeR/03EeonBAKYVmD96ytDIb9oE5mQyH/gA=;
+			en|15.0.1.415_c/skin/resources/en/locs|%ProductFolder%/skin/resources/en/locs|kpmintegration.lt|YgUJpq21wxsBuNaySq0YVVhRrvT8iZ0Vow1kFReW5dc=;
+			en|15.0.1.415_c/skin/resources/en/locs|%ProductFolder%/skin/resources/en/locs|migrationwizard.lt|nQ2WJY7wcZO4UxTMiVAbftEiLc6QnzaPOFA/jA1ozH4=;
+			es|15.0.1.415_c/skin/resources/es/locs|%ProductFolder%/skin/resources/es/locs|kpmintegration.lt|vUWg2EggwcLH5Ib9cXOkbbL8SFZMQ1GB/0ApGvJRP0Y=;
+			es|15.0.1.415_c/skin/resources/es/locs|%ProductFolder%/skin/resources/es/locs|migrationwizard.lt|hjuxa5T+L8dmEm6GZL5ViCGYthloTSKRV5ig/dE0XOc=;
+			fi|15.0.1.415_c/skin/resources/fi/locs|%ProductFolder%/skin/resources/fi/locs|kpmintegration.lt|QBnf0XLeLsXTtkPQXfwgnNN+oCzDuzhJQeRLYwp4bgU=;
+			fi|15.0.1.415_c/skin/resources/fi/locs|%ProductFolder%/skin/resources/fi/locs|migrationwizard.lt|eDQ3SLOlhPWJ27lGQW7SFpJUoCNmNQ98qPyyZANjyCU=;
+			fr|15.0.1.415_c/skin/resources/fr/locs|%ProductFolder%/skin/resources/fr/locs|common.lt|YLqkjCxBi0K8mlTZUfdCtOi/22+33MI9dNRP5fAKn5w=;
+			fr|15.0.1.415_c/skin/resources/fr/locs|%ProductFolder%/skin/resources/fr/locs|kpmintegration.lt|0Gkq+7mOe/BCUJUFf98OBe/ZO17ZmVk6DiNhn9PeSfY=;
+			fr|15.0.1.415_c/skin/resources/fr/locs|%ProductFolder%/skin/resources/fr/locs|migrationwizard.lt|PcnD5WuLhhy1qMrJzwOWj5y/9Lk1uFajXisCsHg7E+8=;
+			fr|15.0.1.415_c/skin/resources/fr/locs|%ProductFolder%/skin/resources/fr/locs|settings.lt|V5fSdhmgq49uVt2TOO5kM4OvDabOqD+VLFBvzDSx+LA=;
+			hu|15.0.1.415_c/skin/resources/hu/locs|%ProductFolder%/skin/resources/hu/locs|kpmintegration.lt|TErMD79F2nYPNZLRnr5KEYeiUYcQPn4lUijyrJm/AEI=;
+			hu|15.0.1.415_c/skin/resources/hu/locs|%ProductFolder%/skin/resources/hu/locs|migrationwizard.lt|YN55aw4XHrcCRxPJfqVWxpZUff/zb/ils56q/1QhtVs=;
+			it|15.0.1.415_c/skin/resources/it/locs|%ProductFolder%/skin/resources/it/locs|kpmintegration.lt|y1b3mD7DKp5e5G9ztIu+4f0uooA59EPHEB9A0Bb9YIk=;
+			it|15.0.1.415_c/skin/resources/it/locs|%ProductFolder%/skin/resources/it/locs|migrationwizard.lt|WdYngwxTolPn4BfNNzdTI0MvtA+eEkMYqfeJChjzhEU=;
+			mk|15.0.1.415_c/skin/resources/mk/locs|%ProductFolder%/skin/resources/mk/locs|kpmintegration.lt|EqW0AGZpploFbnWZXxOmA9p8nuwyrZ/OQ1xp7xa6l20=;
+			mk|15.0.1.415_c/skin/resources/mk/locs|%ProductFolder%/skin/resources/mk/locs|migrationwizard.lt|7Fo69asXKRBLL/mP0QRD2n9JD8qW/5YN0kfAlt96akc=;
+			nb|15.0.1.415_c/skin/resources/nb/locs|%ProductFolder%/skin/resources/nb/locs|kpmintegration.lt|lxeVIcnR3xxnYNJHD6SxoJw4Q3q85/FjplV+eYhh5qc=;
+			nb|15.0.1.415_c/skin/resources/nb/locs|%ProductFolder%/skin/resources/nb/locs|migrationwizard.lt|/z8NWvHmK90sZpUZ8OlfxROZm1sbmhst0RQQT4GOcDo="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		SrvPath="15.0.1.415_c/skin/resources/neutral/locs"
+		LocalPath="%ProductFolder%/skin/resources/neutral/locs"
+		Item="Name;DSKM"
+		List="
+			kpmintegration.lt|YgUJpq21wxsBuNaySq0YVVhRrvT8iZ0Vow1kFReW5dc=;
+			migrationwizard.lt|nQ2WJY7wcZO4UxTMiVAbftEiLc6QnzaPOFA/jA1ozH4="/>
+	<Patches
+		App="KAV 15.0.1.415; KIS 15.0.1.415; PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			nl|15.0.1.415_c/skin/resources/nl/locs|%ProductFolder%/skin/resources/nl/locs|kpmintegration.lt|BR6FdItW19tVbeRU4Jppdhlsa8w/KQRc61YCBG9aNMQ=;
+			nl|15.0.1.415_c/skin/resources/nl/locs|%ProductFolder%/skin/resources/nl/locs|migrationwizard.lt|r4ySMYUY2sesiRUDjXcjW3Fni/BM0y0CMBEFGo8bah8=;
+			nl|15.0.1.415_c/skin/resources/nl/locs|%ProductFolder%/skin/resources/nl/locs|scantask.lt|95OMsTJirC2fH307LsV8vxa1WeMaMreWr6ATV+s+SmM=;
+			pl|15.0.1.415_c/skin/resources/pl/locs|%ProductFolder%/skin/resources/pl/locs|kpmintegration.lt|FXMOkN5TK05RzL/owuOBhyvTdhYzWpOspRnbqW1r32Y=;
+			pl|15.0.1.415_c/skin/resources/pl/locs|%ProductFolder%/skin/resources/pl/locs|migrationwizard.lt|EMYkDAfp/IPiJSmrG62yZqOulXIhHWkNYk2Rm4HR+eU=;
+			pt|15.0.1.415_c/skin/resources/pt/locs|%ProductFolder%/skin/resources/pt/locs|kpmintegration.lt|FohnlYEgC1QeNpSyNJoaY8yZSwTi1rv39nQefGIR718=;
+			pt|15.0.1.415_c/skin/resources/pt/locs|%ProductFolder%/skin/resources/pt/locs|migrationwizard.lt|u3dGFoISkfNdL77aXD0Lqh/Ee6f+2yQy22nSuTgHVhs=;
+			pt|15.0.1.415_c/skin/resources/pt/locs|%ProductFolder%/skin/resources/pt/locs|networksettings.lt|Ebb1ARqB/LrQzTgxIa0IoIuylkoyi10VAfOZtPyVMZ8=;
+			ro|15.0.1.415_c/skin/resources/ro/locs|%ProductFolder%/skin/resources/ro/locs|avzkrnl.lt|ojsCcrqvEAY+Fz2jJeQzGdRUV3HAeyADISmjBpq+roI=;
+			ro|15.0.1.415_c/skin/resources/ro/locs|%ProductFolder%/skin/resources/ro/locs|common.lt|L6IdrMGqyfpvF5goMiFQBLTzlnEYYjV31KCytZMOr08=;
+			ro|15.0.1.415_c/skin/resources/ro/locs|%ProductFolder%/skin/resources/ro/locs|detailedreports.lt|aGjMT3NIHEDwHwdR8BDDs43cxRaTpnFgZ7uCBPJhzBc=;
+			ro|15.0.1.415_c/skin/resources/ro/locs|%ProductFolder%/skin/resources/ro/locs|kpmintegration.lt|/PwQntzaOfUGnsjaW/+cAyYNU+EZ/B+S6fJioL8LBKE=;
+			ro|15.0.1.415_c/skin/resources/ro/locs|%ProductFolder%/skin/resources/ro/locs|licensemanager.lt|JrOfOFM3mJ4Q5aJA0QV1tga0MsWVBtRj6EBovNyqjcI=;
+			ro|15.0.1.415_c/skin/resources/ro/locs|%ProductFolder%/skin/resources/ro/locs|managesettingssettings.lt|CwVtDMOfq8QGTKcJrAbEyHdM1LJIf4htuKqOBN0c4fE=;
+			ro|15.0.1.415_c/skin/resources/ro/locs|%ProductFolder%/skin/resources/ro/locs|migrationwizard.lt|jqYZLey4zzNVHTrja1QPslWxeHSLLPDFf2Uz2n/2SR8=;
+			ru|15.0.1.415_c/skin/resources/ru/locs|%ProductFolder%/skin/resources/ru/locs|kpmintegration.lt|9I2WcXP7yCDZ2w2ooWYovQdXFZ/KwbxjmRwYXDxPNDI=;
+			ru|15.0.1.415_c/skin/resources/ru/locs|%ProductFolder%/skin/resources/ru/locs|migrationwizard.lt|AbL2NDAXDkii9CEUXDJ5SVjQVHgWL/8ccbYkwFPHfwE=;
+			sr-Cyrl|15.0.1.415_c/skin/resources/sr-cyrl/locs|%ProductFolder%/skin/resources/sr-Cyrl/locs|kpmintegration.lt|ciQdYiGa7uyaNoSyT9rKdJt4XVRGDjXs+k/yWWgjE0Y=;
+			sr-Cyrl|15.0.1.415_c/skin/resources/sr-cyrl/locs|%ProductFolder%/skin/resources/sr-Cyrl/locs|migrationwizard.lt|VOwNdCVhxHptu79VSWTAqY5SozGg/m4GExkGCW50qJM=;
+			sr-Latn|15.0.1.415_c/skin/resources/sr-latn/locs|%ProductFolder%/skin/resources/sr-Latn/locs|kpmintegration.lt|zk28oWzrwnipffGnmvp9dQfLbEb2oX2hpBPhghb4m0E=;
+			sr-Latn|15.0.1.415_c/skin/resources/sr-latn/locs|%ProductFolder%/skin/resources/sr-Latn/locs|migrationwizard.lt|WLv5Gy1ou/gmZrhvWdMam0BGT/ARFWBpPrBDLRVJomw=;
+			sv|15.0.1.415_c/skin/resources/sv/locs|%ProductFolder%/skin/resources/sv/locs|kpmintegration.lt|NZ4w1NxY+BvAijO9Sv/ezL9i1GCiDsTW/F8L7Yi2xIg=;
+			sv|15.0.1.415_c/skin/resources/sv/locs|%ProductFolder%/skin/resources/sv/locs|migrationwizard.lt|O6Bv1fc/yKyjsaSbDw5Ide5xb7PJLSSPfSDbPjz5HHU=;
+			tr|15.0.1.415_c/skin/resources/tr/locs|%ProductFolder%/skin/resources/tr/locs|kpmintegration.lt|HocYO72Rw1YBNiSGYTg5i45ZaNDJBGIYEkkGtK0w+2M=;
+			tr|15.0.1.415_c/skin/resources/tr/locs|%ProductFolder%/skin/resources/tr/locs|migrationwizard.lt|DBh6o/Um9uEFE86gOerygszDmq9hcIsSjxE98j/UC2k=;
+			uk|15.0.1.415_c/skin/resources/uk/locs|%ProductFolder%/skin/resources/uk/locs|kpmintegration.lt|dvkmForZAnJYZUjqvIbu0uQ3jVMU2S61Uf2v05g5HM4=;
+			uk|15.0.1.415_c/skin/resources/uk/locs|%ProductFolder%/skin/resources/uk/locs|migrationwizard.lt|mnC6I2CzJu3+7A80uoAKwOXaKukXA2nXr69YIqkcwYU=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|appearancesettings.lt|L2h4aZ6OfS5ABovpMJpkYEB+EbRSFuqKry7zpOMydyA=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|feedbacksettings.lt|UEYdwaIZSURa//NlHqA2irePjz2iWvVmf5wXeVphM68=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|kpmintegration.lt|IEt99y43O51j60iFkSs5aXmx1kcb4EtKDIOcS5IqK58=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|migrationwizard.lt|AGmETgdl5n4paUXHJ2SuEjZ10+N8Sp/UE+A5vHn/70M=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|notificationcenter.lt|OV7bKesoXJ1mVRVAYXWqzsHJXE/fBE8jZ0NaKZnqhfQ=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|protectedinputsettings.lt|wBnKLykIDM+Z5pw9qAGadK982GhbrOBqVo1fhFJ9N94=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|safe_banking.lt|R/7g7+6dH9ErnanmNBKp7fEBn1YPrFXvsrVw8UANDVw=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|safebanking.lt|C28XAkG4qQrru40LrmonG8gEUNce2Nn/XNXnnfEqodY=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|safebankingsettings.lt|gazhIEOpG2TgKzDFmNCSvtBXtCpyUGYg7wEYkdZmBuE=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|search.lt|jllSWy9NcyYOuR3VSYXI3hKvDFYyNKlZ2e4aT09difQ=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|securekeyboardsettings.lt|Q9pfguYWl7ygzCPhv8hecAebh/UteheZmnNaIg6J+j0=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|settings.lt|37NzbX7DeR42aUZNAyKigBezJLs6txLHqjaM89Edyig=;
+			zh-Hant|15.0.1.415_c/skin/resources/zh-hant/locs|%ProductFolder%/skin/resources/zh-Hant/locs|welcomepage.lt|R3VNFWcRI0avDvI670qs7BpvHbYwn3y5oDl2THAsyok="/>
+	<Patches
+		App="KAV|KIS|PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="d"
+		SrvPath="15.0.1.415_kis_d"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			avpmain.dll|8tnaCoRWdj7MzpOnjHVV7RW/tBxDph5/iV3ST8OhiLU=;
+			avpuimain.dll|Kzw8ovL/4OWBQF27jWhWchNTVmN+D0jkBfPRXle0uc0=;
+			safe_banking.dll|Qbca1GOFjyPnnZL1MPrMDMMPcXcZhT4wx4YnpUuevQs=;
+			shell_service.dll|ik+PhC4OQpbVJcSDQ6UsMQYxJfRpSHzB594SgJ1wjUc="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		OS="Win-7,8,81,1000"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="d"
+		SrvPath="15.0.1.415_kis_d"
+		LocalPath="%ProductFolder%"
+		Name="wmi32new.exe"
+		DSKM="KWdCXCshXXipQeKmK46F8qWeXlAVCIGxMl5FeoTgi9I="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		OS="Win-7,8,81,1000"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="d"
+		SrvPath="15.0.1.415_kis_d/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="wmi64new.exe"
+		DSKM="DtRUVGBWA5QpC6NY2JktObwSfg/R2nZM3JrhsLi7Pyk="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		OS="Win-7,8,81"
+		CustomAction="regupd"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="d"
+		SrvPath="15.0.1.415_kis_d"
+		LocalPath="%ProductFolder%"
+		Name="upgrade_kis2015mr1.regupd"
+		DSKM="1YSeqmLhBAsNvD88zmIclFNclMnfv/8HxxiUJfBM4cU="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="d"
+		SrvPath="15.0.1.415_kis_d"
+		LocalPath="%ProductFolder%"
+		Name="patch_d_kis2015mr1.msp"
+		DSKM="f0CkUw1pAZ9eT1OPg/+p8xR1DN1o/osvjFZS7SThsQo="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		CustomAction="execute cmd=&apos;-p &quot;patch_d_kis2015mr1.msp&quot;&apos; wait=300"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="d"
+		SrvPath="15.0.1.415_kis_d"
+		LocalPath="%ProductFolder%"
+		Name="patch_d.execute"
+		DSKM="scfzq5hF/ML/ZVfunb/VSGfm21sjFWZaYXM24lBmtSs="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="d"
+		SrvPath="15.0.1.415_kis_d/data"
+		LocalPath="%DataFolder%"
+		Name="csprmz.xms"
+		DSKM="3bKaDTFSQdYvv87G07qOZkfZ6lmBcHnGLDrVdsOCzfA="/>
+	<Patches
+		App="KAV|KIS|PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="d"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			cs|15.0.1.415_kis_d/skin/resources/cs/locs|%ProductFolder%/skin/resources/cs/locs|kpmintegration.lt|4MAts290YoB66yOYHT8YXZ9+WCwkUimUCliRImRyb0A=;
+			cs|15.0.1.415_kis_d/skin/resources/cs/locs|%ProductFolder%/skin/resources/cs/locs|migrationwizard.lt|9bmQawUieWajEut4y6Ezjel9zPBlpdEqAwbhFgk40WA=;
+			es-MX|15.0.1.415_kis_d/skin/resources/es-mx/locs|%ProductFolder%/skin/resources/es-MX/locs|kpmintegration.lt|E+hrXdIn6RdMWIwnw2q2DCN1S8XyrzojW4X2LSFBR8I=;
+			es-MX|15.0.1.415_kis_d/skin/resources/es-mx/locs|%ProductFolder%/skin/resources/es-MX/locs|migrationwizard.lt|K12RbVQ242VMu3Uhm8imAFzlCGBudFhfyCcmwqIymXE=;
+			et|15.0.1.415_kis_d/skin/resources/et/locs|%ProductFolder%/skin/resources/et/locs|kpmintegration.lt|iSUgKUg5C9ldC6uPdMUNDI0F1OMOuseuBEJ1J+PH03o=;
+			et|15.0.1.415_kis_d/skin/resources/et/locs|%ProductFolder%/skin/resources/et/locs|migrationwizard.lt|JzbDb5dD/Vw+m052XtMK9jPW3ibJnkkmV4st0Bp1Vqw=;
+			fa|15.0.1.415_kis_d/skin/resources/fa/locs|%ProductFolder%/skin/resources/fa/locs|kpmintegration.lt|oPo53jjO0LiMS5PJLhVTMse0a31GhB8uKyZXEgJGAE4=;
+			fa|15.0.1.415_kis_d/skin/resources/fa/locs|%ProductFolder%/skin/resources/fa/locs|migrationwizard.lt|n/242rkJl6i4mFbze+ODnwgWb1bFY9m1iuZcywN1px0=;
+			fr|15.0.1.415_kis_d/skin/resources/fr/locs|%ProductFolder%/skin/resources/fr/locs|immonitorsettings.lt|cbVpLbhCqWbuLwF3WzEa+loVwGj7rHsVd2wuRuf/wCo=;
+			fr|15.0.1.415_kis_d/skin/resources/fr/locs|%ProductFolder%/skin/resources/fr/locs|problemlist.lt|9CcPljCS0ePaiimVDjcPGXQP7HjlWiiTxQmmTewlkng=;
+			ja|15.0.1.415_kis_d/skin/resources/ja/locs|%ProductFolder%/skin/resources/ja/locs|kpmintegration.lt|YgUJpq21wxsBuNaySq0YVVhRrvT8iZ0Vow1kFReW5dc=;
+			ja|15.0.1.415_kis_d/skin/resources/ja/locs|%ProductFolder%/skin/resources/ja/locs|migrationwizard.lt|gM06Xd5RpdRpXEZukeZHel7D8gKRMrVxV4f9TxDDevE=;
+			ko|15.0.1.415_kis_d/skin/resources/ko/locs|%ProductFolder%/skin/resources/ko/locs|kpmintegration.lt|731bEQqaGWJ8QNiMLTPvfXUdmJ/urhGEfmMTHCWU2d0=;
+			ko|15.0.1.415_kis_d/skin/resources/ko/locs|%ProductFolder%/skin/resources/ko/locs|migrationwizard.lt|tdq5zpr9F37sHZQ6KxAZOtoUmyWR5LgBAPCnAiH2G9c=;
+			lt|15.0.1.415_kis_d/skin/resources/lt/locs|%ProductFolder%/skin/resources/lt/locs|kpmintegration.lt|hGX86AEW5VwXlHOuBCmPWjstX1b/xutHGSNgYyUslRo=;
+			lt|15.0.1.415_kis_d/skin/resources/lt/locs|%ProductFolder%/skin/resources/lt/locs|migrationwizard.lt|oYhB0C/Pk7gLiIOQN3+GxAlsO5W1Iz4KNbULKm47XjI=;
+			lv|15.0.1.415_kis_d/skin/resources/lv/locs|%ProductFolder%/skin/resources/lv/locs|kpmintegration.lt|oF8zPp38/39gR585iCtpL7rS0qG7vkruwkfQGR+XMU8=;
+			lv|15.0.1.415_kis_d/skin/resources/lv/locs|%ProductFolder%/skin/resources/lv/locs|migrationwizard.lt|zTvnrNHLfbyfFv+QQxz5tP9ExNpF3PdOyFU4/SVbU+M=;
+			pt-BR|15.0.1.415_kis_d/skin/resources/pt-br/locs|%ProductFolder%/skin/resources/pt-BR/locs|kpmintegration.lt|FZev/guOuZ5MbIk0DEDHO61N+QZgstNuYzZuLo8shmk=;
+			pt-BR|15.0.1.415_kis_d/skin/resources/pt-br/locs|%ProductFolder%/skin/resources/pt-BR/locs|migrationwizard.lt|kaDaC1R0X/Ijrcvxmgtk0T3gD9j5bNcOwFXPXCXiXmE=;
+			sq|15.0.1.415_kis_d/skin/resources/sq/locs|%ProductFolder%/skin/resources/sq/locs|kpmintegration.lt|BvuUenpSZua4dlWN08pBkIhXAIfjEgGSxC5Y3LZvaFY=;
+			sq|15.0.1.415_kis_d/skin/resources/sq/locs|%ProductFolder%/skin/resources/sq/locs|migrationwizard.lt|Xa6PcmVDkv+XmfsZJkR60wDuU3AUR6BnrT8aivj1g40=;
+			tr|15.0.1.415_kis_d/skin/resources/tr/locs|%ProductFolder%/skin/resources/tr/locs|avpui.ini|H4Blx7BVrGFc1vg6CO6md1XZoQhKGF9VtjtMsOpuqdI=;
+			vi|15.0.1.415_kis_d/skin/resources/vi/locs|%ProductFolder%/skin/resources/vi/locs|kpmintegration.lt|gVXEiTymlGr1ailGqABw7C4nzZWD3+Jg4SZGlbYuKCc=;
+			vi|15.0.1.415_kis_d/skin/resources/vi/locs|%ProductFolder%/skin/resources/vi/locs|migrationwizard.lt|ZtsM0DaA21/dZ1bYpucwqGaM8H8Xov2AJBkRHoCN5xc=;
+			zh-Hans|15.0.1.415_kis_d/skin/resources/zh-hans/locs|%ProductFolder%/skin/resources/zh-Hans/locs|kpmintegration.lt|qFl/qdrGk3ICYroqMFqCfaPooakXWSxtGrHMfhSwkMY=;
+			zh-Hans|15.0.1.415_kis_d/skin/resources/zh-hans/locs|%ProductFolder%/skin/resources/zh-Hans/locs|migrationwizard.lt|cDz3BNQDPtsidFJ8BEzRSV8/gq7Yvn8tyUM76bfKyfg=;
+			zh-Hant-TW|15.0.1.415_kis_d/skin/resources/zh-hant-tw/locs|%ProductFolder%/skin/resources/zh-Hant-TW/locs|about.lt|U2Oe29DKTckGexeM+uoRp/rHbFaTQeZvDBz/x45B0u0=;
+			zh-Hant-TW|15.0.1.415_kis_d/skin/resources/zh-hant-tw/locs|%ProductFolder%/skin/resources/zh-Hant-TW/locs|balloons.lt|YZYUKvzUOpCLZS28p1j42qVi7z1FoWYjS5D0W8KDq3A=;
+			zh-Hant-TW|15.0.1.415_kis_d/skin/resources/zh-hant-tw/locs|%ProductFolder%/skin/resources/zh-Hant-TW/locs|encryption.lt|/Dg/sucBTrHU/CUp2vjQ2FhPl1n7ylDDWi/d2of9bWQ=;
+			zh-Hant-TW|15.0.1.415_kis_d/skin/resources/zh-hant-tw/locs|%ProductFolder%/skin/resources/zh-Hant-TW/locs|kpmintegration.lt|P/lvJeqLbYJFcAC6mvSiyTIdsndWWIXq/5fag8MSkJg=;
+			zh-Hant-TW|15.0.1.415_kis_d/skin/resources/zh-hant-tw/locs|%ProductFolder%/skin/resources/zh-Hant-TW/locs|migrationwizard.lt|DKMPMDNj5av+Vu+kn7ufr7vZomnFpmdM87EeM8qs7M4=;
+			zh-Hant-TW|15.0.1.415_kis_d/skin/resources/zh-hant-tw/locs|%ProductFolder%/skin/resources/zh-Hant-TW/locs|networksettings.lt|21orsOFHV9tTZcxajcJ49nwYE/ClVU4DCuy2g0I3e2o="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		OS="Win-7,8,81"
+		ApplyPeriod="24"
+		ApplyAction="restart_os"
+		FixName="e"
+		SrvPath="15.0.1.415_kis_e"
+		LocalPath="%ProductFolder%"
+		Name="upgrade.exe"
+		DSKM="yHgD44j5yUF4BztBE2MSEj8mct0FxUJzydN5+HyW5QY="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		OS="Win-7,8,81"
+		CustomAction="execute cmd=&apos;/initUpgrade&apos; wait=300"
+		ApplyPeriod="24"
+		ApplyAction="restart_os"
+		FixName="e"
+		SrvPath="15.0.1.415_kis_e"
+		LocalPath="%ProductFolder%"
+		Name="upgrade_launcher.exe"
+		DSKM="6JRdyr4Gk9pJ28wF7/6HM5MvIowKgfB6UCw6+rOMv0E="/>
+	<Patches
+		App="KAV|KIS|PURE 15.0.1.415"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="f"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			15.0.1.415_kis_f|%ProductFolder%|bl.ppl|6RfkmbGhnp1aG36K8JjXUPOF7tEpg4Bh/3JPHp7uRh8=;
+			15.0.1.415_kis_f|%ProductFolder%|instrumental_services.dll|OzGCjixHnbJbHR1OEunPEswlD4u51x16KZLVtna61uo=;
+			15.0.1.415_kis_f|%ProductFolder%|kasperskylab.kis.ui.dll|6lgf3T9Irzo8eKKIV4z2/ZHUw9KwDQZfhhGjUH6zVwE=;
+			15.0.1.415_kis_f|%ProductFolder%|kasperskylab.platform.nativeinterop.dll|2CQXvzweSl9DlKhDSmzxA7UQrNcHjgVt8ipfj1GiHjw=;
+			15.0.1.415_kis_f/kru|%ProductFolder%/Kaspersky Restore Utility|kasperskylab.platform.nativeinterop.dll|2CQXvzweSl9DlKhDSmzxA7UQrNcHjgVt8ipfj1GiHjw=;
+			15.0.1.415_kis_f|%ProductFolder%|kasperskylab.ui.platform.services.dll|x45k5s2tvWUYbDqjP7wny7NWm4KkVmm8TYIcOQTau3Q=;
+			15.0.1.415_kis_f/kru|%ProductFolder%/Kaspersky Restore Utility|kasperskylab.ui.platform.services.dll|x45k5s2tvWUYbDqjP7wny7NWm4KkVmm8TYIcOQTau3Q=;
+			15.0.1.415_kis_f|%ProductFolder%|libeay32.dll|LjEhW1McgSPjlZJ6eI3+IxCd0uMbEw2NtXMClYhEvDQ=;
+			15.0.1.415_kis_f|%ProductFolder%|product_metainfo.dll|KXYTCKSwYfbHQjdLOAqIpVacLpwPTLSOuSNeNRxX1ew=;
+			15.0.1.415_kis_f|%ProductFolder%|ssleay32.dll|pGP9sL5uVByxgWGzTMLRb4QEYGSrulftL+Jp9/AsxJg=;
+			15.0.1.415_kis_f|%ProductFolder%|traffic_processing.dll|/9wleywYrpMN+2FEkNJzBPMydO6XechEjUlx4Zrj3+4=;
+			15.0.1.415_kis_f/ipm/control|%DataFolder%/ipm/control|transform.xsl|clfvoaSnem8sEn4QKcSSQMKd90vWMhn+fCAiUPkBbeg=;
+			15.0.1.415_kis_f|%ProductFolder%|ushata.dll|lG7LGY6Uzsmj20UX3GsgwoOaiFJBtc5PxRTxKHiojrQ="/>
+	<Patch
+		App="KAV|KIS|PURE 15.0.1.415"
+		Lang="fr"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="f"
+		SrvPath="15.0.1.415_kis_f/ipm/default/loc/fr"
+		LocalPath="%DataFolder%/ipm/default/loc/fr"
+		Name="loc.js"
+		DSKM="npDMPA51gsfBlpjUrP02ATiRR45oTCw4nXCzOIVxgbE="/>
+	<Key
+		LocalPath="%DSKM%"
+		Name="kav15-mp1-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJASd+HipAADXjsWO+vJWOGq5d4ArSJTzItgIQt/YiRfB2xEAxgvnndC3urWGKzNCq/HXJA+vhZ7FbkCsNrdmWovggy2p+NmsBAB4JGQEAAAIAAigFAEtBVjE1AwACKAMAQklOAQAACfTeUvANCjs6MTBLTlZGVlo4TFhMODVGV3hGOUlaZVd3R0Q3K0ZxUzRVbVVTS1J4QVBrcHg3dzQybTQ5N0ZYMlpoeE1Ic0hxTGpnRXBFaHRkck5CRldYQlVzck8yTGdSVSUl</Key>
+</Update>
+;:10KMGUWUGr3/of6jrEKL5Un2WQbjMoyzYrn6hzJcQRaaxm4wJxZllzAFVtyNh01QPTEfP8qRQr2oh0/kdmGXcFS9%%
