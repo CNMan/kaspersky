@@ -1,0 +1,72 @@
+<Update
+	Date="20012026 1050"
+	BlstDate="20012026 0838"
+	ObjectType="2=KASPL;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="14329"
+	CompID="KASPL"
+	LocalPath="%DataFolder%">
+	<Files
+		App="KSE 9.[5-7].*.*;KSMO 1.2.*.*"
+		OS="Win"
+		Arch="x64"
+		SrvPath="x64/win"
+		Item="Name;DSKM"
+		List="
+			cpconvert.kep|90kNfPUrdz43X3Q+o0vSMMATghUDH/XputRKppgXxT0=;
+			dns_resolver.kep|Bk4UbIs/5mJc1BJSNIP38bdBQ7YHJdm9JXOsMUngDn8=;
+			engine.kep|YdEc4aLHHOyqIRqy57r3Jx+xNPon4Rbe3csIXjIZCro=;
+			filtration.kep|LApw6QE92CeuonN5SyRAw2uhhS3rlOI/CZa6c45I/uw=;
+			gsg.kep|O8Wm4IR4u6DPxWLC5rRNVa/VebGk5HdIPu7FvtNJpew=;
+			kas_engine_eka.kep|u1n0ygjIrXFf1qW9PD7heHdgeFm3lhItsEasRBGLDFI=;
+			moebius.kep|42Bmx+ggo9gJKoHl99/kWisTg0cMx4ZvoC6iIV0aG3o="/>
+	<Files
+		App="KAVSDK 8.10.1.*;KSMG 2.0.[0-1].*"
+		OS="Linux"
+		Arch="x64"
+		SrvPath="x64/nix"
+		ApplyAction="restart_none"
+		LocalPath="%BaseFolder%"
+		Item="Name;DSKM"
+		List="
+			cpconvert.kep|FGwZGXXLqLbP99B9meQyKLgZ/kj7sgwq7UNdJamKaKk=;
+			dns_resolver.kep|nMbFWbukZPWcBf8VKE/jfYtkM+kL+a/Xf1wTOyT97HM=;
+			engine.kep|EXICCVDGDdkQpjBXvz3H7MLN0F05IVE8kMsRsOwOd9A=;
+			filtration.kep|Ogi1Wnqf7DarJwUy6stEYvV+cxP4UzLGyLhpOfV1Z8k=;
+			gsg.kep|w76vZfFE2mmMagdTCJwF0K2pwA7fkqIEuwUdhfJnzYE=;
+			kas_engine_eka.kep|vnh9i9LZM+t/V+rjz/xs4CVQVvMSqxzT7QrVZ9qjVr0=;
+			moebius.kep|0JzDDGHTS7t0Ba0OSmHqPcfd9Sud/rexmBWg4uvMsbs="/>
+	<File
+		App="KSE 9.[5-7].*.*;KSMO 1.2.*.*"
+		OS="Win"
+		Arch="x64"
+		SrvPath="x64/win"
+		Name="ubllist_win_mp1.set.keb"
+		DSKM="YOH4t+47Lzba96CRJ5cYS7LPH5GssgvGF09tlKi5oPY="/>
+	<Files
+		Arch="x64"
+		ApplyAction="restart_none"
+		LocalPath="%BaseFolder%"
+		Item="App;OS;SrvPath;Name;DSKM"
+		List="
+			KAVSDK 8.10.1.*\;KSMG 2.0.[0-1].*|Linux|x64/nix|ubllist_nix.set.keb|Us+WIXk+pwHtNHGiB0CnhPjXKupMy7rh76OGbCVF0Jo=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|cpconvert.kep|xpZerHMh5tKnFhfnqBWwHma7od9RDTyQ5gOf5fdz/y4=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|dns_resolver.kep|qKmoWKoZ1f08Fh9WLitqCekE20Bzhcq9ZXkkMWvjF8k=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|engine.kep|3t2w8vtfdZMDYFbPdLKkP1BVBn6fiZMnwEhGFhA6kzs=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|filtration.kep|jseDTlBkM1ZLQDctI+WT4e5OeVbC4GnNOzuxFgDnZZQ=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|gsg.kep|qx6+ygRSPvltt7rC8XfSzz+qEr0GZaFAqeLCXkHQiBU=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|kas_engine_eka.kep|YwqB7VTYuje/kEvUEpiCvpOdSjpu8A43VLqbrcjrZ/Q=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|moebius.kep|BYkrsai2xELFBy9wgb8M2sVSa35+TaeEWfoqbYMybMk=;
+			KLMS 10.0.*.*\;KSMG 2.1.[0-1].*\;KSMG 3.[0-1]|Linuxs-108\;Linuxs-131|x64/nix-108|ubllist_nix.set.keb|Us+WIXk+pwHtNHGiB0CnhPjXKupMy7rh76OGbCVF0Jo="/>
+	<File
+		CompID="RETR1901_KASPL"
+		Shell="xdif;klz;none"
+		Name="mod-kaspl-1901g.xml"
+		DSKM="Gbe7zpuXL3IzB+pTuLNJf5dMcE1RwE0hD6S4id1DhC0="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-kaspl-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAACnAfYLJNv9KKjV65TzkAq3roqEasvnvLUQM3Sn+HAFCSSg8i7iU1tP3NEcbAFw7XyGjY44cmBPJQBzZcdrHxnkBAB4JjwEAAAIAAigFAEtBU1BMAwACKAQAQkFTRQEAAAkmdopFDQo7OjEwcUNPTXJGQU5VQUpsSXA3aHZJVXpNWHF1c09vSVRQY0VFK0RZV0wwa3FEL3BaUE0rc3FWbDhoY2t4d2l1UDg1eG9hb2wvdUwzRjFCbjNBcU5sQlJpM1klJQ==</Key>
+</Update>
+;:104TVIl9poHIZHosrQWHKXgHi0kXQeb6bJ6evrknOfkiG7IUjM8lCO3/6AO4wUemB2EMCLmRvmmvu4PNh+xAwAFJ%%
