@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+	<Image Id="{0C7B0F07-5B0C-4218-AD2E-A7A792D5306E}" CmdLine="cmd /c echo windows.pass.*" >
+		<Process ParentPath="c:\zabbix-ams\agent\bin\win64\zabbix_agentd.exe" />
+	</Image>
+	<Image Id="{528CCAF7-B435-4F1E-8E4E-22231E1C4112}" CmdLine="C:\Windows\system32\cscript.exe /nologo MonitorKnowledgeDiscovery.vbs" >
+		<Process ParentPath="c:\program files\microsoft monitoring agent\agent\monitoringhost.exe" >
+			<Signature Subject="*Microsoft*" />
+		</Process>
+	</Image>
+</Filters>

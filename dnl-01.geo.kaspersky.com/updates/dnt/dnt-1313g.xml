@@ -1,0 +1,123 @@
+<Update
+	Date="03022026 1531"
+	BlstDate="03022026 0838"
+	ObjectType="2=DNT;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="631"
+	CompID="DNT"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAVMAC 22.0.0;SAASMAC 21.[0-1].0"/>
+	<File
+		App="KAVMAC [22-26];KISMAC [20-21].[0-1].*.*;SAASMAC [20-21].[0-1].*.*"
+		OS="Mac"
+		SrvPath="mac"
+		Name="dnt_engine.esm"
+		DSKM="F5EtkWRk8v9vUy6nJ7accv7Y3Ctot0qNHynu3e4+DSg="/>
+	<File
+		App="KAVMAC [22-26];KISMAC|SAASMAC [20-21].[0-1].*.*"
+		OS="Mac"
+		Arch="x64"
+		SrvPath="mac/x64"
+		Name="libdnt_engine.dylib"
+		DSKM="pO8wuW0BQ6f0WRe+omzF9ZiOWyL36BACFhTHAKNcAd0="/>
+	<File
+		App="KAVMAC [22-26];SAASMAC|KISMAC 21.1.*.*"
+		OS="Mac"
+		Arch="a64"
+		Shell="bdif;klz;none"
+		SrvPath="mac/arm64"
+		Name="libdnt_engine.dylib"
+		DSKM="80sbpgIYEK5M8ZIQsUSMewKO8/EqbbaDYAi397w+pro="/>
+	<Files
+		Item="Name;DSKM"
+		List="
+			dnt0001.dat|1gAOjGssejmfhhm2npj9LZ/OpI6isLZgN1xIni7J29Q=;
+			dntbugs.dat|XitlAF0l6k7cD8RBoaAWQ+otOpkzxD9ai4ZZMcl5V2M="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="dnt-1313g.sha2rg"
+		DSKM="G6d9GzbwwXwZl3OHmD5ZMm+XLWST225fTa73NKyPX6c="/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="!KIS|PURE|KASPERSKY [18-21]"
+		Name="unmod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 18"
+		Target="[1-262143]"
+		Name="unmod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 19"
+		Target="[1-262143]"
+		Name="unmod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 20"
+		Target="[1-262143]"
+		Name="unmod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE|KASPERSKY 21.[0-2,4-*]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE|KASPERSKY 21.[0-2,4-*]"
+		Target="[1-262143]"
+		Name="unmod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 21.3"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<Index
+		CompID="DNT,RETR1901_DNT"
+		App="KIS|PURE 21.3"
+		Target="[1-262143]"
+		Name="unmod-dnt-1313g.xml"
+		Date="03022026 1531"/>
+	<File
+		CompID="RETR1901_DNT"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="dnt-1901g.xml"
+		DSKM="LG/5AKqPskIHKMB7l8PH9AENtidNlXLCzZT0UyeSdAQ="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="dnt-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADLLahti3gXcsfb20/6yNq8wIMjtje84x53wcfpg1QhySs/IbXCKer78PfSmkYLXC6xtpQ04yVXw0TcIHmBVSisBAB4JIgEAAAIAAigDAEROVAMAAigEAEJBU0UBAAAJfUgyAg0KOzoxMHFIc2ZHNDVqcFpFejFmY2xrQnRoY0tzSk9YUy9DMVU5WXRSYUx5VzBHZm50b2I0bjhFWjlwL1hiTXlIaTdueVNidWtmWGU2VG01R0JheGNSUXRhWUtVJSU=</Key>
+</Update>
+;:10KBgq1QWWoyG3OWwjNxNS4zLWBUPjer80yjyvvq52D0hkMYaVD7PdhZVBjeW7AyXP3q1c00jVJ9an7EWIDCHytd%%

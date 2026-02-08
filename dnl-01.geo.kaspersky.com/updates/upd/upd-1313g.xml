@@ -1,0 +1,49 @@
+<Update
+	Date="05022026 1232"
+	BlstDate="04022026 2038"
+	ObjectType="2=Updater;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="14"
+	CompID="Updater"
+	LocalPath="%DataFolder%">
+	<Exclude
+		App="KAR|KARH 3.0.1;KAR|KARH 6.[0-3];KAVMAC 22.0.0;KES 10.[2-3].*.*;KES 11.[2,4];KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 21.2;KESMAC 11.2.0;KICSN|KESSN 21.[20-21];KPMMAC 10.2.0;KPMWIN 8.0.[5-6];KPMWIN 9.0.[0-1];KSU 2.0.[0-1];SAASMAC 21.[0-1].0;SAFEKIDS 1.0.[3-4]"/>
+	<Files
+		Item="Name;DSKM"
+		List="
+			uaspubkeys.dat|SPFbvIRLUwIYYtFky60MP0lzY02V0M0293xz1re+HZ8=;
+			updcfg.xml|CdGSB+/qohhvixzjH/T6+l26pIcNHV8gJEv/hri0wBs="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="upd-1313g.sha2rg"
+		DSKM="rksTwWc1yqYdBiNsEQFab7ZwhCmKpJCd3Gs3a0YFfWQ="/>
+	<Files
+		Item="App;Name;DSKM"
+		List="
+			AVSL [18,21-22]\;DEEPUNPACK 8.9.2.*\;ESS 3.[1-4].*.*\;KAR\\|KARH 3.0.1.*\;KAR\\|KARH 6.[0-1].0.*\;KAVSDK 8.10.*.*\;KAVSDK 8.9.*.*\;KES [11,21]\;KESMAC 11.2.1.*\;KICS 3.[0-2].*.*\;KICS 4\;KICSNET 2.9.*.*\;KICSNET 3.[0-1].*.*\;KICSNET 4.[0-3,5]\;KICSNL 1.3.0.*\;KIS\\|KAV\\|PURE\\|KFA\\|KSDE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KASPERSKY [20-*]\;KLMS 10.0.0.*\;KPMWIN 10.[0-2].*.*\;KPMWIN 9.0.2.*\;KSB [1-2].0.0.*\;KSC [11-14]\;KSE 9.[6-*].*.*\;KSLS 10.1.[2,4].*\;KSLS 11.[0-3].*.*\;KSMG 2.0.*.*\;KSMG 3.0\;KSMO 1.2.*.*\;KUU 4.[0-2].*.*\;KWTS 6.[1-2]\;LENA 3.12\;NGFW 1\;SAFEKIDS 1.0.5.*\;SOYUZ 3.[11-16].*.*\;SOYUZ 4|updcfg2.xml|JFurBq+pS3qaOYvNqIbdgzUX4EHDpLKp3V8tAH0W5QU=;
+			CT 5.[1-3]\;KAR\\|KARH 6.[0-6]\;KASPERSKY\\|KSOSPC\\|KSOSFS\\|KSDE 21.[6-9,13-23]\;KAVMAC [23-26]\;KAVSDK 8.10.*\;KCS 2\;KES 11.4\;KES 21.[13-25]\;KES 21.[2-9]\;KESMAC 11.3.*.*\;KESMAC 12\;KESSL [3-4]\;KESSN 21\;KFA\\|KAV\\|KIS\\|PURE\\|SAAS\\|KSOSPC\\|KSOSFS\\|KSDE 21.[2-3]\;KFL 2\;KICSN 21\;KICSNL 1.5\;KICSNL 2\;KICSNLO 2\;KIS\\|KAV\\|PURE\\|KFA\\|KSDE\\|KSOSPC\\|KSOSFS\\|SAAS [18,20]\;KPMMAC 10.[1-6]\;KPMWIN [23-25]\;KPMWIN 10.[2-*]\;KSC [15-16]\;KSC 14.2\;KSKMAC 1.9\;KSLS 11.4.0\;KSLS 12\;KSMG 2.1.*.*\;KSMG 3\;KUMA [3-4]\;KUMA 2.1\;SAFEKIDS 1.0.5\;SAFEKIDS 23\;VM 0.9|updcfg3.xms|L0RGc3MNJffEYh9zoBgxnjyVSVonv+Om+JnJPW/Hl/I="/>
+	<Index
+		CompID="Updater,RETR1901_Updater"
+		App="KASPERSKY|KSOSPC|KSOSFS|KSDE 21.[24-*]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-upd-1313g.xml"
+		Date="05022026 0809"/>
+	<Index
+		CompID="Updater,RETR1901_Updater"
+		App="KASPERSKY|KSOSPC|KSOSFS|KSDE 21.[24-*]"
+		Target="[1-262143]"
+		Name="unmod-upd-1313g.xml"
+		Date="05022026 0809"/>
+	<File
+		CompID="RETR1901_Updater"
+		Shell="xdif;klz;none"
+		Name="upd-1901g.xml"
+		DSKM="j2kSCpoOhw6ylbSQ8m5mPo4fJv43tuSiImOKDvVJpXA="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="upd-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHZqLsulCw7Vs/RKGBZk9QXx99MyuqZXP+/YkBSzyotwWnqdI3lL4ahPFbNj52uSAVAINLqw1YXkGZK/Ckqtv5EBAB4JDQAAAAIAAigHAFVwZGF0ZXIDAAIoBABCQVNFAQAACavyGqwNCjs6MTBxSys2SCtsamE5S0tGNHY2Uk9DdHF0YktraXhMQjE3QzluQS9RVmgxRXNQRUlBYldwT3JEc08vN3NTOWMrUTFVQVBMdm05TUlocHJMSjBHZUFPS1NNVCUl</Key>
+</Update>
+;:10aVOxhtDIF6okFLF6KtJhuxVgcRa5izacSfoufNqq36ikHVidlqsInDFjQE92PQ4kj7unHC7vXmIYnNbCnhP91X%%

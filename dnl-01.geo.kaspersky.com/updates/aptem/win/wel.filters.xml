@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
+
+  <!-- Version: 2024-03-01T18:27:00.000Z-1709317656 -->
+
+  <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Equal OrderNum="15" Value="2"/>
+    <Equal OrderNum="15" Value="3"/>
+    <Equal OrderNum="15" Value="4"/>
+    <Equal OrderNum="15" Value="5"/>
+    <Equal OrderNum="15" Value="8"/>
+    <Equal OrderNum="15" Value="9"/>
+    <Equal OrderNum="15" Value="10"/>
+    <Equal OrderNum="15" Value="11"/>
+    <Equal OrderNum="15" Value="12"/>
+    <Equal OrderNum="15" Value="13"/>
+    <Exclusions>
+      <Match OrderNum="12" Value="*$"/>
+      <Equal OrderNum="12" Value="ANONYMOUS LOGON"/>
+      <Equal OrderNum="12" Value="anonymous-anmeldung"/>
+      <Equal OrderNum="12" Value="accesso anonimo"/>
+      <Equal OrderNum="12" Value="АНОНИМНЫЙ ВХОД"/>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="5"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="SYSTEM"/>
+        <Equal OrderNum="15" Value="5"/>
+        <Match OrderNum="16" Value="*\System32\services.exe"/>
+        <Equal OrderNum="25" Value="-"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="СИСТЕМА"/>
+        <Equal OrderNum="15" Value="5"/>
+        <Match OrderNum="16" Value="*\System32\services.exe"/>
+        <Equal OrderNum="25" Value="-"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="15" Value="2"/>
+        <Match OrderNum="24" Value="*\vmtoolsd.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Match OrderNum="12" Value="svc_*"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Kerberos"/>
+        <Equal OrderNum="24" Value="-"/>
+        <Equal OrderNum="27" Value="%%1832"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-90-0-?"/>
+        <Match OrderNum="12" Value="DWM-?"/>
+        <Equal OrderNum="15" Value="2"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\winlogon.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-90-0-*"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
+        <Equal OrderNum="15" Value="2"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\winlogon.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="11" Value="S-1-5-20"/>
+        <Equal OrderNum="12" Value="NETWORK SERVICE"/>
+        <Equal OrderNum="15" Value="5"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\services.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="S-1-5-96-0-*"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
+        <Equal OrderNum="15" Value="2"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="24" Value="*System32\wininit.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="S??C???A????R??P"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Kerberos"/>
+        <Equal OrderNum="18" Value="-"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Authz   "/>
+        <Match OrderNum="18" Value="W?P-DC?"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+        <Match OrderNum="18" Value="W?P-DC?"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="12" Value="hq-svc-n??a???t"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="NtLmSsp "/>
+        <Match OrderNum="18" Value="W?P?N????T?AP??"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Equal OrderNum="12" Value="solarwinds-svc"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="27" Value="%%1833 "/>
+        <Equal OrderNum="32" Value="0x0"/>
+        <Equal OrderNum="33" Value="%%1842"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Equal OrderNum="12" Value="veeamadmin"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="27" Value="%%1833 "/>
+        <Equal OrderNum="32" Value="0x0"/>
+        <Equal OrderNum="33" Value="%%1842"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="12" Value="svc-?d?u?-"/>
+        <Match OrderNum="13" Value="O?U?R"/>
+        <Equal OrderNum="15" Value="3"/>
+        <Equal OrderNum="16" Value="Advapi  "/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="NewUserCreated.Vista" Id="4720" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="FailedLogin.Vista" Id="4625" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Equal OrderNum="14" Value="0xc000006d"/>
+    <Exclusions>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-0-0"/>
+        <Equal OrderNum="15" Value="%%2313"/>
+        <Equal OrderNum="17" Value="3"/>
+        <Equal OrderNum="25" Value="-"/>
+        <Match OrderNum="27" Value="3????"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="LogonAttemptWithExplicitCredentials.Vista" Id="4648" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="18" Value="*\outlook.exe"/>
+      <Match OrderNum="18" Value="*\edgetransport.exe"/>
+      <Match OrderNum="18" Value="*\avp.exe"/>
+      <Match OrderNum="18" Value="*\taskhost.exe"/>
+      <Match OrderNum="18" Value="*\taskhostw.exe"/>
+      <Match OrderNum="18" Value="*\skype.exe"/>
+      <Match OrderNum="18" Value="*\lync.exe"/>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="18" Value="*\vmtoolsd.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="12" Value="DWM-*"/>
+        <Match OrderNum="18" Value="*System32\winlogon.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
+        <Match OrderNum="18" Value="*System32\winlogon.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="12" Value="UMFD-*"/>
+        <Match OrderNum="18" Value="*System32\wininit.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="8" Value="V?e??r???r???v"/>
+        <Match OrderNum="12" Value="v?e??a???n"/>
+        <Match OrderNum="18" Value="*Veeam\Veeam ONE\Veeam ONE Monitor Server\VeeamDCS.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="8" Value="V?e??r???r???v"/>
+        <Match OrderNum="12" Value="z?w??d??n"/>
+        <Match OrderNum="18" Value="*Veeam\Veeam ONE\Veeam ONE Monitor Server\VeeamDCS.exe"/>
+      </Conjunction>
+      <Match OrderNum="18" Value="*Bin\MSExchangeHMWorker.exe"/>
+      <Match OrderNum="18" Value="*Bin\\MSExchangeFrontendTransport.exe"/>
+      <Match OrderNum="18" Value="*Power BI Report Server\PBIRS*"/>
+      <Match OrderNum="18" Value="*FrontEnd\PopImap\Microsoft.Exchange.Imap4.exe"/>
+      <Match OrderNum="18" Value="*VeeamLogShipper\VeeamLogShipper.exe"/>
+      <Match OrderNum="18" Value="*Authentication Server\MultiFactor*"/>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="12" Value="svc-?d?u?-*"/>
+        <Match OrderNum="13" Value="O?U?R"/>
+        <Equal OrderNum="15" Value="localhost"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="AccoutLockedDueToMultipleLogonFailures.Vista" Id="4740" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="MemberAddedToSecurityGroup.Vista" Id="4732" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="MemberRemovedFromSecurityGroup.Vista" Id="4733" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="UserAccountChanged.Vista" Id="4738" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SchedulerTaskCreated.Vista" Id="4698" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SchedulerTaskUpdated.Vista" Id="4702" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="11" Value="\Microsoft\Windows\UpdateOrchestrator\Schedule*"/>
+        <Match OrderNum="12" Value="*Command&#x3e;%systemroot%\system32\usoclient.exe*"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-20"/>
+        <Equal OrderNum="11" Value="\Microsoft\Windows\SoftwareProtectionPlatform\SvcRestartTask"/>
+        <Match OrderNum="12" Value="*B1AEBB5D-EAD9-4476-B375-9C3ED9F32AFC*"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="11" Value="\Microsoft\Windows\WindowsUpdate\Scheduled Start"/>
+        <Match OrderNum="12" Value="*start wuauserv*"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="ServiceCreated.Vista" Id="4697" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ServiceCrashed.Vista" Id="7031" Channel="System" Provider="Service Control Manager" OsType="Vista+" />
+  <Event Name="ServiceCreated.Vista" Id="7045" Channel="System" Provider="Service Control Manager" OsType="Vista+" />
+
+  <Event Name="PortListen.Success.Vista" Id="5154" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="PortListen.Blocked.Vista" Id="5155" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AuditLogCleanup.Vista" Id="1102" Channel="Security" Provider="Microsoft-Windows-Eventlog" OsType="Vista+" />
+  <Event Name="EventLogCleanup.Vista" Id="104" Channel="System" Provider="Microsoft-Windows-Eventlog" OsType="Vista+" >
+    <Exclusions>
+      <Equal OrderNum="9" Value="ModemAuthenticatorLog"/>
+      <Equal OrderNum="10" Value="ModemAuthenticatorLog"/>
+      <Equal OrderNum="9" Value="DFS Replication"/>
+      <Equal OrderNum="10" Value="DFS Replication"/>
+      <Conjunction>
+        <Match OrderNum="8" Value="*CHU-INT"/>
+        <Match OrderNum="10" Value="?????_h"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="8" Value="*CHU-INT"/>
+        <Match OrderNum="11" Value="?????_h"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallSettingChanged.Vista" Id="4950" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="NetworkShareAdded.Vista" Id="5142" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserPasswordChanged.Vista" Id="4723" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserPasswordReset.Vista" Id="4724" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="EventLogShutdown.Vista" Id="1100" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="EventLogError.Vista" Id="1108" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SystemAuditPolicyChanged.Vista" Id="4719" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+<!-- too many events. disabled.
+
+  <Event Name="NetworkShareAccessed.Vista" Id="5140" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="14" Value="\\*\IPC$"/>
+      <Equal OrderNum="14" Value="\\*\NETLOGON"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="NetworkShareAccessedEx.Vista" Id="5145" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="14" Value="\\*\IPC$"/>
+      <Equal OrderNum="14" Value="\\*\NETLOGON"/>
+      <Equal OrderNum="14" Value="\\*\SYSVOL"/>
+      <Match OrderNum="14" Value="\\?\b???-??l"/>
+      <Match OrderNum="14" Value="\\?\BU??EP"/>
+      <Match OrderNum="14" Value="\\?\?o??o??ec?"/>
+      <Match OrderNum="14" Value="\\?\FH????c??n?e"/>
+      <Equal OrderNum="16" Value="spoolss"/>
+      <Equal OrderNum="16" Value="srvsvc"/>
+      <Equal OrderNum="16" Value="wkssvc"/>
+      <Equal OrderNum="16" Value="lsarpc"/>
+      <Equal OrderNum="16" Value="browser"/>
+      <Equal OrderNum="16" Value="NETLOGON"/>
+      <Equal OrderNum="16" Value="CanonCAPT40"/>
+      <Equal OrderNum="16" Value="CanonCAPT30"/>
+      <Equal OrderNum="16" Value="NETLOGON"/>
+      <Equal OrderNum="16" Value="MsFteWds"/>
+      <Equal OrderNum="16" Value="netdfs"/>
+      <Equal OrderNum="16" Value="\"/>
+      <Conjunction>
+	      <Match OrderNum="14" Value="\\?\etoken"/>
+	      <Match OrderNum="15" Value="\??\C:\*BUS_ETOKEN\etokenpass\etoken"/>
+      </Conjunction>
+      <Conjunction>
+	      <Match OrderNum="14" Value="\\?\branches"/>
+	      <Match OrderNum="15" Value="\??\?:\branches"/>
+      </Conjunction>
+      <Conjunction>
+	      <Match OrderNum="14" Value="\\?\userfolders"/>
+	      <Match OrderNum="15" Value="\??\?:\userfolders"/>
+      </Conjunction>
+      <Conjunction>
+	      <Match OrderNum="14" Value="\\?\?а?к?д? ?е???с"/>
+	      <Match OrderNum="15" Value="\??\?:\?а?к?д? ?е???с"/>
+      </Conjunction>
+      <Conjunction>
+	      <Match OrderNum="14" Value="\\?\1C"/>
+	      <Match OrderNum="15" Value="\??\?:\1C"/>
+      </Conjunction>
+    </Exclusions>
+  </Event> -->
+
+  <Event Name="SidHistoryAddedToAccount.Vista" Id="4765" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="AddSidHistoryToAccountFailed.Vista" Id="4766" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AttemptToSetDirectoryServicesRestoreModeAdminPassword.Vista" Id="4794" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="CredManagerCredsWereBackedUp.Vista" Id="5377" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="KerberosServiceTicketRequested.Vista" Id="4769" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Match OrderNum="9" Value="s??s??-?-1?a?p-??v"/>
+      <Match OrderNum="9" Value="W?P-DC?$"/>
+      <Equal OrderNum="9" Value="krbtgt"/>
+      <Match OrderNum="9" Value="??-svc-m?af??-krb"/>
+      <Match OrderNum="9" Value="W?P-RODC?$"/>
+      <Match OrderNum="9" Value="W??-?S-APP$"/>
+      <Match OrderNum="9" Value="W?P-CTX-DC?$"/>
+      <Equal OrderNum="9" Value="WHQ-SCCM$"/>
+      <Match OrderNum="9" Value="WHQ-DC??$"/>
+      <Match OrderNum="9" Value="WHQ-DC?$"/>
+      <Match OrderNum="9" Value="WRDC-DC??$"/>
+      <Match OrderNum="9" Value="WRDC-DC?$"/>
+      <Match OrderNum="9" Value="WHP-WEC?$"/>
+      <Match OrderNum="9" Value="WSP-CTX-APP?$"/>
+      <Match OrderNum="9" Value="REB-DC?$"/>
+      <Match OrderNum="9" Value="WK??-DC?$"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="KerberosAuthTicketRequested.Vista" Id="4768" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Conjunction>
+        <Equal OrderNum="9" Value="S-1-0-0"/>
+        <Equal OrderNum="11" Value="S-1-0-0"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="KerberosPreAuthFailed.Vista" Id="4771" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AttemptToValidateCredsForAccount.Vista" Id="4776" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="RDPSelfSignedCertificateGenerated.Vista" Id="1056" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="WirelessNetworkAuthentication.Vista" Id="5632" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserAccountEnabled.Vista" Id="4722" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserAccountDisabled.Vista" Id="4725" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserAccountDeleted.Vista" Id="4726" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="MemberAddedToSecurityGlobalGroup.Vista" Id="4728" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="MemberAddedToSecurityUniversalGroup.Vista" Id="4756" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="OperatingSystemStarted.Vista" Id="12" Channel="System" Provider="Microsoft-Windows-Kernel-General" OsType="Vista+" />
+  <Event Name="OperatingSystemShuttingDown.Vista" Id="13" Channel="System" Provider="Microsoft-Windows-Kernel-General" OsType="Vista+" />
+
+  <Event Name="SessionReconnectedToWinstation.Vista" Id="4778" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="ServiceStartTypeChanged.Vista" Id="7040" Channel="System" Provider="Service Control Manager" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="10" Value="BITS"/>
+      <Equal OrderNum="10" Value="TabletInputService"/>
+      <Equal OrderNum="10" Value="CmRcService"/>
+      <Equal OrderNum="10" Value="aspnet_state"/>
+      <Equal OrderNum="10" Value="MSDTC"/>
+      <Equal OrderNum="10" Value="smstsmgr"/>
+      <Equal OrderNum="10" Value="TrustedInstaller"/>
+      <Match OrderNum="10" Value="clr_optimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallServiceStopped.Vista" Id="5025" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="WinFirewallRuleAdded.Vista" Id="4946" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallRuleModified.Vista" Id="4947" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallRuleDeleted.Vista" Id="4948" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallSettingsRestoredToDefault.Vista" Id="4949" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="ReplayAttackDetected.Vista" Id="4649" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SystemTimeChanged.Vista" Id="4616" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="7" Value="S-1-5-19"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="MemberRemovedFromSecurityUniversalGroup.Vista" Id="4757" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="MemberRemovedFromSecurityGlobalGroup.Vista" Id="4729" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="OperationPerformedOnObject.Vista" Id="4662" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="11" Value="*LSA"/>
+      <Match OrderNum="11" Value="*WMI"/>
+      <Conjunction>
+          <Equal OrderNum="12" Value="%{bf967a86-0de6-11d0-a285-00aa003049e2}"/>
+          <Equal OrderNum="15" Value="0x0"/>
+          <Match OrderNum="18" Value="%%7688&#10;&#9;&#9;{771727b1*-00aa003049e2}&#10;"/>
+      </Conjunction>
+      <Conjunction>
+          <Equal OrderNum="8" Value="%{2b0b01c7-ebc5-48e2-952f-88cd212d8881}"/>
+          <Match OrderNum="13" Value="WRP-RODC?$"/>
+      </Conjunction>
+      <Conjunction>
+          <Equal OrderNum="8" Value="%{2b0b01c7-ebc5-48e2-952f-88cd212d8881}"/>
+          <Match OrderNum="13" Value="W?P-DC?$"/>
+      </Conjunction>
+      <Equal OrderNum="8" Value="%{546c2db2-e999-4130-9ad3-cda3afc3291a}"/>
+      <Equal OrderNum="8" Value="%{5938b8de-5168-4e07-8ecc-94d8176ac186}"/>
+      <Equal OrderNum="8" Value="%{c4516143-3593-4534-9381-70c8f275b501}"/>
+      <Equal OrderNum="8" Value="%{517f000a-8de7-4445-a150-356e89c53b48}"/>
+      <Equal OrderNum="8" Value="%{bda9dee8-0922-4e93-9a16-aeaf021ac332}"/>
+      <Equal OrderNum="8" Value="%{bfabbf78-66c7-4c02-b78a-bacf047b5724}"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="KerberosPolicyChanged.Vista" Id="4713" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DomainPolicyChanged.Vista" Id="4739" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AuditLogFull.Vista" Id="1104" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="ApplicationError.Vista" Id="1000" Channel="Application" Provider="Application Error" OsType="Vista+" />
+  <Event Name="ApplicationHang.Vista" Id="1002" Channel="Application" Provider="Application Hang" OsType="Vista+" />
+
+  <Event Name="SpecialGroupsAssignedToNewLogon.Vista" Id="4964" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AttemptToCreateHardLink.Vista" Id="4664" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="NotificationPackageLoadedBySAM.Vista" Id="4614" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SecurityPackageLoadedByLSA.Vista" Id="4622" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="7" Value="*\windows\system32\schannel.DLL : Microsoft Unified Security Protocol Provider"/>
+      <Match OrderNum="7" Value="*\windows\system32\wdigest.DLL : WDigest"/>
+      <Match OrderNum="7" Value="*\windows\system32\cloudAP.DLL : CloudAP"/>
+      <Match OrderNum="7" Value="*\windows\system32\pku2u.DLL : pku2u"/>
+      <Match OrderNum="7" Value="*\windows\system32\tspkg.DLL : TSSSP"/>
+      <Match OrderNum="7" Value="*\windows\system32\msv1_0.DLL : NTLM"/>
+      <Match OrderNum="7" Value="*\windows\system32\kerberos.DLL : Kerberos"/>
+      <Match OrderNum="7" Value="*\windows\system32\lsasrv.dll : Negotiate"/>
+      <Match OrderNum="7" Value="*\windows\system32\negoexts.DLL : NegoExtender"/>
+      <Match OrderNum="7" Value="*\windows\system32\cpssl.DLL : Schannel"/>
+      <Match OrderNum="7" Value="*\windows\system32\cpssl.DLL : CP_Schannel"/>
+      <Match OrderNum="7" Value="*\windows\system32\livessp.DLL : LiveSSP"/>
+      <Match OrderNum="7" Value="*\windows\system32\cpssl.DLL : Microsoft Unified Security Protocol Provider"/>
+      <Match OrderNum="7" Value="*\windows\system32\schannel.DLL : Schannel"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="AuthenticationPackageLoadedByLSA.Vista" Id="4610" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="7" Value="*\windows\system32\msv1_0.DLL : MICROSOFT_AUTHENTICATION_PACKAGE_V1_0"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="ComputerAccountChanged.Vista" Id="4742" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="ObjectPermissionsChanged.Vista" Id="4670" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="12" Value="Token"/>
+        <Match OrderNum="15" Value="D:(A;;GA;;;SY)(A;;*"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;SY)(A;;RC;;;OW)(A;;GA;;;S-1-5-*"/>
+        <Match OrderNum="18" Value="*\System32\services.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="12" Value="Token"/>
+        <Match OrderNum="15" Value="D:(A;;GA;;;SY)(A;;*"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;SY)(A;;RC;;;OW)(A;;GA;;;S-1-5-*"/>
+        <Match OrderNum="18" Value="*\System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Equal OrderNum="12" Value="Token"/>
+        <Match OrderNum="15" Value="D:(A;;GA;;;SY)(A;;*"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;SY)(A;;RC;;;OW)(A;;GA;;;S-1-5-*"/>
+        <Match OrderNum="18" Value="*\System32\SearchIndexer.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="Token"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;SY)"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="Token"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;SY)(A;;GXGR;;;S-1-5-5-?-*)(A;;GA;;;BA)"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="Token"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;BA)(A;;GA;;;SY)"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="Token"/>
+        <Match OrderNum="16" Value="D:(A;;GA;;;S-1-?-??-*)(A;;GA;;;BA)(A;;GA;;;SY)"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="16" Value="D:AI(A;;FA;;;SY)(A;;0x1200a9;;;BA)"/>
+        <Match OrderNum="18" Value="*\SecurIT\zservice6415.exe"/>
+      </Conjunction>
+      <Match OrderNum="18" Value="*Adobe\Reader*\AcroRd32.exe"/>
+      <Match OrderNum="18" Value="*Adobe\Acrobat*\Acrobat.exe"/>
+      <Match OrderNum="18" Value="*Adobe\Acrobat*CEF.exe"/>
+      <Match OrderNum="18" Value="*Mozilla*\firefox.exe"/>
+      <Match OrderNum="18" Value="*Adobe\Acrobat*\AcroRd32.exe"/>
+      <Match OrderNum="18" Value="*SecurIT\zservice6415.exe"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="PrivilegedServiceCalled.Vista" Id="4673" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Equal OrderNum="13" Value="SeProfileSingleProcessPrivilege"/>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*System32\taskhostw.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Office\*\EXCEL.EXE"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeLoadDriverPrivilege"/>
+        <Match OrderNum="15" Value="*System32\RuntimeBroker.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*System32\backgroundTaskHost.exe"/>
+      </Conjunction>
+      <Match OrderNum="15" Value="*globitel\speechlog retail client\ffmpeg.exe"/>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Application\chrome.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeIncreaseBasePriorityPrivilege"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*AppData\Local\Microsoft\Teams\current\Teams.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="Security"/>
+        <Equal OrderNum="12" Value="-"/>
+        <Equal OrderNum="13" Value="SeLoadDriverPrivilege"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="NT Local Security Authority / Authentication Service"/>
+        <Equal OrderNum="12" Value="LsaRegisterLogonProcess()"/>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*System32\lsass.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*System32\RuntimeBroker.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Microsoft\Edge\Application\msedge.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*Acrobat.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*AcroRd32.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Adobe\Acrobat*CEF.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*System32\lsass.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Match OrderNum="15" Value="*Internet Explorer\iexplore.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="13" Value="SeTcbPrivilege"/>
+        <Equal OrderNum="15" Value="C:\Windows\explorer.exe"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="OperationOnPrivilegedObject.Vista" Id="4674" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="DuplicateObjectHandle.Vista" Id="4690" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Equal OrderNum="7" Value="S-1-5-18"/>
+      <Conjunction>
+        <Match OrderNum="12" Value="0x???"/>
+        <Equal OrderNum="14" Value="0x4"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="12" Value="0x1???"/>
+        <Equal OrderNum="14" Value="0x4"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="12" Value="0x4"/>
+        <Equal OrderNum="14" Value="0x4"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="IndirectObjectAccess.Vista" Id="4691" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="UnprotectionOfProtectedData.Vista" Id="4695" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="PrimaryTokenToProcess.Vista" Id="4696" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ScheduledTaskDeleted.Vista" Id="4699" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ScheduledTaskEnabled.Vista" Id="4700" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="UserRightRemoved.Vista" Id="4705" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="NewTrustCreated.Vista" Id="4706" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="IPsecSeriousFailure.Vista" Id="4712" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ObjectAuditPolicyChanged.Vista" Id="4715" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DomainInformationModified.Vista" Id="4716" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SystemAccessToAccount.Vista" Id="4717" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SecurityGlobalGroupCreated.Vista" Id="4727" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SecurityGlobalGroupDeleted.Vista" Id="4730" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SecurityLocalGroupCreated.Vista" Id="4731" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SecurityLocalGroupDeleted.Vista" Id="4734" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="PrivilegedLocalGroupModified.Vista" Id="4735" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="PrivilegedGlobalGroupModified.Vista" Id="4737" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SecurityUniversalGroupCreated.Vista" Id="4754" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="PrivilegedUniversalGroupModified.Vista" Id="4755" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SecurityUniversalGroupDeleted.Vista" Id="4758" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="GroupsTypeChanged.Vista" Id="4764" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="UserAccountUnlocked.Vista" Id="4767" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="KerberosAuthTicketRequestFailed.Vista" Id="4772" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="KerberosServiceTicketRequestFailed.Vista" Id="4773" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="AccountCouldNotBeMapped.Vista" Id="4775" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DCFailedValidateCreds.Vista" Id="4777" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ACLSetOnAdministratorsMember.Vista" Id="4780" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="AccountNameChanged.Vista" Id="4781" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="AccountPasswordHashAccessed.Vista" Id="4782" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="NonMemberAddedToBasicAppGroup.Vista" Id="4787" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="BlankPasswordChecked.Vista" Id="4797" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="UserLocalGroupMembershipEnumerated.Vista" Id="4798" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+	  <Match OrderNum="15" Value="*AGENT\soyuz.exe"/>
+      <Match OrderNum="15" Value="*Agent\soyuz.exe"/>
+      <Conjunction>
+        <Equal OrderNum="7" Value="administrator"/>
+        <Equal OrderNum="10" Value="s-1-5-18"/>
+        <Match OrderNum="11" Value="*$"/>
+        <Match OrderNum="15" Value="*tools\vmtoolsd.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="WDAGUtilityAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Guest"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Administrator"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="KlNagSvc"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="setupadmin"/>
+        <Equal OrderNum="10" Value="s-1-5-18"/>
+        <Match OrderNum="11" Value="*$"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="DefaultAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="WDAGUtilityAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Гость"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="cba_anonymous"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="админ"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="DefaultAccount"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="Администратор"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="7" Value="LAPSAdmin"/>
+        <Equal OrderNum="10" Value="S-1-5-18"/>
+        <Match OrderNum="15" Value="*System32\wbem\WmiPrvSE.exe"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+  <Event Name="SecurityLocalGroupMembershipEnumerated.Vista" Id="4799" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Match OrderNum="15" Value="*AGENT\soyuz.exe"/>
+      <Match OrderNum="15" Value="*gent\soyuz.exe"/>
+      <Match OrderNum="15" Value="*System32\SrTasks.exe"/>
+      <Match OrderNum="15" Value="*System32\svchost.exe"/>
+      <Match OrderNum="15" Value="*System32\VSSVC.exe"/>
+      <Match OrderNum="15" Value="*System32\msiexec.exe"/>
+      <Match OrderNum="15" Value="*SysWOW64\vrvedp_m.exe"/>
+      <Match OrderNum="15" Value="*agent\DellSupportAssistRemedationService.exe"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="RPCIntegrityViolation.Vista" Id="4816" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CentralAccessPolicySuspiciousPermissions.Vista" Id="4818" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="AccessControlRestrictionsDeniedTGT.Vista" Id="4820" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="AccessControlRestrictionsDeniedServiceTicket.Vista" Id="4821" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ProtectedGroupPolicyBlockedNTLMAuth.Vista" Id="4822" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ProtectedGroupPolicyBlockedKerberosPreauth.Vista" Id="4824" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="RemoteDesktopDenied.Vista" Id="4825" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="BootConfigurationDataLoaded.Vista" Id="4826" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SIDHistoryRemoved.Vista" Id="4830" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="TrustedForestInformationEntryAdded.Vista" Id="4865" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="TrustedForestInformationEntryModified.Vista" Id="4867" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CertificateRevoked.Vista" Id="4870" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CertificateServicesPermissionsChanged.Vista" Id="4882" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CertificateIssued.Vista" Id="4887" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CertificateRequestDenied.Vista" Id="4888" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CertificateManagerSettingsChanged.Vista" Id="4890" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CACertificatePublished.Vista" Id="4895" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CertificateServicesSecurityUpdated.Vista" Id="4900" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SecurityEventSourceUnregistered.Vista" Id="4905" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SpecialGroupsLogonTableModified.Vista" Id="4908" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="LocalPolicyForTBSChanged.Vista" Id="4909" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="GroupPolicyForTBSChanged.Vista" Id="4910" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ADReplicaSrcNamingContextEstablished.Vista" Id="4928" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ADReplicaSrcNamingContextRemoved.Vista" Id="4929" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ADReplicaSrcNamingContextModified.Vista" Id="4930" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ADReplicaDestNamingContextModified.Vista" Id="4931" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ADNamingContextReplicaSynchronizationBegun.Vista" Id="4932" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ADNamingContextReplicaSynchronizationEnded.Vista" Id="4933" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ADObjectAttributesReplicated.Vista" Id="4934" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ReplicationFailureBegins.Vista" Id="4935" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ReplicationFailureEnds.Vista" Id="4936" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="FirewallRuleParsingFailed.Vista" Id="4953" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="FirewallGroupPolicySettingsApplied.Vista" Id="4954" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="FirewallActiveProfileChanged.Vista" Id="4956" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="FirewallRuleReferredToNotConfiguredItem.Vista" Id="4958" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="IPsecInboundPacketIntegrityFailure.Vista" Id="4960" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="IPsecDeniedInboundClearTextPacket.Vista" Id="4963" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="IPsecDetectedPacketWithIncorrectSPI.Vista" Id="4965" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID4976.Vista" Id="4976" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID4977.Vista" Id="4977" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID4978.Vista" Id="4978" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID4983.Vista" Id="4983" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID4984.Vista" Id="4984" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5027.Vista" Id="5027" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5028.Vista" Id="5028" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5029.Vista" Id="5029" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5030.Vista" Id="5030" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5031.Vista" Id="5031" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5032.Vista" Id="5032" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5034.Vista" Id="5034" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5035.Vista" Id="5035" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5037.Vista" Id="5037" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5040.Vista" Id="5040" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5041.Vista" Id="5041" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5043.Vista" Id="5043" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5044.Vista" Id="5044" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5046.Vista" Id="5046" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5047.Vista" Id="5047" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5049.Vista" Id="5049" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5050.Vista" Id="5050" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5057.Vista" Id="5057" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="DSObjectModified" Id="5136" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectCreated" Id="5137" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectUndeleted" Id="5138" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectMoved" Id="5139" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DSObjectDeleted" Id="5141" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="EventID5146.Vista" Id="5146" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5147.Vista" Id="5147" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5148.Vista" Id="5148" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5150.Vista" Id="5150" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5151.Vista" Id="5151" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+<!-- 
+  <Event Name="EventID5152.Vista" Id="5152" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+-->
+
+  <Event Name="EventID5153.Vista" Id="5153" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+<!-- 
+  <Event Name="EventID5157.Vista" Id="5157" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+-->
+
+  <Event Name="EventID5159.Vista" Id="5159" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5168.Vista" Id="5168" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="CredentialsManagerRead.Vista" Id="5379" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Match OrderNum="11" Value="MicrosoftOffice*"/>
+      <Match OrderNum="11" Value="msteams*"/>
+      <Match OrderNum="11" Value="vscode-*"/>
+      <Match OrderNum="11" Value="WindowsLive:*"/>
+      <Match OrderNum="11" Value="MicrosoftAccount:*"/>
+      <Match OrderNum="11" Value="Microsoft:SSMS:*"/>
+      <Match OrderNum="11" Value="Adobe App Info (Q*"/>
+      <Conjunction>
+      	<Equal OrderNum="7" Value="S-1-5-19" />
+      	<Equal OrderNum="8" Value="LOCAL SERVICE" />
+      	<Equal OrderNum="9" Value="NT AUTHORITY" />
+      	<Equal OrderNum="12" Value="0" />
+      	<Equal OrderNum="14" Value="%%8100" />
+      	<Equal OrderNum="15" Value="3221226021" />
+      </Conjunction>
+      <Conjunction>
+      	<Equal OrderNum="7" Value="S-1-5-19" />
+      	<Equal OrderNum="8" Value="LOCAL SERVICE" />
+      	<Equal OrderNum="9" Value="NT AUTHORITY" />
+      	<Equal OrderNum="12" Value="1" />
+      	<Equal OrderNum="14" Value="%%8099" />
+      	<Equal OrderNum="15" Value="3221226021" />
+      </Conjunction>
+      <Conjunction>
+      	<Equal OrderNum="7" Value="S-1-5-18" />
+      	<Match OrderNum="8" Value="*$" />
+      	<Equal OrderNum="12" Value="1" />
+      	<Equal OrderNum="14" Value="%%8099" />
+      	<Equal OrderNum="15" Value="3221226021" />
+      </Conjunction>
+      <Conjunction>
+      	<Equal OrderNum="7" Value="S-1-5-18" />
+      	<Match OrderNum="8" Value="*$" />
+      	<Equal OrderNum="12" Value="0" />
+      	<Equal OrderNum="14" Value="%%8100" />
+      	<Equal OrderNum="15" Value="3221226021" />
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="EventID5381.Vista" Id="5381" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5382.Vista" Id="5382" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="WindowsFilteringPlatformFilterChanged.Vista" Id="5447" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+      <Conjunction>
+        <Match OrderNum="14" Value="internetclient*default rule"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="privatenetwork *bound default rule"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="allow *ing wsd * peerdistsvc"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="inbound rule for remote shutdown*"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="inbound rule for remote*(rpc-ep-in)"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="remote * (rpc-epmap)"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="windows defender firewall remote management (rpc-epmap)"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="windows firewall remote management (rpc-epmap)"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="wi-fi direct asp coordination protocol (udp-*"/>
+        <Match OrderNum="18" Value="ale * v? layer"/>
+      </Conjunction>
+      <Conjunction>
+        <Match OrderNum="14" Value="teredo *filter (*bound)"/>
+        <Match OrderNum="18" Value="* v? layer"/>
+      </Conjunction>
+      <Match OrderNum="14" Value="@{microsoft.*"/>
+      <Match OrderNum="14" Value="@{windows.*"/>
+      <Match OrderNum="14" Value="*sppextcomobj"/>
+      <Match OrderNum="14" Value="*vmicheartbeat"/>
+      <Match OrderNum="14" Value="hyper-v*"/>
+      <Match OrderNum="14" Value="kaspersky lab*"/>
+      <Equal OrderNum="14" Value="mdns (udp-in)"/>
+      <Match OrderNum="14" Value="vmms (*"/>
+      <Match OrderNum="14" Value="xbox*"/>
+      <Match OrderNum="14" Value="klncap * v?"/>
+      <Match OrderNum="14" Value="klncap * filter"/>
+      <Equal OrderNum="14" Value="block inbound default rule" />
+      <Equal OrderNum="14" Value="block outbound default rule" />
+      <Equal OrderNum="14" Value="file and printer sharing (spooler service - rpc-epmap)" />
+      <Equal OrderNum="14" Value="klncap exclusion filter ?" />
+      <Match OrderNum="14" Value="windows backup (rpc-epmap)" />
+      <Match OrderNum="14" Value="Общий доступ к файлам и принтерам (служба диспетчера очереди печати - rpc-epmap)" />
+      <Equal OrderNum="14" Value="Windows Media Player Network Sharing Service service hardening - RTSP" />
+      <Equal OrderNum="14" Value="TermServiceLOM" />
+      <Match OrderNum="14" Value="Allow PNRP to send to port*" />
+      <Match OrderNum="14" Value="Allow Grouping to send to port*" />
+      <Match OrderNum="14" Value="Allow Grouping to receive from port*" />
+      <Equal OrderNum="14" Value="Cast to Device streaming server hardening rules for RTSP" />
+      <Match OrderNum="14" Value="ST-Agent Driver: Inspect *" />
+      <Match OrderNum="14" Value="Klncap exclusion filter ?" />
+      <Equal OrderNum="14" Value="Cisco AnyConnect Filter" />
+      <Equal OrderNum="14" Value="DhcpFirewallPolicy" />
+      <Conjunction>
+        <Equal OrderNum="14" Value="block*"/>
+        <Equal OrderNum="18" Value="*v6 layer"/>
+      </Conjunction>
+      <Equal OrderNum="14" Value="allow out tcp traffic from windefend" />
+      <Equal OrderNum="14" Value="wsh default inbound block" />
+      <Equal OrderNum="14" Value="wsh default outbound block" />
+      <Equal OrderNum="14" Value="allow outbound udp traffic from local ntp port 123 to remote ntp port 123" />
+      <Equal OrderNum="14" Value="windefend outbound for tcp" />
+      <Match OrderNum="14" Value="*peerdistsvc" />
+      <Match OrderNum="14" Value="messagequeuing-*" />
+      <Equal OrderNum="14" Value="allow outbound tcp traffic from winhttpautoproxysvc" />
+      <Equal OrderNum="14" Value="allow tcp traffic from lpasvc" />
+      <Equal OrderNum="14" Value="block all inbound traffic to searchprotocolhost" />
+      <Equal OrderNum="14" Value="allow ntp traffic from wcmsvc" />
+      <Equal OrderNum="14" Value="allow inbound rpc traffic to the block level backup service (wbengine) over tcp" />
+      <Equal OrderNum="14" Value="allow inbound udp traffic to ntp port 123" />
+      <Equal OrderNum="14" Value="allow incoming rpc traffic to vds" />
+      <Match OrderNum="14" Value="*p traffic to lmhosts port 53" />
+      <Equal OrderNum="14" Value="allow inbound udp traffic to snmptrap service" />
+      <Equal OrderNum="14" Value="allow outbound ldap traffic from searchindexer" />
+      <Match OrderNum="14" Value="block*searchfilterhost" />
+      <Equal OrderNum="14" Value="allow outbound tcp traffic from dmenrollment" />
+      <Match OrderNum="14" Value="ipsec policy agent service hardening*" />
+      <Match OrderNum="14" Value="*dmcertinst.exe" />
+      <Match OrderNum="14" Value="*omadmclient.exe" />
+      <Equal OrderNum="14" Value="allow outbound tcp traffic from fdphost" />
+      <Match OrderNum="14" Value="allow pnrp to*3540" />
+      <Equal OrderNum="14" Value="allow rpc/tcp traffic to eventlog" />
+      <Match OrderNum="14" Value="*fdphost port 1900" />
+      <Match OrderNum="14" Value="*fdphost port 3702" />
+      <Equal OrderNum="14" Value="device metadata retrieval" />
+      <Equal OrderNum="14" Value="allow outbound udp traffic from any port to cdpsvc port 5050" />
+      <Equal OrderNum="14" Value="axinstsv tcp outbound allow" />
+      <Match OrderNum="14" Value="*p traffic from ajrouter" />
+      <Match OrderNum="14" Value="*p traffic from cdpsvc*" />
+      <Match OrderNum="14" Value="*p traffic to cdpsvc*" />
+      <Match OrderNum="14" Value="windows media* block *" />
+      <Match OrderNum="14" Value="cast to device streaming* block *" />
+      <Conjunction>
+        <Equal OrderNum="11" Value="@bfe.dll,-1209"/>
+        <Match OrderNum="21" Value="*(A;;CC;;;WD)(A;;CC;;;AN)??"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="@bfe.dll,-1209"/>
+        <Match OrderNum="21" Value="*d78e1e87-8644-4ea5-9437-d809ecefc971*"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="8" Value="S-1-5-19"/>
+        <Match OrderNum="14" Value="InternetClient*"/>
+        <Match OrderNum="21" Value="*(A;;CC;;;WD)(A;;CC;;;AN)??"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="8" Value="S-1-5-19"/>
+        <Match OrderNum="14" Value="PrivateNetwork*"/>
+        <Match OrderNum="21" Value="*(A;;CC;;;WD)(A;;CC;;;AN)??"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="EventID5448.Vista" Id="5448" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5449.Vista" Id="5449" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5450.Vista" Id="5450" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5479.Vista" Id="5479" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5484.Vista" Id="5484" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID5485.Vista" Id="5485" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6144.Vista" Id="6144" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6145.Vista" Id="6145" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6273.Vista" Id="6273" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6274.Vista" Id="6274" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6275.Vista" Id="6275" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6276.Vista" Id="6276" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6277.Vista" Id="6277" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6279.Vista" Id="6279" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6281.Vista" Id="6281" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6406.Vista" Id="6406" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6410.Vista" Id="6410" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6421.Vista" Id="6421" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="EventID6423.Vista" Id="6423" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="WMIActivity11.Vista" Id="11" Channel="Microsoft-Windows-WMI-Activity/Trace" Provider="Microsoft-Windows-WMI-Activity" OsType="Vista+" >
+		<Exclusions>
+			<Equal OrderNum="10" Value="IWbemServices::Connect"/>
+			<Equal OrderNum="10" Value="start iwbemservices::execquery - root\cimv2 : select manufacturer, product from win32_baseboard" />
+			<Equal OrderNum="10" Value="start iwbemservices::createinstanceenum - root\cimv2 : win32_baseboard" />
+			<Equal OrderNum="10" Value="start iwbemservices::execmethod - root\cimv2\terminalservices : win32_terminalservicesetting::getgraceperioddays" />
+			<Equal OrderNum="10" Value="start iwbemservices::execquery - root\cimv2 : select totalsessions from win32_terminalservice" />
+			<Equal OrderNum="10" Value="start iwbemservices::createinstanceenum - root\rsop\user : __namespace" />
+			<Equal OrderNum="10" Value="start iwbemservices::execquery - root\cimv2 : select product, version, manufacturer, serialnumber from win32_baseboard" />
+      	<Match OrderNum="10" Value="*nteventlogeventconsumer*and not*" />
+      	<Match OrderNum="10" Value="*c:\\windows\\system32\\drivers\\*.sys[*" />
+      	<Match OrderNum="10" Value="start iwbemservices::execquery - root\cimv2 : select ? from win32_physicalmemory" />
+      	<Match OrderNum="10" Value="*softwarelicensingproduct*" />
+      	<Match OrderNum="10" Value="*c:\\windows\\system32\\*.dll[*" />
+      	<Match OrderNum="10" Value="start iwbemservices::createclassenum - root\wmi*" />
+      	<Match OrderNum="10" Value="*c:\\windows\\system32\\drivers\\*.sys.mui[*" />
+      	<Match OrderNum="10" Value="*win32_service where name = '*" />
+      	<Match OrderNum="10" Value="*win32_quickfixengineering*" />
+      	<Match OrderNum="10" Value="*monitor.sys[monitorwmi]&#34;" />
+      	<Match OrderNum="10" Value="*win32_systemenclosure*" />
+      	<Match OrderNum="10" Value="start iwbemservices::execmethod - root\wmi : bcdobject.id*" />
+      	<Match OrderNum="10" Value="start iwbemservices::execquery - root\wmi : select ? from wmibinarymofresource" />
+      	<Match OrderNum="10" Value="*wdmclassesofdriver where driver*" />
+      	<Match OrderNum="10" Value="*win32_physicalmedia where tag*" />
+      	<Match OrderNum="10" Value="start iwbemservices::deleteinstance - root\rsop\computer : rsop_*" />
+      	<Match OrderNum="10" Value="*__win32provider.name=*" />
+      	<Match OrderNum="10" Value="*win32_perfrawdata*" />
+      	<Match OrderNum="10" Value="*where manufacturer *" />
+      	<Match OrderNum="10" Value="*win32_videocontroller where adapterram*" />
+      	<Match OrderNum="10" Value="*where not manufacturer like*" />
+      	<Match OrderNum="10" Value="*win32_battery*" />
+      	<Match OrderNum="10" Value="*where domain = '*microsoft.com'" />
+      	<Match OrderNum="10" Value="*win32_pnpentity*" />
+      	<Match OrderNum="10" Value="*where domain like '*.microsoft.com'" />
+      	<Match OrderNum="10" Value="*speed from win32_networkadapter where netconnectionstatus is not null" />
+      	<Match OrderNum="10" Value="*where processname = 'wsmprovhost.exe'*" />
+      	<Match OrderNum="10" Value="*pnpdeviceid from win32_sounddevice*" />
+      	<Match OrderNum="10" Value="*processorid from win32_processor*" />
+      	<Match OrderNum="10" Value="*where interfacetype*" />
+      	<Match OrderNum="10" Value="*pagefile*"/>
+      	<Match OrderNum="10" Value="start iwbemservices::execquery - root* : select * from __eventconsumer"/>
+      	<Match OrderNum="10" Value="start iwbemservices::execquery - root* : select * from __namespace"/>
+		</Exclusions>
+  </Event>
+
+  <Event Name="WMIActivity12.Vista" Id="12" Channel="Microsoft-Windows-WMI-Activity/Trace" Provider="Microsoft-Windows-WMI-Activity" OsType="Vista+" >
+		<Exclusions>
+      	<Match OrderNum="8" Value="*pagefile*"/>
+			<Equal OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, manufacturer, product from win32_baseboard" />
+			<Equal OrderNum="8" Value="provider::createclassenum - delegatorprovider : __namespace" />
+			<Equal OrderNum="8" Value="provider::getobject - cimwin32 : win32_service.name=&#34;termservice&#34;" />
+			<Equal OrderNum="8" Value="provider::createclassenum - delegatorprovider : __eventconsumer" />
+			<Equal OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, uuid from win32_computersystemproduct" />
+			<Equal OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, product, version, manufacturer, serialnumber from win32_baseboard" />
+			<Equal OrderNum="8" Value="provider::createinstanceenum - cimwin32 : win32_computersystemproduct" />
+			<Equal OrderNum="8" Value="provider::createinstanceenum - cimwin32 : win32_physicalmemory" />
+			<Equal OrderNum="8" Value="provider::execquery - win32_win32_terminalservice_prov : select __relpath, totalsessions, __relpath from win32_terminalservice" />
+			<Equal OrderNum="8" Value="provider::createinstanceenum - cimwin32 : win32_baseboard" />
+			<Equal OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, index from win32_diskdrive" />
+			<Equal OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, tag, name, description, capacity, speed from win32_physicalmemory" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, name, startmode, state, errorcontrol, exitcode, processid, servicetype, startname, status, __relpath from win32_service where name*" />
+      	<Match OrderNum="8" Value="*__relpath*where name =*" />
+      	<Match OrderNum="8" Value="*win32_systemenclosure*" />
+      	<Match OrderNum="8" Value="provider::createclassenum - microsoft|dsldapclassprovider*" />
+      	<Match OrderNum="8" Value="provider::getobject - bcdprov : bcdobject.id*" />
+      	<Match OrderNum="8" Value="provider::execmethod - bcdprov : bcdobject*" />
+      	<Match OrderNum="8" Value="*softwarelicensingproduct*" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, deviceid*" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, __relpath*" />
+      	<Match OrderNum="8" Value="*win32_physicalmedia where tag*" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, chassistypes*" />
+      	<Match OrderNum="8" Value="*win32_quickfixengineering*" />
+      	<Match OrderNum="8" Value="*where (manufacturer *" />
+      	<Match OrderNum="8" Value="*win32_pnpentity*" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, *microsoft.com&#34;" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, adapterram*" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, batterystatus*" />
+      	<Match OrderNum="8" Value="*where manufacturer *" />
+      	<Match OrderNum="8" Value="*where ((manufacturer *" />
+      	<Match OrderNum="8" Value="*where (((manufacturer *" />
+      	<Match OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, __path*" />
+			<Equal OrderNum="8" Value="provider::createclassenum - delegatorprovider : __namespace"/>
+			<Equal OrderNum="8" Value="provider::execquery - cimwin32 : select __relpath, __relpath from win32_process"/>
+		</Exclusions>
+  </Event>
+
+  <Event Name="NetlogonAuthFailure.Vista" Id="5805" Channel="System" Provider="NETLOGON" OsType="Vista+" />
+
+</Events>

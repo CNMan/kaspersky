@@ -1,0 +1,163 @@
+<Update
+	Date="05022026 0801"
+	BlstDate="04022026 2038"
+	ObjectType="2=APD;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="1392"
+	CompID="APD"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAVMAC 22.0.0;KES 11.[2,4];KES 11.1.[0,1].[126,15919];KES 21.2;KESMAC 11.2.0;SAASMAC 21.[0-1].0"/>
+	<File
+		LocalPath="%BaseFolder%\Stat"
+		Name="apuhttps.stt">MDsyMDE5MDQxNzE2MzIK</File>
+	<File
+		App="KASPERSKY|KSOSPC|KSOSFS 21.[4-9,13-25];KAV|KIS|PURE|KFA|SAAS|KSOSPC|KSOSFS [16-21].[0-3].*.*;KAVMAC [22-26];KAVSDK 8.10.[0-4].*;KAVSDK 8.9.*.*;KES 11.[1-4].*.*;KES 21.[2-9,13-25];KESLKSVLA 12;KESMAC 11.[0-3].*.*;KESMAC 12.[0-3];KESSL 3.[3-4];KESSL 4;KFL 2;KICSNL 1.[3,5].0.*;KICSNL 2.0;KICSNLO 2;KISMAC [20-21].[0-1].*.*;KSLS 11.[0-4].0.*;KSLS 12.[0-4];KSVLA 5.[1-2].*.*;NGFW 1.0.0.*;SAASMAC [20-21].[0-1].*.*"
+		Name="apuhttps.dat"
+		DSKM="sFwXqGY77xvAETqisp45j3Smcj3tnu9wYZmSJ12FDcM="/>
+	<File
+		App="KAVMAC [22-26];KESMAC 11.[0-3].*.*;KESMAC 12.[0-3];KISMAC [20-21].[0-1].*.*;SAASMAC [20-21].[0-1].*.*"
+		OS="Mac"
+		Arch="x64"
+		SrvPath="x64/mac"
+		Name="libapuhttps.dylib"
+		DSKM="EzYjugeaTix/I0n0MZCl4tPlAjfs80wKeCNCuYVNfbE="/>
+	<File
+		App="KAVMAC [22-26];KESMAC 11.[2-3];KESMAC 12.[0-3];SAASMAC|KISMAC 21.1.*.*"
+		OS="Mac"
+		Arch="a64"
+		Shell="bdif;klz;none"
+		SrvPath="arm64/mac"
+		Name="libapuhttps.dylib"
+		DSKM="D3t4TKcasn+YAc/zQnem7rMSMLWJOquhTa/PQUloXHk="/>
+	<Files
+		App="KESSL 4;KSLS 11.[3-4].0.*;KSLS 12.[0-4]"
+		Arch="a64"
+		SysArch="a64"
+		Shell="bdif;klz;none"
+		Item="OS;SrvPath;Name;DSKM"
+		List="
+			Linux|arm64/nix|libapuhttps.so|RDGHDY0wEbu2xaFO1BykKtE961Qd4ZNnUbwl2nZKsA4=;
+			Linuxs-125|arm64/nix-125|libapuhttps.so|n9D5PNsGS5WSd3CpsQmLVhk8oFJLpT73r7f2O849me4="/>
+	<Files
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KESLKSVLA 12\;KESSL 3.[3-4]\;KESSL 4\;KICSNL 1.[3,5].0.*\;KICSNL 2.0\;KSLS 11.[0-4].0.*\;KSLS 12.[0-4]|Linux|i386|i386/nix|libapuhttps.so|81jdXfcC7mKYXDvWTR6w5N9CZsl3Itae3NtQgzyKOQQ=;
+			KICSNLO 2|Linuxs-135\;Linuxs-136|i386|i386/nix-135|libapuhttps.so|JxqOGDEcACfalRbZbraYPUDdNrD4RtRk25WFQpDT/g0=;
+			KESLKSVLA 12\;KESSL 3.[3-4]\;KESSL 4\;KFL 2\;KICSNL 1.[3,5].0.*\;KICSNL 2.0\;KSLS 11.[0-4].0.*\;KSLS 12.[0-4]\;NGFW 1.0.0.*|Linux|x64|x64/nix|libapuhttps.so|ZO30iShDmw5KcQpXewJexKzQFVz1gcQ1bEOvbR2NRPs=;
+			KICSNLO 2|Linuxs-137\;Linuxs-138|x64|x64/nix-137|libapuhttps.so|G2xVnSrf5LO5BDqnp6ZOnM+Dw5gPaDnhC/FjCpUU6Lc=;
+			KESLKSVLA 12\;KESSL 3.[3-4]\;KESSL 4\;KICSNL 1.[3,5].0.*\;KICSNL 2.0\;KSLS 11.[0-4].0.*\;KSLS 12.[0-4]|Linuxs-104|x64|x64/nix-104|libapuhttps.so|KzGNAJJZAuIg85VEzA6TevGjpA4pQ6AATTuF675Qowo=;
+			KICSNLO 2|Linuxs-139|x64|x64/nix-139|libapuhttps.so|aPShl00CBpDMvIgp4lFK5qPq6Z82Yl50u0Sifdk0Ku8="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="apd-1313g.sha2rg"
+		DSKM="CWMm63H7a0zvZanu8/P0W78YjTtxkkj0jUfp1Bm+b7E="/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="!KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC|KES|KASPERSKY [16-21];KFA|KSM|SAAS|KSOSFS|KSOSPC [16-17]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|PURE 16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|PURE 16"
+		Target="[1-262143]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|PURE 17"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|PURE 17"
+		Target="[1-262143]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC 18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC 18"
+		Target="[1-262143]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC 19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC 19"
+		Target="[1-262143]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC 20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC 20"
+		Target="[1-262143]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC|KASPERSKY 21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KAV|KIS|KFA|KSM|SAAS|PURE|KSOSFS|KSOSPC|KASPERSKY 21"
+		Target="[1-262143]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KES 21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<Index
+		CompID="APD,RETR1901_APD"
+		App="KES 21"
+		Target="[1-262143]"
+		Name="unmod-apd-1313g.xml"
+		Date="05022026 0801"/>
+	<File
+		CompID="RETR1901_APD"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="apd-1901g.xml"
+		DSKM="6zzFoCtBb2hbPVF2yDIX9TqfJSIzGGsFwXC3VgOA4Yk="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="apd-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAC66asLETHgl/UczJp66Guzgx8NphzxjWgqXfJWUZ7bnBV00uTOTMu1oQEtU2Aa6M9JVOQrvNiHwbsgerDXAS1oBAB4JOAEAAAIAAigDAEFQRAMAAigEAEJBU0UBAAAJURrJJw0KOzoxMEs1R1BTYm95VlRKU01qQWRaRDRJMlNEdnpMVnVkMmc3NGJHTUpTc05WUVVOcVhEZ1lOQTIzRHljRS93VVM5SXNuWDFQRHA4SlcwSXlMcy9TNzRyMWRVJSU=</Key>
+</Update>
+;:104Rwdegnm3zO0GkaAwur/vPHWOr4OdKqyGsOmjZj6ha4nWhvvx86j86EZWriu96UVUHXgDEcwHeXQ2fMGeRQhFw%%
