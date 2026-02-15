@@ -1,0 +1,30 @@
+<Update
+	Date="15112024 2143"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="4505"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.19.7.527"
+		ApplyPeriod="0"
+		FixName="a"
+		SrvPath="21.19.7.527_ksde_a"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|ucp_agent.dll|k8r3TYPHqMDSxiiui+VQozX9XIl2GTnZ7QgRtxPmVvw=;
+			restart_none|ver_info.json|/3dDS4Cy2uVnWi5dQ2V2mFOgiWqw8MjTR8macQOwjd8="/>
+	<File
+		CompID="RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-ksde21-mr19-1901g.xml"
+		DSKM="VoETx4YeE/b0ciioWKpJ7SGBk9OCquBG3PiURI4FyTA="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
+</Update>
+;:10KL7oI3xa4je5x04pNBkPqAsJI3AzZznfdm/5J70DA+nBqiptMwk7qDdVI5m6uQ5F73ubt3QMO/pwLHiY3z2HkR%%

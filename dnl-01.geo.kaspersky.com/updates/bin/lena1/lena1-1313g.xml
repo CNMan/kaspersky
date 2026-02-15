@@ -1,0 +1,30 @@
+<Update
+	Date="16032021 1044"
+	ObjectType="2=LENA1;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="20958"
+	CompID="LENA1"
+	Shell="bdif;klz;none">
+	<Patches
+		App="LENA 3.9.*.*"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		SrvPath="patch"
+		LocalPath="%ProductFolder%"
+		Item="OS;Name;DSKM"
+		List="
+			Linux-98|epagent_3.9.5-631_amd64.deb|TXTbYrHyxpaawVCJWyaS3QM6KnKtaUc0v1fRjbYY8B4=;
+			Linux-99|epagent-3.9.5-631.x86_64.rpm|Ie2lpXyrxWgL+AWXsDS54i/7GaHuSqboTSKMdL9kBa4="/>
+	<File
+		CompID="RETR1901_LENA1"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="lena1-1901g.xml"
+		DSKM="5n6n1WE1U7Bmv9loKK3AdmzQH38KJCppRZZz9HJGTSk="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="lena1-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHdzlrZMCdIzTthp0cGg2J6Ta4nHMCwwC7XHSfgX1h3Uam/FBll3ICH3riEGLgKwxb89QKNc0BFGgn0a+G8i5uABAB4JAgIAAAIAAigFAExFTkExAwACKAMAQklOAQAACaIHrS8NCjs6MTBhNGlXNmVWWkU3K1pxWjFRbnFUWkIrb2x4Q2ZicHZBRmVEdGpWdncxYmRUUUxpMyt3QlRmbTdPZnZISnFHeEhuVkdLYUdFcjhwbXAwVGNuWGVTTXVZNCUl</Key>
+</Update>
+;:10q8AU3i0SD26FNFxVh2WpG/79JRm/cgz1bjpGyMTxk6um5XsnVFesb2KghXG+s3hS4j5aS9IMygZSnqF9nH0akh%%

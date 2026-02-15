@@ -1,0 +1,313 @@
+<Update
+	Date="14022026 2130"
+	BlstDate="14022026 0838"
+	ObjectType="2=HIPS;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="4489"
+	CompID="HIPS2"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAR|KARH 3.0.1;KAR|KARH 6.[0-3];KAVMAC 22.0.0;KES 10.[2-3].*.*;KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KESMAC 11.2.0;SAASMAC 21.[0-1].0;SAFEKIDS 1.0.[3-4]"/>
+	<File
+		App="CIP 1.0.0.*;KES 10.[2-3].*.*;KES 11.[0-1].*.*;KIS [14-19];KSVLA;PURE|KSOSPC|KSOSFS|SAAS|KSM [15-19]"
+		Name="intctrl.kdc"
+		DSKM="clnRtwVcjZjMi5o1BzSO72+c8Cyd/BwOhovIzNrGywk="/>
+	<File
+		CompID="CDB,HIPS2"
+		App="KSVLA 5.1"
+		OS="Linux"
+		Name="certdb.dat"
+		DSKM="VDcqFytjRr5SJtTadjmBsI/i9hSJUwcP2VjaEDBdnKc="/>
+	<File
+		CompID="HIPS2,CDB"
+		App="!KSC|KES|KAVSDK|KSV|KSVLA|KAR|KARH *.*.*;KAR|KARH 3;KAR|KARH 6.[0-4];KAVSDK 8.[5-8].*.*;KAVSDK 8.9.0.*;KES 10;KES 11.0.*.*;KSV [1-5].*.*"
+		Shell="bdif;klz;none"
+		Name="certdb.dat"
+		DSKM="VDcqFytjRr5SJtTadjmBsI/i9hSJUwcP2VjaEDBdnKc="/>
+	<File
+		OS="Win"
+		Name="version_locales.xms"
+		DSKM="/mCHfvU0YqiLXyKtzd1EC0Ds2FiqHVWR3v54NGTW33Q="/>
+	<Files
+		OS="Win"
+		LocalPath="%DataFolder%"
+		Item="Name;DSKM"
+		List="
+			sd.xms|K4biiMy1J10rmXoyZQmR/Xfr6p+s82EB1jns9xNchqs=;
+			sd_index.xms|YESL9gitdAmw0ywQuCH/Iii1+IV2j7Y7y3Gfbdh/ZV0="/>
+	<Files
+		Item="App;Name;DSKM"
+		List="
+			KES 10.2.*.*|hipsdb2.xml|+LzvUBz2DT1FhxFCVYEOsm+Ly+obodKG2GGoNaZ6+GM=;
+			CIP 1.0.0.*\;KIS 14|hipsdb4.xml|az73/5mZbmUdPiMVvFSceM1swZw6JDtIEyUYM06TtPo=;
+			KIS\\|KAV\\|KFA [14-19]\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]\;SAFEKIDS 1.0.[3-5].*\;SAFEKIDS 23.0|app_game01.xms|jQgXUNevMOhNk5abYm/v24vg6xGLN6u/w5/uOWXl86s=;
+			KIS\\|KAV\\|KFA [14-19]\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]\;SAFEKIDS 1.0.[3-5].*\;SAFEKIDS 23.0|app_games.index.xms|CJxsT+jJtl589bvgx3OedbVfsWGtB4XSdCaSxRID6X0="/>
+	<Files
+		App="KAR|KARH [2-3].0.*.*;KAR|KARH 6.[0-6].0.*;KAV|KIS [14-19];KAVSDK 8.[8-9].*.*;KES 10.3.*.*;KES 11.[0-1].*.*;KFA [16-19];KSVLA 5.[1-2];PURE|KSOSPC|KSOSFS|SAAS|KSM [15-19];SAFEKIDS 1.0.5.*;SAFEKIDS 23.0"
+		Arch="i386"
+		Item="Name;DSKM"
+		List="
+			app_rules.xms|73kQ5HF6GV+Jf/ooV3kOnvO+0DEeEtPSd2zjMVcWy3g=;
+			app_rules.index.xms|SJigSr5YAZOhEVcxkq86LFVs+D3ezwlCncXdNEZqrvU="/>
+	<Files
+		LocalPath="%DataFolder%"
+		Item="App;Name;DSKM"
+		List="
+			KAV\\|KIS [14-16]\;KFA 16\;PURE [15-16]|app_inv.xms|9JUZ6TclQFJQNfmpZ7yaBMV6IVGf6XJRyeTFaizIzWc=;
+			KIS\\|KAV\\|KFA [14-19]\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]|safe_banking.xms|+nvrvJ+fNYai60ha5xUhBRh8MBmRr4DIDKbnSZx8u2E=;
+			KIS\\|KAV\\|KFA [14-19]\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]|safe_banking_index.xms|tD/G9LAmvZwErFVadtFa1igYDp3Dvs3SYbFaEoAFxW4="/>
+	<Files
+		Item="App;Name;DSKM"
+		List="
+			KIS\\|KAV\\|KFA [14-19]\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]|vulnpathes.xms|ZMWJDjPM3lhFYvcQYZ39QBLyFNOe9dzh6gCHB4Ondqw=;
+			KIS\\|KAV\\|KFA [14-19]\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]|vulnrules.xms|WXgo64Gbp42Go7yeMFYgnMg4urmGsn+03xDClrNBYWU=;
+			KIS\\|KAV\\|KFA [14-19]\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]|vulnrulesindex.xms|3CJ0JCQcnp1nF4VLDVXc2TGEbM+0qtZ1JqXxQnulXpk=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KIS [14-19]\;KSVLA\;PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KSM [15-19]|intctrl.mft|DlXAPM6lunVanzLELa3D8SurUOYO+Q2YjFutNdXXWdo="/>
+	<Files
+		Item="App;SrvPath;Name;DSKM"
+		List="
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.1.xms|KbVEqguoB78cPfo6cco86uly/GJNL+oxCaTTjZZ0GkA=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.10.xms|YrS2f8S389dvkm/XW9SmwCGUU2YBlFDr79PYMM9aXeQ=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.104.xms|CxoD815pj6APc2eIfH5hM5THf1f5iprZ32d0p1sJUZQ=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.12.xms|U1bqQM4oNKa53x8PzIOntY4j05gBuYt8ulPJHgcOxeo=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.120.xms|Gf2rqb2zRgcJ+5H6FvBwxMi+qTxO52eRx/609FZ3G1A=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.13.xms|l8Uy0xLnuqrFoSD0gYdlssIDDR4OFaw2MEYSFrIrgqU=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.14.xms|ZkWR9agz6n0ymDlflJborF1GasjhDMbDRkV8EmXc0RE=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.15.xms|gG/qhtR335cJE/ut+AVG7tC6kSNPsuq7Vqtl7RhPjfQ=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.16.xms|o258+fALyfwGRMNztJDT7RM8LXC+Ab175m1a3BbShVY=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.17.xms|h9MbINXvx0wQHxi7g9bj9QpY4pshoOEG42/3G3/HcAk=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.18.xms|hMUlHQMAamoQa52A6Vs0/oU4cGhM5OiEo9CWk7g4FQE=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.2.xms|R8eEg5zEZuD9pxhDO/CgtKrcHeZJyy/7f3mIbd08GiY=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.3.xms|C8+8PQ8vpoFm965dl1FTsmug+cJtF9d14ArCSVLoEpc=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.35.xms|KQ4Ox09FzEmEmym5Ud39R/gJwzEjy7xjL/GaVH6coEg=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.36.xms|e8/q+wZTTeZG0Z9+qrUdGevOHvHDnCfHjI/scT/4U14=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.4.xms|x5XJQOJbMfwnb2/1PBIl4eOaLsERjAP/13kfSk7orUk=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KSC 10.[2-4].*.*|md5|catkl.index.xms|kPhJysPqHWLYXBlQoxzzJF1m1IIWqda2TDTRq5vnldA=;
+			KES 10.3.*.*|sha256|catkl2.1.xms|IB+138nThK5+htCYtSAtJGjJ7jRh2csWYUu6pOFbN2A=;
+			KES 10.3.*.*|sha256|catkl2.10.xms|eQYxug/Tzb9VwJd9haEptOkQMbuQPHr5FjErrV3bg4s=;
+			KES 10.3.*.*|sha256|catkl2.104.xms|YZLhAhPbTC/aSqBfIOMqXq2SAN5ydBc6o8loqTnOQzs=;
+			KES 10.3.*.*|sha256|catkl2.12.xms|zESZQjbGrBdOISRXQihpSuxReXB/aAaVcA5EdZBTSlU=;
+			KES 10.3.*.*|sha256|catkl2.120.xms|FBJL+XYdAOhDBy1PDHQd/lAhaxCtx5K7KSrejUaFpQQ=;
+			KES 10.3.*.*|sha256|catkl2.13.xms|LSofKB2YZZnTYN/SqexQj2YHGC9IHgnKdAEai5tQqL4=;
+			KES 10.3.*.*|sha256|catkl2.14.xms|J7BMQfVnTgGlMItfcG+NlO+cuSIAk9SNSlMBqCSTbTU=;
+			KES 10.3.*.*|sha256|catkl2.15.xms|MUwd+X9gMR5jhzb+FkZU9Dp7olXl/Xa83sLW4rYKXkM=;
+			KES 10.3.*.*|sha256|catkl2.16.xms|xszV9RY9D6p3On/bmliCXK4ajwToJkxi0iFjiXgcI7o=;
+			KES 10.3.*.*|sha256|catkl2.17.xms|vF9XkrFZZgDDCyfhuY/AMTFusW7ZHQeA17MjOFe3Qp4=;
+			KES 10.3.*.*|sha256|catkl2.18.xms|RGyv+wTnj4Jx5KqpQ5lTVD++vemxdwJgc+mwEcKZg2M=;
+			KES 10.3.*.*|sha256|catkl2.2.xms|gjs39bcHCbZ+G8OXvm0AJ6rRatA8XQHXIL2tDFI0SOQ=;
+			KES 10.3.*.*|sha256|catkl2.3.xms|qi4kjWqQxKbzJjLSAsbOtoEFV/a03oACNt0drumITj8=;
+			KES 10.3.*.*|sha256|catkl2.35.xms|sfJsBuTIbowC4A945awwyF18RNVpDtjqIVtLCEqSc6s=;
+			KES 10.3.*.*|sha256|catkl2.36.xms|lJzdpd0O0E4UzgAmgya73kFr8CBkmcFQrNILwYjQmww=;
+			KES 10.3.*.*|sha256|catkl2.4.xms|Oy0L+cxMzTgKmqgQGFiaynIp8cTwJII64MDLJtdUxt0=;
+			KES 10.3.*.*|sha256|catkl2.index.xms|51XMzt3vSvyU5808gvWSmlicp52kvIHp9odygd3f1/s=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.1.xms|GwlZyD2RkZE62dy8wjS02HBiiWnSpMjnqegJwdEwL40=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.10.xms|KYNPu3HIv6IiiKTqJvxq5IhRIM14Pjxeo0Oj7Etx5lc=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.104.xms|89LYa4CJbFDAFX416Vq+vsycSr7HDeLH6uE/skSjEx8=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.12.xms|p1d01H8XI//05pB33EviagdSPYsM0uLFC/+9JVahlJw=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.120.xms|CrQ5OCztvI0mGVM0q6skLL2MSrVMyAtXWUzMb9Zwprc=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.13.xms|wNoye7AcpyhrwyjOjnc8Cqw4X10q4z3VihfA2Kdt2Xg=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.14.xms|7oBYgXxNB73RecXW3APJ248Kg0ZuKxfoHrVlghh48WA=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.15.xms|AUWis9X6qHqxfph/aG7Q7IYawv0V00hSg7aiZB8/3N4=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.16.xms|oRfXsbtAAWbokQJSmaEEqTFgjoJOSdIfFe7WjseB9Zg=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.17.xms|US1isMkNnAchhA0MX12qko5wqJ7v28mH2dhDjvkQ3Kc=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.18.xms|8RknOCNd7Gpd4do+qmX4XRBGm+2T9qlTOAfTOVbmK4M=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.2.xms|nqnCaDKAY/IiewEfAmjHfimTdUo63cXYp18J1lAS3zc=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.3.xms|m7Rl/1QraESnrBOJSC0VHgmwuRVvchjtY3FAdLoc5QY=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.35.xms|0fenEYPAyRISHk5aBN7Nu2fJ9fT+2Az5aYSXoaESEuo=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.36.xms|svEsigSfuGOydnTVvAD9C6zIQICDLUjGgk+A8NF0WzU=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.4.xms|SJQwpHJqwEmuUdoYqCW0APTynYf8XZZERMB8sazejq8=;
+			KES 11.[0-1].*.*\;KSC [11-16]\;KSC 10.5.*.*\;KSVLA 5.[1-2]|ckl3|catkl3.index.xms|V4HcIAQPHMaP7g1FRbVHrEU/1gFym/VwkWQtTs8ihbQ="/>
+	<Files
+		App="CIP 1.0.0.*"
+		LocalPath="%DataFolder%"
+		Item="Name;DSKM"
+		List="
+			scada.index.xms|sZlGEC5PRB9DNeMP1vCgkmN9OAk8OoUjTukem1WUoME=;
+			scada.xms|U+FpGRXOYNaOcX5Daxi2CCKbfWEiCnyRPvEYdd70pJU="/>
+	<Files
+		Item="App;OS;SrvPath;Name;DSKM"
+		List="
+			SAFEKIDS 1.0.5.*\;SAFEKIDS 23.0|Win|win|catkl_short_index.xms|a0Vy+xG53WgDpr/+Gt2ylQ6seb/djX1Mw5zMPc7VSlA=;
+			SAFEKIDS 1.0.5.*\;SAFEKIDS 23.0|Win|win|catkl_short01.xms|XLgmd/yiAmAph/KjdammhgUx/h6L7y7OH+XjznebGjM=;
+			KSKMAC 1.5.0.*|Mac|mac|catkl_short_index.xms|l8gUHEyJhoxEzqAQPN0rXJsEbu7NFOGoqCxl8/KfNyY=;
+			KSKMAC 1.5.0.*|Mac|mac|catkl_short01.xms|OuGODIhC6sQMKA7LHqPHX8pwU6FiDgXZVaOgoGN34no="/>
+	<Files
+		App="KAR|KARH 3.0.1.*;KAR|KARH 6.[0-6].0.*;KAVSDK 8.[8-9].*.*;KES 10.3.*.*;KES 11.[0-1].*.*;KIS|KAV|PURE|KSOSFS|KSOSPC|KSM|SAAS|KFA [17-19];KSVLA 5.[1-2];SAFEKIDS 1.0.5.*;SAFEKIDS 23.0"
+		Arch="i386"
+		Item="Name;DSKM"
+		List="
+			interpreters.index.xms|Qoe81MQYxVEHrlc0Xcjo+fPQ5sYI3Gm4OYzAw+MeV5A=;
+			interpreters.xms|Y4CSWS2znaDwlCvL5GA5A1lWRNbKcGqKSchnQq00PDs="/>
+	<Files
+		App="KESMAC 11.0.[0-1].*;KISMAC|SAASMAC 20.*.*.*"
+		OS="Mac"
+		SrvPath="mac"
+		Item="Name;DSKM"
+		List="
+			app_rules.index.xms|v1+L7nbD2T2pxYnphksNdYMKzwnJTi2egVMp1Q4Y4fs=;
+			version_locales.xms|zX3ppLKXp/JO4b4nybNvXoHmWpuP1jC94LM34rOulMQ=;
+			app_rules.xms|U4yc0sd/MgEOfMz3DniKYNrbcL78wi0gJ2TbpbtD48U=;
+			interpreters.index.xms|h3dlQjGP6XM6vN6RRSTvVftsbT/wj5A+zVglIJgum7M=;
+			interpreters.xms|y9hs0pfN4RDBB242sToOHdfSKIy3vEkcTXGqIfWwbdI="/>
+	<File
+		App="KESMAC 11.0.[0-1].*;KISMAC|SAASMAC 20.*.*.*"
+		OS="Mac"
+		Arch="x64"
+		SrvPath="mac/x64"
+		Name="libinterprecz.dylib"
+		DSKM="G5071O+zP9gAxC3JJ64qdI2yiRRgsJxXLV3SZNRN1xU="/>
+	<Files
+		Item="App;Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|ru|ru|%BaseFolder%\\\\ru|localization.xms|jXQHpZ93LfIGU7emY4+C7rHNvZpFkMpCb5WwdUIx+qo=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|bg|bg|%BaseFolder%\\\\bg|localization.xms|ltTjcVqbn7R7hPz4AOR/ORFzq0Wf2Ca8e5z4lRBl2ig=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|fr|fr|%BaseFolder%\\\\fr|localization.xms|2iRZ8SOZ0p3AmDoWhecHQUv6wt/aV3MX+uctjMe/XjU=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|de|de|%BaseFolder%\\\\de|localization.xms|IAkwB7hMp9O1O8HLnnHF2AU5OlPgZDWS6XkjoZeSen4=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|it|it|%BaseFolder%\\\\it|localization.xms|xnUTEagfk8apIfhw2pNixnR+q13ZWEYiXEAsmVu2KCs=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|es|es|%BaseFolder%\\\\es|localization.xms|jo2nKIFYKAO8aqXvMEi63oLFiifAKLy4EKO5X3i/WEU=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|ar|ar|%BaseFolder%\\\\ar|localization.xms|yIJqpyIc/eztqotJs8PfSGoBVRhYX12qBuAG8ZXVdfc=;
+			KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|nl|nl|%BaseFolder%\\\\nl|localization.xms|k/HLN4+ESTMksgGQIx/HDO0hkGdz6HHfBu0GghKYh10=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|en|en|%BaseFolder%\\\\en|localization.xms|JvzZ6z3OnJOCSi7o2vQoKLkA0dMu4xUr15ztX9SUVlY=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|es-mx|es-mx|%BaseFolder%\\\\es-mx|localization.xms|18+U2ylN6hlxZf+iBN6ZWTwRgnJopWzULvszIx9Fq6g=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|ja|ja|%BaseFolder%\\\\ja|localization.xms|EYT3IIUJoVHLE7qm/qAmsFPzAvt0wReBx7pmAmU6sGk=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|kk|kk|%BaseFolder%\\\\kk|localization.xms|O6GL8HeItoCMw+y14HGA+6QfrhpVT9HoFRLkyA2khOI=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|pt|pt|%BaseFolder%\\\\pt|localization.xms|vxFMdepO6Wk/uUbhP2nigTxDrp3Aj3lyY/HRh6Z6cnc=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|pt-br|pt-br|%BaseFolder%\\\\pt-br|localization.xms|WloWkn0FRuKYQ+wQSAtklmJZwqmXpraaXSeOPAIywRo=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|zh-hans|zh-hans|%BaseFolder%\\\\zh-hans|localization.xms|yQGcB5FgVy7t8DyUfrQZPmZJT8zz802GnbKMDKybybc=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|cs|cs|%BaseFolder%\\\\cs|localization.xms|TU6/KbLAl2wB+gTzCxbxh1IW7GoS+9uhpH0gS9neZbw=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|hu|hu|%BaseFolder%\\\\hu|localization.xms|cbIaL8rmRtMxz/84C/ZacTGdWb9YnyMYSAi+49dv8cg=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|ko|ko|%BaseFolder%\\\\ko|localization.xms|r6V0qEDpl5zGiAgvnnjrEHWLE0DDXg3YDt7n/y2aS9g=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|lt|lt|%BaseFolder%\\\\lt|localization.xms|xNl/BiHDqMd0SeKLAJZAWn2b7O4Oim81OGLWgPs2ZsY=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|pl|pl|%BaseFolder%\\\\pl|localization.xms|OambA8CgNQFmDps27E7l/5qIqwBTn/2lSRdSlx3W9Io=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|ro|ro|%BaseFolder%\\\\ro|localization.xms|iouos3HxJ3u2kVB4X/5B33Cgo4BViaPp+i+ak6wmoEY=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|th|th|%BaseFolder%\\\\th|localization.xms|E8LhMmu2cIlK9vHmE5uKoANiiZ75zbenCjTSnPjub3s=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|tr|tr|%BaseFolder%\\\\tr|localization.xms|IbIFvLYRkR1PIyL1XKw+BKsBR0ciEGH8aOlx/TbBjDc=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|vi|vi|%BaseFolder%\\\\vi|localization.xms|UjE1NGmgDI2ExWyxe67YtERoNS5JSIB6oE93s6s8sfE=;
+			CIP 1.0.0.*\;KES 10.[2-3].*.*\;KES 11.[0-1].*.*\;KSC *.*.*\;KSVLA|zh-hant|zh-hant|%BaseFolder%\\\\zh-hant|localization.xms|2A3CoqoJXd6KQUptdlTY8htDCsmCqRH0YagcBvxUjlw=;
+			KES 11.1.1.*|vi-cast|vi-cast|%BaseFolder%\\\\vi-cast|localization.xms|Vjvk7bem5fv6i8yi7bzBUR06HuX74Jb/lJF9dERTi5w="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="hips-1313g.sha2rg"
+		DSKM="jgTWy1UJtXsV6D+006w8OoHPRi6NwpwyJE3lHokwBRw="/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 18"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 19"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 17"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 17"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS 15"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS 15"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS 14"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS 14"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KES 10"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KES 10"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KES 11"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KES 11"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="!KAV|KIS|KES|PURE [10,11,14-19];PURE 15"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<Index
+		CompID="HIPS2,RETR1901_HIPS2"
+		App="KAV|KIS|PURE 16"
+		Target="[1-262143]"
+		Name="unmod-hips-1313g.xml"
+		Date="14022026 1607"/>
+	<File
+		CompID="RETR1901_HIPS2,RETR1901_CDB"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="hips-1901g.xml"
+		DSKM="5iF2NHaRwVzuRquVb59izc+jNbvhjqFqIyVHBQg4Kao="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="hips-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADHZy2QD2f1qp5n+JxWm94nRB0+qWsGa1ghBAsWo7cKzQZ9Cj8rp20GLJO87DJ36Rc7kiS2oj6u7N8cjl8LPnYIBAB4JZwAAAAIAAigEAEhJUFMDAAIoBABCQVNFAQAACeOBSGcNCjs6MTBLOWNraVA3TjVLcTZKb3Qyc1FLTG1BR1BudmxIeVFtMG9iSUk0S2duY002OE1CN3pxcU5TY1NwV25ibitTL2VjOUpITXdlMkU5Y01tVjFyOUdpYmJOUCUl</Key>
+</Update>
+;:10KEVUrSCe/v1vVSWXyedLqV6Jc3kSEuqcVoJr4hdushkmJfpCRMpACyVMx9wRfMi1Q86YtHMWOt+aCYObOYNcXE%%

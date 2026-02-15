@@ -1,0 +1,115 @@
+<Update
+	Date="24092020 1356"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="10702"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		Item="App;ApplyAction;FixName;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|a|../21.1.15.500_kis_a|%ProductFolder%|ucp_agent.dll|/gBL2rrltgNA1QCsbG6HyOBzxYmbEB55iNJ1QU/H2QU=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|a|../21.1.15.500_ksos_a|%ProductFolder%|ucp_agent.dll|/gBL2rrltgNA1QCsbG6HyOBzxYmbEB55iNJ1QU/H2QU=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.kis.ui.dll|k17a5666TAfbIPlTHbdHGqqkqc4oIQCIjvFil7sKglA=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.kis.ui.shell.dll|RqoSdBm63KSzLRkbWA0W2ggQgLyJ/noTqPkeLdLfsjQ=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|RqoSdBm63KSzLRkbWA0W2ggQgLyJ/noTqPkeLdLfsjQ=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.pure.ui.backup.dll|jDJiIDxywJhBeQ+oyDbRcwIYoLN7g3Ly/0Mdb/i9wHE=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.ui.backup.dll|jDJiIDxywJhBeQ+oyDbRcwIYoLN7g3Ly/0Mdb/i9wHE=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.ui.common.dll|Izr9mvv9Oa1CE8otI58WXOfQe/t/i9xa3ywwieJsYgA=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|Izr9mvv9Oa1CE8otI58WXOfQe/t/i9xa3ywwieJsYgA=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|zRGJR1Zzaqkv8g/emkX9jdpEV/ggekZimIRvIBJzBxM=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.localization.dll|T/esBf7XAhQhUqAKIUHT+AfiRE4h00hFvVw980bYEBE=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|tSBaSM5BlsNe5BBUPi8dUaXqkAsDCDPoOjJPkWS4NmU=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|W+fSIpvlQ27vJn0nSlLAgRsAeKqr0ZYbzVY5r5O7aJg=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.ui.platform.reports.dll|9cgB8Ougw03l/sPCUSXNmlIreYbOH2V8xTyz9fZJbpk=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.ui.core.dll|zRGJR1Zzaqkv8g/emkX9jdpEV/ggekZimIRvIBJzBxM=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.ui.core.localization.dll|T/esBf7XAhQhUqAKIUHT+AfiRE4h00hFvVw980bYEBE=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|b|../21.1.15.500_kis_b|%ProductFolder%|kasperskylab.ui.core.visuals.dll|tSBaSM5BlsNe5BBUPi8dUaXqkAsDCDPoOjJPkWS4NmU=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.kis.ui.dll|k17a5666TAfbIPlTHbdHGqqkqc4oIQCIjvFil7sKglA=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.kis.ui.shell.dll|RqoSdBm63KSzLRkbWA0W2ggQgLyJ/noTqPkeLdLfsjQ=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|RqoSdBm63KSzLRkbWA0W2ggQgLyJ/noTqPkeLdLfsjQ=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.pure.ui.backup.dll|jDJiIDxywJhBeQ+oyDbRcwIYoLN7g3Ly/0Mdb/i9wHE=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.pure.ui.backup.dll|jDJiIDxywJhBeQ+oyDbRcwIYoLN7g3Ly/0Mdb/i9wHE=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.ui.common.dll|Izr9mvv9Oa1CE8otI58WXOfQe/t/i9xa3ywwieJsYgA=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.common.dll|Izr9mvv9Oa1CE8otI58WXOfQe/t/i9xa3ywwieJsYgA=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.dll|zRGJR1Zzaqkv8g/emkX9jdpEV/ggekZimIRvIBJzBxM=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.localization.dll|T/esBf7XAhQhUqAKIUHT+AfiRE4h00hFvVw980bYEBE=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.ui.core.visuals.dll|tSBaSM5BlsNe5BBUPi8dUaXqkAsDCDPoOjJPkWS4NmU=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.ui.platform.ipm.dll|W+fSIpvlQ27vJn0nSlLAgRsAeKqr0ZYbzVY5r5O7aJg=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.ui.platform.reports.dll|9cgB8Ougw03l/sPCUSXNmlIreYbOH2V8xTyz9fZJbpk=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.ui.core.dll|zRGJR1Zzaqkv8g/emkX9jdpEV/ggekZimIRvIBJzBxM=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.ui.core.localization.dll|T/esBf7XAhQhUqAKIUHT+AfiRE4h00hFvVw980bYEBE=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_os|b|../21.1.15.500_ksos_b|%ProductFolder%|kasperskylab.ui.core.visuals.dll|tSBaSM5BlsNe5BBUPi8dUaXqkAsDCDPoOjJPkWS4NmU=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_none|c|../21.1.15.500_kis_c|%ProductFolder%|ver_info.json|QBNmb0Mor6zNf9shM9P5vq5FAJx0S1jW2Kxrkml0otw="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KAV|KIS|PURE|KFA|SAAS 21.1.15.500"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		SrvPath="../21.1.15.500_kis_c"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="rSc2ZCFgfKx2e9wDQXOu6wG8GA95kvMs3jIeEHCo4fA="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="c"
+		Item="App;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c|%ProductFolder%|bi_facade.dll|angtcPXgMsuKr9FU7G7Xp9zyZF+SGkWJWXsPQ+6CWS4=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c|%ProductFolder%|bl.dll|nhvXYKK5h0xPjDm7m6eLJD/ZLx4Ct5abfDR5uPcsg1Y=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c|%ProductFolder%|cf_facade.dll|kldVTlKsFYWSq+B18n3G/FwV84QdMyQGMX0JpX6dWuA=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c|%ProductFolder%|parental_control_facade.dll|Qn99ME1rk1T6Za/Lhc5DH99tAQ8GfmChc1NxYx3nHPA=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c|%ProductFolder%|traffic_processing.dll|RTFvK5fr65g3uvk01XKdhvZU98rY9gUBAVMdnazegTI=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c|%ProductFolder%|avpmain.dll|Fg1nw6VzcBMcYnAWQksldFGqhh+PqGSR1bX9iA1rWHk=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c|%ProductFolder%|ksn_facade.dll|Nmp9d0bhxzUN4hvjpjNByyP9BcKn0GWi5YAjGI9q5uM=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c/patch|%ProductFolder%\\\\patch|configuration_kav.esm.patch|IgunHXES8s8FTplYQaO57kJdWKbUDBjfwCwQ5E2GDR0=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c/patch|%ProductFolder%\\\\patch|configuration_kfa.esm.patch|v1ImqgRCr1uvNu4Do4l2ehRCWNMaFQkq6ooc6eeKB0k=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c/patch|%ProductFolder%\\\\patch|configuration_kis.esm.patch|UwVlkjE64tc2jS/g3Z2lLGK5Lh1Pw7DHgoxdD1e/JRo=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c/patch|%ProductFolder%\\\\patch|configuration_pure.esm.patch|p3AkVm6acM/+o2l1nqk/LXmlwghuF7feTYNPC6AJAVE=;
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS 21.1.15.500|restart_os|../21.1.15.500_kis_c/patch|%ProductFolder%\\\\patch|configuration_saas.esm.patch|IAXdvg5mZ1HmYPUz8Si862ddIlG0mqyrghD4XyXM1u4=;
+			KSOSPC\\|KSOSFS 21.1.15.500|restart_none|../21.1.15.500_ksos_c|%ProductFolder%|ver_info.json|QBNmb0Mor6zNf9shM9P5vq5FAJx0S1jW2Kxrkml0otw="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.1.15.500"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="c"
+		SrvPath="../21.1.15.500_ksos_c"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="rSc2ZCFgfKx2e9wDQXOu6wG8GA95kvMs3jIeEHCo4fA="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.1.15.500"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="c"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			../21.1.15.500_ksos_c|%ProductFolder%|bi_facade.dll|angtcPXgMsuKr9FU7G7Xp9zyZF+SGkWJWXsPQ+6CWS4=;
+			../21.1.15.500_ksos_c|%ProductFolder%|bl.dll|nhvXYKK5h0xPjDm7m6eLJD/ZLx4Ct5abfDR5uPcsg1Y=;
+			../21.1.15.500_ksos_c|%ProductFolder%|cf_facade.dll|kldVTlKsFYWSq+B18n3G/FwV84QdMyQGMX0JpX6dWuA=;
+			../21.1.15.500_ksos_c|%ProductFolder%|parental_control_facade.dll|Qn99ME1rk1T6Za/Lhc5DH99tAQ8GfmChc1NxYx3nHPA=;
+			../21.1.15.500_ksos_c|%ProductFolder%|traffic_processing.dll|RTFvK5fr65g3uvk01XKdhvZU98rY9gUBAVMdnazegTI=;
+			../21.1.15.500_ksos_c|%ProductFolder%|avpmain.dll|Fg1nw6VzcBMcYnAWQksldFGqhh+PqGSR1bX9iA1rWHk=;
+			../21.1.15.500_ksos_c|%ProductFolder%|ksn_facade.dll|Nmp9d0bhxzUN4hvjpjNByyP9BcKn0GWi5YAjGI9q5uM=;
+			../21.1.15.500_ksos_c/patch|%ProductFolder%\\\\patch|configuration_ksosfs.esm.patch|WCKXNPgxAbBFpljK/WqDMOHXNiG8QTWd4CUSxR04z3c=;
+			../21.1.15.500_ksos_c/patch|%ProductFolder%\\\\patch|configuration_ksospc.esm.patch|hLigaLeqHf7xtxi39XvHblKX6jmR9cZrGJaX5GeMQKo="/>
+	<File
+		CompID="RETR1901_KAV21,RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-kav21-mr1-1901g.xml"
+		DSKM="kxf35QiDJsRfP2GSBxOd3lOCFIbznM78+y+DCNKuGq4="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLN3RIRUtFNGN4WVRDYS8rMWFSdGhRZ3BsY1Z4cTVMV2xPeWFWOWVlNFZKS25GeHR1YzdBZy9tYlpqKzRkdTd1WVlSbDY3L1pDOThEYVB5YlZrVGZlbyUl</Key>
+</Update>
+;:1048Qrwpc3o3KzMyE0vysN3DdN4E6Rw4srsmo1/9TCjf92qaZ3wG8JuDJeSHEnxbXEfd3mjrUnqCM57v9sZ0XIJu%%

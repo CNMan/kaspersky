@@ -1,0 +1,261 @@
+<Update
+	Date="09022026 0746"
+	BlstDate="08022026 2038"
+	ObjectType="2=QSCAN;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="7497"
+	CompID="QSCAN"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAVMAC 22.0.0;KES 10.[2-3].*.*;KES 11.[2,4];KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 21.2;KESMAC 11.2.0;KICSN|KESSN 21.[20-21];SAASMAC 21.[0-1].0"/>
+	<Files
+		Shell="bdif;klzu;none"
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-4].*\;KES [10-11].[0-4].*.*\;KES 21\;KESSN 21\;KICSN 21\;KSOSPC\\|KSOSFS\\|KASPERSKY 21.[4-9,13-25]\;KSVLA 5.[1-2].*.*\;KVRT [15,20].0|Win|i386|i386/win|qscan.kdc|6sk90DI6smueIFJBluBHVYaP5QWGqLZNNLIcrfD0mpw=;
+			KAVMAC [22-26]\;KESMAC 11.[0-3].*.*\;KESMAC 12.[0-3]\;KISMAC\\|SAASMAC [20-21].[0-1].*.*|Mac|x64|x64/mac|qscan.kdc|bY8AM7rReybfSJdt7LGX9gAqUx3fr07klMi0dwkSCNA="/>
+	<Files
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KAV\\|KIS\\|PURE\\|KFA\\|SAAS\\|KSOSPC\\|KSOSFS [14-21].[0-3].*.*\;KAVSDK 8.[5-9].*.*\;KAVSDK 8.10.[0-4].*\;KES [10-11].[0-4].*.*\;KES 21\;KESSN 21\;KICSN 21\;KSOSPC\\|KSOSFS\\|KASPERSKY 21.[4-9,13-25]\;KSVLA 5.[1-2].*.*\;KVRT [15,20].0|Win|i386|i386/win|qscan.mft|MTy5IXJ4z9YOWyW1GbLLMiNJrgSV7VaUB4kDlxR3Q+0=;
+			KAVMAC [22-26]\;KESMAC 11.[0-3].*.*\;KESMAC 12.[0-3]\;KISMAC\\|SAASMAC [20-21].[0-1].*.*|Mac|x64|x64/mac|qscan.mft|CEu52x3FCtOCUUrD28lrWSYLtkHhot/17sM/Kxhkeyo=;
+			KSLS 10|Linux|e2k|e2k/nix|qscan.esm|GVeQKpcwk029xLPte3VpthiYiGmHJQF22W7RSl5x/jU=;
+			KSLS 10|Linux|e2k|e2k/nix|libqscan.so|nUnQEMxe5li9Kk8CDqdA9ZtC5QlIxaSeQ+aX1UHH2RQ=;
+			KSLS 10|Linuxs-118|e2k|e2k/nix-118|qscan.esm|GVeQKpcwk029xLPte3VpthiYiGmHJQF22W7RSl5x/jU=;
+			KSLS 10|Linuxs-118|e2k|e2k/nix-118|libqscan.so|f4p7Bd5FGv6yGsaOzc48DEs+eK9N9v35WKwxkTSZKsA="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="qscan-1313g.sha2rg"
+		DSKM="6Z1p4lhmpjcO2C7XppyOuqdjzHyeMiOfvhFiAXlzSLw="/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="!KAV|KIS|KES|PURE|KSOSPC|KSOSFS|KASPERSKY|KSLS|KISMAC|KAVMAC|KESMAC|KICSN|KESSN [10,11,12,14-26];KESMAC 10;KISMAC 16;KSLS 10;KSOSPC|KSOSFS [15,17-20];PURE 15"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS 14"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS 14"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS 15"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS 15"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 16"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 16"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 17"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 17"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 18"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 18"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 19"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 19"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 20"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 20"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 21.[0-3]"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAV|KIS|PURE 21.[0-3]"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KSOSPC|KSOSFS|KASPERSKY 21"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KSOSPC|KSOSFS|KASPERSKY 21"
+		Target="262143"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KES 10"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KES 10"
+		Target="[157286-262143]"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KES 11"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KES 11"
+		Target="[157286-262143]"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KESMAC [11-12]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KESMAC [11-12]"
+		Target="[1-262143]"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAVMAC [22-26]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KAVMAC [22-26]"
+		Target="[1-262143]"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KSLS [11-12]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KSLS [11-12]"
+		Target="[1-262143]"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KISMAC [20-21]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KISMAC [20-21]"
+		Target="[1-262143]"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KES|KICSN|KESSN 21"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="KES|KICSN|KESSN 21"
+		Target="[157286-262143]"
+		Name="unmod-qscan-1313g.xml"
+		Date="05022026 0812"/>
+	<Index
+		CompID="QSCAN,RETR1901_QSCAN"
+		App="DUMMY"
+		SrvPath="rgz"
+		Name="qscan-rgz-1313g.xml"
+		Date="09022026 0746"/>
+	<File
+		CompID="RETR1901_QSCAN"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="qscan-1901g.xml"
+		DSKM="JVm9r5tGL6b62iwXQZXnasTC1UG3HzHsvLcdN2ArCJQ="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="qscan-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFmAgiiLK2JHmjOqIW3u47sDZ6R6SYSa9cmYtFiUx7kAY4OIldypidsRjNu5WfWFg2mFx3gRAJg8OF/v1g5tV+gBAB4JpwAAAAIAAigFAFFTQ0FOAwACKAQAQkFTRQEAAAn1e+wWDQo7OjEwYVZNUC82bGVNTGFIK0ozWkZlWGIzTU9kVlhLMnVMUE9CQXUzeXIzRXlkeGdwS1BnajRZeHMxZVA1Lzk4OUNlelpranEvWTd0L2pvbit1VXpDWUFSenElJQ==</Key>
+</Update>
+;:10K9IcWFxgU6UPOuJABpa7kWLnkPkseoQHbN5H49RjauA2IxK2Gs1jKG7A7agsDptu2vaKkiuGgv/V+zH1rHiBBB%%

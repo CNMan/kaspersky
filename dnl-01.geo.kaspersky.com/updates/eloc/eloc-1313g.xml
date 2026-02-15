@@ -1,0 +1,61 @@
+<Update
+	Date="10022026 1001"
+	BlstDate="09022026 2038"
+	ObjectType="2=ELOC;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="10"
+	CompID="ELOC"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAVMAC 22.0.0;KES 11.[2,4];KES 21.2;KESMAC 11.2.0;KICSN|KESSN 21.[20-21];SAASMAC 21.[0-1].0"/>
+	<Files
+		Item="App;OS;SrvPath;Name;DSKM"
+		List="
+			KAV\\|KFA\\|KIS\\|PURE\\|KSOSPC\\|KSOSFS\\|SAAS\\|KASPERSKY [20-21]\;KAVSDK 8.10.*.*\;KAVSDK 8.9.[3-4].*\;KES 11.[2-4]\;KES 21\;KESLKSVLA 12\;KESSL [3-4]\;KESSN 21\;KICSN 21\;KICSNL [1-2]\;KICSNLO 2\;KSLS 11.[2-4].0.*\;KSLS 12|Win\;Linux*|win|version_locales.xms|/mCHfvU0YqiLXyKtzd1EC0Ds2FiqHVWR3v54NGTW33Q=;
+			KAVMAC [22-26]\;KESMAC 11.[1-3]\;KESMAC 12\;KISMAC\\|SAASMAC 21\;KSKMAC 1.9|Mac|mac|version_locales.xms|/mCHfvU0YqiLXyKtzd1EC0Ds2FiqHVWR3v54NGTW33Q="/>
+	<Files
+		App="KES 11.[2-4];KES 21;KESLKSVLA 12;KESSL [3-4];KESSN 21;KICSN 21;KICSNL [1-2];KICSNLO 2;KSLS 11.[2-4].0.*;KSLS 12"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			ru|ru|%BaseFolder%\\\\ru|localization.xms|jXQHpZ93LfIGU7emY4+C7rHNvZpFkMpCb5WwdUIx+qo=;
+			bg|bg|%BaseFolder%\\\\bg|localization.xms|ltTjcVqbn7R7hPz4AOR/ORFzq0Wf2Ca8e5z4lRBl2ig=;
+			fr|fr|%BaseFolder%\\\\fr|localization.xms|2iRZ8SOZ0p3AmDoWhecHQUv6wt/aV3MX+uctjMe/XjU=;
+			de|de|%BaseFolder%\\\\de|localization.xms|IAkwB7hMp9O1O8HLnnHF2AU5OlPgZDWS6XkjoZeSen4=;
+			it|it|%BaseFolder%\\\\it|localization.xms|xnUTEagfk8apIfhw2pNixnR+q13ZWEYiXEAsmVu2KCs=;
+			es|es|%BaseFolder%\\\\es|localization.xms|jo2nKIFYKAO8aqXvMEi63oLFiifAKLy4EKO5X3i/WEU=;
+			ar|ar|%BaseFolder%\\\\ar|localization.xms|yIJqpyIc/eztqotJs8PfSGoBVRhYX12qBuAG8ZXVdfc=;
+			en|en|%BaseFolder%\\\\en|localization.xms|JvzZ6z3OnJOCSi7o2vQoKLkA0dMu4xUr15ztX9SUVlY=;
+			es-mx|es-mx|%BaseFolder%\\\\es-mx|localization.xms|18+U2ylN6hlxZf+iBN6ZWTwRgnJopWzULvszIx9Fq6g=;
+			ja|ja|%BaseFolder%\\\\ja|localization.xms|EYT3IIUJoVHLE7qm/qAmsFPzAvt0wReBx7pmAmU6sGk=;
+			kk|kk|%BaseFolder%\\\\kk|localization.xms|O6GL8HeItoCMw+y14HGA+6QfrhpVT9HoFRLkyA2khOI=;
+			pt|pt|%BaseFolder%\\\\pt|localization.xms|vxFMdepO6Wk/uUbhP2nigTxDrp3Aj3lyY/HRh6Z6cnc=;
+			pt-br|pt-br|%BaseFolder%\\\\pt-br|localization.xms|WloWkn0FRuKYQ+wQSAtklmJZwqmXpraaXSeOPAIywRo=;
+			zh-hans|zh-hans|%BaseFolder%\\\\zh-hans|localization.xms|yQGcB5FgVy7t8DyUfrQZPmZJT8zz802GnbKMDKybybc=;
+			cs|cs|%BaseFolder%\\\\cs|localization.xms|TU6/KbLAl2wB+gTzCxbxh1IW7GoS+9uhpH0gS9neZbw=;
+			hu|hu|%BaseFolder%\\\\hu|localization.xms|cbIaL8rmRtMxz/84C/ZacTGdWb9YnyMYSAi+49dv8cg=;
+			ko|ko|%BaseFolder%\\\\ko|localization.xms|r6V0qEDpl5zGiAgvnnjrEHWLE0DDXg3YDt7n/y2aS9g=;
+			lt|lt|%BaseFolder%\\\\lt|localization.xms|xnUTEagfk8apIfhw2pNixnR+q13ZWEYiXEAsmVu2KCs=;
+			pl|pl|%BaseFolder%\\\\pl|localization.xms|OambA8CgNQFmDps27E7l/5qIqwBTn/2lSRdSlx3W9Io=;
+			nl|nl|%BaseFolder%\\\\nl|localization.xms|k/HLN4+ESTMksgGQIx/HDO0hkGdz6HHfBu0GghKYh10=;
+			ro|ro|%BaseFolder%\\\\ro|localization.xms|iouos3HxJ3u2kVB4X/5B33Cgo4BViaPp+i+ak6wmoEY=;
+			th|th|%BaseFolder%\\\\th|localization.xms|E8LhMmu2cIlK9vHmE5uKoANiiZ75zbenCjTSnPjub3s=;
+			tr|tr|%BaseFolder%\\\\tr|localization.xms|IbIFvLYRkR1PIyL1XKw+BKsBR0ciEGH8aOlx/TbBjDc=;
+			vi|vi|%BaseFolder%\\\\vi|localization.xms|UjE1NGmgDI2ExWyxe67YtERoNS5JSIB6oE93s6s8sfE=;
+			zh-hant|zh-hant|%BaseFolder%\\\\zh-hant|localization.xms|2A3CoqoJXd6KQUptdlTY8htDCsmCqRH0YagcBvxUjlw="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="eloc-1313g.sha2rg"
+		DSKM="xfqRE8Z3k1sxhOQlcTv2GSjMcnfRehodt2kQCnsKmLE="/>
+	<File
+		CompID="RETR1901_ELOC"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="eloc-1901g.xml"
+		DSKM="eyMY7LS+S1Y5i7g97MqmTiRAXH7rDoHBHTPiapz6I7U="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="eloc-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAHxA6j5xObVjWmBM5hkSEas+UdvEwSS4ZqToC5sUtaBLNn4h81sk56c35ESJAZmzLdJa4HJSqZm2jpejDjPFHUMBAB4JtgEAAAIAAigEAEVMT0MDAAIoBABCQVNFAQAACcc22W8NCjs6MTBxNVJhTDl6RGVKWU9JeEluK2g2K2lLNlpxVnpzbXhlb3pvVGRuUEFacVZqSEw1a25LdDZ1U0s3ckhreTZnYkdyeHE4QjlWNTVuV29EMU01RjBXbmxWUSUl</Key>
+</Update>
+;:104OS43o133s0RTrimK7IoHvFEuyLsQnrAEXVLypcTs5JRL0Js/W9ZY8aO1vMXv8EYX567+VuAgsXtMexvBf5VnE%%

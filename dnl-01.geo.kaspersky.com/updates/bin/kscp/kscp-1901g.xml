@@ -1,0 +1,163 @@
+<Update
+	Date="19112025 1149"
+	ObjectType="2=KSCP;3=BIN"	
+	Format="3.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="80230"
+	CompID="KSCP"
+	Shell="bdif;klz;none">
+	<Patches
+		OS="Win"
+		Item="App;SrvPath;Name;DSKM2"
+		List="
+			kscpsrv 10.2.434|10.2.434|patch_10_2_434_server_e.exe|srjcnRXxrP/BPYX2AJjtaQMU2DDJR9imMVi8mqiKXAw=;
+			kscpsrv 10.2.434|10.2.434|patch_10_2_434_server_e.ini|qPRwuoj1ahwWEuyyc3jtN+JS/sHM51bTMeQZDKReCNE=;
+			kscpngt 10.2.434|10.2.434|patch_10_2_434_nagent_e.exe|eC/zzp/iFza2X/xBt0wMgM3S/NeSoxPDAnZHENqLe7Y=;
+			kscpngt 10.2.434|10.2.434|patch_10_2_434_nagent_e.ini|CXJ7hoyktjHg/d4FARbkrdBGbp9tckc3VxvGpG1ym64=;
+			kscpcon 10.2.434|10.2.434|patch_10_2_434_console_e.exe|VNoTjV2VnhapS34tJXJv+m21h4PL8R0tPBzYkH18spU=;
+			kscpcon 10.2.434|10.2.434|patch_10_2_434_console_e.ini|0S/hmoyLZKRjOH7u5+HbCmuwJVi+TvGUsioUyopyors=;
+			kscpiosmdm 10.3.407|10.3.407|patch_10_3_407_ios_mdm_a.exe|oxmKcvAj5rIxsCS0ISmXu9rEGo1OHxAZSoILCXFQMhs=;
+			kscpiosmdm 10.3.407|10.3.407|patch_10_3_407_ios_mdm_a.ini|laagGFfeoeCQl8tLRCAb+ZHcR9suQBG7U4AV+wRa19E=;
+			kscpngt 10.3.407|10.3.407|patch_10_3_407_nagent_b.exe|xv91g/BcvcGNraeVmpCxcGWqxtLBjP+VsMmK/4dq9G0=;
+			kscpngt 10.3.407|10.3.407|patch_10_3_407_nagent_b.ini|PPcaEU34jJ0On/mM/B1aBY2JjWambu35qWbrzA79Ttg=;
+			kscpsrv 10.3.407|10.3.407|patch_10_3_407_server_b.exe|loIkbhd+Mr3NrhNxkOsesDTYHnxvfkL3CSBiVmjjTV0=;
+			kscpsrv 10.3.407|10.3.407|patch_10_3_407_server_b.ini|/EdnqhJrxoaNn6fVn0eR7OOYKB02wCotZD7wj+LiX/w=;
+			kscpcon 10.3.407|10.3.407|patch_10_3_407_console_b.exe|ZhCwQ0e5VUtsZEE97HBe6oZ15oKl3J8pHhcZ3PhXHY0=;
+			kscpcon 10.3.407|10.3.407|patch_10_3_407_console_b.ini|jZTj9JQs6eSRGF54xD038s+NCQBsY727Ie5qHywNFrI=;
+			kscpsrv 10.3.407|10.3.407|patch_10_3_407_server_sf1.ini|NQUyBE/eYAeoGPmQo0u7HGrkSCqY1RZXG1KSrfxqCDc=;
+			kscpsrv 10.3.407|10.3.407|patch_10_3_407_server_sf1.exe|RxauzdhUnjPsgwHakrzBgCld74D+VEGIvuns6yH4CH0=;
+			kscpngt 10.3.407|10.3.407|patch_10_3_407_nagent_sf1.ini|aDB5szwMYqZlMJ8Pz3RI3XnnpLJbK7KFtZSTsRtU7A4=;
+			kscpngt 10.3.407|10.3.407|patch_10_3_407_nagent_sf1.exe|GXmOZgMP1wHw76Ff6gv/AvOC+aQSF0384wiPO0mJqUM=;
+			kscpiosmdm 10.3.407|10.3.407|patch_10_3_407_ios_mdm_sf1.ini|iiRCmi6JfCBXWSSR7JSvL7wfqSXjDaTKazsRcaGZNO8=;
+			kscpiosmdm 10.3.407|10.3.407|patch_10_3_407_ios_mdm_sf1.exe|HMYSgCw+kgvIfvO6bC+bql7vRWH6XE9rCdg26UX5hVs=;
+			kscpcon 10.3.407|10.3.407|patch_10_3_407_console_sf1.ini|VN+6Hmn4/1UwQnHIRHOPF20lprX3P6J+wZcgbLT+MXA=;
+			kscpcon 10.3.407|10.3.407|patch_10_3_407_console_sf1.exe|qGtWJXtJEyzk5drM7X5hLDO1EqFFEqJPYA+iRKOjVyg=;
+			kscpsrv 10.4.343|10.4.343|patch_10_4_343_server_sf1.ini|eP5smUa+72GwFJMH3sX6zXaoTi3h3Sgv+GBcHKQMoQ0=;
+			kscpsrv 10.4.343|10.4.343|patch_10_4_343_server_sf1.exe|+4jUyATelcNIMqbzpZqK4Bfy9WEuNgHhqJtIQ7eYXB8=;
+			kscpngt 10.4.343|10.4.343|patch_10_4_343_nagent_sf1.ini|V37VN/QhvLE1/c6/ZWstkOi7Vyk0Un9h1eIV/S0rg3w=;
+			kscpngt 10.4.343|10.4.343|patch_10_4_343_nagent_sf1.exe|Wg9WWMnW1dFBXkW1Um8S1p+EmzVJV42vqhUbTc9/1hc=;
+			kscpiosmdm 10.4.343|10.4.343|patch_10_4_343_ios_mdm_sf1.ini|LPsKee6l8mNwdc0Zktk0zCL/COOMTMg6McFk4BClon4=;
+			kscpiosmdm 10.4.343|10.4.343|patch_10_4_343_ios_mdm_sf1.exe|0IRT6YSDTrjKDAtEfwxrQ6Xux3KDy5R9hYHuog11emM=;
+			kscpcon 10.4.343|10.4.343|patch_10_4_343_console_sf1.ini|sD0bh+S6e7eh7o5gsLR3Uo1zKLqPjj4SjpHqzR0T+iI=;
+			kscpcon 10.4.343|10.4.343|patch_10_4_343_console_sf1.exe|ddz5J0Y5YCD4l/sSYl44O+7i7tRPtvtZsnVK+Lt7eHY=;
+			kscpsrv 10.4.343|10.4.343|patch_10_4_343_server_a.ini|kkPDgbIx/F372dNJrQl5tJOZeCEwVe6y9LSw8ya3qkk=;
+			kscpsrv 10.4.343|10.4.343|patch_10_4_343_server_a.exe|wNyvceM3NQtOB7IGaNwaqpHzTNB/8IbSCOhkRZ6+2wg=;
+			kscpngt 10.4.343|10.4.343|patch_10_4_343_nagent_a.ini|ZXxDqP79fLzB5kfwX0Njn5odc5nn0VkhVZ9UEkqJ5Nc=;
+			kscpngt 10.4.343|10.4.343|patch_10_4_343_nagent_a.exe|sKgTktjAge+oRUHDESOt/aqn7p4X1Nb3sQljShrH6Kw=;
+			kscpcon 10.4.343|10.4.343|patch_10_4_343_console_a.ini|nf5sSrCgjRaQn3uGFVgiownoEbWl6nlmeeLwD962wc4=;
+			kscpcon 10.4.343|10.4.343|patch_10_4_343_console_a.exe|Q47YmraL6icY4acc8dg+hiXJoR4KBQlz7A9vJMmcFII=;
+			kscpiosmdm 10.4.343|10.4.343|patch_10_4_343_ios_mdm_a.ini|KKRfXj8dQ8zLvmu72RuxtJMVbybmVodH7vik+EhCpcU=;
+			kscpiosmdm 10.4.343|10.4.343|patch_10_4_343_ios_mdm_a.exe|YHHxrHgfM9QMHVzTOpc2Uce6uLTAK9dTYmrG7DVregk=;
+			kscpsrv 10.4.343|10.4.343|patch_10_4_343_server_b.ini|noScirvcnWpbqkdgJnUWGCI0AZp2HrCNNzE5dyTy0Zg=;
+			kscpsrv 10.4.343|10.4.343|patch_10_4_343_server_b.exe|PqMU+w6kAjmpdetXwvrWerF6Og/NZQxB7i5yWzfcYug=;
+			kscpngt 10.4.343|10.4.343|patch_10_4_343_nagent_b.ini|7XaNuMxf8eqJ/RYJmMb7cvPt82HoDFrM4K8N0zKTmIE=;
+			kscpngt 10.4.343|10.4.343|patch_10_4_343_nagent_b.exe|P7O2XMy2fkQ1EZ62vTVKc5Pnmte8uhIUdpvL3jaqus8=;
+			kscpcon 10.4.343|10.4.343|patch_10_4_343_console_b.ini|5Xeg/zDvFMHUhvkwM4rYFeZWIq+y97/0wv0M12M7bwc=;
+			kscpcon 10.4.343|10.4.343|patch_10_4_343_console_b.exe|nqrm6vIT5rJLO6IBmbkexsoO6qXU84QNLK3zCW2RfsY=;
+			kscpiosmdm 10.4.343|10.4.343|patch_10_4_343_ios_mdm_b.ini|fVYWpEZxWdfcgedQwJYdO56mDpL3bx+Ik7ZBW8LkFJ8=;
+			kscpiosmdm 10.4.343|10.4.343|patch_10_4_343_ios_mdm_b.exe|kZIhpKcRCq97sRGgRT6bKXUN7M5cj9DJdK8jy6UI41Q=;
+			kscpiosmdm 10.5.1781|10.5.1781|patch_10_5_1781_ios_mdm_a.ini|aCzW6cMKGmvz7szUV5I5LhmVYUAsP6FColxDMpGGLl8=;
+			kscpiosmdm 10.5.1781|10.5.1781|patch_10_5_1781_ios_mdm_a.exe|kwJVp55X2OYVz4swgVI+fCaxOn+VOkfPPu5a3egHwj0=;
+			kscpngt 10.5.1781|10.5.1781|patch_10_5_1781_nagent_a.ini|SYy27OAgu733TupPhkEbdEkEYjXjD01VRCpXjdiul1Y=;
+			kscpngt 10.5.1781|10.5.1781|patch_10_5_1781_nagent_a.exe|WvmajZ+COUwX0sOz1yG2vKnuF79E7CSmrJzDcM6tGaU=;
+			kscpsrv 10.5.1781|10.5.1781|patch_10_5_1781_server_a.ini|GJkxfBj5w7a3cpJ971aCLcn1QZ+alXhTUJHxAIUsUPI=;
+			kscpsrv 10.5.1781|10.5.1781|patch_10_5_1781_server_a.exe|tB/NPN7DCwrT4FVkGe8t3CZNN2swr0L/shZpPjOXRaw=;
+			kscpcon 10.5.1781|10.5.1781|patch_10_5_1781_console_a.ini|6DAy4iXJQIPKK83yEAh28LiZQ9NCVsyd7F2UjYwMw7E=;
+			kscpcon 10.5.1781|10.5.1781|patch_10_5_1781_console_a.exe|dAHY8nZprvTUhs1a0Eq7XLMs1JRLgM+LORnVrYlLZG8=;
+			kscpsrv 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_server_a.ini|pRqsvD/8LcFqA3hgA5fwlgaCBw+YV2dlKL3NgFBG9Kw=;
+			kscpsrv 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_server_a.exe|eg6u8SBTsY9+ymw1QAmHZpeAXvlXRDsRMnsVh1SiYB8=;
+			kscpsrv 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_server_b.exe|sAK9S9LhIBbMEeSJ2W0/jcIuzNL6q4XdGO3TMsQWHqE=;
+			kscpsrv 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_server_b.ini|7YtD7TBRU4dnNhDxaNF5FJmGgs9mVFzvMYSm5vatvP8=;
+			kscpngt 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_nagent_b.exe|r8EovQ1qtVkYdV3d1f+3ttDyltdU0/N1q9uLT/5I1QU=;
+			kscpngt 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_nagent_b.ini|2PQ4HIvTYT11nBCbeLylMwx8ktNYeJEk7QmJ7GVPlTQ=;
+			kscpcon 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_console_b.exe|OZZpNdW142UtPLp0IfT2OohwBmNOKboW8xJiV3+O4QY=;
+			kscpcon 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_console_b.ini|ST4tpJ66EctWy72DrjQr7bNbQ5awH+9X9H4RRYXwcK4=;
+			kscpiosmdm 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_ios_mdm_b.exe|8c08m8F7JlYJ3J7Di55nKJWa15933zJ2cu7WLF/ZI2c=;
+			kscpiosmdm 11.0.0.1131|11.0.0.1131|patch_11_0_0_1131_ios_mdm_b.ini|B1WxIhanJF2WPaQCV7F/lhuInbxeA1IN5qRBslW+WRk=;
+			kscpsrv 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_server_a.exe|whGvIbvYtBDcWgZPUXX4I0k5mZ+/Rom2o4F9QPHfanI=;
+			kscpsrv 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_server_a.ini|+uyV16sxHEqWyaKsxO78j/K/mJf48wvshflctrSj+r8=;
+			kscpngt 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_nagent_a.exe|Kld6YQV/mAmu6dK9S14pudCpQUI7WcU/nHjbhrYo6BE=;
+			kscpngt 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_nagent_a.ini|8bRor6h5G79VuVM82bWsg6dPaG4hlc9N4BRYBUelr4k=;
+			kscpcon 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_console_a.exe|8J3ukJcSc6PZx4f01H+L2AZtB7IY3YlbNRmpNj+MYLs=;
+			kscpcon 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_console_a.ini|SlmBnC6FMPG99cVn6OdWOmhskT/JKz4j/R2UjH/Rx9Y=;
+			kscpsrv 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_server_12_2.exe|J1C4ojsaHV/IWrdT2mpbiKFel/VxLlaLEC9BtM8VUcY=;
+			kscpsrv 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_server_12_2.ini|pemWcrijJGrvgK9YguJD0fHhnToHoPQ8u8ySehek3lg=;
+			kscpngt 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_nagent_12_2.exe|g9qrR3b6S0EmY2nANIyT7JaZW2Ar0dnLJHT319zNkpU=;
+			kscpngt 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_nagent_12_2.ini|r2qPPOk1uxGCbqpAAmlOB0ZoO0YqtuzKTlUki3wW6pI=;
+			kscpcon 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_console_12_2.exe|z7o0vY5dRevjj+cyx9njoXh4xXUAy0ZARw4wysqUNLk=;
+			kscpcon 12.0.0.7734|12.0.0.7734|patch_12_0_0_7734_console_12_2.ini|bVe1Gl7XHR3lc+8pAIS/mUFcgLKaffFwmvYAMwWGvro=;
+			kscpiosmdm 12.[0,2].0.[7734,4376]|12.0.0.7734|patch_12_0_0_7734_ios_mdm_openssl.exe|GejfnRCd/XP1sgg6l01NbUR3jXxXfIc3DD8nhGUfXBs=;
+			kscpiosmdm 12.[0,2].0.[7734,4376]|12.0.0.7734|patch_12_0_0_7734_ios_mdm_openssl.ini|HbSPYYiHtr2TRPpowS0uL4VFa5Dkv2XdCtAkkp9oefY=;
+			kscpngt 12.[0,2].0.[7734,4376,4456]|12.0.0.7734|patch_12_0_0_7734_nagent_openssl.exe|Nwqk8yxzT/SsFc5GTOa0ojrdi0T1TjtQDPIXMElLkug=;
+			kscpngt 12.[0,2].0.[7734,4376,4456]|12.0.0.7734|patch_12_0_0_7734_nagent_openssl.ini|B8mSGvchNNYogIAOK1QSi35LzKMfFXKqVG3jw6lPetk=;
+			kscpsrv 12.[0,2].0.[7734,4376]|12.0.0.7734|patch_12_0_0_7734_server_openssl.exe|RyrBLeI0xpSobe8nKt33rWAk9HcefmQtWTCGvrce4tw=;
+			kscpsrv 12.[0,2].0.[7734,4376]|12.0.0.7734|patch_12_0_0_7734_server_openssl.ini|rz5pWYjfJAgaJvD59n4maQ+kQzhZb+C7K9m1QdvOo+c=;
+			kscpiosmdm 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_ios_mdm_openssl.exe|lS0WasSxAC2MdLz1V33OnlcQWmCDJlrwXyqxn4N5gcg=;
+			kscpiosmdm 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_ios_mdm_openssl.ini|PZeLQ3GLoJ/EtDDwXWXd/kDBRmE+pYrPFyVft4oLnCE=;
+			kscpngt 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_nagent_openssl.exe|PJtr7XOBt5ERHUBuVw3UpFeOV0z2dvVqAhXoEx3/HWE=;
+			kscpngt 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_nagent_openssl.ini|ZfosAZPSdF1RZx1V9HQSYXEgHWKqesEaFDA0ZsA9Zu0=;
+			kscpsrv 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_server_openssl.exe|t61VRYitW2Eaf/EbIBTvheuXacCWYJl7T5c5KakVygY=;
+			kscpsrv 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_server_openssl.ini|T1WaObnZc7iwBQnEnc5fwZyMaY5PuLgpOoiB65wTHYc=;
+			kscpngt 12.[0,2].[0,1].[468,7734,8157]|12.0.0.7734|patch_12_hosted_nagent_openssl.ini|P0zYGY2GFIC1mt5OWXJ8unGh6WQUO8CTiNW3CrkRg+k=;
+			kscpngt 12.[0,2].[0,1].[468,7734,8157]|12.0.0.7734|patch_12_hosted_nagent_openssl.exe|XAZkRZ4lUh+NwOfcIa/5whpx5DedPBgOC/oRQ4jxN60=;
+			kscpngt 13.1.0.2263|13.1.0.2263|patch_13_1_0_2263_nagent_a.ini|odhwXWgCuM4rEfQNcb5E1W77SVzsehJkGOnsNH7pY+U=;
+			kscpngt 13.1.0.2263|13.1.0.2263|patch_13_1_0_2263_nagent_a.exe|C7lGUqOE0NnhzJ/SF7xjMg/zc1wFKSBKYk1cUSZHEzk=;
+			kscpngt 13.2.1.236|13.2.1.236|patch_13_2_1_236_nagent_a.ini|EkYl6T1TDlwFNZHj8yf0TeYdgJ61XLcaHANFak5pjZU=;
+			kscpngt 13.2.1.236|13.2.1.236|patch_13_2_1_236_nagent_a.exe|zY1PcudbuCvLbr0bIK/TtYkq8quRkT59T0OVA/77sIQ=;
+			kscpngt 12.0.1.289|12.0.1.289|patch_12_0_1_289_nagent_a.ini|xzbzPzN1gpj9fhdH4lCJjoeF4u9hlXbuOyA4R9STRyY=;
+			kscpngt 12.0.1.289|12.0.1.289|patch_12_0_1_289_nagent_a.exe|8UBWvH41tIRhfRugW8URIa7QFC4oEb/uJB9Oh1ektFI=;
+			kscpngt 13.2.2.1263|13.2.2.1263|patch_13_2_2_1263_nagent_a.ini|5Gm5wvftoNy/Kc/qPsiiPXydSPFfgvNKGWU0YPaz278=;
+			kscpngt 13.2.2.1263|13.2.2.1263|patch_13_2_2_1263_nagent_a.exe|kABaksGzQ50ikkW9A1IOU+stLtrLcKFl4lMWvKKYerc=;
+			kscpngt 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_nagent_b.exe|LdNDTAdg1tLR5cd90jbsyANFXjpJ5USQXdTTriXwZV8=;
+			kscpngt 13.0.0.11247|13.0.0.11247|patch_13_0_0_11247_nagent_b.ini|Qt5wNzyEift3uNh5/xm35bld9OegOB/n0LFLFVvsDiQ=;
+			kscpngt 14.2.0.26967|14.2.0.26967|patch_14_2_0_26967_nagent_a.exe|F/eKdmro+kICNaerRE+Nmb+X8Gupuh1lPYIUu22DSwU=;
+			kscpngt 14.2.0.26967|14.2.0.26967|patch_14_2_0_26967_nagent_a.ini|82n6TtCXzEP81IoO0MChEh6utBDbRatXbDQ9MH+U5Lg=;
+			kscpsrv 14.2.0.[26967,27028]|14.2.0.26967|patch_14_2_0_26967_server_a.exe|wwZ2LiSrTX63noIYipbKQERKz0F6Q/R+yo6/OyZgbh0=;
+			kscpsrv 14.2.0.[26967,27028]|14.2.0.26967|patch_14_2_0_26967_server_a.ini|A9gKAlEAWn9cc8vZzXilCB9cIu99J0XaHVad64TatbE=;
+			kscpngt 14.2.0.35148|14.2.0.35148|patch_14_2_0_35148_nagent_a.exe|YrxuZKeKe7TQBaBjDsfVw60B+ABBZ0gS5aWiUU9pl0s=;
+			kscpngt 14.2.0.35148|14.2.0.35148|patch_14_2_0_35148_nagent_a.ini|lbsQYlxG+yVyP7jFn3az7tJDmPXtfDJ6P0YLsnLcStU=;
+			kscpngt 15.1.0.20748|15.1.0.20748|patch_nagent_a.exe|EL5fuTeeJGtcLkEbY4CwQ5A3r2pBdR90gEnAZDb9yhI=;
+			kscpngt 15.1.0.20748|15.1.0.20748|patch_nagent_a.ini|6dPuF4SqXwSuLAGGvwPlPutaDtPhRjbwSDSpiwQT10Q="/>
+	<Key2
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="kscp-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAMEnfEO9OBJyf21suIZjmPgLQsMdcnh0xEQnHIsVaChUGjmHb6Tb+iNOJ1rCZbC0dCC8okbGgpdVrARe2qiaZIMBAB4JKQEAAAIAAigEAEtTQ1ADAAIoAwBCSU4BAAAJ3K+T6A0KOiEyODQwMUcwSXNyelhQUjVwVzBMU1pyVmdXM2tKK0FEZXJkWngyMzZUYUwvL1BVaVdFZUl3WHFkNlFsTXVOekpmOGdyUFMwSnZ1SEtUYU95TllsQWQvUWdwbGNiOSUl</Key2>
+</Update>
+:!28401Gm+ERgl5ynsoU1RGV8WbXxrtFy91wbqradJDjk8EQ3XX8hpLLvoxwRqEA/Rq9OlcnDY378uFwaHOPNXJkCl9yc3%%
+=!AQAA1wsASE8YzAAA0‚Ó+¸tŽ ‚Á1‚½0‚¹10
+*…0B+¸tŽ 200.0
+*… ø˜,[½¬œøëxÔ±dÜÝßy—cÐIÏªÑ £²Cò ‚‘0‚:0‚ç  „hž6¯OW°v­“o°$Ý0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110145Z480120110145Z0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0h0!*…0	*…*…C @Ã¤µ@‡ò‘ÃY6º˜I®…_AyØ´¿x£•O{b\CgF@:õ&¡04Nlæà‡éæ£E†7ñ·æ£O’©_—´/P£¡0ž0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0Uÿ0Uÿ0ÿ0#+¸tŽÿ0+¸tŽ0
+*…A ßq*,;\™Öì¬A:Oèó¼æMöí°æ#qùW¢0*¥~€ó? BöÚ§7NžhI½¹ÅÈ>é ‚No0‚O0‚ü }úmÄÞNOí]ÞMßFKòà0
+*…0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0250423113253Z260717113253Z0U10	URU10UMoscow10U
+Kaspersky Lab10Ucompid=KSCP_type=BIN0h0!*…0	*…*…C @lœBƒ±Å¸VüŒ#$ôH˜âš–u…BÅÏç\SN"ž4y½0·,”Ÿ¤cíË”%%êiþvŠLßl­y£©0¦0+U#$0"€ Ù‡kŽ¾‚ŒÞžäÎ¨ÛØ<à(®ILŒùA¥l0)U" 0Ðˆ¯‚d@eÀ{vü·“8¨›ìœ÷èx„’ÚæÖ ß0Uÿ€0U%ÿ0
++0$+¸tŽÿ0+¸tŽ0
+*…A 
+D/ <áñ·tç‡Ëä +_%C‘4p'±­Æ{ÅxtÌ«ç3Aô3/hHpR4üu²‡Lžeßå™uÄ–þÄ1‚Ë0‚Ç " 0Ðˆ¯‚d@eÀ{vü·“8¨›ìœ÷èx„’ÚæÖ ß0
+*…0
+*…@
+çÜd'On¿µ9‰ƒUÐî6i¦z©‚ÿ5¸059DDL§ ®'·ò!Â·×èV§6eŸD
+wŒ.ŽÞ8Z¡‚B0‚>
++‚71‚.0‚*	*†H†÷ ‚0‚10
+*…0j*†H†÷	 [Y0W*0.0
+*… ¿©µŠ°i¬êüGü$2•Zgw&Íôâ5¼¦l”=A—20251119115003.6499192Z ‚Z0‚0‚É  ‘
+Æ‚ó¬M£†ÓÌ_Â0
+*…0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0250110115903Z260525115903Z0O10	URU10UMoscow10U
+Kaspersky Lab10Utype=Timestamp0h0!*…0	*…*…C @†ÁÀûha­K	²YÅGø7{©;N)‘'¾‚n{r¬…á>T&Ò›ù²Rv©†ÅY6£gt!?üaÐñ´¼£r0p0+U#$0"€ ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0)U" &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0U%ÿ0
++0
+*…A 
+3E`Ä’Ac³U OáÕBŒO—ö—~ze<×D}UeÖ	â {Ë*²Úö]³ØW†n§B‰ëÁ'Ëðèhº ßC0‚60‚ã G¢~YFC®¼ÆADm\™ò0
+*…0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110221Z480120110221Z0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0h0!*…0	*…*…C @«k„8Ï P8qFÙAÏÛëòÙ†Ð4ªLyx•žcÜ)åGð,ˆçV:TZ.B§žºŒì«FÖGð
+€{”×£”0‘0+U#$0"€  æŸ¡?€¾Î‚Fã×[®€ÅÔ†q»Æ×›úöÕZ0)U" ;*%u–Ó®Ó•] íìN¶™p<B±¸´=èta/ Ö0Uÿ0Uÿ0ÿ0U%ÿ0
++0
+*…A (^·ÇíâÔãi!rO…@aÇn^è æ²•ï«„Èôî*Õƒ1÷8J-=§ OÃ{BzÍIª;ð¤™¨õJ1‚80‚4 " &ÇÛÄ*–8z¢õ×ðM©f9Æs±~¦iÍÓ,0
+*… °0	*†H†÷	1*†H†÷	0	*†H†÷	1251119115003Z0/	*†H†÷	1" .­Òñk]ÑfX–Á)Ø()ú©áJ"ª*†êg×àøi•0C*†H†÷	/1402000.0
+*… WºÒã©e¢LîN@æÅˆ0ºÒ½vEt'ñ5Ñ1`Â0
+*…@	8*ÅC0ÕÎ_3GÐÒûº#4ËA‹¢¨[[‘sF)=
+æ€.29ªô/4ÓïÞõBpõ¤°!3~àÃÚ²iå%%

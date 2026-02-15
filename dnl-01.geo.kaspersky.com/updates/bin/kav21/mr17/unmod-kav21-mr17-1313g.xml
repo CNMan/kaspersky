@@ -1,0 +1,71 @@
+<Update
+	Date="26072024 1049"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="8680"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.17.7.539|restart_os|a|21.17.7.539_k4w_a|kl.kis.ui.dll|AqsVZ77WDtDHM5Kgsixr7+aYwUFbLD1kTdfC6Vb+km0=;
+			KASPERSKY 21.17.7.539|restart_os|a|21.17.7.539_k4w_a|traffic_processing.dll|JxpMhuRCGqeKFgcCiOW/F5zDm8Npw7mkUwt7nyZOD80=;
+			KSOSPC\\|KSOSFS 21.17.7.539|restart_os|a|21.17.7.539_ksos_a|kl.kis.ui.dll|AqsVZ77WDtDHM5Kgsixr7+aYwUFbLD1kTdfC6Vb+km0=;
+			KSOSPC\\|KSOSFS 21.17.7.539|restart_os|a|21.17.7.539_ksos_a|traffic_processing.dll|JxpMhuRCGqeKFgcCiOW/F5zDm8Npw7mkUwt7nyZOD80=;
+			KASPERSKY 21.17.7.539|restart_none|b|21.17.7.539_k4w_b|ver_info.json|9VSgSxtO5SS+VkkbeOB+z3LDytaPzVKsbFq7lPu54w8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.17.7.539"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="21.17.7.539_k4w_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="H5BLw/fqGcbcij2Ju+AH278uZoywjXl2rCd914gdU7o="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="b"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.17.7.539|restart_service|21.17.7.539_k4w_b|am_core.dll|EXHDa6QbSvCjD92wFDxGhZRw6oN8qmbwbr5BsYWzPwI=;
+			KSOSPC\\|KSOSFS 21.17.7.539|restart_none|21.17.7.539_ksos_b|ver_info.json|9VSgSxtO5SS+VkkbeOB+z3LDytaPzVKsbFq7lPu54w8="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.17.7.539"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="b"
+		SrvPath="21.17.7.539_ksos_b"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="H5BLw/fqGcbcij2Ju+AH278uZoywjXl2rCd914gdU7o="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.17.7.539"
+		ApplyPeriod="168"
+		ApplyAction="restart_service"
+		FixName="b"
+		SrvPath="21.17.7.539_ksos_b"
+		LocalPath="%ProductFolder%"
+		Name="am_core.dll"
+		DSKM="EXHDa6QbSvCjD92wFDxGhZRw6oN8qmbwbr5BsYWzPwI="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-kav21-mr17-1901g.xml"
+		DSKM="cQo/QqUsvZc5dM/T3ggf+SIo+K3nRjmwGigBSsRPIWQ="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:10K5dYkyAZHgMz8ce8ygFfbmy68uARKXPMurCvcynHup6GMhnL9sjuAAvN+Fk6Te/bM4TAGJgaBwtBk/ZL58SfWb%%

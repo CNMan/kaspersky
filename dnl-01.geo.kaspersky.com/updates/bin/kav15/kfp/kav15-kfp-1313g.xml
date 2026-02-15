@@ -1,0 +1,266 @@
+<Update
+	Date="24102016 1243"
+	ObjectType="2=KAV15;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	CompID="KAV15">
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		FixName="a"
+		Item="OS;SysArch;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			Win-XP|i386|restart_os|15.0.0.463_ksm_a/drv32/501|%WINDIR%/System32/drivers|klifsm.sys|K8UYlUZFVKYsKSxPHs487M6gAM5CttszR4G89NxEgf8=;
+			Win-XP|i386|restart_os|15.0.0.463_ksm_a/drv32/501|%WINDIR%/System32/drivers|klfltsm.sys|iYvbmKfzelNoQdYnvo9M3a4davg6K5gDwWcMTMwjflg=;
+			Win-XP|i386|restart_none|15.0.0.463_ksm_a/drv32/501/p|%ProductFolder%/klifsmx86|klifsm.cat|muBQRA5eOdpFw6acX2JH2qMSs+o3BuxuApJFBu1hs6o=;
+			Win-XP|i386|restart_none|15.0.0.463_ksm_a/drv32/501/p|%ProductFolder%/klifsmx86|klifsm.inf|y4js99oOe85hjYgJgP+Cb0NVInH5gnmV13O1rVt/u38=;
+			Win-XP|i386|restart_none|15.0.0.463_ksm_a/drv32/501/p|%ProductFolder%/klifsmx86|klifsm.sys|K8UYlUZFVKYsKSxPHs487M6gAM5CttszR4G89NxEgf8=;
+			Win-XP|i386|restart_none|15.0.0.463_ksm_a/drv32/501/p|%ProductFolder%/klifsmx86|klfltsm.sys|iYvbmKfzelNoQdYnvo9M3a4davg6K5gDwWcMTMwjflg=;
+			Win-Vista,7|i386|restart_os|15.0.0.463_ksm_a/drv32/600|%WINDIR%/System32/drivers|klifsm.sys|fxI+e05BphDQ0wBf3Zw00NmvRFw4cxoJB7Az2pNcHjQ=;
+			Win-Vista,7|i386|restart_os|15.0.0.463_ksm_a/drv32/600|%WINDIR%/System32/drivers|klfltsm.sys|40KQMppo6vgPFdPXuFATPBcLAjYji5E4edrlNSV8jOI=;
+			Win-Vista,7,8,81|i386|restart_none|15.0.0.463_ksm_a/drv32/600/p|%ProductFolder%/klifsmx86|klifsm.cat|m6YeFUgtibxDONILb++E7wxlP6loG+uHm6hlUvZB3a8=;
+			Win-Vista,7,8,81|i386|restart_none|15.0.0.463_ksm_a/drv32/600/p|%ProductFolder%/klifsmx86|klifsm.inf|y4js99oOe85hjYgJgP+Cb0NVInH5gnmV13O1rVt/u38=;
+			Win-Vista,7,8,81|i386|restart_none|15.0.0.463_ksm_a/drv32/600/p|%ProductFolder%/klifsmx86|klifsm.sys|fxI+e05BphDQ0wBf3Zw00NmvRFw4cxoJB7Az2pNcHjQ=;
+			Win-Vista,7|i386|restart_none|15.0.0.463_ksm_a/drv32/600/p|%ProductFolder%/klifsmx86|klfltsm.sys|40KQMppo6vgPFdPXuFATPBcLAjYji5E4edrlNSV8jOI=;
+			Win-8,81|i386|restart_os|15.0.0.463_ksm_a/drv32/602|%WINDIR%/System32/drivers|klifsm.sys|IKKXtKgZupheU58fHg/+WXBJNv5g3+OEhQtKNGtOY6U=;
+			Win-8,81|i386|restart_os|15.0.0.463_ksm_a/drv32/602|%WINDIR%/System32/drivers|klfltsm.sys|U7LJDCbMsRMPYRy8p+f2T30CTpQ3zOvtqaU5aOtcLCc=;
+			Win-7,8,81|i386|restart_none|15.0.0.463_ksm_a/drv32/602/p|%ProductFolder%/klifsmx86/602|klifsm.cat|qaqmecPs86V3alFb9H13j1Gxd8qNRsSP/hk3kbxRYak=;
+			Win-7,8,81|i386|restart_none|15.0.0.463_ksm_a/drv32/602/p|%ProductFolder%/klifsmx86/602|klifsm.inf|y4js99oOe85hjYgJgP+Cb0NVInH5gnmV13O1rVt/u38=;
+			Win-7,8,81|i386|restart_none|15.0.0.463_ksm_a/drv32/602/p|%ProductFolder%/klifsmx86/602|klifsm.sys|IKKXtKgZupheU58fHg/+WXBJNv5g3+OEhQtKNGtOY6U=;
+			Win-7,8,81|i386|restart_none|15.0.0.463_ksm_a/drv32/602/p|%ProductFolder%/klifsmx86/602|klfltsm.sys|U7LJDCbMsRMPYRy8p+f2T30CTpQ3zOvtqaU5aOtcLCc=;
+			Win-XPx64|x64|restart_os|15.0.0.463_ksm_a/drv64/501|%WINDIR%/System32/drivers|klifsm.sys|enZnG4eLSD/2OmI/BoRB4GHh88TNIzHBsAUZSz5MMh0=;
+			Win-XPx64|x64|restart_os|15.0.0.463_ksm_a/drv64/501|%WINDIR%/System32/drivers|klfltsm.sys|pQuYnmKNB3mpkUclvI8by7ZKbZjzje0RGjIqRwDPLTY=;
+			Win-XPx64|x64|restart_none|15.0.0.463_ksm_a/drv64/501/p|%ProductFolder%/klifsmx64|klifsm.cat|BS/+0Tjlb8qWNLGhtRYVMscbX8lL/mQv9KehCmHRLoY=;
+			Win-XPx64|x64|restart_none|15.0.0.463_ksm_a/drv64/501/p|%ProductFolder%/klifsmx64|klifsm.inf|y4js99oOe85hjYgJgP+Cb0NVInH5gnmV13O1rVt/u38=;
+			Win-XPx64|x64|restart_none|15.0.0.463_ksm_a/drv64/501/p|%ProductFolder%/klifsmx64|klifsm.sys|enZnG4eLSD/2OmI/BoRB4GHh88TNIzHBsAUZSz5MMh0=;
+			Win-XPx64|x64|restart_none|15.0.0.463_ksm_a/drv64/501/p|%ProductFolder%/klifsmx64|klfltsm.sys|pQuYnmKNB3mpkUclvI8by7ZKbZjzje0RGjIqRwDPLTY=;
+			Win-Vista,7|x64|restart_os|15.0.0.463_ksm_a/drv64/600|%WINDIR%/System32/drivers|klifsm.sys|4Pj0PS6ZIiJlPaWbL5mrfg4mLvQyrOaxVnEiBpsXMTc=;
+			Win-Vista,7|x64|restart_os|15.0.0.463_ksm_a/drv64/600|%WINDIR%/System32/drivers|klfltsm.sys|0MN3yKV5gaLIZLKaAwShlumUxAf+mOJurij1YjamKEE=;
+			Win-Vista,7,8,81|x64|restart_none|15.0.0.463_ksm_a/drv64/600/p|%ProductFolder%/klifsmx64|klifsm.cat|nlgld+1YTMDhsRRU7S94wQ2dadMCtWYv4izE5US0tBc=;
+			Win-Vista,7,8,81|x64|restart_none|15.0.0.463_ksm_a/drv64/600/p|%ProductFolder%/klifsmx64|klifsm.inf|y4js99oOe85hjYgJgP+Cb0NVInH5gnmV13O1rVt/u38=;
+			Win-Vista,7,8,81|x64|restart_none|15.0.0.463_ksm_a/drv64/600/p|%ProductFolder%/klifsmx64|klifsm.sys|4Pj0PS6ZIiJlPaWbL5mrfg4mLvQyrOaxVnEiBpsXMTc=;
+			Win-Vista,7|x64|restart_none|15.0.0.463_ksm_a/drv64/600/p|%ProductFolder%/klifsmx64|klfltsm.sys|0MN3yKV5gaLIZLKaAwShlumUxAf+mOJurij1YjamKEE=;
+			Win-8,81|x64|restart_os|15.0.0.463_ksm_a/drv64/602|%WINDIR%/System32/drivers|klifsm.sys|xM8GkJJc25Lf2BeO2JMuB5HuEgraWXjAT6s3GYQVlsM=;
+			Win-8,81|x64|restart_os|15.0.0.463_ksm_a/drv64/602|%WINDIR%/System32/drivers|klfltsm.sys|ZsUiCW/l4R1k4ZlLSFCqcd3WoC2R8zLbcrGrKwy9if8=;
+			Win-7,8,81|x64|restart_none|15.0.0.463_ksm_a/drv64/602/p|%ProductFolder%/klifsmx64/602|klifsm.cat|u/SEEIPlFJc6BIT91OWhyluS754Lg187IvKEIyIU6Wc=;
+			Win-7,8,81|x64|restart_none|15.0.0.463_ksm_a/drv64/602/p|%ProductFolder%/klifsmx64/602|klifsm.inf|y4js99oOe85hjYgJgP+Cb0NVInH5gnmV13O1rVt/u38=;
+			Win-7,8,81|x64|restart_none|15.0.0.463_ksm_a/drv64/602/p|%ProductFolder%/klifsmx64/602|klifsm.sys|xM8GkJJc25Lf2BeO2JMuB5HuEgraWXjAT6s3GYQVlsM=;
+			Win-7,8,81|x64|restart_none|15.0.0.463_ksm_a/drv64/602/p|%ProductFolder%/klifsmx64/602|klfltsm.sys|ZsUiCW/l4R1k4ZlLSFCqcd3WoC2R8zLbcrGrKwy9if8="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			15.0.0.463_ksm_a/ffext/vk|%ProductFolder%/FFExt/virtual_keyboard_sm@kaspersky.com|npvkplugin.dll|Py+P7Z1AMsC0+ypRI0monPU261GsrjcUezRXzpTgCe4=;
+			15.0.0.463_ksm_a/ieext/vk|%ProductFolder%/IEExt/VirtualKeyboard|ie_virtual_keyboard_plugin.dll|jNYNCQNEfNUl405FWNwUyyUNjfzanypL0dMDe7jgU/k="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a/x64/ieext/vk"
+		LocalPath="%ProductFolder%/x64/IEExt/VirtualKeyboard"
+		Name="ie_virtual_keyboard_plugin.dll"
+		DSKM="wOzWKFfKV0oOQNC9Ca/Z/uphCVPz1HNk4g+dyaPyOq0="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			acassembler.dll|pqv0LhJHn2lSuphWkjjcf94/vOil65ydA5Rj+00cBaw=;
+			am_meta.dll|zqS+sHmYqarGepmgIP0HqejHTejs2LLZmGw6pu4yQ/c=;
+			application_investigator.dll|I3NJH5ih4+AiC7OBiS9MDQnKZ74QALB/AgPFFHlj574=;
+			avpmain.dll|ioRYsfEvowFQ1by5pEopc+fWQuNY9xJUBjMQcte4vIU=;
+			avs_eka.dll|DDbfODef93qN83pBd1KwlQ59/TEGihqzTbLRNDRL1Vc=;
+			bl_sm.ppl|0+AjtdmleocfN8o1Ka876RzJrmEMKvTFssxfvdKm0Xs=;
+			cf_prague_adapter.ppl|Au75WZ6JEygNNM6sjrOFfgGX/Gd9umtaKmX+kXcWDLg=;
+			ckahrule.dll|97lRO5I8iwaVuXQe+sP5C+24fWJOcExorSSQWcB+SSA=;
+			ckahum.dll|jlWmefHk1wlu57xZihmDJR8tAx/t+LNrx+qSiWFfgtc=;
+			fssync.dll|j+56lXRyV3cvcIaG1KJe4LmZweu/HQOXxZ5+obnDu/E="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="fssync.dll"
+		DSKM="8hFoDikU/TRxRBY/jcDoNQ8T1EJVMMXh/bTHSt6Br2c="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			hips.ppl|I5o0kWvaQX7wxCCda/A0pk9veOYzbkAkrdfNuUJt8JI=;
+			instrumental_services.dll|wySOL6VkWaB607sXHFrNeN8J2Rv25Umhq8AkNJArZo4="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="instrumental_services.dll"
+		DSKM="mUm4KUN1G/rsd+Tov9NLul5zFr2hxk2ubm5aKx+PWdA="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			kasperskylab.platform.localization.core.dll|cHH4oReBG0iNjF1jGPJiTCd0M/9zcT8evarwsmOaji4=;
+			kasperskylab.platform.nativeinterop.dll|2zxHN6I1Jotnns3AIQsQbzpw2UF4vs9CQ6/SOScsCzA=;
+			kasperskylab.ui.common.dll|gelvrxrD2ybVyLsjp5te/PxsqcmrtrtLPeuW+LG9Ksg=;
+			kl_service.dll|0i8q1y1ST6+oJaE1UPbLrvaDHkuq/RwSWspkjfSW4ZI="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="kl_service.dll"
+		DSKM="2+KN16P0OX1OiYBETPWLB/a0mM/YjsvSZyf4oxOrEFQ="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			libeay32.dll|mVnXknzwgO6f5nBUrdfH4C7K7GhYRyz32RL0BwAyiAc=;
+			lic.ppl|otde2nJybxBB2t+YvL7LNY2f1DkQGx6MFaqCJ37uF3I=;
+			licensing_meta.dll|0LEVtWFpXXCCKg5QosIE8ur695GHo48JPigi2YF5ofw=;
+			licensing_product_facade.dll|0dbzwkY2N3oP6y9LIH0fN184LMttZfaBPZNFzjY4yMg=;
+			ods.ppl|yEz2fbTHfXD8RUP28RMEccaWBUc32V2M+jANWbDmEdk=;
+			params.ppl|UsXxmyTnU9b4kRfuQYKNREk0I9A8e7oYskFEj0JXfxI="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="params.ppl"
+		DSKM="FNwHxgrPVS0nDgCo9sUnb493s6qG4IY4trFODIZzpwY="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Name="parental_control_facade.dll"
+		DSKM="XXT4ShasLEaagJk8/SNJiBR48pIf560G9SaSnIy0kLQ="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		CustomAction="execute cmd=&apos;-kl:uninstall&apos; wait=300;execute cmd=&apos;-kl:install&apos; wait=300"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Name="plugin-nm-server.exe"
+		DSKM="ju5VgsmvWNIONCXJrWQpHYJErgSGIUgFn4xl0kwm3vE="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			plugins_facade.dll|u2PHSfHzVaoTI3YjStU6e54/zW6sLEyOu0R9NbyFSkY=;
+			processmonitor.dll|mjPe1D17HheAODPmDBXmKSfW092RbPj01+m1Z8Ui+eU=;
+			product_metainfo.dll|a0PlPRtRATRWNxZk9JCfibKdKSPOudDoQNgAbBhRMe0="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="product_metainfo.dll"
+		DSKM="6rDhV/Hp8Jk1vARTdzBW/v6RCI/9mejkN6573UtFWlE="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			safe_banking.dll|cDkzRjRCRHlmdEyPKfxgr8yXZstsEklVxv4vN7mDsjU=;
+			shell_service.dll|TRe8Z1eU2nYDENeG8o6w3CYNQGpIDzMrEcBfzQap/xM=;
+			smuimain.dll|Z122So80wl+ssflhR4tTLzKQLrFneLV9F4Ta0NXnWSo=;
+			ssleay32.dll|a8uo5Zc6PmGFuAqAT5K89DazcokB+nrYokBZSD5egCs=;
+			system_interceptors.dll|Z8Wy8thteTfXBcKeUOg5WMWdnoWLAVcEh48lxLUrzrI=;
+			threats_disinfection.dll|ZwixxtGCllYORO99JYayD2XnvjmD6qHxZVbIx6sKtI0=;
+			tsf_plugin.dll|v59ScDxBM8EfsiP4U6fu5EJAmpNZVOiI183CtXkC17I="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		SysArch="x64"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a/x64"
+		LocalPath="%ProductFolder%/x64"
+		Name="tsf_plugin.dll"
+		DSKM="N9fkKTNAZ3t2krshkBDzmnfsdycAZY4B24p7HWga7Fc="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		CustomAction="execute cmd=&apos;-p &quot;patch_a_ksm25.msp&quot;&apos; wait=300"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Name="patch_a.execute"
+		DSKM="Hxq6yeNNAlOlNfgWYv8WQ1UyxRdwVepwVguL+RxYIe0="/>
+	<Patch
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="15.0.0.463_ksm_a"
+		LocalPath="%ProductFolder%"
+		Name="patch_a_ksm25.msp"
+		DSKM="a+oIjWMsU2TUMlIpT0yML2Vg1Dl7NtsZmguQyrEEI8g="/>
+	<Patches
+		App="KSM 15.0.0.463"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		Item="Lang;SrvPath;LocalPath;Name;DSKM"
+		List="
+			en|15.0.0.463_ksm_a/skin/resources/en/locs|%ProductFolder%/skin/resources/en/locs|safebanking.ini|2izJ8k3pZZlFiLjbRN98mlfeDXsskUA8eTZTDcYQlJ8=;
+			es-MX|15.0.0.463_ksm_a/skin/resources/es-mx/locs|%ProductFolder%/skin/resources/es-MX/locs|safebanking.ini|HIh6uU8tQkSrZlW+d5v3leWsbw/UyMVUObGo0cJTJQA=;
+			ru|15.0.0.463_ksm_a/skin/resources/ru/locs|%ProductFolder%/skin/resources/ru/locs|safebanking.ini|mi+6dNeZ3jFQjq+zKmXfTpM7IOrf0Uy7tEDCoycAQpg="/>
+	<Key
+		LocalPath="%DSKM%"
+		Name="kav15-kfp-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJASd+HipAADXjsWO+vJWOGq5d4ArSJTzItgIQt/YiRfB2xEAxgvnndC3urWGKzNCq/HXJA+vhZ7FbkCsNrdmWovggy2p+NmsBAB4JGQEAAAIAAigFAEtBVjE1AwACKAMAQklOAQAACfTeUvANCjs6MTBLTlZGVlo4TFhMODVGV3hGOUlaZVd3R0Q3K0ZxUzRVbVVTS1J4QVBrcHg3dzQybTQ5N0ZYMlpoeE1Ic0hxTGpnRXBFaHRkck5CRldYQlVzck8yTGdSVSUl</Key>
+</Update>
+;:10aA4MMXKgTnO7us6FgC1quLvYUqaux4te6ytx+Bs2sWObW2Igf4nfczVtbPAH8CXao31KWOlKAamoEBc2N0W2IF%%

@@ -1,0 +1,34 @@
+<Update
+	Date="06112025 1147"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="7622"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.23.6.614"
+		ApplyPeriod="0"
+		FixName="a"
+		SrvPath="../21.23.6.614_ksde_a"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|product_metainfo.dll|YspvqlFN0Cc60Bt9W6QzTRGUMqphpjLS4neSjBd4BlM=;
+			restart_service|ucp_agent.dll|cvdND+tI9KfntrnpcpQ046YWLluiBpuMXzXDZ4bA2zE=;
+			restart_none|ver_info.json|TqATELYZ/pc92K71Me5XykTbqA3KA/XQ+XIm3cDPdcU=;
+			restart_service|bl_ksde.dll|EMwN5QyLKtrJsEFjz1ZrP5Vf5Nnmf6c5PuEaxvf4e+o=;
+			restart_service|kl.ksde.nativeinterop.dll|Va9Y1/jogDwkggxkmtBnBxPhNpV3YvK4/w8uFd9qyQo=;
+			restart_service|ksdeuimain.dll|WEIlNjk/U8vffjIhvW3Ow/y+Rc06SMcOP57qst4tm98="/>
+	<File
+		CompID="RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-ksde21-mr23-1901g.xml"
+		DSKM="fk5dFs6r//g/VI7RPBWBqgX21pb4iZ701kuPasMYIHQ="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
+</Update>
+;:10aS/stVHjJqtyKonWZSDaEVqmcaZ3VXWzkkxzmAAMTQeGMeRA9VuDrPtV/2GT6wowYbj5VJ6CromfEz6/uPNYYu%%

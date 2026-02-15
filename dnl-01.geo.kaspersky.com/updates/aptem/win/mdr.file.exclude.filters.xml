@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+
+ <!-- Update 15.06.2020--> 
+	
+
+	<File Id="{38b5b26c-3307-4212-b782-9e4e9ad63855}" FilePath="*.lnk" >
+		<Process Path="*\windows\explorer.exe" />			
+	</File>
+	<File Id="{90420fe5-d734-47d9-80f9-74f2892c4f37}" FilePath="*.js" >
+		<Process Path="*\windows\systemapps\microsoft.windows.cortana*searchui.exe" />
+	</File>
+	<File Id="{FC1A65FF-C48E-1994-5361D105B6A730EA}" FilePath="*\programdata\kaspersky lab\kes*" >
+		<Process Path="*kaspersky*\avp.exe" />		
+	</File>
+	<File Id="{2F416AAC-3F26-6C33-A5DD56F20872F304}" FilePath="*\Microsoft\Group Policy\History\?????????-????-????-????-?????????????\*\Preferences\Services\*.xml" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{1C9E7966-9299-819C-34C0C73F23604700}" FilePath="*\google\chrome\user data\default\cache\?_??????" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{868F939D-2D38-ED31-61323BCAF1AD3751}" FilePath="*\google\chrome\user data\default\code cache\js\????????????????_?" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{C204B815-A923-B86B-0AF36F407D08E92F}" FilePath="*\google\chrome\user data\default\local extension settings\????????????????????????????????\??????.???" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{4A442333-B70A-10EB-9091A16226CAE293}" FilePath="*\google\chrome\user data\browsermetrics\browsermetrics-????????-???.pma" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{46633ED4-B3A9-0EB6-09D205E789E58D30}" FilePath="*\google\chrome\user data\default\*\log" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{E4658601-884B-9C5B-B7A64385365B5415}" FilePath="*\google\chrome\user data\default\*-journal" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{D4C66955-C8DB-E783-81F7949FADC20D98}" FilePath="*\google\chrome\user data\default\search logos\metadata" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{07AB3B53-A2D8-0099-6AF9A3F85B529C3C}" FilePath="*\admin\appdata\local\google\chrome\user data\default\search logos\logo" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{955E7079-CF51-0B74-2FFD7BC380CA0E1A}" FilePath="*\google\chrome\user data\default\current session" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{37813EF6-64D5-4631-226CCC34F6D519D7}" FilePath="*\google\chrome\user data\crashpadmetrics-active.pma" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{F377E233-B514-6991-8E6E5E8BEA9001C5}" FilePath="*\google\chrome\user data\default\data_reduction_proxy_leveldb\manifest-??????" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{9D1E9A8A-4D7C-F795-FC58C4B08390C614}" FilePath="*\appdata\roaming\microsoft\teams\cache\?_??????" >
+		<Process Path="*\microsoft\teams\current\teams.exe" />
+	</File>
+	<File Id="{9D44E04D-FE3A-2C98-28AFF5139C03050A}" FilePath="*\appdata\roaming\microsoft\teams\local storage\leveldb\??????.ldb" >
+		<Process Path="*\microsoft\teams\current\teams.exe" />
+	</File>
+	<File Id="{1B62902F-4B79-B453-69DB970E1BC23024}" FilePath="*\local storage\leveldb\??????.ldb" >
+		<Process Path="*\teams.exe" />
+	</File>
+	<File Id="{57FB123A-4821-68E2-FF26BC3A13506F01}" FilePath="*\local storage\leveldb\??????.ldb" >
+		<Process Path="*\chrome.exe" />
+	</File>
+	<File Id="{0CD0765F-9B41-BF08-3D843023A01A19C4}" FilePath="*\local storage\leveldb\??????.log" >
+		<Process Path="*\teams.exe" />
+	</File>
+	<File Id="{64C3C8B9-C63E-DA1C-4E25F2110AC89E6B}" FilePath="*\local storage\leveldb\??????.log" >
+		<Process Path="*\chrome.exe" />
+	</File>
+	<File Id="{DDCE6F7F-8670-28BC-41C516DBCDED089C}" FilePath="*\appdata\local\microsoft\windows\inetcache\content.mso\????????.dat" >
+		<Process Path="*\program files\microsoft office\office*" />
+	</File>
+	<File Id="{976E676D-4DF1-39CB-737E8007AFAAC84C}" FilePath="*\appdata\local\microsoft\windows\inetcache\content.mso\????????.dat" >
+		<Process Path="*\Program Files (x86)\microsoft office\office*" />
+	</File>
+	<File Id="{2AD62C54-DC0A-01F4-C76A78E22B0204E6}" FilePath="*\system32\sru\sru.log" >
+		<Process Path="*\system32\svchost.exe" UserSid="S-1-5-19" />
+	</File>
+	<File Id="{6BD91B93-B517-2F4A-A9FD037B31990A8E}" FilePath="*\system32\sru\sru?????.log" >
+		<Process Path="*\system32\svchost.exe" UserSid="S-1-5-19" />
+	</File>
+	<File Id="{32AD8B4B-1EBA-7C72-7E61018E067B63C3}" FilePath="*\serviceprofiles\localservice\winhttp\??????????.cache" >
+		<Process Path="*\system32\svchost.exe" UserSid="S-1-5-19" />
+	</File>
+	<File Id="{AA3E64D2-6F47-E28B-62FCBDCA6B50A6A5}" FilePath="*\servicestate\winhttpautoproxysvc\data\??????????.cache" >
+		<Process Path="*\system32\svchost.exe" UserSid="S-1-5-19" />
+	</File>
+	<File Id="{9C0DC8C0-B7E7-2AE5-21A521795F461C12}" FilePath="*\appdata\local\temp\????????-????-????-????-????????????\*\*.dll.mui" >
+		<Process Path="*\system32\cleanmgr.exe" />
+	</File>
+	<File Id="{A7B8A443-581C-BECC-04E277E9DAD4C911}" FilePath="*\microsoft\internet explorer\recovery\high\active\{*-journal" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{AE83B302-A01E-DEFC-1ED4E7F58A2A151D}" FilePath="*\microsoft\internet explorer\recovery\high\active\*{????????-????-????-????-????????????*" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{68AB219A-F8F2-D462-775E5047E22A2F56}" FilePath="*\microsoft\windows\cookies\????????.txt" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{593DEF15-F403-9B10-3D78F0220AA5B8EE}" FilePath="*\microsoft\windows\temporary internet files\content.ie5\????????\*.gif" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{FB960104-8BFF-F48B-AFB6897556868CEC}" FilePath="*\microsoft\windows\temporary internet files\content.ie5\????????\*.png" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{78BC4BF5-DD08-B851-434D5C7BD8846888}" FilePath="*\microsoft\windows\temporary internet files\content.ie5\????????\*.js" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{D7F4DFFA-A7E2-69EF-31965537848ADF85}" FilePath="*\microsoft\windows\temporary internet files\content.ie5\????????\*.jpg" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{75954313-89CD-DD5A-B2D7E227D9E3E91B}" FilePath="*\microsoft\windows\temporary internet files\content.ie5\????????\*.css" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{1004D3C0-27BA-A19C-8FCAE48E965F2334}" FilePath="*\microsoft\windows\temporary internet files\content.ie5\????????\*.txt" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{D5D942A5-C937-95FF-B1DDE87AC39C9A9D}" FilePath="*\microsoft\cryptneturlcache\*\????????????????????????????????_????????????????????????????????" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{CE8AAE18-A891-3355-48C9CF942CF64DB1}" FilePath="*\appdata\roaming\code\backups\????????????????????????????????\file\????????????????????????????????" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{A5407581-A049-9D03-F4D3D4FB346E4D4E}" FilePath="*\appdata\roaming\code\backups\?????????????\file\????????????????????????????????" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{8FB238F9-BBC6-490D-33D41FCC2117FD1C}" FilePath="*\net_ioctl\translations\einit\src\security.cfg.in" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{B9DE6585-547B-B25C-2882CEC8E2AFD592}" FilePath="*\net_ioctl\translations\einit\cmakelists.txt" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{E4603814-4275-4007-CA5268794230B977}" FilePath="*\net_ioctl\translations\client\src\client.c" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{B7A1D85A-0FBF-5A7C-D5353831A445534F}" FilePath="*\appdata\roaming\code\rapid_render.json" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{7DB12DEB-9FCE-4BC1-E9786FDABA98B692}" FilePath="*\appdata\local\temp\appinsights-nodeaif-????????-????-????-????-????????????\*.json" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{087F5B7D-61EE-508A-03DDC9B6A01C229C}" FilePath="*\appdata\roaming\code\logs\*.log" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{0AD41238-E488-0202-632EA8999619AC71}" FilePath="*\appdata\local\temp\aria-debug-*.log" >
+		<Process Path="*\appdata\local\microsoft\onedrive\onedrivestandaloneupdater.exe" />
+	</File>
+	<File Id="{6256708E-1C6B-72EF-E0D9633962BD5996}" FilePath="*\programdata\regid*\regid*.swidtag" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{ED4586E2-E25C-29BA-197267E5BA68BB20}" FilePath="*\appdata\local\microsoft\group policy\history\{*" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{850D6ED9-C92D-01D2-5B21D37366F832C5}" FilePath="*\programdata\kasperskylab\adminkit\data\*" >
+		<Process Path="*\kaspersky lab\networkagent\up2date.exe" />
+	</File>
+	<File Id="{E291741E-8095-A9C3-F57E9AFCB5745A66}" FilePath="*\appdata\local\microsoft\windows\inetcache\low\ie\????????\getsessionstatus*.json" >
+		<Process Path="*\Internet Explorer\iexplore.exe" />
+	</File>
+	<File Id="{2FE52B9F-8351-0925-CC39C3E9F91DE8E0}" FilePath="*\appdata\local\microsoft\windows\inetcache\ie\????????\index*.htm*" >
+		<Process Path="*\sdl\sdl passolo\*\psl.exe" />
+	</File>
+	<File Id="{52B06F96-4606-65D2-1F10F3091BB21F78}" FilePath="*\projects\tms\web\development\web-terminal\web-client\src\app\shared\global\tree-grid\data-sources\local\local-data-source-default-filter.ts" >
+		<Process Path="*\microsoft vs code\code.exe" />
+	</File>
+	<File Id="{A6FB80B1-CE9A-2753-3B5AB3BA7D22D677}" FilePath="*\appdata\local\temp\vscode-chrome-debug-userdatadir_????\default\code cache\js\????????????????_?" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{32C6DA7A-49F2-84BF-D2F104B94F75F645}" FilePath="*\local\google\chrome\user data\default\service worker\cachestorage\????????????????????????????????????????\????????-????-????-????-????????????\????????????????_?" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{95D084B4-9269-B129-1132384E074125CD}" FilePath="*\local\google\chrome\user data\default\service worker\scriptcache\????????????????_?" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{418170CB-EF31-514B-A4CCB03E6023F61B}" FilePath="*\local\google\chrome\user data\default\sync data\leveldb\??????.ldb" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{223B74CB-D7B8-2710-16DC6E8629D4F95B}" FilePath="*\favorites\global it servicedesk.url" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{6C32375F-F7EA-522E-2760B0B195BA70BD}" FilePath="*\appdata\local\packages\microsoft.*" >
+		<Process Path="*\windowsapps\microsoft.windowscommunicationsapps_*\hxtsr.exe" />
+	</File>
+	<File Id="{3FD31E46-4DA8-8D20-3DA1C612257034D1}" FilePath="*\appdata\local\packages\microsoft.*" >
+		<Process Path="*\windowsapps\microsoft.office.onenote_*\onenoteim.exe" />
+	</File>
+	<File Id="{FEDD1F1B-723E-3180-8E996370DB911B87}" FilePath="*\appdata\local\temp\??????.png" >
+		<Process Path="*\microsoft office\office??\outlook.exe" />
+	</File>
+	<File Id="{E005793C-0657-511D-A2AF05F45D6F868D}" FilePath="*\appdata\local\microsoft\windows\inetcache\ie\????????\macro-icon*.png" >
+		<Process Path="*\microsoft office\office??\outlook.exe" />
+	</File>
+	<File Id="{9F1C9FD1-F211-0C70-A38F9D807D394CAB}" FilePath="*\appdata\local\microsoft\windows\inetcache\content.mso\???????.dat" >
+		<Process Path="*\microsoft office\office??\outlook.exe" />
+	</File>
+	<File Id="{D7D159B2-9B6A-3185-AC1A3CF610F64896}" FilePath="*\programdata\microsoft\group policy\history\{*" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{92ECBCC2-1C24-21D5-7A1812A7AD58E3A6}" FilePath="*\windows\security\templates\policies\tmp?????.inf" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{8A408035-5E30-2BC9-76E715FBA121C4BE}" FilePath="*\windows\security\audit\audit.csv" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{817B5644-E8D4-CB26-3FB2733C5D1CA6D9}" FilePath="*\postgresql\??\data\pg_stat_tmp\global.tmp" >
+		<Process Path="*\postgresql\??\bin\postgres.exe" />
+	</File>
+	<File Id="{900EFF55-403B-3F24-1BD07C6D3B8072AD}" FilePath="*\postgresql\??\data\pg_stat_tmp\db_?.tmp" >
+		<Process Path="*\postgresql\??\bin\postgres.exe" />
+	</File>
+	<File Id="{C3B62B9B-8BA5-560C-92934A10C9BDD156}" FilePath="*\programdata\microsoft\windows\devicemetadatacache\????.idx" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{1672AB39-5426-6311-55AD1E8D3AA3269A}" FilePath="*\appdata\local\google\chrome\user data\profile ?\indexeddb\https_docs.google.com_0.indexeddb.leveldb\log" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{1CD2E4F3-5627-92F7-8EE965503FFA5BAA}" FilePath="*\appdata\local\google\chrome\user data\profile ?\cache\?_??????" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{AD390567-D342-9AB8-5D5BE9150688A111}" FilePath="*\appdata\local\google\chrome\user data\profile ?\code cache\js\????????????????_?" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{525ADE5D-16C3-0B01-6BCF639F88898580}" FilePath="*\appdata\local\temp\vscode-chrome-debug-userdatadir_*\default\cache\?_??????" >
+		<Process Path="*\google\chrome\application\chrome.exe" />
+	</File>
+	<File Id="{8B3438E7-77C4-0F07-F37C94F9A1F55820}" FilePath="*\appdata\roaming\mozilla\firefox\profiles\*\datareporting\aborted-session-ping" >
+		<Process Path="*\mozilla firefox\firefox.exe" />
+	</File>
+	<File Id="{E206331C-5B3E-E3A2-896D0F60BFEC67BD}" FilePath="*\local\mozilla\firefox\profiles\*\cache2\entries\????????????????????????????????????????" >
+		<Process Path="*\mozilla firefox\firefox.exe" />
+	</File>
+	<File Id="{C92B1BAF-7522-CA01-54DA64CD0B2FA095}" FilePath="*\local\mozilla\firefox\profiles\*\safebrowsing-updating\*.metadata" >
+		<Process Path="*\mozilla firefox\firefox.exe" />
+	</File>
+	<File Id="{5258E7EC-7328-1BE6-C87720EE25646C6B}" FilePath="*\local\mozilla\firefox\profiles\*\safebrowsing-updating\*.vlpset" >
+		<Process Path="*\mozilla firefox\firefox.exe" />
+	</File>
+	<File Id="{E1FE0459-43F6-7EB6-134FCB62BF0B9525}" FilePath="*\local\mozilla\firefox\profiles\*\safebrowsing-updating\*.sbstore" >
+		<Process Path="*\mozilla firefox\firefox.exe" />
+	</File>
+	<File Id="{043A0DE6-E5B9-2817-7104FB892C128168}" FilePath="*\roaming\mozilla\firefox\profiles\*\weave\*.json" >
+		<Process Path="*\mozilla firefox\firefox.exe" />
+	</File>
+	<File Id="{539D4603-1D4E-638A-A34852AB86BD5D46}" FilePath="*\appdata\local\microsoft\windows\caches\{????????-????-????-????-*" >
+		<Process Path="*\windows\explorer.exe" />
+	</File>
+	<File Id="{0E71ED36-D67E-C6B9-2D58BEC72D45F0A5}" FilePath="*\appdata\roaming\microsoft\office\recent\2020-04.docx.lnk" >
+		<Process Path="*\microsoft office\office??\winword.exe" />
+	</File>
+	<File Id="{6CC5C5BD-1F90-6A2F-AD2F8D0054413AD2}" FilePath="*\appdata\roaming\microsoft\windows\recent\src.lnk" >
+		<Process Path="*\windows\explorer.exe" />
+	</File>
+	<File Id="{F231A558-45B9-1646-0F533CF5B2735277}" FilePath="*\appdata\roaming\microsoft\windows\recent\cmakelists.lnk" >
+		<Process Path="*\windows\explorer.exe" />
+	</File>
+	<File Id="{E9D134D8-3805-BD79-F4F9BB253DE36AB1}" FilePath="*\appdata\roaming\microsoft\teams\tmp\x??.json*" >
+		<Process Path="*\microsoft\teams\current\teams.exe" />
+	</File>
+	<File Id="{9F309040-037D-99AE-D61147F6A1F47619}" FilePath="*\roaming\microsoft\teams\indexeddb\https_teams.microsoft.com_?.indexeddb.leveldb\??????.ldb" >
+		<Process Path="*\microsoft\teams\current\teams.exe" />
+	</File>
+	<File Id="{7BE708BF-3479-2F67-776435EB887D79C0}" FilePath="*\$recycle.bin\s-?-?-??-??????????-??????????-??????????-??????\$i??????.htm" >
+		<Process Path="*\totalcmd\totalcmd.exe" />
+	</File>
+	<File Id="{0D689BA5-72EC-8CEF-8356006CE50A98E5}" FilePath="*\aiconverter2.0\ai-help\kesl\*" >
+		<Process Path="*\totalcmd\totalcmd.exe" />
+	</File>
+	<File Id="{E97096D3-5658-EE35-F1FAA182B9A83D7B}" FilePath="*\programdata\microsoft\windows\wer\temp\wer????.tmp.???" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{AB9DF150-A8AF-A43B-7F7EF80AAE00ECF4}" FilePath="*\programdata\microsoft\windows\wer\temp\wer????.tmp.werinternalmetadata.xml" >
+		<Process Path="*\windows\system32\werfault.exe" />
+	</File>
+	<File Id="{D1010762-FBDC-DCE6-5DA120377C4009A4}" FilePath="*\programdata\usoshared\logs\system\notificationuxbroker.????????-????-????-????-????????????.?.etl" >
+		<Process Path="*\windows\system32\musnotification.exe" />
+	</File>
+	<File Id="{EE2235EF-1D33-17ED-AC258E5E48EF4754}" FilePath="*\programdata\usoshared\logs\system\usocoreworker.????????-????-????-????-????????????.?.etl" >
+		<Process Path="*\windows\system32\usocoreworker.exe" />
+	</File>
+	<File Id="{2BEFC48B-5C84-A181-6546A466EAAB714D}" FilePath="*\local\microsoft\windows\actioncentercache\microsoft-office-outlook-exe-??_?????_?.png" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{4B24DB68-6282-238B-26B4E3D8B7FADA48}" FilePath="*\appdata\local\temp\*.???.zip" >
+		<Process Path="*\sdl\sdl trados studio\studio?\sdltradosstudio.exe" />
+	</File>
+	<File Id="{C39FAA2D-D4E2-0B4F-FD3C418FBF0203DA}" FilePath="*\appdata\local\temp\*.???.htm" >
+		<Process Path="*\sdl\sdl trados studio\studio?\sdltradosstudio.exe" />
+	</File>
+	<File Id="{4E3163EC-309C-F11B-CBB98526E89D0686}" FilePath="*\??-??\*.htm" >
+		<Process Path="*\sdl\sdl trados studio\studio?\sdltradosstudio.exe" />
+	</File>
+	<File Id="{ACE1FF9A-A704-13BC-BD53DD36CC6F1A15}" FilePath="*\appdata\local\temp\tmp????\????????-????-????-????-????????????.htm" >
+		<Process Path="*\sdl\sdl trados studio\studio?\sdltradosstudio.exe" />
+	</File>
+	<File Id="{09BAADF3-084C-1B4E-C7C3AA6B5580E19C}" FilePath="*\appdata\local\temp\*\ksn\*.kvdb" >
+		<Process Path="*\kaspersky lab\networkagent\ksnproxy.exe" />
+	</File>
+	<File Id="{E1C47F3E-F819-81EC-03CFDAA7845812B2}" FilePath="*\appdata\roaming\notepad++\backup\*" >
+		<Process Path="*\notepad++\notepad++.exe" />
+	</File>
+	<File Id="{7B82E8D3-3360-10E4-69794525433E8651}" FilePath="*\appdata\roaming\telegram desktop\tdata\user_data\cache\*" >
+		<Process Path="*\appdata\roaming\telegram desktop\telegram.exe" />
+	</File>
+	<File Id="{A4499509-5D7D-4C0A-B89CB788E2BA4246}" FilePath="*\appdata\roaming\telegram desktop\tdata\user_data\media_cache\*" >
+		<Process Path="*\appdata\roaming\telegram desktop\telegram.exe" />
+	</File>
+	<File Id="{CF44C128-F0DF-2172-FBCDA08AF398A585}" FilePath="*\windows\ccm\logs\*.log" >
+		<Process Path="*\windows\ccm\ccmexec.exe" />
+	</File>
+	<File Id="{458AD3B1-566E-F375-746146F853D4C5B8}" FilePath="*\firefoxportable\data\profile\cache2\doomed\*" >
+		<Process Path="*\firefoxportable\app\firefox\firefox.exe" />
+	</File>
+	<File Id="{C5ACCE44-16E6-E506-D3B844777C3A16B2}" FilePath="*\tfs\*" >
+		<Process Path="*\microsoft visual studio\????\teamexplorer\common?\ide\devenv.exe" />
+	</File>
+	<File Id="{2FE52B9F-8351-0925-CC39C3E9F91DE8E0}" FilePath="*\appdata\local\microsoft\windows\inetcache\ie\????????\index*.htm*" >
+		<Process Path="*\sdl\sdl passolo\*\psl.exe" />
+	</File>
+	<File Id="{78524CFC-2349-7AE5-A277FDFF7DF99084}" FilePath="*\programdata\microsoft\windows\apprepository\staterepository-*.srd-wal" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{49B4389D-8565-D80A-C1FFB73A017E535B}" FilePath="*\programdata\microsoft\windows\apprepository\????????-????-????-????-????????????_s-*.rslc" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{EA075DA8-FD01-7233-3E95F331DC014835}" FilePath="*\appdata\local\packages\microsoft.windows.contentdeliverymanager_*" >
+		<Process Path="*\system32\backgroundtaskhost.exe" />
+	</File>
+	<File Id="{59F87148-B365-FF54-9074B6127ADEE527}" FilePath="*\appdata\local\packages\microsoft.windows.cortana_*\localstate\constraintindex\apps_*" >
+		<Process Path="*\systemapps\microsoft.windows.cortana_*\searchui.exe" />
+	</File>
+	<File Id="{5BDCAC80-928A-47BF-AABC0EECF873416E}" FilePath="*\appdata\roaming\microsoft\skype for desktop\local storage\leveldb\*.ldb" >
+		<Process Path="*\microsoft\skype for desktop\skype.exe" />
+	</File>
+	<File Id="{A7EE0111-E0FA-6BFF-BF37280111F615E4}" FilePath="*\windows\serviceprofiles\localservice\winhttp\?????????.cache" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{8E2D4734-CBF1-5629-EAAC03FAA2A44F8D}" FilePath="*\windows\serviceprofiles\networkservice\appdata\local\microsoft\windows\deliveryoptimization\cache\*.pieceshash" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{66FD0A5A-C58C-1D5C-AA61FAA69D6F2828}" FilePath="*\windows\servicestate\winhttpautoproxysvc\data\*.cache" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{556341A4-A6E7-2138-DCDC3F1BD50A07FD}" FilePath="*\windows\softwaredistribution\eventcache.v*\{*" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{E15A6500-0F2E-9B52-2B4A3F651B10451C}" FilePath="*\windows\system32\config\systemprofile\appdata\local\microsoft\installagent\checkpoints\*.dat" >
+		<Process Path="*\system32\svchost.exe" />
+	</File>
+	<File Id="{DCC20A9A-E8BF-ABC0-46CF07F014588C02}" FilePath="*\outlook logging\prof_*.txt" >
+		<Process Path="*\microsoft office\office??\outlook.exe" />
+	</File>
+	<File Id="{89440cc2-3c8d-4c9b-b189-a98aa6de0712}" FilePath="*temp\__psscriptpolicytest_????????.???.psm1" Header="2320506F776572536865*">
+	</File>
+	<File Id="{c4fb703b-c26a-42d4-8079-5f6b6a2166a9}" FilePath="*temp\__psscriptpolicytest_????????.???.ps1" Header="2320506F776572536865*">
+	</File>
+</Filters>

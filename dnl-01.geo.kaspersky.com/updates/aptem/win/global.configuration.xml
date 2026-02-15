@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="global.configuration.xsd">
+  <settings>
+    <MDR>
+      <RPC id="b4e6430e-0fe1-49b4-accb-54d58996a6ed">
+        <interfaces>
+          <interface uiid="12345678-1234-abcd-ef00-0123456789ab" pipe="spoolss">
+            <procedure_number id="62"/> <!-- RpcRemoteFindFirstPrinterChangeNotificationEx -->
+            <procedure_number id="65"/> <!-- RpcRemoteFindFirstPrinterChangeNotification -->
+            <procedure_number id="89"/> <!-- RpcAddPrinterDriverEx -->
+          </interface>
+        </interfaces>
+      </RPC>
+      <RPC id="e3a76dae-9190-478c-8555-7aa27f0b0935">
+        <interfaces>
+          <interface uiid="c681d488-d850-11d0-8c52-00c04fd90f7e" pipe="lsarpc">
+            <procedure_number id="0"/> <!-- EfsRpcOpenFileRaw -->
+          </interface>
+          <interface uiid="df1941c5-fe89-4e79-bf10-463657acf44d" pipe="efsrpc">
+            <procedure_number id="0"/> <!-- EfsRpcOpenFileRaw -->
+          </interface>
+        </interfaces>
+      </RPC>
+      <RPC id="22ef0f2a-ff3b-4ddd-8f2c-9cbca4330754">
+        <interfaces>
+          <interface uiid="99fcfec4-5260-101b-bbcb-00aa0021347a" pipe="epmapper"> <!-- IObjectExporter -->
+            <procedure_number id="0"/> <!-- ResolveOxid -->
+            <procedure_number id="4"/> <!-- ResolveOxid2 -->
+          </interface>
+        </interfaces>
+      </RPC>
+    </MDR>
+  </settings>
+  <availability>
+    <MDR>
+      <everyone>
+        <enable id="b4e6430e-0fe1-49b4-accb-54d58996a6ed"/>
+        <enable id="e3a76dae-9190-478c-8555-7aa27f0b0935"/>
+        <enable id="22ef0f2a-ff3b-4ddd-8f2c-9cbca4330754"/>
+      </everyone>
+    </MDR>
+  </availability>
+</configuration>

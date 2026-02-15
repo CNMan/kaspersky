@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wel.xsd">
+
+
+  <!-- MDR WEL. Update 13.04.2021. KICS detects added for 3.10+ -->
+  <Event Name="SuccessfulLogin.Vista" Id="4624" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Equal OrderNum="15" Value="2"/>
+    <Equal OrderNum="15" Value="3"/>
+    <Equal OrderNum="15" Value="4"/>
+    <Equal OrderNum="15" Value="5"/>
+    <Equal OrderNum="15" Value="8"/>
+    <Equal OrderNum="15" Value="9"/>
+    <Equal OrderNum="15" Value="10"/>
+    <Equal OrderNum="15" Value="11"/>
+    <Equal OrderNum="15" Value="12"/>
+    <Equal OrderNum="15" Value="13"/>
+    <Exclusions>
+      <Match OrderNum="12" Value="*$"/>
+      <Equal OrderNum="12" Value="ANONYMOUS LOGON"/>
+      <Equal OrderNum="12" Value="anonymous-anmeldung"/>
+      <Equal OrderNum="12" Value="accesso anonimo"/>
+      <Equal OrderNum="12" Value="АНОНИМНЫЙ ВХОД"/>
+      <Equal OrderNum="31" Value="%%1842"/>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="5"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="SYSTEM"/>
+        <Equal OrderNum="15" Value="5"/>
+        <Match OrderNum="16" Value="*\System32\services.exe"/>
+        <Equal OrderNum="25" Value="-"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="СИСТЕМА"/>
+        <Equal OrderNum="15" Value="5"/>
+        <Match OrderNum="16" Value="*\System32\services.exe"/>
+        <Equal OrderNum="25" Value="-"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="15" Value="2"/>
+        <Match OrderNum="24" Value="*\vmtoolsd.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="CLIUSR"/>
+        <Equal OrderNum="16" Value="Pku2uS4U"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="CLIUSR"/>
+        <Equal OrderNum="16" Value="Pku2uSsp"/>
+      </Conjunction>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-98575"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-145588"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-70905"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-41998"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-42863"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-76307"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-150393"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-41997"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-20612"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-139363"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-80599"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-24258"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-131526"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-139362"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-129549"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-141008"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2106051088-1936898357-3509631986-15138"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-30457"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-82577"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-148030"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-155379"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-70907"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-16338"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-146044"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-94408"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-123774"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-143245"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-100313"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-44063"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-149188"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-171267"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-98555"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-139047"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-103116"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-170430"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-139364"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-90075"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-31087"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-74681"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2033198097-956789178-3643714850-2097"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-143115"/>
+      <Equal OrderNum="11" Value="S-1-5-21-3509946911-2087765059-240168321-28735"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-149185"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-144532"/>
+      <Equal OrderNum="11" Value="S-1-5-21-4259980638-364074337-34306274-1021"/>
+      <Equal OrderNum="11" Value="S-1-5-21-3278514323-26746440-2289056814-1010"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2678"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1315270979-1122687726-71641487-8104"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-88309"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-73195"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2106051088-1936898357-3509631986-16207"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2624"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-90075"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2643"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2669"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-96540"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-131539"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2673"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-119805"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2595640586-3398857828-3810942505-9607"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-45073"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-132653"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2676"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-5231"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2595640586-3398857828-3810942505-8169"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1315270979-1122687726-71641487-11723"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1315270979-1122687726-71641487-8103"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-140631"/>
+      <Equal OrderNum="11" Value="S-1-5-21-3278514323-26746440-2289056814-1005"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-75935"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2106051088-1936898357-3509631986-12858"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-42307"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-98556"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2576532679-1800882581-2864135187-1030"/>
+      <Equal OrderNum="11" Value="S-1-5-21-4137103158-1589561119-3580603063-6541"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2106051088-1936898357-3509631986-9160"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-40735"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2106051088-1936898357-3509631986-14700"/>
+      <Equal OrderNum="11" Value="S-1-5-21-3509946911-2087765059-240168321-28736"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-88126"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-100689"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-131126"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-108695"/>
+      <Equal OrderNum="11" Value="S-1-5-21-969303324-554087129-2254111103-1002"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-122222"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-140630"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2150421241-1212762155-1127816542-1006"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2616"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-147602"/>
+      <Equal OrderNum="11" Value="S-1-5-80-3589385106-520469509-3569633472-84460881-2732306008"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-120732"/>
+      <Equal OrderNum="11" Value="S-1-5-21-1430328663-2098613005-1233803906-85236"/>
+      <Equal OrderNum="11" Value="S-1-5-21-2727534264-3158912662-2350043128-2672"/>
+      <Equal OrderNum="11" Value="S-1-5-7"/>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-18"/>
+        <Equal OrderNum="15" Value="3"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-19"/>
+        <Equal OrderNum="15" Value="3"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-20"/>
+        <Equal OrderNum="15" Value="3"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-19"/>
+        <Equal OrderNum="15" Value="5"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-20"/>
+        <Equal OrderNum="15" Value="5"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="11" Value="S-1-5-19"/>
+        <Equal OrderNum="15" Value="9"/>
+      </Conjunction>
+      <Match OrderNum="12" Value="HealthMailbox*"/>
+	</Exclusions>
+  </Event>
+
+  <Event Name="NewUserCreated.Vista" Id="4720" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="FailedLogin.Vista" Id="4625" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Equal OrderNum="14" Value="0xc000006d"/>
+  </Event>
+
+  <Event Name="LogonAttemptWithExplicitCredentials.Vista" Id="4648" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="18" Value="*\outlook.exe"/>
+      <Match OrderNum="18" Value="*\edgetransport.exe"/>
+      <Match OrderNum="18" Value="*\avp.exe"/>
+      <Match OrderNum="18" Value="*\taskhost.exe"/>
+      <Match OrderNum="18" Value="*\taskhostw.exe"/>
+      <Match OrderNum="18" Value="*\skype.exe"/>
+      <Match OrderNum="18" Value="*\lync.exe"/>
+      <Conjunction>
+        <Equal OrderNum="7" Value="S-1-5-18"/>
+        <Match OrderNum="18" Value="*\vmtoolsd.exe"/>
+      </Conjunction>
+      <Conjunction>
+        <Equal OrderNum="12" Value="CLIUSR"/>
+        <Match OrderNum="15" Value="localhost"/>
+      </Conjunction>
+    </Exclusions>
+  </Event>
+
+  <Event Name="AccoutLockedDueToMultipleLogonFailures.Vista" Id="4740" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="MemberAddedToSecurityGroup.Vista" Id="4732" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="MemberRemovedFromSecurityGroup.Vista" Id="4733" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="UserAccountChanged.Vista" Id="4738" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SchedulerTaskCreated.Vista" Id="4698" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SchedulerTaskUpdated.Vista" Id="4702" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="ServiceCreated.Vista" Id="4697" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ServiceCreated.Vista" Id="7045" Channel="System" Provider="Service Control Manager" OsType="Vista+" />
+
+
+
+  <Event Name="AuditLogCleanup.Vista" Id="1102" Channel="Security" Provider="Microsoft-Windows-Eventlog" OsType="Vista+" />
+  <Event Name="EventLogCleanup.Vista" Id="104" Channel="System" Provider="Microsoft-Windows-Eventlog" OsType="Vista+" />
+
+
+  <Event Name="NetworkShareAdded.Vista" Id="5142" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  
+  <Event Name="NetworkShareModified.Vista" Id="5143" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="NetworkShareDeleted.Vista" Id="5144" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserPasswordChanged.Vista" Id="4723" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserPasswordReset.Vista" Id="4724" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="EventLogShutdown.Vista" Id="1100" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="EventLogError.Vista" Id="1108" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SystemAuditPolicyChanged.Vista" Id="4719" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="NetworkShareAccessed.Vista" Id="5140" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="14" Value="\\*\IPC$"/>
+      <Equal OrderNum="14" Value="\\*\NETLOGON"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="NetworkShareAccessedEx.Vista" Id="5145" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="14" Value="\\*\NETLOGON"/>
+      <Equal OrderNum="14" Value="\\*\SYSVOL"/>
+      <Equal OrderNum="16" Value="spoolss"/>
+      <Equal OrderNum="16" Value="srvsvc"/>
+      <Equal OrderNum="16" Value="wkssvc"/>
+      <Equal OrderNum="16" Value="lsarpc"/>
+      <Equal OrderNum="16" Value="browser"/>
+      <Equal OrderNum="16" Value="NETLOGON"/>
+      <Equal OrderNum="16" Value="CanonCAPT40"/>
+      <Equal OrderNum="16" Value="CanonCAPT30"/>
+      <Equal OrderNum="16" Value="NETLOGON"/>
+      <Equal OrderNum="16" Value="MsFteWds"/>
+      <Equal OrderNum="16" Value="netdfs"/>
+      <Equal OrderNum="16" Value="\"/>
+      <Equal OrderNum="17" Value="0x100080"/>
+      <Equal OrderNum="17" Value="0x80"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="SidHistoryAddedToAccount.Vista" Id="4765" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="AddSidHistoryToAccountFailed.Vista" Id="4766" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AttemptToSetDirectoryServicesRestoreModeAdminPassword.Vista" Id="4794" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="CredManagerCredsWereBackedUp.Vista" Id="5376" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="CredManagerCredsWereBackedUp.Vista" Id="5377" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="KerberosServiceTicketRequested.Vista" Id="4769" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="KerberosAuthTicketRequested.Vista" Id="4768" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="KerberosPreAuthFailed.Vista" Id="4771" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AttemptToValidateCredsForAccount.Vista" Id="4776" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="8" Value="CLIUSR"/>
+
+      <Equal OrderNum="9" Value="MSAP-VM-14"/>
+      <Equal OrderNum="9" Value="MSAP-VM-13"/>
+      <Equal OrderNum="9" Value="MSAP-VM-11"/>
+      <Equal OrderNum="9" Value="MSAP-VM-12"/>
+      <Equal OrderNum="9" Value="MSAP-VM-15"/>
+      <Equal OrderNum="9" Value="\\WIN-IBEDULDD7RR"/>
+      <Equal OrderNum="9" Value="AW18"/>
+      <Equal OrderNum="9" Value="BB-VW-SERVER11"/>
+      <Equal OrderNum="9" Value="MSAP-VM-42"/>
+      <Equal OrderNum="9" Value="MSAP-VM-41"/>
+      <Equal OrderNum="9" Value="\\WIN-85ARILJBV6G"/>
+      <Equal OrderNum="9" Value="MSAP-VM-21"/>
+      <Equal OrderNum="9" Value="MSAP-VM-20"/>
+      <Equal OrderNum="9" Value="MSAP-VM-45"/>
+      <Equal OrderNum="9" Value="MSAP-VM-05"/>
+      <Equal OrderNum="9" Value="MSAP-VM-44"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-110"/>
+      <Equal OrderNum="9" Value="MSAP-VM-07"/>
+      <Equal OrderNum="9" Value="MSAP-VM-56"/>
+      <Equal OrderNum="9" Value="AIR-WIN-WORKER1"/>
+      <Equal OrderNum="9" Value="MSAP-VM-50"/>
+      <Equal OrderNum="9" Value="MSAP-VM-51"/>
+      <Equal OrderNum="9" Value="MSAP-VM-19"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-102"/>
+      <Equal OrderNum="9" Value="JCIFS0_14_D8"/>
+      <Equal OrderNum="9" Value="MSAP-VM-01"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-105"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-101"/>
+      <Equal OrderNum="9" Value="MSAP-VM-16"/>
+      <Equal OrderNum="9" Value="MSAP-VM-17"/>
+      <Equal OrderNum="9" Value="JCIFS0_17_F7"/>
+      <Equal OrderNum="9" Value="JCIFS0_8_50"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-106"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-111"/>
+      <Equal OrderNum="9" Value="JCIFS0_16_63"/>
+      <Equal OrderNum="9" Value="JCIFS0_13_DE"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-109"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-03"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-18"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-17"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-107"/>
+      <Equal OrderNum="9" Value="JCIFS0_15_D2"/>
+      <Equal OrderNum="9" Value="BDB-04"/>
+      <Equal OrderNum="9" Value="BDB-05"/>
+      <Equal OrderNum="9" Value="BDB-03"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-04"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-01"/>
+      <Equal OrderNum="9" Value="AW17"/>
+      <Equal OrderNum="9" Value="AW15"/>
+      <Equal OrderNum="9" Value="HQMAILMBX1"/>
+      <Equal OrderNum="9" Value="BDB-01"/>
+      <Equal OrderNum="9" Value="BDB-02"/>
+      <Equal OrderNum="9" Value="MACMINI-AAF569"/>
+      <Equal OrderNum="9" Value="AW14"/>
+      <Equal OrderNum="9" Value="MSAP-VM-43"/>
+      <Equal OrderNum="9" Value="MSAP-VM-32"/>
+      <Equal OrderNum="9" Value="MSAP-VM-33"/>
+      <Equal OrderNum="9" Value="MSAP-VM-39"/>
+      <Equal OrderNum="9" Value="HQMAILMBX2"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-41"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-42"/>
+      <Equal OrderNum="9" Value="\\MSSQL_SCCM"/>
+      <Equal OrderNum="9" Value="\\HQPROXYUSR1"/>
+      <Equal OrderNum="9" Value="\\HQPROXYUSR2"/>
+      <Equal OrderNum="9" Value="MSAP-VM-27"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-29"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-28"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-27"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-100"/>
+      <Equal OrderNum="9" Value="\\HQPROXYUSR4"/>
+      <Equal OrderNum="9" Value="MSAP-VM-38"/>
+      <Equal OrderNum="9" Value="VIREXCH1"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-113"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-108"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-112"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-142"/>
+      <Equal OrderNum="9" Value="MSAP-VM-61"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-144"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-141"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-50"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-74"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-60"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-137"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-99"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-65"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-104"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-73"/>
+      <Equal OrderNum="9" Value="MSAP-VM-02"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-71"/>
+      <Equal OrderNum="9" Value="MSAP-VM-60"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-20"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-138"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-72"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-47"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-26"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-30"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-135"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-129"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-136"/>
+      <Equal OrderNum="9" Value="MSAP-VM-57"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-48"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-128"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-83"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-67"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-19"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-114"/>
+      <Equal OrderNum="9" Value="MSAP-WORKER-115"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="RDPSelfSignedCertificateGenerated.Vista" Id="1056" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="WirelessNetworkAuthentication.Vista" Id="5632" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserAccountEnabled.Vista" Id="4722" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserAccountDisabled.Vista" Id="4725" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="UserAccountDeleted.Vista" Id="4726" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="MemberAddedToSecurityGlobalGroup.Vista" Id="4728" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="MemberAddedToSecurityUniversalGroup.Vista" Id="4756" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SessionReconnectedToWinstation.Vista" Id="4778" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="ServiceStartTypeChanged.Vista" Id="7040" Channel="System" Provider="Service Control Manager" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="10" Value="BITS"/>
+      <Equal OrderNum="10" Value="TabletInputService"/>
+      <Equal OrderNum="10" Value="CmRcService"/>
+      <Equal OrderNum="10" Value="aspnet_state"/>
+      <Equal OrderNum="10" Value="MSDTC"/>
+      <Equal OrderNum="10" Value="smstsmgr"/>
+      <Equal OrderNum="10" Value="TrustedInstaller"/>
+      <Match OrderNum="10" Value="clr_optimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallServiceStopped.Vista" Id="5025" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="WinFirewallRuleAdded.Vista" Id="4946" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallRuleModified.Vista" Id="4947" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallRuleDeleted.Vista" Id="4948" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="WinFirewallSettingsRestoredToDefault.Vista" Id="4949" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="9" Value="OneNote"/>
+      <Equal OrderNum="9" Value="HP Networked Printer Installer"/>
+      <Equal OrderNum="9" Value="klnagwds.exe"/>
+      <Equal OrderNum="9" Value="Usermode Font Driver Host"/>
+      <Equal OrderNum="9" Value="Microsoft Lync UcMapi"/>
+      <Equal OrderNum="9" Value="Microsoft Power BI"/>
+      <Equal OrderNum="9" Value="windows_ie_ac_001"/>
+      <Equal OrderNum="9" Value="Kaspersky Security Center WDS"/>
+      <Equal OrderNum="9" Value="Xbox"/>
+      <Equal OrderNum="9" Value="Store Purchase App"/>
+      <Equal OrderNum="9" Value="Microsoft Sticky Notes"/>
+      <Equal OrderNum="9" Value="Microsoft Solitaire Collection"/>
+      <Equal OrderNum="9" Value="Microsoft PlayReady"/>
+      <Equal OrderNum="9" Value="Microsoft Advertising SDK for XAML"/>
+      <Equal OrderNum="9" Value="Microsoft Engagement Framework"/>
+      <Equal OrderNum="9" Value="Kaspersky Administration Kit"/>
+      <Equal OrderNum="9" Value="ByteCodeGeneration"/>
+      <Equal OrderNum="9" Value="Sway"/>
+      <Equal OrderNum="9" Value="System Center Configuration Manager"/>
+      <Equal OrderNum="9" Value="UcMapi"/>
+      <Equal OrderNum="9" Value="UcMapi64"/>
+      <Match OrderNum="9" Value="Microsoft Lync*"/>
+      <Match OrderNum="9" Value="OICE_*"/>
+      <Match OrderNum="9" Value="@{Microsoft*"/>
+      <Match OrderNum="9" Value="Microsoft Visual*"/>
+      <Match OrderNum="9" Value="Microsoft .Net*"/>
+      <Match OrderNum="9" Value="File and Printer Sharing*"/>
+      <Match OrderNum="9" Value="Windows Management Instrumentation*"/>
+      <Match OrderNum="9" Value="microsoft.windows.authhost.sso*"/>
+      <Match OrderNum="8" Value="DeliveryOptimization*"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="ReplayAttackDetected.Vista" Id="4649" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SystemTimeChanged.Vista" Id="4616" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Equal OrderNum="7" Value="S-1-5-19"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="MemberRemovedFromSecurityUniversalGroup.Vista" Id="4757" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="MemberRemovedFromSecurityGlobalGroup.Vista" Id="4729" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="OperationPerformedOnObject.Vista" Id="4662" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="11" Value="*LSA"/>
+      <Match OrderNum="11" Value="*WMI"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="KerberosPolicyChanged.Vista" Id="4713" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="DomainPolicyChanged.Vista" Id="4739" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AuditLogFull.Vista" Id="1104" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="ApplicationError.Vista" Id="1000" Channel="Application" Provider="Application Error" OsType="Vista+" />
+  <Event Name="ApplicationHang.Vista" Id="1002" Channel="Application" Provider="Application Hang" OsType="Vista+" />
+
+  <Event Name="SpecialGroupsAssignedToNewLogon.Vista" Id="4964" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="AttemptToCreateHardLink.Vista" Id="4664" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="NotificationPackageLoadedBySAM.Vista" Id="4614" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+  <Event Name="SecurityPackageLoadedByLSA.Vista" Id="4622" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="7" Value="*\windows\system32\schannel.DLL : Microsoft Unified Security Protocol Provider"/>
+      <Match OrderNum="7" Value="*\windows\system32\wdigest.DLL : WDigest"/>
+      <Match OrderNum="7" Value="*\windows\system32\cloudAP.DLL : CloudAP"/>
+      <Match OrderNum="7" Value="*\windows\system32\pku2u.DLL : pku2u"/>
+      <Match OrderNum="7" Value="*\windows\system32\tspkg.DLL : TSSSP"/>
+      <Match OrderNum="7" Value="*\windows\system32\msv1_0.DLL : NTLM"/>
+      <Match OrderNum="7" Value="*\windows\system32\kerberos.DLL : Kerberos"/>
+      <Match OrderNum="7" Value="*\windows\system32\lsasrv.dll : Negotiate"/>
+      <Match OrderNum="7" Value="*\windows\system32\negoexts.DLL : NegoExtender"/>
+      <Match OrderNum="7" Value="*\windows\system32\cpssl.DLL : Schannel"/>
+      <Match OrderNum="7" Value="*\windows\system32\cpssl.DLL : CP_Schannel"/>
+      <Match OrderNum="7" Value="*\windows\system32\livessp.DLL : LiveSSP"/>
+      <Match OrderNum="7" Value="*\windows\system32\cpssl.DLL : Microsoft Unified Security Protocol Provider"/>
+      <Match OrderNum="7" Value="*\windows\system32\schannel.DLL : Schannel"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="AuthenticationPackageLoadedByLSA.Vista" Id="4610" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+">
+    <Exclusions>
+      <Match OrderNum="7" Value="*\windows\system32\msv1_0.DLL : MICROSOFT_AUTHENTICATION_PACKAGE_V1_0"/>
+    </Exclusions>
+  </Event>
+
+  <Event Name="ComputerAccountChanged.Vista" Id="4742" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="ObjectAuditPolicyChanged.Vista" Id="4715" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+  <Event Name="SystemAccessToAccount.Vista" Id="4717" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" />
+
+	<!-- Test rules -->
+  <Event Name="NewUserCreated.Vista" Id="4720" Channel="Security" Provider="Microsoft-Windows-Security-Auditing" OsType="Vista+" >
+    <Exclusions>
+       <Equal OrderNum="7" Value="testrule1752"/>
+    </Exclusions>
+	</Event>
+
+	<!-- CR 4668496 -->
+  <Event Name="ApplicationError.Vista" Id="1000" Channel="Application" Provider="Application Error" OsType="Vista+">
+    <Equal OrderNum="7" Value="soyuz.exe"/>
+  </Event>
+
+  <Event Name="KICS4NET" Id="32769" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32770" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32771" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32772" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32773" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32774" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32775" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32776" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32777" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32778" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32779" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32780" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32781" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32782" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32783" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32784" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32785" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32786" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32787" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32788" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32789" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32790" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32791" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32792" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32793" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32794" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32795" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32796" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32797" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32798" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32799" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32800" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32801" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32802" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32803" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32804" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32805" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32806" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+  <Event Name="KICS4NET" Id="32807" Channel="Kaspersky Event Log" Provider="kladminserver" OsType="Vista+"></Event>
+
+  <Event Name="KICS4NODES" Id="2101" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2102" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2103" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2104" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2105" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2106" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2107" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2108" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2109" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2110" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2111" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2201" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2202" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2203" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2204" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2205" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2206" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2207" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2208" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2209" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2210" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2211" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2301" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2302" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2303" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2304" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2305" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2306" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2307" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2308" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2309" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2310" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2311" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2401" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2402" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2403" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2404" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2405" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2406" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2407" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2408" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2409" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2410" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2411" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2501" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2502" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2503" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2504" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2505" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2506" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2507" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2508" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2509" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2510" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2511" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3101" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3102" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3103" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3104" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3105" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3106" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3107" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3108" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3109" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3110" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3111" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3201" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3202" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3203" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3204" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3205" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3206" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3207" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3208" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3209" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3210" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3211" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3301" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3302" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3303" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3304" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3305" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3306" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3307" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3308" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3309" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3310" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3311" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3401" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3402" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3403" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3404" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3405" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3406" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3407" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3408" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3409" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3410" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3411" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3501" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3502" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3503" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3504" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3505" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3506" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3507" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3508" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3509" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3510" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3511" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4101" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4102" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4103" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4104" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4105" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4106" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4107" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4108" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4109" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4110" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4111" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4201" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4202" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4203" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4204" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4205" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4206" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4207" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4208" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4209" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4210" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4211" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4301" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4302" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4303" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4304" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4305" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4306" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4307" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4308" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4309" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4310" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4311" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4401" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4402" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4403" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4404" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4405" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4406" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4407" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4408" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4409" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4410" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4411" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4501" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4502" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4503" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4504" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4505" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4506" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4507" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4508" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4509" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4510" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4511" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5101" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5102" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5103" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5104" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5105" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5106" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5107" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5108" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5109" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5110" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5111" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5201" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5202" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5203" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5204" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5205" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5206" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5207" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5208" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5209" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5210" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5211" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5301" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5302" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5303" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5304" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5305" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5306" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5307" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5308" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5309" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5310" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5311" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5401" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5402" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5403" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5404" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5405" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5406" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5407" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5408" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5409" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5410" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5411" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5501" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5502" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5503" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5504" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5505" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5506" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5507" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5508" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5509" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5510" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5511" Channel="Kaspersky Security" Provider="Real-Time File Protection" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2101" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2102" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2103" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2104" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2105" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2106" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2107" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2108" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2109" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2110" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2111" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2201" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2202" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2203" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2204" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2205" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2206" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2207" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2208" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2209" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2210" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2211" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2301" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2302" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2303" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2304" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2305" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2306" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2307" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2308" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2309" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2310" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2311" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2401" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2402" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2403" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2404" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2405" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2406" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2407" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2408" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2409" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2410" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2411" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2501" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2502" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2503" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2504" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2505" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2506" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2507" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2508" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2509" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2510" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="2511" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3101" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3102" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3103" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3104" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3105" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3106" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3107" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3108" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3109" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3110" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3111" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3201" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3202" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3203" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3204" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3205" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3206" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3207" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3208" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3209" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3210" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3211" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3301" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3302" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3303" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3304" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3305" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3306" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3307" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3308" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3309" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3310" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3311" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3401" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3402" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3403" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3404" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3405" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3406" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3407" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3408" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3409" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3410" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3411" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3501" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3502" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3503" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3504" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3505" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3506" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3507" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3508" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3509" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3510" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="3511" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4101" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4102" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4103" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4104" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4105" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4106" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4107" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4108" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4109" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4110" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4111" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4201" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4202" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4203" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4204" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4205" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4206" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4207" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4208" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4209" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4210" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4211" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4301" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4302" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4303" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4304" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4305" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4306" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4307" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4308" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4309" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4310" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4311" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4401" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4402" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4403" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4404" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4405" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4406" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4407" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4408" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4409" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4410" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4411" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4501" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4502" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4503" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4504" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4505" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4506" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4507" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4508" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4509" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4510" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="4511" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5101" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5102" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5103" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5104" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5105" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5106" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5107" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5108" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5109" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5110" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5111" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5201" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5202" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5203" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5204" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5205" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5206" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5207" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5208" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5209" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5210" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5211" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5301" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5302" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5303" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5304" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5305" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5306" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5307" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5308" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5309" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5310" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5311" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5401" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5402" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5403" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5404" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5405" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5406" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5407" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5408" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5409" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5410" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5411" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5501" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5502" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5503" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5504" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5505" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5506" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5507" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5508" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5509" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5510" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES" Id="5511" Channel="Kaspersky Security" Provider="OnDemandScan" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_PLC_INVESTIGATE_ERROR_EVENT" Id="7508" Channel="Kaspersky Security" Provider="PLC Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_PLC_FIRMWARE_CHECK_ERROR_EVENT" Id="7509" Channel="Kaspersky Security" Provider="PLC Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_PLC_FIRMWARE_INCORRECT_EVENT" Id="7510" Channel="Kaspersky Security" Provider="PLC Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_APP_CONTROL_APPLICATION_ALLOWED_EVENT" Id="7320" Channel="Kaspersky Security" Provider="Applications Launch Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_APP_CONTROL_APPLICATION_DENIED_EVENT" Id="7321" Channel="Kaspersky Security" Provider="Applications Launch Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_APP_CONTROL_APPLICATION_AUDITED_EVENT" Id="7322" Channel="Kaspersky Security" Provider="Applications Launch Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_APP_CONTROL_APPLICATION_ERROR_EVENT" Id="7323" Channel="Kaspersky Security" Provider="Applications Launch Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_DEVICE_CONNECTED_EVENT" Id="7500" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_DEVICE_BLOCKED_EVENT" Id="7501" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_DEVICE_CONNECTED_AUDITED_EVENT" Id="7502" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_DEVICE_BLOCKRED_AUDITED_EVENT" Id="7503" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_DEVICE_DISCOVERED_EVENT" Id="7504" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_ERROR_EVENT" Id="7505" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_DEVICE_DISCONNECTED_EVENT" Id="7506" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_DEVICE_CONTROL_DEVICE_DISCONNECTED_AUDITED_EVENT" Id="7507" Channel="Kaspersky Security" Provider="Device Control" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_BASELINE_MODIFY_ERROR_EVENT" Id="7620" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_FILE_HASH_MISMATCH_EVENT" Id="7621" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_FILE_DELETED_EVENT" Id="7622" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_FILE_APPEARED_EVENT" Id="7623" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_BASELINE_MODIFY_ERROR_UNDEFINED" Id="7631" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_BASELINE_MODIFY_ERROR_SCAN_AREA_ABSENT" Id="7632" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_BASELINE_MODIFY_ERROR_STORAGE_CORRUPTED" Id="7633" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_BASELINE_MODIFY_ERROR_TASK_NOT_COMPLETED" Id="7634" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_BASELINE_MODIFY_ERROR_STORAGE_NOT_CREATED" Id="7635" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+  <Event Name="KICS4NODES_MSG_FIM_BASELINE_MODIFY_ERROR_STORAGE_FOLDER_NOT_ACCESSIBLE" Id="7636" Channel="Kaspersky Security" Provider="File Integrity Monitor" OsType="Vista+"></Event>
+
+
+</Events>

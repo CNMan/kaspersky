@@ -1,0 +1,128 @@
+<Update
+	Date="12022026 1203"
+	BlstDate="12022026 0839"
+	ObjectType="2=OSSL;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="6511"
+	CompID="OSSL">
+	<File
+		App="KSVLA 5.[1-2]"
+		OS="Linux"
+		Arch="i386"
+		SysArch="i386"
+		Shell="bdif;klz;none"
+		SrvPath="i386/nix"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Name="libcrypto_ssl_1_1.so"
+		DSKM="wsx0F1aOIxGlbOr16urrjQ8VtHIwoy5b1MPA1KlvaX0="/>
+	<File
+		App="KAVSDK 8.[8-9].*.*;KSLS 10.1.*.*;KSLS 11.[0-2].*.*"
+		OS="Linux"
+		Arch="i386"
+		SysArch="i386"
+		Shell="bdif;klz;none"
+		SrvPath="i386/nix"
+		LocalPath="%ProductFolder%"
+		Name="libcrypto_ssl_1_1.so"
+		DSKM="wsx0F1aOIxGlbOr16urrjQ8VtHIwoy5b1MPA1KlvaX0="/>
+	<File
+		App="KSVLA|KSVLASVM 5.[0-2]"
+		OS="Linux"
+		Arch="x64"
+		SysArch="x64"
+		Shell="bdif;klz;none"
+		SrvPath="x64/nix"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Name="libcrypto_ssl_1_1.so"
+		DSKM="3RyghMgKRs4fzoD5fUULbfzITkztLhI1NXla+/L8VMs="/>
+	<Files
+		Arch="x64"
+		SysArch="x64"
+		Shell="bdif;klz;none"
+		LocalPath="%ProductFolder%"
+		Item="App;OS;SrvPath;Name;DSKM"
+		List="
+			KAVSDK 8.[8-9].*.*\;KSLS 10.1.*.*\;KSLS 11.[0-2].*.*\;KSMG 2.0.0.*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KWTS 6.1.0.*|Linux|x64/nix|libcrypto_ssl_1_1.so|3RyghMgKRs4fzoD5fUULbfzITkztLhI1NXla+/L8VMs=;
+			KSLS 10.1.*.*\;KSLS 11.[0-2].*.*|Linuxs-104|x64/nix-104|libcrypto_ssl_1_1.so|ddSHdMsWMZjYaxqkwUDNQGcvXQoWAoT0p7EPVMeEpPo="/>
+	<File
+		App="KESMAC 11.0.[0-1].*;KESMAC 11.1.0.*;KISMAC|SAASMAC 20;KSKMAC 1.5.0.*"
+		OS="Mac"
+		Shell="bdif;klz;none"
+		SrvPath="mac"
+		LocalPath="%ProductRoot%/Binaries"
+		Name="libcrypto_ssl_1_1.dylib"
+		DSKM="XTdzjcVZlDEWOymSPz6FtAh6JWDaQd8PMKaXz41HN7M="/>
+	<File
+		App="KAR|KARH 3.0.1.*;KAR|KARH 6.0.0.*;KAVSDK 8.[8-9].*.*;KSE 9.[5-7].*.*;KSMO 1.2.*.*"
+		OS="Win"
+		Arch="x64"
+		Shell="bdif;klz;none"
+		SrvPath="x64/win"
+		ApplyPeriod="168"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Name="crypto_ssl_1_1.dll"
+		DSKM="oM3XHkCppqMYY85tfwZUVUY2i12scp4cS5+/+K9KSCA="/>
+	<Files
+		App="KSLS 10.1.*.*"
+		Arch="e2k"
+		SysArch="e2k"
+		Shell="bdif;klz;none"
+		LocalPath="%ProductFolder%"
+		Item="OS;SrvPath;Name;DSKM"
+		List="
+			Linux|e2k/nix|libcrypto_ssl_1_1.so|Lk5nsAgbxURjVN/KEwdcdsi4/QfuZa27tRGPbWCAOaI=;
+			Linuxs-118|e2k/nix-118|libcrypto_ssl_1_1.so|F0Nv4AN0BlItkyMvTnpzvE3bBOXrB9u4fKaCRw+Wtwg="/>
+	<File
+		App="KSLS 10.1.4.*"
+		OS="Linux"
+		Arch="a64"
+		Shell="bdif;klz;none"
+		SrvPath="arm64/nix"
+		LocalPath="%ProductFolder%"
+		Name="libcrypto_ssl_1_1.so"
+		DSKM="BFVNZJDOODmW5/B3LqpB19RlPUIpQjp3YGqj41Dhv6w="/>
+	<File
+		App="KAR|KARH 3.0.1.*;KAR|KARH 6.0.0.*;KAVSDK 8.[8-9].*.*;KFA|KSM|KAV|KIS|PURE|KSOSPC|KSOSFS|KSDE|SAAS [19-20];KSC 12.0.[0-1].*;KSC 12.2.0;KSE 9.[5-7].*.*;KSMO 1.2.*.*;KSVLA 5.[1-2];KVRT 20.0"
+		OS="Win"
+		Arch="i386"
+		Shell="bdif;klz;none"
+		SrvPath="i386/win"
+		ApplyPeriod="168"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Name="crypto_ssl_1_1.dll"
+		DSKM="tnNH2dW0CT8mWkUDFc04ofsqB5smkNh6Z81GNjXHXwQ="/>
+	<Files
+		OS="Win"
+		Arch="i386"
+		Shell="bdif;klz;none"
+		SrvPath="i386/win"
+		Name="crypto_ssl_1_1.dll"
+		DSKM="tnNH2dW0CT8mWkUDFc04ofsqB5smkNh6Z81GNjXHXwQ="
+		Item="App;LocalPath"
+		List="
+			KES 11.0.*.*|%ProductFolder%;
+			KES 11.[1-4].*.*\;KES 21.[2-5]|%DataFolder%"/>
+	<File
+		CompID="HASHES_SHA256"
+		LocalPath="%ProductFolder%"
+		Name="1.1.1k-ossl-1313g.sha2rg"
+		DSKM="bGCChwF/VMjKZaRk5AP1z+AEP8oMu9QJxSxuMDv0RXc="/>
+	<File
+		CompID="RETR1901_OSSL"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="1.1.1k-ossl-1901g.xml"
+		DSKM="38k4fqMcs7J0Fo8whBp/iYAf4UWxhSQOJmoPth09mrY="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="ossl-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGvKfo1Hiut567Od1iQfYpN1jUdzXA7vjq8JPGEE9NSgOmXHk4sZCq4whEqYnAaZYGTunLUQLmPMejcrFGjWH24BAB4JQgEAAAIAAigEAE9TU0wDAAIoBABCQVNFAQAACbDKQ0YNCjs6MTBLRkJweTV2RHlOWEVmc3ZCMi9nY1JFTXVBeDZXS2trOGgzQ2pGaTZhUXlGUW91NERaWGVrSld3MDhaTFlEU3Z1UjdMSnFDVnNrWGR6Q2J2bDR2clNzZiUl</Key>
+</Update>
+;:104V5ud0Qu6qiAQggaRnW9VFLOIbWqvvR0TQF/+x74LmZ3pvYcsa3htMXPkZ6uWIqG5lnFSxGCYLAVHP9n6/gbdG%%

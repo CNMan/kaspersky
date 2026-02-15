@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+  <LSASS Id="{CB56AEDE-5DC4-4B49-944F-6989C23E9420}" AccessMask="0x0010"> <!-- PROCESS_VM_READ = 0x0010 -->
+    <Process Path="*\powershell.exe" >
+      <Signature Subject="Microsoft*" />
+    </Process>
+    <Module Name="mscorwks.dll" />
+  </LSASS>
+  
+  <LSASS Id="{CB56AEDE-5DC4-4B49-944F-6989C23E9421}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 tmp for APS_APP_CLASS_SERVICE_HOST -->
+    <Process Path="*\test_lsass.exe" >
+    </Process>
+  </LSASS>
+  
+  <LSASS Id="{ABB28760-8F49-4958-8CDE-96E9FF67564C}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 tmp for APS_APP_CLASS_TASK_MANAGER -->
+    <Process Path="*\powershell.exe" >
+      <Signature Subject="Microsoft*" />
+    </Process>
+  </LSASS>
+  
+  <LSASS Id="{6AFF7AFE-DEF4-40E9-B897-90DD779709CE}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010  tmp for APS_APP_CLASS_ADOBE-->
+    <Process Path="*\test_lsass.exe" >
+    </Process>
+  </LSASS>
+  
+  <LSASS Id="{589CC806-E34A-41DF-9216-3B09302E734F}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 tmp for APS_APP_CLASS_RADMIN -->
+    <Process Path="*system32\\rserver*" >
+        <VersionInfo ProductName="Radmin" />
+    </Process>
+    <Module Name="winlpcdl.dll" />
+  </LSASS>
+  
+  <LSASS Id="{717F21A2-4FDC-49E0-8BE1-2960B16390E6}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 WMI 1 -->
+    <Process Path="*system32\\wbem\\wmiprvse.exe" >
+        <Signature Subject="Microsoft*" />
+    </Process>
+    <Module Name="cimwin32.dll" />
+  </LSASS>
+  
+  <LSASS Id="{0F76FD96-7667-4C89-857C-D3F2D46438FE}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 WMI 2 -->
+    <Process Path="*system32\\wbem\\wmiprvse.exe" ParentPath="*system32\\svchost.exe" >
+        <Signature Subject="Microsoft*" />
+    </Process>
+    <Module Name="perfproc.dll" />
+  </LSASS>  
+  
+  <LSASS Id="{0932D182-D2D4-4363-9824-C01ABFA1903A}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 -->
+    <Process Path="*" >
+    </Process>
+    <Module Name="dxdiagn.dll" />
+  </LSASS>
+  
+  <LSASS Id="{CBB87832-6794-4955-8786-E0830EFA29E4}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010  C:\Windows\system32\msiexec.exe /V -->
+    <Process Path="*system32\\msiexec.exe" ParentPath="*system32\\services.exe" >
+        <Signature Subject="Microsoft*" />
+        <VersionInfo ProductName="Windows Installer" />
+    </Process>
+    <Module Name="perfproc.dll" />
+  </LSASS>
+  
+  <LSASS Id="{D0A8F292-E6EF-4AC7-8143-EA5FCCB0F20A}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 Cisco AnyConnect -->
+    <Process>
+        <Signature Subject="Cisco" />
+        <VersionInfo ProductName="Cisco" />
+    </Process>
+    <Module Name="vpncommon.dll" />
+  </LSASS>
+  
+  <LSASS Id="{79D31277-755D-4528-A22A-A9E709A9A84D}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010  CCM -->
+    <Process Path="*system32\\msiexec.exe" ParentPath="*system32\\services.exe" >
+        <Signature Subject="Microsoft*" />
+        <VersionInfo OrignFileName="ccmexec.exe" />
+    </Process>
+    <Module Name="mtrmgr.dll" />
+    <Module Name="prep.dll" />
+  </LSASS>
+  
+  <LSASS Id="{30288D77-DEB9-4291-85A3-A1392EFF90A1}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 Chromium Update -->
+    <Process>
+        <Signature Subject="Google" />
+    </Process>
+    <Module Name="goopdate.dll" />
+  </LSASS>
+  
+  <LSASS Id="{8A4F5C13-5EE6-40D0-95FF-0ED787354F13}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010  Chromium Update -->
+    <Process>
+        <Signature Subject="Dropbox" />
+    </Process>
+    <Module Name="goopdate.dll" />
+  </LSASS>
+  
+  <LSASS Id="{E43AC462-968B-4614-AEA1-1797258E8508}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010  Chromium Update -->
+    <Process>
+        <Signature Subject="BraveSoftware" />
+    </Process>
+    <Module Name="goopdate.dll" />
+  </LSASS>
+  
+  <LSASS Id="{717077D6-D29B-4022-9CDE-513815CAFCC0}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010  Chromium Update -->
+    <Process>
+        <Signature Subject="Sputnik" />
+    </Process>
+    <Module Name="goopdate.dll" />
+  </LSASS>
+  
+  <LSASS Id="{E98A7532-7E44-4BEA-B549-A81314C49BE1}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 Process Explorer -->
+    <Process>
+        <Signature Subject="Microsoft*" />
+        <VersionInfo ProductName="Process Explorer" />
+    </Process>
+  </LSASS>
+  
+  <LSASS Id="{067EF14C-841B-4980-90E4-C1140773D252}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 KATA Agent -->
+    <Process Path="*endpointsensor.exe" >
+        <Signature Subject="Kaspersky" />
+    </Process>
+    <Module Name="fltlib.dll" />
+  </LSASS>
+  
+  <LSASS Id="{F63FF582-BF80-435E-98FF-4EEC4CF974B1}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 VSIXAutoUpdate -->
+    <Process Path="*vsixautoupdate.exe" >
+        <Signature Subject="Kaspersky" />
+    </Process>
+    <Module Name="system.ni.dll" />
+  </LSASS>
+  
+  <LSASS Id="{D1A525BB-6D0C-4764-B7EE-BD1E8293DA19}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 Snow Software -->
+    <Process Path="*snowagent.exe" >
+        <VersionInfo ProductName="Snow" />
+    </Process>
+  </LSASS>
+  
+  <LSASS Id="{5F00E7AC-5F00-4614-A26F-A025967D4BB3}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 Snow Software -->
+    <Process Path="*scanner64.exe" >
+        <VersionInfo ProductName="Snow" />
+    </Process>
+  </LSASS>
+  
+  <LSASS Id="{B85F91E8-CB85-495C-9F63-0979BC80BE57}" AccessMask="0x1410"> <!-- PROCESS_VM_READ = 0x0010 VMware Tools-->
+    <Process Path="*vmtoolsd.exe" >
+        <VersionInfo ProductName="Snow" />
+    </Process>
+    <Module Name="vmtools.dll" />
+  </LSASS>
+  
+</Filters>

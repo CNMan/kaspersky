@@ -1,0 +1,28 @@
+<Update
+	Date="24092020 1927"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="3.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="2650"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.1.15.500"
+		ApplyPeriod="0"
+		Item="ApplyAction;FixName;SrvPath;LocalPath;Name;DSKM2"
+		List="
+			restart_service|a|../21.1.15.500_ksde_a|%ProductFolder%|ucp_agent.dll|lMrUCOfylMKGp7EoCAFZAFXhIZDZEAio5ACWZ4nHQFA=;
+			restart_service|b|../21.1.15.500_ksde_b|%ProductFolder%|kasperskylab.ui.core.dll|Kd4Lm1KdpAP5pjFEHUcs3Ymge/M4Z/m4TsUlIijOo08=;
+			restart_service|b|../21.1.15.500_ksde_b|%ProductFolder%|kasperskylab.ui.core.localization.dll|mNucYOWqOtkwqd1dNd2JM35sIfgOJugzuPUUAN24d1U=;
+			restart_service|b|../21.1.15.500_ksde_b|%ProductFolder%|kasperskylab.ui.core.visuals.dll|l/37unzbBmQiMg0TPFSL9wiv7phK+e95sgHvSlZrJL8=;
+			restart_service|b|../21.1.15.500_ksde_b|%ProductFolder%|kasperskylab.ksde.ui.dll|alS47jhlz0T7Rq6E2g4fIOqbep3Kx+6sSIapWyxFRys=;
+			restart_service|c|../21.1.15.500_ksde_c|%ProductFolder%|avpmain.dll|jlttl/yT3f1GaWtO93Qdr9dyJaDhdJi6SC/Or5ySGbo=;
+			restart_service|c|../21.1.15.500_ksde_c|%ProductFolder%|ksn_facade.dll|wz7vD4x80Z3XElNNFVcpkm74hIp1ej8kMcEFg9345OE=;
+			restart_none|c|../21.1.15.500_ksde_c|%ProductFolder%|ver_info.json|9zj6L6M3PEMV8ObmRroKpcbzKrGquDUuQ+7ITijXJho=;
+			restart_service|c|../21.1.15.500_ksde_c/patch|%ProductFolder%\\\\patch|configuration_ksde.esm.patch|0t5ubF1163suKVCtkLgIvDyyKbWrEUwIPii/mzuHFsc="/>
+	<Key2
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-ksde21-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAOeETA0laP2talx/S13Y6GRopzaFfwG1rK9uCkl+pAcCyB8iBdlGzBm4NZNY9yzJWjyyVXQua4jgavtyO64aECoBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAltYp9XDQo6ITI4NDAxR1drUnRUM1pqRkZGSkFRTHdTelhmcitrOXNZMnpxemJhellzMTdXQUpDWXJPdmhlamxhYUVHTUtuVmJGRXF2Njd3Sy96aFQrTXk1SFFUMklnNzRYdTQxJSU=</Key2>
+</Update>
+:!28401GWsvvcBplgTkNHmMqsa2ZFzaXz9RHNQi4nwDvEHef16USRTtotS0Cq9TKdKhdOm+Z3Ha2wX4UwopO0QwLsDP657%%

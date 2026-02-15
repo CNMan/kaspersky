@@ -1,0 +1,80 @@
+<Update
+	Date="23052023 0952"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="11437"
+	Shell="bdif;klz;none">
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.7.7.393"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.7.7.393_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="Ynu9FNBCBkQPmiWDb1Ic5swW8KlTMr4CCLgdObAzec4="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.7.7.393"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.7.7.393_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="K25iMIdlBU5DmgYupNa9gDWuV3IOCKINYkor0HFhmuY="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="a"
+		Item="App;ApplyAction;SrvPath;LocalPath;Name;DSKM"
+		List="
+			KASPERSKY 21.7.7.393|restart_os|21.7.7.393_k4w_a|%ProductFolder%|bl.dll|5ezUt04Y5lqjLbkM16HzFZL3wcHwFilBDjPHYpvrlTY=;
+			KASPERSKY 21.7.7.393|restart_os|21.7.7.393_k4w_a|%ProductFolder%|kasperskylab.kis.ui.dll|RbOIix/eklGgE/aday9xwhi3+4kzZnq33Hohwg6cPKs=;
+			KASPERSKY 21.7.7.393|restart_os|21.7.7.393_k4w_a|%ProductFolder%|kasperskylab.kis.ui.shell.dll|hjfUlrKz7yhZbRtjvLmoMJ3llEWUe2+LTtIK8tAkGsw=;
+			KASPERSKY 21.7.7.393|restart_os|21.7.7.393_k4w_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|oPg9YEfl1wnIZe7rnNyut6/zc+BhmzO+zXuFP9eUIQc=;
+			KASPERSKY 21.7.7.393|restart_os|21.7.7.393_k4w_a|%ProductFolder%|system_interceptors.dll|XF7DjOYDl2TW+sTXRQoluyTfpOPZyIsphSLuZbv2d4U=;
+			KASPERSKY 21.7.7.393|restart_os|21.7.7.393_k4w_a|%ProductFolder%|app_control.dll|DHd2pMJUFCoCzFRXdNebWQXhtKSWPAKxLd8nj+zAm8w=;
+			KASPERSKY 21.7.7.393|restart_os|21.7.7.393_k4w_a|%ProductFolder%|avpmain.dll|6XHic1RYyDMEyvKCWlRQs4FedkmKfUlA9xM4IMFxB68=;
+			KSOSPC\\|KSOSFS 21.7.7.393|restart_none|21.7.7.393_ksos_a|%ProductFolder%|ver_info.json|Ynu9FNBCBkQPmiWDb1Ic5swW8KlTMr4CCLgdObAzec4="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.7.7.393"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.7.7.393_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="K25iMIdlBU5DmgYupNa9gDWuV3IOCKINYkor0HFhmuY="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.7.7.393"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		Item="SrvPath;LocalPath;Name;DSKM"
+		List="
+			21.7.7.393_ksos_a|%ProductFolder%|bl.dll|5ezUt04Y5lqjLbkM16HzFZL3wcHwFilBDjPHYpvrlTY=;
+			21.7.7.393_ksos_a|%ProductFolder%|kasperskylab.kis.ui.dll|RbOIix/eklGgE/aday9xwhi3+4kzZnq33Hohwg6cPKs=;
+			21.7.7.393_ksos_a|%ProductFolder%|kasperskylab.kis.ui.shell.dll|hjfUlrKz7yhZbRtjvLmoMJ3llEWUe2+LTtIK8tAkGsw=;
+			21.7.7.393_ksos_a/kru|%ProductFolder%\\\\Kaspersky Restore Utility|kasperskylab.kis.ui.shell.dll|oPg9YEfl1wnIZe7rnNyut6/zc+BhmzO+zXuFP9eUIQc=;
+			21.7.7.393_ksos_a|%ProductFolder%|system_interceptors.dll|XF7DjOYDl2TW+sTXRQoluyTfpOPZyIsphSLuZbv2d4U=;
+			21.7.7.393_ksos_a|%ProductFolder%|app_control.dll|DHd2pMJUFCoCzFRXdNebWQXhtKSWPAKxLd8nj+zAm8w=;
+			21.7.7.393_ksos_a|%ProductFolder%|avpmain.dll|6XHic1RYyDMEyvKCWlRQs4FedkmKfUlA9xM4IMFxB68="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-kav21-mr7-1901g.xml"
+		DSKM="wRl7LibximlYNPOZ//ouCuo2uZj5HFicbYvNS+k5lOI="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:10KBQF2AC4vltXPCktq4gVbOXu5zf33o8C4FEpNPxBCHto2Ot83jAd04t2BF0QlWCCxQcuYtLSd3L1xAK8MlhIms%%

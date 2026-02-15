@@ -1,0 +1,29 @@
+<Update
+	Date="12022026 0334"
+	ObjectType="2=KES11;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="10"
+	CompID="KES11"
+	Shell="bdif;klz;none">
+	<Exclude
+		App="KES 11.[2,4];KES 11.0.1.90;KES 11.1.[0,1].[126,15919];KES 21.2"/>
+	<Indexes
+		CompID="KES11,RETR1901_KES11"
+		Date="12022026 0334"
+		Item="App;Name"
+		List="
+			KES 21.[13-*].*.*|kes11-tar-1313g.xml;
+			KES 11.*.*.*\;KES 21.[2-12].*.*|kes11-nontar-1313g.xml"/>
+	<File
+		CompID="RETR1901_KES11"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="kes11-1901g.xml"
+		DSKM="DYd+Yyscnp2VHYjlLwmaOYNNRBHSklSM5d8sqWqxxHI="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="kes11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGsNAtuJ76BIjAPol8V/pvqssmjtZGKD3/PJ74+SepBCEjvhvb/eF+VcxOfNn/uhWo6RJ8I80MgpCJcgawss4MwBAB4JhgEAAAIAAigFAEtFUzExAwACKAMAQklOAQAACR13GJINCjs6MTBhUWd3MHpEQkNRR0VSclVGYlpCM1VQaVhidTJqV3lUV3Jwd1JUdXBzaTR3RG54RWRzcHM5bXY2eDlzU0ZLdm85S1VqcFIyayswY2JTK2NRTGF4N0tPUiUl</Key>
+</Update>
+;:10qK5B8S++RIT3h3oTys6XsdT4VpYY/f3P59Y3MGleRtI6X+wmKaiMSBX1G2DvNdAt3NXzqG01EtD/ffdjHgIbi4%%

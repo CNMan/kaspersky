@@ -1,0 +1,79 @@
+﻿<root>
+  <service_settings_patch service_key="0xeb5102dc">
+    <replace_value path="configSettings_initialized">1</replace_value>
+    <replace_value path="configSettings">
+      <unique_id>0x9d18ab5f</unique_id>
+      <dnsServerInfo>
+        <item>
+          <unique_id>0xb6f1d1cc</unique_id>
+          <dnsAddress>8.8.8.8</dnsAddress>
+          <dnsServerType>0</dnsServerType>
+        </item>
+        <item>
+          <unique_id>0xb6f1d1cc</unique_id>
+          <dnsAddress>1.1.1.1</dnsAddress>
+          <dnsServerType>0</dnsServerType>
+        </item>
+        <item>
+          <unique_id>0xb6f1d1cc</unique_id>
+          <dnsAddress>223.6.6.6</dnsAddress>
+          <dnsServerType>0</dnsServerType>
+        </item>
+        <item>
+          <unique_id>0xb6f1d1cc</unique_id>
+          <dnsAddress>9.9.9.9</dnsAddress>
+          <dnsServerType>0</dnsServerType>
+        </item>
+        <item>
+          <unique_id>0xb6f1d1cc</unique_id>
+          <dnsAddress>185.228.168.168</dnsAddress>
+          <dnsServerType>0</dnsServerType>
+        </item>
+      </dnsServerInfo>
+      <hostName>downloads.upd.kaspersky.com</hostName>
+      <ipWhiteList>
+        <item>80.231.123.131</item>
+        <item>80.231.123.133</item>
+        <item>80.239.197.106</item>
+        <item>80.231.123.139</item>
+        <item>212.73.221.217</item>
+        <item>213.155.156.92</item>
+        <item>81.19.104.79</item>
+        <item>195.122.169.36</item>
+        <item>212.8.233.167</item>
+        <item>95.167.139.6</item>
+        <item>93.191.13.100</item>
+        <item>95.167.139.13</item>
+        <item>93.159.230.19</item>
+        <item>4.1.82.132</item>
+        <item>93.191.13.211</item>
+        <item>46.46.184.59</item>
+        <item>62.76.91.139</item>
+        <item>4.28.136.38</item>
+        <item>79.133.169.7</item>
+        <item>81.19.104.60</item>
+        <item>80.239.169.149</item>
+        <item>185.201.2.5</item>
+        <item>185.201.1.43</item>
+        <item>185.201.3.11</item>
+        <item>37.203.128.10</item>
+        <item>37.203.129.5</item>
+        <item>64.120.89.148</item>
+        <item>209.51.171.230</item>
+        <item>66.110.49.20</item>
+        <item>185.201.0.5</item>
+        <item>193.238.132.3</item>
+      </ipWhiteList>
+      <localeFilter>
+      </localeFilter>
+      <userGeoRegionToProcess>
+        <item>ua</item>
+        <item>ukr</item>
+      </userGeoRegionToProcess>
+    </replace_value>
+  </service_settings_patch>
+  <feature_flag name="kart.userRegistrationGH.Business" value="460A1015-E776-4564-ADC2-B8B1385C3B39:[0,100,0,0]" />
+  <service_settings_patch service_key="0xE750E572">
+    <replace_value path="sslControlSettings.decodeMode">0</replace_value>
+  </service_settings_patch>
+</root>

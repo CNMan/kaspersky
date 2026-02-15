@@ -1,0 +1,75 @@
+<Update
+	Date="01072024 0659"
+	ObjectType="2=KAV21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="3220"
+	Shell="bdif;klz;none">
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.15.8.493"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.15.8.493_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="ver_info.json"
+		DSKM="nOfVxqmn4qWT7TMA93nTL4Gi/9wfD5RV1AB5kwxK63w="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KASPERSKY 21.15.8.493"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.15.8.493_k4w_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="J/Bj516VDpW7cJAE8abEUUBv/ByoB5q5YV/3+uUVfXY="/>
+	<Patches
+		CompID="KAV21NTR"
+		ApplyPeriod="168"
+		FixName="a"
+		LocalPath="%ProductFolder%"
+		Item="App;ApplyAction;SrvPath;Name;DSKM"
+		List="
+			KASPERSKY 21.15.8.493|restart_os|21.15.8.493_k4w_a|avpuimain.dll|CJ0erOY+WVBIxlwLARK9JIGe9i9W71ts5oqXa/70UNo=;
+			KASPERSKY 21.15.8.493|restart_os|21.15.8.493_k4w_a|traffic_processing.dll|887AkYTDN9Fl0KgvrRBQ2qGJn6iyFCYmseuzhAei1LQ=;
+			KASPERSKY 21.15.8.493|restart_os|21.15.8.493_k4w_a|avpmain.dll|JYwQTt/9j9iVfA9GoevH56yOdA8eIx3gLGsH9VKgtcw=;
+			KSOSPC\\|KSOSFS 21.15.8.493|restart_none|21.15.8.493_ksos_a|ver_info.json|nOfVxqmn4qWT7TMA93nTL4Gi/9wfD5RV1AB5kwxK63w="/>
+	<Patch
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.15.8.493"
+		OS="Win-2008-R2;Win-7,8,81,2012,2012R2,1000,2016"
+		ApplyPeriod="168"
+		ApplyAction="restart_none"
+		FixName="a"
+		SrvPath="21.15.8.493_ksos_a"
+		LocalPath="%ProductFolder%"
+		Name="SecurityProductInformation.ini"
+		DSKM="J/Bj516VDpW7cJAE8abEUUBv/ByoB5q5YV/3+uUVfXY="/>
+	<Patches
+		CompID="KAV21NTR"
+		App="KSOSPC|KSOSFS 21.15.8.493"
+		ApplyPeriod="168"
+		ApplyAction="restart_os"
+		FixName="a"
+		SrvPath="21.15.8.493_ksos_a"
+		LocalPath="%ProductFolder%"
+		Item="Name;DSKM"
+		List="
+			avpuimain.dll|CJ0erOY+WVBIxlwLARK9JIGe9i9W71ts5oqXa/70UNo=;
+			traffic_processing.dll|887AkYTDN9Fl0KgvrRBQ2qGJn6iyFCYmseuzhAei1LQ=;
+			avpmain.dll|JYwQTt/9j9iVfA9GoevH56yOdA8eIx3gLGsH9VKgtcw="/>
+	<File
+		CompID="RETR1901_KAV21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-kav21-mr15-1901g.xml"
+		DSKM="lOk3CXtxBdS9xQCQJ01hsz9CuO7rnRxFcafcxEKt79s="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-kav21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAADIjgCZrKcUCSZSN4FWqN+DHsNHCITIPYr5V+oNiLjW3aTt9N95l+zYuAhTjwY0k5ceDWyNOi2OKUn/T7Mtm/TwBAB4JzQEAAAIAAigFAEtBVjIxAwACKAMAQklOAQAACc05wSUNCjs6MTBLTitpNXRoM2lYOTFqKzhoWU9OdkdacXJwMEJRem9USWpoNk93S3E1MDVZeXRNaDM1eHYyRTRYT2h1a0JRV1JvdTNQcklrMStpdGZQcWJpbU5GUUZnNyUl</Key>
+</Update>
+;:10a4DJ9uO7CiNoizMq1CSb3SEvb37IDDs12koukeXqKcCG6rX17PQTGtEkYlk9CQ3KCyJUlkHdUP4LQAzO3p2Z0k%%

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+	<Image Id="{44472A2E-D28D-EE0F-8D84-B3D5CDA06634}" Path="*/prlshprint" />
+    <Image Id="{094C3856-951F-DA56-40EF-2C6517BE6A9D}">
+        <Process Path="*/prlshprint" />
+    </Image>
+    <Image Id="{FD1DF3F7-6E15-CB7E-454E-CC1B41E6FE30}" CmdLine="pidof /opt/kaspersky/kics/libexec/wdserver" />
+    <Image Id="{6962E396-6D33-BE1F-8F99-41E6D99C115F}" CmdLine="sh -c ip *">
+        <Process Path="/usr/sbin/hypervkvpd" />
+    </Image>
+	<Image Id="{9FEDDDE1-5D29-7A36-DBD4-C299371C44DD}" CmdLine="sh -c /usr/libexec/hypervkvpd/hv_get_dhcp_info*">
+        <Process Path="/usr/sbin/hypervkvpd" />
+    </Image>
+	<Image Id="{DA7A98BB-6D51-50D3-BE4B-22ACD1B09314}" CmdLine="(pervkvpd)">
+        <Process Path="*/lib/systemd/systemd" />
+    </Image>
+    <Image Id="{F9CD6405-CD93-AFE3-1FE4-EC94999AA99F}" CmdLine="(pervkvpd)">
+        <Process Path="*/sbin/hypervkvpd" />
+    </Image>
+	<Image Id="{9E97557F-4805-B6BF-E6DF-7EB2077EB362}" CmdLine="sh -c /usr/libexec/hypervkvpd/hv_get_dns_info">
+        <Process Path="/usr/sbin/hypervkvpd" />
+    </Image>
+    <Image Id="{EF456771-C05E-A07F-8A04-DF8761826389}">
+        <Process Path="*/bin/bash" />
+        <ParentProcess Path="*/sbin/hypervkvpd" />
+    </Image>
+	<Image Id="{B6ACB647-7221-1EDC-74D0-6EA1C13F15AE}" CmdLine="(lena)">
+        <Process Path="/usr/lib/systemd/systemd" />
+    </Image>
+	<Image Id="{69F61000-4361-8B9E-D42E-DAC99D4A0246}" CmdLine="/bin/sh /opt/kaspersky/epagent/libexec/aushape-audispd-plugin">
+        <Process Path="/usr/sbin/audispd" />
+    </Image>
+	<Image Id="{DCACFB5F-49BA-525E-75CE-B6AEADDDCDF5}" CmdLine="/sbin/audispd">
+        <Process Path="/usr/sbin/auditd" />
+    </Image>
+	<Image Id="{7557BE1A-D0FF-3B4E-B560-5BD57DD60093}" CmdLine="/usr/libexec/postfix/master -w">
+        <Process Path="/usr/lib/systemd/systemd" />
+    </Image>
+	<Image Id="{138240AC-E8D2-E84F-B0B6-267A5ADE22AE}" CmdLine="pickup -l -t unix -u">
+        <Process Path="/usr/libexec/postfix/master" />
+    </Image>
+    <Image Id="{4C0C255A-9558-0289-2AA5-29D34F1435FF}">
+        <Process CmdLine="/opt/kaspersky/kics/libexec/kics" />
+        <ParentProcess Path="*/opt/kaspersky/kics/libexec/wdserver" />
+    </Image>
+	<Image Id="{407DCC45-E754-3E6E-31D6-152333E9167D}" CmdLine="(mkfifo)">
+        <Process Path="/usr/lib/systemd/systemd" />
+    </Image>
+	<Image Id="{C3E7759A-3622-9D9A-DEE2-E3DDABADB00E}" CmdLine="(genrules)">
+        <Process Path="/usr/lib/systemd/systemd" />
+    </Image>
+	<Image Id="{CE58C780-3A54-2755-6092-4F67BF2693D0}" CmdLine="(crond)">
+        <Process Path="/usr/lib/systemd/systemd" />
+    </Image>
+	<Image Id="{014D5E6E-E5B5-5756-E755-2630C1B23747}" CmdLine="/usr/lib/systemd/systemd --switched-root --system --deserialize 22*">
+        <Process Path="/usr/lib/systemd/systemd" />
+    </Image>
+	<Image Id="{FC634F7E-4F5F-0108-0E12-927A84EDA828}" CmdLine="/usr/sbin/crond -n">
+        <Process Path="/usr/sbin/crond" />
+    </Image>
+	<Image Id="{F1BEB2F5-374A-9A4C-50D9-DF2C876F5F38}" CmdLine="(rsyslogd)">
+        <Process Path="/usr/lib/systemd/systemd" />
+    </Image>
+	<Image Id="{4F4F3AB2-9900-B398-3092-9519065FF156}" Path="*/bin/sleep" CmdLine="sleep *" />    
+	<Image Id="{90A65CA6-EC45-CFF9-7FF9-4B2CAEAE4183}">
+        <Process CmdLine="*/bin/gitlab-unicorn-wrapper*" />
+    </Image>
+	<Image Id="{2165BC0E-0CB9-19C6-0DFF-AACE7DFDC3E6}" CmdLine="*pgrep -fl ?sidekiq*" />
+	<Image Id="{488358EF-7AF7-5D07-7587-CC11F30B643E}" CmdLine="*pgrep -fl ?unicorn*" />
+	<Image Id="{CD46AD99-CFBA-362A-E84D-7B8061C13322}" CmdLine="*pgrep -fl*">
+        <ParentProcess CmdLine="*puma*" />
+    </Image>
+	 <Image Id="{A24AFFE8-6975-529F-CAC4-2C7A544310DF}" CmdLine="*pgrep -fl*">
+        <Process CmdLine="*puma*" />
+    </Image>
+	<Image Id="{1ABD1348-AF81-E055-2A38-53B92F6015A5}" CmdLine="ps -o rss*" />
+	<Image Id="{D19FE14F-C103-1942-7925-FC8AF0A93920}" Path="*/sbin/postqueue">
+        <Process CmdLine="*/libexec/netdata/plugins.d/python.d.plugin*" />
+    </Image>
+	<Image Id="{C98F9BAD-CDE9-63DF-41C0-83352BD8CF19}" CmdLine="*/tc -s qdisc show dev *" />
+	<Image Id="{48B87684-E0E5-35DB-E969-D834A3DDFF6F}">
+        <Process CmdLine="*/usr/libexec/netdata/plugins.d/tc-qos-helper.sh*" />
+    </Image>
+	<Image Id="{1BE7D07A-15DF-51ED-ABDC-78EE0060E520}" Path="*/bin/find">
+        <Process CmdLine="*sidekiq*" />
+    </Image>
+    <Image Id="{69CF9D9A-67AD-CD57-B6B3-0021D3839AA4}">
+        <Process Path="/usr/sbin/sssd" />
+        <ParentProcess Path="*/lib/systemd/systemd" />
+    </Image>
+    <Image Id="{89EE34A3-58A6-9E60-2438-2313E6E7C7E5}" CmdLine="sshd: root@notty">
+        <Process CmdLine="sshd: root@notty" />
+    </Image>
+    <Image Id="{81C69BCE-B181-7284-274F-D115ACD4B331}" CmdLine="*python*robot*mdrer.listeners.Resulter:AT*MDR*" />
+    <Image Id="{C86DF921-A865-941A-3CF9-9D1E52F44183}" CmdLine="/bin/sh /usr/libexec/grepconf.sh -c" />
+    <Image Id="{61A83DC3-1406-A6D9-812E-658BD4A6ED15}" CmdLine="grep -qsi ^COLOR.?none /etc/GREP_COLORS" />    
+    <Image Id="{F0AD6051-98A4-8508-3ED8-A055B4650A65}" CmdLine="*fuser /run/log/audit-messages*" />
+    <Image Id="{D96B4AA0-BFE0-6139-77F0-DD9F99BB8794}">
+        <Process CmdLine="*fuser /run/log/audit-messages*" />
+    </Image>
+    <Image Id="{66F03AC7-DA6E-63F9-FBA7-8DC0CCC07422}" CmdLine="*/opt/kaspersky/epagent/libexec/aushape-audispd-plugin" />
+    <Image Id="{96CA73A6-851F-3072-1B09-8FE2B984F875}">
+        <Process CmdLine="*/opt/kaspersky/epagent/libexec/aushape-audispd-plugin" />
+    </Image>
+    <Image Id="{15BA5274-6633-23BD-74B0-8F8B6C164D2B}">
+        <ParentProcess Path="/opt/kaspersky/epagent/sbin/lena" />
+    </Image>
+    <Image Id="{DAC03130-EC3E-77F2-6F0D-2ACEE5BFAF0B}">
+        <Process Path="/opt/kaspersky/epagent/sbin/lena" />
+    </Image>
+    <Image Id="{FDAD90E1-611A-98BA-0760-5CE990448323}" Path="*/bin/watch" CmdLine="*/var/opt/kaspersky/epagent/events/*" />
+    <Image Id="{0FAA899A-FAA5-EA55-C85A-0E5C3E2B8592}" CmdLine="*ls /var/opt/kaspersky/epagent/events/*|wc -l" />
+    <Image Id="{25662374-3AC3-21E7-E774-884826F9309E}" CmdLine="wc -l" />
+    <Image Id="{1EC2FCF1-EC87-9991-5D0B-12095514B39A}" CmdLine="*systemctl status epagent*">
+        <ParentProcess Path="*/bin/watch" />
+    </Image>
+    <Image Id="{89F9AEC7-01FE-A55A-4FA6-76C5E1ADBC84}" CmdLine="*systemctl status epagent*">
+        <Process Path="*/bin/watch" />
+    </Image>
+    <Image Id="{A773D245-2CCB-A869-89B4-B801CC842315}" Path="/opt/kaspersky/klnagent64/sbin/klnagent">
+        <ParentProcess Path="*/lib/systemd/systemd" />
+    </Image>
+    <Image Id="{995054E0-48E5-3AF9-701F-B8C3DCB0C967}" Path="/opt/kaspersky/klnagent64/sbin/klnagent">
+        <Process Path="/opt/kaspersky/klnagent64/sbin/klnagent" />
+    </Image>
+    <Image Id="{52465C50-6D60-150B-190A-499A8A776A82}" Path="/opt/kaspersky/klnagent64/sbin/klnagent">
+        <ParentProcess Path="/opt/kaspersky/klnagent64/sbin/klnagent" />
+    </Image>
+    <Image Id="{BE045D56-ABCD-190A-8ABF-85956B958B01}" Path="/opt/google/chrome/chrome --type=zygote" SysCall="clone" />
+    <Image Id="{DE2D5B77-D90A-5EB0-AB85-10AB36A3B104}" Path="/opt/google/chrome/chrome --type=zygote" SysCall="fork" />
+    <Image Id="{F039DE4E-AC2F-0001-7329-5FC3770E6785}" Path="/opt/google/chrome/chrome --type=zygote" SysCall="vfork" />
+    <Image Id="{6BDD02DB-5090-49C8-401F-7FB9E4742961}" CmdLine="/bin/sh -c command -v debian-sa1 ? /dev/null ?? debian-sa1*" />
+    <Image Id="{2A1ACE11-19BC-1680-96B6-44DA2D1C5477}">
+        <Process CmdLine="*bin/klnagent -d -from_wd" />
+    </Image>
+    <Image Id="{29511A7A-9BF2-FFBB-F8CA-B50E3471E546}">
+        <Process Path="*bin/klnagent" />
+    </Image>
+    <Image Id="{0ED80B1E-5CFC-9AD6-76C3-57031B37F92E}">
+        <ParentProcess CmdLine="systemd --switched-root --system --deserialize 22*" />
+    </Image>
+    <Image Id="{2E3D51EF-92AF-10AB-469C-856BF212845E}">
+        <ParentProcess CmdLine="*/var/opt/kaspersky/klnagent/tmp/klsc*" />
+    </Image>
+    <Image Id="{F4042B8F-76D2-B605-EC24-F2864588721A}" CmdLine="*svm_mock_update.sh*">
+      <Process Path="/usr/sbin/crond" />
+    </Image>
+    <Image Id="{A4184AF9-8B0F-EA62-1CDB-E10470ABD035}">
+      <Process CmdLine="*svm_mock_update.sh*" />
+    </Image>
+    <Image Id="{7CB41270-C4CB-5D5E-1F5F-FA5061A937BE}" CmdLine="*/usr/sbin/x2gocleansessions" />
+    <Image Id="{6F6668F6-9E96-6C46-E5D1-38698AE1F30D}">
+      <Process CmdLine="*/usr/sbin/x2gocleansessions" />
+    </Image>
+    <Image Id="{083A6944-C27A-0D1A-EDB7-EC2AE5352B03}">
+      <ParentProcess CmdLine="*/usr/sbin/x2gocleansessions" />
+    </Image>
+    <Image Id="{A94C5B54-D56B-128C-2E45-C152462BCB56}" CmdLine="*/watchdog*" />
+    <Image Id="{FB8114B2-95E4-92F0-4DBB-DACBBD3E2341}" CmdLine="airflow scheduler -- DagFileProcessorManager" />
+    <Image Id="{42FB26FE-2B27-2A70-9FFC-87E7E37F1039}" CmdLine="*-c config_file=?/etc/postgresql/10/main/*" />
+    <Image Id="{329E59D0-F763-76AA-9048-F05EFE82F41F}" CmdLine="*performance_sw_epagent.pl*" />
+    <Image Id="{F513F6A9-8491-9023-C4DB-C488B2D44A4E}">
+      <Process CmdLine="*performance_sw_epagent.pl*" />
+    </Image>
+    <Image Id="{06E793D1-960C-433E-AFF9-58F7FE210B99}">
+      <ParentProcess CmdLine="*performance_sw_epagent.pl*" />
+    </Image>
+    <Image Id="{4AF26D1E-AF76-660B-109B-2DD921D247CE}" CmdLine="*kaspersky/ksmg/libexec/python*" />
+    <Image Id="{961D0411-28C7-85B8-38D0-5C63000058A8}">
+      <Process CmdLine="*kaspersky/ksmg/libexec/python*" />
+    </Image>
+    <Image Id="{34487EEF-3B3B-1591-B657-38D46F5306F1}">
+      <ParentProcess CmdLine="*kaspersky/ksmg/libexec/python*" />
+    </Image>
+    <Image Id="{3F535422-CB0B-4975-6C62-D70230A5B4AA}" CmdLine="*/x2go*" />
+    <Image Id="{6E3DDBE1-3FC2-9562-BEEE-BF7E1A509DC5}">
+      <Process CmdLine="*/x2go*" />
+    </Image>
+    <Image Id="{3807B9D4-D222-58CE-1584-2794BA820CCD}">
+      <ParentProcess CmdLine="*/x2go*" />
+    </Image>
+    <Image Id="{B28E8F0B-FBAE-D56F-7CEA-7A02587435CE}" Path="*/bin/make" SysCall="vfork" />
+    <Image Id="{A87DCA2C-6834-66D7-D8A5-CADDDAE997AC}" Path="*/bin/make" SysCall="clone" />
+    <Image Id="{2CE24034-6C8B-EBCE-4EDB-684F7222D63F}" CmdLine="*bin/makeimg*" SysCall="clone" />
+    <Image Id="{679449FE-DC47-9DC8-7795-4A099A29660B}" CmdLine="*bin/makeimg*" SysCall="vfork" />
+    <Image Id="{1CBD5B41-E5B2-06AE-04B5-503DBA47C2EB}" CmdLine="*bin/nk-gen-c*" SysCall="vfork" />
+    <Image Id="{5C171033-A161-D76C-B632-DE6C8D77680D}" CmdLine="*bin/nk-gen-c*" SysCall="clone" />
+    <Image Id="{36EAE6A8-558E-800B-6A7A-180DE26F7C8B}" CmdLine="*toolchain/bin/makekss*" SysCall="clone" />
+    <Image Id="{4F61717B-9829-9EA6-96B8-B0F0B0CDF9AE}" CmdLine="*toolchain/bin/makekss*" SysCall="vfork" />
+    <Image Id="{01A24D12-25FC-1399-D752-2B409F9CFD41}" CmdLine="*kaspersky/ksmg/libexec/postgresql/postgres -D*" />
+    <Image Id="{D0BE65B9-0BA8-3016-148A-40DC2F94BFAB}">
+      <Process CmdLine="*kaspersky/ksmg/libexec/postgresql/postgres -D*" />
+    </Image>
+    <Image Id="{DE968B44-CB18-88ED-B41D-8A4FD9D8B38F}">
+      <ParentProcess CmdLine="*kaspersky/ksmg/libexec/postgresql/postgres -D*" />
+    </Image>
+    <Image Id="{46ECCF02-EBD2-B170-1245-F85B1FC6E73A}" Path="*systemd/systemd*" SysCall="clone" />
+    <!-- global fork filter -->
+    <Image Id="{5FDADFB0-DAC0-F582-16FE-7BCA257EE291}" SysCall="clone" />
+    <Image Id="{E453BA1A-D493-88B2-F68D-C8BC92F1D0C6}" SysCall="fork" />
+    <Image Id="{03EB2AF9-BDC8-891A-9270-4BAE362DA0AA}" SysCall="vfork" />
+    <!-- fork filter end -->
+    <Image Id="{0722CEFC-743A-FF06-A8B9-B02EDED93A38}" CmdLine="*sbin/ksmtuned*" />
+    <Image Id="{3C5B3D56-BE0F-4C0A-7B59-0B96CC60AE49}">
+      <Process CmdLine="*sbin/ksmtuned*" />
+    </Image>
+    <Image Id="{DC23CFB7-6AF6-C9C2-F3AD-50DD7C1CBD5F}">
+      <ParentProcess CmdLine="*sbin/ksmtuned*" />
+    </Image>
+    <Image Id="{A5890212-E554-09DD-DF2F-EA3BA041F446}">
+      <Process Path="*bin/bash" CmdLine="*for *done*" />
+    </Image>
+    <Image Id="{688851A6-8634-0DF3-5E8E-BE8A9013D00E}">
+      <ParentProcess Path="*bin/bash" CmdLine="*for *done*" />
+    </Image>
+    <Image Id="{060F8BA3-5724-EC76-7B33-A9F51E27333F}" Path="*/update-notifier" />
+    <Image Id="{E75DDAD1-979A-15C7-B910-3D83521903F8}">
+      <Process Path="*/update-notifier" />
+    </Image>
+    <Image Id="{77BBFF8A-C7B2-119B-7A54-8F7200147CB3}">
+      <ParentProcess Path="*/update-notifier" />
+    </Image>
+    <Image Id="{FB9804DC-8531-FDCD-5C57-19E7ACB12C9C}" CmdLine="(smbd)" />
+    <Image Id="{13DD6D73-8E08-5FE6-28DE-05963D52D759}">
+      <Process CmdLine="*python -m celery worker*" />
+    </Image>
+    <Image Id="{83786333-710E-8E2A-14EA-12B861552633}">
+      <Process Path="*/bin/dockerd" />
+      <ParentProcess Path="*/systemd" />
+    </Image>
+    <Image Id="{BEEDD634-C029-DD99-3524-1C925FA651C3}" Path="/usr/bin/opsAgent" />
+    <Image Id="{92EFB8B4-F2BE-69C6-0C04-C8F2757F1323}">
+      <Process Path="/usr/bin/opsAgent" />
+    </Image>
+    <Image Id="{BC9734C8-6B18-DAB8-BC66-DB5F571664B4}">
+      <ParentProcess Path="/usr/bin/opsAgent" />
+    </Image>
+    <Image Id="{A8BF6666-02D8-3AF8-C688-5EB4C42C0ABC}" CmdLine="pve-firewall*" />
+    <Image Id="{2F0CB6B7-A27D-E68F-FF74-BCAEB2794D6B}">
+      <Process CmdLine="pve-firewall*" />
+    </Image>
+    <Image Id="{42EC5DD9-1F53-8E67-FE77-6D5E71064AE8}">
+      <ParentProcess CmdLine="pve-firewall*" />
+    </Image>
+    <Image Id="{47E39848-A32B-D6E6-9D40-67F111D4E338}" CmdLine="*bin/airflow scheduler*" />
+    <Image Id="{EC088848-8FE4-C31A-A80A-7FB6AC45BFC0}">
+      <Process CmdLine="*bin/airflow scheduler*" />
+    </Image>  
+    <Image Id="{DDE612CF-C1B3-E8BA-A411-0EBFFC2ED60E}">
+      <ParentProcess CmdLine="*bin/airflow scheduler*" />
+    </Image>
+    <Image Id="{C29D0A81-D425-190A-537F-BC297E3A3581}" CmdLine="*bin/airflow webserver*" />
+    <Image Id="{3BA0508B-1541-C07A-5FB7-193977CCD8BC}">
+      <Process CmdLine="*bin/airflow webserver*" />
+    </Image>
+    <Image Id="{F103532E-63FF-EDDB-1082-7FAFEFDC631F}">
+      <ParentProcess CmdLine="*bin/airflow webserver*" />
+    </Image>
+    <Image Id="{8C33588C-0221-6514-D0BB-7FA2F158E8D4}">
+      <Process Path="*bin/nk-gen-c" />
+    </Image>
+    <Image Id="{0C8D3CD8-74C7-F772-9560-00CCFBA55AF7}">
+      <ParentProcess Path="*bin/nk-gen-c" />
+    </Image>
+    <Image Id="{C0B29AF5-60F5-BD84-08D2-28CB69BE6EC3}" CmdLine="*ls -l /proc/[0-9]*| grep socket:" />
+    <Image Id="{B64D509F-9E88-0881-6183-01B58E4B5314}">
+      <Process CmdLine="*ls -l /proc/[0-9]*| grep socket:" />
+    </Image>
+    <Image Id="{57EBD6E6-772A-D172-D73E-322A11EAA8B8}" CmdLine="*VBoxCreateUSBNode.sh*" />
+    <Image Id="{556DA031-8A2C-E2FC-C2F5-1D48CE4E2217}">
+      <Process CmdLine="*VBoxCreateUSBNode.sh*" />
+    </Image>
+    <Image Id="{781F5798-B956-D77B-BF6C-54E805D7C1CD}">
+      <ParentProcess CmdLine="*VBoxCreateUSBNode.sh*" />
+    </Image>
+    <Image Id="{FC40A864-95DF-F152-6047-6B9341BAAE6F}" CmdLine="rm -rf /var/tmp/mkinitramfs*" />
+    <Image Id="{179861B5-DA86-B293-FE41-32C2E10EA370}" CmdLine="*bin/go build *" />
+    <Image Id="{33C73F86-2D87-F67F-E91B-F60788B3E2CD}">
+      <Process CmdLine="*bin/go build *" />
+    </Image>
+    <Image Id="{7B1F1BD8-4FFE-BDB8-3EA1-0896E153946C}">
+      <ParentProcess CmdLine="*bin/go build *" />
+    </Image>
+    <Image Id="{C80058F5-FD09-0147-7ED6-944853B368C6}" CmdLine="*dpkg --print-foreign-architectures" />
+    <Image Id="{D9609B8E-33A8-671E-0842-E771C878978A}" CmdLine="*/update-motd*" />
+    <Image Id="{76FC827B-0B7C-7300-DB23-BE0ADE9B418B}">
+      <Process CmdLine="*/update-motd*" />
+    </Image>
+    <Image Id="{FED3E694-E817-DFE0-DC2A-A8DA9DEEE107}">
+      <ParentProcess CmdLine="*/update-motd*" />
+    </Image>
+    <Image Id="{FB8F31B0-0155-8C34-E55F-8F32934829D7}" CmdLine="*php/sessionclean*" />
+    <Image Id="{AC92C345-52C6-48C0-EA3D-16544E8F4BEC}">
+      <Process CmdLine="*php/sessionclean*" />
+    </Image>
+    <Image Id="{524C79EB-33E1-6DDC-0728-89F33E2F815B}">
+      <ParentProcess CmdLine="*php/sessionclean*" />
+    </Image>
+    <Image Id="{51D1AC87-6046-17FB-C6B4-EDE6E22E1C01}" Path="*/sbin/iptables">
+      <Process Path="*/bin/dockerd" />
+    </Image>
+    <Image Id="{BC2B9313-E6D3-1FEC-82B2-3C3E58AC2B6F}" Path="*/bin/docker-init">
+      <Process Path="*/bin/dockerd" />
+    </Image>
+    <Image Id="{08CC1DC4-DD03-9466-7CB3-B7FC68138DD3}" Path="*/bin/runc">
+      <Process Path="*/bin/dockerd" />
+    </Image>
+    <Image Id="{EAE8B7D7-70B0-D5FF-B364-74C3DED532A1}" Path="*/bin/unpigz">
+      <Process Path="*/bin/dockerd" />
+    </Image>
+    <Image Id="{35C5D08B-339E-DF68-9315-0C66FE2152AF}" CmdLine="*/ifupdown-hotplug">
+      <Process Path="*bin/unpigz" />
+    </Image>
+    <Image Id="{CC9E1EE1-16DB-6958-AED5-5C31E8CCFE05}">
+      <Process CmdLine="*/hypervkvpd -n" />
+    </Image>
+    <Image Id="{79F9562C-D744-DA22-192E-3708BA476C43}">
+      <ParentProcess CmdLine="*/hypervkvpd -n" />
+    </Image>
+    <Image Id="{3A964DDC-E3AC-34DA-04B7-600136C98BE3}" CmdLine="*/vmware/nsx-netopa/*" />
+    <Image Id="{8437B91B-5DEB-F8D2-E486-80021D173B0C}">
+      <Process CmdLine="*/vmware/nsx-netopa/*" />
+    </Image>
+    <Image Id="{243C72B0-3764-62DD-B835-1D3813B91FD0}">
+      <ParentProcess CmdLine="*/vmware/nsx-netopa/*" />
+    </Image>
+    <Image Id="{A55F7051-475D-64BE-7CE2-72B2BAF06027}" CmdLine="*buildroot/support/scripts/fix-rpath target" />
+    <Image Id="{017D9DB1-7B2D-18E7-9317-683CDB245E83}">
+      <Process CmdLine="*buildroot/support/scripts/fix-rpath target" />
+    </Image>
+    <Image Id="{6D62260D-89C4-6C01-9647-20883FF92EAA}">
+      <ParentProcess CmdLine="*buildroot/support/scripts/fix-rpath target" />
+    </Image>    
+    <Image Id="{4EBB07C6-F007-E633-55B1-1428FBB3429B}">
+      <Process Path="*/perl" CmdLine="pvestatd" />
+    </Image>
+    <Image Id="{9883EFB5-894B-9F2B-EA8D-8E1CBC3875B9}">
+      <ParentProcess Path="*/perl" CmdLine="pvestatd" />
+    </Image>
+    <Image Id="{34BF7EA4-B32B-2B20-BA28-3ED32DF37D45}" CmdLine="*/perl -w /sbin/ebtables-save" />
+    <Image Id="{EB34A47D-8A3B-6C29-005D-8CC7F86D2FCE}">
+      <Process CmdLine="*/perl -w /sbin/ebtables-save" />
+    </Image>
+    <Image Id="{2ABAF924-B668-CAA8-A4DB-3CA322FA7C23}">
+      <ParentProcess CmdLine="*/perl -w /sbin/ebtables-save" />
+    </Image>
+</Filters>

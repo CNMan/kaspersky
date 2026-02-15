@@ -1,0 +1,604 @@
+<Update
+	Date="12022026 1052"
+	BlstDate="11022026 2039"
+	ObjectType="2=INTRP;3=BASE"	
+	Format="3.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="1292"
+	CompID="INTRP"
+	LocalPath="%BaseFolder%">
+	<Exclude
+		App="KAVMAC 22.0.0;KES 11.[2,4];KES 21.2;KESMAC 11.2.0;KICSN|KESSN 21.[20-21];SAASMAC 21.[0-1].0"/>
+	<Files
+		Shell="bdif;klz;none"
+		Item="App;OS;Arch;SrvPath;Name;DSKM2"
+		List="
+			KICSNLO 2.0.0.*|Linuxs-135\;Linuxs-136|i386|i386/nix-135|libinterprecz.so|S1qHMtLaBplUMxCOuAMwYDoUnCj9TdUHnTDmNtgkrl4=;
+			KICSNLO 2.0.0.*|Linuxs-137\;Linuxs-138|x64|x64/nix-137|libinterprecz.so|5D8BuBUpSsC9c/zfiLUU9juVK0X4o8iPo95zkSYyTwA=;
+			KICSNLO 2.0.0.*|Linuxs-139|x64|x64/nix-139|libinterprecz.so|MxwQIQ2siHYIAe+MYxxE7TBD1eIQGS2RbrW/SblftmE=;
+			KESLKSVLA 12\;KESSL 3.[3-4]\;KESSL 4\;KICSNL 1.[3,5].0.*\;KICSNL 2.0\;KSLS 11\;KSLS 12.[0-4]|Linuxs-104|x64|x64/nix-104|libinterprecz.so|b2RpnaX+h5LLXYH9zf8BCxCu4Z70/AxtbhEA5CR6b6A="/>
+	<File
+		App="KESSL 4;KSLS 11.[3-4].0;KSLS 12.[0-4]"
+		OS="Linuxs-125"
+		Arch="a64"
+		SysArch="a64"
+		Shell="bdif;klz;none"
+		SrvPath="arm64/nix-125"
+		Name="libinterprecz.so"
+		DSKM2="B6aMfDuX5YJicbz6xF0wW/96iILjQ3KPYlYW9hvcjV8="/>
+	<File
+		CompID="HASHES_SHA256"
+		Name="intrp-1313g.sha2rg"
+		DSKM2="Xcy3NY3R34l75eMIAMeEhJXR4R7y4fNyFME21JssJLY="/>
+	<Index
+		App="!KAV|KIS|PURE|KES|KASPERSKY|SAAS|KFA|KSOSPC|KSOSFS|KSLS|KAVMAC|KESMAC|KICSN|KESSN [11-12,20-21,24-26];KICSN|KESSN 21.19"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSLS 11"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSLS 11"
+		Target="[157286-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSLS 12"
+		Target="[0-157285]"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSLS 12"
+		Target="[157286-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESMAC 11"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESMAC 11"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESMAC 12"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESMAC 12"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAVMAC 24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAVMAC 24"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAVMAC 25"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAVMAC 25"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAVMAC 26"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAVMAC 26"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 11"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 11"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAV|KIS|PURE|KFA|KSOSPC|KSOSFS|SAAS 20"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAV|KIS|PURE|KFA|SAAS 21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KAV|KIS|PURE|KFA|SAAS 21"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[0-9,13]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.[0-9,13]"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.14"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.15"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.15"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.16"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.17"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.17"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.18"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.19"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.20"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.21"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.22"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.23"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.24"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.25"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KSOSPC|KSOSFS|KASPERSKY 21.25"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.[0-9,13]"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.[0-9,13]"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.14"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.14"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.15"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.15"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.16"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.17"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.17"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.18"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.18"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.19"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.19"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.20"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.21"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.22"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.23"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.24"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.25"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KES 21.25"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.20"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.21"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.22"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.23"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.24"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.25"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KICSN 21.25"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.20"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.20"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.21"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.21"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.22"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.22"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.23"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.23"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.24"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.24"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.25"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Index
+		App="KESSN 21.25"
+		Target="[1-262143]"
+		Name="unmod-intrp-1901g.xml"
+		Date="12022026 0937"/>
+	<Key2
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="intrp-1901g.pbv">S0xyZwL6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAP/iGz/xIAW7CUhmmoNx4GzSKaSZkQ99PyxctZHjkpk9+ZP14hnWrbx9d4jKPXWyZigJSa96ifPmFNMcKFS2haIBAB4JtAEAAAIAAigFAElOVFJQAwACKAQAQkFTRQEAAAl/CRzPDQo6ITI4NDAxR21oNkRoUzNRbUJMQ2VvbDZHYmhldTBFU2NsWWpPSEJrdDVGSnQ0NFVWMlMwSTVDNS9FSFVrcVJiNER3TE9hUXNSR2FLbHZTUjg4WHZ5S0NpQWxtSnE4JSU=</Key2>
+</Update>
+:!28401GGcKDmOYxOQUTSrMlAGUU25HwbJlYkPIfPhXyhfWjhnpS/69RdwOhxrMsQzH7julQDZDJWQ6w6EfjTFnEUYkmJ2%%
+=!AQAA2AsAqhHQ+gAA0Ç‘+Å∏té†Ç¬1Çæ0Ç∫10
+*Ö0B+Å∏té†200.0
+*Ö ©ß8∂ur).çGP>ß¿Üp˘$Å˝«w3œ÷Léq†Çì0Ç:0ÇÁ† Ñhû6ØOW∞v≠ìo∞$›0
+*Ö0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110145Z480120110145Z0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0h0!*Ö0	*Ö*ÖC @√§µ@áÚë√Y6∫òIÆÖ_Ayÿ¥øx£ïO{b\CgF@:ı&°04NlÊ‡áÈÊ£EÜ7Ò∑Ê£Oí©_ó¥/P£Å°0Åû0+U#$0"Ä  Êü°?ÄæŒÇF„◊[ÆÄ≈‘Üqª∆◊õ˙ˆ’Z0)U" ŸákéæÇåﬁû‰Œ®ù€ÿ<‡(ÆIêLå˘A•l0Uˇ0Uˇ0ˇ0#+Å∏téˇ0+Å∏té0
+*ÖA ﬂq*,;\ô÷Ï¨A:OËÛºÊMˆÌ∞Ê#q˘W¢0*•~ÄÛ? Bˆ⁄ß7NûhIΩπ≈»>È ÇNo0ÇQ0Ç˛†]å«† à˙„·J¨ã=0
+*Ö0J10	URU10UMoscow10U
+Kaspersky Lab10U	3520p1_KL0250515103645Z260808103645Z0W10	URU10UMoscow10U
+Kaspersky Lab10Ucompid=INTRP_type=BASE0h0!*Ö0	*Ö*ÖC @6ê¬»t‘ƒi}Ë©ÊHï€b À©Åœ≥n:≈5´≠å>Ü8$G-3£K~«ZäH&êÊë+<˛®$Ö6≈« j£Å©0Å¶0+U#$0"Ä ŸákéæÇåﬁû‰Œ®ù€ÿ<‡(ÆIêLå˘A•l0)U" Kå=0k¨Øi≠*1Õr¶8…„{ıÇB8åÄS!üÓS0UˇÄ0U%ˇ0
++0$+Å∏téˇ0+Å∏té0
+*ÖA *éíp©u<ZáÓπÃ|Èô˛º`G’¶„N4e{^Wo?êç™ÜQeakù·ÔƒÅπ!˛xv≈ß4ÕÎÙ\«1Ç 0Ç∆†" Kå=0k¨Øi≠*1Õr¶8…„{ıÇB8åÄS!üÓS0
+*Ö0
+*Ö@ZjÓ‰UåKCBwÜÕ	C;e)¢
+∫¶ŸS1€..0π·KÇ–)JVN∏≈Ù{H≈üG¢ùµvq°ÇA0Ç=
++Ç71Ç-0Ç)	*ÜHÜ˜†Ç0Ç10
+*Ö0j*ÜHÜ˜	†[Y0W*0.0
+*Ö zt™Ï˜^2¢¬Ì:ﬁîˆ“îùóaË≤d‚Oò
+ﬂo20260212105236.3350749Z†ÇY0Ç0Ç»†9í‰[◊;ï °iE‡Ãâ…0
+*Ö0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0260209094624Z260219094624Z0O10	URU10UMoscow10U
+Kaspersky Lab10Utype=Timestamp0h0!*Ö0	*Ö*ÖC @Ü¡¿˚ha≠Kè	≤Y≈G¯7{©;N)ë'æÇn{r¨èÖ·>T&“õ˘≤Rv©ÜÅ≈Y6£gt!?¸a–Ò¥º£r0p0+U#$0"Ä ;*%uñ”Æ”ï] ÌÏN∂ôp<B±∏¥ê=Ëta/†÷0)U" ç&«€ƒ*ñ8z¢ı◊M©f9ê∆s±~¶iÕ”,0U%ˇ0
++0
+*ÖA óå^P∑rjs§Zbµ˘€<¢Õ
+Å€ÕâJJc˛±ÍÙC°Ï≥≠9*¯)_hÔ˚…à/‚Ïf0Ç60Ç„†G¢~YFCÆº∆ADm\ôÚ0
+*Ö0G10	URU10UMoscow10U
+Kaspersky Lab10U3520p10200903110221Z480120110221Z0T10	URU10UMoscow10U
+Kaspersky Lab10U3520p1_KL_Timestamp0h0!*Ö0	*Ö*ÖC @´kÑê8œ P8qFŸùAœ€ÎÚŸÜ–4™Lyxïûc‹)ÂG,àÁV:TZ.Bßû∫åÏ´F÷G
+Ä{î◊£Åî0Åë0+U#$0"Ä  Êü°?ÄæŒÇF„◊[ÆÄ≈‘Üqª∆◊õ˙ˆ’Z0)U" ;*%uñ”Æ”ï] ÌÏN∂ôp<B±∏¥ê=Ëta/†÷0Uˇ0Uˇ0ˇ0U%ˇ0
++0
+*ÖA (^∑«Ì‚‘„i!rOÖ@a«n^Ë†Ê≤ïÔ´Ñ»ÙÓ*’É1˜8J-=ß†O√{BzÕI™;§ô®ıJ1Ç80Ç4†" ç&«€ƒ*ñ8z¢ı◊M©f9ê∆s±~¶iÕ”,0
+*Ö†Å∞0	*ÜHÜ˜	1*ÜHÜ˜	0	*ÜHÜ˜	1260212105236Z0/	*ÜHÜ˜	1" wdt^G4Ç˝Q∂ x"ñÒÿXlVì©˙8;8—¡f0C*ÜHÜ˜	/1402000.0
+*Ö òWv5Áuçπ„≠cæ: ë˙*EÑò◊âæ[1Íå``0
+*Ö@#WÔ+£0&:¯e	∏∂HÇ´éˇofÂãSR≠˛ÿ8ápæUU∞=·˜Ω¸‘!»≈k:√=w˛t†øΩ§ w%%

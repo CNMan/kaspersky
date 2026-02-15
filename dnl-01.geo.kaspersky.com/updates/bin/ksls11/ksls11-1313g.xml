@@ -1,0 +1,56 @@
+<Update
+	Date="14022022 0701"
+	ObjectType="2=KSLS11;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="106252"
+	CompID="KSLS11"
+	Shell="bdif;klz;none">
+	<Patches
+		App="KSLS 11.2.0.[4000-6999]"
+		Target="[0-262143]"
+		SrvPath="11.2.2"
+		LocalPath="%DataFolder%/patch"
+		Item="OS;Arch;SysArch;Name;DSKM"
+		List="
+			linux-96|i386|i386|kesl_11.2.2-5324_i386.deb|Q08RYICh/zVfoW5JM9IcL2m8cbdYuRGm9Vi6Hb/NLu8=;
+			linux-97|i386|i386|kesl-11.2.2-5324.i386.rpm|s/T2lmEQd0rmVYfCvZdXqYQfW1M5CpO8Tl680h1G3kw=;
+			linux-98|x64|x64|kesl_11.2.2-5324_amd64.deb|4XizuqjLFFqon0otmEeaT3Tsd3EDGntbE96fuWcQPvI=;
+			linux-99|x64|x64|kesl-11.2.2-5324.x86_64.rpm|dNU2MfeSuT0sVWadJa3lhMD7Jy6zssFEzxdJYqWYflQ=;
+			linuxs-104|x64|x64|kesl-astra_11.2.2-5324_amd64.deb|mK9fMbhFOstd0dciK/tMHKQNmHleNXhglx/9pRogYaw=;
+			linux-96|i386|i386|kesl-gui_11.2.2-5324_i386.deb|OLoV02c8ilR2oiVA508SowrCCvHWZ2hqV1203RfO3NA=;
+			linux-97|i386|i386|kesl-gui-11.2.2-5324.i386.rpm|5S3BxFgG+aebhHtp6D+KB/3aLYoCsKNMd3L4LRtwQeM=;
+			linux-98|x64|x64|kesl-gui_11.2.2-5324_amd64.deb|jSZ/dkguh8vX1wNDLCywLYcArzlVtbYuI6rOhfY6Ol4=;
+			linux-99|x64|x64|kesl-gui-11.2.2-5324.x86_64.rpm|js6lkytXy3XXwJiBcalD/knJTERY2XkOhDQbnBFRQkw=;
+			linuxs-104|x64|x64|kesl-gui-astra_11.2.2-5324_amd64.deb|Bze1oMGhR3sMJcFSPwJAAMRiKN5JU+MAu4vtZEZcOps="/>
+	<Patches
+		App="KSLS 11.2.0.[4000-6999]"
+		OS="linux*"
+		Target="[0-262143]"
+		SrvPath="11.2.2"
+		LocalPath="%DataFolder%/patch"
+		Item="Name;DSKM"
+		List="
+			manifest.ini|TJ9rPiwx6x0QmDqLSt6pO6Yspj3ttARZNzH9i/550+U=;
+			license.de|rZkezuVyKF7iTN1hJvuaG/YO4bV5QYzHK9o/IpK+GLg=;
+			license.en|Kq05j2RD/esD0S2JxGPPm5Qi+qqqtP8mSRkMGCfK134=;
+			license.fr|aUzhsVHRpWkj2u+7tFsk0lnG0Gh7Nb6K7N5yVAylzv8=;
+			license.ru|nfCX0XNjQ6A8d2fKVjQM05ncXQa6+9kpX3aY6RFpWqc=;
+			license.ja|uUiISJayGT/21yLV2WaudbyHL5pV3/LmGBerbThDu8c=;
+			ksn_license.de|nYjR7IO/EJ6JIxSrfenlyiY1OUvhlYzP/AYBSGSEtGo=;
+			ksn_license.en|zYhKdF6ZO1tm08dViW4Oq6i1tXrRi4rk17SfIyL58FQ=;
+			ksn_license.fr|KrUvqheMdTzJLPWx3FnAdJFrDGyPDa7vELW5ydF3+9A=;
+			ksn_license.ru|ViQQtseWoy3cOB3ZUGBu3HC0ooM9hM4O4kG7c0rIu0A=;
+			ksn_license.ja|ZjsEQ/6W9XD+JZItGxyzdGkvyqiJ32AJ71mQ2UAISJI="/>
+	<File
+		CompID="RETR1901_KSLS11"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="ksls11-1901g.xml"
+		DSKM="/GfpEaRF8GLbix5rJJmt2iAb8AQNqoV9sw7glCvLpHU="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="ksls11-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAABq730gWlxHJ0/At207oC4vbAiMOl8j+mh9sZLDo123cE96Qhilhh0mpXqMJazBIAAOSSoArVaeurIxdqPPxnv4BAB4JsAEAAAIAAigGAEtTTFMxMQMAAigDAEJJTgEAAAmtxptrDQo7OjEwYUJOZTlsaFdWSTFUUlhQTEFtRlRYVmpvd2Vqd2xlSXQ5Y3M4bk5ySzJVK1NhY0xJbXZSUUlpSm9YTWc4MnArMEV0Q3JzdGdrQnV3cUNhTCs3RWpxK0klJQ==</Key>
+</Update>
+;:10aQUvWAMWSRZuRYQm22v+1aCUtnJlAlZmyvzLS+Xq3HBcWTBvX35ucvT3PNqXA6OfgoKXM7N0bZgPuM9qXxCgia%%

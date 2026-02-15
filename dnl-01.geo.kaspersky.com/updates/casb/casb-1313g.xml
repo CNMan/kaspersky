@@ -1,0 +1,102 @@
+<Update
+	Date="09022026 0855"
+	BlstDate="08022026 2038"
+	ObjectType="2=CASB;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="14108"
+	CompID="CASB">
+	<Exclude
+		App="KES 11.[2,4];KES 21.2"/>
+	<Files
+		App="!KES [11-21].[1-4];KES 21.4"
+		Item="Name;DSKM"
+		List="
+			casbd0001.dat|+U6/t08XDtz9jfiSEXNnFGk0MAALyU9y9Dzy0OKxCu8=;
+			casbd0002.dat|xOpDAqSI+zyu4EwKKJTXcNHjUbX+7vBXpLbn+TaxaNY=;
+			casbd0003.dat|Tf3aINn/J0PbLWvNGUKJYsBk6EUJ0EcOH7oRPk0W4ns=;
+			casbd0004.dat|uNdA5lGRTI9VYspC80WShMhdyg49SrU5V2cGo7FmpEE=;
+			casbd0005.dat|7apgnSa3vcSFDs2WF8xilZNH9BK6h3WKnE2h/aOp6QY=;
+			casbd0006.dat|CFjoliw1A8X8Y2tarwJrzX2/LdGde9rX1/f64zpDrtQ=;
+			casbd0007.dat|BlQWnMZ4yLyu3aM6FxE97yaPwy3+S4g38N/JsprmCt4="/>
+	<Files
+		App="KES 11.[2-4];KES 11.1.1;KES 21.[2-3]"
+		SrvPath="legacy"
+		Item="Name;DSKM"
+		List="
+			casbd0001.dat|luFqeiinZhYDdyhPTjT/v8/G4JA+WB6AmaohQcqxdpo=;
+			casbd0002.dat|aW3WXEauC88U0ZdSC5NeEIuihRhasMGeud2A2rf4GL8=;
+			casbd0003.dat|9twTW+XY8npf9p5XrW2+INRd5Z1gHk+Cb0PZqNycRFg=;
+			casbd0004.dat|dXrQK+arnsahjiRgYU+n+Gq4ScC0kKDEGtfka/ceCTc=;
+			casbd0005.dat|I7Yx0VPz/EU0IgpAFZE8ly27daYOAYbw2t7VBkW88hI=;
+			casbd0006.dat|ilcW03Aar4fu+dR4pEtI/LvJ4+ecxVykwpmkRIZcAyE="/>
+	<Files
+		Item="Name;DSKM"
+		List="
+			casb_rules.index.xms|rh2CukGDuFWV10qJUnGK1bnUhxZKmxRhVuMpqPO5//w=;
+			casb_rules.xms|hJZfuE5d+LGXIm82Eh+bi8euL84bmlyTITurzAin4xc="/>
+	<Files
+		Shell="bdif;klz;none"
+		Item="App;OS;Arch;SrvPath;Name;DSKM"
+		List="
+			KSC 15.[1-4]\;KSC 16.[0-1]|Linux|a64|arm64/nix|libcasb_engine.so|l45gTjw4m5N6QSHSGtsxMBflwaFLyD42WrNvLzDilTE=;
+			KSC 15.[1-4]\;KSC 16.[0-1]\;NGFW 1.0.0|Linux|x64|x64/nix|libcasb_engine.so|+O+XxNBwh4tsO3VxUwBaa9UubAGM5qXV+KoWeo1pU3k=;
+			KSC 15.[1-4]\;KSC 16.[0-1]|Linux|i386|i386/nix|libcasb_engine.so|cnxcUXZSljo+6jt4KjAD1aFjNII51z3eeD7bBx2CbDc=;
+			KSC 15.[1-4]\;KSC 16.[0-1]|Linuxs-104|x64|x64/nix-104|libcasb_engine.so|I2Me2zocD0L8u3N84baxkUg6oHAvUNO8lrU2z909eIg=;
+			NGFW 1.[1-2]|Linuxs-141|x64|x64/nix-141|libcasb_engine.so|xHy/+13O1RnOdzi/8p/22lfIogt6kicoczBKjYMUuLY="/>
+	<Index
+		CompID="CASB,RETR1901_CASB"
+		App="!KES|KSC [15,16,21]"
+		Name="unmod-casb-1313g.xml"
+		Date="09022026 0748"/>
+	<Index
+		CompID="CASB,RETR1901_CASB"
+		App="KES 21"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-casb-1313g.xml"
+		Date="09022026 0748"/>
+	<Index
+		CompID="CASB,RETR1901_CASB"
+		App="KES 21"
+		Target="262143"
+		Name="unmod-casb-1313g.xml"
+		Date="09022026 0748"/>
+	<Index
+		CompID="CASB,RETR1901_CASB"
+		App="KSC 15"
+		Target="[0-262142]"
+		SrvPath="mod"
+		Name="mod-casb-1313g.xml"
+		Date="09022026 0748"/>
+	<Index
+		CompID="CASB,RETR1901_CASB"
+		App="KSC 15"
+		Target="262143"
+		Name="unmod-casb-1313g.xml"
+		Date="09022026 0748"/>
+	<Index
+		CompID="CASB,RETR1901_CASB"
+		App="KSC 16"
+		Target="0"
+		SrvPath="mod"
+		Name="mod-casb-1313g.xml"
+		Date="09022026 0748"/>
+	<Index
+		CompID="CASB,RETR1901_CASB"
+		App="KSC 16"
+		Target="[1-262143]"
+		Name="unmod-casb-1313g.xml"
+		Date="09022026 0748"/>
+	<File
+		CompID="RETR1901_CASB"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="casb-1901g.xml"
+		DSKM="y+PV8qcB9Fiz/ADBFfkJkHNrKobK4JJ3fYllqzxhtI0="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="casb-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAE8IjuqsofuosfnbUlT0A1mPA4sFLbJ6in0mNEAP6VF8SN+mXeReLGKx9nxMQaijqDnYuU9dB94B/pOQLVw7dPIBAB4JygEAAAIAAigEAENBU0IDAAIoBABCQVNFAQAACSwd4y0NCjs6MTA0UWUzNHNQTDJpRVlIYTU4K0F0bzNhcDdGVkltRWdYTlozUHdaME16bXFTbllDeUVhWUZELzIxanFOSlhUcVFrTFZjc2JhaFVwdllDbzREU09UdmFKTSUl</Key>
+</Update>
+;:10KKc5DCE6aOATZUvuq6mEaZH7oI8nECvcLhj5crLf6oInG3sa7Oev+nwXp65yZNDpV/6DwZn7/ZL/p49gd4hbnU%%

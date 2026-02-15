@@ -1,0 +1,32 @@
+<Update
+	Date="16012023 1312"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="4689"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.7.7.393"
+		ApplyPeriod="0"
+		FixName="a"
+		SrvPath="21.7.7.393_ksde_a"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;Name;DSKM"
+		List="
+			restart_service|app_control.dll|DHd2pMJUFCoCzFRXdNebWQXhtKSWPAKxLd8nj+zAm8w=;
+			restart_service|avpmain.dll|6XHic1RYyDMEyvKCWlRQs4FedkmKfUlA9xM4IMFxB68=;
+			restart_none|ver_info.json|Ynu9FNBCBkQPmiWDb1Ic5swW8KlTMr4CCLgdObAzec4=;
+			restart_service|bl_ksde.dll|+q0r5kI+yHM3x1uEg1pveWM4CzcetUpNd16HNSrj7h8="/>
+	<File
+		CompID="RETR1901_KSDE21,RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="unmod-ksde21-mr7-1901g.xml"
+		DSKM="3fI7odfbcWTBUJJ7CyBhGKxlPSGh6Ou3rrIOu/lt2ik="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="unmod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
+</Update>
+;:10KEVjuINGj0Bq9Qib0pdITnEgDQty6YoPZc9QjARug0O/Lln8dFmLp6646ndWCc7Nqm8fVpkAhLkRojwqFXvHzn%%

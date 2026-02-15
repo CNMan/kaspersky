@@ -1,0 +1,32 @@
+<Update
+	Date="16012023 1312"
+	ObjectType="2=KSDE21;3=BIN"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="4689"
+	Shell="bdif;klz;none">
+	<Patches
+		CompID="KSDE21NTR"
+		App="KSDE 21.7.7.393"
+		ApplyPeriod="0"
+		LocalPath="%ProductFolder%"
+		Item="ApplyAction;FixName;SrvPath;Name;DSKM"
+		List="
+			restart_service|a|../21.7.7.393_ksde_a|app_control.dll|DHd2pMJUFCoCzFRXdNebWQXhtKSWPAKxLd8nj+zAm8w=;
+			restart_service|a|../21.7.7.393_ksde_a|avpmain.dll|6XHic1RYyDMEyvKCWlRQs4FedkmKfUlA9xM4IMFxB68=;
+			restart_service|a|../21.7.7.393_ksde_a|bl_ksde.dll|+q0r5kI+yHM3x1uEg1pveWM4CzcetUpNd16HNSrj7h8=;
+			restart_service|b|../21.7.7.393_ksde_b|kasperskylab.ui.core.dll|Ak2dTSlW37b1672El2AGtK3qci943ddQfmXeyH6W2HE=;
+			restart_none|b|../21.7.7.393_ksde_b|ver_info.json|cc5yT3rb9jJyTrSMxPv/7/ODDVxvKfnWcA4YtR4B308=;
+			restart_service|b|../21.7.7.393_ksde_b|kasperskylab.ksde.ui.dll|P6NEvU2hGId+o1DZA2o4iH74f1wul3juvyjZoM9wHjo="/>
+	<File
+		CompID="RETR1901_KSDE21,RETR1901_KSDE21NTR"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="mod-ksde21-mr7-1901g.xml"
+		DSKM="mM6mJ550cJzM9Te6au+u56wBcEG6Pu74wszYDC346aE="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="mod-ksde21-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAFRyL71C/oS6twdU/INJOY0fUTW34Jvij9aqmPBjQjE3RKZJyNUPiz3EIzhrsHZeI8+6GubkXsgff3jL3SGe2asBAB4J1wEAAAIAAigGAEtTREUyMQMAAigDAEJJTgEAAAkf0l9hDQo7OjEwNEg2SmRuS2ZQRlBLa3M3WlQ5WWJ0M2pPdUdWNnMzeDF2amVFQ2xsZVJNc2ZjdXB0SGUrY1c5cjNmQTFyS3hwV0hqeER1OXN5QUtMQ3JhMWZielB6WlMlJQ==</Key>
+</Update>
+;:10qUelncAr075HstQr5j1Ic3Iwnc3AkJZetSDSPQ8iDr6z4oNzenBHiTEe6RCb36RSmearzh+98Y629kG4B5fOYH%%

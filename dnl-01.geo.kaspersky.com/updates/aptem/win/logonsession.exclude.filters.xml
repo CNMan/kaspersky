@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+	<LogonSession Id="{D3456390-6360-4C37-A81E-4BF8CA59106A}" TargetUserSid="S-1-5-7"/>
+	<LogonSession Id="{7A81ACE1-2B7F-46FF-962A-6121C34392AE}" TargetUserSid="S-1-5-18" LogonType="5"/>
+	<LogonSession Id="{7A81ACE1-2B7F-46FF-962A-6121C34392AE}" LogonType="2">
+		<Process Path="*\VMware Tools\vmtoolsd.exe" />
+	</LogonSession>
+</Filters>

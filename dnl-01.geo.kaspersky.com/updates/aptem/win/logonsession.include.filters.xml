@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="filters.xsd">
+	<!--
+		typedef enum _SECURITY_LOGON_TYPE {
+			UndefinedLogonType = 0, // This is used to specify an undefied logon type
+			Interactive = 2,      // Interactively logged on (locally or remotely)
+			Network,              // Accessing system via network
+			Batch,                // Started via a batch queue
+			Service,              // Service started by service controller
+			Proxy,                // Proxy logon
+			Unlock,               // Unlock workstation
+			NetworkCleartext,     // Network logon with cleartext credentials
+			NewCredentials,       // Clone caller, new default credentials
+			//The types below only exist in Windows XP and greater
+		#if (_WIN32_WINNT >= 0x0501)
+			RemoteInteractive,  // Remote, yet interactive. Terminal server
+			CachedInteractive,  // Try cached credentials without hitting the net.
+			// The types below only exist in Windows Server 2003 and greater
+		#endif
+		#if (_WIN32_WINNT >= 0x0502)
+			CachedRemoteInteractive, // Same as RemoteInteractive, this is used internally for auditing purpose
+			CachedUnlock        // Cached Unlock workstation
+		#endif
+		} SECURITY_LOGON_TYPE, *PSECURITY_LOGON_TYPE;
+	-->
+	<!-- Do not remove LogonType="0". ProcessCreate events will not be matched on KATA Server side -->
+	<LogonSession Id="{A8B0432B-4A24-44FA-8824-9AD612180846}" LogonType="0"/>
+	<LogonSession Id="{42CB695C-FC33-4A13-AB4C-82BB56109B1D}" LogonType="2"/>
+	<LogonSession Id="{12A5FE18-023F-4B92-9D13-CE401090E92E}" LogonType="3"/>
+	<LogonSession Id="{9FC197A4-7E3A-4A71-9601-79FC52E03758}" LogonType="4"/>
+	<LogonSession Id="{153EE9C0-C934-4A64-B320-F658DD81C6BE}" LogonType="5"/>
+	<LogonSession Id="{65B12591-363D-4C7A-960D-5E709FC43A0B}" LogonType="6"/>
+	<LogonSession Id="{39E8B368-DBC9-4046-908B-2D4811DA62F9}" LogonType="8"/>
+	<LogonSession Id="{08171539-68CC-46D9-9C0F-1BF772ED261C}" LogonType="9"/>
+	<LogonSession Id="{AAFB8D3D-C58A-47E0-B8DF-94CB3EB49C0D}" LogonType="10"/>
+	<LogonSession Id="{338105A5-0285-404F-B08E-5C34D598FACA}" LogonType="11"/>
+	<LogonSession Id="{AAFB8D3D-C58A-47E0-B8DF-94CB3EB49C0D}" LogonType="12"/>
+	<LogonSession Id="{338105A5-0285-404F-B08E-5C34D598FACA}" LogonType="13"/>
+</Filters>

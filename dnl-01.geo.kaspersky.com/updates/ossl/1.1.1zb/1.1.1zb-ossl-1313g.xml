@@ -1,0 +1,131 @@
+<Update
+	Date="12022026 1203"
+	BlstDate="12022026 0839"
+	ObjectType="2=OSSL;3=BASE"	
+	Format="2.0"
+	DiffsPath="@ServerPath@/diffs"
+	MaxDownloadSizeKb="6508"
+	CompID="OSSL">
+	<Files
+		OS="Linux"
+		Shell="bdif;klz;none"
+		ApplyPeriod="0"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Item="App;Arch;SysArch;SrvPath;Name;DSKM"
+		List="
+			KSVLA 5.[1-2]|i386|i386|i386/nix|libcrypto_ssl_1_1.so|gbq9oABCGjXYtd5zLrvJCMq8R81T17wANF8m05L8wJw=;
+			KSVLA\\|KSVLASVM 5.[0-2]\;KSVLASVMPRG 6|x64|x64|x64/nix|libcrypto_ssl_1_1.so|k/etwLOdLhu89JC7S/e5VHLXZ0WdP9b3KJfva4w71b4="/>
+	<Files
+		Shell="bdif;klz;none"
+		LocalPath="%ProductFolder%"
+		Item="App;OS;Arch;SysArch;SrvPath;Name;DSKM"
+		List="
+			KICSNLO 2.0.0.*|Linuxs-135\;Linuxs-136|i386|i386|i386/nix-135|libcrypto_ssl_1_1.so|g9Un0n5pUEBMoIdEjiMWMv95OGN6H78THVo6VCcN2/k=;
+			KICSNLO 2.0.0.*|Linuxs-137\;Linuxs-138|x64|x64|x64/nix-137|libcrypto_ssl_1_1.so|3csz5aC+h9ajQwcEcEychJKXHwSq/SZx3p0MSamDTIM=;
+			KICSNLO 2.0.0.*|Linuxs-139|x64|x64|x64/nix-139|libcrypto_ssl_1_1.so|GsMalA+V+T2PcW2rhxRr0DsZeKjzaj9cHsCiXA5xwhw=;
+			KAVSDK 8.[8-9].*.*\;KAVSDK 8.10\;KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KSC 13.2\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12|Linux|i386|i386|i386/nix|libcrypto_ssl_1_1.so|gbq9oABCGjXYtd5zLrvJCMq8R81T17wANF8m05L8wJw=;
+			KAVSDK 8.[8-9].*.*\;KAVSDK 8.10\;KESLKSVLA 12\;KESSL 3\;KFL 2\;KICSNET 4\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KSC 13.2\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12\;KSMG 2.0.[0-1].*\;KSV [5-7].0.*.*\;KSV 6.1.*.*\;KSWG 1.0.0.*\;KWTS 6.1.0.*\;NGFW 1.0.0.*|Linux|x64|x64|x64/nix|libcrypto_ssl_1_1.so|k/etwLOdLhu89JC7S/e5VHLXZ0WdP9b3KJfva4w71b4=;
+			KESLKSVLA 12\;KESSL 3\;KICSNL 1.[3,5].0.*\;KICSNL 2\;KSLS 10.1.*.*\;KSLS 11.[0-4].*.*\;KSLS 12|Linuxs-104|x64|x64|x64/nix-104|libcrypto_ssl_1_1.so|fRH4t99a8zbDIJiX74luhC8MIi7O2CalRP7S1zbHbQU="/>
+	<File
+		App="KESMAC 11.0.[0-1].*;KESMAC 11.1.0.*;KISMAC 20;KSKMAC 1.5.0.*;SAASMAC 20"
+		OS="Mac"
+		Shell="bdif;klz;none"
+		SrvPath="mac"
+		LocalPath="%ProductRoot%/Binaries"
+		Name="libcrypto_ssl_1_1.dylib"
+		DSKM="R/82w9ZnpZHOD9f9TDpoKPU5KZqBKv7KLy3E65zUWn0="/>
+	<File
+		App="KAR|KARH 3.0.1.*;KAR|KARH 6.[0-6].0.*;KAVSDK 8.[8-9].*.*;KAVSDK 8.10;KSE 9.[5-7].*.*;KSMO 1.2.*.*"
+		OS="Win"
+		Arch="x64"
+		Shell="bdif;klz;none"
+		SrvPath="x64/win"
+		ApplyPeriod="168"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Name="crypto_ssl_1_1.dll"
+		DSKM="7axbDeGKrSA3iWOruUQXPE63wx761sfynddKfnwJ1fo="/>
+	<Files
+		App="KSLS 10.1.*.*"
+		Arch="e2k"
+		SysArch="e2k"
+		Shell="bdif;klz;none"
+		LocalPath="%ProductFolder%"
+		Item="OS;SrvPath;Name;DSKM"
+		List="
+			Linux|e2k/nix|libcrypto_ssl_1_1.so|usrJP7xXrrXaPSn4FrRm4ZAXYdVbmn6csW1ea0RwEoQ=;
+			Linuxs-118|e2k/nix-118|libcrypto_ssl_1_1.so|JeiwnKS691qrla84nEeK0VxPS8v8qCbiy+4yW7uhLnc="/>
+	<Files
+		Arch="a64"
+		Shell="bdif;klz;none"
+		LocalPath="%ProductFolder%"
+		Item="App;OS;SrvPath;Name;DSKM"
+		List="
+			KSC 13.2\;KSLS 10.1.4.*\;KSLS 11.[3-4].0\;KSLS 12|Linux|arm64/nix|libcrypto_ssl_1_1.so|cxAfitK5GRqAL0c9vDqTV7wcDFtQFYKZaT0LVGsE68E=;
+			KSLS 11.[3-4].0\;KSLS 12|Linuxs-125|arm64/nix-125|libcrypto_ssl_1_1.so|evYw/vaR96SLgIhLI634RfzYCBHdJRjgi3P4CfOF20k="/>
+	<File
+		App="KAR|KARH 3.0.1.*;KAR|KARH 6.[0-6].0.*;KAVSDK 8.[8-9].*.*;KAVSDK 8.10;KFA|KSM|KAV|KIS|PURE|KSOSPC|KSOSFS|KSDE|SAAS [19-20];KSC [15-16];KSC 12.0.[0-1].*;KSC 12.2.0;KSC 13.[0-2];KSC 14;KSE 9.[5-7].*.*;KSMO 1.2.*.*;KSVLA 5.[1-2];KVRT 20.0;SAFEKIDS 1.0.[3-5].*"
+		OS="Win"
+		Arch="i386"
+		Shell="bdif;klz;none"
+		SrvPath="i386/win"
+		ApplyPeriod="168"
+		ApplyAction="restart_service"
+		LocalPath="%ProductFolder%"
+		Name="crypto_ssl_1_1.dll"
+		DSKM="GP28OoTj3r633+Eod0hLpy8K2q5M1y+XwJJbeIHxV2A="/>
+	<Files
+		OS="Win"
+		Arch="i386"
+		Shell="bdif;klz;none"
+		SrvPath="i386/win"
+		Name="crypto_ssl_1_1.dll"
+		DSKM="GP28OoTj3r633+Eod0hLpy8K2q5M1y+XwJJbeIHxV2A="
+		Item="App;LocalPath"
+		List="
+			KES 11.0.*.*|%ProductFolder%;
+			KAR\\|KARH\\|KES 21\;KES 11.[1-4].*.*\;KESSN 21\;KICSN 21|%DataFolder%"/>
+	<File
+		App="KAVSDK 8.10.1;KAVSDK 8.9.2;KLMS 10;KSMG 2.1;KSMG 3.0;KWTS 6.2"
+		OS="Linuxs-108;Linuxs-131"
+		Arch="x64"
+		SysArch="x64"
+		Shell="bdif;klz;none"
+		SrvPath="x64/nix-108"
+		LocalPath="%ProductFolder%"
+		Name="libcrypto_ssl_1_1.so"
+		DSKM="72PSfwEnLTrBbaifM1TUAqe7qFNkkYnwl4iSp5jmGRw="/>
+	<File
+		App="KES 21"
+		OS="Win"
+		Arch="a64"
+		Shell="bdif;klz;none"
+		SrvPath="arm64/win"
+		LocalPath="%DataFolder%"
+		Name="crypto_ssl_1_1.dll"
+		DSKM="h2fkdMcTAMuA9WzC/j13zqtmDuQ87nOjDaKYCQdGOi4="/>
+	<Files
+		SysArch="x64"
+		Shell="bdif;klz;none"
+		Item="App;OS;Arch;SrvPath;LocalPath;Name;DSKM"
+		List="
+			NGFW 1|Linuxs-141|x64|x64/nix-141|%ProductFolder%|libcrypto_ssl_1_1.so|FkW7h91MR+GiV2/WEYIE7wk1e7JalLquzqV/vHqkX1s=;
+			KICSN 21.[23-24]|Win|i386|x64/win|%DataFolder%\\\\x64|crypto_ssl_1_1.dll|7axbDeGKrSA3iWOruUQXPE63wx761sfynddKfnwJ1fo="/>
+	<File
+		CompID="HASHES_SHA256"
+		LocalPath="%ProductFolder%"
+		Name="1.1.1zb-ossl-1313g.sha2rg"
+		DSKM="wWvKEoGJWd1JkfV5gseIGuWwOqrXGRfPLOI2gUKg2gY="/>
+	<File
+		CompID="RETR1901_OSSL"
+		Shell="xdif;klz;none"
+		LocalPath="%DataFolder%"
+		Name="1.1.1zb-ossl-1901g.xml"
+		DSKM="7lBwlZ9suTRn4nK6sWu0n+J9GzXtKXzJtH7E0yehzos="/>
+	<Key
+		CompID="NULL"
+		LocalPath="%DSKM%"
+		Name="ossl-1313g.pbv">S0xyZwH6/39LTHN3AACtrQEAAAD8AwAAAwAAFgEBAAAJAQAQHipAAGvKfo1Hiut567Od1iQfYpN1jUdzXA7vjq8JPGEE9NSgOmXHk4sZCq4whEqYnAaZYGTunLUQLmPMejcrFGjWH24BAB4JQgEAAAIAAigEAE9TU0wDAAIoBABCQVNFAQAACbDKQ0YNCjs6MTBLRkJweTV2RHlOWEVmc3ZCMi9nY1JFTXVBeDZXS2trOGgzQ2pGaTZhUXlGUW91NERaWGVrSld3MDhaTFlEU3Z1UjdMSnFDVnNrWGR6Q2J2bDR2clNzZiUl</Key>
+</Update>
+;:10aDCwmokzxmMD6Py+IaSLlzyaQLKxoWNN6xMzfXGqM5YLIqHtSSG3cCq9161PzQUObLo0uNMl9qBB7LAn0cFDQm%%
